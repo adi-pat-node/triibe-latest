@@ -13,9 +13,9 @@ export default function Header() {
 
   return (
     <header className="w-full bg-[#002c19] border-b border-[#002c19]">
-      <nav className="flex h-16 items-center justify-between w-full px-[200px] py-2">
+      <nav className="flex h-16 items-center justify-between w-full px-50 py-2">
         {/* Logo */}
-        <div className="[font-family:'DM_Sans',Helvetica] font-normal text-[#ffffff] text-xl tracking-[0.50px] leading-7">
+        <div className=" font-normal text-[#ffffff] text-xl tracking-[0.50px] leading-7">
           <a href="/">TRIIBE</a>
         </div>
 
@@ -31,7 +31,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className={`[font-family:'DM_Sans',Helvetica] ${
+              className={` ${
                 isActive(link.href) ? "font-semibold" : "font-normal"
               } text-[#fffefecc] text-sm tracking-[0] leading-5 cursor-pointer hover:text-white transition-colors`}
             >
@@ -44,13 +44,13 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-3">
           <a
             href="/partner"
-            className="h-9 px-4 py-2 [font-family:'DM_Sans',Helvetica] font-normal text-[#ffffff] text-sm text-center tracking-[0] leading-5 hover:bg-[#003d24] transition-colors rounded inline-flex items-center"
+            className="h-9 px-4 py-2  font-normal text-[#ffffff] text-sm text-center tracking-[0] leading-5 hover:bg-[#003d24] transition-colors rounded inline-flex items-center"
           >
             Partner
           </a>
           <a
             href="/apply"
-            className="h-9 px-4 py-2 bg-[#ffffff] [font-family:'DM_Sans',Helvetica] font-normal text-black text-sm text-center tracking-[0] leading-5 hover:bg-[#f0f0f0] transition-colors rounded inline-flex items-center"
+            className="h-9 px-4 py-2 bg-[#ffffff]  font-normal text-black text-sm text-center tracking-[0] leading-5 hover:bg-[#f0f0f0] transition-colors rounded inline-flex items-center"
           >
             Apply
           </a>
@@ -86,7 +86,7 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className={`[font-family:'DM_Sans',Helvetica] ${
+                className={` ${
                   isActive(link.href) ? "font-semibold" : "font-normal"
                 } text-[#fffefecc] text-sm tracking-[0] leading-5 hover:text-white transition-colors`}
                 onClick={() => setMobileMenuOpen(false)}
@@ -98,14 +98,14 @@ export default function Header() {
             <div className="flex flex-col gap-3 pt-4 border-t border-gray-700">
               <a
                 href="/partner"
-                className="h-9 px-4 py-2 [font-family:'DM_Sans',Helvetica] font-normal text-[#ffffff] text-sm text-center tracking-[0] leading-5 hover:bg-[#003d24] transition-colors rounded inline-flex items-center justify-center"
+                className="h-9 px-4 py-2  font-normal text-[#ffffff] text-sm text-center tracking-[0] leading-5 hover:bg-[#003d24] transition-colors rounded inline-flex items-center justify-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Partner
               </a>
               <a
                 href="/apply"
-                className="h-9 px-4 py-2 bg-[#ffffff] [font-family:'DM_Sans',Helvetica] font-normal text-black text-sm text-center tracking-[0] leading-5 hover:bg-[#f0f0f0] transition-colors rounded inline-flex items-center justify-center"
+                className="h-9 px-4 py-2 bg-[#ffffff]  font-normal text-black text-sm text-center tracking-[0] leading-5 hover:bg-[#f0f0f0] transition-colors rounded inline-flex items-center justify-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Apply

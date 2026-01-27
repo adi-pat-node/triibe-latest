@@ -129,26 +129,26 @@ export default function Changemakers() {
         />
       </div>
 
-      <div className="bg-white rounded-b-2xl p-6 border border-t-0 border-gray-200 h-[280px] flex flex-col gap-3">
+      <div className="bg-white rounded-b-2xl p-6 border border-t-0 border-gray-200 h-70 flex flex-col gap-3">
         <div className="flex flex-col gap-1">
-          <h3 className="[font-family:'DM_Sans',Helvetica] font-semibold text-black text-lg">
+          <h3 className=" font-semibold text-black text-lg">
             {changemaker.name}
           </h3>
 
-          <p className="[font-family:'DM_Sans',Helvetica] font-medium text-[#495565] text-[10px] leading-5">
+          <p className=" font-medium text-[#495565] text-[10px] leading-5">
             {changemaker.title}
           </p>
         </div>
 
         {changemaker.university && (
           <div className="pt-1 border-t border-[#f2f4f6]">
-            <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#697282] text-xs leading-4">
+            <p className="font-normal text-[#697282] text-xs leading-4">
               {changemaker.university}
             </p>
           </div>
         )}
 
-        <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#354152] text-sm flex-1">
+        <p className=" font-normal text-[#354152] text-sm flex-1">
           {changemaker.description}
         </p>
       </div>
@@ -159,10 +159,10 @@ export default function Changemakers() {
     <section className="py-6 md:py-10 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-12">
-          <h2 className="[font-family:'DM_Sans',Helvetica] font-bold text-black text-4xl tracking-[-0.90px] leading-10 mb-4">
+          <h2 className=" font-bold text-black text-4xl tracking-[-0.90px] leading-10 mb-4">
             Our First Two Cohorts
           </h2>
-          <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#495565] text-lg leading-7">
+          <p className=" font-normal text-[#495565] text-lg leading-7">
             Undergraduate students building organizations that address critical
             social challenges
           </p>
@@ -171,7 +171,7 @@ export default function Changemakers() {
         {/* Row 1: 4 items centered */}
         <div className="flex flex-col sm:flex-row justify-center gap-6 mb-8">
           {cohort1.map((person, i) => (
-            <div key={i} className="w-full sm:max-w-[300px] flex-1">
+            <div key={i} className="w-full sm:max-w-75 flex-1">
               {renderCard(person, i)}
             </div>
           ))}
@@ -191,7 +191,7 @@ export default function Changemakers() {
       <div className="flex justify-center w-full mt-12 mb-8">
         <a
           href="/fellows"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors [font-family:'DM_Sans',Helvetica] font-semibold text-black text-sm"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors  font-semibold text-black text-sm"
         >
           View All Fellows
           <svg

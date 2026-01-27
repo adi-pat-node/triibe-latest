@@ -25,13 +25,13 @@ const outcomes = [
 
 export default function PostGraduationOutcomes() {
   return (
-    <section className="flex flex-col items-start px-4 md:px-[200px] py-20 w-full bg-gray-50 border-t border-b border-gray-200">
+    <section className="flex flex-col items-start px-4 md:px-50 py-20 w-full bg-gray-50 border-t border-b border-gray-200">
       <div className="flex flex-col items-start gap-16 w-full">
-        <div className="flex flex-col items-start gap-4 max-w-[768px]">
-          <h2 className="[font-family:'DM_Sans',Helvetica] font-bold text-[#000000] text-4xl tracking-[-0.90px] leading-10">
+        <div className="flex flex-col items-start gap-4 max-w-3xl">
+          <h2 className=" font-bold text-[#000000] text-4xl tracking-[-0.90px] leading-10">
             Beyond the Fellowship
           </h2>
-          <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#495565] text-lg tracking-[0] leading-[29.2px]">
+          <p className=" font-normal text-[#495565] text-lg tracking-[0] leading-[29.2px]">
             Support extends beyond graduation. TRIIBE alumni remain part of a
             community committed to sustained social impact.
           </p>
@@ -51,10 +51,10 @@ export default function PostGraduationOutcomes() {
                   width={48}
                   height={48}
                 />
-                <h3 className="[font-family:'DM_Sans',Helvetica] font-semibold text-[#000000] text-xl tracking-[0] leading-7">
+                <h3 className=" font-semibold text-[#000000] text-xl tracking-[0] leading-7">
                   {outcome.title}
                 </h3>
-                <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#495565] text-sm tracking-[0] leading-[22.8px]">
+                <p className=" font-normal text-[#495565] text-sm tracking-[0] leading-[22.8px]">
                   {outcome.description}
                 </p>
               </div>

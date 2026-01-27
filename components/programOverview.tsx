@@ -40,7 +40,7 @@ const programSections = [
 
 export default function ProgramOverview() {
   return (
-    <section className="flex flex-col w-full max-w-[1040px] mx-auto">
+    <section className="flex flex-col w-full max-w-260 mx-auto">
       {programSections.map((section, index) => (
         <div
           key={index}
@@ -60,12 +60,12 @@ export default function ProgramOverview() {
               <div className={`${section.bgColor} flex items-center`}>
                 <div className="flex flex-col justify-center gap-6 px-16 py-12 h-full">
                   <h2
-                    className={`${section.textColor} ${section.fontWeight} text-[32px] leading-10 [font-family:'DM_Sans',Helvetica]`}
+                    className={`${section.textColor} ${section.fontWeight} text-[32px] leading-10`}
                   >
                     {section.title}
                   </h2>
                   <p
-                    className={`${section.descriptionColor} text-lg leading-[29.2px] [font-family:'DM_Sans',Helvetica]`}
+                    className={`${section.descriptionColor} text-lg leading-[29.2px]`}
                   >
                     {section.description}
                   </p>
@@ -77,12 +77,12 @@ export default function ProgramOverview() {
               <div className={`${section.bgColor} flex items-center`}>
                 <div className="flex flex-col justify-center gap-6 px-16 py-12 h-full">
                   <h2
-                    className={`${section.textColor} ${section.fontWeight} text-[32px] leading-10 [font-family:'DM_Sans',Helvetica]`}
+                    className={`${section.textColor} ${section.fontWeight} text-[32px] leading-10 `}
                   >
                     {section.title}
                   </h2>
                   <p
-                    className={`${section.descriptionColor} text-lg leading-[29.2px] [font-family:'DM_Sans',Helvetica]`}
+                    className={`${section.descriptionColor} text-lg leading-[29.2px] `}
                   >
                     {section.description}
                   </p>

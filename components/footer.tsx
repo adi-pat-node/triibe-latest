@@ -32,14 +32,14 @@ const footerColumns = [
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-start pt-16 pb-0 px-4 md:px-[200px] relative w-full bg-white border-t border-gray-200">
-      <div className="flex flex-col items-start gap-12 relative w-full max-w-[1040px] mx-auto">
+    <footer className="flex flex-col items-start pt-16 pb-0 px-4 md:px-50 relative w-full bg-white border-t border-gray-200">
+      <div className="flex flex-col items-start gap-12 relative w-full max-w-260 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 w-full">
           <div className="flex flex-col items-start gap-4">
-            <h2 className="[font-family:'DM_Sans',Helvetica] font-normal text-black text-xl tracking-[0.50px] leading-7">
+            <h2 className=" font-normal text-black text-xl tracking-[0.50px] leading-7">
               TRIIBE
             </h2>
-            <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#495565] text-sm tracking-[0] leading-[22.8px]">
+            <p className=" font-normal text-[#495565] text-sm tracking-[0] leading-[22.8px]">
               Supporting undergraduate nonprofit founders with funding,
               mentorship, and community.
             </p>
@@ -47,7 +47,7 @@ export default function Footer() {
 
           {footerColumns.map((column, index) => (
             <div key={index} className="flex flex-col items-start gap-4">
-              <h3 className="[font-family:'DM_Sans',Helvetica] font-semibold text-black text-sm tracking-[0] leading-5">
+              <h3 className=" font-semibold text-black text-sm tracking-[0] leading-5">
                 {column.title}
               </h3>
               <nav className="flex flex-col items-start gap-2">
@@ -55,7 +55,7 @@ export default function Footer() {
                   <a
                     key={linkIndex}
                     href={link.href}
-                    className="[font-family:'DM_Sans',Helvetica] font-normal text-[#495565] text-sm tracking-[0] leading-5 hover:text-black transition-colors"
+                    className=" font-normal text-[#495565] text-sm tracking-[0] leading-5 hover:text-black transition-colors"
                   >
                     {link.label}
                   </a>
@@ -66,7 +66,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between w-full border-t border-gray-200 pt-4 pb-4 gap-4">
-          <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#697282] text-sm tracking-[0] leading-5">
+          <p className=" font-normal text-[#697282] text-sm tracking-[0] leading-5">
             © 2026 TRIIBE. All rights reserved.
           </p>
           <div className="flex items-center gap-4">

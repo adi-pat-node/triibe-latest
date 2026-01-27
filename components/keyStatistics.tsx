@@ -64,17 +64,17 @@ const partneredWithLogos = [
 
 export default function KeyStatistics() {
   return (
-    <section className="flex flex-col items-center px-4 md:px-[200px] py-20 w-full bg-[#f5fffb] border-t border-b border-gray-200">
-      <div className="flex flex-col items-center gap-20 w-full max-w-[1040px]">
+    <section className="flex flex-col items-center px-4 md:px-50 py-20 w-full bg-[#f5fffb] border-t border-b border-gray-200">
+      <div className="flex flex-col items-center gap-20 w-full max-w-260">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 w-full">
           {statistics.map((stat, index) => (
             <div key={index} className="flex flex-col items-center gap-2">
               <div className="h-12 flex items-center justify-center">
-                <h3 className="[font-family:'DM_Sans',Helvetica] font-normal text-[#000000] text-5xl text-center tracking-[-1.20px] leading-[48px] whitespace-nowrap">
+                <h3 className=" font-normal text-[#000000] text-5xl text-center tracking-[-1.20px] leading-12 whitespace-nowrap">
                   {stat.value}
                 </h3>
               </div>
-              <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#697282] text-xs text-center tracking-[0.60px] leading-4">
+              <p className=" font-normal text-[#697282] text-xs text-center tracking-[0.60px] leading-4">
                 {stat.label}
               </p>
             </div>
@@ -82,10 +82,10 @@ export default function KeyStatistics() {
         </div>
 
         <div className="flex flex-col items-center gap-8 w-full">
-          <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#697282] text-xs text-center tracking-[0.60px] leading-4">
+          <p className=" font-normal text-[#697282] text-xs text-center tracking-[0.60px] leading-4">
             SUPPORTED BY
           </p>
-          <div className="flex items-center justify-center gap-8 md:gap-[60px] flex-wrap  md:flex-nowrap">
+          <div className="flex items-center justify-center gap-8 md:gap-15 flex-wrap  md:flex-nowrap">
             {supportedByLogos.map((logo, index) => (
               <Image
                 key={index}
@@ -100,10 +100,10 @@ export default function KeyStatistics() {
         </div>
 
         <div className="flex flex-col items-center gap-8 w-full">
-          <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#697282] text-xs text-center tracking-[0.60px] leading-4">
+          <p className=" font-normal text-[#697282] text-xs text-center tracking-[0.60px] leading-4">
             PARTNERED WITH
           </p>
-          <div className="flex items-center justify-center gap-12 md:gap-[248px] flex-wrap  md:flex-nowrap">
+          <div className="flex items-center justify-center gap-12 md:gap-62 flex-wrap  md:flex-nowrap">
             {partneredWithLogos.map((logo, index) => (
               <Image
                 key={index}

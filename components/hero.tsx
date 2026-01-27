@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[600px] md:min-h-[700px] lg:min-h-[800px] bg-[#101828] flex items-center justify-center">
+    <section className="relative w-full min-h-150 md:min-h-175 lg:min-h-200 bg-[#101828] flex items-center justify-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 w-full h-full">
         <Image
@@ -20,10 +20,10 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center gap-6 px-6 py-16 max-w-[900px] mx-auto">
+      <div className="relative z-10 flex flex-col items-center gap-6 px-6 py-16 max-w-225 mx-auto">
         {/* Heading */}
         <div className="flex flex-col items-center">
-          <h1 className="[font-family:'DM_Sans',Helvetica] font-bold text-white text-4xl md:text-5xl lg:text-[64px] text-center tracking-tight leading-tight max-w-[800px]">
+          <h1 className="[font-family:'DM_Sans',Helvetica] font-bold text-white text-4xl md:text-5xl lg:text-[64px] text-center tracking-tight leading-tight max-w-200">
             Supporting
             <br />
             Undergraduate
@@ -34,7 +34,7 @@ export default function Hero() {
 
         {/* Description */}
         <div className="flex flex-col items-center mt-2">
-          <p className="[font-family:'DM_Sans',Helvetica] font-normal text-white text-base md:text-lg text-center tracking-[0] leading-relaxed max-w-[700px]">
+          <p className="[font-family:'DM_Sans',Helvetica] font-normal text-white text-base md:text-lg text-center tracking-[0] leading-relaxed max-w-175">
             TRIIBE provides funding, mentorship, and sustained community for
             college students building organizations that create social impact.
           </p>
