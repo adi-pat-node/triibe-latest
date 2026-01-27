@@ -11,6 +11,7 @@ import Changemakers from "@/components/changemakers";
 import PostGraduationOutcomes from "@/components/postGraduationOutcomes";
 import SponsorsAndPartners from "@/components/sponsorsAndPartners";
 import ImpactMetrics from "@/components/impactMetrics";
+import CTASection from "@/components/cta";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <PostGraduationOutcomes />
       <SponsorsAndPartners />
       <ImpactMetrics />
+      <CTASection />
       <Footer />
       {/* <Newsletter /> */}
     </div>
