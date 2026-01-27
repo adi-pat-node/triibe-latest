@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center gap-6 px-6 py-16 max-w-225 mx-auto">
         {/* Heading */}
         <div className="flex flex-col items-center">
-          <h1 className="[font-family:'DM_Sans',Helvetica] font-bold text-white text-4xl md:text-5xl lg:text-[64px] text-center tracking-tight leading-tight max-w-200">
+          <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-4xl md:text-5xl lg:text-[64px] text-center tracking-tight leading-tight max-w-200">
             Supporting
             <br />
             Undergraduate
@@ -34,7 +34,7 @@ export default function Hero() {
 
         {/* Description */}
         <div className="flex flex-col items-center mt-2">
-          <p className="[font-family:'DM_Sans',Helvetica] font-normal text-white text-base md:text-lg text-center tracking-[0] leading-relaxed max-w-175">
+          <p className="font-['DM_Sans',Helvetica]font-normal text-white text-base md:text-lg text-center tracking-[0] leading-relaxed max-w-175">
             TRIIBE provides funding, mentorship, and sustained community for
             college students building organizations that create social impact.
           </p>
@@ -44,14 +44,14 @@ export default function Hero() {
         <div className="flex items-center justify-center gap-3 mt-4 flex-wrap">
           <a
             href="/partner"
-            className="px-6 py-3 bg-white text-black hover:bg-gray-100 [font-family:'DM_Sans',Helvetica] font-normal text-sm rounded inline-flex items-center justify-center transition-colors"
+            className="px-6 py-3 bg-white text-black hover:bg-gray-100 font-['DM_Sans',Helvetica] font-normal text-sm rounded inline-flex items-center justify-center transition-colors"
           >
             Partner with TRIIBE
           </a>
 
           <a
             href="/apply"
-            className="px-6 py-3 bg-white text-black hover:bg-gray-100 [font-family:'DM_Sans',Helvetica] font-normal text-sm rounded inline-flex items-center justify-center transition-colors gap-2"
+            className="px-6 py-3 bg-white text-black hover:bg-gray-100 font-['DM_Sans',Helvetica] font-normal text-sm rounded inline-flex items-center justify-center transition-colors gap-2"
           >
             Apply to Fellowship
             <ArrowRight className="w-4 h-4" />
