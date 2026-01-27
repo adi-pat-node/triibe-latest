@@ -167,7 +167,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${dmSans.variable} ${geist.className} antialiased`}>
+      <body className={`${dmSans.className}  antialiased`}>
         {children}
         <Analytics />
       </body>
