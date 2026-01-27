@@ -21,7 +21,7 @@ const footerLinks = [
 
 export default function ApplicationProcess() {
   return (
-    <section className="flex flex-col items-start gap-12 px-4 md:px-[200px] py-20 w-full bg-gray-50">
+    <section className="flex flex-col items-start gap-12 px-4 md:px-50 py-20 w-full bg-gray-50">
       <header className="flex flex-col items-start gap-4 w-full">
         <h2 className="[font-family:'DM_Sans',Helvetica] font-bold text-[#000000] text-4xl tracking-[-0.90px] leading-10">
           Apply to the Fellowship
