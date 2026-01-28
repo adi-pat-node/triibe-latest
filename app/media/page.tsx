@@ -466,7 +466,7 @@ const MediaPage = () => {
       </section>
 
       {/* Latest Newsletter Section */}
-      <section className="py-20 px-4 md:px-50 bg-white">
+      {/* <section className="py-20 px-4 md:px-50 bg-white">
         <div className="max-w-300 mx-auto">
           <div className="flex items-center justify-between mb-12">
             <h2 className="font-bold text-black text-3xl">Latest Newsletter</h2>
@@ -570,7 +570,7 @@ const MediaPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Social Links */}
       <section className="py-12 bg-gray-50 ">
