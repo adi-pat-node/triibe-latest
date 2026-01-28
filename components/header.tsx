@@ -24,9 +24,10 @@ export default function Header() {
           {[
             { name: "Home", href: "/" },
             { name: "Program", href: "/program" },
-            { name: "Changemakers", href: "/changemakers" },
+            { name: "Events", href: "/events" },
             { name: "Media", href: "/media" },
-            { name: "About", href: "/about" },
+            { name: "About Us", href: "/about" },
+            { name: "Contact Us", href: "/contact" },
           ].map((link) => (
             <a
               key={link.href}
