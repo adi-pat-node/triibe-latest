@@ -128,3 +128,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Prevent body scroll when Zeffy modal is open */
+body:has([id*="zeffy-modal"]),
+body:has([class*="zeffy-modal"]) {
+  overflow: hidden !important;
+  position: fixed !important;
+  width: 100% !important;
+}
