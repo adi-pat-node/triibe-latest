@@ -162,7 +162,7 @@ const ProgramPage = () => {
               </h1>
 
               <div className="inline-block">
-                <span className="inline-block px-4 py-2 bg-[#c6f82a]  font-bold text-black text-sm tracking-[0] leading-5">
+                <span className="inline-block px-4 py-2 bg-[#3036411A]  font-bold text-black text-sm tracking-[0] leading-5">
                   3-YEAR FELLOWSHIP
                 </span>
               </div>
@@ -207,7 +207,7 @@ const ProgramPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Pillar 1 - Funding */}
               <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
-                <div className="w-12 h-12 bg-[#c6f82a] rounded flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#3036411A] rounded flex items-center justify-center">
                   <span className=" font-bold text-black text-xl">1</span>
                 </div>
                 <h3 className=" font-semibold text-black text-xl leading-7">
@@ -221,7 +221,7 @@ const ProgramPage = () => {
 
               {/* Pillar 2 - Mentorship */}
               <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
-                <div className="w-12 h-12 bg-[#c6f82a] rounded flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#3036411A] rounded flex items-center justify-center">
                   <span className=" font-bold text-black text-xl">2</span>
                 </div>
                 <h3 className=" font-semibold text-black text-xl leading-7">
@@ -235,7 +235,7 @@ const ProgramPage = () => {
 
               {/* Pillar 3 - Community */}
               <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
-                <div className="w-12 h-12 bg-[#c6f82a] rounded flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#3036411A] rounded flex items-center justify-center">
                   <span className=" font-bold text-black text-xl">3</span>
                 </div>
                 <h3 className=" font-semibold text-black text-xl leading-7">
@@ -252,7 +252,7 @@ const ProgramPage = () => {
       </section>
 
       {/* Your 3-Year Journey Section */}
-      <section className="py-20 px-4 md:px-50 bg-gray-50">
+      <section className="py-20 px-4 md:px-50 bg-[#eef0f3]">
         <div className="max-w-260 mx-auto">
           <div className="flex flex-col gap-16">
             <h2 className=" font-bold text-black text-4xl text-center tracking-[-0.90px] leading-10">

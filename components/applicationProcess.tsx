@@ -10,8 +10,8 @@ const eligibilityRequirements = [
 ];
 
 const cohortDetails = [
-  { label: "Cohort Size", value: "~25 Fellows" },
-  { label: "Duration", value: "6 Months" },
+  { label: "Cohort Size", value: "5 Fellows" },
+  { label: "Duration", value: "3 years" },
 ];
 
 const footerLinks = [
@@ -65,10 +65,9 @@ export default function ApplicationProcess() {
 
               <a
                 href="/apply"
-                className="w-full h-12 bg-[#002c19] hover:bg-[#003d24] text-white rounded border border-[#002c19]  font-semibold text-base inline-flex items-center justify-center transition-colors"
+                className="w-full h-12 bg-[#1C5945] hover:bg-[#003d24] text-white rounded border border-[#1C5945]  font-semibold text-base inline-flex items-center justify-center transition-colors"
               >
                 Begin Application
-                <ArrowRight className="w-4 h-4 ml-2" />
               </a>
             </div>
           </div>
@@ -99,7 +98,7 @@ export default function ApplicationProcess() {
                 <a
                   key={index}
                   href={link.href}
-                  className="border-b border-[#99a1ae]  font-normal text-[#101727] text-sm leading-5 hover:text-[#000000] transition-colors"
+                  className="border-b border-[#99a1ae]  font-normal text-[#101727] text-xs leading-5 hover:text-[#000000] transition-colors"
                 >
                   {link.text}
                 </a>

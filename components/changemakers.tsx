@@ -1,3 +1,4 @@
+import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 
 interface Changemaker {
@@ -60,15 +61,16 @@ export default function Changemakers() {
 
   const cohort2: Changemaker[] = [
     {
-      name: "Varuni Chopra",
-      title: "Founder, Bridge the Gap Initiative",
-      university: "Georgia Institute of Technology",
+      name: "Samin Bhan",
+      title: "Founder, Lookupp",
+      university: "Stanford University, '28",
       description:
-        "Empower senior citizens to confidently use technology by providing accessible and community-driven education that connects them to essential digital tools and services",
-      founded: "FOUNDED 2022",
-      image: "/images/home/VaruniChopra.png",
-      website: "https://helpinghandsmain.wixsite.com/mysite",
+        "Revive the culture of in-person interaction through a mobile app",
+      founded: "FOUNDED 2021",
+      image: "/images/home/SaminBhan.png",
+      website: "https://www.lookupp.net/",
     },
+
     {
       name: "Shrusti Amula",
       title: "Founder, Rise N Shine Foundation",
@@ -80,6 +82,16 @@ export default function Changemakers() {
       website: "https://www.risenshinefoundation.org/",
     },
     {
+      name: "Varuni Chopra",
+      title: "Founder, Bridge the Gap Initiative",
+      university: "Georgia Institute of Technology",
+      description:
+        "Empower senior citizens to confidently use technology by providing accessible and community-driven education that connects them to essential digital tools and services",
+      founded: "FOUNDED 2022",
+      image: "/images/home/VaruniChopra.png",
+      website: "https://helpinghandsmain.wixsite.com/mysite",
+    },
+    {
       name: "Nayla Jimenez",
       title: "Founder, Philippine Health Initiative",
       university: "University of Florida '27",
@@ -89,16 +101,7 @@ export default function Changemakers() {
       image: "/images/home/NaylaJimenez.png",
       website: "https://www.philippinehealthinitiative.org/",
     },
-    {
-      name: "Samin Bhan",
-      title: "Founder, Lookupp",
-      university: "Stanford University, '28",
-      description:
-        "Revive the culture of in-person interaction through a mobile app",
-      founded: "FOUNDED 2021",
-      image: "/images/home/SaminBhan.png",
-      website: "https://www.lookupp.net/",
-    },
+
     {
       name: "Gitanjali Rao",
       title: "Founder, Vervient Foundation",
@@ -193,20 +196,8 @@ export default function Changemakers() {
           href="/fellows"
           className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors  font-semibold text-black text-sm"
         >
-          View All Fellows
-          <svg
-            className="w-4 h-4"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
+          View All Cohort
+          <ArrowRightIcon className="w-4 h-4" />
         </a>
       </div>
     </section>

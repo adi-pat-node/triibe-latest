@@ -51,7 +51,7 @@ export default function PostGraduationOutcomes() {
                   width={48}
                   height={48}
                 />
-                <h3 className=" font-semibold text-[#000000] text-xl tracking-[0] leading-7">
+                <h3 className=" font-semibold text-[#000000] text-lg tracking-[0] leading-7">
                   {outcome.title}
                 </h3>
                 <p className=" font-normal text-[#495565] text-sm tracking-[0] leading-[22.8px]">
@@ -60,6 +60,13 @@ export default function PostGraduationOutcomes() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Programs Button */}
+        <div className="flex justify-center w-full">
+          <button className="px-6 py-3 bg-[#1a5a4a] hover:bg-[#144539] text-white font-semibold rounded-lg transition-colors">
+            Programs
+          </button>
         </div>
       </div>
     </section>

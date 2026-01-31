@@ -54,7 +54,7 @@ export default function FellowshipBenefits() {
         </p>
       </div>
 
-      <div className="w-full border-t border-gray-200 bg-white rounded-lg">
+      <div className="w-full border-t border-gray-200 rounded-lg">
         <div className="p-0">
           {benefits.map((benefit, index) => (
             <div
