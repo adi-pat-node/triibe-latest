@@ -130,7 +130,7 @@ const page = () => {
             </div>
 
             {/* The Solution Card */}
-            <div className="bg-[#aedff7] p-12 rounded-lg">
+            <div className="bg-[#3036411A] p-12 rounded-lg">
               <h3 className="font-bold text-black text-3xl mb-6">
                 The Solution
               </h3>
@@ -245,7 +245,7 @@ const page = () => {
       {/* What the Summit Is Section */}
       <section
         id="changemaker-summit-2025"
-        className="py-20 px-4 md:px-50 bg-[#e8f4f8] border-t border-b border-gray-200"
+        className="py-20 px-4 md:px-50 bg-[#3036411A] border-t border-b border-gray-200"
       >
         <div className="max-w-300 mx-auto">
           {/* Badge */}
@@ -673,7 +673,7 @@ const page = () => {
       {/* What the Summit Is Section */}
       <section
         id="davos-summit-2026"
-        className="py-20 px-4 md:px-50 bg-[#e8f4f8] border-t border-b border-gray-200"
+        className="py-20 px-4 md:px-50 bg-[#3036411A] border-t border-b border-gray-200"
       >
         <div className="max-w-300 mx-auto">
           {/* Badge */}
@@ -1101,7 +1101,7 @@ const page = () => {
       {/* What the Summit Is Section */}
       <section
         id="event-3-2026"
-        className="py-20 px-4 md:px-50 bg-[#e8f4f8] border-t border-b border-gray-200"
+        className="py-20 px-4 md:px-50 bg-[#3036411A] border-t border-b border-gray-200"
       >
         <div className="max-w-300 mx-auto">
           {/* Badge */}

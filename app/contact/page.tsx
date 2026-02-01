@@ -1,15 +1,28 @@
 import React from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import CTASection from "@/components/cta";
 const page = () => {
   return (
     <main>
       <Header />
-      <section>
-        <div className="h-screen mt-32 items-start flex justify-center">
-          <h1 className="text-3xl">Page under construction</h1>
+
+      <section className="pt-16 pb-8 px-4 md:px-[200px] bg-white">
+        <div className="max-w-[1200px] mx-auto">
+          {/* Heading - Centered */}
+          <h1 className="text-5xl md:text-5xl font-bold text-gray-900 mb-4 text-center">
+            Contact Us
+          </h1>
+
+          {/* Subheading - Centered */}
+          <p className="text-lg text-gray-600 mb-4 text-center">
+            Let's build a stronger generation of nonprofits together
+          </p>
         </div>
       </section>
+
+      <CTASection />
+
       <Footer />
     </main>
   );

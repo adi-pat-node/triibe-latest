@@ -67,7 +67,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between w-full border-t border-gray-200 pt-4 pb-4 gap-4">
           <p className=" font-normal text-[#697282] text-sm tracking-[0] leading-5">
-            © 2026 TRIIBE. All rights reserved.
+            © 2026 TRIIBE 501(c)(3). All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a

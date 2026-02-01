@@ -1,8 +1,20 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Image from "next/image";
-const page = () => {
+import Link from "next/link";
+
+const Page = () => {
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const handleCancel = () => {
+    if (formRef.current) {
+      formRef.current.reset();
+    }
+  };
+
   return (
     <main>
       <Header />
@@ -79,7 +91,23 @@ const page = () => {
           </p>
 
           <div className="bg-white rounded-lg p-8 md:p-12">
-            <form>
+            <form
+              ref={formRef}
+              action="https://formsubmit.co/team@triibe.us"
+              method="POST"
+            >
+              {/* Hidden FormSubmit configurations */}
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Cohort Application"
+              />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://yourwebsite.com/apply?submitted=true"
+              />
               {/* Row 1: Full Name and Email */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
@@ -88,6 +116,7 @@ const page = () => {
                   </label>
                   <input
                     type="text"
+                    name="Full Name"
                     placeholder="Enter your full name"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
                     required
@@ -100,6 +129,7 @@ const page = () => {
                   </label>
                   <input
                     type="email"
+                    name="Email"
                     placeholder="your.email@university.edu"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
                     required
@@ -115,6 +145,7 @@ const page = () => {
                   </label>
                   <input
                     type="url"
+                    name="LinkedIn Profile"
                     placeholder="https://linkedin.com/in/yourprofile"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
                   />
@@ -126,6 +157,7 @@ const page = () => {
                   </label>
                   <input
                     type="text"
+                    name="Location"
                     placeholder="City, State/Country"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
                     required
@@ -141,6 +173,7 @@ const page = () => {
                   </label>
                   <input
                     type="text"
+                    name="Organization Name"
                     placeholder="Your nonprofit organization name"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
                     required
@@ -153,6 +186,7 @@ const page = () => {
                   </label>
                   <input
                     type="url"
+                    name="Organization Website"
                     placeholder="https://"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
                   />
@@ -167,6 +201,7 @@ const page = () => {
                   </label>
                   <input
                     type="url"
+                    name="Video Application Link"
                     placeholder="https://youtube.com/watch?v=... or Loom link"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
                     required
@@ -182,6 +217,7 @@ const page = () => {
                     Message to the Team
                   </label>
                   <textarea
+                    name="Message"
                     placeholder="Is there anything else you'd like us to know?"
                     rows={4}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent resize-none"
@@ -190,17 +226,17 @@ const page = () => {
               </div>
 
               {/* Form Actions */}
-              {/* Form Actions */}
               <div className="border-t border-gray-200 pt-6 flex justify-end gap-4">
                 <button
                   type="button"
-                  className="px-8 py-3 bg-white text-black border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors font-semibold text-base"
+                  onClick={handleCancel}
+                  className="px-8 py-3 bg-white text-black border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors font-semibold text-base cursor-pointer"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="px-8 py-3 bg-[#002c19] text-white rounded-lg hover:bg-[#003d24] transition-colors font-semibold text-base"
+                  className="px-8 py-3 bg-[#002c19] text-white rounded-lg hover:bg-[#003d24] transition-colors font-semibold text-base cursor-pointer"
                 >
                   Submit Application
                 </button>
@@ -210,9 +246,30 @@ const page = () => {
         </div>
       </section>
 
+      {/* Deck Section */}
+      <section className="py-12 px-6 bg-white">
+        <div className="max-w-260 mx-auto">
+          <div className="max-w-7xl mx-auto transition-all duration-300 hover:scale-105">
+            <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+              <p className="text-2xl md:text-3xl font-medium text-gray-900">
+                For a Full Overview, See Our Deck
+              </p>
+              <Link
+                href="https://drive.google.com/file/d/1XxPb8UfeLXAVUy2zl0mle1lkUe7A2q1K/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-black text-black px-10 py-3 rounded-full font-semibold text-base hover:bg-green-950 hover:text-white hover:scale-105 transition-all duration-300 whitespace-nowrap"
+              >
+                View
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </main>
   );
 };
 
-export default page;
+export default Page;

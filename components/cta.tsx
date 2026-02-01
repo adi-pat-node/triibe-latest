@@ -3,22 +3,40 @@
 import { useEffect } from "react";
 
 export default function CTASection() {
-  // useEffect(() => {
-  //   // Watch for Zeffy modal
-  //   const observer = new MutationObserver(() => {
-  //     const modal = document.querySelector('[class*="zeffy"]');
-  //     if (modal && modal.parentElement?.style.display !== "none") {
-  //       document.body.classList.add("zeffy-modal-open");
-  //     } else {
-  //       document.body.classList.remove("zeffy-modal-open");
-  //     }
-  //   });
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      const zeffyModal = document.querySelector(
+        'iframe[src*="zeffy.com"]',
+      ) as HTMLIFrameElement | null;
 
-  //   observer.observe(document.body, { childList: true, subtree: true });
+      if (zeffyModal && zeffyModal.offsetParent !== null) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "";
+      }
+    });
 
-  //   return () => observer.disconnect();
-  // }, []);
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ["style", "class"],
+    });
 
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        document.body.style.overflow = "";
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, []);
   return (
     <section className="py-20 px-4 md:px-50 bg-[#002c19]">
       <div className="max-w-260 mx-auto">
@@ -64,18 +82,12 @@ export default function CTASection() {
               Your donation helps founders make an impact in food, water,
               shelter, health, education, and energy.
             </p>
-            {/* <button
+            <button
               zeffy-form-link="https://www.zeffy.com/embed/donation-form/invest-in-the-future-3?modal=true"
-              className="w-full px-6 py-3 bg-white text-black rounded hover:bg-gray-100 transition-colors font-semibold text-base text-center"
+              className="w-full px-6 py-3 bg-white text-black rounded hover:bg-gray-100 transition-colors font-semibold text-base text-center cursor-pointer"
             >
               Donate
-            </button> */}
-            <a
-              href="/#"
-              className="w-full px-6 py-3 bg-white text-black rounded hover:bg-gray-100 transition-colors  font-semibold text-base text-center"
-            >
-              Donate
-            </a>
+            </button>
           </div>
         </div>
       </div>

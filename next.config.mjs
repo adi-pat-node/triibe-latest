@@ -20,7 +20,7 @@ const nextConfig = {
           {
             key: "Content-Security-Policy",
             value:
-              "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.zeffy.com https://*.zeffy.com https://zeffy-scripts.s3.ca-central-1.amazonaws.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline' https://www.zeffy.com https://*.zeffy.com; img-src 'self' data: https:; font-src 'self' data: https://www.zeffy.com https://*.zeffy.com; connect-src 'self' https://www.zeffy.com https://*.zeffy.com ; frame-src 'self' https://www.zeffy.com https://*.zeffy.com https://www.youtube.com https://luma.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://www.zeffy.com https://*.zeffy.com;",
+              "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.zeffy.com https://*.zeffy.com https://zeffy-scripts.s3.ca-central-1.amazonaws.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline' https://www.zeffy.com https://*.zeffy.com; img-src 'self' data: https:; font-src 'self' data: https://www.zeffy.com https://*.zeffy.com; connect-src 'self' https://www.zeffy.com https://*.zeffy.com ; frame-src 'self' https://www.zeffy.com https://*.zeffy.com https://www.youtube.com https://luma.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://www.zeffy.com https://*.zeffy.com https://formsubmit.co;",
           },
           {
             key: "X-Frame-Options",

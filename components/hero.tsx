@@ -7,13 +7,13 @@ export default function Hero() {
   return (
     <section className="relative w-full min-h-150 md:min-h-175 lg:min-h-200 bg-[#101828] flex items-center justify-center">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 w-full h-full">
+      <div className="absolute inset-0 w-full h-full ">
         <Image
-          src="/images/home/heroImage.jpg"
+          src="/images/home/heroImage.png"
           alt="College students collaborating"
           fill
           priority
-          className="object-cover"
+          className="object-fit"
           sizes="100vw"
         />
         <div className="absolute inset-0 w-full h-full bg-black/60" />

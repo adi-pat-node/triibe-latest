@@ -551,8 +551,8 @@ const page = () => {
 
           {/* Photo Grid */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
-            <div className="bg-[#c6f82a] aspect-square rounded-lg"></div>
-            <div className="bg-[#c6f82a] aspect-square rounded-lg"></div>
+            <div className="bg-[#B4E9A0] aspect-square rounded-lg"></div>
+            <div className="bg-[#B4E9A0] aspect-square rounded-lg"></div>
             <div className="relative aspect-square rounded-lg overflow-hidden">
               <Image
                 src="/images/about/about-photo-1.jpg"

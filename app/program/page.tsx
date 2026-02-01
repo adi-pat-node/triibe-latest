@@ -4,7 +4,15 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import CTASection from "@/components/cta";
 import { useState } from "react";
-import { ChevronLeft, ChevronRight, Plus, Minus } from "lucide-react";
+import Link from "next/link";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Plus,
+  Minus,
+  ArrowRightIcon,
+} from "lucide-react";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -80,10 +88,10 @@ function TestimonialCarousel() {
   return (
     <div className="flex flex-col gap-12">
       <div className="text-center">
-        <h2 className=" font-bold text-white text-4xl mb-4 tracking-[-0.90px] leading-10">
+        <h2 className=" font-bold text-black text-4xl mb-4 tracking-[-0.90px] leading-10">
           Hear from Our Fellows
         </h2>
-        <p className=" font-normal text-[#98D3D8] text-lg">
+        <p className=" font-normal text-[#303641] text-lg">
           Real stories from student founders who've built sustainable impact
         </p>
       </div>
@@ -94,24 +102,24 @@ function TestimonialCarousel() {
           className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors shrink-0"
           aria-label="Previous testimonial"
         >
-          <ChevronLeft className="w-6 h-6 text-white" />
+          <ChevronLeft className="w-8 h-8 text-black" />
         </button>
 
         <div className="flex-1 text-center">
           <blockquote className="mb-8">
-            <p className=" font-normal text-white text-2xl md:text-3xl leading-relaxed mb-8">
+            <p className=" font-normal text-black text-2xl md:text-3xl leading-relaxed mb-8">
               "{currentTestimonial.quote}"
             </p>
           </blockquote>
 
           <div className="flex flex-col gap-2">
-            <p className=" font-semibold text-[#98D3D8] text-lg">
+            <p className=" font-semibold text-[#303641] text-lg">
               {currentTestimonial.name}
             </p>
-            <p className=" font-normal text-white text-base">
+            <p className=" font-normal text-black text-base">
               {currentTestimonial.year}
             </p>
-            <p className=" font-normal text-white text-base">
+            <p className=" font-normal text-black text-base">
               {currentTestimonial.organization}
             </p>
           </div>
@@ -122,7 +130,7 @@ function TestimonialCarousel() {
           className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors shrink-0"
           aria-label="Next testimonial"
         >
-          <ChevronRight className="w-6 h-6 text-white" />
+          <ChevronRight className="w-8 h-8 text-black" />
         </button>
       </div>
 
@@ -132,7 +140,7 @@ function TestimonialCarousel() {
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-2 h-2 rounded-full transition-all ${
-              index === currentIndex ? "bg-[#98D3D8] w-8" : "bg-white w-2"
+              index === currentIndex ? "bg-[#303641] w-8" : "bg-black w-2"
             }`}
             aria-label={`Go to testimonial ${index + 1}`}
           />
@@ -153,7 +161,7 @@ const ProgramPage = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 md:px-50 bg-white">
+      <section className="pt-16 pb-20 px-4 md:px-50 bg-white">
         <div className="max-w-260 mx-auto">
           <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-6">
@@ -186,6 +194,31 @@ const ProgramPage = () => {
               >
                 Apply
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Problem Visual/Infographic */}
+      <section className="  px-6 bg-white">
+        <div className="max-w-260 mx-auto">
+          <div className="max-w-5xl mx-auto text-center">
+            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+              TRIIBE Bridges the Gap for Changemakers Entering College
+            </h1>
+          </div>
+
+          {/* <section className="py-8 px-6 bg-gray-50"> */}
+          <div className="max-w-7xl mx-auto">
+            <div className="relative w-full h-100 ">
+              <div className="relative w-full h-100 rounded-2xl overflow-hidden bg-white">
+                <Image
+                  src="/images/programs/problem_infographic1.png"
+                  alt="The Problem - 80% of student-led nonprofits fade within a year"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -252,7 +285,7 @@ const ProgramPage = () => {
       </section>
 
       {/* Your 3-Year Journey Section */}
-      <section className="py-20 px-4 md:px-50 bg-[#eef0f3]">
+      <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
         <div className="max-w-260 mx-auto">
           <div className="flex flex-col gap-16">
             <h2 className=" font-bold text-black text-4xl text-center tracking-[-0.90px] leading-10">
@@ -486,21 +519,8 @@ const ProgramPage = () => {
                   <span className=" font-normal text-black text-base">
                     Set goals
                   </span>
+                  <ArrowRightIcon className="w-4 h-4 text-[#354152]" />
                 </div>
-
-                <svg
-                  className="w-6 h-6 text-gray-400 hidden md:block"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
 
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center shrink-0">
@@ -509,21 +529,8 @@ const ProgramPage = () => {
                   <span className=" font-normal text-black text-base">
                     Mentor sessions
                   </span>
+                  <ArrowRightIcon className="w-4 h-4 text-[#354152]" />
                 </div>
-
-                <svg
-                  className="w-6 h-6 text-gray-400 hidden md:block"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
 
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center shrink-0">
@@ -532,21 +539,8 @@ const ProgramPage = () => {
                   <span className=" font-normal text-black text-base">
                     Work sprint
                   </span>
+                  <ArrowRightIcon className="w-4 h-4 text-[#354152]" />
                 </div>
-
-                <svg
-                  className="w-6 h-6 text-gray-400 hidden md:block"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
 
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center shrink-0">
@@ -682,14 +676,35 @@ const ProgramPage = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 px-4 md:px-50 bg-black">
+      <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
         <div className="max-w-260 mx-auto">
           <TestimonialCarousel />
         </div>
       </section>
 
+      {/* Deck Section */}
+      <section className="py-12 px-6 bg-white">
+        <div className="max-w-260 mx-auto">
+          <div className="max-w-7xl mx-auto transition-all duration-300 hover:scale-105">
+            <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+              <p className="text-2xl md:text-3xl font-medium text-gray-900">
+                For a Full Overview, See Our Deck
+              </p>
+              <Link
+                href="https://drive.google.com/file/d/1XxPb8UfeLXAVUy2zl0mle1lkUe7A2q1K/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-black text-black px-10 py-3 rounded-full font-semibold text-base hover:bg-green-950 hover:text-white hover:scale-105 transition-all duration-300 whitespace-nowrap"
+              >
+                View
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
-      <section className="py-20 px-4 md:px-50 bg-gray-50">
+      <section className="py-20 px-4 md:px-50 bg-[#F5F5F5]">
         <div className="max-w-260 mx-auto flex flex-col gap-12">
           <h2 className=" font-bold text-black text-4xl text-center tracking-[-0.90px] leading-10">
             Frequently Asked Questions
