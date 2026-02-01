@@ -159,21 +159,21 @@ const europe = [
     role: "Member",
     bio: "Sina Albanese is the co-founder and CEO of Koralo, building fermentation powered functional foods (including seafood alternatives) and scaling the brand from South Korea into new markets.",
     image: "/images/about/team/Sina Albanese.jpg",
-    linkedin: "https://www.linkedin.com",
+    linkedin: "https://www.linkedin.com/in/sina-albanese/",
   },
   {
     name: "Chirag Nijjer",
     role: "Member",
     bio: "Chirag Nijjer is a Customer Centricity leader at Google and a brand marketing keynote speaker and creator who decodes brand history and storytelling for modern marketing.",
     image: "/images/about/team/Chirag Nijjer.png",
-    linkedin: "https://www.linkedin.com",
+    linkedin: "https://www.linkedin.com/in/chiragspeaks/",
   },
   {
     name: "Frederick Tsao",
     role: "Member",
     bio: "Frederick Mochizuki Tsao is at Pavilion Capital and describes himself as a fifth generation steward to his family business, with a Middlebury College background.",
     image: "/images/about/team/Frederick Tsao.jpg",
-    linkedin: "https://www.linkedin.com",
+    linkedin: "https://www.linkedin.com/in/frederick-mochizuki-tsao/",
   },
 ];
 const africa = [
