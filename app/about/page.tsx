@@ -535,7 +535,7 @@ const page = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-16 pb-20 px-4 md:px-50 bg-white     ">
+      <section className="pt-32 pb-20 px-4 md:px-50 bg-white     ">
         <div className="max-w-300 mx-auto">
           <div className="flex items-start justify-between mb-12">
             <h1 className="font-bold text-black text-5xl md:text-6xl">

@@ -20,7 +20,7 @@ const Page = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-16 pb-8 px-4 md:px-[200px] bg-white">
+      <section className="pt-32 pb-8 px-4 md:px-[200px] bg-white">
         <div className="max-w-[1200px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-[0.8fr_1.2fr]  gap-16 items-start">
             {/* Left - Image */}
@@ -81,7 +81,7 @@ const Page = () => {
       </section>
 
       {/* Application Form Section */}
-      <section className="py-20 px-4 md:px-[200px] bg-[#F6FEEF]">
+      <section className="py-20 px-4 md:px-[200px] bg-[#3036411A]">
         <div className="max-w-[1200px] mx-auto">
           <h2 className="font-bold text-black text-4xl mb-4">
             Application Form

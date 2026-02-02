@@ -161,7 +161,7 @@ const ProgramPage = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-16 pb-20 px-4 md:px-50 bg-white">
+      <section className="pt-32 pb-20 px-4 md:px-50 bg-white">
         <div className="max-w-260 mx-auto">
           <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-6">
@@ -704,7 +704,7 @@ const ProgramPage = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 px-4 md:px-50 bg-[#F5F5F5]">
+      <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
         <div className="max-w-260 mx-auto flex flex-col gap-12">
           <h2 className=" font-bold text-black text-4xl text-center tracking-[-0.90px] leading-10">
             Frequently Asked Questions

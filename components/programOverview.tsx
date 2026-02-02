@@ -48,7 +48,7 @@ export default function ProgramOverview() {
         >
           {section.imagePosition === "left" ? (
             <>
-              <div className="relative w-full h-full min-h-[490px]">
+              <div className="relative w-full h-full min-h-[490px] order-2 md:order-1">
                 <Image
                   src={section.imageUrl}
                   alt={`${section.title} illustration`}
@@ -57,7 +57,9 @@ export default function ProgramOverview() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
-              <div className={`${section.bgColor} flex items-center`}>
+              <div
+                className={`${section.bgColor} flex items-center order-1 md:order-2`}
+              >
                 <div className="flex flex-col justify-center gap-6 px-16 py-12 h-full">
                   <h2
                     className={`${section.textColor} ${section.fontWeight} text-[32px] leading-10`}

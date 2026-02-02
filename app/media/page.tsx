@@ -243,7 +243,7 @@ const MediaPage = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-16 pb-20 px-4 md:px-50 bg-white">
+      <section className="pt-32 pb-20 px-4 md:px-50 bg-white">
         <div className="max-w-300 mx-auto">
           <div className="mb-12">
             <h1 className="font-bold text-black text-5xl mb-4">TRIIBE Talk</h1>
@@ -361,7 +361,7 @@ const MediaPage = () => {
       </section>
 
       {/* Media Cards Section */}
-      <section className="py-20 px-4 md:px-50 bg-gray-50">
+      <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
         <div className="max-w-300 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Podcasts Card */}
@@ -711,7 +711,7 @@ const MediaPage = () => {
       </section>
 
       {/* Social Links */}
-      <section className="py-12 bg-gray-50 ">
+      <section className="py-12 bg-[#3036411A] ">
         <div className="max-w-4xl mx-auto px-6">
           <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
             Connect With Us

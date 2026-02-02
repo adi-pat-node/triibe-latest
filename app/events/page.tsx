@@ -45,7 +45,7 @@ const page = () => {
     <main>
       <Header />
       {/* Hero Section */}
-      <section className="pt-16 pb-20 px-4 md:px-50 bg-white">
+      <section className="pt-32 pb-20 px-4 md:px-50 bg-white">
         <div className=" mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 items-center ">
             {/* Left Content */}
