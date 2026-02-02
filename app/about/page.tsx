@@ -30,7 +30,7 @@ const teamMembers = [
   {
     name: "James Hetherington",
     role: "Board Member",
-    bio: "James Maxwell is a Middlebury College student and the Strategic Partnerships Lead at TRIIBE, with a diverse background spanning software engineering, finance, and entrepreneurship.",
+    bio: "James Hetherington is a Greater Boston professional at Natoma and a Middlebury College alum.",
     image: "/images/about/team/JamesHetherington.jpg",
     linkedin: "https://www.linkedin.com/in/james-hetherington-590b981b8/",
   },
