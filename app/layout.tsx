@@ -168,7 +168,7 @@ export default function RootLayout({
         />
         <script src="https://zeffy-scripts.s3.ca-central-1.amazonaws.com/embed-form-script.min.js"></script>
       </head>
-      <body className={`${dmSans.className}  antialiased overflow-x-hidden`}>
+      <body className={`${dmSans.className}  antialiased `}>
         {children}
         <Analytics />
       </body>

@@ -14,7 +14,7 @@ export default function Header() {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <header className=" fixed top-0 left-0 right-0  z-50 w-full bg-[#002c19] border-b border-[#002c19]">
+    <header className=" fixed top-0 left-0 right-0  z-50 w-full max-w-[100vw] overflow-hidden bg-[#002c19] border-b border-[#002c19]">
       <nav className="flex h-16 items-center justify-between w-full px-4 md:px-50 ">
         {/* Logo */}
         <div className=" font-normal text-[#ffffff] text-xl tracking-[0.50px] leading-7">
