@@ -44,7 +44,9 @@ export default function Header() {
               key={link.href}
               href={link.href}
               className={` ${
-                isActive(link.href) ? "font-semibold" : "font-normal"
+                isActive(link.href) && link.href !== "/"
+                  ? "font-bold   underline underline-offset-4"
+                  : "font-normal"
               } text-[#fffefecc] text-sm tracking-[0] leading-5 cursor-pointer hover:text-white transition-colors`}
             >
               {link.name}
@@ -53,20 +55,19 @@ export default function Header() {
         </div>
 
         {/* Desktop CTA Buttons */}
-        <div className="hidden lg:flex items-center gap-3">
-          <button
-            zeffy-form-link="https://www.zeffy.com/embed/donation-form/invest-in-the-future-3?modal=true"
-            className="h-9 px-4 py-2  bg-white  font-normal text-black text-sm text-center rounded hover:bg-gray-100 transition-colors inline-flex items-center cursor-pointer"
-          >
-            Donate
-          </button>
-
+        <div className="hidden lg:flex items-center gap-4">
           <a
             href="/apply"
             className="h-9 px-4 py-2 bg-[#ffffff]  font-normal text-black text-sm text-center tracking-[0] leading-5 hover:bg-[#f0f0f0] transition-colors rounded inline-flex items-center"
           >
             Apply
           </a>
+          <button
+            zeffy-form-link="https://www.zeffy.com/embed/donation-form/invest-in-the-future-3?modal=true"
+            className="h-9 px-4 py-2  bg-white  font-normal text-black text-sm text-center rounded hover:bg-gray-100 transition-colors inline-flex items-center cursor-pointer"
+          >
+            Donate
+          </button>
         </div>
 
         {/* Mobile menu button */}

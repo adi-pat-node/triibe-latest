@@ -165,7 +165,7 @@ const ProgramPage = () => {
         <div className="max-w-260 mx-auto">
           <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-6">
-              <h1 className=" font-semibold text-black text-5xl md:text-6xl tracking-[-1.20px] leading-tight">
+              <h1 className=" font-semibold text-black text-4xl md:text-6xl tracking-[-1.20px] leading-tight">
                 TRIIBE Three-Year Fellowship
               </h1>
 
@@ -181,16 +181,16 @@ const ProgramPage = () => {
               </p>
             </div>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 flex-col md:flex-row ">
               <a
                 href="/partner"
-                className="px-6 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors  font-semibold text-base"
+                className="px-6 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors  font-semibold text-base w-full md:w-auto text-center"
               >
                 Partner / Sponsor
               </a>
               <a
                 href="/apply"
-                className="px-6 py-3 bg-[#002c19] text-white rounded hover:bg-[#003d24] transition-colors  font-semibold text-base"
+                className="w-full md:w-auto px-6 py-3 bg-[#002c19] text-white rounded hover:bg-[#003d24] transition-colors text-center font-semibold text-base"
               >
                 Apply
               </a>

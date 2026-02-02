@@ -29,11 +29,11 @@ export default function ImpactMetrics() {
             challenges
           </p>
         </header>
-        <div className="grid grid-cols-5 gap-4 w-full items-start whitespace-nowrap">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 w-full items-start md:whitespace-nowrap">
           {impactAreas.map((area, index) => (
             <div
               key={index}
-              className=" px-3 py-2 bg-white rounded border border-[#d0d5db] text-black text-xs font-semibold w-fit "
+              className=" px-3 py-2 bg-white rounded border border-[#d0d5db] text-black text-xs font-semibold md:w-fit "
             >
               {area}
             </div>

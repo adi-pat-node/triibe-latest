@@ -245,9 +245,17 @@ const MediaPage = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 md:px-50 bg-white">
         <div className="max-w-300 mx-auto">
-          <div className="mb-12">
-            <h1 className="font-bold text-black text-5xl mb-4">TRIIBE Talk</h1>
-            <p className="font-normal text-[#495565] text-xl">
+          <div className="mb-12 flex flex-col items-start">
+            <Image
+              src="https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/690ec0097fad8b2d6aa19eec_Screenshot_2025-11-07_at_10.58.29_PM-removebg-preview.png"
+              alt="TRIIBE TALK"
+              width={600}
+              height={150}
+              priority
+              className="w-full max-w-[400px] md:max-w-[500px] h-auto -ml-3 md:-ml-5 lg:-ml-6 object-contain object-left"
+            />
+
+            <p className="font-normal text-[#495565] text-xl mt-4">
               Real conversations with student nonprofit leaders building
               community impact
             </p>
@@ -304,7 +312,7 @@ const MediaPage = () => {
                   {workshop.duration} · {workshop.type}
                 </div>
 
-                <div className="flex gap-4 mt-4">
+                <div className="flex  mt-4 flex-col md:flex-row gap-4">
                   <a
                     href={workshop.signupLink}
                     className="px-8 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base inline-flex items-center gap-2 justify-center min-w-35"

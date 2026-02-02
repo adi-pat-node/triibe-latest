@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const outcomes = [
   {
@@ -64,9 +65,12 @@ export default function PostGraduationOutcomes() {
 
         {/* Programs Button */}
         <div className="flex justify-center w-full">
-          <button className="px-6 py-3 bg-[#1a5a4a] hover:bg-[#144539] text-white font-semibold rounded-lg transition-colors">
+          <a
+            href="/program"
+            className="px-6 py-3 bg-[#1a5a4a] hover:bg-[#144539] text-white font-semibold rounded-lg transition-colors"
+          >
             Programs
-          </button>
+          </a>
         </div>
       </div>
     </section>

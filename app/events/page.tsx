@@ -58,7 +58,7 @@ const page = () => {
                 nonprofit founders, experienced mentors, funders, and partners
                 to support meaningful connections and drive social change.
               </p>
-              <div className="flex gap-4">
+              <div className="flex  flex-col md:flex-row  gap-4 text-center ">
                 <a
                   href="/partner"
                   className="px-6 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base"
@@ -256,7 +256,7 @@ const page = () => {
           </div>
 
           {/* Title and Button */}
-          <div className="flex justify-between items-start mb-8">
+          <div className="flex justify-between items-start mb-8 flex-col md:flex-row gap-4">
             <h1 className="font-bold text-black text-4xl md:text-4xl">
               TRIIBE Changemaker Summit
             </h1>
@@ -684,7 +684,7 @@ const page = () => {
           </div>
 
           {/* Title and Button */}
-          <div className="flex justify-between items-start mb-8">
+          <div className="flex justify-between items-start mb-8 flex-col md:flex-row gap-4">
             <h1 className="font-bold text-black text-4xl md:text-4xl">
               TRIIBE Davos Summit
             </h1>
@@ -1112,7 +1112,7 @@ const page = () => {
           </div>
 
           {/* Title and Button */}
-          <div className="flex justify-between items-start mb-8">
+          <div className="flex justify-between items-start mb-8 flex-col md:flex-row gap-4">
             <h1 className="font-bold text-black text-4xl md:text-4xl">
               TRIIBE Event #3
             </h1>

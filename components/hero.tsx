@@ -14,7 +14,7 @@ export default function Hero() {
             alt="College students collaborating"
             fill
             priority
-            className="object-fit"
+            className="object-fill"
             sizes="100vw"
           />
           <div className="absolute inset-0 w-full h-full bg-black/60" />

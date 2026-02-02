@@ -32,7 +32,7 @@ const programSections = [
     bgColor: "bg-[#002c19]",
     textColor: "text-white",
     descriptionColor: "text-[#fffefee6]",
-    imageUrl: "/images/home/whatWeDo3.jpg",
+    imageUrl: "/images/home/whatWeDo4.jpg",
     imagePosition: "right",
     fontWeight: "font-bold",
   },
