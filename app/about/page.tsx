@@ -175,7 +175,7 @@ const outreach = [
     name: "Roman Pikalenko",
     role: "Member",
     bio: "Roman Pikalenko is a Finland based LinkedIn ghostwriter who helps Series A climate tech founders and executives build thought leadership to attract capital and talent.",
-    image: "/images/about/team/Roman Pilekanko.jpg",
+    image: "/images/about/team/Roman Pikalenko.jpg",
     linkedin: "https://www.linkedin.com/in/roman-pikalenko/",
     isInstagram: false,
   },
