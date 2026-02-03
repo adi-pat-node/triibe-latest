@@ -40,7 +40,7 @@ const programSections = [
 
 export default function ProgramOverview() {
   return (
-    <section className="flex flex-col w-full max-w-260 mx-auto">
+    <section className="flex flex-col w-full items-start   md:px-4 md:px-50  ">
       {programSections.map((section, index) => (
         <div
           key={index}
@@ -62,7 +62,7 @@ export default function ProgramOverview() {
               >
                 <div className="flex flex-col justify-center gap-6 px-16 py-12 h-full">
                   <h2
-                    className={`${section.textColor} ${section.fontWeight} text-[32px] leading-10`}
+                    className={`${section.textColor} ${section.fontWeight} text-xl md:text-[32px] leading-10`}
                   >
                     {section.title}
                   </h2>
