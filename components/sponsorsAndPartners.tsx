@@ -32,7 +32,7 @@ export default function SponsorsAndPartners() {
 
           <a
             href="/partnership"
-            className="bg-[#101828] hover:bg-[#101828]/90 text-white  font-semibold text-sm rounded h-10 px-4 inline-flex items-center justify-center gap-2 transition-colors"
+            className="bg-[#002C19] hover:bg-[#101828]/90 text-white  font-semibold text-sm rounded h-10 px-4 inline-flex items-center justify-center gap-2 transition-colors"
           >
             Explore Partnership
           </a>

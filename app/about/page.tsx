@@ -446,14 +446,14 @@ const members = [
     isInstagram: false,
   },
 
-  {
-    name: "Alan Cavagnaro",
-    role: "Member",
-    bio: "Alan Cavagnaro is a UNA-USA Global Goals Ambassador (SDG 11) working at the intersection of housing, sustainable communities, and urban policy; including leadership with DesegregateCT",
-    image: "/images/about/team/Alan Cavagnaro.jpg",
-    linkedin: "https://www.linkedin.com/in/alancavagnaro/",
-    isInstagram: false,
-  },
+  // {
+  //   name: "Alan Cavagnaro",
+  //   role: "Member",
+  //   bio: "Alan Cavagnaro is a UNA-USA Global Goals Ambassador (SDG 11) working at the intersection of housing, sustainable communities, and urban policy; including leadership with DesegregateCT",
+  //   image: "/images/about/team/Alan Cavagnaro.jpg",
+  //   linkedin: "https://www.linkedin.com/in/alancavagnaro/",
+  //   isInstagram: false,
+  // },
 
   {
     name: "Mahir Laul",
@@ -485,35 +485,35 @@ const members = [
 const legacyBoard = [
   {
     name: "JapNeet K",
-    role: "Board Member",
+    role: "Legacy Board Member",
     bio: "JapNeet K. is a strategy driven cybersecurity and risk management professional at Mphasis with an education background at Columbia University.",
     image: "/images/about/team/JapNeet K.jpg",
     linkedin: "https://www.linkedin.com/in/japneet-k/",
   },
   {
     name: "Flaviu Simihaian",
-    role: "Board Member",
+    role: "Legacy Board Member",
     bio: "Flaviu Simihaian is a New York City based founder (1PB.org) and co-host of the Founder Secrets podcast who supports impact-focused entrepreneurs.",
     image: "/images/about/team/Flaviu Simihaian.jpg",
     linkedin: "https://www.linkedin.com/in/flaviusimihaian/",
   },
   {
     name: "Stacey Lauren",
-    role: "Board Member",
+    role: "Legacy Board Member",
     bio: "Stacey Lauren is a TEDx speaker, charity fundraising auctioneer, and founder of Do The Thing, building purpose driven communities around billion dollar impact initiatives.",
     image: "/images/about/team/Stacey Lauren.jpg",
     linkedin: "https://www.linkedin.com/in/staceylauren/",
   },
   {
     name: "Gregg Meyer",
-    role: "Board Member",
+    role: "Legacy Board Member",
     bio: "Gregg Meyer is Chief Sustainability Officer and strategic counsel at Steve Madden, and leads the Steve Madden Corporate Foundation, with a Cornell University background.",
     image: "/images/about/team/Gregg Meyer.jpg",
     linkedin: "https://www.linkedin.com/in/gregg-meyer/",
   },
   {
     name: "Stefan Avivson",
-    role: "Board Member",
+    role: "Legacy Board Member",
     bio: "Stefan Avivson is a UK based CEO advisor and entrepreneur who says he helps B2B companies build traction and sales, drawing on decades of startup experience.",
     image: "/images/about/team/Stefan Avivson.jpg",
     linkedin: "https://www.linkedin.com/in/avivson/",
@@ -636,7 +636,14 @@ const page = () => {
           {/* Photo Grid */}
           <div className="grid grid-cols-1 md:grid-cols-[0.8fr_1.2fr_0.8fr_1.2fr] gap-4 mb-16">
             {/* 1. Narrow (Green) */}
-            <div className="bg-[#B4E9A0] h-64 lg:h-80 rounded-lg"></div>
+            <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden">
+              <Image
+                src="/images/events/newImg.jpg"
+                alt="TRIIBE Team"
+                fill
+                className="object-cover"
+              />
+            </div>
 
             {/* 2. Wide (Photo) */}
             <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden">
@@ -915,10 +922,9 @@ const page = () => {
       {/* Members Section */}
       <section className=" px-4 md:px-50 bg-white  ">
         <div className="max-w-300 mx-auto">
-          <h2 className="font-bold text-black text-3xl mb-8">TEAMS</h2>
-          <p className="font-normal text-[#697282] text-xl uppercase tracking-wider mb-12">
-            Media
-          </p>
+          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
+            Media TEAM
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {media.map((member, index) => (
@@ -996,9 +1002,9 @@ const page = () => {
             ))}
           </div>
 
-          <p className="font-normal text-[#697282] text-xl uppercase tracking-wider mb-12">
-            EVENTS
-          </p>
+          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
+            EVENTS TEAM
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {events.map((member, index) => (
@@ -1040,9 +1046,9 @@ const page = () => {
             ))}
           </div>
 
-          <p className="font-normal text-[#697282] text-xl uppercase tracking-wider mb-12">
-            Partnerships
-          </p>
+          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
+            Partnerships TEAM
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {partnerships.map((member, index) => (
@@ -1084,9 +1090,9 @@ const page = () => {
             ))}
           </div>
 
-          <p className="font-normal text-[#697282] text-xl uppercase tracking-wider mb-12">
-            Outreach
-          </p>
+          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
+            Outreach TEAM
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {outreach.map((member, index) => (
@@ -1164,9 +1170,9 @@ const page = () => {
             ))}
           </div>
 
-          <p className="font-normal text-[#697282] text-xl uppercase tracking-wider mb-12">
-            Design
-          </p>
+          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
+            Design TEAM
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {design.map((member, index) => (
@@ -1208,9 +1214,9 @@ const page = () => {
             ))}
           </div>
 
-          <p className="font-normal text-[#697282] text-xl uppercase tracking-wider mb-12">
-            TECH
-          </p>
+          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
+            TECH TEAM
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {tech.map((member, index) => (
@@ -1252,9 +1258,9 @@ const page = () => {
             ))}
           </div>
 
-          <p className="font-normal text-[#697282] text-xl uppercase tracking-wider mb-12">
-            Global Relations
-          </p>
+          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
+            Global Relations TEAM
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {globalRelations.map((member, index) => (
@@ -1296,9 +1302,9 @@ const page = () => {
             ))}
           </div>
 
-          <p className="font-normal text-[#697282] text-xl uppercase tracking-wider mb-12">
-            Regional Directors
-          </p>
+          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
+            Regional Directors Team
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {regionalDirectors.map((member, index) => (
@@ -1340,9 +1346,9 @@ const page = () => {
             ))}
           </div>
 
-          <p className="font-normal text-[#697282] text-xl uppercase tracking-wider mb-12">
-            Members
-          </p>
+          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
+            Members Team
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {members.map((member, index) => (
