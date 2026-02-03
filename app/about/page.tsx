@@ -634,10 +634,22 @@ const page = () => {
           </div>
 
           {/* Photo Grid */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
-            <div className="bg-[#B4E9A0] aspect-square rounded-lg"></div>
-            <div className="bg-[#B4E9A0] aspect-square rounded-lg"></div>
-            <div className="relative aspect-square rounded-lg overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-[0.8fr_1.2fr_0.8fr_1.2fr] gap-4 mb-16">
+            {/* 1. Narrow (Green) */}
+            <div className="bg-[#B4E9A0] h-64 lg:h-80 rounded-lg"></div>
+
+            {/* 2. Wide (Photo) */}
+            <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden">
+              <Image
+                src="/images/about/about-photo-3.jpg"
+                alt="TRIIBE Team"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* 3. Narrow (Photo) */}
+            <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden">
               <Image
                 src="/images/about/about-photo-1.jpg"
                 alt="TRIIBE Team"
@@ -645,7 +657,9 @@ const page = () => {
                 className="object-cover"
               />
             </div>
-            <div className="relative aspect-square rounded-lg overflow-hidden">
+
+            {/* 4. Wide (Photo) */}
+            <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden">
               <Image
                 src="/images/about/about-photo-2.jpg"
                 alt="TRIIBE Team"
