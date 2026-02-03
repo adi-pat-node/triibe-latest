@@ -6,12 +6,13 @@ const impactAreas = [
   "Food Security",
   "Youth Development",
   "Economic Empowerment",
+  "Renewable Energy",
   "Arts & Culture",
   "Mental Health",
   "Community Development",
   "Technology Access",
   "Access to Housing",
-  "Renewable Energy",
+
   "International Development",
   "Clean Water Access",
 ];
@@ -29,11 +30,21 @@ export default function ImpactMetrics() {
             challenges
           </p>
         </header>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 w-full items-start md:whitespace-nowrap">
+        {/* <div className="grid grid-cols-2 md:grid-cols-5 gap-4 w-full items-start md:whitespace-nowrap">
           {impactAreas.map((area, index) => (
             <div
               key={index}
               className=" px-3 py-2 bg-white rounded border border-[#d0d5db] text-black text-xs font-semibold md:w-fit "
+            >
+              {area}
+            </div>
+          ))} */}
+
+        <div className="grid grid-cols-2  md:flex md:flex-wrap gap-3  ">
+          {impactAreas.map((area, index) => (
+            <div
+              key={index}
+              className="h-[38px] px-3  py-2 bg-white rounded border border-[#d0d5db]  font-semibold text-[#354152] text-[12px] md:text-sm  leading-5 inline-flex items-center"
             >
               {area}
             </div>

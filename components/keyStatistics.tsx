@@ -64,7 +64,7 @@ const partneredWithLogos = [
 
 export default function KeyStatistics() {
   return (
-    <section className="flex flex-col items-center px-4 md:px-50 py-20 w-full bg-[#F6FEEF] border-t border-b border-gray-200">
+    <section className="flex flex-col items-center px-4 md:px-50 py-20 w-full bg-[#3036411A] border-t border-b border-gray-200">
       <div className="flex flex-col items-center gap-20 w-full max-w-260">
         {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-12 w-full">
           {statistics.map((stat, index) => (

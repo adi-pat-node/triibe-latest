@@ -40,9 +40,10 @@ const media = [
   {
     name: "Grace Sengul",
     role: "Member",
-    bio: "?",
+    bio: "Grace Sengul is a Fordham Gabelli School of Business finance student with experience at TRIIBE.",
     image: "/images/about/team/Grace Sengul.jpg",
-    linkedin: "https://www.linkedin.com",
+    linkedin: "https://www.linkedin.com/in/grace-sengul-a74a00329/",
+    isInstagram: false,
   },
   {
     name: "Laya Pothunuri",
@@ -50,13 +51,15 @@ const media = [
     bio: "Laya Pothunuri is a sustainability and circular economy practitioner (Royal Botanic Gardens, Kew) and Cambridge affiliated youth climate advocate focused on climate justice and inclusive design.",
     image: "/images/about/team/Laya Pothunuri.jpg",
     linkedin: "https://www.linkedin.com/in/laya-pothunuri-964878175/",
+    isInstagram: false,
   },
   {
     name: "Pramaey Kapadia",
     role: "Member",
-    bio: "?",
+    bio: "Pramaey Kapadia is an Instagram creator who posts short form content about trading, including options and crypto, along with self improvement style updates",
     image: "/images/about/team/Pramaey Kapadia.jpg",
-    linkedin: "",
+    linkedin: "https://www.instagram.com/prambebankin/",
+    isInstagram: true,
   },
   {
     name: "Anjali Anantharaman",
@@ -64,6 +67,7 @@ const media = [
     bio: "Anjali Anantharaman is an MS Marketing Analytics (STEM) graduate from Illinois Institute of Technology, working in marketing analytics and digital marketing with experience at Brusche Inc.",
     image: "/images/about/team/Anjali Anantharaman.jpg",
     linkedin: "https://www.linkedin.com/in/anjali-anantharaman/",
+    isInstagram: false,
   },
   {
     name: "Fionnuala Eastwood",
@@ -71,6 +75,7 @@ const media = [
     bio: "Fionnuala Eastwood is a UCLA Cognitive Science graduate with strengths in design, marketing, and user-centered thinking.",
     image: "/images/about/team/Fionnuala Eastwood.png",
     linkedin: "https://www.linkedin.com/in/fionnuala-eastwood/",
+    isInstagram: false,
   },
 ];
 
@@ -169,7 +174,7 @@ const outreach = [
   {
     name: "Roman Pikalenko",
     role: "Member",
-    bio: "Roman Pikalenko is a Finland based LinkedIn contributor who helps Series A climate tech founders and executives build thought leadership to attract capital and talent.",
+    bio: "Roman Pikalenko is a Finland based LinkedIn ghostwriter who helps Series A climate tech founders and executives build thought leadership to attract capital and talent.",
     image: "/images/about/team/Roman Pilekanko.jpg",
     linkedin: "https://www.linkedin.com/in/roman-pikalenko/",
     isInstagram: false,
@@ -231,9 +236,9 @@ const globalRelations = [
   {
     name: "Quinn Hoeven",
     role: "Member",
-    bio: "?",
+    bio: "Quinn Vanderhoeven (Quinn van der Hoeven) is a sophomore at Fordham Universitys Gabelli School of Business studying Business Administration with a focus on social innovation and peace and justice.",
     image: "/images/about/team/Quinn Hoeven.jpg",
-    linkedin: "https://www.linkedin.com",
+    linkedin: "https://www.linkedin.com/in/quinnvanderhoeven/",
   },
 
   {
@@ -257,9 +262,10 @@ const regionalDirectors = [
   {
     name: "Jonnathan Mtonga",
     role: "Director - Zambia",
-    bio: "?",
+    bio: "Jonnathan K. Mtonga is a Zambia based monitoring and evaluation professional with 10+ years of experience, currently at DT Global.",
     image: "/images/about/team/Jonnathan Mtonga.jpg",
-    linkedin: "https://www.linkedin.com",
+    linkedin:
+      "https://www.linkedin.com/in/jonnathanmtonga/?originalSubdomain=zm",
   },
   {
     name: "Patience Nnedinso Eze",
@@ -281,9 +287,10 @@ const members = [
   {
     name: "Dominic Yap",
     role: "Member",
-    bio: "?",
+    bio: "Dominic Yap is a University of Toronto alumnus based in Hong Kong with experience at TRIIBE",
     image: "/images/about/team/Dominic Yap.jpg",
-    linkedin: "https://www.linkedin.com",
+    linkedin:
+      "https://www.linkedin.com/in/dominic-yap-62b546266/?originalSubdomain=hk",
     isInstagram: false,
   },
   {
@@ -298,9 +305,9 @@ const members = [
   {
     name: "Amaan Habibulla",
     role: "Member",
-    bio: "?",
+    bio: "Amaan Habibulla is an Associate at Ridgetop Research focused on sustainable finance and global policy, with a Middlebury College background.",
     image: "/images/about/team/Amaan Habibulla.jpg",
-    linkedin: "https://www.linkedin.com",
+    linkedin: "https://www.linkedin.com/in/amaan-habibulla/",
     isInstagram: false,
   },
   {
@@ -315,7 +322,7 @@ const members = [
   {
     name: "Dylan Hanson",
     role: "Member",
-    bio: "?",
+    bio: "Founding engineer and product lead building AI for complex P & C insurance claims, with prior Bloomberg engineering experience and a track record of founding and scaling student and research platforms, plus a Stanford GSB deferred MBA.",
     image: "/images/about/team/Dylan Hanson.jpg",
     linkedin: "https://www.linkedin.com/in/~dylan/",
     isInstagram: false,
@@ -324,7 +331,7 @@ const members = [
   {
     name: "Josh Nodiff",
     role: "TEAM",
-    bio: "Joshua Nodiff is the founder and executive director of the Climate Imaginarium on Governors Island, a Columbia Climate School alum focused on climate storytelling and community buildingcc",
+    bio: "Joshua Nodiff is the founder and executive director of the Climate Imaginarium on Governors Island, a Columbia Climate School alum focused on climate storytelling and community building",
     image: "/images/about/team/Josh Nodiff.avif",
     linkedin: "https://www.linkedin.com/in/joshnodiff/",
     isInstagram: false,
@@ -417,9 +424,9 @@ const members = [
   {
     name: "Luis Utrilla",
     role: "Member",
-    bio: "?",
+    bio: "Luis Utrilla is the founder of Athlete Zero, focused on empowering athletes to dream big and build their future through recruiting and personal brand support.",
     image: "/images/about/team/Luis Utrilla.jpg",
-    linkedin: "https://www.linkedin.com",
+    linkedin: "https://www.linkedin.com/in/luis-utri-athlete-zero/",
     isInstagram: false,
   },
   {
@@ -473,6 +480,44 @@ const members = [
   //   linkedin: "https://www.linkedin.com/in/shashankshandilya13/",
   //   isInstagram: false,
   // },
+];
+
+const legacyBoard = [
+  {
+    name: "JapNeet K",
+    role: "Board Member",
+    bio: "JapNeet K. is a strategy driven cybersecurity and risk management professional at Mphasis with an education background at Columbia University.",
+    image: "/images/about/team/JapNeet K.jpg",
+    linkedin: "https://www.linkedin.com/in/japneet-k/",
+  },
+  {
+    name: "Flaviu Simihaian",
+    role: "Board Member",
+    bio: "Flaviu Simihaian is a New York City based founder (1PB.org) and co-host of the Founder Secrets podcast who supports impact-focused entrepreneurs.",
+    image: "/images/about/team/Flaviu Simihaian.jpg",
+    linkedin: "https://www.linkedin.com/in/flaviusimihaian/",
+  },
+  {
+    name: "Stacey Lauren",
+    role: "Board Member",
+    bio: "Stacey Lauren is a TEDx speaker, charity fundraising auctioneer, and founder of Do The Thing, building purpose driven communities around billion dollar impact initiatives.",
+    image: "/images/about/team/Stacey Lauren.jpg",
+    linkedin: "https://www.linkedin.com/in/staceylauren/",
+  },
+  {
+    name: "Gregg Meyer",
+    role: "Board Member",
+    bio: "Gregg Meyer is Chief Sustainability Officer and strategic counsel at Steve Madden, and leads the Steve Madden Corporate Foundation, with a Cornell University background.",
+    image: "/images/about/team/Gregg Meyer.jpg",
+    linkedin: "https://www.linkedin.com/in/gregg-meyer/",
+  },
+  {
+    name: "Stefan Avivson",
+    role: "Board Member",
+    bio: "Stefan Avivson is a UK based CEO advisor and entrepreneur who says he helps B2B companies build traction and sales, drawing on decades of startup experience.",
+    image: "/images/about/team/Stefan Avivson.jpg",
+    linkedin: "https://www.linkedin.com/in/avivson/",
+  },
 ];
 
 const southAmerica = [
@@ -812,34 +857,61 @@ const page = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-            {media.map((member, index) => {
-              const Wrapper = member.linkedin ? "a" : "div";
-
-              return (
-                <Wrapper
-                  key={member.name}
-                  href={member.linkedin || undefined}
-                  target={member.linkedin ? "_blank" : undefined}
-                  rel={member.linkedin ? "noopener noreferrer" : undefined}
-                  className={`block bg-white border border-gray-200 rounded-lg overflow-hidden transition-shadow
-          ${member.linkedin ? "hover:shadow-lg cursor-pointer" : "cursor-default"}`}
-                >
-                  <div className="relative aspect-square bg-gray-100 p-4">
-                    <div className="relative w-full h-full rounded-lg overflow-hidden">
-                      <Image
-                        src={member.image}
-                        alt={member.name}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
+            {media.map((member, index) => (
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+                className="block  bg-white border border-gray-200 rounded-lg overflow-hidden  hover:shadow-lg transition-shadow cursor-pointer"
+              >
+                <div className="relative aspect-square bg-gray-100 p-4">
+                  <div className="relative w-full h-full rounded-lg overflow-hidden">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
-                  <div className="p-6">
-                    <div className="flex items-center justify-between mb-2">
-                      <h3 className="font-bold text-black text-xl">
-                        {member.name}
-                      </h3>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-bold text-black text-xl">
+                      {member.name}
+                    </h3>
 
+                    {member.isInstagram ? (
+                      <svg
+                        className="w-6 h-6"
+                        fill="url(#instagram-gradient)"
+                        viewBox="0 0 24 24"
+                      >
+                        <defs>
+                          <linearGradient
+                            id="instagram-gradient"
+                            x1="0%"
+                            y1="100%"
+                            x2="100%"
+                            y2="0%"
+                          >
+                            <stop
+                              offset="0%"
+                              style={{ stopColor: "#FD5949", stopOpacity: 1 }}
+                            />
+                            <stop
+                              offset="50%"
+                              style={{ stopColor: "#D6249F", stopOpacity: 1 }}
+                            />
+                            <stop
+                              offset="100%"
+                              style={{ stopColor: "#285AEB", stopOpacity: 1 }}
+                            />
+                          </linearGradient>
+                        </defs>
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                      </svg>
+                    ) : (
                       <svg
                         className="w-5 h-5"
                         fill="#0077b5"
@@ -847,17 +919,17 @@ const page = () => {
                       >
                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                       </svg>
-                    </div>
-                    <p className="font-normal text-[#697282] text-sm mb-4">
-                      {member.role}
-                    </p>
-                    <p className="font-normal text-[#495565] text-sm leading-relaxed">
-                      {member.bio}
-                    </p>
+                    )}
                   </div>
-                </Wrapper>
-              );
-            })}
+                  <p className="font-normal text-[#697282] text-sm mb-4">
+                    {member.role}
+                  </p>
+                  <p className="font-normal text-[#495565] text-sm leading-relaxed">
+                    {member.bio}
+                  </p>
+                </div>
+              </a>
+            ))}
           </div>
 
           <p className="font-normal text-[#697282] text-xl uppercase tracking-wider mb-12">
@@ -1284,12 +1356,56 @@ const page = () => {
             ))}
           </div>
 
-          <p className="font-normal text-[#697282] text-xl uppercase tracking-wider mb-12">
+          {/* <p className="font-normal text-[#697282] text-xl uppercase tracking-wider mb-12">
             Mentors
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {mentors.map((member, index) => (
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+                className="block  bg-white border border-gray-200 rounded-lg overflow-hidden  hover:shadow-lg transition-shadow cursor-pointer"
+              >
+                <div className="relative aspect-square bg-gray-100 p-4">
+                  <div className="relative w-full h-full rounded-lg overflow-hidden">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-bold text-black text-xl">
+                      {member.name}
+                    </h3>
+
+                    <svg className="w-5 h-5" fill="#0077b5" viewBox="0 0 24 24">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                  </div>
+                  <p className="font-normal text-[#697282] text-sm mb-4">
+                    {member.role}
+                  </p>
+                  <p className="font-normal text-[#495565] text-sm leading-relaxed">
+                    {member.bio}
+                  </p>
+                </div>
+              </a>
+            ))}
+          </div> */}
+
+          <p className="font-normal text-[#697282] text-xl uppercase tracking-wider mb-12">
+            Legacy Board
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            {legacyBoard.map((member, index) => (
               <a
                 href={member.linkedin}
                 target="_blank"
