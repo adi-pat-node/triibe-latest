@@ -56,18 +56,18 @@ export default function Header() {
 
         {/* Desktop CTA Buttons */}
         <div className="hidden lg:flex items-center gap-4">
-          <a
-            href="/apply"
-            className="h-9 px-4 py-2 bg-[#ffffff]  font-normal text-black text-sm text-center tracking-[0] leading-5 hover:bg-[#f0f0f0] transition-colors rounded inline-flex items-center"
-          >
-            Apply
-          </a>
           <button
             zeffy-form-link="https://www.zeffy.com/embed/donation-form/invest-in-the-future-3?modal=true"
             className="h-9 px-4 py-2  bg-white  font-normal text-black text-sm text-center rounded hover:bg-gray-100 transition-colors inline-flex items-center cursor-pointer"
           >
             Donate
           </button>
+          <a
+            href="/apply"
+            className="h-9 px-4 py-2 bg-[#ffffff]  font-normal text-black text-sm text-center tracking-[0] leading-5 hover:bg-[#f0f0f0] transition-colors rounded inline-flex items-center"
+          >
+            Apply
+          </a>
         </div>
 
         {/* Mobile menu button */}
@@ -119,14 +119,6 @@ export default function Header() {
           ))}
 
           <div className="flex flex-col gap-3 pt-4 mt-4 border-t border-white/20">
-            <a
-              href="/apply"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-6 py-3 text-center text-sm font-semibold text-black bg-white rounded-lg hover:bg-gray-100 transition-colors"
-            >
-              Apply
-            </a>
-
             <button
               zeffy-form-link="https://www.zeffy.com/embed/donation-form/invest-in-the-future-3?modal=true"
               onClick={() => setMobileMenuOpen(false)}
@@ -134,6 +126,13 @@ export default function Header() {
             >
               Donate
             </button>
+            <a
+              href="/apply"
+              onClick={() => setMobileMenuOpen(false)}
+              className="px-6 py-3 text-center text-sm font-semibold text-black bg-white rounded-lg hover:bg-gray-100 transition-colors"
+            >
+              Apply
+            </a>
           </div>
         </div>
       </div>

@@ -228,17 +228,18 @@ const Page = () => {
               {/* Form Actions */}
               <div className="border-t border-gray-200 pt-6 flex flex-col md:flex-row  justify-end gap-4">
                 <button
-                  type="submit"
-                  className="px-8 py-3 bg-[#002c19] text-white rounded-lg hover:bg-[#003d24] transition-colors font-semibold text-base cursor-pointer"
-                >
-                  Submit Application
-                </button>
-                <button
                   type="button"
                   onClick={handleCancel}
                   className="px-8 py-3 bg-white text-black border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors font-semibold text-base cursor-pointer"
                 >
                   Cancel
+                </button>
+
+                <button
+                  type="submit"
+                  className="px-8 py-3 bg-[#002c19] text-white rounded-lg hover:bg-[#003d24] transition-colors font-semibold text-base cursor-pointer"
+                >
+                  Submit Application
                 </button>
               </div>
             </form>
