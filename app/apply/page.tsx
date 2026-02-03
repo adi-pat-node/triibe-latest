@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
+import { useState } from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Image from "next/image";
@@ -13,6 +14,45 @@ const Page = () => {
     if (formRef.current) {
       formRef.current.reset();
     }
+  };
+
+  const faqs = [
+    {
+      question: "How do I apply for a cohort?",
+      answer:
+        "To apply, complete the application form on this page, attaching your 5-minute video link. You'll receive confirmation once your application has been received.",
+    },
+    {
+      question: "Who is eligible to apply?",
+      answer:
+        "Our program is open each semester to sophomores enrolled at U.S. colleges, no matter their citizenship, addressing needs in food, water, shelter, health, education, or energy.",
+    },
+    {
+      question: "What is the selection process?",
+      answer:
+        "Our process starts with a thoughtful review of your application and video, then invites semi-finalists for interviews.",
+    },
+    {
+      question: "What support do selected sophomores receive?",
+      answer:
+        "Finalists receive a $5,000 grant, mentorship, podcast feature, and entry into our community. For a fuller look at additional opportunities, like the Summit, retreat, and documentaries, see the deck above.",
+    },
+    {
+      question: "How long is the program?",
+      answer:
+        "TRIIBE's three-year program supports you through the rest of college, with each year building toward continuing your work beyond graduation. Afterwards, alumni stay connected, ensuring lifelong belonging and support.",
+    },
+    {
+      question: "When will I hear back?",
+      answer:
+        "All applicants are notified within two weeks of the application closing, and we keep communication clear and consistent throughout.",
+    },
+  ];
+
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+
+  const toggleFaq = (index: number) => {
+    setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
 
   return (
@@ -264,6 +304,58 @@ const Page = () => {
                 View
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4: Application FAQs */}
+
+      <section className="pt-16 pb-8 px-4 md:px-[200px] bg-[#3036411A]">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12 text-center">
+            Application FAQs
+          </h2>
+
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="border border-gray-200 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-md"
+              >
+                <button
+                  onClick={() => toggleFaq(index)}
+                  className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-gray-50 transition-colors"
+                >
+                  <h3 className="text-lg font-bold text-gray-900 pr-4">
+                    {faq.question}
+                  </h3>
+                  <svg
+                    className={`w-6 h-6 text-gray-600 transition-transform duration-300 flex-shrink-0 ${
+                      openFaqIndex === index ? "rotate-180" : ""
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div
+                  className={`overflow-hidden transition-all duration-300 ${
+                    openFaqIndex === index ? "max-h-96" : "max-h-0"
+                  }`}
+                >
+                  <div className="px-6 py-5 text-gray-700 leading-relaxed">
+                    {faq.answer}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
