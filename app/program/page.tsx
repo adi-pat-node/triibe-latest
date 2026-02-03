@@ -683,7 +683,7 @@ const ProgramPage = () => {
       </section>
 
       {/* Deck Section */}
-      <section className="py-12 px-6 bg-white">
+      <section className="py-12 px-4 md:px-[200px]">
         <div className="max-w-260 mx-auto">
           <div className="max-w-7xl mx-auto transition-all duration-300 hover:scale-105">
             <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
