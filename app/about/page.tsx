@@ -795,7 +795,7 @@ const page = () => {
       </section>
 
       {/* C-Suite and Board Section */}
-      <section className="py-16 px-4 md:px-50 bg-white">
+      <section className="pt-16 pb-8 px-4 md:px-50 bg-white">
         <div className="max-w-300 mx-auto">
           <h2 className="font-bold text-black text-3xl mb-12">
             C-SUITE AND BOARD
@@ -845,6 +845,56 @@ const page = () => {
             ))}
           </div>
         </div>
+        <div className="border-b border-gray-200 mt-8"></div>
+      </section>
+
+      {/* Legacy Board Members */}
+
+      <section className="pb-12 px-4 md:px-50 bg-white">
+        <div className="max-w-300 mx-auto">
+          <h2 className="font-bold text-black text-3xl mb-12">Legacy Board</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            {legacyBoard.map((member, index) => (
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+                className="block  bg-white border border-gray-200 rounded-lg overflow-hidden  hover:shadow-lg transition-shadow cursor-pointer"
+              >
+                <div className="relative aspect-square bg-gray-100 p-4">
+                  <div className="relative w-full h-full rounded-lg overflow-hidden">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-bold text-black text-xl">
+                      {member.name}
+                    </h3>
+
+                    <svg className="w-5 h-5" fill="#0077b5" viewBox="0 0 24 24">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                  </div>
+                  <p className="font-normal text-[#697282] text-sm mb-4">
+                    {member.role}
+                  </p>
+                  <p className="font-normal text-[#495565] text-sm leading-relaxed">
+                    {member.bio}
+                  </p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+
         <div className="border-b border-gray-200 mt-8"></div>
       </section>
 
@@ -1399,50 +1449,6 @@ const page = () => {
               </a>
             ))}
           </div> */}
-
-          <p className="font-normal text-[#697282] text-xl uppercase tracking-wider mb-12">
-            Legacy Board
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-            {legacyBoard.map((member, index) => (
-              <a
-                href={member.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                key={index}
-                className="block  bg-white border border-gray-200 rounded-lg overflow-hidden  hover:shadow-lg transition-shadow cursor-pointer"
-              >
-                <div className="relative aspect-square bg-gray-100 p-4">
-                  <div className="relative w-full h-full rounded-lg overflow-hidden">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-bold text-black text-xl">
-                      {member.name}
-                    </h3>
-
-                    <svg className="w-5 h-5" fill="#0077b5" viewBox="0 0 24 24">
-                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                    </svg>
-                  </div>
-                  <p className="font-normal text-[#697282] text-sm mb-4">
-                    {member.role}
-                  </p>
-                  <p className="font-normal text-[#495565] text-sm leading-relaxed">
-                    {member.bio}
-                  </p>
-                </div>
-              </a>
-            ))}
-          </div>
         </div>
       </section>
 
