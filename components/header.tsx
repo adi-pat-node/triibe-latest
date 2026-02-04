@@ -44,9 +44,9 @@ export default function Header() {
               key={link.href}
               href={link.href}
               className={` ${
-                isActive(link.href) && link.href !== "/"
-                  ? "font-bold   underline underline-offset-4"
-                  : "font-normal"
+                isActive(link.href)
+                  ? "font-bold  text-white "
+                  : "font-normal text-white/80"
               } text-[#fffefecc] text-sm tracking-[0] leading-5 cursor-pointer hover:text-white transition-colors`}
             >
               {link.name}
