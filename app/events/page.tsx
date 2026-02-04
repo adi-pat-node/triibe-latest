@@ -1,8 +1,12 @@
+"use client";
+
 import React from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Image from "next/image";
 import CTASection from "@/components/cta";
+import { useState } from "react";
+import Link from "next/link";
 
 const events = [
   {
@@ -10,7 +14,7 @@ const events = [
     image: "/images/events/event1.jpg",
     status: "PAST EVENT",
     year: "2025",
-    title: "TRIIBE Changemaker Summit",
+    title: "Changemaker Summit",
     description:
       "An annual NYC convening that centers youth nonprofit founders and connects them with mentors, partners, and supporters.",
     date: "Nov 16, 2024",
@@ -21,7 +25,7 @@ const events = [
     image: "/images/events/event1.jpg",
     status: "PAST EVENT",
     year: "2026",
-    title: "TRIIBE Davos Summit",
+    title: "World Economic Forum",
     description:
       "An annual NYC convening that centers youth nonprofit founders and connects them with mentors, partners, and supporters.",
     date: "Nov 16, 2024",
@@ -41,6 +45,15 @@ const events = [
 ];
 
 const page = () => {
+  const [filter, setFilter] = useState("ALL");
+
+  const filteredEvents = events.filter((event) => {
+    if (filter === "ALL") return true;
+    if (filter === "UPCOMING") return event.status === "UPCOMING";
+    if (filter === "PAST") return event.status !== "UPCOMING";
+    return true;
+  });
+
   return (
     <main>
       <Header />
@@ -149,13 +162,51 @@ const page = () => {
       <section className="flex flex-col items-start px-4 md:px-50 py-20 w-full bg-white">
         <div className="flex flex-col items-start gap-12 w-full">
           {/* Header */}
-          <h2 className="font-bold text-[#000000] text-4xl tracking-[-0.90px] leading-10">
-            Our Events
-          </h2>
+          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between w-full">
+            <h2 className="font-bold text-[#000000] text-4xl tracking-[-0.90px] leading-10">
+              Our Events
+            </h2>
+
+            <div className="flex items-center gap-4">
+              <button
+                onClick={() => setFilter("ALL")}
+                className={`px-4 py-2 rounded-md border text-sm font-medium transition
+      ${
+        filter === "ALL"
+          ? "bg-[#F9FAFB] text-black border-[#E5E7EB]"
+          : "border-gray-200 text-gray-500 hover:bg-gray-50"
+      }`}
+              >
+                All Events
+              </button>
+              <button
+                onClick={() => setFilter("UPCOMING")}
+                className={`px-4 py-2 rounded-md border text-sm font-medium transition
+      ${
+        filter === "UPCOMING"
+          ? "bg-[#F9FAFB] text-black border-[#E5E7EB]"
+          : "border-gray-200 text-gray-500 hover:bg-gray-50"
+      }`}
+              >
+                Upcoming
+              </button>
+              <button
+                onClick={() => setFilter("PAST")}
+                className={`px-4 py-2 rounded-md border text-sm font-medium transition
+      ${
+        filter === "PAST"
+          ? "bg-[#F9FAFB] text-black border-[#E5E7EB]"
+          : "border-gray-200 text-gray-500 hover:bg-gray-50"
+      }`}
+              >
+                Past
+              </button>
+            </div>
+          </div>
 
           {/* Events Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
-            {events.map((event, index) => (
+            {filteredEvents.map((event, index) => (
               <div
                 key={index}
                 className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
@@ -251,7 +302,7 @@ const page = () => {
           {/* Badge */}
           <div className="mb-8">
             <span className="inline-block px-4 py-2 bg-white rounded-full text-sm font-semibold text-gray-600">
-              PAST EVENT — 2024
+              PAST EVENT — 2025
             </span>
           </div>
 
@@ -260,9 +311,12 @@ const page = () => {
             <h1 className="font-bold text-black text-4xl md:text-4xl">
               TRIIBE Changemaker Summit
             </h1>
-            <button className="px-6 py-3 bg-white border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base whitespace-nowrap">
+            <a
+              href="/photogallery"
+              className="inline-block px-6 py-3 border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base whitespace-nowrap"
+            >
               Photo Gallery
-            </button>
+            </a>
           </div>
           <h2 className="font-bold text-black text-3xl md:text-3xl mb-8">
             What the Summit Is
@@ -365,7 +419,7 @@ const page = () => {
           </div>
 
           {/* Program Highlights */}
-          <div className="mb-16">
+          <div>
             <h3 className="font-semibold text-[#697282] text-sm uppercase tracking-wider mb-6">
               PROGRAM HIGHLIGHTS
             </h3>
@@ -398,11 +452,11 @@ const page = () => {
           </div>
 
           {/* Photo Grid Placeholder */}
-          <div className="bg-white border border-gray-200 rounded-lg p-12 flex items-center justify-center min-h-25">
+          {/* <div className="bg-white border border-gray-200 rounded-lg p-12 flex items-center justify-center min-h-25">
             <p className="font-normal text-[#697282] text-lg">
               Speaker and community photo grid placeholder
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -413,7 +467,7 @@ const page = () => {
             Impact
           </h2>
 
-          <p className="font-normal text-[#495565] text-lg leading-relaxed mb-16 text-center max-w-250 mx-auto">
+          <p className="font-normal text-[#495565] text-lg leading-relaxed mb-16 text-left max-w-250 mx-auto textal">
             We measure impact through both quantitative metrics and qualitative
             outcomes—tracking connections made, partnerships formed, and the
             sustained engagement of participants over time. Success means
@@ -652,17 +706,17 @@ const page = () => {
               PRESS MENTIONS
             </h3>
 
-            <div className="space-y-4">
-              <div className="flex gap-3 py-4 border-b border-gray-300">
+            <div className="space-y-2">
+              <div className="flex gap-3 py-2">
                 <p className="font-normal text-[#495565] text-base">
-                  — Press mention placeholder - Publication name and article
-                  title
-                </p>
-              </div>
-              <div className="flex gap-3 py-4 border-b border-gray-300">
-                <p className="font-normal text-[#495565] text-base">
-                  — Press mention placeholder - Publication name and article
-                  title
+                  —
+                  <a
+                    className="underline"
+                    href="https://silcus.org/triibe-changemaker-summit/"
+                  >
+                    The Changemaker Summit
+                  </a>
+                  - Sustainability Investment Leadership Council
                 </p>
               </div>
             </div>
@@ -679,32 +733,38 @@ const page = () => {
           {/* Badge */}
           <div className="mb-8">
             <span className="inline-block px-4 py-2 bg-white rounded-full text-sm font-semibold text-gray-600">
-              PAST EVENT — 2024
+              PAST EVENT — 2026
             </span>
           </div>
 
           {/* Title and Button */}
           <div className="flex justify-between items-start mb-8 flex-col md:flex-row gap-4">
             <h1 className="font-bold text-black text-4xl md:text-4xl">
-              TRIIBE Davos Summit
+              World Economic Forum
             </h1>
-            <button className="px-6 py-3 bg-white border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base whitespace-nowrap">
+            <a
+              href="/photogallery"
+              className="inline-block px-6 py-3 border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base whitespace-nowrap"
+            >
               Photo Gallery
-            </button>
+            </a>
           </div>
           <h2 className="font-bold text-black text-3xl md:text-3xl mb-8">
-            What the Summit Is
+            What the Forum Is
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left Column - Description */}
             <div>
               <p className="font-normal text-[#495565] text-lg leading-relaxed pt-8">
-                The TRIIBE Changemaker Summit is an annual convening designed
-                for undergraduate students who have founded and are actively
-                leading registered nonprofit organizations. It brings together
-                the next generation of social impact leaders for a day of
-                learning, connection, and collaboration.
+                The World Economic Forum (WEF) is an independent international
+                organization, founded in 1971 and headquartered in Cologny,
+                Switzerland, dedicated to improving the state of the world by
+                engaging business, political, academic, and other leaders to
+                shape global, regional, and industry agendas. It is best known
+                for its annual meeting in Davos, Switzerland, which brings
+                together elite stakeholders to discuss pressing issues like
+                climate change, economic stability, and technology
               </p>
             </div>
 
@@ -712,38 +772,41 @@ const page = () => {
             <div className="space-y-4">
               <div className="flex gap-3">
                 <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Youth founders leading impactful nonprofits
+                <p className="font-normal text-[#495565] text-sm">
+                  Mission & Purpose: The WEF operates as a non-governmental
+                  organization (NGO) with a focus on public-private cooperation
+                  to address global challenges and foster collaboration.
                 </p>
               </div>
               <div className="flex gap-3">
                 <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Mentors and partners from established organizations
+                <p className="font-normal text-[#495565] text-sm">
+                  Annual Meeting: Held in Davos, this event gathers top leaders
+                  from business, government, civil society, and media to discuss
+                  urgent global issues and develop solutions.
                 </p>
               </div>
               <div className="flex gap-3">
                 <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Interactive panel discussions on key topics
+                <p className="font-normal text-[#495565] text-sm">
+                  Key Focus Areas: The forum’s work is organized around five
+                  interconnected challenges: Growth, Geopolitics, Technology,
+                  People, and Planet
                 </p>
               </div>
               <div className="flex gap-3">
                 <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Intimate fireside chats with industry leaders
+                <p className="font-normal text-[#495565] text-sm">
+                  History: Founded in 1971 by Klaus Schwab, it was originally
+                  known as the "European Management Forum".
                 </p>
               </div>
               <div className="flex gap-3">
                 <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Structured networking opportunities
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Community building and peer connections
+                <p className="font-normal text-[#495565] text-sm">
+                  Impact: The organization has been a catalyst for initiatives
+                  such as the GAVI Vaccine Alliance and the Reskilling
+                  Revolution
                 </p>
               </div>
             </div>
@@ -755,7 +818,7 @@ const page = () => {
       <section className="py-20 px-4 md:px-50 bg-gray-50  border-t border-b border-gray-200">
         <div className="max-w-300 mx-auto">
           <h2 className="font-bold text-black text-4xl md:text-4xl mb-12">
-            What Happened at the 2025 Summit
+            What Happened at the 2026 Forum
           </h2>
 
           {/* At a Glance */}
@@ -768,7 +831,7 @@ const page = () => {
               <div className="bg-white border border-gray-200 rounded-lg p-6">
                 <p className="font-normal text-[#697282] text-sm mb-2">Date</p>
                 <p className="font-semibold text-black text-lg">
-                  August 2, 2025
+                  19 - 23 January 2026
                 </p>
               </div>
 
@@ -777,7 +840,7 @@ const page = () => {
                   Location
                 </p>
                 <p className="font-semibold text-black text-lg">
-                  Newlab, Brooklyn
+                  Davos, Switzerland
                 </p>
               </div>
 
@@ -785,15 +848,13 @@ const page = () => {
                 <p className="font-normal text-[#697282] text-sm mb-2">
                   Format
                 </p>
-                <p className="font-semibold text-black text-lg">
-                  1:00 to 5:00 PM
-                </p>
+                <p className="font-semibold text-black text-lg">In-person</p>
               </div>
             </div>
           </div>
 
           {/* Program Highlights */}
-          <div className="mb-16">
+          <div>
             <h3 className="font-semibold text-[#697282] text-sm uppercase tracking-wider mb-6">
               PROGRAM HIGHLIGHTS
             </h3>
@@ -801,35 +862,28 @@ const page = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-6">
               <div className="flex gap-3">
                 <p className="font-normal text-[#495565] text-base">
-                  — Mobilizing Communities for Compassionate Action
+                  — Geopolitical Fragmentation and "New" Cooperation
                 </p>
               </div>
 
               <div className="flex gap-3">
                 <p className="font-normal text-[#495565] text-base">
-                  — Fundraising and Communication in this Political Landscape
+                  — Prioritizing Human Capital and Social Cohesion
                 </p>
               </div>
 
               <div className="flex gap-3">
                 <p className="font-normal text-[#495565] text-base">
-                  — Education as a Tool for Social Mobility and Transformation
+                  — AI Integration and Economic Growth
                 </p>
               </div>
 
               <div className="flex gap-3">
                 <p className="font-normal text-[#495565] text-base">
-                  — Networking session and silent art auction
+                  — Sustainable Growth Within Planetary Boundaries
                 </p>
               </div>
             </div>
-          </div>
-
-          {/* Photo Grid Placeholder */}
-          <div className="bg-white border border-gray-200 rounded-lg p-12 flex items-center justify-center min-h-25">
-            <p className="font-normal text-[#697282] text-lg">
-              Speaker and community photo grid placeholder
-            </p>
           </div>
         </div>
       </section>
@@ -841,7 +895,7 @@ const page = () => {
             Impact
           </h2>
 
-          <p className="font-normal text-[#495565] text-lg leading-relaxed mb-16 text-center max-w-250 mx-auto">
+          <p className="font-normal text-[#495565] text-lg leading-relaxed mb-16 text-left max-w-250 mx-auto">
             We measure impact through both quantitative metrics and qualitative
             outcomes—tracking connections made, partnerships formed, and the
             sustained engagement of participants over time. Success means
@@ -908,44 +962,44 @@ const page = () => {
       <section className="py-20 px-4 md:px-50 bg-[#F9FAFB]  border-t border-b border-gray-200">
         <div className=" mx-auto">
           <h2 className="font-bold text-black text-4xl md:text-4xl mb-12">
-            Benefits
+            Highlights
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* For Founders */}
             <div className="bg-white border border-gray-200 rounded-lg p-8">
               <h3 className="font-bold text-black text-xl mb-6">
-                For Founders
+                The TPC House
               </h3>
               <div className="space-y-4">
                 <div className="flex gap-3">
                   <span className="text-[#697282] mt-1">—</span>
                   <p className="font-normal text-[#495565] text-base">
-                    Direct access to experienced mentors
+                    Accredited WEF 2026 venue for dialogue
                   </p>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-[#697282] mt-1">—</span>
                   <p className="font-normal text-[#495565] text-base">
-                    Institutional credibility and validation
+                    Lasting systems change starts with coherence
                   </p>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-[#697282] mt-1">—</span>
                   <p className="font-normal text-[#495565] text-base">
-                    Strategic partnership opportunities
+                    Upgrade leaders inner operating systems daily.
                   </p>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-[#697282] mt-1">—</span>
                   <p className="font-normal text-[#495565] text-base">
-                    Peer community of fellow founders
+                    Quantum Leadership bridges East and West.
                   </p>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-[#697282] mt-1">—</span>
                   <p className="font-normal text-[#495565] text-base">
-                    Practical resources and support
+                    Well-being economy: six pillars, life-flourishing focus.
                   </p>
                 </div>
               </div>
@@ -954,37 +1008,37 @@ const page = () => {
             {/* For Partners & Sponsors */}
             <div className="bg-white border border-gray-200 rounded-lg pt-8 px-4">
               <h3 className="font-bold text-black text-xl mb-6">
-                For Partners & Sponsors
+                Arctic Basecamp
               </h3>
               <div className="space-y-4">
                 <div className="flex gap-3">
                   <span className="text-[#697282] mt-1">—</span>
                   <p className="font-normal text-[#495565] text-base">
-                    Connection to vetted youth-led organizations
+                    Youth Circle of Hope, inspiring next-gen leaders
                   </p>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-[#697282] mt-1">—</span>
                   <p className="font-normal text-[#495565] text-base">
-                    Clear pathways for meaningful contribution
+                    Greenland under pressure, rapid response session
                   </p>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-[#697282] mt-1">—</span>
                   <p className="font-normal text-[#495565] text-base">
-                    Community visibility and brand alignment
+                    MonkeyRock nature tribute, Jane Goodall spotlight
                   </p>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-[#697282] mt-1">—</span>
                   <p className="font-normal text-[#495565] text-base">
-                    Direct impact measurement
+                    Doconomy Stage of Impact, daily action talks
                   </p>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-[#697282] mt-1">—</span>
                   <p className="font-normal text-[#495565] text-base">
-                    Early access to emerging leaders
+                    Science, AI, and trust in transition
                   </p>
                 </div>
               </div>
@@ -993,105 +1047,34 @@ const page = () => {
             {/* For Attendees */}
             <div className="bg-white border border-gray-200 rounded-lg p-8">
               <h3 className="font-bold text-black text-xl mb-6">
-                For Attendees
+                Youth Leaders Davos
               </h3>
               <div className="space-y-4">
                 <div className="flex gap-3">
                   <span className="text-[#697282] mt-1">—</span>
                   <p className="font-normal text-[#495565] text-base">
-                    Learning from diverse perspectives
+                    Ages 17 to 24, global cohort.
                   </p>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-[#697282] mt-1">—</span>
                   <p className="font-normal text-[#495565] text-base">
-                    Networking with impact leaders
+                    Four-phase framework: Lotus, Mud, Bloom, Splash.
                   </p>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-[#697282] mt-1">—</span>
                   <p className="font-normal text-[#495565] text-base">
-                    Exposure to youth-led solutions
+                    Inner journey day: nature, self-awareness practices.
                   </p>
                 </div>
+
                 <div className="flex gap-3">
                   <span className="text-[#697282] mt-1">—</span>
                   <p className="font-normal text-[#495565] text-base">
-                    Understanding the youth nonprofit ecosystem
+                    Origin Davos pitch ideas to mentors.
                   </p>
                 </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Inspiration for their own work
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Media & Moments Section */}
-      <section className="py-20 px-4 md:px-50 bg-white ">
-        <div className="max-w-300 mx-auto">
-          {/* <h2 className="font-bold text-black text-3xl md:text-4xl mb-12">
-            Media & Moments
-          </h2> */}
-
-          {/* Photo Grid */}
-          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 1</p>
-            </div>
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 2</p>
-            </div>
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 3</p>
-            </div>
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 4</p>
-            </div>
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 5</p>
-            </div>
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 6</p>
-            </div>
-          </div> */}
-
-          {/* Video Highlight */}
-          {/* <div className="bg-gray-100 border border-gray-300 rounded-lg p-12 flex flex-col items-center justify-center mb-16 min-h-75">
-            <p className="font-normal text-[#697282] text-base mb-6">
-              Video highlight placeholder
-            </p>
-            <a
-              href="#"
-              className="px-6 py-3 bg-[#002c19] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base"
-            >
-              Watch Summit Highlights
-            </a>
-          </div> */}
-
-          {/* Press Mentions */}
-          <div>
-            <h3 className=" text-black font-bold text-2xl uppercase tracking-wider mb-6">
-              PRESS MENTIONS
-            </h3>
-
-            <div className="space-y-4">
-              <div className="flex gap-3 py-4 border-b border-gray-300">
-                <p className="font-normal text-[#495565] text-base">
-                  — Press mention placeholder - Publication name and article
-                  title
-                </p>
-              </div>
-              <div className="flex gap-3 py-4 border-b border-gray-300">
-                <p className="font-normal text-[#495565] text-base">
-                  — Press mention placeholder - Publication name and article
-                  title
-                </p>
               </div>
             </div>
           </div>
@@ -1116,9 +1099,12 @@ const page = () => {
             <h1 className="font-bold text-black text-4xl md:text-4xl">
               TRIIBE Event #3
             </h1>
-            <button className="px-6 py-3 bg-white border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base whitespace-nowrap">
+            <a
+              href="/photogallery"
+              className="inline-block px-6 py-3 border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base whitespace-nowrap"
+            >
               Photo Gallery
-            </button>
+            </a>
           </div>
           <h2 className="font-bold text-black text-3xl md:text-3xl mb-8">
             What the Summit Is

@@ -375,7 +375,9 @@ const MediaPage = () => {
             {/* Podcasts Card */}
             <div className="bg-white rounded-lg overflow-hidden shadow-sm">
               <div className="p-6 pb-0">
-                <h3 className="font-bold text-black text-2xl mb-4">Podcasts</h3>
+                <h3 className="font-bold text-black text-2xl mb-4 text-center">
+                  Podcasts
+                </h3>
               </div>
               <div className="px-6">
                 <div className="relative aspect-video rounded-lg overflow-hidden">
@@ -387,9 +389,9 @@ const MediaPage = () => {
                   />
                 </div>
               </div>
-              <div className="p-6 flex flex-col justify-between min-h-100">
+              <div className="p-6 flex flex-col gap-12">
                 <div>
-                  <div className="inline-block px-3 py-1 bg-[#c6f82a] rounded mb-4">
+                  <div className="inline-block px-3 py-1 bg-[#3036411A] rounded mb-4">
                     <span className="font-semibold text-black text-sm">
                       Latest Episode
                     </span>
@@ -417,7 +419,7 @@ const MediaPage = () => {
             {/* Workshops Card */}
             <div className="bg-white rounded-lg overflow-hidden shadow-sm">
               <div className="p-6 pb-0">
-                <h3 className="font-bold text-black text-2xl mb-4">
+                <h3 className="font-bold text-black text-2xl mb-4 text-center">
                   Workshops
                 </h3>
               </div>
@@ -431,9 +433,9 @@ const MediaPage = () => {
                   />
                 </div>
               </div>
-              <div className="p-6 flex flex-col justify-between min-h-100">
+              <div className="p-6 flex flex-col gap-[40px]">
                 <div>
-                  <div className="inline-block px-3 py-1 bg-[#c6f82a] rounded mb-4">
+                  <div className="inline-block px-3 py-1 bg-[#3036411A] rounded mb-4">
                     <span className="font-semibold text-black text-sm">
                       Latest Workshop
                     </span>
@@ -460,7 +462,7 @@ const MediaPage = () => {
             {/* Newsletter Card */}
             <div className="bg-white rounded-lg overflow-hidden shadow-sm">
               <div className="p-6 pb-0">
-                <h3 className="font-bold text-black text-xl mb-4">
+                <h3 className="font-bold text-black text-xl mb-4 text-center">
                   TRIBUNE Newsletter
                 </h3>
               </div>
@@ -474,9 +476,9 @@ const MediaPage = () => {
                   />
                 </div>
               </div>
-              <div className="p-6 flex flex-col justify-between min-h-100">
+              <div className="p-6 flex flex-col gap-6">
                 <div>
-                  <div className="inline-block px-3 py-1 bg-[#c6f82a] rounded mb-4">
+                  <div className="inline-block px-3 py-1 bg-[#3036411A] rounded mb-4">
                     <span className="font-semibold text-black text-sm">
                       NOV 2025
                     </span>
@@ -484,7 +486,7 @@ const MediaPage = () => {
                   <h4 className="font-semibold text-black text-lg mb-3">
                     Our 6th TRIIBE Branch is Here!
                   </h4>
-                  <p className="font-normal text-[#495565] text-sm leading-relaxed mb-6">
+                  <p className="font-normal text-[#495565] text-sm leading-relaxed">
                     In the past month, we onboarded 25 new members, bringing our
                     total to nearly 70 and keeping us on track toward our goal
                     of 100 by year-end. We launched...

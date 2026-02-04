@@ -626,8 +626,8 @@ const page = () => {
               About Us
             </h1>
             <a
-              href="#gallery"
-              className="px-6 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base"
+              href="/photogallery"
+              className="px-6 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base "
             >
               Photo Gallery
             </a>
