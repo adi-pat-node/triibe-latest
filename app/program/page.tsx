@@ -17,6 +17,13 @@ import Image from "next/image";
 const testimonials = [
   {
     quote:
+      "Receiving TRIIBE’s scholarship support further strengthened the work of Vervient Foundation by highlighting that community and connection matter as much as ideas. Knowing there’s a network of like-minded leaders cheering me on fuels our mission to empower students with an innovation mindset and reminds me that there’s always a shoulder to lean on in this journey.",
+    name: "Gitanjali",
+    year: "TRIIBE Fellow 2021–2024",
+    organization: "Founder, Education Access Initiative",
+  },
+  {
+    quote:
       "TRIIBE gave me the structure and support I needed to grow my nonprofit from a scrappy student project into a sustainable organization. The mentorship was invaluable.",
     name: "Sarah Chen",
     year: "TRIIBE Fellow 2021–2024",
@@ -107,7 +114,7 @@ function TestimonialCarousel() {
 
         <div className="flex-1 text-center">
           <blockquote className="mb-8">
-            <p className=" font-normal text-black text-2xl md:text-3xl leading-relaxed mb-8">
+            <p className=" font-normal text-black text-2xl md:text-2xl leading-relaxed mb-8">
               "{currentTestimonial.quote}"
             </p>
           </blockquote>
