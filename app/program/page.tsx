@@ -19,8 +19,8 @@ const testimonials = [
     quote:
       "Receiving TRIIBE’s scholarship support further strengthened the work of Vervient Foundation by highlighting that community and connection matter as much as ideas. Knowing there’s a network of like-minded leaders cheering me on fuels our mission to empower students with an innovation mindset and reminds me that there’s always a shoulder to lean on in this journey.",
     name: "Gitanjali",
-    year: "TRIIBE Fellow 2021–2024",
-    organization: "Founder, Education Access Initiative",
+    year: "TRIIBE Fellow 2025–2028",
+    organization: "Founder, Fervent Foundation",
   },
   {
     quote:
