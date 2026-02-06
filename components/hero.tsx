@@ -33,19 +33,19 @@ export default function Hero() {
 
           {/* Description */}
           <div className="flex flex-col items-center mt-2">
-            <p className="font-['DM_Sans',Helvetica]font-normal text-white text-base md:text-lg text-center tracking-[0] leading-relaxed max-w-175">
-              TRIIBE provides funding, mentorship, and sustained community for
-              college students building organizations that create social impact.
+            <p className="font-['DM_Sans',Helvetica]font-normal text-white/90 text-base md:text-lg text-center tracking-[0] leading-relaxed max-w-175 ">
+              TRIIBE provides funding, mentorship, and community for college
+              students taking root today to advance tomorrow
             </p>
           </div>
 
           {/* CTA Buttons */}
           <div className="  flex flex-col md:flex-row items-center justify-center gap-3 mt-4 ">
             <a
-              href="/partner"
-              className="px-6 py-3 bg-white text-black hover:bg-gray-100 font-['DM_Sans',Helvetica] font-normal text-sm rounded inline-flex items-center justify-center transition-colors"
+              href="/program"
+              className="px-6 py-3 font-bold bg-white text-black hover:bg-gray-100 font-['DM_Sans',Helvetica] font-normal text-sm rounded inline-flex items-center justify-center transition-colors"
             >
-              Partner with TRIIBE
+              Explore our Program
             </a>
 
             <Image
@@ -59,7 +59,7 @@ export default function Hero() {
 
             <a
               href="/apply"
-              className="px-6 py-3 bg-white text-black hover:bg-gray-100 font-['DM_Sans',Helvetica] font-normal text-sm rounded inline-flex items-center justify-center transition-colors gap-2"
+              className="px-6 py-3  font-bold bg-white text-black hover:bg-gray-100 font-['DM_Sans',Helvetica] font-normal text-sm rounded inline-flex items-center justify-center transition-colors gap-2"
             >
               Apply to Fellowship
             </a>

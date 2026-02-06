@@ -19,8 +19,8 @@ const testimonials = [
     quote:
       "Receiving TRIIBE’s scholarship support further strengthened the work of Vervient Foundation by highlighting that community and connection matter as much as ideas. Knowing there’s a network of like-minded leaders cheering me on fuels our mission to empower students with an innovation mindset and reminds me that there’s always a shoulder to lean on in this journey.",
     name: "Gitanjali",
-    year: "TRIIBE Fellow 2021–2024",
-    organization: "Founder, Education Access Initiative",
+    year: "TRIIBE Fellow Fall 2025",
+    organization: "Global Keynote, Fervent Foundation",
   },
   {
     quote:
@@ -54,9 +54,14 @@ const testimonials = [
 
 const faqs = [
   {
+    question: "How does triibe measure impact?",
+    answer:
+      "Any undergraduate sophomore who has founded and is actively leading a nonprofit organization. You must be enrolled full-time at a college or university.",
+  },
+  {
     question: "Who is eligible to apply?",
     answer:
-      "Any undergraduate student (sophomore-senior) who has founded or is actively leading a nonprofit organization. You must be enrolled full-time at an accredited college or university.",
+      "Any undergraduate sophomore who has founded and is actively leading a nonprofit organization. You must be enrolled full-time at a college or university.",
   },
   {
     question: "What can I use the funding for?",
@@ -75,87 +80,87 @@ const faqs = [
   },
 ];
 
-function TestimonialCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+// function TestimonialCarousel() {
+//   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const goToPrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1,
-    );
-  };
+//   const goToPrevious = () => {
+//     setCurrentIndex((prevIndex) =>
+//       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1,
+//     );
+//   };
 
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1,
-    );
-  };
+//   const goToNext = () => {
+//     setCurrentIndex((prevIndex) =>
+//       prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1,
+//     );
+//   };
 
-  const currentTestimonial = testimonials[currentIndex];
+//   const currentTestimonial = testimonials[currentIndex];
 
-  return (
-    <div className="flex flex-col gap-12">
-      <div className="text-center">
-        <h2 className=" font-bold text-black text-4xl mb-4 tracking-[-0.90px] leading-10">
-          Hear from Our Fellows
-        </h2>
-        <p className=" font-normal text-[#303641] text-lg">
-          Real stories from student founders who've built sustainable impact
-        </p>
-      </div>
+//   return (
+//     <div className="flex flex-col gap-12">
+//       <div className="text-center">
+//         <h2 className=" font-bold text-black text-4xl mb-4 tracking-[-0.90px] leading-10">
+//           Hear from Our Fellows
+//         </h2>
+//         <p className=" font-normal text-[#303641] text-lg">
+//           Real stories from student founders who've built sustainable impact
+//         </p>
+//       </div>
 
-      <div className="flex items-center justify-between gap-8">
-        <button
-          onClick={goToPrevious}
-          className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors shrink-0"
-          aria-label="Previous testimonial"
-        >
-          <ChevronLeft className="w-8 h-8 text-black" />
-        </button>
+//       <div className="flex items-center justify-between gap-8">
+//         <button
+//           onClick={goToPrevious}
+//           className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors shrink-0"
+//           aria-label="Previous testimonial"
+//         >
+//           <ChevronLeft className="w-8 h-8 text-black" />
+//         </button>
 
-        <div className="flex-1 text-center">
-          <blockquote className="mb-8">
-            <p className=" font-normal text-black text-2xl md:text-2xl leading-relaxed mb-8">
-              "{currentTestimonial.quote}"
-            </p>
-          </blockquote>
+//         <div className="flex-1 text-center">
+//           <blockquote className="mb-8">
+//             <p className=" font-normal text-black text-2xl md:text-2xl leading-relaxed mb-8">
+//               "{currentTestimonial.quote}"
+//             </p>
+//           </blockquote>
 
-          <div className="flex flex-col gap-2">
-            <p className=" font-semibold text-[#303641] text-lg">
-              {currentTestimonial.name}
-            </p>
-            <p className=" font-normal text-black text-base">
-              {currentTestimonial.year}
-            </p>
-            <p className=" font-normal text-black text-base">
-              {currentTestimonial.organization}
-            </p>
-          </div>
-        </div>
+//           <div className="flex flex-col gap-2">
+//             <p className=" font-semibold text-[#303641] text-lg">
+//               {currentTestimonial.name}
+//             </p>
+//             <p className=" font-normal text-black text-base">
+//               {currentTestimonial.year}
+//             </p>
+//             <p className=" font-normal text-black text-base">
+//               {currentTestimonial.organization}
+//             </p>
+//           </div>
+//         </div>
 
-        <button
-          onClick={goToNext}
-          className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors shrink-0"
-          aria-label="Next testimonial"
-        >
-          <ChevronRight className="w-8 h-8 text-black" />
-        </button>
-      </div>
+//         <button
+//           onClick={goToNext}
+//           className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors shrink-0"
+//           aria-label="Next testimonial"
+//         >
+//           <ChevronRight className="w-8 h-8 text-black" />
+//         </button>
+//       </div>
 
-      <div className="flex items-center justify-center gap-2">
-        {testimonials.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full transition-all ${
-              index === currentIndex ? "bg-[#303641] w-8" : "bg-black w-2"
-            }`}
-            aria-label={`Go to testimonial ${index + 1}`}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
+//       <div className="flex items-center justify-center gap-2">
+//         {testimonials.map((_, index) => (
+//           <button
+//             key={index}
+//             onClick={() => setCurrentIndex(index)}
+//             className={`w-2 h-2 rounded-full transition-all ${
+//               index === currentIndex ? "bg-[#303641] w-8" : "bg-black w-2"
+//             }`}
+//             aria-label={`Go to testimonial ${index + 1}`}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
 
 const ProgramPage = () => {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
@@ -183,18 +188,19 @@ const ProgramPage = () => {
               </div>
 
               <p className=" font-normal text-[#495565] text-xl leading-8 max-w-200">
-                Funding, mentorship, and community for undergraduate nonprofit
-                founders navigating the full arc of their college experience.
+                TRIIBE provides funding, mentorship, and community for college
+                students taking root today to advance tomorrow
               </p>
             </div>
 
             <div className="flex items-center gap-4 flex-col md:flex-row ">
-              <a
-                href="/partner"
-                className="px-6 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors  font-semibold text-base w-full md:w-auto text-center"
+              <button
+                zeffy-form-link="https://www.zeffy.com/embed/donation-form/invest-in-the-future-3?modal=true"
+                className="px-6 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors  font-semibold text-base w-full md:w-auto text-center cursor-pointer"
               >
-                Partner / Sponsor
-              </a>
+                Donate
+              </button>
+
               <a
                 href="/apply"
                 className="w-full md:w-auto px-6 py-3 bg-[#002c19] text-white rounded hover:bg-[#003d24] transition-colors text-center font-semibold text-base"
@@ -211,8 +217,8 @@ const ProgramPage = () => {
       <section className="  px-6 bg-white md:px-[200px]">
         <div className="max-w-260 mx-auto">
           <div className="max-w-5xl mx-auto text-center">
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
-              TRIIBE Bridges the Gap for Changemakers Entering College
+            <h1 className="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
+              Nonprofit founders are cut off from funding when entering College
             </h1>
           </div>
 
@@ -221,7 +227,7 @@ const ProgramPage = () => {
             <div className="relative w-full h-100 ">
               <div className="relative w-full h-100 rounded-2xl overflow-hidden bg-white">
                 <Image
-                  src="/images/programs/problem_infographic1.png"
+                  src="/images/programs/problem_infographic2.png"
                   alt="The Problem - 80% of student-led nonprofits fade within a year"
                   fill
                   className="object-contain"
@@ -238,10 +244,10 @@ const ProgramPage = () => {
           <div className="flex flex-col gap-12">
             <div className="flex flex-col gap-4">
               <h2 className=" font-bold text-black text-4xl tracking-[-0.90px] leading-10">
-                Three Pillars of Support
+                TRIIBE provides Three Pillars of Support
               </h2>
               <p className=" font-normal text-[#495565] text-lg leading-7">
-                Everything you need to build a sustainable organization
+                Everything you need to sustain your growth
               </p>
             </div>
 
@@ -255,7 +261,7 @@ const ProgramPage = () => {
                   Funding
                 </h3>
                 <p className=" font-normal text-[#495565] text-sm leading-[22.8px]">
-                  Receive $15K/year in unrestricted funding to cover operations,
+                  Receive $40K in unrestricted funding to cover operations,
                   team, and program costs.
                 </p>
               </div>
@@ -269,8 +275,8 @@ const ProgramPage = () => {
                   Mentorship
                 </h3>
                 <p className=" font-normal text-[#495565] text-sm leading-[22.8px]">
-                  Get matched with an experienced nonprofit leader who
-                  understands your specific challenges.
+                  Get matched with two experienced mentors each quarter who
+                  understand your specific challenges.
                 </p>
               </div>
 
@@ -283,8 +289,8 @@ const ProgramPage = () => {
                   Community
                 </h3>
                 <p className=" font-normal text-[#495565] text-sm leading-[22.8px]">
-                  Join a cohort of peer founders for workshops, feedback, and
-                  shared learning.
+                  Join a cohort of peer founders inspired to pursue social
+                  impact.
                 </p>
               </div>
             </div>
@@ -312,7 +318,7 @@ const ProgramPage = () => {
               <div className="flex-1 pb-12">
                 <div className="mb-6">
                   <h3 className=" font-bold text-black text-3xl mb-2">
-                    Year 1: Foundation
+                    Year 1: Roots
                   </h3>
                   <p className=" font-normal text-[#495565] text-lg">
                     Sophomore Year
@@ -355,13 +361,11 @@ const ProgramPage = () => {
                     </li>
                     <li className=" font-normal text-[#495565] text-sm flex items-start">
                       <span className="mr-3">•</span>
-                      <span>
-                        Establish baseline metrics & measurement framework
-                      </span>
+                      <span>Establish metrics & measurement framework</span>
                     </li>
                     <li className=" font-normal text-[#495565] text-sm flex items-start">
                       <span className="mr-3">•</span>
-                      <span>Create initial fundraising strategy</span>
+                      <span>Create new fundraising strategy</span>
                     </li>
                     <li className=" font-normal text-[#495565] text-sm flex items-start">
                       <span className="mr-3">•</span>
@@ -384,7 +388,7 @@ const ProgramPage = () => {
               <div className="flex-1 pb-12">
                 <div className="mb-6">
                   <h3 className=" font-bold text-black text-3xl mb-2">
-                    Year 2: Scale
+                    Year 2: Skyline
                   </h3>
                   <p className=" font-normal text-[#495565] text-lg">
                     Junior Year
@@ -455,7 +459,7 @@ const ProgramPage = () => {
               <div className="flex-1">
                 <div className="mb-6">
                   <h3 className=" font-bold text-black text-3xl mb-2">
-                    Year 3: Sustainability
+                    Year 3: Stars
                   </h3>
                   <p className=" font-normal text-[#495565] text-lg">
                     Senior Year
@@ -513,51 +517,38 @@ const ProgramPage = () => {
               </div>
             </div>
 
-            {/* Quarterly Cycle */}
-            <div className="bg-white border-2 border-black rounded-lg p-8 md:p-12">
-              <h3 className=" font-bold text-black text-2xl mb-8 ">
-                Repeating Quarterly Cycle (applies to all 3 years)
-              </h3>
+            {/* Quarterly Cycle Testimonial */}
+            <div className="bg-white border-2 border-black rounded-lg p-8 md:p-10">
+              <blockquote className="text-black text-xl font-normal leading-relaxed italic">
+                "TRIIBE's Mentorship Program is nothing short of astounding.
+                With a busy schedule, I wasn't sure how much time I could give,
+                but the ease of entry, flexible commitment, and thoughtful
+                organization made it possible to truly support my young
+                changemaker in a way that was both meaningful and deeply
+                rewarding."
+              </blockquote>
 
-              <div className="flex flex-wrap items-center  gap-6 md:gap-4">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center shrink-0">
-                    <span className=" font-bold text-white text-sm">1</span>
-                  </div>
-                  <span className=" font-normal text-black text-base">
-                    Set goals
-                  </span>
-                  <ArrowRightIcon className="w-4 h-4 text-[#354152]" />
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center shrink-0">
-                    <span className=" font-bold text-white text-sm">2</span>
-                  </div>
-                  <span className=" font-normal text-black text-base">
-                    Mentor sessions
-                  </span>
-                  <ArrowRightIcon className="w-4 h-4 text-[#354152]" />
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center shrink-0">
-                    <span className=" font-bold text-white text-sm">3</span>
-                  </div>
-                  <span className=" font-normal text-black text-base">
-                    Work sprint
-                  </span>
-                  <ArrowRightIcon className="w-4 h-4 text-[#354152]" />
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center shrink-0">
-                    <span className=" font-bold text-white text-sm">4</span>
-                  </div>
-                  <span className=" font-normal text-black text-base">
-                    Review & refine
-                  </span>
-                </div>
+              <div className="mt-6 flex items-center gap-3">
+                <span className="text-black font-semibold">
+                  — Jonny Imerman, Co-founder Imerman Angels
+                </span>
+                <a
+                  href="https://www.linkedin.com/in/imermanangels/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#0077b5] hover:opacity-80 transition-opacity"
+                  aria-label="Jonny Imerman LinkedIn Profile"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -629,7 +620,7 @@ const ProgramPage = () => {
                     Unlock Funding
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
-                    Incremental grants disbursed as you grow and meet milestones
+                    Grants distributed each year as you grow your foundation
                   </p>
                 </div>
               </div>
@@ -684,11 +675,11 @@ const ProgramPage = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
+      {/* <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
         <div className="max-w-260 mx-auto">
           <TestimonialCarousel />
         </div>
-      </section>
+      </section> */}
 
       {/* Deck Section */}
       <section className="py-12 px-4 md:px-[200px]">
@@ -712,7 +703,7 @@ const ProgramPage = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
+      <section id="faqProgram" className="py-20 px-4 md:px-50 bg-[#3036411A]">
         <div className="max-w-260 mx-auto flex flex-col gap-12">
           <h2 className=" font-bold text-black text-4xl text-center tracking-[-0.90px] leading-10">
             Frequently Asked Questions
@@ -753,7 +744,7 @@ const ProgramPage = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-black rounded-2xl p-12 text-center mt-12">
+        {/* <div className="bg-black rounded-2xl p-12 text-center mt-12">
           <h3 className=" font-bold text-[#98D3D8] text-3xl md:text-4xl mb-6">
             Ready to build your nonprofit?
           </h3>
@@ -767,7 +758,7 @@ const ProgramPage = () => {
           >
             Apply Now
           </a>
-        </div>
+        </div> */}
       </section>
 
       <CTASection />

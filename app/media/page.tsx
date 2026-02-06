@@ -14,16 +14,14 @@ const workshops = [
     speakers: [
       {
         name: "Tahnoon Murtza",
-        avatar:
-          "https://ui-avatars.com/api/?name=Tahnoon+Murtza&size=64&background=D1D5DB&color=9CA3AF&rounded=true",
+        avatar: "/images/about/team/Tahnoon Murtza1.jpg",
         topic: "Navigating Partnerships",
         description:
           "Growing your business and creating partnerships without age being a limitation",
       },
       {
         name: "Justin Kramm",
-        avatar:
-          "https://ui-avatars.com/api/?name=Justin+Kramm&size=64&background=D1D5DB&color=9CA3AF&rounded=true",
+        avatar: "/images/about/team/Justin Kramm.jpg",
         topic: "Augmented Tools for Media Development",
         description: "Maximizing new AI techniques to better present your work",
       },
@@ -39,16 +37,14 @@ const workshops = [
     speakers: [
       {
         name: "Tahnoon Murtza",
-        avatar:
-          "https://ui-avatars.com/api/?name=Tahnoon+Murtza&size=64&background=D1D5DB&color=9CA3AF&rounded=true",
+        avatar: "/images/about/team/Tahnoon Murtza1.jpg",
         topic: "Navigating Partnerships",
         description:
           "Growing your business and creating partnerships without age being a limitation",
       },
       {
         name: "Justin Kramm",
-        avatar:
-          "https://ui-avatars.com/api/?name=Justin+Kramm&size=64&background=D1D5DB&color=9CA3AF&rounded=true",
+        avatar: "/images/about/team/Justin Kramm.jpg",
         topic: "Augmented Tools for Media Development",
         description: "Maximizing new AI techniques to better present your work",
       },
@@ -64,16 +60,14 @@ const workshops = [
     speakers: [
       {
         name: "Tahnoon Murtza",
-        avatar:
-          "https://ui-avatars.com/api/?name=Tahnoon+Murtza&size=64&background=D1D5DB&color=9CA3AF&rounded=true",
+        avatar: "/images/about/team/Tahnoon Murtza1.jpg",
         topic: "Navigating Partnerships",
         description:
           "Growing your business and creating partnerships without age being a limitation",
       },
       {
         name: "Justin Kramm",
-        avatar:
-          "https://ui-avatars.com/api/?name=Justin+Kramm&size=64&background=D1D5DB&color=9CA3AF&rounded=true",
+        avatar: "/images/about/team/Justin Kramm.jpg",
         topic: "Augmented Tools for Media Development",
         description: "Maximizing new AI techniques to better present your work",
       },
@@ -198,11 +192,21 @@ const socialLinks = [
 
 const upcomingEvents = [
   {
-    image: "/images/media/upcoming.jpg",
-    title: "Billion Dollar Impact: Next Gen Changemakers",
-    date: "Saturday, February 28",
-    time: "10:00 AM – 6:00 PM",
-    location: "New York City",
+    image: "/images/media/upcomingEvent1.jpg",
+    title:
+      "TRIIBE TALK | Navigating Partnerships x Augmented Media Development",
+    date: "Wednesday, February 11",
+    time: "5:30 PM - 6:30 PM EST",
+    location: "YouTube",
+    registrationLink: "https://luma.com/4akmpnxv",
+  },
+  {
+    image: "/images/media/UpcomingEvent2.jpg",
+    title: "Velric Hiring & Leadership Summit",
+    date: "Monday, February 16",
+    time: "5:00 PM - 8:00 PM",
+    location: "307 W 38th St #1505, New York",
+    registrationLink: "https://luma.com/velric-thebuilderseries",
   },
   {
     image: "/images/media/upcoming.jpg",
@@ -210,13 +214,7 @@ const upcomingEvents = [
     date: "Saturday, February 28",
     time: "10:00 AM – 6:00 PM",
     location: "New York City",
-  },
-  {
-    image: "/images/media/upcoming.jpg",
-    title: "Billion Dollar Impact: Next Gen Changemakers",
-    date: "Saturday, February 28",
-    time: "10:00 AM – 6:00 PM",
-    location: "New York City",
+    registrationLink: "https://luma.com/7zynhb71",
   },
 ];
 
@@ -256,8 +254,8 @@ const MediaPage = () => {
             />
 
             <p className="font-normal text-[#495565] text-xl mt-4">
-              Real conversations with student nonprofit leaders building
-              community impact
+              Alternating lessons from current and next-gen changemakers to
+              demonstrate that age doesn’t impact the quality of one’s work
             </p>
           </div>
 
@@ -371,15 +369,15 @@ const MediaPage = () => {
       {/* Media Cards Section */}
       <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
         <div className="max-w-300 mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
             {/* Podcasts Card */}
             <div className="bg-white rounded-lg overflow-hidden shadow-sm">
-              <div className="p-6 pb-0">
+              <div className="p-6 pb-0 ">
                 <h3 className="font-bold text-black text-2xl mb-4 text-center">
                   Podcasts
                 </h3>
               </div>
-              <div className="px-6">
+              <div className="px-6 ">
                 <div className="relative aspect-video rounded-lg overflow-hidden">
                   <Image
                     src="/images/media/podcast.png"
@@ -389,7 +387,7 @@ const MediaPage = () => {
                   />
                 </div>
               </div>
-              <div className="p-6 flex flex-col gap-12">
+              <div className="p-6 flex flex-col justify-between  min-h-90">
                 <div>
                   <div className="inline-block px-3 py-1 bg-[#3036411A] rounded mb-4">
                     <span className="font-semibold text-black text-sm">
@@ -408,10 +406,10 @@ const MediaPage = () => {
                 <a
                   href="https://www.youtube.com/watch?v=XNUr1NgLq28"
                   target="_blank"
-                  className="w-full px-6 py-3 bg-[#002c19] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base inline-flex items-center justify-center gap-2"
+                  className="w-full px-6 py-3 bg-[#1C5945] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base inline-flex items-center justify-center gap-2"
                 >
                   <Play className="w-4 h-4" />
-                  Play
+                  Watch
                 </a>
               </div>
             </div>
@@ -433,7 +431,7 @@ const MediaPage = () => {
                   />
                 </div>
               </div>
-              <div className="p-6 flex flex-col gap-[40px]">
+              <div className="p-6 flex flex-col justify-between min-h-90">
                 <div>
                   <div className="inline-block px-3 py-1 bg-[#3036411A] rounded mb-4">
                     <span className="font-semibold text-black text-sm">
@@ -451,7 +449,7 @@ const MediaPage = () => {
                 <a
                   href="https://www.youtube.com/watch?v=pNKGIByJNnk"
                   target="_blank"
-                  className="w-full px-6 py-3 bg-[#002c19] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base inline-flex items-center justify-center gap-2"
+                  className="w-full px-6 py-3 bg-[#1C5945] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base inline-flex items-center justify-center gap-2"
                 >
                   <Play className="w-4 h-4" />
                   Watch
@@ -476,7 +474,7 @@ const MediaPage = () => {
                   />
                 </div>
               </div>
-              <div className="p-6 flex flex-col gap-6">
+              <div className="p-6 flex flex-col justify-between min-h-90">
                 <div>
                   <div className="inline-block px-3 py-1 bg-[#3036411A] rounded mb-4">
                     <span className="font-semibold text-black text-sm">
@@ -493,9 +491,9 @@ const MediaPage = () => {
                   </p>
                 </div>
                 <div className="flex gap-3">
-                  <a
-                    href="#"
-                    className="px-6 py-2 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base inline-flex items-center justify-center"
+                  <button
+                    onClick={() => setShowNewsletter(true)}
+                    className="px-6 py-2 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base inline-flex items-center justify-center cursor-pointer"
                   >
                     <svg
                       className="w-5 h-5"
@@ -510,11 +508,11 @@ const MediaPage = () => {
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       />
                     </svg>
-                  </a>
+                  </button>
                   <a
                     href="https://mailchi.mp/triibe.us/the-triibune-october-newsletter"
                     target="_blank"
-                    className="flex-1 px-6 py-3 bg-[#002c19] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base inline-flex items-center justify-center gap-2"
+                    className="flex-1 px-6 py-3 bg-[#1C5945] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base inline-flex items-center justify-center gap-2"
                   >
                     Read
                   </a>
@@ -643,75 +641,99 @@ const MediaPage = () => {
             {upcomingEvents.map((event, index) => (
               <div
                 key={index}
-                className="bg-white border border-gray-200  overflow-hidden"
+                className="bg-white border border-gray-200 overflow-hidden flex flex-col h-full"
               >
+                {/* Image Container */}
                 <div className="relative w-full h-64 bg-black">
                   <Image
                     src={event.image}
                     alt={event.title}
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="font-bold text-black text-xl mb-4">
-                    {event.title}
-                  </h3>
-                  <div className="flex flex-col gap-3 text-sm text-gray-600">
-                    <div className="flex items-center gap-3">
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                        />
-                      </svg>
-                      <span>{event.date}</span>
+
+                {/* Content Container: flex-1 and justify-between push the button to the bottom */}
+                <div className="p-6 flex flex-col justify-between flex-1">
+                  <div>
+                    <h3 className="font-bold text-black text-base mb-4">
+                      {event.title}
+                    </h3>
+
+                    <div className="flex flex-col gap-3 text-sm text-gray-600">
+                      {/* Date */}
+                      <div className="flex items-center gap-3">
+                        <svg
+                          className="w-5 h-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        <span>{event.date}</span>
+                      </div>
+
+                      {/* Time */}
+                      <div className="flex items-center gap-3">
+                        <svg
+                          className="w-5 h-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        <span>{event.time}</span>
+                      </div>
+
+                      {/* Location */}
+                      <div className="flex items-center gap-3">
+                        <svg
+                          className="w-5 h-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                          />
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                          />
+                        </svg>
+                        <span>{event.location}</span>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                      <span>{event.time}</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                      </svg>
-                      <span>{event.location}</span>
-                    </div>
+                  </div>
+
+                  {/* Register Button - Pinned to bottom */}
+                  <div className="mt-8">
+                    <a
+                      href={event.registrationLink || "#"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full py-3 bg-[#1C5945] text-white text-center rounded font-semibold hover:bg-[#003d24] transition-colors"
+                    >
+                      Register
+                    </a>
                   </div>
                 </div>
               </div>
@@ -759,7 +781,7 @@ const MediaPage = () => {
       <Footer />
 
       {/* Newsletter Popup */}
-      {/* {showNewsletter && (
+      {showNewsletter && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40">
           <div className="bg-white rounded-lg shadow-2xl p-8 md:p-10 max-w-md w-full relative">
             <button
@@ -784,7 +806,7 @@ const MediaPage = () => {
 
             <div className="text-center mb-8">
               <Image
-                src="/images/TriibeHero.svg"
+                src="/images/media/TriibeHero.svg"
                 alt="TRIIBE"
                 width={64}
                 height={64}
@@ -828,7 +850,7 @@ const MediaPage = () => {
             </form>
           </div>
         </div>
-      )} */}
+      )}
     </main>
   );
 };

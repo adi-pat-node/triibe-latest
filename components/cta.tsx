@@ -46,7 +46,7 @@ export default function CTASection() {
     */
     <section className="py-20 px-6 md:px-16 xl:px-[200px] bg-[#002c19]">
       <div className="w-full mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12 xl:gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12 xl:gap-12 ">
           {/* Be a Cohort */}
           <div className="bg-[#002c19] border border-white rounded-lg p-8 flex flex-col gap-6 justify-between w-full">
             <h3 className="font-semibold text-white text-2xl">Join A Cohort</h3>
@@ -82,7 +82,7 @@ export default function CTASection() {
             <h3 className="font-semibold text-white text-2xl">Fund Our Work</h3>
             <p className="font-normal text-[#D1D5DC] text-base leading-relaxed">
               Your donation helps founders make an impact in food, water,
-              shelter, health, education, and energy.
+              shelter, health and education.
             </p>
             <button
               zeffy-form-link="https://www.zeffy.com/embed/donation-form/invest-in-the-future-3?modal=true"

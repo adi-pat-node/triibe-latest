@@ -25,7 +25,7 @@ const Page = () => {
     {
       question: "Who is eligible to apply?",
       answer:
-        "Our program is open each semester to sophomores enrolled at U.S. colleges, no matter their citizenship, addressing needs in food, water, shelter, health, education, or energy.",
+        "Any undergraduate sophomore who has founded and is actively leading a nonprofit organization. You must be enrolled full-time at a college or university.",
     },
     {
       question: "What is the selection process?",
@@ -350,7 +350,7 @@ const Page = () => {
                     openFaqIndex === index ? "max-h-96" : "max-h-0"
                   }`}
                 >
-                  <div className="px-6 py-5 text-gray-700 leading-relaxed">
+                  <div className="px-6 py-5 text-gray-700 leading-relaxed bg-white">
                     {faq.answer}
                   </div>
                 </div>

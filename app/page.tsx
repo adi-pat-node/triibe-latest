@@ -18,15 +18,15 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Header />
       <Hero />
-      <MissionStatement />
+      {/* <MissionStatement /> */}
       <ProgramOverview />
       <ApplicationProcess />
       <FellowshipBenefits />
       <KeyStatistics />
       <Changemakers />
       <PostGraduationOutcomes />
-      <SponsorsAndPartners />
-      <ImpactMetrics />
+      {/* <SponsorsAndPartners /> */}
+      {/* <ImpactMetrics /> */}
       <CTASection />
       <Footer />
       {/* <Newsletter /> */}

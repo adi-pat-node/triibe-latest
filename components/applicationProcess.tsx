@@ -3,10 +3,10 @@
 import { ArrowRight } from "lucide-react";
 
 const eligibilityRequirements = [
-  "Currently enrolled undergraduate students at accredited institutions",
+  "Currently enrolled undergraduate students",
   "Founders or co-founders of registered 501(c)(3) nonprofit organizations",
-  "Active leadership role in organizational operations and strategy",
-  "Available for 5–8 hours per week during fellowship term",
+  "Active leadership role in organizational operations",
+  "Aspiring to continue their work full-time after graduating",
 ];
 
 const cohortDetails = [
@@ -27,8 +27,8 @@ export default function ApplicationProcess() {
           Apply to the Fellowship
         </h2>
         <p className="max-w-191 font-normal text-[#495565] text-lg leading-[29.2px]">
-          TRIIBE provides funding, mentorship, and sustained community for
-          college students building organizations that create social impact.
+          TRIIBE provides funding, mentorship, and community for college
+          students building organizations that create social impact.
         </p>
       </header>
 
@@ -41,11 +41,11 @@ export default function ApplicationProcess() {
                 APPLICATION WINDOW
               </p>
               <h3 className=" font-normal text-[#000000] text-2xl leading-8">
-                Now Open
+                Opening Soon
               </h3>
               <p className=" font-normal text-[#495565] text-base leading-[25.6px]">
-                Applications for the Spring 2026 cohort are being accepted
-                through March 15, 2026.
+                Applications for the Spring 2026 cohort will open later this
+                spring.
               </p>
             </div>
 
@@ -76,24 +76,24 @@ export default function ApplicationProcess() {
         {/* Eligibility Card */}
         <div className="bg-white border border-gray-200 rounded-lg">
           <div className="p-10 flex flex-col gap-6">
-            <p className=" font-normal text-[#697282] text-xs tracking-[0.60px] leading-4 uppercase">
+            <p className=" font-normal text-[#697282] text-xs tracking-[0.60px] leading-4 uppercase mb-4">
               WHO CAN APPLY
             </p>
 
             <ul className="flex flex-col gap-4">
               {eligibilityRequirements.map((requirement, index) => (
                 <li key={index} className="flex gap-3">
-                  <span className=" font-normal text-[#99a1ae] text-base leading-6 shrink-0">
+                  <span className=" font-normal text-[#99a1ae] text-sm leading-6 shrink-0">
                     —
                   </span>
-                  <span className=" font-normal text-[#354152] text-base leading-6">
+                  <span className=" font-normal text-[#354152] text-sm leading-6">
                     {requirement}
                   </span>
                 </li>
               ))}
             </ul>
 
-            <div className="flex items-start justify-between gap-4 flex-wrap">
+            {/* <div className="flex items-start justify-between gap-4 flex-wrap">
               {footerLinks.map((link, index) => (
                 <a
                   key={index}
@@ -103,7 +103,7 @@ export default function ApplicationProcess() {
                   {link.text}
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

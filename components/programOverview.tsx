@@ -5,42 +5,53 @@ import Image from "next/image";
 const programSections = [
   {
     title: "Who We Are",
-    description:
-      "TRIIBE is a fellowship for undergraduate students leading registered nonprofit organizations. We believe that college founders deserve the same level of institutional support as their startup counterparts—sustained community, experienced mentorship, and funding that doesn't disappear after high school.",
+    description: (
+      <>
+        Support drops off after high school. TRIIBE bridges the gap for founders
+        in college. <br />
+        <br />
+        We believe that college founders deserve the same level of institutional
+        support as their startup counterparts: community, experienced
+        mentorship, and three scaling grants throughout their college years.
+      </>
+    ),
     bgColor: "bg-[#002c19]",
     textColor: "text-white",
-    descriptionColor: "text-[#fffefee6]",
+    descriptionColor: "text-[#ffffffcc]",
     imageUrl: "/images/home/whatWeDo1.jpg",
     imagePosition: "right",
     fontWeight: "font-semibold",
+    imageObjectPosition: "object-center",
   },
   {
     title: "What We Do",
     description:
-      "We provide a comprehensive support system: direct funding for organizational needs, structured mentorship from experienced nonprofit leaders and social entrepreneurs, and a tight-knit community of fellow student founders who understand the unique challenges of building impact organizations while in college.",
+      "We ensure next-gen changemakers are always at the table, as a focal point, not a footnote. Whether through our college fellowship, or the TRIIBE 100 fund (supporting the top 100 nonprofits run by founders under 30), we are the seal of credibility, improving the perception of next-gen capabilities, and inspiring others to pursue social impact.",
     bgColor: "bg-[#002c19]",
     textColor: "text-[#fffefee6]",
-    descriptionColor: "text-[#fffefee6]",
+    descriptionColor: "text-[#ffffffcc]",
     imageUrl: "/images/home/whatWeDo2.jpg",
     imagePosition: "left",
     fontWeight: "font-semibold",
+    imageObjectPosition: "object-[20%_80%]",
   },
   {
     title: "How We Do It",
     description:
-      "Through a selective six-month fellowship, we bring together cohorts of 25 student founders for monthly workshops, one-on-one mentorship sessions, and peer learning experiences. Fellows receive unrestricted funding, ongoing support that extends beyond graduation, and access to a growing alumni network building the future of social impact.",
+      "We provide a comprehensive support system: direct funding for organizational needs, structured mentorship from experienced nonprofit leaders and social entrepreneurs, and a tight-knit community of fellow student founders who understand the unique challenges of building impact organizations.",
     bgColor: "bg-[#002c19]",
     textColor: "text-white",
-    descriptionColor: "text-[#fffefee6]",
+    descriptionColor: "text-[#ffffffcc]",
     imageUrl: "/images/home/whatWeDo4.jpg",
     imagePosition: "right",
     fontWeight: "font-bold",
+    imageObjectPosition: "object-center",
   },
 ];
 
 export default function ProgramOverview() {
   return (
-    <section className="flex flex-col w-full items-start   md:px-4 md:px-50  ">
+    <section className="flex flex-col w-full items-start   md:px-4 md:px-50  pt-16">
       {programSections.map((section, index) => (
         <div
           key={index}
@@ -53,7 +64,7 @@ export default function ProgramOverview() {
                   src={section.imageUrl}
                   alt={`${section.title} illustration`}
                   fill
-                  className="object-cover"
+                  className={`object-cover ${section.imageObjectPosition || "object-center"}`}
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
@@ -95,7 +106,7 @@ export default function ProgramOverview() {
                   src={section.imageUrl}
                   alt={`${section.title} illustration`}
                   fill
-                  className="object-cover"
+                  className={`object-cover ${section.imageObjectPosition || "object-center"}`}
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>

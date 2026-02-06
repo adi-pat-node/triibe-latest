@@ -717,14 +717,14 @@ const page = () => {
             {/* Right Side - Content */}
             <div>
               {/* Header */}
-              <div className="mb-12">
-                <h3 className="font-semibold text-black text-2xl mb-4">
+              <div className="mb-0">
+                {/* <h3 className="font-semibold text-black text-2xl mb-4">
                   Human needs first.
                 </h3>
                 <p className="font-normal text-[#495565] text-[16px] leading-relaxed">
                   TRIIBE supports the founders. Founders lead the work in their
                   communities.
-                </p>
+                </p> */}
               </div>
 
               {/* Impact Grid */}
@@ -776,8 +776,8 @@ const page = () => {
                     </h4>
                   </div>
                   <p className="font-normal text-[#495565] text-base leading-relaxed">
-                    Healthcare access, mental health services, and preventative
-                    care.
+                    Healthcare access, environmental health, mental health
+                    services, and preventative care.
                   </p>
                 </div>
 
@@ -792,20 +792,6 @@ const page = () => {
                   <p className="font-normal text-[#495565] text-base leading-relaxed">
                     Educational equity, literacy programs, and pathways to
                     opportunity.
-                  </p>
-                </div>
-
-                {/* Energy */}
-                <div>
-                  <div className="flex items-center gap-2 mb-3">
-                    <Zap className="w-5 h-5 mb-2" />
-                    <h4 className="font-bold text-black text-xl mb-3">
-                      Energy
-                    </h4>
-                  </div>
-                  <p className="font-normal text-[#495565] text-base leading-relaxed">
-                    Clean energy access, sustainable power, and climate
-                    resilience.
                   </p>
                 </div>
               </div>

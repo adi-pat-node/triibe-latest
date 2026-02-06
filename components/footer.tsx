@@ -4,27 +4,28 @@ const footerColumns = [
   {
     title: "For Applicants",
     links: [
-      { label: "Check Eligibility", href: "/eligibility" },
       { label: "Apply Now", href: "/apply" },
-      { label: "Fellowship Details", href: "/fellowship" },
-      { label: "FAQ", href: "/faq" },
+      { label: "Fellowship Details", href: "/program" },
+      { label: "FAQ", href: "/program/#faqProgram" },
     ],
   },
   {
     title: "About",
     links: [
-      { label: "Our Mission", href: "/mission" },
-      { label: "Team", href: "/team" },
-      { label: "Fellows", href: "/fellows" },
-      { label: "Impact", href: "/impact" },
+      { label: "Team", href: "/about" },
+      { label: "Fellows", href: "/cohort" },
     ],
   },
   {
     title: "Partner",
     links: [
-      { label: "Partnership Opportunities", href: "/partnership" },
-      { label: "Donate", href: "/donate" },
-      { label: "Mentor", href: "/mentor" },
+      {
+        label: "Donate",
+        href: "#", // keep it as placeholder
+        zeffyFormLink:
+          "https://www.zeffy.com/embed/donation-form/invest-in-the-future-3?modal=true",
+      },
+
       { label: "Contact", href: "/contact" },
     ],
   },
@@ -40,8 +41,7 @@ export default function Footer() {
               TRIIBE
             </h2>
             <p className=" font-normal text-[#495565] text-sm tracking-[0] leading-[22.8px]">
-              Supporting undergraduate nonprofit founders with funding,
-              mentorship, and community.
+              Helping next-gen nonprofit founders continue their work
             </p>
           </div>
 
@@ -51,15 +51,25 @@ export default function Footer() {
                 {column.title}
               </h3>
               <nav className="flex flex-col items-start gap-2">
-                {column.links.map((link, linkIndex) => (
-                  <a
-                    key={linkIndex}
-                    href={link.href}
-                    className=" font-normal text-[#495565] text-sm tracking-[0] leading-5 hover:text-black transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                ))}
+                {column.links.map((link, linkIndex) =>
+                  link.zeffyFormLink ? (
+                    <button
+                      key={linkIndex}
+                      zeffy-form-link={link.zeffyFormLink}
+                      className="font-normal text-[#495565] text-sm hover:text-black transition-colors cursor-pointer bg-transparent border-none p-0"
+                    >
+                      {link.label}
+                    </button>
+                  ) : (
+                    <a
+                      key={linkIndex}
+                      href={link.href}
+                      className=" font-normal text-[#495565] text-sm tracking-[0] leading-5 hover:text-black transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  ),
+                )}
               </nav>
             </div>
           ))}
@@ -71,7 +81,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-4">
             <a
-              href="mailto:contact@triibe.us"
+              href="mailto:team@triibe.us"
               className="text-[#697282] hover:text-black transition-colors"
               aria-label="Email"
             >

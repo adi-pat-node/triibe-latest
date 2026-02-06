@@ -11,7 +11,7 @@ import Link from "next/link";
 const events = [
   {
     id: "changemaker-summit-2025",
-    image: "/images/events/event1.jpg",
+    image: "/images/events/pastEvent1.jpg",
     status: "PAST EVENT",
     year: "2025",
     title: "Changemaker Summit",
@@ -22,7 +22,7 @@ const events = [
   },
   {
     id: "davos-summit-2026",
-    image: "/images/events/event1.jpg",
+    image: "/images/events/pastEvent2.jpg",
     status: "PAST EVENT",
     year: "2026",
     title: "World Economic Forum",
@@ -31,17 +31,17 @@ const events = [
     date: "Nov 16, 2024",
     location: "New York, NY • Manhattan Center",
   },
-  {
-    id: "event-3-2026",
-    image: "/images/events/event1.jpg",
-    status: "UPCOMING",
-    year: "2026",
-    title: "TRIIBE Event #3",
-    description:
-      "An annual NYC convening that centers youth nonprofit founders and connects them with mentors, partners, and supporters.",
-    date: "Nov 16, 2024",
-    location: "New York, NY • Manhattan Center",
-  },
+  // {
+  //   id: "event-3-2026",
+  //   image: "/images/events/event1.jpg",
+  //   status: "UPCOMING",
+  //   year: "2026",
+  //   title: "TRIIBE Event #3",
+  //   description:
+  //     "An annual NYC convening that centers youth nonprofit founders and connects them with mentors, partners, and supporters.",
+  //   date: "Nov 16, 2024",
+  //   location: "New York, NY • Manhattan Center",
+  // },
 ];
 
 const page = () => {
@@ -461,7 +461,7 @@ const page = () => {
       </section>
 
       {/* Impact Section */}
-      <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
+      {/* <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
         <div className="max-w-300 mx-auto">
           <h2 className="font-bold text-black text-4xl md:text-5xl mb-8 text-center">
             Impact
@@ -476,7 +476,7 @@ const page = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3  gap-6">
-            {/* Testimonial 1 */}
+
             <div className="bg-[#F9FAFB] border border-gray-200 rounded-lg p-8">
               <p className="font-normal text-[#495565] text-base leading-relaxed mb-6 italic">
                 "The Summit connected me with mentors who understand the unique
@@ -493,7 +493,7 @@ const page = () => {
               </div>
             </div>
 
-            {/* Testimonial 2 */}
+
             <div className="bg-[#F9FAFB] border border-gray-200 rounded-lg p-8">
               <p className="font-normal text-[#495565] text-base leading-relaxed mb-6 italic">
                 "As a partner, this event gave us direct access to vetted
@@ -510,7 +510,7 @@ const page = () => {
               </div>
             </div>
 
-            {/* Testimonial 3 */}
+
             <div className="bg-[#F9FAFB] border border-gray-200 rounded-lg p-8">
               <p className="font-normal text-[#495565] text-base leading-relaxed mb-6 italic">
                 "Finally, a space where student founders are taken seriously.
@@ -528,7 +528,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Benefits Section */}
       <section className="py-20 px-4 md:px-50 bg-[#F9FAFB]  border-t border-b border-gray-200">
@@ -1082,19 +1082,19 @@ const page = () => {
       </section>
 
       {/* What the Summit Is Section */}
-      <section
+      {/* <section
         id="event-3-2026"
         className="py-20 px-4 md:px-50 bg-[#3036411A] border-t border-b border-gray-200"
       >
         <div className="max-w-300 mx-auto">
-          {/* Badge */}
+
           <div className="mb-8">
             <span className="inline-block px-4 py-2 bg-white rounded-full text-sm font-semibold text-gray-600">
               PAST EVENT — 2024
             </span>
           </div>
 
-          {/* Title and Button */}
+
           <div className="flex justify-between items-start mb-8 flex-col md:flex-row gap-4">
             <h1 className="font-bold text-black text-4xl md:text-4xl">
               TRIIBE Event #3
@@ -1111,7 +1111,7 @@ const page = () => {
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Left Column - Description */}
+
             <div>
               <p className="font-normal text-[#495565] text-lg leading-relaxed pt-8">
                 The TRIIBE Changemaker Summit is an annual convening designed
@@ -1122,7 +1122,7 @@ const page = () => {
               </p>
             </div>
 
-            {/* Right Column - Features List */}
+
             <div className="space-y-4">
               <div className="flex gap-3">
                 <span className="text-[#697282] mt-1">—</span>
@@ -1163,16 +1163,16 @@ const page = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* What Happened at the 2025 Summit Section */}
-      <section className="py-20 px-4 md:px-50 bg-gray-50  border-t border-b border-gray-200">
+      {/* <section className="py-20 px-4 md:px-50 bg-gray-50  border-t border-b border-gray-200">
         <div className="max-w-300 mx-auto">
           <h2 className="font-bold text-black text-4xl md:text-4xl mb-12">
             What Happened at the 2025 Summit
           </h2>
 
-          {/* At a Glance */}
+
           <div className="mb-16">
             <h3 className="font-semibold text-[#697282] text-sm uppercase tracking-wider mb-6">
               AT A GLANCE
@@ -1206,7 +1206,7 @@ const page = () => {
             </div>
           </div>
 
-          {/* Program Highlights */}
+
           <div className="mb-16">
             <h3 className="font-semibold text-[#697282] text-sm uppercase tracking-wider mb-6">
               PROGRAM HIGHLIGHTS
@@ -1239,17 +1239,17 @@ const page = () => {
             </div>
           </div>
 
-          {/* Photo Grid Placeholder */}
+
           <div className="bg-white border border-gray-200 rounded-lg p-12 flex items-center justify-center min-h-25">
             <p className="font-normal text-[#697282] text-lg">
               Speaker and community photo grid placeholder
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Impact Section */}
-      <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
+      {/* <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
         <div className="max-w-300 mx-auto">
           <h2 className="font-bold text-black text-4xl md:text-5xl mb-8 text-center">
             Impact
@@ -1264,7 +1264,7 @@ const page = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3  gap-6">
-            {/* Testimonial 1 */}
+
             <div className="bg-[#F9FAFB] border border-gray-200 rounded-lg p-8">
               <p className="font-normal text-[#495565] text-base leading-relaxed mb-6 italic">
                 "The Summit connected me with mentors who understand the unique
@@ -1281,7 +1281,7 @@ const page = () => {
               </div>
             </div>
 
-            {/* Testimonial 2 */}
+
             <div className="bg-[#F9FAFB] border border-gray-200 rounded-lg p-8">
               <p className="font-normal text-[#495565] text-base leading-relaxed mb-6 italic">
                 "As a partner, this event gave us direct access to vetted
@@ -1298,7 +1298,7 @@ const page = () => {
               </div>
             </div>
 
-            {/* Testimonial 3 */}
+
             <div className="bg-[#F9FAFB] border border-gray-200 rounded-lg p-8">
               <p className="font-normal text-[#495565] text-base leading-relaxed mb-6 italic">
                 "Finally, a space where student founders are taken seriously.
@@ -1316,17 +1316,17 @@ const page = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Benefits Section */}
-      <section className="py-20 px-4 md:px-50 bg-[#F9FAFB]  border-t border-b border-gray-200">
+      {/* <section className="py-20 px-4 md:px-50 bg-[#F9FAFB]  border-t border-b border-gray-200">
         <div className=" mx-auto">
           <h2 className="font-bold text-black text-4xl md:text-4xl mb-12">
             Benefits
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* For Founders */}
+
             <div className="bg-white border border-gray-200 rounded-lg p-8">
               <h3 className="font-bold text-black text-xl mb-6">
                 For Founders
@@ -1365,7 +1365,7 @@ const page = () => {
               </div>
             </div>
 
-            {/* For Partners & Sponsors */}
+
             <div className="bg-white border border-gray-200 rounded-lg pt-8 px-4">
               <h3 className="font-bold text-black text-xl mb-6">
                 For Partners & Sponsors
@@ -1404,7 +1404,7 @@ const page = () => {
               </div>
             </div>
 
-            {/* For Attendees */}
+
             <div className="bg-white border border-gray-200 rounded-lg p-8">
               <h3 className="font-bold text-black text-xl mb-6">
                 For Attendees
@@ -1441,175 +1441,6 @@ const page = () => {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Media & Moments Section */}
-      <section className="py-20 px-4 md:px-50 bg-white ">
-        <div className="max-w-300 mx-auto">
-          {/* <h2 className="font-bold text-black text-3xl md:text-4xl mb-12">
-            Media & Moments
-          </h2> */}
-
-          {/* Photo Grid */}
-          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 1</p>
-            </div>
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 2</p>
-            </div>
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 3</p>
-            </div>
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 4</p>
-            </div>
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 5</p>
-            </div>
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 6</p>
-            </div>
-          </div> */}
-
-          {/* Video Highlight */}
-          {/* <div className="bg-gray-100 border border-gray-300 rounded-lg p-12 flex flex-col items-center justify-center mb-16 min-h-75">
-            <p className="font-normal text-[#697282] text-base mb-6">
-              Video highlight placeholder
-            </p>
-            <a
-              href="#"
-              className="px-6 py-3 bg-[#002c19] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base"
-            >
-              Watch Summit Highlights
-            </a>
-          </div> */}
-
-          {/* Press Mentions */}
-          <div>
-            <h3 className=" text-black font-bold text-2xl uppercase tracking-wider mb-6">
-              PRESS MENTIONS
-            </h3>
-
-            <div className="space-y-4">
-              <div className="flex gap-3 py-4 border-b border-gray-300">
-                <p className="font-normal text-[#495565] text-base">
-                  — Press mention placeholder - Publication name and article
-                  title
-                </p>
-              </div>
-              <div className="flex gap-3 py-4 border-b border-gray-300">
-                <p className="font-normal text-[#495565] text-base">
-                  — Press mention placeholder - Publication name and article
-                  title
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 2026 Summit Save the Date Section */}
-      {/* <section className="py-20 px-4 md:px-50 bg-[#002c19]">
-        <div className="max-w-200 mx-auto text-center">
-          <div className="inline-block px-4 py-2 bg-[#003d24] rounded-full mb-8">
-            <span className="font-semibold text-white text-sm uppercase tracking-wider">
-              SAVE THE DATE
-            </span>
-          </div>
-
-          <h2 className="font-bold text-white text-4xl md:text-4xl lg:text-5xl mb-12 leading-tight">
-            2026 TRIIBE
-            <br />
-            Changemaker Summit
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-150 mx-auto">
-            <div>
-              <p className="font-normal text-white/60 text-sm uppercase tracking-wider mb-2">
-                Date
-              </p>
-              <p className="font-semibold text-white text-xl">
-                To Be Announced
-              </p>
-            </div>
-
-            <div>
-              <p className="font-normal text-white/60 text-sm uppercase tracking-wider mb-2">
-                Location
-              </p>
-              <p className="font-semibold text-white text-xl">New York City</p>
-            </div>
-
-            <div>
-              <p className="font-normal text-white/60 text-sm uppercase tracking-wider mb-2">
-                Venue
-              </p>
-              <p className="font-semibold text-white text-xl">
-                To Be Announced
-              </p>
-            </div>
-          </div>
-
-          <p className="font-normal text-white text-lg leading-relaxed mb-10 max-w-150 mx-auto">
-            Building bridges between the next generation of nonprofit leaders
-            and the partners who can amplify their impact.
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="#"
-              className="px-8 py-3 bg-transparent text-white border border-white rounded hover:bg-white/10 transition-colors font-semibold text-base"
-            >
-              Become a Speaker or Partner
-            </a>
-            <a
-              href="#"
-              className="px-8 py-3 bg-white text-black rounded hover:bg-gray-100 transition-colors font-semibold text-base"
-            >
-              Get Updates
-            </a>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Past Summits Section */}
-      {/* <section className="py-20 px-4 md:px-50 bg-white">
-        <div className="max-w-300 mx-auto">
-          <h2 className="font-bold text-black text-4xl md:text-4xl mb-12">
-            Past Summits
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-8">
-              <h3 className="font-bold text-black text-3xl mb-3">2024</h3>
-              <p className="font-normal text-[#495565] text-base mb-6">
-                November 16, 2024 • New York, NY
-              </p>
-              <a
-                href="#"
-                className="inline-block px-6 py-2 bg-white text-black border border-gray-100 rounded hover:bg-gray-50 transition-colors font-semibold text-sm"
-              >
-                View Recap
-              </a>
-            </div>
-
-
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-8">
-              <h3 className="font-bold text-black text-4xl mb-3">2023</h3>
-              <p className="font-normal text-[#495565] text-base mb-6">
-                October 21, 2023 • New York, NY
-              </p>
-              <a
-                href="#"
-                className="inline-block px-6 py-2 bg-white text-black border border-gray-100 rounded hover:bg-gray-50 transition-colors font-semibold text-sm"
-              >
-                View Recap
-              </a>
             </div>
           </div>
         </div>

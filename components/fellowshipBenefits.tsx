@@ -15,7 +15,7 @@ const benefits = [
     icon: "/images/home/container-2.svg",
     title: "Mentorship",
     description:
-      "One-on-one guidance from experienced nonprofit leaders and social entrepreneurs",
+      "One-on-one guidance from two experienced nonprofit leaders and social entrepreneurs each quarter",
   },
   {
     number: "03",

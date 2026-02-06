@@ -11,12 +11,12 @@ interface Changemaker {
   university?: string;
 }
 
-export default function Changemakers() {
+export default function Cohort() {
   const cohort1: Changemaker[] = [
     {
       name: "Olivia Zhang",
       title: "Founder and CEO, Cancer Kids First",
-      university: "Harvard University, Spring 25 fellow",
+      university: "Harvard University",
       description:
         "Supporting young cancer patients and their families through donating goods and hosting interactive events",
       founded: "FOUNDED 2019",
@@ -27,7 +27,7 @@ export default function Changemakers() {
     {
       name: "Anne-Sophie Frédérick",
       title: "Founder, Haitech Learning",
-      university: "Williams College, Spring 25 fellow",
+      university: "Williams College",
       description:
         "Expanding access to education for young Haitians around the globe through technology and language workshops",
       founded: "FOUNDED 2022",
@@ -38,7 +38,7 @@ export default function Changemakers() {
     {
       name: "Esha Venkat",
       title: "Founder, Next4Us",
-      university: "Georgia Institute of Technology, Spring 25 fellow",
+      university: "Georgia Institute of Technology",
       description:
         "Mobilizing youth to tackle issues including hunger, education, and climate justice with volunteering & education",
       founded: "FOUNDED 2016",
@@ -49,7 +49,7 @@ export default function Changemakers() {
     {
       name: "Maya Gowda",
       title: "Founder, (SEED)",
-      university: "Cornell University, Spring 25 fellow",
+      university: "Cornell University",
       description:
         "Advancing climate literacy and justice through workshops, curriculum development, and community initiatives",
       founded: "FOUNDED 2019",
@@ -63,7 +63,7 @@ export default function Changemakers() {
     {
       name: "Samin Bhan",
       title: "Founder, Lookupp",
-      university: "Stanford University, Fall 25 fellow",
+      university: "Stanford University",
       description:
         "Revive the culture of in-person interaction through a mobile app",
       founded: "FOUNDED 2021",
@@ -74,7 +74,7 @@ export default function Changemakers() {
     {
       name: "Shrusti Amula",
       title: "Founder, Rise N Shine Foundation",
-      university: "Georgetown University, Fall 25 fellow",
+      university: "Georgetown University",
       description:
         "Reduce food waste through compost and food recovery programs to combat climate change and food insecurity",
       founded: "FOUNDED 2019",
@@ -85,7 +85,7 @@ export default function Changemakers() {
     {
       name: "Nayla Jimenez",
       title: "Founder, Philippine Health Initiative",
-      university: "University of Florida, Fall 25 fellow",
+      university: "University of Florida",
       description:
         "Advance pediatric health and educational equity in the Philippines through resource mobilization, cultural exchange, and community collaborations",
       founded: "FOUNDED 2017",
@@ -95,7 +95,7 @@ export default function Changemakers() {
     {
       name: "Varuni Chopra",
       title: "Founder, Bridge the Gap Initiative",
-      university: "Georgia Institute of Technology, Fall 25 fellow",
+      university: "Georgia Institute of Technology",
       description:
         "Empower senior citizens to confidently use technology by providing accessible and community-driven education that connects them to essential digital tools and services",
       founded: "FOUNDED 2022",
@@ -105,7 +105,7 @@ export default function Changemakers() {
     {
       name: "Gitanjali Rao",
       title: "Founder, Vervient Foundation",
-      university: "MIT, Fall 25 fellow",
+      university: "MIT",
       description:
         "Help other students discover their passion for innovation and STEM",
       founded: "FOUNDED 2018",
@@ -132,7 +132,7 @@ export default function Changemakers() {
         />
       </div>
 
-      <div className="bg-white rounded-b-2xl p-6 border border-t-0 border-gray-200 h-75 flex flex-col gap-3">
+      <div className="bg-white rounded-b-2xl p-6 border border-t-0 border-gray-200 h-70 flex flex-col gap-3">
         <div className="flex flex-col gap-1">
           <h3 className=" font-semibold text-black text-lg">
             {changemaker.name}
@@ -168,20 +168,20 @@ export default function Changemakers() {
     <section className="py-6 md:py-10 bg-white" id="cohortSection">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-8">
-          <h2 className=" font-bold text-black text-4xl tracking-[-0.90px] leading-10 mb-4">
+          <h2 className=" font-bold text-black text-4xl tracking-[-0.90px] leading-10 mb-4 text-center">
             Our First Two Cohorts
           </h2>
-          <p className=" font-normal text-[#495565] text-lg leading-7 mb-4">
+          <p className=" font-normal text-[#495565] text-lg leading-7 mb-4 text-center">
             Undergraduate students building organizations that address critical
             social challenges
           </p>
         </div>
 
-        {/* <div className="mb-4">
-          <p className=" font-bold text-[#495565] text-lg leading-7">
+        <div className="mb-4">
+          <p className=" font-bold text-[#495565] text-lg leading-7 text-center">
             Spring 25 Fellow
           </p>
-        </div> */}
+        </div>
 
         {/* Row 1: 4 items centered */}
         <div className="flex flex-col sm:flex-row justify-center gap-6 mb-12">
@@ -192,11 +192,11 @@ export default function Changemakers() {
           ))}
         </div>
 
-        {/* <div className="mb-4">
-          <p className=" font-bold text-[#495565] text-lg leading-7 ">
+        <div className="mb-4">
+          <p className=" font-bold text-[#495565] text-lg leading-7 text-center">
             Fall 25 Fellow
           </p>
-        </div> */}
+        </div>
 
         {/* Row 2: 5 items on one bar */}
         <div className="flex flex-col sm:flex-row sm:flex-nowrap justify-center gap-4">
@@ -206,17 +206,6 @@ export default function Changemakers() {
             </div>
           ))}
         </div>
-      </div>
-
-      {/* View All Fellows Button */}
-      <div className="flex justify-center w-full mt-12 mb-8">
-        <a
-          href="/cohort"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors  font-semibold text-black text-sm"
-        >
-          View All Cohort
-          <ArrowRightIcon className="w-4 h-4" />
-        </a>
       </div>
     </section>
   );
