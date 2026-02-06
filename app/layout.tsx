@@ -68,9 +68,9 @@ export const metadata: Metadata = {
       "Supporting and developing the next generation of change makers advancing food, water, shelter, health, education, or energy.",
     images: [
       {
-        url: "/images/triibe-og-image.png",
-        width: 1200,
-        height: 630,
+        url: "https://triibe.us/triibe-logo-512.png",
+        width: 512,
+        height: 512,
         alt: "TRIIBE - Supporting Change Makers",
       },
     ],
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     title: "TRIIBE - Supporting the Next Generation of Change Makers",
     description:
       "Supporting and developing the next generation of change makers advancing food, water, shelter, health, education, or energy.",
-    images: ["/images/triibe-twitter-image.png"],
+    images: ["https://triibe.us/triibe-logo-512.png"],
     creator: "@triibe_us",
   },
   verification: {
@@ -90,19 +90,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://triibe.us",
   },
-  icons: {
-    icon: [],
-    apple: [],
-  },
 
-  // icons: {
-  //   icon: [
-  //     { url: "/favicon.ico" },
-  //     { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-  //     { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-  //   ],
-  //   apple: "/apple-touch-icon.png",
-  // },
+
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
