@@ -43,7 +43,7 @@ const supportedByLogos = [
     className: "w-[92px] h-[84px]",
   },
   {
-    src: "/images/home/billion.png",
+    src: "/images/home/dothething.png",
     alt: "Supported by partner 4",
     className: "w-[92px] h-[84px]",
   },
@@ -66,12 +66,12 @@ const partneredWithLogos = [
     className: "w-64 h-[70px] object-cover",
   },
   {
-    src: "/images/home/womensOrg.png",
+    src: "/images/home/womensOrg1.png",
     alt: "Partnered with organization 3",
     className: "w-64 h-[70px] object-cover",
   },
   {
-    src: "/images/home/illuminen.png",
+    src: "/images/home/illuminen1.png",
     alt: "Partnered with organization 3",
     className: "w-64 h-[70px] object-cover",
   },

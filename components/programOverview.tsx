@@ -5,16 +5,8 @@ import Image from "next/image";
 const programSections = [
   {
     title: "Who We Are",
-    description: (
-      <>
-        Support drops off after high school. TRIIBE bridges the gap for founders
-        in college. <br />
-        <br />
-        We believe that college founders deserve the same level of institutional
-        support as their startup counterparts: community, experienced
-        mentorship, and three scaling grants throughout their college years.
-      </>
-    ),
+    description:
+      "Everyone wants a village, but nobody wants to be a villager. So we built a TRIIBE. Next-gen for next-gen, a foundation made up of incredible changemakers under the age of 30 supporting fellow nonprofit founders.",
     bgColor: "bg-[#002c19]",
     textColor: "text-white",
     descriptionColor: "text-[#ffffffcc]",

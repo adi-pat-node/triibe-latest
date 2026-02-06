@@ -77,6 +77,14 @@ const media = [
     linkedin: "https://www.linkedin.com/in/fionnuala-eastwood/",
     isInstagram: false,
   },
+  {
+    name: "Ritikesh Kunwar",
+    role: "Member",
+    bio: "Ritikesh Kunwar is a second-year Computer Engineering student passionate about coding and exploring diverse domains, including entrepreneurship.",
+    image: "/images/about/team/Ritikesh Kunwar.png",
+    linkedin: "https://www.linkedin.com/in/ritikesh-kunwar-141779326/",
+    isInstagram: false,
+  },
 ];
 
 const events = [
@@ -116,15 +124,36 @@ const events = [
     image: "/images/about/team/Evelyn Sar.jpg",
     linkedin: "https://www.linkedin.com/in/evelynsar/",
   },
+  {
+    name: "Chirag Nijjer",
+    role: "Member",
+    bio: "Chirag Nijjer is a Customer Centricity leader at Google and a brand marketing keynote speaker and creator who decodes brand history and storytelling for modern marketing.",
+    image: "/images/about/team/Chirag Nijjer.png",
+    linkedin: "https://www.linkedin.com/in/chiragspeaks/",
+  },
 ];
 
 const partnerships = [
+  {
+    name: "Victoria Gothard",
+    role: "Member",
+    bio: "",
+    image: "/images/about/team/Victoria Gothard.png",
+    linkedin: "https://www.linkedin.com/in/victoria-gothard/",
+  },
   {
     name: "Haley Pilgrim",
     role: "Member",
     bio: "Haley Pilgrim is a senior leader at Publicis Sapient with a track record of guiding executives and organizations through transformation and change.",
     image: "/images/about/team/Haley Pilgrim.jpg",
     linkedin: "https://www.linkedin.com/in/haleypilgrim/",
+  },
+  {
+    name: "Pranay Mishra",
+    role: "Member",
+    bio: "Pranay Mishra is a B.Tech student in Mechanical Engineering at BIT Mesra, with interests in management consulting and web development.",
+    image: "/images/about/team/Pranay Mishra.png",
+    linkedin: "https://www.linkedin.com/in/pranay--mishra/",
   },
 ];
 
@@ -146,14 +175,6 @@ const outreach = [
     isInstagram: false,
   },
 
-  {
-    name: "Taylor Anderson",
-    role: "Member",
-    bio: "Taylor Anderson is Fresno based and affiliated with TRIIBE, with an education background at Weber State University and a mission driven focus on patient first care ('Patients are people, not profit.').",
-    image: "/images/about/team/Taylor Anderson.jpg",
-    linkedin: "https://www.linkedin.com/in/taylor-anderson-74a577396/",
-    isInstagram: false,
-  },
   {
     name: "Jaden Cappe",
     role: "Member",
@@ -248,6 +269,13 @@ const globalRelations = [
     image: "/images/about/team/Jade Kashemsant.jpg",
     linkedin: "https://www.linkedin.com/in/jadekashemsant/",
   },
+  {
+    name: "Shradha Adhikari",
+    role: "Member",
+    bio: "",
+    image: "/images/about/team/Shradha Adhikari.png",
+    linkedin: "https://www.linkedin.com/in/shradhadhikari/",
+  },
 ];
 
 const regionalDirectors = [
@@ -280,6 +308,31 @@ const regionalDirectors = [
     bio: "Ronan Hasan is a University of Toronto student focused on management and strategy, with recent experience at CIBC as a strategy and innovation analyst",
     image: "/images/about/team/Ronan Hasan.jpg",
     linkedin: "https://www.linkedin.com/in/ronan-hasan-4b5158241/",
+  },
+
+  {
+    name: "Satyam Pandey",
+    role: "Director - India",
+    bio: "Satyam Pandey is a quantitative analyst and data scientist (Exelon) focused on machine learning, statistical modeling, and data-driven decision making.",
+    image: "/images/about/team/Satyam Pandey.png",
+    linkedin: "https://www.linkedin.com/in/satyyampandey/",
+  },
+];
+
+const research = [
+  {
+    name: "Nancy Thadhani",
+    role: "Member",
+    bio: " ",
+    image: "/images/about/team/Nancy Thadhani.png",
+    linkedin: "https://www.linkedin.com/in/nancy-thadhani-48501730a/",
+  },
+  {
+    name: "Taylor Anderson",
+    role: "Member",
+    bio: "Taylor Anderson is Fresno based and affiliated with TRIIBE, with an education background at Weber State University and a mission driven focus on patient first care ('Patients are people, not profit.').",
+    image: "/images/about/team/Taylor Anderson.jpg",
+    linkedin: "https://www.linkedin.com/in/taylor-anderson-74a577396/",
   },
 ];
 
@@ -341,7 +394,7 @@ const members = [
     name: "Keshav Sani",
     role: "Member",
     bio: "Keshav Sani is a Babson College student based in New York with experience at Sportek App.",
-    image: "/images/about/team/Keshav Sani1.jpg",
+    image: "/images/about/team/Keshav Sani.jpg",
     linkedin: "https://www.linkedin.com/in/keshav-sani-853550204/",
     isInstagram: false,
   },
@@ -392,7 +445,7 @@ const members = [
     name: "George Shi",
     role: "Member",
     bio: "George Shi appears to be a senior SAP Transportation Management (TM) consultant at Logventus, with prior experience at SAP and IBM.",
-    image: "/images/about/team/George Shi.jpg",
+    image: "/images/about/team/George Shi.png",
     linkedin: "https://www.linkedin.com/in/george-shi-4a9b18190/",
     isInstagram: false,
   },
@@ -472,14 +525,39 @@ const members = [
     linkedin: "https://www.linkedin.com/in/stephennmichael/",
     isInstagram: false,
   },
-  // {
-  //   name: "Shashank Shandilya",
-  //   role: "Member",
-  //   bio: "Shashank Shandilya is a sophomore at Birla Institute of Technology, Mesra and a Strategy Intern at TRIIBE, with interests in competitive programming and consulting (180DC).",
-  //   image: "/images/about/team/Shashank Shandilya.jpg",
-  //   linkedin: "https://www.linkedin.com/in/shashankshandilya13/",
-  //   isInstagram: false,
-  // },
+  {
+    name: "Shashank Shandilya",
+    role: "Member",
+    bio: "Shashank Shandilya is a sophomore at Birla Institute of Technology, Mesra and a Strategy Intern at TRIIBE, with interests in competitive programming and consulting (180DC).",
+    image: "/images/about/team/Shashank Shandilya.png",
+    linkedin: "https://www.linkedin.com/in/shashankshandilya13/",
+    isInstagram: false,
+  },
+
+  {
+    name: "Rejoy Kumar",
+    role: "Member",
+    bio: "Rejoy Kumar is a Bhubaneswar based student at Birla Institute of Technology, Mesra with experience at TRIIBE.",
+    image: "/images/about/team/Rejoy Kumar.png",
+    linkedin: "https://www.linkedin.com/in/rejoy-kumar-2b8904217/",
+    isInstagram: false,
+  },
+  {
+    name: "Sarthak Anand",
+    role: "Member",
+    bio: "Sarthak Anand is a LinkedIn creator who shared updates from attending the Startup Mahakumbh event at Bharat Mandapam (New Delhi).",
+    image: "/images/about/team/Sarthak Anand.png",
+    linkedin: "https://www.linkedin.com/in/sarthak-anand-b27044229/",
+    isInstagram: false,
+  },
+  {
+    name: "Alexia Hilbertidou",
+    role: "Member",
+    bio: "Alexia Hilbertidou founded GirlBoss NZ at 16, which has grown to 17,500 members across 400+ schools in New Zealand, Australia, Fiji, the UAE, and the Cook Islands.",
+    image: "/images/about/team/Alexia Hilbertidou.png",
+    linkedin: "https://www.linkedin.com/in/alexiah/",
+    isInstagram: false,
+  },
 ];
 
 const legacyBoard = [
@@ -520,15 +598,7 @@ const legacyBoard = [
   },
 ];
 
-const southAmerica = [
-  {
-    name: "Satyam Pandey",
-    role: "Member",
-    bio: "Satyam Pandey is a quantitative analyst and data scientist (Exelon) focused on machine learning, statistical modeling, and data-driven decision making.",
-    image: "/images/about/team/Satyam Pandey.png",
-    linkedin: "https://www.linkedin.com/in/satyyampandey/",
-  },
-];
+const southAmerica = [];
 
 const europe = [
   {
@@ -538,35 +608,9 @@ const europe = [
     image: "/images/about/team/Grace Kim.jpg",
     linkedin: "https://www.linkedin.com/in/gracekim22/",
   },
-
-  {
-    name: "Chirag Nijjer",
-    role: "Member",
-    bio: "Chirag Nijjer is a Customer Centricity leader at Google and a brand marketing keynote speaker and creator who decodes brand history and storytelling for modern marketing.",
-    image: "/images/about/team/Chirag Nijjer.png",
-    linkedin: "https://www.linkedin.com/in/chiragspeaks/",
-  },
 ];
 
-const asia = [
-  {
-    name: "Rejoy Kumar",
-    role: "Member",
-    bio: "Rejoy Kumar is a Bhubaneswar based student at Birla Institute of Technology, Mesra with experience at TRIIBE.",
-    image: "/images/about/team/Rejoy Kumar.jpg",
-    linkedin: "https://www.linkedin.com/in/rejoy-kumar-2b8904217/",
-    isInstagram: false,
-  },
-
-  {
-    name: "Sarthak Anand",
-    role: "Member",
-    bio: "Sarthak Anand is a LinkedIn creator who shared updates from attending the Startup Mahakumbh event at Bharat Mandapam (New Delhi).",
-    image: "/images/about/team/Sarthak Anand.jpg",
-    linkedin: "https://www.linkedin.com/in/sarthak-anand-b27044229/",
-    isInstagram: false,
-  },
-];
+const asia = [];
 
 const mentors = [
   {
@@ -1206,6 +1250,50 @@ const page = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {tech.map((member, index) => (
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+                className="block  bg-white border border-gray-200 rounded-lg overflow-hidden  hover:shadow-lg transition-shadow cursor-pointer"
+              >
+                <div className="relative aspect-square bg-gray-100 p-4">
+                  <div className="relative w-full h-full rounded-lg overflow-hidden">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-bold text-black text-xl">
+                      {member.name}
+                    </h3>
+
+                    <svg className="w-5 h-5" fill="#0077b5" viewBox="0 0 24 24">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                  </div>
+                  <p className="font-normal text-[#697282] text-sm mb-4">
+                    {member.role}
+                  </p>
+                  <p className="font-normal text-[#495565] text-sm leading-relaxed">
+                    {member.bio}
+                  </p>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
+            Research TEAM
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            {research.map((member, index) => (
               <a
                 href={member.linkedin}
                 target="_blank"

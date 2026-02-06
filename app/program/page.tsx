@@ -56,7 +56,7 @@ const faqs = [
   {
     question: "How does triibe measure impact?",
     answer:
-      "Any undergraduate sophomore who has founded and is actively leading a nonprofit organization. You must be enrolled full-time at a college or university.",
+      "We use case studies and quarterly surveys to measure each founder's digital presence, their sense of community and wellbeing, the impact of their organization, and the funds they raise beyond TRIIBE's grants.",
   },
   {
     question: "Who is eligible to apply?",
