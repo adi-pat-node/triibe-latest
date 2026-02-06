@@ -192,7 +192,7 @@ const socialLinks = [
 
 const upcomingEvents = [
   {
-    image: "/images/media/upcomingEvent1.jpg",
+    image: "/images/media/UpcomingEvent1.jpg",
     title:
       "TRIIBE TALK | Navigating Partnerships x Augmented Media Development",
     date: "Wednesday, February 11",
