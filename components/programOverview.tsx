@@ -37,7 +37,7 @@ const programSections = [
     imageUrl: "/images/home/whatWeDo4.jpg",
     imagePosition: "right",
     fontWeight: "font-bold",
-    imageObjectPosition: "object-center",
+    imageObjectPosition: "object-center ",
   },
 ];
 

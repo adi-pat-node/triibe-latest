@@ -42,7 +42,6 @@ export const metadata: Metadata = {
     "shelter",
     "health",
     "education",
-    "energy",
   ],
   authors: [{ name: "TRIIBE" }],
   creator: "TRIIBE",
@@ -91,7 +90,6 @@ export const metadata: Metadata = {
     canonical: "https://triibe.us",
   },
 
-
   icons: {
     icon: [
       { url: "/favicon.ico" },
@@ -123,10 +121,6 @@ export default function RootLayout({
         "@type": "Person",
         name: "Kyle Matthys",
       },
-      {
-        "@type": "Person",
-        name: "Drew Collins",
-      },
     ],
     address: {
       "@type": "PostalAddress",
@@ -139,7 +133,7 @@ export default function RootLayout({
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "General Inquiries",
-      url: "https://triibe.us/contact-us",
+      url: "https://triibe.us/contact",
     },
     knowsAbout: [
       "Social Impact",
