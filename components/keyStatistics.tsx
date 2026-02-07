@@ -22,11 +22,11 @@ const statistics = [
 ];
 
 const supportedByLogos = [
-  {
-    src: "/images/home/image-127.png",
-    alt: "Supported by partner 1",
-    className: "w-64 h-[59px]",
-  },
+  // {
+  //   src: "/images/home/image-127.png",
+  //   alt: "Supported by partner 1",
+  //   className: "w-64 h-[59px]",
+  // },
   {
     src: "/images/home/image-128.png",
     alt: "Supported by partner 2",
@@ -40,12 +40,12 @@ const supportedByLogos = [
   {
     src: "/images/home/image-130.png",
     alt: "Supported by partner 4",
-    className: "w-[92px] h-[84px]",
+    className: "w-[130px] h-[84px]",
   },
   {
     src: "/images/home/dothething.png",
     alt: "Supported by partner 4",
-    className: "w-[92px] h-[84px]",
+    className: "w-[130px] h-[84px]",
   },
 ];
 

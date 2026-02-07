@@ -22,10 +22,10 @@ const programSections = [
     bgColor: "bg-[#002c19]",
     textColor: "text-[#fffefee6]",
     descriptionColor: "text-[#ffffffcc]",
-    imageUrl: "/images/home/whatWeDoNew1.jpg",
+    imageUrl: "/images/home/whatWeDoNew3.jpg",
     imagePosition: "left",
     fontWeight: "font-semibold",
-    imageObjectPosition: "object-center object-top",
+    imageObjectPosition: "object-center object-bottom",
   },
   {
     title: "How We Do It",
