@@ -148,13 +148,6 @@ const partnerships = [
     image: "/images/about/team/Haley Pilgrim.jpg",
     linkedin: "https://www.linkedin.com/in/haleypilgrim/",
   },
-  {
-    name: "Pranay Mishra",
-    role: "Member",
-    bio: "Pranay Mishra is a B.Tech student in Mechanical Engineering at BIT Mesra, with interests in management consulting and web development.",
-    image: "/images/about/team/Pranay Mishra.png",
-    linkedin: "https://www.linkedin.com/in/pranay--mishra/",
-  },
 ];
 
 const outreach = [
@@ -251,6 +244,13 @@ const tech = [
     image: "/images/about/team/Andrew Dei.jpg",
     linkedin: "https://www.linkedin.com/in/andrew-dai-04ad0211/",
   },
+  {
+    name: "Pranay Mishra",
+    role: "Member",
+    bio: "Pranay Mishra is a B.Tech student in Mechanical Engineering at BIT Mesra, with interests in management consulting and web development.",
+    image: "/images/about/team/Pranay Mishra.png",
+    linkedin: "https://www.linkedin.com/in/pranay--mishra/",
+  },
 ];
 
 const globalRelations = [
@@ -275,6 +275,30 @@ const globalRelations = [
     bio: "",
     image: "/images/about/team/Shradha Adhikari.png",
     linkedin: "https://www.linkedin.com/in/shradhadhikari/",
+  },
+  {
+    name: "Alexia Hilbertidou",
+    role: "Member",
+    bio: "Alexia Hilbertidou founded GirlBoss NZ at 16, which has grown to 17,500 members across 400+ schools in New Zealand, Australia, Fiji, the UAE, and the Cook Islands.",
+    image: "/images/about/team/Alexia Hilbertidou.png",
+    linkedin: "https://www.linkedin.com/in/alexiah/",
+    isInstagram: false,
+  },
+  {
+    name: "George Shi",
+    role: "Member",
+    bio: "George Shi appears to be a senior SAP Transportation Management (TM) consultant at Logventus, with prior experience at SAP and IBM.",
+    image: "/images/about/team/George Shi.png",
+    linkedin: "https://www.linkedin.com/in/george-shi-4a9b18190/",
+    isInstagram: false,
+  },
+  {
+    name: "Frederick Tsao",
+    role: "Member",
+    bio: "Frederick Mochizuki Tsao is at Pavilion Capital and describes himself as a fifth generation steward to his family business, with a Middlebury College background.",
+    image: "/images/about/team/Frederick Tsao1.jpg",
+    linkedin: "https://www.linkedin.com/in/frederick-mochizuki-tsao/",
+    isInstagram: false,
   },
 ];
 
@@ -334,6 +358,14 @@ const research = [
     image: "/images/about/team/Taylor Anderson.jpg",
     linkedin: "https://www.linkedin.com/in/taylor-anderson-74a577396/",
   },
+  {
+    name: "Ryan Zhang",
+    role: "Member",
+    bio: "Ryan Zhang is a Schulich School of Business BBA student with experience at TRIIBE.",
+    image: "/images/about/team/Ryan Zhang.jpg",
+    linkedin: "https://www.linkedin.com/in/ryan7zhang/",
+    isInstagram: false,
+  },
 ];
 
 const members = [
@@ -355,14 +387,14 @@ const members = [
     isInstagram: false,
   },
 
-  {
-    name: "Amaan Habibulla",
-    role: "Member",
-    bio: "Amaan Habibulla is an Associate at Ridgetop Research focused on sustainable finance and global policy, with a Middlebury College background.",
-    image: "/images/about/team/Amaan Habibulla.jpg",
-    linkedin: "https://www.linkedin.com/in/amaan-habibulla/",
-    isInstagram: false,
-  },
+  // {
+  //   name: "Amaan Habibulla",
+  //   role: "Member",
+  //   bio: "Amaan Habibulla is an Associate at Ridgetop Research focused on sustainable finance and global policy, with a Middlebury College background.",
+  //   image: "/images/about/team/Amaan Habibulla.jpg",
+  //   linkedin: "https://www.linkedin.com/in/amaan-habibulla/",
+  //   isInstagram: false,
+  // },
   {
     name: "Gianna Mountroukas",
     role: "Member",
@@ -381,14 +413,14 @@ const members = [
     isInstagram: false,
   },
 
-  {
-    name: "Josh Nodiff",
-    role: "TEAM",
-    bio: "Joshua Nodiff is the founder and executive director of the Climate Imaginarium on Governors Island, a Columbia Climate School alum focused on climate storytelling and community building",
-    image: "/images/about/team/Josh Nodiff.avif",
-    linkedin: "https://www.linkedin.com/in/joshnodiff/",
-    isInstagram: false,
-  },
+  // {
+  //   name: "Josh Nodiff",
+  //   role: "TEAM",
+  //   bio: "Joshua Nodiff is the founder and executive director of the Climate Imaginarium on Governors Island, a Columbia Climate School alum focused on climate storytelling and community building",
+  //   image: "/images/about/team/Josh Nodiff.avif",
+  //   linkedin: "https://www.linkedin.com/in/joshnodiff/",
+  //   isInstagram: false,
+  // },
 
   {
     name: "Keshav Sani",
@@ -434,22 +466,6 @@ const members = [
   },
 
   {
-    name: "Frederick Tsao",
-    role: "Member",
-    bio: "Frederick Mochizuki Tsao is at Pavilion Capital and describes himself as a fifth generation steward to his family business, with a Middlebury College background.",
-    image: "/images/about/team/Frederick Tsao1.jpg",
-    linkedin: "https://www.linkedin.com/in/frederick-mochizuki-tsao/",
-    isInstagram: false,
-  },
-  {
-    name: "George Shi",
-    role: "Member",
-    bio: "George Shi appears to be a senior SAP Transportation Management (TM) consultant at Logventus, with prior experience at SAP and IBM.",
-    image: "/images/about/team/George Shi.png",
-    linkedin: "https://www.linkedin.com/in/george-shi-4a9b18190/",
-    isInstagram: false,
-  },
-  {
     name: "Himal Pandey",
     role: "Member",
     bio: "Himal Pandey is an information technology student in Nepal, building skills in tech and software development.",
@@ -489,14 +505,6 @@ const members = [
     image: "/images/about/team/Alex Garfin.jpg",
     linkedin: "https://www.instagram.com/alexgarfin/",
     isInstagram: true,
-  },
-  {
-    name: "Ryan Zhang",
-    role: "Member",
-    bio: "Ryan Zhang is a Schulich School of Business BBA student with experience at TRIIBE.",
-    image: "/images/about/team/Ryan Zhang.jpg",
-    linkedin: "https://www.linkedin.com/in/ryan7zhang/",
-    isInstagram: false,
   },
 
   // {
@@ -542,22 +550,14 @@ const members = [
     linkedin: "https://www.linkedin.com/in/rejoy-kumar-2b8904217/",
     isInstagram: false,
   },
-  {
-    name: "Sarthak Anand",
-    role: "Member",
-    bio: "Sarthak Anand is a LinkedIn creator who shared updates from attending the Startup Mahakumbh event at Bharat Mandapam (New Delhi).",
-    image: "/images/about/team/Sarthak Anand.png",
-    linkedin: "https://www.linkedin.com/in/sarthak-anand-b27044229/",
-    isInstagram: false,
-  },
-  {
-    name: "Alexia Hilbertidou",
-    role: "Member",
-    bio: "Alexia Hilbertidou founded GirlBoss NZ at 16, which has grown to 17,500 members across 400+ schools in New Zealand, Australia, Fiji, the UAE, and the Cook Islands.",
-    image: "/images/about/team/Alexia Hilbertidou.png",
-    linkedin: "https://www.linkedin.com/in/alexiah/",
-    isInstagram: false,
-  },
+  // {
+  //   name: "Sarthak Anand",
+  //   role: "Member",
+  //   bio: "Sarthak Anand is a LinkedIn creator who shared updates from attending the Startup Mahakumbh event at Bharat Mandapam (New Delhi).",
+  //   image: "/images/about/team/Sarthak Anand.png",
+  //   linkedin: "https://www.linkedin.com/in/sarthak-anand-b27044229/",
+  //   isInstagram: false,
+  // },
 ];
 
 const legacyBoard = [
