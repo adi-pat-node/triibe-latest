@@ -341,6 +341,13 @@ const regionalDirectors = [
     image: "/images/about/team/Satyam Pandey.png",
     linkedin: "https://www.linkedin.com/in/satyyampandey/",
   },
+  {
+    name: "Oshane Panton",
+    role: "Director - Jamaica",
+    bio: "Oshane Panton is an entrepreneur and marketer helping values and faith-led founders attract clients through clear messaging and simple systems.",
+    image: "/images/about/team/Oshane Panton.jpg",
+    linkedin: "https://www.linkedin.com/in/oshanepanton/",
+  },
 ];
 
 const research = [
