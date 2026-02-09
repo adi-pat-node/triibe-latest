@@ -227,7 +227,7 @@ const ProgramPage = () => {
             <div className="relative w-full h-100 ">
               <div className="relative w-full h-100 rounded-2xl overflow-hidden bg-white">
                 <Image
-                  src="/images/programs/problem_infographic2.png"
+                  src="/images/programs/problem_infographic3.png"
                   alt="The Problem - 80% of student-led nonprofits fade within a year"
                   fill
                   className="object-contain"
