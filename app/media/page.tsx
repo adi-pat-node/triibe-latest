@@ -380,7 +380,7 @@ const MediaPage = () => {
               <div className="px-6 ">
                 <div className="relative aspect-video rounded-lg overflow-hidden">
                   <Image
-                    src="/images/media/podcast.png"
+                    src="/images/media/podcast1.png"
                     alt="TRIIBE Talk Podcast"
                     fill
                     className="object-cover"
