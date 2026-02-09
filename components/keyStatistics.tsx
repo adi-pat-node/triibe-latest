@@ -75,6 +75,11 @@ const partneredWithLogos = [
     alt: "Partnered with organization 3",
     className: "w-64 h-[70px] object-cover",
   },
+  {
+    src: "/images/home/unitedPlanet.png",
+    alt: "Partnered with organization 4",
+    className: "w-64 h-[150px] md:h-[70px] object-cover ",
+  },
 ];
 
 export default function KeyStatistics() {
@@ -118,7 +123,7 @@ export default function KeyStatistics() {
           <p className=" font-normal text-[#697282] text-xs text-center tracking-[0.60px] leading-4">
             PARTNERED WITH
           </p>
-          <div className="flex items-center justify-center gap-12 md:gap-12 flex-wrap  md:flex-nowrap">
+          <div className="flex items-center justify-center gap-12 md:gap-8 flex-wrap  md:flex-nowrap">
             {partneredWithLogos.map((logo, index) => (
               <Image
                 key={index}
