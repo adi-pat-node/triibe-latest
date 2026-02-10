@@ -80,10 +80,8 @@ const Page = () => {
               </h1>
 
               <p className="font-normal text-[#495565] text-[16px] leading-relaxed mb-4">
-                Join us for a transformative day of connection, learning, and
-                community building. We're looking for passionate undergraduate
-                nonprofit founders ready to take their organizations to the next
-                level.
+                We're looking for passionate undergraduate nonprofit founders
+                ready to take their organizations to the next level.
               </p>
 
               {/* How to Apply Box */}
