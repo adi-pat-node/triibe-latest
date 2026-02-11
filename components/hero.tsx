@@ -49,7 +49,7 @@ export default function Hero() {
             </a>
 
             <Image
-              src="/images/home/header1.png"
+              src="/images/home/TRIIBEHeroWhite.svg"
               alt="TRIIBE"
               width={80}
               height={40}

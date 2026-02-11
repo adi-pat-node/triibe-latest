@@ -67,7 +67,7 @@ export const metadata: Metadata = {
       "Supporting and developing the next generation of change makers advancing food, water, shelter, health, education, or energy.",
     images: [
       {
-        url: "https://triibe.us/triibe-logo-512.png",
+        url: "https://triibe.us/triibe-logo-51.png",
         width: 512,
         height: 512,
         alt: "TRIIBE - Supporting Change Makers",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     title: "TRIIBE - Supporting the Next Generation of Change Makers",
     description:
       "Supporting and developing the next generation of change makers advancing food, water, shelter, health, education, or energy.",
-    images: ["https://triibe.us/triibe-logo-512.png"],
+    images: ["https://triibe.us/triibe-logo-51.png"],
     creator: "@triibe_us",
   },
   verification: {
