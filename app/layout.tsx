@@ -24,7 +24,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://triibe.us"),
+  metadataBase: new URL("https://triibe.org"),
   title: {
     default: "TRIIBE - Supporting the Next Generation of Change Makers",
     template: "%s | TRIIBE",
@@ -60,14 +60,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://triibe.us",
+    url: "https://triibe.org",
     siteName: "TRIIBE",
     title: "TRIIBE - Supporting the Next Generation of Change Makers",
     description:
       "Supporting and developing the next generation of change makers advancing food, water, shelter, health, education, or energy.",
     images: [
       {
-        url: "https://triibe.us/triibe-logo-51.png",
+        url: "https://triibe.org/triibe-logo-51.png",
         width: 512,
         height: 512,
         alt: "TRIIBE - Supporting Change Makers",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     title: "TRIIBE - Supporting the Next Generation of Change Makers",
     description:
       "Supporting and developing the next generation of change makers advancing food, water, shelter, health, education, or energy.",
-    images: ["https://triibe.us/triibe-logo-51.png"],
+    images: ["https://triibe.org/triibe-logo-51.png"],
     creator: "@triibe_us",
   },
   verification: {
@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     yandex: "yandex-verification-code",
   },
   alternates: {
-    canonical: "https://triibe.us",
+    canonical: "https://triibe.org",
   },
 
   icons: {
@@ -110,8 +110,8 @@ export default function RootLayout({
     "@type": "NGO",
     name: "TRIIBE",
     alternateName: "TRIIBE Organization",
-    url: "https://triibe.us",
-    logo: "https://triibe.us/images/headerlogo.png",
+    url: "https://triibe.org",
+    logo: "https://triibe.org/images/headerlogo.png",
     description:
       "Supporting and developing the next generation of change makers advancing food, water, shelter, health, education, or energy.",
     foundingDate: "2023",
@@ -133,7 +133,7 @@ export default function RootLayout({
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "General Inquiries",
-      url: "https://triibe.us/contact",
+      url: "https://triibe.org/contact",
     },
     knowsAbout: [
       "Social Impact",

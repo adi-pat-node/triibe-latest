@@ -81,7 +81,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-4">
             <a
-              href="mailto:team@triibe.us"
+              href="mailto:partnerships@triibe.org"
               className="text-[#697282] hover:text-black transition-colors"
               aria-label="Email"
             >
