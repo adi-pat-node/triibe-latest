@@ -26,7 +26,7 @@ const footerColumns = [
           "https://www.zeffy.com/embed/donation-form/invest-in-the-future-3?modal=true",
       },
 
-      { label: "Contact", href: "/contact" },
+      { label: "Contact", href: "mailto:partnerships@triibe.org" },
     ],
   },
 ];

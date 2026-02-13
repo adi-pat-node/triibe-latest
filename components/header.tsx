@@ -38,7 +38,7 @@ export default function Header() {
             // { name: "Events", href: "/events" },
             { name: "Media", href: "/media" },
             { name: "About Us", href: "/about" },
-            { name: "Contact Us", href: "/contact" },
+            // { name: "Contact Us", href: "/contact" },
           ].map((link) => (
             <a
               key={link.href}
@@ -102,7 +102,7 @@ export default function Header() {
             // { name: "Events", href: "/events" },
             { name: "Media", href: "/media" },
             { name: "About Us", href: "/about" },
-            { name: "Contact Us", href: "/contact" },
+            // { name: "Contact Us", href: "/contact" },
           ].map((link) => (
             <a
               key={link.href}
