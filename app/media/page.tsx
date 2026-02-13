@@ -150,6 +150,7 @@ const socialLinks = [
     svg: (
       <svg
         width="50px"
+        fill="currentColor"
         height="50px"
         viewBox="0 0 24 24"
         role="img"
@@ -164,7 +165,7 @@ const socialLinks = [
     url: "https://music.amazon.com/podcasts/da3070b6-5ec9-4ed0-9d8d-67a43f7fbb79/triibe-talk",
     svg: (
       <svg
-        fill="#000000"
+        fill="currentColor"
         width="50px"
         height="50px"
         viewBox="0 0 32 32"

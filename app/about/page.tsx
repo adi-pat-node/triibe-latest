@@ -137,7 +137,7 @@ const partnerships = [
   {
     name: "Victoria Gothard",
     role: "Member",
-    bio: "",
+    bio: "Victoria Gothard is a New York City based philanthropy and social entrepreneurship professional with experience at StartEd and an education from the University of Edinburgh.",
     image: "/images/about/team/Victoria Gothard.png",
     linkedin: "https://www.linkedin.com/in/victoria-gothard/",
   },
@@ -272,7 +272,7 @@ const globalRelations = [
   {
     name: "Shradha Adhikari",
     role: "Member",
-    bio: "",
+    bio: "Shradha Adhikari is an operations and business development leader with experience spanning head of operations, project management, and national business development roles.",
     image: "/images/about/team/Shradha Adhikari.png",
     linkedin: "https://www.linkedin.com/in/shradhadhikari/",
   },
@@ -354,7 +354,7 @@ const research = [
   {
     name: "Nancy Thadhani",
     role: "Member",
-    bio: " ",
+    bio: "Nancy Thadhani is a sophomore at Vellore Institute of Technology (VIT), Vellore, based in Vellore.",
     image: "/images/about/team/Nancy Thadhani.png",
     linkedin: "https://www.linkedin.com/in/nancy-thadhani-48501730a/",
   },

@@ -22,7 +22,7 @@ const page = () => {
         </div>
       </section>
 
-      <CTASectionContact />
+      {/* <CTASectionContact /> */}
 
       <Footer />
     </main>
