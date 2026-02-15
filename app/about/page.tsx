@@ -906,7 +906,7 @@ const page = () => {
         <div className="border-b border-gray-200 mt-8"></div>
       </section>
 
-      {/* Legacy Board Members */}
+      {/* Legacy Board Members list */}
 
       <section className="pb-12 px-4 md:px-50 bg-white">
         <div className="max-w-300 mx-auto">

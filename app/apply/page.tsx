@@ -76,7 +76,7 @@ const Page = () => {
             {/* Right - Content */}
             <div>
               <h1 className="font-bold text-black text-4xl md:text-[40px] mb-6 leading-tight">
-                Apply to be a Cohort
+                Apply to be in a cohort
               </h1>
 
               <p className="font-normal text-[#495565] text-[16px] leading-relaxed mb-4">

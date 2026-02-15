@@ -517,7 +517,14 @@ const ProgramPage = () => {
               </div>
             </div>
 
-            {/* Quarterly Cycle Testimonial */}
+
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 md:px-50 bg-gray-50">
+        <div className="max-w-260 mx-auto">
+  {/* Quarterly Cycle Testimonial */}
             <div className="bg-white border-2 border-black rounded-lg p-8 md:p-10">
               <blockquote className="text-black text-xl font-normal leading-relaxed italic">
                 "TRIIBE's Mentorship Program is nothing short of astounding.
@@ -551,7 +558,6 @@ const ProgramPage = () => {
                 </a>
               </div>
             </div>
-          </div>
         </div>
       </section>
 
