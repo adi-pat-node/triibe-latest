@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Page = () => {
+  const isApplicationOpen = false;
   const formRef = useRef<HTMLFormElement>(null);
 
   const handleCancel = () => {
@@ -76,7 +77,7 @@ const Page = () => {
             {/* Right - Content */}
             <div>
               <h1 className="font-bold text-black text-4xl md:text-[40px] mb-6 leading-tight">
-                Apply to be in a cohort
+                Apply to be in a Cohort
               </h1>
 
               <p className="font-normal text-[#495565] text-[16px] leading-relaxed mb-4">
@@ -127,161 +128,174 @@ const Page = () => {
           <p className="font-normal text-[#495565] text-base mb-12">
             Please fill out all fields. Fields marked with * are required.
           </p>
+          {isApplicationOpen ? (
+            <div className="bg-white rounded-lg p-8 md:p-12">
+              <form
+                ref={formRef}
+                action="https://formsubmit.co/partnerships@triibe.org" //team@triibe.us
+                method="POST"
+              >
+                {/* Hidden FormSubmit configurations */}
+                <input type="hidden" name="_captcha" value="false" />
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New Cohort Application"
+                />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://yourwebsite.com/apply?submitted=true"
+                />
+                {/* Row 1: Full Name and Email */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <label className="block font-semibold text-black text-sm mb-2">
+                      Full Name *
+                    </label>
+                    <input
+                      type="text"
+                      name="Full Name"
+                      placeholder="Enter your full name"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
+                      required
+                    />
+                  </div>
 
-          <div className="bg-white rounded-lg p-8 md:p-12">
-            <form
-              ref={formRef}
-              action="https://formsubmit.co/partnerships@triibe.org" //team@triibe.us
-              method="POST"
-            >
-              {/* Hidden FormSubmit configurations */}
-              <input type="hidden" name="_captcha" value="false" />
-              <input
-                type="hidden"
-                name="_subject"
-                value="New Cohort Application"
-              />
-              <input
-                type="hidden"
-                name="_next"
-                value="https://yourwebsite.com/apply?submitted=true"
-              />
-              {/* Row 1: Full Name and Email */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <label className="block font-semibold text-black text-sm mb-2">
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    name="Full Name"
-                    placeholder="Enter your full name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
-                    required
-                  />
+                  <div>
+                    <label className="block font-semibold text-black text-sm mb-2">
+                      Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      name="Email"
+                      placeholder="your.email@university.edu"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
+                      required
+                    />
+                  </div>
                 </div>
 
-                <div>
-                  <label className="block font-semibold text-black text-sm mb-2">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    name="Email"
-                    placeholder="your.email@university.edu"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
-                    required
-                  />
-                </div>
-              </div>
+                {/* Row 2: LinkedIn and Location */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <label className="block font-semibold text-black text-sm mb-2">
+                      LinkedIn Profile
+                    </label>
+                    <input
+                      type="url"
+                      name="LinkedIn Profile"
+                      placeholder="https://linkedin.com/in/yourprofile"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
+                    />
+                  </div>
 
-              {/* Row 2: LinkedIn and Location */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <label className="block font-semibold text-black text-sm mb-2">
-                    LinkedIn Profile
-                  </label>
-                  <input
-                    type="url"
-                    name="LinkedIn Profile"
-                    placeholder="https://linkedin.com/in/yourprofile"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
-                  />
-                </div>
-
-                <div>
-                  <label className="block font-semibold text-black text-sm mb-2">
-                    Location *
-                  </label>
-                  <input
-                    type="text"
-                    name="Location"
-                    placeholder="City, State/Country"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
-                    required
-                  />
-                </div>
-              </div>
-
-              {/* Row 3: Organization Name and Website */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <label className="block font-semibold text-black text-sm mb-2">
-                    Organization Name *
-                  </label>
-                  <input
-                    type="text"
-                    name="Organization Name"
-                    placeholder="Your nonprofit organization name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
-                    required
-                  />
+                  <div>
+                    <label className="block font-semibold text-black text-sm mb-2">
+                      Location *
+                    </label>
+                    <input
+                      type="text"
+                      name="Location"
+                      placeholder="City, State/Country"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
+                      required
+                    />
+                  </div>
                 </div>
 
-                <div>
-                  <label className="block font-semibold text-black text-sm mb-2">
-                    Organization Website
-                  </label>
-                  <input
-                    type="url"
-                    name="Organization Website"
-                    placeholder="https://"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
-                  />
-                </div>
-              </div>
+                {/* Row 3: Organization Name and Website */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <label className="block font-semibold text-black text-sm mb-2">
+                      Organization Name *
+                    </label>
+                    <input
+                      type="text"
+                      name="Organization Name"
+                      placeholder="Your nonprofit organization name"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
+                      required
+                    />
+                  </div>
 
-              {/* Row 4: Video Application Link and Message */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div>
-                  <label className="block font-semibold text-black text-sm mb-2">
-                    Video Application Link *
-                  </label>
-                  <input
-                    type="url"
-                    name="Video Application Link"
-                    placeholder="https://youtube.com/watch?v=... or Loom link"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
-                    required
-                  />
-                  <p className="font-normal text-[#697282] text-xs mt-2">
-                    Please record a 2-3 minute video introducing yourself, your
-                    organization, and why you'd like to attend the Summit.
-                  </p>
+                  <div>
+                    <label className="block font-semibold text-black text-sm mb-2">
+                      Organization Website
+                    </label>
+                    <input
+                      type="url"
+                      name="Organization Website"
+                      placeholder="https://"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
+                    />
+                  </div>
                 </div>
 
-                <div>
-                  <label className="block font-semibold text-black text-sm mb-2">
-                    Message to the Team
-                  </label>
-                  <textarea
-                    name="Message"
-                    placeholder="Is there anything else you'd like us to know?"
-                    rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent resize-none"
-                  />
+                {/* Row 4: Video Application Link and Message */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                  <div>
+                    <label className="block font-semibold text-black text-sm mb-2">
+                      Video Application Link *
+                    </label>
+                    <input
+                      type="url"
+                      name="Video Application Link"
+                      placeholder="https://youtube.com/watch?v=... or Loom link"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
+                      required
+                    />
+                    <p className="font-normal text-[#697282] text-xs mt-2">
+                      Please record a 2-3 minute video introducing yourself,
+                      your organization, and why you'd like to attend the
+                      Summit.
+                    </p>
+                  </div>
+
+                  <div>
+                    <label className="block font-semibold text-black text-sm mb-2">
+                      Message to the Team
+                    </label>
+                    <textarea
+                      name="Message"
+                      placeholder="Is there anything else you'd like us to know?"
+                      rows={4}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent resize-none"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              {/* Form Actions */}
-              <div className="border-t border-gray-200 pt-6 flex flex-col md:flex-row  justify-end gap-4">
-                <button
-                  type="button"
-                  onClick={handleCancel}
-                  className="px-8 py-3 bg-white text-black border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors font-semibold text-base cursor-pointer"
-                >
-                  Cancel
-                </button>
+                {/* Form Actions */}
+                <div className="border-t border-gray-200 pt-6 flex flex-col md:flex-row  justify-end gap-4">
+                  <button
+                    type="button"
+                    onClick={handleCancel}
+                    className="px-8 py-3 bg-white text-black border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors font-semibold text-base cursor-pointer"
+                  >
+                    Cancel
+                  </button>
 
-                <button
-                  type="submit"
-                  className="px-8 py-3 bg-[#002c19] text-white rounded-lg hover:bg-[#003d24] transition-colors font-semibold text-base cursor-pointer"
-                >
-                  Submit Application
-                </button>
-              </div>
-            </form>
-          </div>
+                  <button
+                    type="submit"
+                    className="px-8 py-3 bg-[#002c19] text-white rounded-lg hover:bg-[#003d24] transition-colors font-semibold text-base cursor-pointer"
+                  >
+                    Submit Application
+                  </button>
+                </div>
+              </form>
+            </div>
+          ) : (
+            /* 3. CLOSED STATE: "Opening Soon" Box */
+            <div className="bg-white rounded-lg p-10 md:p-16 border border-gray-100 shadow-sm">
+              <h3 className="text-2xl font-semibold text-black mb-4">
+                Opening Soon
+              </h3>
+              <p className="text-[#495565] text-lg">
+                Applications for the Spring 2026 cohort will open later this
+                spring.
+              </p>
+            </div>
+          )}
         </div>
       </section>
 

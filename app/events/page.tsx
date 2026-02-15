@@ -1,67 +1,95 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Image from "next/image";
 import CTASection from "@/components/cta";
-import { useState } from "react";
-import Link from "next/link";
+import {
+  ChevronLeft,
+  ChevronRight,
+  MapPin,
+  Calendar,
+  Clock,
+  Share,
+  Share2,
+  ChevronDown,
+} from "lucide-react";
 
-const events = [
-  {
-    id: "changemaker-summit-2025",
-    image: "/images/events/pastEvent1.jpg",
-    status: "PAST EVENT",
-    year: "2025",
-    title: "Changemaker Summit",
-    description:
-      "An annual NYC convening that centers youth nonprofit founders and connects them with mentors, partners, and supporters.",
-    date: "Nov 16, 2024",
-    location: "New York, NY • Manhattan Center",
-  },
-  {
-    id: "davos-summit-2026",
-    image: "/images/events/pastEvent2.jpg",
-    status: "PAST EVENT",
-    year: "2026",
-    title: "World Economic Forum",
-    description:
-      "An annual NYC convening that centers youth nonprofit founders and connects them with mentors, partners, and supporters.",
-    date: "Nov 16, 2024",
-    location: "New York, NY • Manhattan Center",
-  },
-  // {
-  //   id: "event-3-2026",
-  //   image: "/images/events/event1.jpg",
-  //   status: "UPCOMING",
-  //   year: "2026",
-  //   title: "TRIIBE Event #3",
-  //   description:
-  //     "An annual NYC convening that centers youth nonprofit founders and connects them with mentors, partners, and supporters.",
-  //   date: "Nov 16, 2024",
-  //   location: "New York, NY • Manhattan Center",
-  // },
-];
+// 1. Data Structure
+const MONTHLY_EVENTS: Record<string, any[]> = {
+  "January 2026": [
+    {
+      id: 0,
+      title: "TRIIBE Fundraising Mixer",
+      date: "Saturday, Feb 28",
+      time: "10:00 AM – 6:30 PM",
+      location: "Copacabana Nightclub, New York, New York",
+      image: "/images/events/Jan.png",
+      isPast: true,
+      footerText: "This event ended 30 days ago",
+    },
+  ],
+  "February 2026": [
+    {
+      id: 1,
+      title: "Billion Dollar Impact: Next Gen Changemakers",
+      date: "Saturday, Feb 28",
+      time: "10:00 AM – 6:30 PM",
+      location: "Copacabana Nightclub, New York, New York",
+      image: "/images/events/Feb.jpg",
+      status: "open",
+      lumaUrl: "https://luma.com/7zynhb71",
+    },
+    {
+      id: 2,
+      title: "Billion Dollar Impact: Next Gen Changemakers",
+      date: "Saturday, Feb 28",
+      time: "10:00 AM – 6:30 PM",
+      location: "Copacabana Nightclub, New York, New York",
+      image: "/images/events/Feb.jpg",
+      status: "closed",
+    },
+  ],
+  "March 2026": [],
+};
 
 const page = () => {
-  const [filter, setFilter] = useState("ALL");
-
-  const filteredEvents = events.filter((event) => {
-    if (filter === "ALL") return true;
-    if (filter === "UPCOMING") return event.status === "UPCOMING";
-    if (filter === "PAST") return event.status !== "UPCOMING";
-    return true;
+  // Helper to get current month in "Month Year" format (e.g., "February 2026")
+  const getFormattedCurrentMonth = () => {
+    const now = new Date();
+    return now.toLocaleString("en-US", { month: "long", year: "numeric" });
+  };
+  const months = Object.keys(MONTHLY_EVENTS);
+  const [currentMonth, setCurrentMonth] = useState(() => {
+    const autoMonth = getFormattedCurrentMonth();
+    return months.includes(autoMonth) ? autoMonth : months[0];
   });
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const currentIndex = months.indexOf(currentMonth);
+
+  const handlePrev = () => {
+    if (currentIndex > 0) setCurrentMonth(months[currentIndex - 1]);
+  };
+
+  const handleNext = () => {
+    if (currentIndex < months.length - 1)
+      setCurrentMonth(months[currentIndex + 1]);
+  };
+
+  const currentEvents = MONTHLY_EVENTS[currentMonth] || [];
 
   return (
-    <main>
+    <main className="min-h-screen bg-white">
       <Header />
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 md:px-50 bg-white">
-        <div className=" mx-auto">
+
+      {/* Hero Section (Existing) */}
+
+      <section className="pt-32 pb-20 px-4 md:px-50 bg-white ">
+        {/* ... (Your existing Hero code remains the same) */}
+        <div className=" max-w-260 mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 items-center ">
-            {/* Left Content */}
             <div>
               <h1 className="font-bold text-black text-4xl md:text-4xl mb-6 ">
                 Connecting Youth Leaders with the Resources to Scale Impact
@@ -69,38 +97,36 @@ const page = () => {
               <p className="font-normal text-[#495565] text-gl mb-8 leading-relaxed">
                 TRIIBE hosts convening experiences that bring together youth
                 nonprofit founders, experienced mentors, funders, and partners
-                to support meaningful connections and drive social change.
+                to build meaningful connections and drive social change.
               </p>
-              <div className="flex  flex-col md:flex-row  gap-4 text-center ">
+              <div className="flex flex-col md:flex-row gap-4 text-center ">
                 <a
                   href="/partner"
-                  className="px-6 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base"
+                  className="px-6 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold"
                 >
                   Partner / Sponsor
                 </a>
                 <a
                   href="#updates"
-                  className="px-6 py-3 bg-[#1C5945] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base"
+                  className="px-6 py-3 bg-[#1C5945] text-white rounded hover:bg-[#003d24] transition-colors font-semibold"
                 >
                   Get Updates
                 </a>
               </div>
             </div>
-
-            {/* Right Image Grid */}
             <div className="grid grid-cols-2 gap-2 max-w-100 ">
               <div className="relative aspect-square rounded-tl-4xl overflow-hidden">
                 <Image
                   src="/images/events/summit-1.jpg"
-                  alt="TRIIBE Summit"
+                  alt="1"
                   fill
-                  className="object-cover "
+                  className="object-cover"
                 />
               </div>
               <div className="relative aspect-square rounded-tr-4xl overflow-hidden">
                 <Image
                   src="/images/events/newImg.jpg"
-                  alt="TRIIBE Summit"
+                  alt="2"
                   fill
                   className="object-cover"
                 />
@@ -108,7 +134,7 @@ const page = () => {
               <div className="relative aspect-square rounded-bl-4xl overflow-hidden">
                 <Image
                   src="/images/events/summit-2.jpg"
-                  alt="TRIIBE Summit"
+                  alt="3"
                   fill
                   className="object-cover"
                 />
@@ -116,7 +142,7 @@ const page = () => {
               <div className="relative aspect-square rounded-br-4xl overflow-hidden">
                 <Image
                   src="/images/events/summit-4.jpg"
-                  alt="TRIIBE Summit"
+                  alt="4"
                   fill
                   className="object-cover"
                 />
@@ -125,1326 +151,156 @@ const page = () => {
           </div>
         </div>
       </section>
-      {/* Problem & Solution Section */}
-      <section className="py-20 px-4 md:px-50 bg-white">
-        <div className="max-w-300 mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* The Problem Card */}
-            <div className="bg-[#002c19] p-12 rounded-lg">
-              <h3 className="font-bold text-white text-3xl mb-6">
-                The Problem
-              </h3>
-              <p className="font-normal text-white/80 text-lg leading-relaxed">
-                Youth-led nonprofits struggle to sustain themselves without
-                institutional credibility, experienced mentorship, and robust
-                professional networks. After high school accolades fade, student
-                founders face isolation and limited resources.
-              </p>
-            </div>
 
-            {/* The Solution Card */}
-            <div className="bg-[#3036411A] p-12 rounded-lg">
-              <h3 className="font-bold text-black text-3xl mb-6">
-                The Solution
-              </h3>
-              <p className="font-normal text-black text-lg leading-relaxed">
-                The Summit creates a high-signal room where vetted youth
-                founders meet experienced partners who can provide mentorship,
-                unlock strategic partnerships, and offer practical support. It's
-                where credibility is built and lasting connections are formed.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Events Section */}
-      <section className="flex flex-col items-start px-4 md:px-50 py-20 w-full bg-white">
-        <div className="flex flex-col items-start gap-12 w-full">
-          {/* Header */}
-          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between w-full">
-            <h2 className="font-bold text-[#000000] text-4xl tracking-[-0.90px] leading-10">
-              Our Events
+      {/* Events Section */}
+      <section className="py-20 px-4 md:px-50 bg-gray-50">
+        <div className="max-w-260 mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-center mb-10 gap-4">
+            <h2 className="text-4xl font-bold text-black ">
+              {currentMonth.split(" ")[0]} Events
             </h2>
-
-            <div className="flex items-center gap-4">
+            <div className="flex items-center border border-gray-200 rounded-lg p-1">
               <button
-                onClick={() => setFilter("ALL")}
-                className={`px-4 py-2 rounded-md border text-sm font-medium transition
-      ${
-        filter === "ALL"
-          ? "bg-[#F9FAFB] text-black border-[#E5E7EB]"
-          : "border-gray-200 text-gray-500 hover:bg-gray-50"
-      }`}
+                onClick={handlePrev}
+                disabled={currentIndex === 0}
+                className="p-2 disabled:opacity-20"
               >
-                All Events
+                <ChevronLeft size={20} />
               </button>
-              <button
-                onClick={() => setFilter("UPCOMING")}
-                className={`px-4 py-2 rounded-md border text-sm font-medium transition
-      ${
-        filter === "UPCOMING"
-          ? "bg-[#F9FAFB] text-black border-[#E5E7EB]"
-          : "border-gray-200 text-gray-500 hover:bg-gray-50"
-      }`}
-              >
-                Upcoming
-              </button>
-              <button
-                onClick={() => setFilter("PAST")}
-                className={`px-4 py-2 rounded-md border text-sm font-medium transition
-      ${
-        filter === "PAST"
-          ? "bg-[#F9FAFB] text-black border-[#E5E7EB]"
-          : "border-gray-200 text-gray-500 hover:bg-gray-50"
-      }`}
-              >
-                Past
-              </button>
-            </div>
-          </div>
-
-          {/* Events Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
-            {filteredEvents.map((event, index) => (
-              <div
-                key={index}
-                className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
-              >
-                <div className="p-4">
-                  <div className="relative w-full h-64 rounded-2xl overflow-hidden">
-                    <Image
-                      src={event.image}
-                      alt={event.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-4 p-6 flex-grow">
-                  <div className="flex justify-between items-center">
-                    <span
-                      className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                        event.status === "UPCOMING"
-                          ? "bg-[#AEDFF7] text-black"
-                          : "bg-gray-100 text-gray-600"
-                      }`}
-                    >
-                      {event.status}
-                    </span>
-                    <span className="text-gray-500 text-sm">{event.year}</span>
-                  </div>
-                  <h3 className="font-bold text-[#000000] text-xl leading-7">
-                    {event.title}
-                  </h3>
-                  <p className="font-normal text-[#495565] text-sm leading-[22.8px]">
-                    {event.description}
-                  </p>
-                  <div className="flex flex-col gap-2 text-sm text-[#495565]">
-                    <div className="flex items-center gap-2">
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+              <div className="relative">
+                <button
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                  className="flex items-center justify-between w-[180px] px-4 py-1 font-medium"
+                >
+                  {currentMonth}{" "}
+                  <ChevronDown size={16} className="ml-2 text-gray-400" />
+                </button>
+                {isDropdownOpen && (
+                  <div className="absolute top-full right-0 mt-2 w-full bg-white border border-gray-100 rounded-lg shadow-xl z-50 overflow-hidden">
+                    {months.map((m) => (
+                      <button
+                        key={m}
+                        className="w-full px-4 py-3 text-sm hover:bg-gray-50 text-center"
+                        onClick={() => {
+                          setCurrentMonth(m);
+                          setIsDropdownOpen(false);
+                        }}
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                        />
-                      </svg>
-                      <span>{event.date}</span>
+                        {m}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <button
+                onClick={handleNext}
+                disabled={currentIndex === months.length - 1}
+                className="p-2 disabled:opacity-20"
+              >
+                <ChevronRight size={20} />
+              </button>
+            </div>
+          </div>
+
+          {/* Events List */}
+          <div className="space-y-6">
+            {currentEvents.length > 0 ? (
+              currentEvents.map((event) => (
+                <div
+                  key={event.id}
+                  className="p-6 border border-gray-100 rounded-xl bg-white shadow-sm transition-shadow"
+                >
+                  <div className="flex flex-col md:flex-row gap-6">
+                    <div className="relative w-full md:w-32 h-32 flex-shrink-0">
+                      <Image
+                        src={event.image}
+                        alt={event.title}
+                        fill
+                        className="object-cover rounded-lg"
+                      />
                     </div>
-                    <div className="flex items-center gap-2">
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                      </svg>
-                      <span>{event.location}</span>
+                    <div className="flex-grow flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                      <div className="space-y-2">
+                        <div className="flex items-center gap-2">
+                          <h3 className="text-xl font-bold text-black">
+                            {event.title}
+                          </h3>
+                          {event.isPast && (
+                            <span className="px-3 py-0.5 bg-gray-100 text-[#8A919D] text-[10px] font-bold rounded-full uppercase tracking-wider">
+                              Past Event
+                            </span>
+                          )}
+                        </div>
+
+                        <div className="space-y-2">
+                          {/* Date and Time Row */}
+                          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-[#495565]">
+                            <div className="flex items-center gap-2 whitespace-nowrap">
+                              <Calendar size={14} className="text-gray-400" />
+                              <span>{event.date}</span>
+                            </div>
+                            <div className="flex items-center gap-2 whitespace-nowrap">
+                              <Clock size={14} className="text-gray-400" />
+                              <span>{event.time}</span>
+                            </div>
+                          </div>
+
+                          {/* Location Row (Always below) */}
+                          <div className="flex items-center gap-2 text-sm text-[#495565]">
+                            <MapPin size={14} className="text-gray-400" />
+                            <span>{event.location}</span>
+                          </div>
+
+                          {/* Past Event Footer Text */}
+                          {event.footerText && (
+                            <p className="text-sm text-gray-400 pt-1">
+                              {event.footerText}
+                            </p>
+                          )}
+                        </div>
+                      </div>
+
+                      {!event.isPast && (
+                        <div className="flex items-center gap-4 w-full md:w-auto">
+                          <button className="p-3 text-gray-400 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors">
+                            <Share size={20} className="text-black" />
+                          </button>
+                          {event.status === "open" ? (
+                            <a
+                              href={event.lumaUrl}
+                              target="_blank"
+                              className="w-[180px] py-3 bg-[#052319] text-white rounded-xl font-bold text-center transition-colors"
+                            >
+                              Register
+                            </a>
+                          ) : (
+                            <button
+                              disabled
+                              className="w-[180px] py-3 bg-[#8A919D] text-white rounded-xl font-bold cursor-not-allowed text-center"
+                            >
+                              Registration Closed
+                            </button>
+                          )}
+                        </div>
+                      )}
                     </div>
                   </div>
-                  <a
-                    href={`#${event.id}`}
-                    className="w-full mt-auto px-6 py-3 bg-[#1a5a4a] hover:bg-[#144539] text-white font-semibold rounded-lg transition-colors block text-center"
-                  >
-                    Learn More & See Details
-                  </a>
                 </div>
+              ))
+            ) : (
+              /* March Scenario: Empty State */
+              <div className="p-12 border border-gray-100 rounded-xl bg-white">
+                <h3 className="text-2xl font-normal text-black mb-4">
+                  No events for now
+                </h3>
+                <p className="text-[#495565]">
+                  Keep visiting this page for upcoming events
+                </p>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
-
-      {/* What the Summit Is Section */}
-      <section
-        id="changemaker-summit-2025"
-        className="py-20 px-4 md:px-50 bg-[#3036411A] border-t border-b border-gray-200"
-      >
-        <div className="max-w-300 mx-auto">
-          {/* Badge */}
-          <div className="mb-8">
-            <span className="inline-block px-4 py-2 bg-white rounded-full text-sm font-semibold text-gray-600">
-              PAST EVENT — 2025
-            </span>
-          </div>
-
-          {/* Title and Button */}
-          <div className="flex justify-between items-start mb-8 flex-col md:flex-row gap-4">
-            <h1 className="font-bold text-black text-4xl md:text-4xl">
-              TRIIBE Changemaker Summit
-            </h1>
-            <a
-              href="/photogallery"
-              className="inline-block px-6 py-3 border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base whitespace-nowrap"
-            >
-              Photo Gallery
-            </a>
-          </div>
-          <h2 className="font-bold text-black text-3xl md:text-3xl mb-8">
-            What the Summit Is
-          </h2>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Left Column - Description */}
-            <div>
-              <p className="font-normal text-[#495565] text-lg leading-relaxed pt-8">
-                The TRIIBE Changemaker Summit is an annual convening designed
-                for undergraduate students who have founded and are actively
-                leading registered nonprofit organizations. It brings together
-                the next generation of social impact leaders for a day of
-                learning, connection, and collaboration.
-              </p>
-            </div>
-
-            {/* Right Column - Features List */}
-            <div className="space-y-4">
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Youth founders leading impactful nonprofits
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Mentors and partners from established organizations
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Interactive panel discussions on key topics
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Intimate fireside chats with industry leaders
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Structured networking opportunities
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Community building and peer connections
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What Happened at the 2025 Summit Section */}
-      <section className="py-20 px-4 md:px-50 bg-gray-50  border-t border-b border-gray-200">
-        <div className="max-w-300 mx-auto">
-          <h2 className="font-bold text-black text-4xl md:text-4xl mb-12">
-            What Happened at the 2025 Summit
-          </h2>
-
-          {/* At a Glance */}
-          <div className="mb-16">
-            <h3 className="font-semibold text-[#697282] text-sm uppercase tracking-wider mb-6">
-              AT A GLANCE
-            </h3>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <p className="font-normal text-[#697282] text-sm mb-2">Date</p>
-                <p className="font-semibold text-black text-lg">
-                  August 2, 2025
-                </p>
-              </div>
-
-              <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <p className="font-normal text-[#697282] text-sm mb-2">
-                  Location
-                </p>
-                <p className="font-semibold text-black text-lg">
-                  Newlab, Brooklyn
-                </p>
-              </div>
-
-              <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <p className="font-normal text-[#697282] text-sm mb-2">
-                  Format
-                </p>
-                <p className="font-semibold text-black text-lg">
-                  1:00 to 5:00 PM
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Program Highlights */}
-          <div>
-            <h3 className="font-semibold text-[#697282] text-sm uppercase tracking-wider mb-6">
-              PROGRAM HIGHLIGHTS
-            </h3>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-6">
-              <div className="flex gap-3">
-                <p className="font-normal text-[#495565] text-base">
-                  — Mobilizing Communities for Compassionate Action
-                </p>
-              </div>
-
-              <div className="flex gap-3">
-                <p className="font-normal text-[#495565] text-base">
-                  — Fundraising and Communication in this Political Landscape
-                </p>
-              </div>
-
-              <div className="flex gap-3">
-                <p className="font-normal text-[#495565] text-base">
-                  — Education as a Tool for Social Mobility and Transformation
-                </p>
-              </div>
-
-              <div className="flex gap-3">
-                <p className="font-normal text-[#495565] text-base">
-                  — Networking session and silent art auction
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Photo Grid Placeholder */}
-          {/* <div className="bg-white border border-gray-200 rounded-lg p-12 flex items-center justify-center min-h-25">
-            <p className="font-normal text-[#697282] text-lg">
-              Speaker and community photo grid placeholder
-            </p>
-          </div> */}
-        </div>
-      </section>
-
-      {/* Impact Section */}
-      {/* <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
-        <div className="max-w-300 mx-auto">
-          <h2 className="font-bold text-black text-4xl md:text-5xl mb-8 text-center">
-            Impact
-          </h2>
-
-          <p className="font-normal text-[#495565] text-lg leading-relaxed mb-16 text-left max-w-250 mx-auto textal">
-            We measure impact through both quantitative metrics and qualitative
-            outcomes—tracking connections made, partnerships formed, and the
-            sustained engagement of participants over time. Success means
-            founders leave with tangible resources and relationships that
-            endure.
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3  gap-6">
-
-            <div className="bg-[#F9FAFB] border border-gray-200 rounded-lg p-8">
-              <p className="font-normal text-[#495565] text-base leading-relaxed mb-6 italic">
-                "The Summit connected me with mentors who understand the unique
-                challenges of running a nonprofit in college. These
-                relationships have been invaluable."
-              </p>
-              <div>
-                <p className="font-semibold text-black text-base mb-1">
-                  Sarah Johnson
-                </p>
-                <p className="font-normal text-[#697282] text-sm">
-                  Founder, Education Access Initiative
-                </p>
-              </div>
-            </div>
-
-
-            <div className="bg-[#F9FAFB] border border-gray-200 rounded-lg p-8">
-              <p className="font-normal text-[#495565] text-base leading-relaxed mb-6 italic">
-                "As a partner, this event gave us direct access to vetted
-                youth-led organizations doing incredible work. It's the most
-                efficient way to find authentic impact."
-              </p>
-              <div>
-                <p className="font-semibold text-black text-base mb-1">
-                  Michael Chen
-                </p>
-                <p className="font-normal text-[#697282] text-sm">
-                  Director of Partnerships, Impact Foundation
-                </p>
-              </div>
-            </div>
-
-
-            <div className="bg-[#F9FAFB] border border-gray-200 rounded-lg p-8">
-              <p className="font-normal text-[#495565] text-base leading-relaxed mb-6 italic">
-                "Finally, a space where student founders are taken seriously.
-                The conversations were substantive, the connections were real,
-                and the support continues."
-              </p>
-              <div>
-                <p className="font-semibold text-black text-base mb-1">
-                  Priya Patel
-                </p>
-                <p className="font-normal text-[#697282] text-sm">
-                  Founder, Community Health Coalition
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Benefits Section */}
-      <section className="py-20 px-4 md:px-50 bg-[#F9FAFB]  border-t border-b border-gray-200">
-        <div className=" mx-auto">
-          <h2 className="font-bold text-black text-4xl md:text-4xl mb-12">
-            Benefits
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* For Founders */}
-            <div className="bg-white border border-gray-200 rounded-lg p-8">
-              <h3 className="font-bold text-black text-xl mb-6">
-                For Founders
-              </h3>
-              <div className="space-y-4">
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Direct access to experienced mentors
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Institutional credibility and validation
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Strategic partnership opportunities
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Peer community of fellow founders
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Practical resources and support
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* For Partners & Sponsors */}
-            <div className="bg-white border border-gray-200 rounded-lg pt-8 px-4">
-              <h3 className="font-bold text-black text-xl mb-6">
-                For Partners & Sponsors
-              </h3>
-              <div className="space-y-4">
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Connection to vetted youth-led organizations
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Clear pathways for meaningful contribution
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Community visibility and brand alignment
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Direct impact measurement
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Early access to emerging leaders
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* For Attendees */}
-            <div className="bg-white border border-gray-200 rounded-lg p-8">
-              <h3 className="font-bold text-black text-xl mb-6">
-                For Attendees
-              </h3>
-              <div className="space-y-4">
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Learning from diverse perspectives
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Networking with impact leaders
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Exposure to youth-led solutions
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Understanding the youth nonprofit ecosystem
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Inspiration for their own work
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Media & Moments Section */}
-      <section className="py-20 px-4 md:px-50 bg-white ">
-        <div className="max-w-300 mx-auto">
-          {/* <h2 className="font-bold text-black text-3xl md:text-4xl mb-12">
-            Media & Moments
-          </h2> */}
-
-          {/* Photo Grid */}
-          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 1</p>
-            </div>
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 2</p>
-            </div>
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 3</p>
-            </div>
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 4</p>
-            </div>
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 5</p>
-            </div>
-            <div className="bg-gray-200 border border-gray-300 rounded-lg flex items-center justify-center aspect-video">
-              <p className="font-normal text-[#697282] text-base">Photo 6</p>
-            </div>
-          </div> */}
-
-          {/* Video Highlight */}
-          {/* <div className="bg-gray-100 border border-gray-300 rounded-lg p-12 flex flex-col items-center justify-center mb-16 min-h-75">
-            <p className="font-normal text-[#697282] text-base mb-6">
-              Video highlight placeholder
-            </p>
-            <a
-              href="#"
-              className="px-6 py-3 bg-[#002c19] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base"
-            >
-              Watch Summit Highlights
-            </a>
-          </div> */}
-
-          {/* Press Mentions */}
-          <div>
-            <h3 className=" text-black font-bold text-2xl uppercase tracking-wider mb-6">
-              PRESS MENTIONS
-            </h3>
-
-            <div className="space-y-2">
-              <div className="flex gap-3 py-2">
-                <p className="font-normal text-[#495565] text-base">
-                  —
-                  <a
-                    className="underline"
-                    href="https://silcus.org/triibe-changemaker-summit/"
-                  >
-                    The Changemaker Summit
-                  </a>
-                  - Sustainability Investment Leadership Council
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What the Summit Is Section */}
-      <section
-        id="davos-summit-2026"
-        className="py-20 px-4 md:px-50 bg-[#3036411A] border-t border-b border-gray-200"
-      >
-        <div className="max-w-300 mx-auto">
-          {/* Badge */}
-          <div className="mb-8">
-            <span className="inline-block px-4 py-2 bg-white rounded-full text-sm font-semibold text-gray-600">
-              PAST EVENT — 2026
-            </span>
-          </div>
-
-          {/* Title and Button */}
-          <div className="flex justify-between items-start mb-8 flex-col md:flex-row gap-4">
-            <h1 className="font-bold text-black text-4xl md:text-4xl">
-              World Economic Forum
-            </h1>
-            <a
-              href="/photogallery"
-              className="inline-block px-6 py-3 border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base whitespace-nowrap"
-            >
-              Photo Gallery
-            </a>
-          </div>
-          <h2 className="font-bold text-black text-3xl md:text-3xl mb-8">
-            What the Forum Is
-          </h2>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Left Column - Description */}
-            <div>
-              <p className="font-normal text-[#495565] text-lg leading-relaxed pt-8">
-                The World Economic Forum (WEF) is an independent international
-                organization, founded in 1971 and headquartered in Cologny,
-                Switzerland, dedicated to improving the state of the world by
-                engaging business, political, academic, and other leaders to
-                shape global, regional, and industry agendas. It is best known
-                for its annual meeting in Davos, Switzerland, which brings
-                together elite stakeholders to discuss pressing issues like
-                climate change, economic stability, and technology
-              </p>
-            </div>
-
-            {/* Right Column - Features List */}
-            <div className="space-y-4">
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-sm">
-                  Mission & Purpose: The WEF operates as a non-governmental
-                  organization (NGO) with a focus on public-private cooperation
-                  to address global challenges and foster collaboration.
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-sm">
-                  Annual Meeting: Held in Davos, this event gathers top leaders
-                  from business, government, civil society, and media to discuss
-                  urgent global issues and develop solutions.
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-sm">
-                  Key Focus Areas: The forum’s work is organized around five
-                  interconnected challenges: Growth, Geopolitics, Technology,
-                  People, and Planet
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-sm">
-                  History: Founded in 1971 by Klaus Schwab, it was originally
-                  known as the "European Management Forum".
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-sm">
-                  Impact: The organization has been a catalyst for initiatives
-                  such as the GAVI Vaccine Alliance and the Reskilling
-                  Revolution
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What Happened at the 2025 Summit Section */}
-      <section className="py-20 px-4 md:px-50 bg-gray-50  border-t border-b border-gray-200">
-        <div className="max-w-300 mx-auto">
-          <h2 className="font-bold text-black text-4xl md:text-4xl mb-12">
-            What Happened at the 2026 Forum
-          </h2>
-
-          {/* At a Glance */}
-          <div className="mb-16">
-            <h3 className="font-semibold text-[#697282] text-sm uppercase tracking-wider mb-6">
-              AT A GLANCE
-            </h3>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <p className="font-normal text-[#697282] text-sm mb-2">Date</p>
-                <p className="font-semibold text-black text-lg">
-                  19 - 23 January 2026
-                </p>
-              </div>
-
-              <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <p className="font-normal text-[#697282] text-sm mb-2">
-                  Location
-                </p>
-                <p className="font-semibold text-black text-lg">
-                  Davos, Switzerland
-                </p>
-              </div>
-
-              <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <p className="font-normal text-[#697282] text-sm mb-2">
-                  Format
-                </p>
-                <p className="font-semibold text-black text-lg">In-person</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Program Highlights */}
-          <div>
-            <h3 className="font-semibold text-[#697282] text-sm uppercase tracking-wider mb-6">
-              PROGRAM HIGHLIGHTS
-            </h3>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-6">
-              <div className="flex gap-3">
-                <p className="font-normal text-[#495565] text-base">
-                  — Geopolitical Fragmentation and "New" Cooperation
-                </p>
-              </div>
-
-              <div className="flex gap-3">
-                <p className="font-normal text-[#495565] text-base">
-                  — Prioritizing Human Capital and Social Cohesion
-                </p>
-              </div>
-
-              <div className="flex gap-3">
-                <p className="font-normal text-[#495565] text-base">
-                  — AI Integration and Economic Growth
-                </p>
-              </div>
-
-              <div className="flex gap-3">
-                <p className="font-normal text-[#495565] text-base">
-                  — Sustainable Growth Within Planetary Boundaries
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Impact Section */}
-      <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
-        <div className="max-w-300 mx-auto">
-          <h2 className="font-bold text-black text-4xl md:text-5xl mb-8 text-center">
-            Impact
-          </h2>
-
-          <p className="font-normal text-[#495565] text-lg leading-relaxed mb-16 text-left max-w-250 mx-auto">
-            We measure impact through both quantitative metrics and qualitative
-            outcomes—tracking connections made, partnerships formed, and the
-            sustained engagement of participants over time. Success means
-            founders leave with tangible resources and relationships that
-            endure.
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3  gap-6">
-            {/* Testimonial 1 */}
-            <div className="bg-[#F9FAFB] border border-gray-200 rounded-lg p-8">
-              <p className="font-normal text-[#495565] text-base leading-relaxed mb-6 italic">
-                "The Summit connected me with mentors who understand the unique
-                challenges of running a nonprofit in college. These
-                relationships have been invaluable."
-              </p>
-              <div>
-                <p className="font-semibold text-black text-base mb-1">
-                  Sarah Johnson
-                </p>
-                <p className="font-normal text-[#697282] text-sm">
-                  Founder, Education Access Initiative
-                </p>
-              </div>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="bg-[#F9FAFB] border border-gray-200 rounded-lg p-8">
-              <p className="font-normal text-[#495565] text-base leading-relaxed mb-6 italic">
-                "As a partner, this event gave us direct access to vetted
-                youth-led organizations doing incredible work. It's the most
-                efficient way to find authentic impact."
-              </p>
-              <div>
-                <p className="font-semibold text-black text-base mb-1">
-                  Michael Chen
-                </p>
-                <p className="font-normal text-[#697282] text-sm">
-                  Director of Partnerships, Impact Foundation
-                </p>
-              </div>
-            </div>
-
-            {/* Testimonial 3 */}
-            <div className="bg-[#F9FAFB] border border-gray-200 rounded-lg p-8">
-              <p className="font-normal text-[#495565] text-base leading-relaxed mb-6 italic">
-                "Finally, a space where student founders are taken seriously.
-                The conversations were substantive, the connections were real,
-                and the support continues."
-              </p>
-              <div>
-                <p className="font-semibold text-black text-base mb-1">
-                  Priya Patel
-                </p>
-                <p className="font-normal text-[#697282] text-sm">
-                  Founder, Community Health Coalition
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="py-20 px-4 md:px-50 bg-[#F9FAFB]  border-t border-b border-gray-200">
-        <div className=" mx-auto">
-          <h2 className="font-bold text-black text-4xl md:text-4xl mb-12">
-            Highlights
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* For Founders */}
-            <div className="bg-white border border-gray-200 rounded-lg p-8">
-              <h3 className="font-bold text-black text-xl mb-6">
-                The TPC House
-              </h3>
-              <div className="space-y-4">
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Accredited WEF 2026 venue for dialogue
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Lasting systems change starts with coherence
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Upgrade leaders inner operating systems daily.
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Quantum Leadership bridges East and West.
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Well-being economy: six pillars, life-flourishing focus.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* For Partners & Sponsors */}
-            <div className="bg-white border border-gray-200 rounded-lg pt-8 px-4">
-              <h3 className="font-bold text-black text-xl mb-6">
-                Arctic Basecamp
-              </h3>
-              <div className="space-y-4">
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Youth Circle of Hope, inspiring next-gen leaders
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Greenland under pressure, rapid response session
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    MonkeyRock nature tribute, Jane Goodall spotlight
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Doconomy Stage of Impact, daily action talks
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Science, AI, and trust in transition
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* For Attendees */}
-            <div className="bg-white border border-gray-200 rounded-lg p-8">
-              <h3 className="font-bold text-black text-xl mb-6">
-                Youth Leaders Davos
-              </h3>
-              <div className="space-y-4">
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Ages 17 to 24, global cohort.
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Four-phase framework: Lotus, Mud, Bloom, Splash.
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Inner journey day: nature, self-awareness practices.
-                  </p>
-                </div>
-
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Origin Davos pitch ideas to mentors.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What the Summit Is Section */}
-      {/* <section
-        id="event-3-2026"
-        className="py-20 px-4 md:px-50 bg-[#3036411A] border-t border-b border-gray-200"
-      >
-        <div className="max-w-300 mx-auto">
-
-          <div className="mb-8">
-            <span className="inline-block px-4 py-2 bg-white rounded-full text-sm font-semibold text-gray-600">
-              PAST EVENT — 2024
-            </span>
-          </div>
-
-
-          <div className="flex justify-between items-start mb-8 flex-col md:flex-row gap-4">
-            <h1 className="font-bold text-black text-4xl md:text-4xl">
-              TRIIBE Event #3
-            </h1>
-            <a
-              href="/photogallery"
-              className="inline-block px-6 py-3 border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base whitespace-nowrap"
-            >
-              Photo Gallery
-            </a>
-          </div>
-          <h2 className="font-bold text-black text-3xl md:text-3xl mb-8">
-            What the Summit Is
-          </h2>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-
-            <div>
-              <p className="font-normal text-[#495565] text-lg leading-relaxed pt-8">
-                The TRIIBE Changemaker Summit is an annual convening designed
-                for undergraduate students who have founded and are actively
-                leading registered nonprofit organizations. It brings together
-                the next generation of social impact leaders for a day of
-                learning, connection, and collaboration.
-              </p>
-            </div>
-
-
-            <div className="space-y-4">
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Youth founders leading impactful nonprofits
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Mentors and partners from established organizations
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Interactive panel discussions on key topics
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Intimate fireside chats with industry leaders
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Structured networking opportunities
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <span className="text-[#697282] mt-1">—</span>
-                <p className="font-normal text-[#495565] text-lg">
-                  Community building and peer connections
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* What Happened at the 2025 Summit Section */}
-      {/* <section className="py-20 px-4 md:px-50 bg-gray-50  border-t border-b border-gray-200">
-        <div className="max-w-300 mx-auto">
-          <h2 className="font-bold text-black text-4xl md:text-4xl mb-12">
-            What Happened at the 2025 Summit
-          </h2>
-
-
-          <div className="mb-16">
-            <h3 className="font-semibold text-[#697282] text-sm uppercase tracking-wider mb-6">
-              AT A GLANCE
-            </h3>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <p className="font-normal text-[#697282] text-sm mb-2">Date</p>
-                <p className="font-semibold text-black text-lg">
-                  August 2, 2025
-                </p>
-              </div>
-
-              <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <p className="font-normal text-[#697282] text-sm mb-2">
-                  Location
-                </p>
-                <p className="font-semibold text-black text-lg">
-                  Newlab, Brooklyn
-                </p>
-              </div>
-
-              <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <p className="font-normal text-[#697282] text-sm mb-2">
-                  Format
-                </p>
-                <p className="font-semibold text-black text-lg">
-                  1:00 to 5:00 PM
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-          <div className="mb-16">
-            <h3 className="font-semibold text-[#697282] text-sm uppercase tracking-wider mb-6">
-              PROGRAM HIGHLIGHTS
-            </h3>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-6">
-              <div className="flex gap-3">
-                <p className="font-normal text-[#495565] text-base">
-                  — Mobilizing Communities for Compassionate Action
-                </p>
-              </div>
-
-              <div className="flex gap-3">
-                <p className="font-normal text-[#495565] text-base">
-                  — Fundraising and Communication in this Political Landscape
-                </p>
-              </div>
-
-              <div className="flex gap-3">
-                <p className="font-normal text-[#495565] text-base">
-                  — Education as a Tool for Social Mobility and Transformation
-                </p>
-              </div>
-
-              <div className="flex gap-3">
-                <p className="font-normal text-[#495565] text-base">
-                  — Networking session and silent art auction
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-          <div className="bg-white border border-gray-200 rounded-lg p-12 flex items-center justify-center min-h-25">
-            <p className="font-normal text-[#697282] text-lg">
-              Speaker and community photo grid placeholder
-            </p>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Impact Section */}
-      {/* <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
-        <div className="max-w-300 mx-auto">
-          <h2 className="font-bold text-black text-4xl md:text-5xl mb-8 text-center">
-            Impact
-          </h2>
-
-          <p className="font-normal text-[#495565] text-lg leading-relaxed mb-16 text-center max-w-250 mx-auto">
-            We measure impact through both quantitative metrics and qualitative
-            outcomes—tracking connections made, partnerships formed, and the
-            sustained engagement of participants over time. Success means
-            founders leave with tangible resources and relationships that
-            endure.
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3  gap-6">
-
-            <div className="bg-[#F9FAFB] border border-gray-200 rounded-lg p-8">
-              <p className="font-normal text-[#495565] text-base leading-relaxed mb-6 italic">
-                "The Summit connected me with mentors who understand the unique
-                challenges of running a nonprofit in college. These
-                relationships have been invaluable."
-              </p>
-              <div>
-                <p className="font-semibold text-black text-base mb-1">
-                  Sarah Johnson
-                </p>
-                <p className="font-normal text-[#697282] text-sm">
-                  Founder, Education Access Initiative
-                </p>
-              </div>
-            </div>
-
-
-            <div className="bg-[#F9FAFB] border border-gray-200 rounded-lg p-8">
-              <p className="font-normal text-[#495565] text-base leading-relaxed mb-6 italic">
-                "As a partner, this event gave us direct access to vetted
-                youth-led organizations doing incredible work. It's the most
-                efficient way to find authentic impact."
-              </p>
-              <div>
-                <p className="font-semibold text-black text-base mb-1">
-                  Michael Chen
-                </p>
-                <p className="font-normal text-[#697282] text-sm">
-                  Director of Partnerships, Impact Foundation
-                </p>
-              </div>
-            </div>
-
-
-            <div className="bg-[#F9FAFB] border border-gray-200 rounded-lg p-8">
-              <p className="font-normal text-[#495565] text-base leading-relaxed mb-6 italic">
-                "Finally, a space where student founders are taken seriously.
-                The conversations were substantive, the connections were real,
-                and the support continues."
-              </p>
-              <div>
-                <p className="font-semibold text-black text-base mb-1">
-                  Priya Patel
-                </p>
-                <p className="font-normal text-[#697282] text-sm">
-                  Founder, Community Health Coalition
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Benefits Section */}
-      {/* <section className="py-20 px-4 md:px-50 bg-[#F9FAFB]  border-t border-b border-gray-200">
-        <div className=" mx-auto">
-          <h2 className="font-bold text-black text-4xl md:text-4xl mb-12">
-            Benefits
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            <div className="bg-white border border-gray-200 rounded-lg p-8">
-              <h3 className="font-bold text-black text-xl mb-6">
-                For Founders
-              </h3>
-              <div className="space-y-4">
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Direct access to experienced mentors
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Institutional credibility and validation
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Strategic partnership opportunities
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Peer community of fellow founders
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Practical resources and support
-                  </p>
-                </div>
-              </div>
-            </div>
-
-
-            <div className="bg-white border border-gray-200 rounded-lg pt-8 px-4">
-              <h3 className="font-bold text-black text-xl mb-6">
-                For Partners & Sponsors
-              </h3>
-              <div className="space-y-4">
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Connection to vetted youth-led organizations
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Clear pathways for meaningful contribution
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Community visibility and brand alignment
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Direct impact measurement
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Early access to emerging leaders
-                  </p>
-                </div>
-              </div>
-            </div>
-
-
-            <div className="bg-white border border-gray-200 rounded-lg p-8">
-              <h3 className="font-bold text-black text-xl mb-6">
-                For Attendees
-              </h3>
-              <div className="space-y-4">
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Learning from diverse perspectives
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Networking with impact leaders
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Exposure to youth-led solutions
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Understanding the youth nonprofit ecosystem
-                  </p>
-                </div>
-                <div className="flex gap-3">
-                  <span className="text-[#697282] mt-1">—</span>
-                  <p className="font-normal text-[#495565] text-base">
-                    Inspiration for their own work
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <CTASection />
       <Footer />
