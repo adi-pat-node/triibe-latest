@@ -18,37 +18,30 @@ const testimonials = [
   {
     quote:
       "Receiving TRIIBE’s scholarship support further strengthened the work of Vervient Foundation by highlighting that community and connection matter as much as ideas. Knowing there’s a network of like-minded leaders cheering me on fuels our mission to empower students with an innovation mindset and reminds me that there’s always a shoulder to lean on in this journey.",
-    name: "Gitanjali",
+    name: "Gitanjali Rao",
     year: "TRIIBE Fellow Fall 2025",
     organization: "Global Keynote, Fervent Foundation",
   },
   {
     quote:
-      "TRIIBE gave me the structure and support I needed to grow my nonprofit from a scrappy student project into a sustainable organization. The mentorship was invaluable.",
-    name: "Sarah Chen",
-    year: "TRIIBE Fellow 2021–2024",
-    organization: "Founder, Education Access Initiative",
+      "TRIIBE has been an instrumental resource in making sure that my organization continues to be supported after high school. I'm extremely grateful for all of the support TRIIBE has given Philippine Health Initiative and TRIIBE's emphasis on centering youth changemakers has brought together a great community of incredible founders.",
+    name: "Nayla Jimenez",
+    year: "TRIIBE Fellow Fall 2025",
+    organization: "Founder, Philippine Health Initiative",
   },
   {
     quote:
-      "The fellowship provided not just funding, but a community of fellow founders who understood the unique challenges of running a nonprofit while in college.",
-    name: "Marcus Johnson",
-    year: "TRIIBE Fellow 2020–2023",
-    organization: "Founder, Youth Climate Action Network",
+      "Through TRIIBE I’ve experienced what it truly means to be supported while building something meaningful. TRIIBE has provided more than funding, it has offered transformative mentorship,strategic structure, and a powerful community of values-driven founders who continuously challenge me to think bigger and lead with intention. When many young leaders enter college and suddenly find themselves navigating ambition without guidance, TRIIBE fills that gap. They help equip us with the tools, accountability, and clarity needed to turn vision into sustainable impact. Through personalized mentorship, I’ve sharpened my storytelling, strengthened my long-term strategy, and learned how to scale my initiatives thoughtfully. What makes TRIIBE unique is its belief that young leaders should never build alone. The fellowship model fosters collaboration, shared learning, and courageous leadership.",
+    name: "Shrusti Amula",
+    year: "TRIIBE Fellow Fall 2025",
+    organization: "Founder, Rise N Shine Foundation",
   },
   {
     quote:
-      "Having mentors who had built successful nonprofits made all the difference. They helped me navigate everything from fundraising to board governance.",
-    name: "Priya Patel",
-    year: "TRIIBE Fellow 2022–2025",
-    organization: "Founder, Tech for Good Initiative",
-  },
-  {
-    quote:
-      "TRIIBE's quarterly structure kept me accountable and focused. The incremental funding model aligned perfectly with our organization's growth trajectory.",
-    name: "James Williams",
-    year: "TRIIBE Fellow 2021–2024",
-    organization: "Founder, Community Health Partners",
+      "I am immensely grateful for the TRIIBE community that has inspired me to continue SEED’s mission in bridging the global climate literacy gap. My TRIIBE mentors and peers are the leaders our world needs.",
+    name: "Maya Gowda",
+    year: "TRIIBE Fellow Spring 2025",
+    organization: "Founder, (SEED)",
   },
 ];
 
@@ -80,87 +73,87 @@ const faqs = [
   },
 ];
 
-// function TestimonialCarousel() {
-//   const [currentIndex, setCurrentIndex] = useState(0);
+function TestimonialCarousel() {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-//   const goToPrevious = () => {
-//     setCurrentIndex((prevIndex) =>
-//       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1,
-//     );
-//   };
+  const goToPrevious = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1,
+    );
+  };
 
-//   const goToNext = () => {
-//     setCurrentIndex((prevIndex) =>
-//       prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1,
-//     );
-//   };
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1,
+    );
+  };
 
-//   const currentTestimonial = testimonials[currentIndex];
+  const currentTestimonial = testimonials[currentIndex];
 
-//   return (
-//     <div className="flex flex-col gap-12">
-//       <div className="text-center">
-//         <h2 className=" font-bold text-black text-4xl mb-4 tracking-[-0.90px] leading-10">
-//           Hear from Our Fellows
-//         </h2>
-//         <p className=" font-normal text-[#303641] text-lg">
-//           Real stories from student founders who've built sustainable impact
-//         </p>
-//       </div>
+  return (
+    <div className="flex flex-col gap-12">
+      <div className="text-center">
+        <h2 className=" font-bold text-black text-4xl mb-4 tracking-[-0.90px] leading-10">
+          Hear from Our Fellows
+        </h2>
+        <p className=" font-normal text-[#303641] text-lg">
+          Real stories from student founders who've built sustainable impact
+        </p>
+      </div>
 
-//       <div className="flex items-center justify-between gap-8">
-//         <button
-//           onClick={goToPrevious}
-//           className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors shrink-0"
-//           aria-label="Previous testimonial"
-//         >
-//           <ChevronLeft className="w-8 h-8 text-black" />
-//         </button>
+      <div className="flex items-center justify-between gap-8">
+        <button
+          onClick={goToPrevious}
+          className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors shrink-0"
+          aria-label="Previous testimonial"
+        >
+          <ChevronLeft className="w-8 h-8 text-black" />
+        </button>
 
-//         <div className="flex-1 text-center">
-//           <blockquote className="mb-8">
-//             <p className=" font-normal text-black text-2xl md:text-2xl leading-relaxed mb-8">
-//               "{currentTestimonial.quote}"
-//             </p>
-//           </blockquote>
+        <div className="flex-1 text-center">
+          <blockquote className="mb-8">
+            <p className=" font-normal text-black text-xl md:text-xl leading-relaxed mb-8">
+              "{currentTestimonial.quote}"
+            </p>
+          </blockquote>
 
-//           <div className="flex flex-col gap-2">
-//             <p className=" font-semibold text-[#303641] text-lg">
-//               {currentTestimonial.name}
-//             </p>
-//             <p className=" font-normal text-black text-base">
-//               {currentTestimonial.year}
-//             </p>
-//             <p className=" font-normal text-black text-base">
-//               {currentTestimonial.organization}
-//             </p>
-//           </div>
-//         </div>
+          <div className="flex flex-col gap-2">
+            <p className=" font-semibold text-[#303641] text-lg">
+              {currentTestimonial.name}
+            </p>
+            <p className=" font-normal text-black text-base">
+              {currentTestimonial.year}
+            </p>
+            <p className=" font-normal text-black text-base">
+              {currentTestimonial.organization}
+            </p>
+          </div>
+        </div>
 
-//         <button
-//           onClick={goToNext}
-//           className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors shrink-0"
-//           aria-label="Next testimonial"
-//         >
-//           <ChevronRight className="w-8 h-8 text-black" />
-//         </button>
-//       </div>
+        <button
+          onClick={goToNext}
+          className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors shrink-0"
+          aria-label="Next testimonial"
+        >
+          <ChevronRight className="w-8 h-8 text-black" />
+        </button>
+      </div>
 
-//       <div className="flex items-center justify-center gap-2">
-//         {testimonials.map((_, index) => (
-//           <button
-//             key={index}
-//             onClick={() => setCurrentIndex(index)}
-//             className={`w-2 h-2 rounded-full transition-all ${
-//               index === currentIndex ? "bg-[#303641] w-8" : "bg-black w-2"
-//             }`}
-//             aria-label={`Go to testimonial ${index + 1}`}
-//           />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
+      <div className="flex items-center justify-center gap-2">
+        {testimonials.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            className={`w-2 h-2 rounded-full transition-all ${
+              index === currentIndex ? "bg-[#303641] w-8" : "bg-black w-2"
+            }`}
+            aria-label={`Go to testimonial ${index + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 const ProgramPage = () => {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
@@ -516,48 +509,45 @@ const ProgramPage = () => {
                 </div>
               </div>
             </div>
-
-
           </div>
         </div>
       </section>
 
       <section className="py-20 px-4 md:px-50 bg-gray-50">
         <div className="max-w-260 mx-auto">
-  {/* Quarterly Cycle Testimonial */}
-            <div className="bg-white border-2 border-black rounded-lg p-8 md:p-10">
-              <blockquote className="text-black text-xl font-normal leading-relaxed italic">
-                "TRIIBE's Mentorship Program is nothing short of astounding.
-                With a busy schedule, I wasn't sure how much time I could give,
-                but the ease of entry, flexible commitment, and thoughtful
-                organization made it possible to truly support my young
-                changemaker in a way that was both meaningful and deeply
-                rewarding."
-              </blockquote>
+          {/* Quarterly Cycle Testimonial */}
+          <div className="bg-white border-2 border-black rounded-lg p-8 md:p-10">
+            <blockquote className="text-black text-xl font-normal leading-relaxed italic">
+              "TRIIBE's Mentorship Program is nothing short of astounding. With
+              a busy schedule, I wasn't sure how much time I could give, but the
+              ease of entry, flexible commitment, and thoughtful organization
+              made it possible to truly support my young changemaker in a way
+              that was both meaningful and deeply rewarding."
+            </blockquote>
 
-              <div className="mt-6 flex items-center gap-3">
-                <span className="text-black font-semibold">
-                  — Jonny Imerman, Co-founder Imerman Angels
-                </span>
-                <a
-                  href="https://www.linkedin.com/in/imermanangels/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#0077b5] hover:opacity-80 transition-opacity"
-                  aria-label="Jonny Imerman LinkedIn Profile"
+            <div className="mt-6 flex items-center gap-3">
+              <span className="text-black font-semibold">
+                — Jonny Imerman, Co-founder Imerman Angels
+              </span>
+              <a
+                href="https://www.linkedin.com/in/imermanangels/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#0077b5] hover:opacity-80 transition-opacity"
+                aria-label="Jonny Imerman LinkedIn Profile"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                  </svg>
-                </a>
-              </div>
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
             </div>
+          </div>
         </div>
       </section>
 
@@ -681,11 +671,11 @@ const ProgramPage = () => {
       </section>
 
       {/* Testimonials Section */}
-      {/* <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
+      <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
         <div className="max-w-260 mx-auto">
           <TestimonialCarousel />
         </div>
-      </section> */}
+      </section>
 
       {/* Deck Section */}
       <section className="py-12 px-4 md:px-[200px]">

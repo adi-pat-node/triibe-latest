@@ -251,6 +251,256 @@ const tech = [
     image: "/images/about/team/Pranay Mishra.png",
     linkedin: "https://www.linkedin.com/in/pranay--mishra/",
   },
+  {
+    name: "Maximilian Lehmann",
+    role: "Member",
+    bio: "Maximilian Lehmann is a purpose-driven entrepreneur committed to democratizing the sharing economy and building sustainable communities.",
+    image: "/images/about/team/Maximilian Lehmann.png",
+    linkedin: "https://www.linkedin.com/in/maximilian-lehmann/",
+  },
+];
+
+const mentors = [
+  {
+    name: "Barry Chaiken",
+    role: "Member",
+    bio: "Barry Chaiken is a physician and healthcare IT expert with over 25 years of experience helping health tech companies, investors, and healthcare organizations turn innovation into impact.",
+    image: "/images/about/team/Barry Chaiken.png",
+    linkedin: "https://www.linkedin.com/in/barrychaiken/",
+  },
+  {
+    name: "Kahina Haynes",
+    role: "Member",
+    bio: "Kahina Haynes is an experienced public sector professional with a strong background in non-profit and international development work.",
+    image: "/images/about/team/Kahina Haynes.png",
+    linkedin: "https://www.linkedin.com/in/kahinahaynes/",
+  },
+  {
+    name: "Jessica Smith",
+    role: "Member",
+    bio: "Jessica Smith is a strategic human resources leader and trusted partner with 17 years of experience guiding organizations through growth and change.",
+    image: "/images/about/team/Jessica Smith.png",
+    linkedin: "https://www.linkedin.com/in/jessicasmithhouk/",
+  },
+  {
+    name: "Carl Nassib",
+    role: "Member",
+    bio: "",
+    image: "/images/about/team/Carl Nassib.png",
+    linkedin: "https://www.linkedin.com/in/carl-nassib-602a79199/",
+  },
+  {
+    name: "Emad Ansari",
+    role: "Member",
+    bio: "Emad Ansari is a lawyer who helps investors, founders, communities, and individuals navigate complex challenges and move meaningful initiatives forward.",
+    image: "/images/about/team/Emad Ansari.png",
+    linkedin: "https://www.linkedin.com/in/heansari/",
+  },
+  {
+    name: "Eric Printz",
+    role: "Member",
+    bio: "Eric Printz is a commercial and scientific leader with more than 20 years of experience helping companies optimize manufacturing, enhance product performance, accelerate R&D.",
+    image: "/images/about/team/Eric Printz.png",
+    linkedin: "https://www.linkedin.com/in/ericrprintz/",
+  },
+  {
+    name: "Felicia Stingone",
+    role: "Member",
+    bio: "Felicia Stingone is a coach dedicated to supporting women as they navigate change in their personal and professional lives.",
+    image: "/images/about/team/Felicia Stingone.png",
+    linkedin: "https://www.linkedin.com/in/feliciastingone/",
+  },
+
+  {
+    name: "Peter Mayfield",
+    role: "Member",
+    bio: "Peter Mayfield is the Founder of NatureUP Health, a consulting and design firm that helps organizations create innovative, clinically supervised nature-based therapeutic mentoring programs.",
+    image: "/images/about/team/Peter Mayfield.png",
+    linkedin: "https://www.linkedin.com/in/petermayfield/",
+  },
+
+  {
+    name: "Theresa Pantazopoulos",
+    role: "Member",
+    bio: "Theresa Pantazopoulos is a strategic communications and brand marketing leader with 25 years of experience spanning publishing, consumer goods, technology, and manufacturing.",
+    image: "/images/about/team/Theresa Pantazopoulos.png",
+    linkedin: "https://www.linkedin.com/in/tesspantaz/",
+  },
+
+  {
+    name: "Sai Gundavelli",
+    role: "Member",
+    bio: "Sai Gundavelli is the CEO of Solix Technologies, where he has led the company’s vision, strategy, and growth for more than 20 years.",
+    image: "/images/about/team/Sai Gundavelli.png",
+    linkedin: "https://www.linkedin.com/in/saigundavelli/",
+  },
+
+  {
+    name: "De-Ann Abraham",
+    role: "Member",
+    bio: "De-Ann Abraham is a former Peace Corps Coverdell Fellow and strategy consultant turned early-stage startup strategist with more than five years of experience.",
+    image: "/images/about/team/De-Ann Abraham.png",
+    linkedin: "https://www.linkedin.com/in/de-ann-abraham/",
+  },
+
+  {
+    name: "Jessica Joyce",
+    role: "Member",
+    bio: "Jessica Joyce is a strategic Impact Advisor and culture-driven leader with more than a decade of experience working at the intersection of impact management, change management, and community leadership.",
+    image: "/images/about/team/Jessica Joyce.png",
+    linkedin: "https://www.linkedin.com/in/jessicajoycevandenheuvel/",
+  },
+  {
+    name: "Osasumwen Erhabor",
+    role: "Member",
+    bio: "Osasumwen Erhabor is an accomplished education leader with over 15 years of experience spanning curriculum development, assessment design, instructional innovation.",
+    image: "/images/about/team/Osasumwen Erhabor.png",
+    linkedin: "https://www.linkedin.com/in/osasumwen-erhabor-555191183/",
+  },
+
+  {
+    name: "Benjamin Ulrich",
+    role: "Member",
+    bio: "Benjamin Ulrich builds trusted, discreet relationships with single and multi-family offices, next-generation principals, and former entrepreneurs.",
+    image: "/images/about/team/Benjamin Ulrich.png",
+    linkedin: "https://www.linkedin.com/in/benjaminulrich/",
+  },
+
+  {
+    name: "Surina Treon",
+    role: "Member",
+    bio: "Surina Treon is a London-trained Chief Marketing Officer and advertising executive with 25 years of experience driving brand growth and business transformation.",
+    image: "/images/about/team/Surina Treon.png",
+    linkedin: "https://www.linkedin.com/in/surinatreon/",
+  },
+
+  {
+    name: "Aroop Bhattacharjee",
+    role: "Member",
+    bio: "Aroop Bhattacharjee is a seasoned organizational strategist with over 25 years of experience helping companies reduce costs, improve profit margins, and build healthier operations.",
+    image: "/images/about/team/Aroop Bhattacharjee.png",
+    linkedin: "https://www.linkedin.com/in/aroop-bhattacharjee/",
+  },
+
+  {
+    name: "Keith Wakeman",
+    role: "Member",
+    bio: "Keith Wakeman is an innovation and venture leader with a track record of launching over $1 billion in new products and driving growth for companies including Keebler, Kellogg, and Bayer.",
+    image: "/images/about/team/Keith Wakeman.png",
+    linkedin: "https://www.linkedin.com/in/keithwakeman/",
+  },
+
+  {
+    name: "Haysam Fahmy",
+    role: "Member",
+    bio: "Haysam Fahmy is a seasoned marketing executive with over 25 years of experience leading acquisition, consumer engagement, spend, and loyalty strategies.",
+    image: "/images/about/team/Haysam Fahmy.png",
+    linkedin: "https://www.linkedin.com/in/haysam/",
+  },
+
+  {
+    name: "Vincent Sanchez-Gomez",
+    role: "Member",
+    bio: "",
+    image: "/images/about/team/Vincent Sanchez-Gomez.png",
+    linkedin: "https://www.linkedin.com/in/vincentsg/",
+  },
+
+  {
+    name: "Duygu Ozen",
+    role: "Member",
+    bio: "Duygu Ozen is a climate tech founder and growth strategist with over 15 years of experience leading brand, venture scaling, and growth strategy.",
+    image: "/images/about/team/Duygu Ozen.png",
+    linkedin: "https://www.linkedin.com/in/duyguozen/",
+  },
+
+  {
+    name: "Kate Riordan",
+    role: "Member",
+    bio: "Kate Riordan is a seasoned nonprofit leader with extensive expertise in management, strategy, and organizational development, focused on designing and scaling social impact solutions.",
+    image: "/images/about/team/Kate Riordan.png",
+    linkedin: "https://www.linkedin.com/in/kate-riordan111/",
+  },
+
+  {
+    name: "Brett Guidry",
+    role: "Member",
+    bio: "Brett Guidry is an entrepreneur and investor with a deep passion for product development, emphasizing the integration of design, psychology, and business insights.",
+    image: "/images/about/team/Brett Guidry.png",
+    linkedin: "https://www.linkedin.com/in/brett-guidry-0149b/",
+  },
+
+  {
+    name: "Christina Benson",
+    role: "Member",
+    bio: "Christina Benson is a results-driven executive with over 20 years of experience in the climate sector, combining business acumen with mission-driven leadership.",
+    image: "/images/about/team/Christina Benson.png",
+    linkedin: "https://www.linkedin.com/in/christinastanton/",
+  },
+
+  {
+    name: "Matt Wells",
+    role: "Member",
+    bio: "Matt Wells is an accomplished specialty recruiter, strategic advisor, and transformational operator with over 15 years of experience driving innovation, strategic realignment, and accelerated growth.",
+    image: "/images/about/team/Matt W.png",
+    linkedin: "https://www.linkedin.com/in/jamiemwells/",
+  },
+
+  {
+    name: "Danielle G. Guindo",
+    role: "Member",
+    bio: "Danielle G. Guindo is an experienced leader specializing in program development, executive management, fundraising, and team supervision.",
+    image: "/images/about/team/Danielle Guindo.png",
+    linkedin: "https://www.linkedin.com/in/danielle-g-guindo-msw-598b634/",
+  },
+
+  {
+    name: "Janine Hetherington",
+    role: "Member",
+    bio: "Janine Hetherington is a seasoned development professional and dedicated volunteer who specializes in fostering connections between diverse alumni communities and their alma maters.",
+    image: "/images/about/team/Janine Hetherington.png",
+    linkedin: "https://www.linkedin.com/in/janinehetherington/",
+  },
+
+  {
+    name: "Jessica Moon",
+    role: "Member",
+    bio: "Jessica Moon is a sustainability and governance expert who helps organizations translate environmental and social ambitions into durable, operational systems within complex enterprises.",
+    image: "/images/about/team/Jessica Moon.png",
+    linkedin: "https://www.linkedin.com/in/moonjessica/",
+  },
+
+  {
+    name: "Jonny Imerman",
+    role: "Member",
+    bio: "Jonny Imerman is a cancer survivor and social entrepreneur who co-founded Imerman Angels, a nonprofit that connects individuals fighting cancer.",
+    image: "/images/about/team/Jonny Imerman.png",
+    linkedin: "https://www.linkedin.com/in/imermanangels/",
+  },
+
+  {
+    name: "Stephanie Brookes",
+    role: "Member",
+    bio: "Stephanie Choi Brookes is a communications and strategy leader with nearly two decades of experience at the intersection of government, infrastructure, and enterprise projects.",
+    image: "/images/about/team/Stephanie Choi Brookes.png",
+    linkedin: "https://www.linkedin.com/in/stephanie-choi-brookes/",
+  },
+
+  {
+    name: "Zachary Pogue",
+    role: "Member",
+    bio: "Zachary Pogue is a creative technologist and experienced project manager with over 15 years of expertise delivering early-stage, pilot, and enterprise IT solutions.",
+    image: "/images/about/team/Zachary Pogue.png",
+    linkedin: "https://www.linkedin.com/in/zachpogue/",
+  },
+
+  {
+    name: "Nomsa Ndongwe",
+    role: "Member",
+    bio: "Nomsa Ndongwe is a Research Fellow at the James Martin Center for Nonproliferation Studies and co-founder of the WCAPS West Coast Chapter.",
+    image: "/images/about/team/Nomsa Ndongwe.jpg",
+    linkedin: "https://www.middlebury.edu/institute/people/nomsa-ndongwe",
+  },
 ];
 
 const globalRelations = [
@@ -355,7 +605,7 @@ const research = [
     name: "Nancy Thadhani",
     role: "Member",
     bio: "Nancy Thadhani is a sophomore at Vellore Institute of Technology (VIT), Vellore, based in Vellore.",
-    image: "/images/about/team/Nancy Thadhani.png",
+    image: "/images/about/team/Nancy Thadhani1.png",
     linkedin: "https://www.linkedin.com/in/nancy-thadhani-48501730a/",
   },
   {
@@ -565,6 +815,15 @@ const members = [
   //   linkedin: "https://www.linkedin.com/in/sarthak-anand-b27044229/",
   //   isInstagram: false,
   // },
+
+  {
+    name: "Imane Abdel Jelil",
+    role: "Member",
+    bio: "Imane Abdel Jelil is an AI and Digital Marketing Strategist with international expertise in business strategy, innovation, and emerging technologies.",
+    image: "/images/about/team/Imane Abdel Jelil.png",
+    linkedin: "https://www.linkedin.com/in/imane-abdel-jelil/?locale=en_US",
+    isInstagram: false,
+  },
 ];
 
 const legacyBoard = [
@@ -619,50 +878,50 @@ const europe = [
 
 const asia = [];
 
-const mentors = [
-  {
-    name: "Kyle Matthys",
-    role: "CEO",
-    bio: "Founder and CEO of TRIIBE. We help young nonprofit founders scale from sophomore to senior year of college: Those advancing food, water, shelter, health, education, or energy.",
-    image: "/images/about/team/KyleMatthys.jpg",
-    linkedin: "https://www.linkedin.com/in/kylematthys/",
-  },
-  {
-    name: "Kyle Matthys",
-    role: "CEO",
-    bio: "Founder and CEO of TRIIBE. We help young nonprofit founders scale from sophomore to senior year of college: Those advancing food, water, shelter, health, education, or energy.",
-    image: "/images/about/team/KyleMatthys.jpg",
-    linkedin: "https://www.linkedin.com",
-  },
-  {
-    name: "Kyle Matthys",
-    role: "CEO",
-    bio: "Founder and CEO of TRIIBE. We help young nonprofit founders scale from sophomore to senior year of college: Those advancing food, water, shelter, health, education, or energy.",
-    image: "/images/about/team/KyleMatthys.jpg",
-    linkedin: "https://www.linkedin.com",
-  },
-  {
-    name: "Kyle Matthys",
-    role: "CEO",
-    bio: "Founder and CEO of TRIIBE. We help young nonprofit founders scale from sophomore to senior year of college: Those advancing food, water, shelter, health, education, or energy.",
-    image: "/images/about/team/KyleMatthys.jpg",
-    linkedin: "https://www.linkedin.com",
-  },
-  {
-    name: "Kyle Matthys",
-    role: "CEO",
-    bio: "Founder and CEO of TRIIBE. We help young nonprofit founders scale from sophomore to senior year of college: Those advancing food, water, shelter, health, education, or energy.",
-    image: "/images/about/team/KyleMatthys.jpg",
-    linkedin: "https://www.linkedin.com",
-  },
-  {
-    name: "Kyle Matthys",
-    role: "CEO",
-    bio: "Founder and CEO of TRIIBE. We help young nonprofit founders scale from sophomore to senior year of college: Those advancing food, water, shelter, health, education, or energy.",
-    image: "/images/about/team/KyleMatthys.jpg",
-    linkedin: "https://www.linkedin.com",
-  },
-];
+// const mentors = [
+//   {
+//     name: "Kyle Matthys",
+//     role: "CEO",
+//     bio: "Founder and CEO of TRIIBE. We help young nonprofit founders scale from sophomore to senior year of college: Those advancing food, water, shelter, health, education, or energy.",
+//     image: "/images/about/team/KyleMatthys.jpg",
+//     linkedin: "https://www.linkedin.com/in/kylematthys/",
+//   },
+//   {
+//     name: "Kyle Matthys",
+//     role: "CEO",
+//     bio: "Founder and CEO of TRIIBE. We help young nonprofit founders scale from sophomore to senior year of college: Those advancing food, water, shelter, health, education, or energy.",
+//     image: "/images/about/team/KyleMatthys.jpg",
+//     linkedin: "https://www.linkedin.com",
+//   },
+//   {
+//     name: "Kyle Matthys",
+//     role: "CEO",
+//     bio: "Founder and CEO of TRIIBE. We help young nonprofit founders scale from sophomore to senior year of college: Those advancing food, water, shelter, health, education, or energy.",
+//     image: "/images/about/team/KyleMatthys.jpg",
+//     linkedin: "https://www.linkedin.com",
+//   },
+//   {
+//     name: "Kyle Matthys",
+//     role: "CEO",
+//     bio: "Founder and CEO of TRIIBE. We help young nonprofit founders scale from sophomore to senior year of college: Those advancing food, water, shelter, health, education, or energy.",
+//     image: "/images/about/team/KyleMatthys.jpg",
+//     linkedin: "https://www.linkedin.com",
+//   },
+//   {
+//     name: "Kyle Matthys",
+//     role: "CEO",
+//     bio: "Founder and CEO of TRIIBE. We help young nonprofit founders scale from sophomore to senior year of college: Those advancing food, water, shelter, health, education, or energy.",
+//     image: "/images/about/team/KyleMatthys.jpg",
+//     linkedin: "https://www.linkedin.com",
+//   },
+//   {
+//     name: "Kyle Matthys",
+//     role: "CEO",
+//     bio: "Founder and CEO of TRIIBE. We help young nonprofit founders scale from sophomore to senior year of college: Those advancing food, water, shelter, health, education, or energy.",
+//     image: "/images/about/team/KyleMatthys.jpg",
+//     linkedin: "https://www.linkedin.com",
+//   },
+// ];
 
 const page = () => {
   return (
@@ -1428,6 +1687,54 @@ const page = () => {
           </div>
 
           <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
+            Mentors
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            {mentors.map((member, index) => (
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+                className="block  bg-white border border-gray-200 rounded-lg overflow-hidden  hover:shadow-lg transition-shadow cursor-pointer"
+              >
+                <div className="relative aspect-square bg-gray-100 p-4">
+                  <div className="relative w-full h-full rounded-lg overflow-hidden">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-bold text-black text-xl">
+                      {member.name}
+                    </h3>
+                    {member.name !== "Nomsa Ndongwe" && (
+                      <svg
+                        className="w-5 h-5"
+                        fill="#0077b5"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                      </svg>
+                    )}
+                  </div>
+                  <p className="font-normal text-[#697282] text-sm mb-4">
+                    {/* {member.role} */}
+                  </p>
+                  <p className="font-normal text-[#495565] text-sm leading-relaxed">
+                    {member.bio}
+                  </p>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
             Members Team
           </h2>
 
@@ -1506,50 +1813,6 @@ const page = () => {
               </a>
             ))}
           </div>
-
-          {/* <p className="font-normal text-[#697282] text-xl uppercase tracking-wider mb-12">
-            Mentors
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-            {mentors.map((member, index) => (
-              <a
-                href={member.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                key={index}
-                className="block  bg-white border border-gray-200 rounded-lg overflow-hidden  hover:shadow-lg transition-shadow cursor-pointer"
-              >
-                <div className="relative aspect-square bg-gray-100 p-4">
-                  <div className="relative w-full h-full rounded-lg overflow-hidden">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-bold text-black text-xl">
-                      {member.name}
-                    </h3>
-
-                    <svg className="w-5 h-5" fill="#0077b5" viewBox="0 0 24 24">
-                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                    </svg>
-                  </div>
-                  <p className="font-normal text-[#697282] text-sm mb-4">
-                    {member.role}
-                  </p>
-                  <p className="font-normal text-[#495565] text-sm leading-relaxed">
-                    {member.bio}
-                  </p>
-                </div>
-              </a>
-            ))}
-          </div> */}
         </div>
       </section>
 
