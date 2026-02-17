@@ -285,7 +285,7 @@ const mentors = [
   {
     name: "Carl Nassib",
     role: "Member",
-    bio: "",
+    bio: "CEO of Rayze, a mobile first platform powering individual activism, corporate giving, and nonprofit volunteerism. Otherwise, a Board Member for the Trevor Project, the largest suicide prevention and mental health organization for LGBTQ+ young people.",
     image: "/images/about/team/Carl Nassib.png",
     linkedin: "https://www.linkedin.com/in/carl-nassib-602a79199/",
   },
@@ -401,7 +401,7 @@ const mentors = [
   {
     name: "Vincent Sanchez-Gomez",
     role: "Member",
-    bio: "",
+    bio: "Co-Founder and Co-CEO of Outside, a Kathmandu-based design and technology studio driving positive change for people and the planet.",
     image: "/images/about/team/Vincent Sanchez-Gomez.png",
     linkedin: "https://www.linkedin.com/in/vincentsg/",
   },
@@ -861,6 +861,14 @@ const legacyBoard = [
     bio: "Stefan Avivson is a UK based CEO advisor and entrepreneur who says he helps B2B companies build traction and sales, drawing on decades of startup experience.",
     image: "/images/about/team/Stefan Avivson.jpg",
     linkedin: "https://www.linkedin.com/in/avivson/",
+  },
+
+  {
+    name: "Lara Stein",
+    role: "Legacy Board Member",
+    bio: "Lara Stein is the founder of TEDx, the global platform for independently organized TED-style events, and a leader in organizations at the intersection of technology, art, education, and sustainability.",
+    image: "/images/about/team/Lara Stein.jpg",
+    linkedin: "https://www.linkedin.com/in/citizenstein/",
   },
 ];
 

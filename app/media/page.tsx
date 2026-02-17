@@ -28,7 +28,7 @@ const workshops = [
     ],
     duration: "65 minutes",
     type: "Workshop",
-    youtubeId: "JHLqGjAnJ8c", // Replace with actual YouTube ID
+    youtubeId: "Npc6NkJ9YVc", // Replace with actual YouTube ID
     signupLink: "#",
     watchLink: "#",
   },
@@ -51,7 +51,7 @@ const workshops = [
     ],
     duration: "65 minutes",
     type: "Workshop",
-    youtubeId: "JHLqGjAnJ8c", // Replace with actual YouTube ID
+    youtubeId: "Ku365Mu1onw", // Replace with actual YouTube ID
     signupLink: "#",
     watchLink: "#",
   },
@@ -74,7 +74,7 @@ const workshops = [
     ],
     duration: "65 minutes",
     type: "Workshop",
-    youtubeId: "JHLqGjAnJ8c", // Replace with actual YouTube ID
+    youtubeId: "67oD50GE6Nc", // Replace with actual YouTube ID
     signupLink: "#",
     watchLink: "#",
   },
