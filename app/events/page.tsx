@@ -245,6 +245,12 @@ const SPEAKER_PANELS = [
         image: "/images/events/speakers/Nayla Jimenez.png",
         linkedin: "https://www.linkedin.com/in/naylajimenez/",
       },
+      {
+        name: "Derin Sezgin",
+        title: "President SDG Youth Connect",
+        image: "/images/events/speakers/Derin Sezgin.png",
+        linkedin: "https://www.linkedin.com/in/derin-ege-sezgin/",
+      },
     ],
   },
   {
@@ -290,7 +296,12 @@ const SPEAKER_PANELS = [
         image: "/images/events/speakers/Geoffrey Sargeant.png",
         linkedin: "https://www.linkedin.com/in/geoffsargeant/",
       },
-      // Note: Tom Tamberrino is in the slide but was missing from your array
+      {
+        name: "Tom Tamberrino",
+        title: "Executive Ambassador, The REAL",
+        image: "/images/events/speakers/Tom Tamberrino.png",
+        linkedin: "https://www.linkedin.com/in/tom-t-38a917/",
+      },
     ],
   },
   {
@@ -347,20 +358,19 @@ const SPEAKER_PANELS = [
 
 const EVENT_PERKS = [
   { id: 1, title: "Lunch", desc: "Because big ideas need fuel" },
-  { id: 2, title: "Concerts", desc: "Live performances by celebrity guests." },
-  { id: 3, title: "Roulette", desc: "Show your work, win the room" },
+
   {
-    id: 4,
+    id: 2,
     title: "Interactive Workshops",
     desc: "Create, collaborate, and connect",
   },
   {
-    id: 5,
+    id: 3,
     title: "Live auction",
     desc: "Unique opportunities: workshops, experiences, and offerings from mentors, creators, and leaders",
   },
   {
-    id: 6,
+    id: 4,
     title: "Live Bids",
     desc: "To help fund the next generation of changemakers",
   },
@@ -564,8 +574,59 @@ const page = () => {
       <section className="pt-12 pb-16  px-4 md:px-50 bg-white ">
         <div className=" max-w-260 mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-black tracking-tight">
-            Speaker Panels
+            Run Of Show
           </h2>
+
+          <div className="mb-20">
+            <div className="mb-10">
+              <span className="text-sm font-bold uppercase tracking-widest text-black">
+                Activation
+              </span>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2 tracking-tight">
+                We Are Enough
+              </h3>
+            </div>
+
+            <a
+              href="https://www.linkedin.com/in/jillian-diiorio-63057b10/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col md:flex-row items-center justify-start w-full group cursor-pointer"
+            >
+              {/* Left Side: Stays exactly where it is */}
+              <div className="flex flex-col items-center md:items-start shrink-0">
+                <div className="relative mb-6">
+                  <div className="relative p-[2px] w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden">
+                    <div className="absolute inset-[-150%] bg-[conic-gradient(from_0deg,#1D4D3F,#60A5FA,#1D4D3F)] animate-gradient-rotate opacity-80" />
+                    <div className="relative w-full h-full bg-white rounded-full overflow-hidden">
+                      <img
+                        src="/images/events/speakers/Jillian Dilorio2.png"
+                        alt="Jillian Dilorio"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="text-center md:text-left">
+                  <h4 className="font-bold text-gray-900 leading-tight mb-1 tracking-tight text-xl">
+                    Jillian Dilorio
+                  </h4>
+                  <p className="text-xs text-gray-500">
+                    President, We Are Enough
+                  </p>
+                </div>
+              </div>
+
+              {/* Right Side: Controlled distance from the left */}
+              <div className="md:ml-32 shrink-0">
+                <img
+                  src="/images/events/speakers/WeAreEnough.png"
+                  alt="We Are Enough Graphic"
+                  className="w-70 h-60 rounded-2xl object-cover"
+                />
+              </div>
+            </a>
+          </div>
 
           {SPEAKER_PANELS.map((panel, idx) => (
             <div key={idx} className="mb-20 last:mb-0">
@@ -589,7 +650,7 @@ const page = () => {
                     className="flex flex-col items-center group cursor-pointer"
                   >
                     <div className="relative mb-6">
-                      <div className="relative aspect-square w-full max-w-[160px] overflow-hidden rounded-xl border-2 border-blue-100 group-hover:border-blue-500 transition-all duration-300 shadow-sm">
+                      <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-[3px] border-blue-200 group-hover:border-blue-500 transition-all duration-300">
                         <img
                           src={speaker.image}
                           alt={speaker.name}
@@ -608,6 +669,58 @@ const page = () => {
               </div>
             </div>
           ))}
+
+          <div className="mb-20">
+            <div className="mb-10">
+              <span className="text-sm font-bold uppercase tracking-widest text-black">
+                Activation
+              </span>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2 tracking-tight">
+                Billion Dollar Impact
+              </h3>
+            </div>
+
+            <a
+              href="https://www.linkedin.com/in/averycrumrine/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col md:flex-row items-center justify-start w-full group cursor-pointer"
+            >
+              {/* Left Side: Stays exactly where it is */}
+              <div className="flex flex-col items-center md:items-start shrink-0">
+                <div className="relative mb-6">
+                  <div className="relative p-[2px] w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden">
+                    <div className="absolute inset-[-150%] bg-[conic-gradient(from_0deg,#1D4D3F,#60A5FA,#1D4D3F)] animate-gradient-rotate opacity-80" />
+                    <div className="relative w-full h-full bg-white rounded-full overflow-hidden">
+                      <img
+                        src="/images/events/speakers/Avery Crumrine.png"
+                        alt="Avery Crumrine"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="text-center md:text-left">
+                  <h4 className="font-bold text-gray-900 leading-tight mb-1 tracking-tight text-xl">
+                    Avery Brenna Crumrine
+                  </h4>
+                  <p className="text-xs text-gray-500">
+                    Public Speaker and Author, <br /> Intention Into Action
+                  </p>
+                </div>
+              </div>
+
+              {/* Right Side: Controlled distance from the left */}
+              <div className="md:ml-32 shrink-0">
+                <img
+                  src="/images/events/speakers/Abc1.png"
+                  alt="We Are Enough Graphic"
+                  className="w-70 h-60 rounded-2xl object-cover"
+                />
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -615,7 +728,7 @@ const page = () => {
         <div className=" max-w-260 mx-auto">
           <h2 className="text-2xl font-bold text-black mb-12">Event Perks</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 grid-flow-row md:grid-flow-col gap-x-16 gap-y-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 grid-flow-row md:grid-flow-col gap-x-16 gap-y-10">
             {EVENT_PERKS.map((perk) => (
               <div key={perk.id} className="flex items-start gap-6">
                 {/* Number Box */}

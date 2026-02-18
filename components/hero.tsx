@@ -23,9 +23,9 @@ export default function Hero() {
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center gap-6 px-6 py-16 max-w-225 mx-auto">
           {/* Heading */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center mt-32">
             <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-4xl md:text-4xl lg:text-[64px] text-center tracking-tight leading-tight max-w-200">
-              Funding Next - Gen
+              Funding Next-Gen
               <br />
               Nonprofit Founders
             </h1>
@@ -34,13 +34,13 @@ export default function Hero() {
           {/* Description */}
           <div className="flex flex-col items-center mt-2">
             <p className="font-['DM_Sans',Helvetica]font-normal text-white/90 text-base md:text-lg text-center tracking-[0] leading-relaxed max-w-175 ">
-              Funding, mentorship, and community for college students taking
-              root today to advance tomorrow
+              Funding, mentorship, and community for college students <br />
+              taking root today to advance tomorrow
             </p>
           </div>
 
           {/* CTA Buttons */}
-          <div className="  flex flex-col md:flex-row items-center justify-center gap-12 mt-4 ">
+          <div className="  flex flex-col md:flex-row items-center justify-center gap-12   ">
             <a
               href="/program"
               className="px-6 py-3 font-bold bg-white text-black hover:bg-gray-100 font-['DM_Sans',Helvetica] font-normal text-sm rounded inline-flex items-center justify-center transition-colors"
@@ -48,21 +48,22 @@ export default function Hero() {
               Explore our Program
             </a>
 
-            <Image
-              src="/images/home/TRIIBEHeroWhite.svg"
-              alt="TRIIBE"
-              width={80}
-              height={40}
-              priority
-              className="h-10 w-40"
-            />
-
             <a
               href="/apply"
               className="px-6 py-3  font-bold bg-gray-300 text-black hover:bg-gray-100 font-['DM_Sans',Helvetica] font-normal text-sm rounded inline-flex items-center justify-center transition-colors gap-2"
             >
               Apply to Fellowship
             </a>
+          </div>
+          <div className="mt-16">
+            <Image
+              src="/images/home/TRIIBEHeroWhite.svg"
+              alt="TRIIBE"
+              width={40}
+              height={40}
+              priority
+              className="h-40 w-160"
+            />
           </div>
         </div>
       </section>

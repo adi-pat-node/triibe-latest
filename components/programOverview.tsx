@@ -4,9 +4,15 @@ import Image from "next/image";
 
 const programSections = [
   {
-    title: "Who We Are",
-    description:
-      "Everyone wants a village, but nobody wants to be a villager. So we built a TRIIBE. Next-gen for next-gen, a foundation made up of incredible changemakers under the age of 30 supporting fellow nonprofit founders.",
+    title: "Why We Do It",
+    description: (
+      <>
+        Everyone wants a village, but nobody wants to be a villager. So we built
+        a TRIIBE. Next-gen for next-gen, a foundation made up of incredible
+        changemakers under the age of 30 supporting fellow nonprofit founders to
+        ensure they don't burn out.
+      </>
+    ),
     bgColor: "bg-[#002c19]",
     textColor: "text-white",
     descriptionColor: "text-[#ffffffcc]",

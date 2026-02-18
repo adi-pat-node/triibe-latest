@@ -170,9 +170,19 @@ const ProgramPage = () => {
         <div className="max-w-260 mx-auto">
           <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-6">
-              <h1 className=" font-semibold text-black text-4xl md:text-6xl tracking-[-1.20px] leading-tight">
-                TRIIBE Three-Year Fellowship
-              </h1>
+              <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
+                <Image
+                  src="/images/programs/header.svg"
+                  alt="TRIIBE"
+                  width={80}
+                  height={40}
+                  priority
+                  className="h-11 w-44"
+                />
+                <h1 className=" font-semibold text-black text-4xl md:text-6xl tracking-[-1.20px] leading-tight">
+                  Three-Year Fellowship
+                </h1>
+              </div>
 
               <div className="inline-block">
                 <span className="inline-block px-4 py-2 bg-[#3036411A]  font-bold text-black text-sm tracking-[0] leading-5">
