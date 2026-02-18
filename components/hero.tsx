@@ -25,7 +25,7 @@ export default function Hero() {
           {/* Heading */}
           <div className="flex flex-col items-center">
             <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-4xl md:text-4xl lg:text-[64px] text-center tracking-tight leading-tight max-w-200">
-              Funding Next - Gen
+              Funding Next-Gen
               <br />
               Nonprofit Founders
             </h1>
@@ -34,13 +34,13 @@ export default function Hero() {
           {/* Description */}
           <div className="flex flex-col items-center mt-2">
             <p className="font-['DM_Sans',Helvetica]font-normal text-white/90 text-base md:text-lg text-center tracking-[0] leading-relaxed max-w-175 ">
-              Funding, mentorship, and community for college students taking
+              Funding, mentorship, and community for college students <br /> taking
               root today to advance tomorrow
             </p>
           </div>
 
           {/* CTA Buttons */}
-          <div className="  flex flex-col md:flex-row items-center justify-center gap-12 mt-4 ">
+          <div className="  flex flex-col md:flex-row items-center justify-center gap-12 mt-4 mb-4 ">
             <a
               href="/program"
               className="px-6 py-3 font-bold bg-white text-black hover:bg-gray-100 font-['DM_Sans',Helvetica] font-normal text-sm rounded inline-flex items-center justify-center transition-colors"
@@ -61,7 +61,7 @@ export default function Hero() {
           <div>  <Image
               src="/images/home/TRIIBEHeroWhite.svg"
               alt="TRIIBE"
-              width={80}
+              width={100}
               height={40}
               priority
               className="h-10 w-40"
