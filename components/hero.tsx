@@ -64,7 +64,7 @@ export default function Hero() {
               width={100}
               height={80}
               priority
-              className="h-20 w-40"
+              className="h-20 w-60"
             /></div>
         </div>
       </section>
