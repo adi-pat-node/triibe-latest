@@ -32,28 +32,28 @@ const FEBRUARY_EVENTS = [
       "/images/events/avatar-3.png",
     ],
   },
-  {
-    title:
-      "TRIIBE TALK | Navigating Partnerships x Augmented Media Development",
-    date: "Saturday, Feb 28",
-    time: "10:00 AM – 6:30 PM",
-    registerUrl: "https://luma.com/7zynhb71",
-    location: "Copacabana Nightclub- New York, New York",
-    hostedBy: "Kyle Matthys, Stacey Lauren & Climate Cafe NYC",
-    image: "/images/events/event2.png",
-    avatars: [
-      "/images/events/avatar-1.png",
-      "/images/events/avatar-2.png",
-      "/images/events/avatar-3.png",
-    ],
-  },
+  // {
+  //   title:
+  //     "TRIIBE TALK | Navigating Partnerships x Augmented Media Development",
+  //   date: "Saturday, Feb 28",
+  //   time: "10:00 AM – 6:30 PM",
+  //   registerUrl: "https://luma.com/7zynhb71",
+  //   location: "Copacabana Nightclub- New York, New York",
+  //   hostedBy: "Kyle Matthys, Stacey Lauren & Climate Cafe NYC",
+  //   image: "/images/events/event2.png",
+  //   avatars: [
+  //     "/images/events/avatar-1.png",
+  //     "/images/events/avatar-2.png",
+  //     "/images/events/avatar-3.png",
+  //   ],
+  // },
 ];
 
 const SPEAKERS = [
   {
     name: "Jillian Dilorio",
     title: "President of We Are Enough",
-    image: "/images/events/speakers/Jillian Dilorio.png",
+    image: "/images/events/speakers/Jillian Dilorio2.png",
     linkedin: "https://www.linkedin.com/in/jillian-diiorio-63057b10/",
   },
   {
@@ -97,6 +97,13 @@ const SPEAKERS = [
     title: "Brand Historian for Google, Shopify, History Channel",
     image: "/images/events/speakers/Chirag Nijjer.png",
     linkedin: "https://www.linkedin.com/in/chiragspeaks",
+  },
+  {
+    name: "Nick Salvatoriello",
+    title:
+      "Partner & Customer Marketing Consultant, B2B Event Facilitator & Strategist",
+    image: "/images/events/speakers/Nick Salvatoriello1.png",
+    linkedin: "https://www.linkedin.com/in/nicksal/",
   },
   {
     name: "Geoffrey Sargeant",
@@ -169,6 +176,172 @@ const SPEAKERS = [
     title: "Founder of TRIIBE",
     image: "/images/events/speakers/Kyle Matthys.png",
     linkedin: "https://www.linkedin.com/in/kylematthys/",
+  },
+];
+
+const SPEAKER_PANELS = [
+  {
+    title: "The Architects Of Impact: Where Capital Meets Purpose",
+    subtitle: "Panel",
+    speakers: [
+      {
+        name: "Gabriela Jaeger",
+        title: "Founder of Global Changemakers",
+        image: "/images/events/speakers/Gabriela Jaeger.png",
+        linkedin: "https://www.linkedin.com/in/gabriela-jaeger-b04446a5/",
+      },
+      {
+        name: "Karen Salmansohn",
+        title: "Celebrity Author",
+        image: "/images/events/speakers/Karen Salmansohn.png",
+        linkedin: "https://www.linkedin.com/in/karensalmansohn/",
+      },
+      {
+        name: "Anou Singhvi",
+        title:
+          "Managing Director P.C. Lunia Purveyors of Precious Objects since 1850",
+        image: "/images/events/speakers/Anou Singhvi.png",
+        linkedin: "https://www.linkedin.com/in/anousinghvi/",
+      },
+      {
+        name: "Jillian Dilorio",
+        title: "President of We Are Enough",
+        image: "/images/events/speakers/Jillian Dilorio2.png",
+        linkedin: "https://www.linkedin.com/in/jillian-diiorio-63057b10/",
+      },
+      {
+        name: "Dr. Cheng Davis",
+        title: "President of the Forum for World Education",
+        image: "/images/events/speakers/Cheng Davis.png",
+        linkedin: "https://www.linkedin.com/in/cheng-davis-82511937/",
+      },
+    ],
+  },
+  {
+    title: "Next Gen: Taking Root Today To Advance Tomorrow",
+    subtitle: "Panel",
+    speakers: [
+      {
+        name: "Tahnoon Murtza",
+        title: "Next-Gen founder of Grey Sheep Ventures",
+        image: "/images/events/speakers/Tahnoon Murtza.png",
+        linkedin: "https://www.linkedin.com/in/tahnoon-m-b4071419a/",
+      },
+      {
+        name: "Hikaru Hayakawa",
+        title: "Executive Director Climate Cardinals",
+        image: "/images/events/speakers/Hikaru Hayakawa.png",
+        linkedin: "https://www.linkedin.com/in/hikaruhayakawa/",
+      },
+      {
+        name: "Marissa Meltzer",
+        title: "Director of Partnerships for David Meltzer Enterprises",
+        image: "/images/events/speakers/Marissa Meltzer.png",
+        linkedin: "https://www.linkedin.com/in/marissa-meltzer/",
+      },
+      {
+        name: "Nayla Jimenez",
+        title: "Executive Director Philippine Health Initiative",
+        image: "/images/events/speakers/Nayla Jimenez.png",
+        linkedin: "https://www.linkedin.com/in/naylajimenez/",
+      },
+    ],
+  },
+  {
+    title: "The Power Of Community: Achieving Goals Together",
+    subtitle: "Panel",
+    speakers: [
+      {
+        name: "Michelle Cameron Coulter",
+        title:
+          "Olympic Gold Medalist, Tedx speaker, and Inspiring Possibilities podcast",
+        image: "/images/events/speakers/Michelle Coulter.png",
+        linkedin:
+          "https://www.linkedin.com/in/michelle-cameron-coulter-o-c-oly/",
+      },
+      {
+        name: "Laura Carney",
+        title: "Best-Selling Author",
+        image: "/images/events/speakers/Laura Carney.png",
+        linkedin: "https://www.linkedin.com/in/lauracarney/",
+      },
+      {
+        name: "Kim Sorrelle",
+        title: "UN Keynote Speaker, TV Show Host",
+        image: "/images/events/speakers/Kim Sorrelle.png",
+        linkedin: "https://www.linkedin.com/in/kim-sorrelle-11079523/",
+      },
+      {
+        name: "Stacey Lauren",
+        title: "Founder of Do The Thing",
+        image: "/images/events/speakers/Stacey Lauren.png",
+        linkedin: "https://www.linkedin.com/in/staceylauren/",
+      },
+    ],
+  },
+  {
+    title: "The Real: Turning Honesty Into Action",
+    subtitle: "Motivational Speakers",
+    speakers: [
+      {
+        name: "Geoffrey Sargeant",
+        title:
+          "Managing Director Dominari Securities and Executive Ambassador of The REAL",
+        image: "/images/events/speakers/Geoffrey Sargeant.png",
+        linkedin: "https://www.linkedin.com/in/geoffsargeant/",
+      },
+      // Note: Tom Tamberrino is in the slide but was missing from your array
+    ],
+  },
+  {
+    title: "From Summit To System",
+    subtitle: "Final Panel",
+    speakers: [
+      {
+        name: "Kyle Matthys",
+        title: "Founder of TRIIBE",
+        image: "/images/events/speakers/Kyle Matthys.png",
+        linkedin: "https://www.linkedin.com/in/kylematthys/",
+      },
+      {
+        name: "Gregg Meyer",
+        title:
+          "Chief Sustainability Officer Steve Madden and Head of Steve Madden Corporate Foundation",
+        image: "/images/events/speakers/Gregg Meyer.png",
+        linkedin: "https://www.linkedin.com/in/gregg-meyer/",
+      },
+      {
+        name: "JapNeet K",
+        title:
+          "Legacy Board TRIIBE, Director Cybersecurity, Founding Chair – The Cyber Studio by The Digital Economist",
+        image: "/images/events/speakers/JapNeet K.png",
+        linkedin: "https://www.linkedin.com/in/japneet-k-34816426",
+      },
+      {
+        name: "Dr. Purnima Voria",
+        title: "CEO National US India Chamber of Commerce",
+        image: "/images/events/speakers/Purnima Voria.png",
+        linkedin: "https://www.linkedin.com/in/purnimavoria/",
+      },
+    ],
+  },
+  {
+    title: "Event Facilitators",
+    subtitle: "Our MCs",
+    speakers: [
+      {
+        name: "Chirag Nijjer",
+        title: "Brand Historian for Google, Shopify, History Channel",
+        image: "/images/events/speakers/Chirag Nijjer.png",
+        linkedin: "https://www.linkedin.com/in/chiragspeaks",
+      },
+      {
+        name: "Nick Salvatoriello",
+        title: "B2B Event Facilitator & Strategist",
+        image: "/images/events/speakers/Nick Salvatoriello1.png",
+        linkedin: "https://www.linkedin.com/in/nicksal/",
+      },
+    ],
   },
 ];
 
@@ -320,7 +493,7 @@ const page = () => {
           </div>
 
           {/* Toggle Indicators (Circular Icons) */}
-          <div className="flex justify-center gap-3 mt-12">
+          {/* <div className="flex justify-center gap-3 mt-12">
             {FEBRUARY_EVENTS.map((_, index) => (
               <button
                 key={index}
@@ -333,9 +506,11 @@ const page = () => {
                 aria-label={`Go to event ${index + 1}`}
               />
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
+
+      {/* About Section */}
       <section className="pt-12 pb-16   px-4 md:px-50 bg-white ">
         <div className=" max-w-260 mx-auto">
           <div className="max-w-[850px]">
@@ -385,55 +560,54 @@ const page = () => {
         </div>
       </section>
 
+      {/* Speakers */}
       <section className="pt-12 pb-16  px-4 md:px-50 bg-white ">
         <div className=" max-w-260 mx-auto">
-          <h2 className="text-2xl font-bold text-black mb-10">
-            Notable Speakers
+          <h2 className="text-4xl font-bold text-center mb-16 text-black tracking-tight">
+            Speaker Panels
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-12">
-            {SPEAKERS.map((speaker, index) => (
-              <a
-                key={index}
-                href={speaker.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block"
-              >
-                {/* Speaker Image */}
-                <div className="relative aspect-square rounded-lg overflow-hidden mb-4 bg-[#F8F8F8] p-2 shadow-sm">
-                  <div className="relative w-full h-full rounded-md overflow-hidden">
-                    <Image
-                      src={speaker.image}
-                      alt={speaker.name}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                </div>
-
-                {/* Name and LinkedIn Icon Row */}
-                <div className="flex items-start justify-between gap-2 mb-1">
-                  <h3 className="font-bold text-black text-sm leading-tight">
-                    {speaker.name}
+          {SPEAKER_PANELS.map((panel, idx) => (
+            <div key={idx} className="mb-20 last:mb-0">
+              <div className="flex flex-col md:flex-row md:items-end justify-between border-b-2 border-blue-100 pb-4 mb-10">
+                <div>
+                  <p className="text-sm font-bold text-black uppercase tracking-[0.2em] mb-1">
+                    {panel.subtitle}
+                  </p>
+                  <h3 className="text-2xl md:text-3xl font-bold text-black/80 tracking-tight">
+                    {panel.title}
                   </h3>
-                  {/* LinkedIn Icon Placeholder - Matches blue in design */}
-                  <svg
-                    className="w-4 h-4 text-[#0077B5] flex-shrink-0"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                  </svg>
                 </div>
+              </div>
 
-                {/* Title */}
-                <p className="text-[#495565] text-[12px] leading-relaxed">
-                  {speaker.title}
-                </p>
-              </a>
-            ))}
-          </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-16 gap-x-10 justify-items-center">
+                {panel.speakers.map((speaker) => (
+                  <a
+                    key={speaker.name}
+                    href={speaker.linkedin}
+                    target="_blank"
+                    className="flex flex-col items-center group cursor-pointer"
+                  >
+                    <div className="relative mb-6">
+                      <div className="relative aspect-square w-full max-w-[160px] overflow-hidden rounded-xl border-2 border-blue-100 group-hover:border-blue-500 transition-all duration-300 shadow-sm">
+                        <img
+                          src={speaker.image}
+                          alt={speaker.name}
+                          className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-110"
+                        />
+                      </div>
+                    </div>
+                    <h4 className="font-bold text-gray-900 text-center leading-tight mb-2 tracking-tight">
+                      {speaker.name}
+                    </h4>
+                    <p className="text-[10px] md:text-xs text-gray-500 text-center line-clamp-3 px-1 leading-relaxed">
+                      {speaker.title}
+                    </p>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -464,33 +638,10 @@ const page = () => {
         </div>
       </section>
 
-      {/* <section className="  px-6 bg-white md:px-[200px]">
-        <div className="max-w-260 mx-auto bg-black">
-          <div className="max-w-5xl mx-auto  ">
-            <h1 className="text-2xl md:text-6xl font-normal tracking-tighter text-[#B0E1F8] leading-tight pt-12 px-12">
-              Nonprofit Founders Are Cut Off <br /> From Funding In College
-            </h1>
-          </div> */}
-
-      {/* <section className="py-8 px-6 bg-gray-50"> */}
-      {/* <div className="max-w-7xl mx-auto ">
-            <div className="relative w-full h-100 ">
-              <div className="relative w-full h-100 overflow-hidden bg-black">
-                <Image
-                  src="/images/programs/problem_infographic3.png"
-                  alt="The Problem - 80% of student-led nonprofits fade within a year"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      <section className=" py-16 px-6 bg-white md:px-[200px]">
+      {/* Image 1 */}
+      {/* <section className=" py-16 px-6 bg-white md:px-[200px]">
         <div className="max-w-260 mx-auto bg-white">
-          {/* <section className="py-8 px-6 bg-gray-50"> */}
+
           <div className="max-w-7xl mx-auto ">
             <div className="relative w-full  aspect-[16/9] overflow-hidden bg-black">
               <Image
@@ -502,12 +653,12 @@ const page = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className=" md:px-50 bg-white">
+      {/* <section className=" md:px-50 bg-white">
         <div className="max-w-260 mx-auto bg-white">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* The Problem Card */}
+
             <div className="bg-[#002c19] p-8 rounded-lg">
               <h3 className="font-bold text-white text-3xl mb-6">
                 The Problem
@@ -520,7 +671,7 @@ const page = () => {
               </p>
             </div>
 
-            {/* The Solution Card */}
+
             <div className="bg-[#AEDFF7] p-8 rounded-lg">
               <h3 className="font-bold text-black text-3xl mb-6">
                 The Solution
@@ -540,11 +691,12 @@ const page = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className=" py-16 px-6 bg-white md:px-[200px]">
+      {/* Image 2 */}
+      {/* <section className=" py-16 px-6 bg-white md:px-[200px]">
         <div className="max-w-260 mx-auto bg-white">
-          {/* <section className="py-8 px-6 bg-gray-50"> */}
+
           <div className="max-w-7xl mx-auto ">
             <div className="relative w-full  aspect-[16/9] overflow-hidden bg-black">
               <Image
@@ -556,7 +708,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="pt-12 pb-20  px-4 md:px-50 bg-white ">
         <div className=" max-w-260 mx-auto">

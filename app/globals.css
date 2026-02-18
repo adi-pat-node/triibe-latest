@@ -145,3 +145,16 @@ body:has([class*="zeffy-modal"]) {
   position: fixed !important;
   width: 100% !important;
 } */
+
+@keyframes rotate-gradient {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-gradient-rotate {
+  animation: rotate-gradient 6s linear infinite;
+}
