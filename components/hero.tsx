@@ -48,14 +48,7 @@ export default function Hero() {
               Explore our Program
             </a>
 
-            <Image
-              src="/images/home/TRIIBEHeroWhite.svg"
-              alt="TRIIBE"
-              width={80}
-              height={40}
-              priority
-              className="h-10 w-40"
-            />
+          
 
             <a
               href="/apply"
@@ -64,6 +57,15 @@ export default function Hero() {
               Apply to Fellowship
             </a>
           </div>
+
+          <div>  <Image
+              src="/images/home/TRIIBEHeroWhite.svg"
+              alt="TRIIBE"
+              width={80}
+              height={40}
+              priority
+              className="h-10 w-40"
+            /></div>
         </div>
       </section>
     </main>
