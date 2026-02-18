@@ -62,7 +62,7 @@ export default function Hero() {
               src="/images/home/TRIIBEHeroWhite.svg"
               alt="TRIIBE"
               width={100}
-              height={40}
+              height={60}
               priority
               className="h-10 w-40"
             /></div>
