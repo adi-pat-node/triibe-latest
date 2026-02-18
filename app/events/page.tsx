@@ -292,7 +292,7 @@ const page = () => {
                 href={currentEvent.registerUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block w-fit bg-[#1D4D3F] text-white px-10 py-3.5 rounded-lg font-bold text-lg hover:bg-[#163a30] transition-all text-center"
+                className="inline-block w-fit bg-[#1C5945] text-white px-10 py-3.5 rounded-lg font-bold text-lg hover:bg-[#163a30] transition-all text-center"
               >
                 Register
               </a>
@@ -582,7 +582,7 @@ const page = () => {
               href="https://luma.com/7zynhb71"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#1D4D3F] text-white px-12 py-4 rounded-lg font-bold text-lg hover:bg-[#163a30] transition-all "
+              className="inline-block bg-[#1C5945] text-white px-12 py-4 rounded-lg font-bold text-lg hover:bg-[#163a30] transition-all "
             >
               Register
             </a>
