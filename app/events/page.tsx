@@ -287,15 +287,25 @@ const page = () => {
                   Hosted by {currentEvent.hostedBy}
                 </p>
               </div>
+              <div className=" pt-6 flex flex-col md:flex-row  gap-8">
+                <a
+                  href={currentEvent.registerUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block w-fit bg-[#1C5945] text-white px-10 py-3.5 rounded-lg font-bold text-lg hover:bg-[#163a30] transition-all text-center"
+                >
+                  Register
+                </a>
 
-              <a
-                href={currentEvent.registerUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block w-fit bg-[#1C5945] text-white px-10 py-3.5 rounded-lg font-bold text-lg hover:bg-[#163a30] transition-all text-center"
-              >
-                Register
-              </a>
+                <a
+                  href="https://thetriibe.beehiiv.com/p/triibe-next-gen-changemaker-summit-invitation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block w-fit bg-[#1C5945] text-white px-10 py-3.5 rounded-lg font-bold text-lg hover:bg-[#163a30] transition-all text-center"
+                >
+                  Newsletter
+                </a>
+              </div>
             </div>
 
             {/* Right Column: Featured Image */}
