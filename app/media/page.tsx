@@ -202,12 +202,12 @@ const upcomingEvents = [
     registrationLink: "https://luma.com/4akmpnxv",
   },
   {
-    image: "/images/media/UpcomingEvent2.jpg",
-    title: "Velric Hiring & Leadership Summit",
-    date: "Monday, February 16",
-    time: "5:00 PM - 8:00 PM",
-    location: "307 W 38th St #1505, New York",
-    registrationLink: "https://luma.com/velric-thebuilderseries",
+    image: "/images/events/event3.png",
+    title: "Silent Auction Training: Next Gen Changemakers Summit Preparation",
+    date: "Monday, February 23",
+    time: "2:00 PM - 3:00 PM",
+    location: "Virtual",
+    registrationLink: "https://luma.com/mef8t5cw",
   },
   {
     image: "/images/media/upcoming.jpg",

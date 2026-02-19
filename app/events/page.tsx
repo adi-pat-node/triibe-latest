@@ -32,21 +32,20 @@ const FEBRUARY_EVENTS = [
       "/images/events/avatar-3.png",
     ],
   },
-  // {
-  //   title:
-  //     "TRIIBE TALK | Navigating Partnerships x Augmented Media Development",
-  //   date: "Saturday, Feb 28",
-  //   time: "10:00 AM – 6:30 PM",
-  //   registerUrl: "https://luma.com/7zynhb71",
-  //   location: "Copacabana Nightclub- New York, New York",
-  //   hostedBy: "Kyle Matthys, Stacey Lauren & Climate Cafe NYC",
-  //   image: "/images/events/event2.png",
-  //   avatars: [
-  //     "/images/events/avatar-1.png",
-  //     "/images/events/avatar-2.png",
-  //     "/images/events/avatar-3.png",
-  //   ],
-  // },
+  {
+    title: "Silent Auction Training: Next Gen Changemakers",
+    date: "Monday, Feb 23",
+    time: "2:00 PM – 3:00 PM",
+    registerUrl: "https://luma.com/mef8t5cw",
+    location: "Virtual",
+    hostedBy: "Kyle Matthys, Stacey Lauren & Climate Cafe NYC",
+    image: "/images/events/event3.png",
+    avatars: [
+      "/images/events/avatar-1.png",
+      "/images/events/avatar-2.png",
+      "/images/events/avatar-3.png",
+    ],
+  },
 ];
 
 const SPEAKERS = [
@@ -480,14 +479,16 @@ const page = () => {
                   Register
                 </a>
 
-                <a
-                  href="https://thetriibe.beehiiv.com/p/triibe-next-gen-changemaker-summit-invitation"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block w-fit bg-[#1C5945] text-white px-10 py-3.5 rounded-lg font-bold text-lg hover:bg-[#163a30] transition-all text-center"
-                >
-                  Newsletter
-                </a>
+                {FEBRUARY_EVENTS.indexOf(currentEvent) === 0 && (
+                  <a
+                    href="https://thetriibe.beehiiv.com/p/triibe-next-gen-changemaker-summit-invitation"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block w-fit bg-[#1C5945] text-white px-10 py-3.5 rounded-lg font-bold text-lg hover:bg-[#163a30] transition-all text-center"
+                  >
+                    Newsletter
+                  </a>
+                )}
               </div>
             </div>
 
@@ -503,7 +504,7 @@ const page = () => {
           </div>
 
           {/* Toggle Indicators (Circular Icons) */}
-          {/* <div className="flex justify-center gap-3 mt-12">
+          <div className="flex justify-center gap-3 mt-12">
             {FEBRUARY_EVENTS.map((_, index) => (
               <button
                 key={index}
@@ -516,7 +517,7 @@ const page = () => {
                 aria-label={`Go to event ${index + 1}`}
               />
             ))}
-          </div> */}
+          </div>
         </div>
       </section>
 
@@ -578,7 +579,7 @@ const page = () => {
           </h2>
 
           <div className="mb-20">
-            <div className="mb-10">
+            <div className="mb-10 border-b-2 border-blue-100 pb-4">
               <span className="text-sm font-bold uppercase tracking-widest text-black">
                 Activation
               </span>
@@ -596,13 +597,13 @@ const page = () => {
               {/* Left Side: Stays exactly where it is */}
               <div className="flex flex-col items-center md:items-start shrink-0">
                 <div className="relative mb-6">
-                  <div className="relative p-[2px] w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden">
-                    <div className="absolute inset-[-150%] bg-[conic-gradient(from_0deg,#1D4D3F,#60A5FA,#1D4D3F)] animate-gradient-rotate opacity-80" />
-                    <div className="relative w-full h-full bg-white rounded-full overflow-hidden">
+                  <div className="relative  w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden">
+                    <div className="absolute " />
+                    <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-[3px] border-blue-200 group-hover:border-blue-500 transition-all duration-300">
                       <img
                         src="/images/events/speakers/Jillian Dilorio2.png"
                         alt="Jillian Dilorio"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-110"
                       />
                     </div>
                   </div>
@@ -618,7 +619,7 @@ const page = () => {
               </div>
 
               {/* Right Side: Controlled distance from the left */}
-              <div className="md:ml-32 shrink-0">
+              <div className="mt-10 md:mt-0 md:ml-32 shrink-0">
                 <img
                   src="/images/events/speakers/WeAreEnough.png"
                   alt="We Are Enough Graphic"
@@ -629,98 +630,103 @@ const page = () => {
           </div>
 
           {SPEAKER_PANELS.map((panel, idx) => (
-            <div key={idx} className="mb-20 last:mb-0">
-              <div className="flex flex-col md:flex-row md:items-end justify-between border-b-2 border-blue-100 pb-4 mb-10">
-                <div>
-                  <p className="text-sm font-bold text-black uppercase tracking-[0.2em] mb-1">
-                    {panel.subtitle}
-                  </p>
-                  <h3 className="text-2xl md:text-3xl font-bold text-black/80 tracking-tight">
-                    {panel.title}
-                  </h3>
-                </div>
-              </div>
+            <React.Fragment key={idx}>
+              {/* Logic: Insert the Billion Dollar Impact activation before the final panel */}
+              {idx === SPEAKER_PANELS.length - 2 && (
+                <div className="mb-20">
+                  <div className="mb-10 border-b-2 border-blue-100 pb-4">
+                    <span className="text-sm font-bold uppercase tracking-widest text-black">
+                      Activation
+                    </span>
+                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2 tracking-tight">
+                      Billion Dollar Impact
+                    </h3>
+                  </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-16 gap-x-10 justify-items-center">
-                {panel.speakers.map((speaker) => (
                   <a
-                    key={speaker.name}
-                    href={speaker.linkedin}
+                    href="https://www.linkedin.com/in/averycrumrine/"
                     target="_blank"
-                    className="flex flex-col items-center group cursor-pointer"
+                    rel="noopener noreferrer"
+                    className="flex flex-col md:flex-row items-center justify-start w-full group cursor-pointer"
                   >
-                    <div className="relative mb-6">
-                      <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-[3px] border-blue-200 group-hover:border-blue-500 transition-all duration-300">
-                        <img
-                          src={speaker.image}
-                          alt={speaker.name}
-                          className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-110"
-                        />
+                    {/* Left Side: Avery Profile */}
+                    <div className="flex flex-col items-center md:items-start shrink-0">
+                      <div className="relative mb-6">
+                        <div className="relative  w-24 h-24 md:w-32 md:h-32  rounded-full overflow-hidden">
+                          <div className="absolute  " />
+                          <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-[3px] border-blue-200 group-hover:border-blue-500 transition-all duration-300">
+                            <img
+                              src="/images/events/speakers/Avery Crumrine.png"
+                              alt="Avery Crumrine"
+                              className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-110"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="text-center md:text-left">
+                        <h4 className="font-bold text-gray-900 leading-tight mb-1 tracking-tight text-xl">
+                          Avery Brenna Crumrine
+                        </h4>
+                        <p className="text-xs text-gray-500">
+                          Public Speaker and Author, <br /> Intention Into
+                          Action
+                        </p>
                       </div>
                     </div>
-                    <h4 className="font-bold text-gray-900 text-center leading-tight mb-2 tracking-tight">
-                      {speaker.name}
-                    </h4>
-                    <p className="text-[10px] md:text-xs text-gray-500 text-center line-clamp-3 px-1 leading-relaxed">
-                      {speaker.title}
-                    </p>
-                  </a>
-                ))}
-              </div>
-            </div>
-          ))}
 
-          <div className="mb-20">
-            <div className="mb-10">
-              <span className="text-sm font-bold uppercase tracking-widest text-black">
-                Activation
-              </span>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2 tracking-tight">
-                Billion Dollar Impact
-              </h3>
-            </div>
-
-            <a
-              href="https://www.linkedin.com/in/averycrumrine/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex flex-col md:flex-row items-center justify-start w-full group cursor-pointer"
-            >
-              {/* Left Side: Stays exactly where it is */}
-              <div className="flex flex-col items-center md:items-start shrink-0">
-                <div className="relative mb-6">
-                  <div className="relative p-[2px] w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden">
-                    <div className="absolute inset-[-150%] bg-[conic-gradient(from_0deg,#1D4D3F,#60A5FA,#1D4D3F)] animate-gradient-rotate opacity-80" />
-                    <div className="relative w-full h-full bg-white rounded-full overflow-hidden">
+                    {/* Right Side: Avery's Activation Graphic */}
+                    <div className="mt-10 md:mt-0 md:ml-32 shrink-0">
                       <img
-                        src="/images/events/speakers/Avery Crumrine.png"
-                        alt="Avery Crumrine"
-                        className="w-full h-full object-contain"
+                        src="/images/events/speakers/Abc1.png"
+                        alt="Billion Dollar Impact Graphic"
+                        className="w-70 h-60 rounded-2xl object-cover"
                       />
                     </div>
+                  </a>
+                </div>
+              )}
+              <div key={idx} className="mb-20 last:mb-0">
+                <div className="flex flex-col md:flex-row md:items-end justify-between border-b-2 border-blue-100 pb-4 mb-10">
+                  <div>
+                    <p className="text-sm font-bold text-black uppercase tracking-[0.2em] mb-1">
+                      {panel.subtitle}
+                    </p>
+                    <h3 className="text-2xl md:text-3xl font-bold text-black/80 tracking-tight">
+                      {panel.title}
+                    </h3>
                   </div>
                 </div>
 
-                <div className="text-center md:text-left">
-                  <h4 className="font-bold text-gray-900 leading-tight mb-1 tracking-tight text-xl">
-                    Avery Brenna Crumrine
-                  </h4>
-                  <p className="text-xs text-gray-500">
-                    Public Speaker and Author, <br /> Intention Into Action
-                  </p>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-16 gap-x-10 justify-items-center">
+                  {panel.speakers.map((speaker) => (
+                    <a
+                      key={speaker.name}
+                      href={speaker.linkedin}
+                      target="_blank"
+                      className="flex flex-col items-center group cursor-pointer"
+                    >
+                      <div className="relative mb-6">
+                        <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-[3px] border-blue-200 group-hover:border-blue-500 transition-all duration-300">
+                          <img
+                            src={speaker.image}
+                            alt={speaker.name}
+                            className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-110"
+                          />
+                        </div>
+                      </div>
+                      <h4 className="font-bold text-gray-900 text-center leading-tight mb-2 tracking-tight">
+                        {speaker.name}
+                      </h4>
+                      <p className="text-[10px] md:text-xs text-gray-500 text-center line-clamp-3 px-1 leading-relaxed">
+                        {speaker.title}
+                      </p>
+                    </a>
+                  ))}
                 </div>
               </div>
-
-              {/* Right Side: Controlled distance from the left */}
-              <div className="md:ml-32 shrink-0">
-                <img
-                  src="/images/events/speakers/Abc1.png"
-                  alt="We Are Enough Graphic"
-                  className="w-70 h-60 rounded-2xl object-cover"
-                />
-              </div>
-            </a>
-          </div>
+            </React.Fragment>
+          ))}
         </div>
       </section>
 
