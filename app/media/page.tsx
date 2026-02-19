@@ -13,47 +13,45 @@ const workshops = [
     title: "Navigating Partnerships x Augmented Media Development",
     speakers: [
       {
-        name: "Tahnoon Murtza",
-        avatar: "/images/about/team/Tahnoon Murtza1.jpg",
-        topic: "Navigating Partnerships",
-        description:
-          "Growing your business and creating partnerships without age being a limitation",
+        name: "",
+        avatar: null,
+        topic: "",
+        description: "",
       },
       {
-        name: "Justin Kramm",
-        avatar: "/images/about/team/Justin Kramm.jpg",
-        topic: "Augmented Tools for Media Development",
-        description: "Maximizing new AI techniques to better present your work",
+        name: "",
+        avatar: null,
+        topic: "",
+        description: "",
       },
     ],
-    duration: "65 minutes",
-    type: "Workshop",
-    youtubeId: "Npc6NkJ9YVc", // Replace with actual YouTube ID
+    duration: "",
+    type: "",
+    youtubeId: "Npc6NkJ9YVc",
     signupLink: "#",
-    watchLink: "#",
+    watchLink: "https://www.youtube.com/watch?v=Npc6NkJ9YVc",
   },
   {
-    title: "Navigating Partnerships x Augmented Media Development",
+    title: "",
     speakers: [
       {
-        name: "Tahnoon Murtza",
-        avatar: "/images/about/team/Tahnoon Murtza1.jpg",
-        topic: "Navigating Partnerships",
-        description:
-          "Growing your business and creating partnerships without age being a limitation",
+        name: "",
+        avatar: null,
+        topic: "",
+        description: "",
       },
       {
-        name: "Justin Kramm",
-        avatar: "/images/about/team/Justin Kramm.jpg",
-        topic: "Augmented Tools for Media Development",
-        description: "Maximizing new AI techniques to better present your work",
+        name: "",
+        avatar: null,
+        topic: "",
+        description: "",
       },
     ],
-    duration: "65 minutes",
-    type: "Workshop",
+    duration: "",
+    type: "",
     youtubeId: "Ku365Mu1onw", // Replace with actual YouTube ID
     signupLink: "#",
-    watchLink: "#",
+    watchLink: "https://www.youtube.com/watch?v=Ku365Mu1onw",
   },
   {
     title: "Navigating Partnerships x Augmented Media Development",
@@ -74,7 +72,7 @@ const workshops = [
     ],
     duration: "65 minutes",
     type: "Workshop",
-    youtubeId: "67oD50GE6Nc", // Replace with actual YouTube ID
+    youtubeId: "", // Replace with actual YouTube ID
     signupLink: "#",
     watchLink: "#",
   },
@@ -287,7 +285,7 @@ const MediaPage = () => {
                     <div key={index} className="flex-1">
                       <div className="w-16 h-16 bg-gray-300 rounded-full mb-3 overflow-hidden">
                         <img
-                          src={speaker.avatar}
+                          src={speaker.avatar ?? undefined}
                           alt={speaker.name}
                           width={64}
                           height={64}
@@ -321,6 +319,7 @@ const MediaPage = () => {
                   </a>
                   <a
                     href={workshop.watchLink}
+                    target="_blank"
                     className="px-8 py-3 bg-[#002c19] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base inline-flex items-center gap-2 justify-center min-w-45"
                   >
                     <Play className="w-4 h-4" />
