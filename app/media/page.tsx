@@ -206,7 +206,7 @@ const upcomingEvents = [
     title: "Silent Auction Training: Next Gen Changemakers Summit Preparation",
     date: "Monday, February 23",
     time: "2:00 PM - 3:00 PM",
-    location: "Virtual",
+    location: "Zoom",
     registrationLink: "https://luma.com/mef8t5cw",
   },
   {

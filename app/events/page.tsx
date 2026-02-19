@@ -37,7 +37,7 @@ const FEBRUARY_EVENTS = [
     date: "Monday, Feb 23",
     time: "2:00 PM – 3:00 PM",
     registerUrl: "https://luma.com/mef8t5cw",
-    location: "Virtual",
+    location: "Zoom",
     hostedBy: "Kyle Matthys, Stacey Lauren & Climate Cafe NYC",
     image: "/images/events/event3.png",
     avatars: [
