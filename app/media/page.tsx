@@ -10,7 +10,7 @@ import CTASection from "@/components/cta";
 
 const workshops = [
   {
-    title: "Navigating Partnerships x Augmented Media Development",
+    title: "",
     speakers: [
       {
         name: "",
@@ -70,10 +70,10 @@ const workshops = [
         description: "Maximizing new AI techniques to better present your work",
       },
     ],
-    duration: "65 minutes",
+    duration: "60 minutes",
     type: "Workshop",
     youtubeId: "", // Replace with actual YouTube ID
-    signupLink: "#",
+    signupLink: "https://luma.com/4akmpnxv",
     watchLink: "#",
   },
 ];
@@ -194,7 +194,7 @@ const upcomingEvents = [
     image: "/images/media/UpcomingEvent1.jpg",
     title:
       "TRIIBE TALK | Navigating Partnerships x Augmented Media Development",
-    date: "Wednesday, February 11",
+    date: "Wednesday, March 4",
     time: "5:30 PM - 6:30 PM EST",
     location: "YouTube",
     registrationLink: "https://luma.com/4akmpnxv",
@@ -234,6 +234,7 @@ const MediaPage = () => {
   };
 
   const workshop = workshops[currentWorkshop];
+  const hasSpeakers = workshop.speakers?.some((s) => s.name?.trim().length > 0);
 
   return (
     <main>
@@ -259,10 +260,13 @@ const MediaPage = () => {
           </div>
 
           {/* Workshop Card */}
+          {/* Workshop Card */}
           <div className="mb-8">
-            <h2 className="font-semibold text-black text-2xl mb-6">
-              {workshop.title}
-            </h2>
+            {workshop.title && (
+              <h2 className="font-semibold text-black text-2xl mb-6">
+                {workshop.title}
+              </h2>
+            )}
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
               {/* Video Embed */}
@@ -270,7 +274,7 @@ const MediaPage = () => {
                 <div className="relative aspect-video bg-gray-200 rounded-lg overflow-hidden h-full max-w-full">
                   <iframe
                     src={`https://www.youtube.com/embed/${workshop.youtubeId}?autoplay=1&mute=1`}
-                    title={workshop.title}
+                    title={workshop.title || "Workshop Video"}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     className="absolute inset-0 w-full h-full"
@@ -278,45 +282,62 @@ const MediaPage = () => {
                 </div>
               </div>
 
-              {/* Speakers Info */}
-              <div className="min-h-87.5">
-                <div className="flex gap-6 mb-6">
-                  {workshop.speakers.map((speaker, index) => (
-                    <div key={index} className="flex-1">
-                      <div className="w-16 h-16 bg-gray-300 rounded-full mb-3 overflow-hidden">
-                        <img
-                          src={speaker.avatar ?? undefined}
-                          alt={speaker.name}
-                          width={64}
-                          height={64}
-                          className="object-cover"
-                        />
+              {/* Right Column */}
+              <div className="flex flex-col justify-between md:min-h-[350px]">
+                {/* Top Content */}
+                <div>
+                  {hasSpeakers && (
+                    <>
+                      <div className="flex gap-6 mb-6">
+                        {workshop.speakers.map((speaker, index) => (
+                          <div key={index} className="flex-1">
+                            <div className="w-16 h-16 bg-gray-300 rounded-full mb-3 overflow-hidden">
+                              <img
+                                src={speaker.avatar ?? undefined}
+                                alt={speaker.name}
+                                width={64}
+                                height={64}
+                                className="object-cover"
+                              />
+                            </div>
+
+                            <h3 className="font-semibold text-black text-lg mb-1">
+                              {speaker.name}
+                            </h3>
+
+                            <p className="font-semibold text-black text-sm mb-2">
+                              {speaker.topic}
+                            </p>
+
+                            <p className="font-normal text-[#495565] text-sm">
+                              {speaker.description}
+                            </p>
+                          </div>
+                        ))}
                       </div>
-                      <h3 className="font-semibold text-black text-lg mb-1">
-                        {speaker.name}
-                      </h3>
-                      <p className="font-semibold text-black text-sm mb-2">
-                        {speaker.topic}
-                      </p>
-                      <p className="font-normal text-[#495565] text-sm">
-                        {speaker.description}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-                <div className="border-t border-gray-200 pt-4"></div>
-                <div className="text-sm text-[#697282] mt-4">
-                  {workshop.duration} · {workshop.type}
+
+                      <div className="border-t border-gray-200 pt-4"></div>
+
+                      <div className="text-sm text-[#697282] mt-4">
+                        {workshop.duration} · {workshop.type}
+                      </div>
+                    </>
+                  )}
                 </div>
 
-                <div className="flex  mt-4 flex-col md:flex-row gap-4">
-                  <a
-                    href={workshop.signupLink}
-                    className="px-8 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base inline-flex items-center gap-2 justify-center min-w-35"
-                  >
-                    <Bell className="w-4 h-4" />
-                    Sign up
-                  </a>
+                {/* Bottom Buttons — Always Stays at Bottom */}
+                <div className="flex mt-6 flex-col md:flex-row gap-4">
+                  {hasSpeakers && (
+                    <a
+                      href={workshop.signupLink}
+                      target="_blank"
+                      className="px-8 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base inline-flex items-center gap-2 justify-center min-w-35"
+                    >
+                      <Bell className="w-4 h-4" />
+                      Sign up
+                    </a>
+                  )}
+
                   <a
                     href={workshop.watchLink}
                     target="_blank"

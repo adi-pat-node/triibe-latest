@@ -58,12 +58,12 @@ const partneredWithLogos = [
   {
     src: "/images/home/image-132.png",
     alt: "Partnered with organization 2",
-    className: "w-[129px] h-[40px] md:h-[100px] object-cover",
+    className: "w-[129px] h-[60px] md:h-[100px] object-contain",
   },
   {
     src: "/images/home/image-133.png",
     alt: "Partnered with organization 3",
-    className: "w-64 h-[40px] md:h-[70px] object-cover",
+    className: "w-64 h-[60px] md:h-[70px] object-contain",
   },
   {
     src: "/images/home/womensOrg1.png",
@@ -73,7 +73,7 @@ const partneredWithLogos = [
   {
     src: "/images/home/illuminen1.png",
     alt: "Partnered with organization 3",
-    className: "w-64 h-[40px] md:h-[70px] object-cover",
+    className: "w-64 h-[40px] md:h-[70px] object-contain",
   },
   {
     src: "/images/home/unitedPlanet.png",

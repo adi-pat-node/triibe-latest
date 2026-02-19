@@ -122,7 +122,7 @@ export default function Header() {
             <button
               zeffy-form-link="https://www.zeffy.com/embed/donation-form/invest-in-the-future-3?modal=true"
               onClick={() => setMobileMenuOpen(false)}
-              className="px-6 py-3 text-center text-sm font-semibold text-white border border-white rounded-lg hover:bg-white hover:text-black transition-colors"
+              className="px-6 py-3 text-center text-sm font-semibold text-black bg-white rounded-lg hover:bg-gray-100 transition-colors"
             >
               Donate
             </button>

@@ -69,7 +69,7 @@ export default function ProgramOverview() {
               <div
                 className={`${section.bgColor} flex items-center order-1 md:order-2`}
               >
-                <div className="flex flex-col justify-center gap-6 px-16 py-12 h-full">
+                <div className="flex flex-col justify-center gap-6 px-5 md:px-16 py-12 h-full">
                   <h2
                     className={`${section.textColor} ${section.fontWeight} text-xl md:text-[32px] leading-10`}
                   >
@@ -86,7 +86,7 @@ export default function ProgramOverview() {
           ) : (
             <>
               <div className={`${section.bgColor} flex items-center`}>
-                <div className="flex flex-col justify-center gap-6 px-16 py-12 h-full">
+                <div className="flex flex-col justify-center gap-6  px-5 md:px-16 py-12 h-full">
                   <h2
                     className={`${section.textColor} ${section.fontWeight} text-[32px] leading-10 `}
                   >
