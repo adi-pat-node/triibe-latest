@@ -333,6 +333,13 @@ const SPEAKER_PANELS = [
         image: "/images/events/speakers/Purnima Voria.png",
         linkedin: "https://www.linkedin.com/in/purnimavoria/",
       },
+      {
+        name: "Lara Stein",
+        title: "Founder of TEDx",
+
+        image: "/images/about/team/Lara Stein.jpg",
+        linkedin: "https://www.linkedin.com/in/citizenstein/",
+      },
     ],
   },
   {
