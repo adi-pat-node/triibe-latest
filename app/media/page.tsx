@@ -260,7 +260,7 @@ const MediaPage = () => {
           </div>
 
           {/* Workshop Card */}
-          {/* Workshop Card */}
+
           <div className="mb-8">
             {workshop.title && (
               <h2 className="font-semibold text-black text-2xl mb-6">
@@ -269,8 +269,10 @@ const MediaPage = () => {
             )}
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-              {/* Video Embed */}
-              <div className="w-full">
+              {/* Video Embed: Added dynamic classes to center if title is missing (first two videos) */}
+              <div
+                className={`w-full ${!workshop.title ? "lg:col-span-2 max-w-[500px] mx-auto" : ""}`}
+              >
                 <div className="relative aspect-video bg-gray-200 rounded-lg overflow-hidden h-full max-w-full">
                   <iframe
                     src={`https://www.youtube.com/embed/${workshop.youtubeId}?autoplay=1&mute=1`}
@@ -282,72 +284,70 @@ const MediaPage = () => {
                 </div>
               </div>
 
-              {/* Right Column */}
-              <div className="flex flex-col justify-between md:min-h-[350px]">
-                {/* Top Content */}
-                <div>
-                  {hasSpeakers && (
-                    <>
-                      <div className="flex gap-6 mb-6">
-                        {workshop.speakers.map((speaker, index) => (
-                          <div key={index} className="flex-1">
-                            <div className="w-16 h-16 bg-gray-300 rounded-full mb-3 overflow-hidden">
-                              <img
-                                src={speaker.avatar ?? undefined}
-                                alt={speaker.name}
-                                width={64}
-                                height={64}
-                                className="object-cover"
-                              />
+              {/* Right Column: Only show if title exists (removes entire side panel for first two) */}
+              {workshop.title && (
+                <div className="flex flex-col justify-between md:min-h-[350px]">
+                  {/* Top Content */}
+                  <div>
+                    {hasSpeakers && (
+                      <>
+                        <div className="flex gap-6 mb-6">
+                          {workshop.speakers.map((speaker, index) => (
+                            <div key={index} className="flex-1">
+                              <div className="w-16 h-16 bg-gray-300 rounded-full mb-3 overflow-hidden">
+                                <img
+                                  src={speaker.avatar ?? undefined}
+                                  alt={speaker.name}
+                                  width={64}
+                                  height={64}
+                                  className="object-cover"
+                                />
+                              </div>
+                              <h3 className="font-semibold text-black text-lg mb-1">
+                                {speaker.name}
+                              </h3>
+                              <p className="font-semibold text-black text-sm mb-2">
+                                {speaker.topic}
+                              </p>
+                              <p className="font-normal text-[#495565] text-sm">
+                                {speaker.description}
+                              </p>
                             </div>
+                          ))}
+                        </div>
+                        <div className="border-t border-gray-200 pt-4"></div>
+                        <div className="text-sm text-[#697282] mt-4">
+                          {workshop.duration} · {workshop.type}
+                        </div>
+                      </>
+                    )}
+                  </div>
 
-                            <h3 className="font-semibold text-black text-lg mb-1">
-                              {speaker.name}
-                            </h3>
+                  {/* Bottom Buttons */}
+                  <div className="flex mt-6 flex-col md:flex-row gap-4">
+                    {hasSpeakers && (
+                      <a
+                        href={workshop.signupLink}
+                        target="_blank"
+                        className="px-8 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base inline-flex items-center gap-2 justify-center min-w-35"
+                      >
+                        <Bell className="w-4 h-4" />
+                        Sign up
+                      </a>
+                    )}
 
-                            <p className="font-semibold text-black text-sm mb-2">
-                              {speaker.topic}
-                            </p>
-
-                            <p className="font-normal text-[#495565] text-sm">
-                              {speaker.description}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
-
-                      <div className="border-t border-gray-200 pt-4"></div>
-
-                      <div className="text-sm text-[#697282] mt-4">
-                        {workshop.duration} · {workshop.type}
-                      </div>
-                    </>
-                  )}
-                </div>
-
-                {/* Bottom Buttons — Always Stays at Bottom */}
-                <div className="flex mt-6 flex-col md:flex-row gap-4">
-                  {hasSpeakers && (
+                    {/* This button only shows for the 3rd video because of the workshop.title check above */}
                     <a
-                      href={workshop.signupLink}
+                      href={workshop.watchLink}
                       target="_blank"
-                      className="px-8 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base inline-flex items-center gap-2 justify-center min-w-35"
+                      className="px-8 py-3 bg-[#002c19] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base inline-flex items-center gap-2 justify-center min-w-45"
                     >
-                      <Bell className="w-4 h-4" />
-                      Sign up
+                      <Play className="w-4 h-4" />
+                      Watch / Listen
                     </a>
-                  )}
-
-                  <a
-                    href={workshop.watchLink}
-                    target="_blank"
-                    className="px-8 py-3 bg-[#002c19] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base inline-flex items-center gap-2 justify-center min-w-45"
-                  >
-                    <Play className="w-4 h-4" />
-                    Watch / Listen
-                  </a>
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
 
