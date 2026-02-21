@@ -54,27 +54,28 @@ const workshops = [
     watchLink: "https://www.youtube.com/watch?v=Ku365Mu1onw",
   },
   {
-    title: "Navigating Partnerships x Augmented Media Development",
+    title: "Pursuing Ambition x Mastering Webinars",
     speakers: [
       {
-        name: "Tahnoon Murtza",
-        avatar: "/images/about/team/Tahnoon Murtza1.jpg",
-        topic: "Navigating Partnerships",
+        name: "Mahir Laul",
+        avatar: "/images/about/team/Mahir Laul.png",
+        topic: "Pursuing Ambition x Mastering Webinars",
         description:
-          "Growing your business and creating partnerships without age being a limitation",
+          "Discussing the intersection of technological innovation and professional execution",
       },
       {
-        name: "Justin Kramm",
-        avatar: "/images/about/team/Justin Kramm.jpg",
-        topic: "Augmented Tools for Media Development",
-        description: "Maximizing new AI techniques to better present your work",
+        name: "Nick Salvatorello",
+        avatar: "/images/events/speakers/Nick Salvatoriello1.png",
+        topic: "Pursuing Ambition x Mastering Webinars",
+        description:
+          "They explore how to maintain momentum while scaling a startup and provide actionable frameworks",
       },
     ],
     duration: "60 minutes",
-    type: "Workshop",
-    youtubeId: "", // Replace with actual YouTube ID
+    type: "Triibe Talk",
+    youtubeId: "9LU6ll0MY6U", // Replace with actual YouTube ID
     signupLink: "https://luma.com/4akmpnxv",
-    watchLink: "#",
+    watchLink: "https://www.youtube.com/watch?v=9LU6ll0MY6U",
   },
 ];
 
@@ -325,7 +326,7 @@ const MediaPage = () => {
 
                   {/* Bottom Buttons */}
                   <div className="flex mt-6 flex-col md:flex-row gap-4">
-                    {hasSpeakers && (
+                    {/* {hasSpeakers && (
                       <a
                         href={workshop.signupLink}
                         target="_blank"
@@ -334,7 +335,7 @@ const MediaPage = () => {
                         <Bell className="w-4 h-4" />
                         Sign up
                       </a>
-                    )}
+                    )} */}
 
                     {/* This button only shows for the 3rd video because of the workshop.title check above */}
                     <a
