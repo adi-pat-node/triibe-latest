@@ -100,7 +100,7 @@ const socialLinks = [
   },
   {
     name: "Instagram",
-    url: "https://www.instagram.com/triibe.us/",
+    url: "https://www.instagram.com/triibe__talk",
     svg: (
       <svg className="w-10 h-10" viewBox="0 0 50 50">
         {/* Black rounded rectangle */}

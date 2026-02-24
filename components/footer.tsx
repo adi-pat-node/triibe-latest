@@ -142,7 +142,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://www.instagram.com/triibe.us/"
+              href="https://www.instagram.com/triibe__talk"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#697282] hover:text-black transition-colors"
