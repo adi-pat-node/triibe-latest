@@ -12,6 +12,7 @@ import PostGraduationOutcomes from "@/components/postGraduationOutcomes";
 import SponsorsAndPartners from "@/components/sponsorsAndPartners";
 import ImpactMetrics from "@/components/impactMetrics";
 import CTASection from "@/components/cta";
+import OfficeMap from "@/components/officeMap";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <KeyStatistics />
       <Changemakers />
       <PostGraduationOutcomes />
+      <OfficeMap />
       {/* <SponsorsAndPartners /> */}
       {/* <ImpactMetrics /> */}
       <CTASection />
