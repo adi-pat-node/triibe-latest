@@ -80,6 +80,11 @@ const partneredWithLogos = [
     alt: "Partnered with organization 4",
     className: "w-80 h-[150px] md:h-[100px] object-contain ",
   },
+  {
+    src: "/images/home/inspireYouthJournal.png",
+    alt: "Partnered with organization 4",
+    className: "w-80 h-[150px] md:h-[100px] object-contain ",
+  },
 ];
 
 export default function KeyStatistics() {
