@@ -128,7 +128,7 @@ export default function KeyStatistics() {
           <p className=" font-normal text-[#697282] text-xs text-center tracking-[0.60px] leading-4">
             PARTNERED WITH
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-12 md:gap-16 place-items-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8 place-items-center">
             {partneredWithLogos.map((logo, index) => (
               <Image
                 key={index}
