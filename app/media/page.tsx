@@ -54,6 +54,30 @@ const workshops = [
     watchLink: "https://www.youtube.com/watch?v=Ku365Mu1onw",
   },
   {
+    title: "Samin Bahn’s App Helps You Stay Present and Lookupp",
+    speakers: [
+      {
+        name: "Samin Bahn",
+        avatar: "/images/home/SaminBhan.png",
+        topic: "App Helps You Stay Present and Lookupp",
+        description:
+          "Samin is establishing “Lookup Zones” across college campuses to help young people reclaim in-person connection",
+      },
+      {
+        name: "Kyle Matthys",
+        avatar: "/images/about/team/KyleMatthys.jpg",
+        topic: "App Helps You Stay Present and Lookupp",
+        description:
+          "Samin shares the middle-school brunch moment that sparked his mission",
+      },
+    ],
+    duration: "30 minutes",
+    type: "Podcast",
+    youtubeId: "-OXibXdyUqg", // Actual YouTube ID
+    signupLink: "",
+    watchLink: "http://youtube.com/watch?v=-OXibXdyUqg",
+  },
+  {
     title: "Pursuing Ambition x Mastering Webinars",
     speakers: [
       {

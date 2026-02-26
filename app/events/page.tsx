@@ -150,7 +150,7 @@ const SPEAKERS = [
     linkedin: "https://www.linkedin.com/in/lauracarney/",
   },
   {
-    name: "JapNeet K",
+    name: "Japneet K",
     title:
       "Legacy Board TRIIBE, Director Cybersecurity, Founding Chair – The Cyber Studio by The Digital Economist, Board Director ISACA and STEM international award-winning artist",
     image: "/images/events/speakers/JapNeet K.png",
@@ -183,33 +183,33 @@ const SPEAKER_PANELS = [
     subtitle: "Panel",
     speakers: [
       {
-        name: "Gabriela Jaeger",
-        title: "Founder of Global Changemakers",
-        image: "/images/events/speakers/Gabriela Jaeger.png",
-        linkedin: "https://www.linkedin.com/in/gabriela-jaeger-b04446a5/",
+        name: "Lauren Young",
+        title: "Founder, Living Waters Global",
+        image: "/images/events/speakers/Lauren Young.png",
+        linkedin: "https://www.linkedin.com/in/livingwatersglobal/",
       },
       {
         name: "Karen Salmansohn",
-        title: "Celebrity Author",
+        title: "Leader, The Mortality Awareness Movement",
         image: "/images/events/speakers/Karen Salmansohn.png",
         linkedin: "https://www.linkedin.com/in/karensalmansohn/",
       },
       {
         name: "Anou Singhvi",
-        title:
-          "Managing Director P.C. Lunia Purveyors of Precious Objects since 1850",
+        title: "9th gen. Steward, PC Lunia Art Collection",
         image: "/images/events/speakers/Anou Singhvi.png",
         linkedin: "https://www.linkedin.com/in/anousinghvi/",
       },
       {
-        name: "Jillian Dilorio",
-        title: "President of We Are Enough",
-        image: "/images/events/speakers/Jillian Dilorio2.png",
-        linkedin: "https://www.linkedin.com/in/jillian-diiorio-63057b10/",
+        name: "Gabriela Jaeger",
+        title: "Founder, Global Changemakers",
+        image: "/images/events/speakers/Gabriela Jaeger.png",
+        linkedin: "https://www.linkedin.com/in/gabriela-jaeger-b04446a5/",
       },
+
       {
         name: "Dr. Cheng Davis",
-        title: "President of the Forum for World Education",
+        title: "President, Forum for World Education",
         image: "/images/events/speakers/Cheng Davis.png",
         linkedin: "https://www.linkedin.com/in/cheng-davis-82511937/",
       },
@@ -221,33 +221,58 @@ const SPEAKER_PANELS = [
     speakers: [
       {
         name: "Tahnoon Murtza",
-        title: "Next-Gen founder of Grey Sheep Ventures",
+        title: "Founding Partner,  Grey Sheep Ventures",
         image: "/images/events/speakers/Tahnoon Murtza.png",
         linkedin: "https://www.linkedin.com/in/tahnoon-m-b4071419a/",
       },
       {
         name: "Hikaru Hayakawa",
-        title: "Executive Director Climate Cardinals",
-        image: "/images/events/speakers/Hikaru Hayakawa.png",
+        title: "Executive Director, Climate Cardinals",
+        image: "/images/events/speakers/Hikaru Hayakawa1.png",
         linkedin: "https://www.linkedin.com/in/hikaruhayakawa/",
       },
       {
         name: "Marissa Meltzer",
-        title: "Director of Partnerships for David Meltzer Enterprises",
+        title: "Director of Brand partnerships, David Meltzer Enterprises",
         image: "/images/events/speakers/Marissa Meltzer.png",
         linkedin: "https://www.linkedin.com/in/marissa-meltzer/",
       },
       {
         name: "Nayla Jimenez",
-        title: "Executive Director Philippine Health Initiative",
+        title: "Executive Director, Philippine Health Initiative",
         image: "/images/events/speakers/Nayla Jimenez.png",
         linkedin: "https://www.linkedin.com/in/naylajimenez/",
       },
       {
         name: "Derin Sezgin",
-        title: "President SDG Youth Connect",
+        title: "President, SDG Youth Connect",
         image: "/images/events/speakers/Derin Sezgin.png",
         linkedin: "https://www.linkedin.com/in/derin-ege-sezgin/",
+      },
+    ],
+  },
+
+  {
+    title: "The Real: Turning Honesty Into Action",
+    subtitle: "Motivational Speakers",
+    speakers: [
+      {
+        name: "Geoffrey Sargeant",
+        title: "Executive Ambassador, The Real",
+        image: "/images/events/speakers/Geoffrey Sargeant.png",
+        linkedin: "https://www.linkedin.com/in/geoffsargeant/",
+      },
+      {
+        name: "Tom Tamberrino",
+        title: "Executive Ambassador, The Real",
+        image: "/images/events/speakers/Tom Tamberrino.png",
+        linkedin: "https://www.linkedin.com/in/tom-t-38a917/",
+      },
+      {
+        name: "Shawn Nason",
+        title: "Executive Ambassador, The Real",
+        image: "/images/events/speakers/Shawn Nason.png",
+        linkedin: "https://www.linkedin.com/in/nasonshawn/",
       },
     ],
   },
@@ -258,83 +283,72 @@ const SPEAKER_PANELS = [
       {
         name: "Michelle Cameron Coulter",
         title:
-          "Olympic Gold Medalist, Tedx speaker, and Inspiring Possibilities podcast",
+          "Olympic Gold Medalist​ TedX Speaker, Host Inspiring Possibilities Podcast",
         image: "/images/events/speakers/Michelle Coulter.png",
         linkedin:
           "https://www.linkedin.com/in/michelle-cameron-coulter-o-c-oly/",
       },
       {
-        name: "Laura Carney",
-        title: "Best-Selling Author",
-        image: "/images/events/speakers/Laura Carney.png",
-        linkedin: "https://www.linkedin.com/in/lauracarney/",
-      },
-      {
         name: "Kim Sorrelle",
-        title: "UN Keynote Speaker, TV Show Host",
+        title: "United Nations Keynote Speaker and Host, the kim Sorrelle show",
         image: "/images/events/speakers/Kim Sorrelle.png",
         linkedin: "https://www.linkedin.com/in/kim-sorrelle-11079523/",
       },
       {
+        name: "Vin Infante",
+        title:
+          "Therapist, Mental Performance Coach, Founder of The Table, Host of 1% Podcast",
+        image: "/images/events/speakers/Vin Infante.png",
+        linkedin: "https://www.linkedin.com/in/vininfante/",
+      },
+      {
+        name: "Bree Rosenblum",
+        title: "Professor, UC Berkeley, Founder Authentic Academic​",
+        image: "/images/events/speakers/Bree Rosenblum.png",
+        linkedin: "https://www.linkedin.com/in/bree-rosenblum",
+      },
+
+      {
         name: "Stacey Lauren",
-        title: "Founder of Do The Thing",
+        title: "Founder, Do The Thing and Billion Dollar Impact​",
         image: "/images/events/speakers/Stacey Lauren.png",
         linkedin: "https://www.linkedin.com/in/staceylauren/",
       },
     ],
   },
+
   {
-    title: "The Real: Turning Honesty Into Action",
-    subtitle: "Motivational Speakers",
-    speakers: [
-      {
-        name: "Geoffrey Sargeant",
-        title:
-          "Managing Director Dominari Securities and Executive Ambassador of The REAL",
-        image: "/images/events/speakers/Geoffrey Sargeant.png",
-        linkedin: "https://www.linkedin.com/in/geoffsargeant/",
-      },
-      {
-        name: "Tom Tamberrino",
-        title: "Executive Ambassador, The REAL",
-        image: "/images/events/speakers/Tom Tamberrino.png",
-        linkedin: "https://www.linkedin.com/in/tom-t-38a917/",
-      },
-    ],
-  },
-  {
-    title: "From Summit To System",
+    title: "From Summit To Systems",
     subtitle: "Final Panel",
     speakers: [
       {
         name: "Kyle Matthys",
-        title: "Founder of TRIIBE",
+        title: "Founder & CEO, TRIIBE​",
         image: "/images/events/speakers/Kyle Matthys.png",
         linkedin: "https://www.linkedin.com/in/kylematthys/",
       },
       {
         name: "Gregg Meyer",
-        title:
-          "Chief Sustainability Officer Steve Madden and Head of Steve Madden Corporate Foundation",
+        title: "CSO Steve Madden & President Steve Madden Foundation",
         image: "/images/events/speakers/Gregg Meyer.png",
         linkedin: "https://www.linkedin.com/in/gregg-meyer/",
       },
       {
-        name: "JapNeet K",
+        name: "Japneet K",
         title:
-          "Legacy Board TRIIBE, Director Cybersecurity, Founding Chair – The Cyber Studio by The Digital Economist",
-        image: "/images/events/speakers/JapNeet K.png",
+          "Founder, ​Green Kids Chronicles ​Founding Chair, ​The Cyber Studio by The Digital Economist​ Board Director, ​ISACA",
+        image: "/images/events/speakers/JapNeet K1.png",
         linkedin: "https://www.linkedin.com/in/japneet-k-34816426",
       },
       {
         name: "Dr. Purnima Voria",
-        title: "CEO National US India Chamber of Commerce",
+        title: "Founder & CEO,​ National US India Chamber of Commerce",
         image: "/images/events/speakers/Purnima Voria.png",
         linkedin: "https://www.linkedin.com/in/purnimavoria/",
       },
       {
         name: "Lara Stein",
-        title: "Founder of TEDx",
+        title: "Founder, TedX​ Co-Founder & CEO, Boma Global​",
 
         image: "/images/about/team/Lara Stein.jpg",
         linkedin: "https://www.linkedin.com/in/citizenstein/",
@@ -693,45 +707,75 @@ const page = () => {
                 </h3>
               </div>
 
-              <a
-                href="https://www.linkedin.com/in/jillian-diiorio-63057b10/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-col md:flex-row items-center justify-start w-full group cursor-pointer"
-              >
-                {/* Left Side: Stays exactly where it is */}
-                <div className="flex flex-col items-center md:items-start shrink-0">
-                  <div className="relative mb-6">
-                    <div className="relative  w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden">
-                      <div className="absolute " />
-                      <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-[3px] border-blue-200 group-hover:border-blue-500 transition-all duration-300">
-                        <img
-                          src="/images/events/speakers/Jillian Dilorio2.png"
-                          alt="Jillian Dilorio"
-                          className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-110"
-                        />
+              <div className="flex flex-col lg:flex-row items-center justify-start w-full group  gap-6">
+                {/* Left Side*/}
+                <a
+                  href="https://www.linkedin.com/in/jillian-diiorio-63057b10/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="flex flex-col items-center md:items-start shrink-0 md:mr-12">
+                    <div className="relative mb-6">
+                      <div className="relative  w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden">
+                        <div className="absolute " />
+                        <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-[3px] border-blue-200 group-hover:border-blue-500 transition-all duration-300">
+                          <img
+                            src="/images/events/speakers/Stacey Lauren.png"
+                            alt="Jillian Dilorio"
+                            className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-110"
+                          />
+                        </div>
                       </div>
                     </div>
+                    <div className="text-center md:text-left">
+                      <h4 className="font-bold text-gray-900 leading-tight mb-1 tracking-tight text-xl">
+                        Stacey Lauren​
+                      </h4>
+                      <p className="text-xs text-gray-500">
+                        Founder, Do The Thing <br /> and Billion Dollar Impact​
+                      </p>
+                    </div>
                   </div>
-                  <div className="text-center md:text-left">
-                    <h4 className="font-bold text-gray-900 leading-tight mb-1 tracking-tight text-xl">
-                      Jillian Dilorio
-                    </h4>
-                    <p className="text-xs text-gray-500">
-                      President, We Are Enough
-                    </p>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/bree-rosenblum/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="flex flex-col items-center md:items-start shrink-0">
+                    <div className="relative mb-6">
+                      <div className="relative  w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden">
+                        <div className="absolute " />
+                        <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-[3px] border-blue-200 group-hover:border-blue-500 transition-all duration-300">
+                          <img
+                            src="/images/events/speakers/Bree Rosenblum.png"
+                            alt="Bree Rosenblum"
+                            className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-110"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="text-center md:text-left">
+                      <h4 className="font-bold text-gray-900 leading-tight mb-1 tracking-tight text-xl">
+                        Bree Rosenblum​
+                      </h4>
+                      <p className="text-xs text-gray-500">
+                        Professor, UC Berkeley <br /> Founder Authentic Academic
+                      </p>
+                    </div>
                   </div>
-                </div>
+                </a>
 
                 {/* Right Side: Controlled distance from the left */}
-                <div className="mt-10 md:mt-0 md:ml-32 shrink-0">
+                <div className="mt-10 md:mt-0 lg:ml-16 shrink-0">
                   <img
                     src="/images/events/speakers/WeAreEnough.png"
                     alt="We Are Enough Graphic"
                     className="w-70 h-70 rounded-2xl object-cover"
                   />
                 </div>
-              </a>
+              </div>
             </div>
 
             {SPEAKER_PANELS.map((panel, idx) => (
