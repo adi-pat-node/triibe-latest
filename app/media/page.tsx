@@ -388,11 +388,11 @@ const MediaPage = () => {
       </section>
 
       {/* Media Cards Section */}
-      <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
+      <section className="py-20 px-4  md:px-12 lg:px-50 bg-[#3036411A]">
         <div className="max-w-300 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
             {/* Podcasts Card */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+            <div className="bg-white rounded-lg overflow-hidden shadow-sm flex flex-col justify-around">
               <div className="p-6 pb-0 ">
                 <h3 className="font-bold text-black text-2xl mb-4 text-center">
                   Podcasts
@@ -436,7 +436,7 @@ const MediaPage = () => {
             </div>
 
             {/* Workshops Card */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+            <div className="bg-white rounded-lg overflow-hidden shadow-sm flex flex-col justify-around">
               <div className="p-6 pb-0">
                 <h3 className="font-bold text-black text-2xl mb-4 text-center">
                   Workshops
@@ -479,9 +479,9 @@ const MediaPage = () => {
             </div>
 
             {/* Newsletter Card */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+            <div className="bg-white rounded-lg overflow-hidden shadow-sm flex flex-col justify-around">
               <div className="p-6 pb-0">
-                <h3 className="font-bold text-black text-xl mb-4 text-center">
+                <h3 className="font-bold text-black text-xl md:text-sm lg:text-xl mb-4 text-center">
                   TRIBUNE Newsletter
                 </h3>
               </div>

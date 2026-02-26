@@ -26,7 +26,7 @@ const outcomes = [
 
 export default function PostGraduationOutcomes() {
   return (
-    <section className="flex flex-col items-start px-4 md:px-50 py-20 w-full bg-gray-50 border-t border-b border-gray-200">
+    <section className="flex flex-col items-start px-4 md:px-40 lg:px-50 py-20 w-full bg-gray-50 border-t border-b border-gray-200">
       <div className="flex flex-col items-start gap-16 w-full">
         <div className="flex flex-col items-start gap-4 max-w-3xl">
           <h2 className=" font-bold text-[#000000] text-4xl tracking-[-0.90px] leading-10">
@@ -52,7 +52,7 @@ export default function PostGraduationOutcomes() {
                   width={48}
                   height={48}
                 />
-                <h3 className=" font-semibold text-[#000000] text-lg tracking-[0] leading-7">
+                <h3 className=" font-semibold text-[#000000] md:text-xs text-lg tracking-[0] leading-7">
                   {outcome.title}
                 </h3>
                 <p className=" font-normal text-[#495565] text-sm tracking-[0] leading-[22.8px]">

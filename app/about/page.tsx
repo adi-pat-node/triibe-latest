@@ -1024,7 +1024,7 @@ const page = () => {
       </section>
 
       {/* Impact Areas Section */}
-      <section className="py-2 px-4 md:px-50 bg-white/90 ">
+      <section className="py-2 px-4 md:px-30 lg:px-50 bg-white/90 ">
         <div className=" mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-16">
             {/* Left Side - Section Title */}
@@ -1102,8 +1102,8 @@ const page = () => {
                 {/* Education */}
                 <div>
                   <div className="flex items-center gap-2 mb-3">
-                    <GraduationCap className="w-5 h-5 mb-2" />
-                    <h4 className="font-bold text-black text-xl mb-3">
+                    <GraduationCap className="w-6 h-6 mb-2" />
+                    <h4 className="font-bold text-black text-xl md:text-lg lg:text-xl mb-3">
                       Education
                     </h4>
                   </div>
@@ -1120,7 +1120,7 @@ const page = () => {
       </section>
 
       {/* C-Suite and Board Section */}
-      <section className="pt-16 pb-8 px-4 md:px-50 bg-white">
+      <section className="pt-16 pb-8 px-4 md:px-44 lg:px-50 bg-white">
         <div className="max-w-300 mx-auto">
           <h2 className="font-bold text-black text-3xl mb-12">
             C-SUITE AND BOARD
@@ -1145,9 +1145,9 @@ const page = () => {
                     />
                   </div>
                 </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-bold text-black text-xl">
+                <div className="p-6 md:p-3 lg:p-6">
+                  <div className="flex items-center justify-between mb-2 ">
+                    <h3 className="font-bold text-black text-xl ">
                       {member.name}
                     </h3>
 

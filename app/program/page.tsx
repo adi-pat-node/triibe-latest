@@ -242,7 +242,7 @@ const ProgramPage = () => {
       </section>
 
       {/* Three Pillars of Support Section */}
-      <section className="py-20 px-4 md:px-50 bg-white border-t border-gray-200">
+      <section className="py-20 px-4 md:px-35 lg:px-50 bg-white border-t border-gray-200">
         <div className="max-w-260 mx-auto">
           <div className="flex flex-col gap-12">
             <div className="flex flex-col gap-4">
@@ -403,7 +403,9 @@ const ProgramPage = () => {
                     <p className=" font-normal text-[#697282] text-xs uppercase mb-3 tracking-[0.60px]">
                       FUNDING
                     </p>
-                    <p className=" font-bold text-black text-3xl">$10,000</p>
+                    <p className=" font-bold text-black text-3xl  md:text-[26px] lg:text-3xl">
+                      $10,000
+                    </p>
                   </div>
 
                   <div className="bg-white border border-gray-200 rounded-lg p-6">
@@ -474,7 +476,9 @@ const ProgramPage = () => {
                     <p className=" font-normal text-[#697282] text-xs uppercase mb-3 tracking-[0.60px]">
                       FUNDING
                     </p>
-                    <p className=" font-bold text-black text-3xl">$25,000</p>
+                    <p className=" font-bold text-black text-3xl md:text-[26px] lg:text-3xl">
+                      $25,000
+                    </p>
                   </div>
 
                   <div className="bg-white border border-gray-200 rounded-lg p-6">

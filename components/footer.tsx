@@ -33,7 +33,7 @@ const footerColumns = [
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-start pt-16 pb-0 px-4 md:px-50 relative w-full bg-white border-t border-gray-200">
+    <footer className="flex flex-col items-start pt-16 pb-0 px-4 md:px-20 lg:px-50 relative w-full bg-white border-t border-gray-200">
       <div className="flex flex-col items-start gap-12 relative w-full max-w-260 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 w-full">
           <div className="flex flex-col items-start gap-4">

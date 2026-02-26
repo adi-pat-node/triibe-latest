@@ -781,7 +781,7 @@ const page = () => {
                       </div>
 
                       {/* Right Side: Avery's Activation Graphic */}
-                      <div className="mt-10 md:mt-0 md:ml-32 shrink-0">
+                      <div className="mt-10 md:mt-0 md:ml-12 lg:ml-32 shrink-0">
                         <img
                           src="/images/events/speakers/Abc1.png"
                           alt="Billion Dollar Impact Graphic"
