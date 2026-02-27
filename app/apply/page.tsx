@@ -61,7 +61,7 @@ const Page = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-8 px-4 md:px-[200px] bg-white">
+      <section className="pt-32 pb-8 px-4 md:px-25 lg:px-[200px] bg-white">
         <div className="max-w-[1200px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-[0.8fr_1.2fr]  gap-16 items-start">
             {/* Left - Image */}
@@ -120,7 +120,7 @@ const Page = () => {
       </section>
 
       {/* Application Form Section */}
-      <section className="py-20 px-4 md:px-[200px] bg-[#3036411A]">
+      <section className="py-20 px-4 md:px-25 lg:px-[200px] bg-[#3036411A]">
         <div className="max-w-[1200px] mx-auto">
           <h2 className="font-bold text-black text-4xl mb-4">
             Application Form
@@ -299,7 +299,7 @@ const Page = () => {
       </section>
 
       {/* Deck Section */}
-      <section className="py-12 px-4 md:px-[200px] bg-white">
+      <section className="py-12 px-4 md:px-25 lg:px-[200px] bg-white">
         <div className="max-w-260 mx-auto">
           <div className="max-w-7xl mx-auto transition-all duration-300 hover:scale-105">
             <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
@@ -321,7 +321,7 @@ const Page = () => {
 
       {/* Section 4: Application FAQs */}
 
-      <section className="pt-16 pb-8 px-4 md:px-[200px] bg-[#3036411A]">
+      <section className="pt-16 pb-8 px-4 md:px-25 lg:px-[200px] bg-[#3036411A]">
         <div className="max-w-[1200px] mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12 text-center">
             Application FAQs

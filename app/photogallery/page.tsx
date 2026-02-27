@@ -150,7 +150,7 @@ const PhotoGallery = () => {
     <main className="bg-white">
       <Header />
 
-      <section className="pt-32 pb-20 px-4 md:px-50">
+      <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50">
         <div className="max-w-[1200px] mx-auto">
           {/* Main Title */}
           <h1 className="font-bold text-black text-5xl md:text-6xl mb-12">

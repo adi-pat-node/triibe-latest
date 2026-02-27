@@ -937,7 +937,7 @@ const page = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 md:px-50 bg-white     ">
+      <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50 bg-white     ">
         <div className="max-w-300 mx-auto">
           <div className="flex md:items-start justify-between mb-12 flex-col md:flex-row gap-4 items-center ">
             <h1 className="font-bold text-black text-5xl md:text-6xl">
@@ -1024,7 +1024,7 @@ const page = () => {
       </section>
 
       {/* Impact Areas Section */}
-      <section className="py-2 px-4 md:px-30 lg:px-50 bg-white/90 ">
+      <section className="py-2 px-4 md:px-25 lg:px-50 bg-white/90 ">
         <div className=" mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-16">
             {/* Left Side - Section Title */}
@@ -1120,7 +1120,7 @@ const page = () => {
       </section>
 
       {/* C-Suite and Board Section */}
-      <section className="pt-16 pb-8 px-4 md:px-44 lg:px-50 bg-white">
+      <section className="pt-16 pb-8 px-4 md:px-25 lg:px-50 bg-white">
         <div className="max-w-300 mx-auto">
           <h2 className="font-bold text-black text-3xl mb-12">
             C-SUITE AND BOARD
@@ -1175,7 +1175,7 @@ const page = () => {
 
       {/* Legacy Board Members list */}
 
-      <section className="pb-12 px-4 md:px-50 bg-white">
+      <section className="pb-12 px-4 md:px-25 lg:px-50 bg-white">
         <div className="max-w-300 mx-auto">
           <h2 className="font-bold text-black text-3xl mb-12">Legacy Board</h2>
 
@@ -1224,7 +1224,7 @@ const page = () => {
       </section>
 
       {/* Members Section */}
-      <section className=" px-4 md:px-50 bg-white  ">
+      <section className=" px-4 md:px-25 lg:px-50 bg-white  ">
         <div className="max-w-300 mx-auto">
           <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
             Media TEAM

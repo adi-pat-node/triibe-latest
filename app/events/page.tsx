@@ -449,7 +449,7 @@ const page = () => {
   return (
     <main className="min-h-screen bg-white">
       <Header />
-      <section className="pt-32 pb-20 px-4 md:px-50 bg-white ">
+      <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50 bg-white ">
         <div className=" max-w-260 mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-16 items-start">
             {/* Left Column: Details */}
@@ -577,7 +577,7 @@ const page = () => {
 
       {/* About Section */}
       {FEBRUARY_EVENTS.indexOf(currentEvent) === 0 && (
-        <section className="pt-12 pb-16   px-4 md:px-50 bg-white ">
+        <section className="pt-12 pb-16   px-4 md:px-25 lg:px-50 bg-white ">
           <div className=" max-w-260 mx-auto">
             <div className="max-w-[850px]">
               {/* Section Title */}
@@ -631,7 +631,7 @@ const page = () => {
 
       {/* About Section Event 2*/}
       {FEBRUARY_EVENTS.indexOf(currentEvent) === 1 && (
-        <section className="pt-12 pb-16   px-4 md:px-50 bg-white ">
+        <section className="pt-12 pb-16   px-4 md:px-25 lg:px-50 bg-white ">
           <div className=" max-w-260 mx-auto">
             <div className="max-w-[850px]">
               {/* Section Title */}
@@ -691,7 +691,7 @@ const page = () => {
 
       {/* Speakers */}
       {FEBRUARY_EVENTS.indexOf(currentEvent) === 0 && (
-        <section className="pt-12 pb-16  px-4 md:px-50 bg-white ">
+        <section className="pt-12 pb-16  px-4 md:px-25 lg:px-50 bg-white ">
           <div className=" max-w-260 mx-auto">
             <h2 className="text-4xl font-bold text-center mb-16 text-black tracking-tight">
               Run Of Show
@@ -881,7 +881,7 @@ const page = () => {
       )}
 
       {FEBRUARY_EVENTS.indexOf(currentEvent) === 0 && (
-        <section className="pt-12 pb-16  px-4 md:px-50 bg-white ">
+        <section className="pt-12 pb-16  px-4 md:px-25 lg:px-50 bg-white ">
           <div className=" max-w-260 mx-auto">
             <h2 className="text-2xl font-bold text-black mb-12">Event Perks</h2>
 
@@ -983,7 +983,7 @@ const page = () => {
         </div>
       </section> */}
 
-      <section className="pt-12 pb-20  px-4 md:px-50 bg-white ">
+      <section className="pt-12 pb-20  px-4 md:px-25 lg:px-50 bg-white ">
         <div className=" max-w-260 mx-auto">
           <div className="mx-auto flex flex-col items-center">
             <h2 className="text-2xl font-bold text-black mb-10">

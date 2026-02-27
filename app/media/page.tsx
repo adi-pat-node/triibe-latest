@@ -321,7 +321,7 @@ const MediaPage = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 md:px-50 bg-white">
+      <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50 bg-white">
         <div className="max-w-300 mx-auto">
           <div className="mb-12 flex flex-col items-start">
             <Image
@@ -668,7 +668,7 @@ const MediaPage = () => {
       </section> */}
 
       {/* Upcoming Events Section */}
-      <section className="py-20 px-4 md:px-50 bg-white">
+      <section className="py-20 px-4 md:px-15 lg:px-50 bg-white">
         <div className="max-w-300 mx-auto">
           <h2 className="font-bold text-black text-4xl mb-12">
             Upcoming Events

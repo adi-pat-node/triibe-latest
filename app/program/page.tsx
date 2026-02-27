@@ -20,7 +20,7 @@ const testimonials = [
       "Receiving TRIIBE’s scholarship support further strengthened the work of Vervient Foundation by highlighting that community and connection matter as much as ideas. Knowing there’s a network of like-minded leaders cheering me on fuels our mission to empower students with an innovation mindset and reminds me that there’s always a shoulder to lean on in this journey.",
     name: "Gitanjali Rao",
     year: "TRIIBE Fellow Fall 2025",
-    organization: "Global Keynote, Fervent Foundation",
+    organization: "Global Keynote, Vervient Foundation",
   },
   {
     quote:
@@ -166,7 +166,7 @@ const ProgramPage = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 md:px-50 bg-white">
+      <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50 bg-white">
         <div className="max-w-260 mx-auto">
           <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-6">
@@ -217,7 +217,7 @@ const ProgramPage = () => {
 
       {/* Problem Visual/Infographic */}
 
-      <section className="  px-6 bg-white md:px-[200px]">
+      <section className="  px-6 bg-white md:px-25 lg:px-[200px]">
         <div className="max-w-260 mx-auto">
           <div className="max-w-5xl mx-auto text-center">
             <h1 className="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
@@ -242,7 +242,7 @@ const ProgramPage = () => {
       </section>
 
       {/* Three Pillars of Support Section */}
-      <section className="py-20 px-4 md:px-35 lg:px-50 bg-white border-t border-gray-200">
+      <section className="py-20 px-4 md:px-25 lg:px-50 bg-white border-t border-gray-200">
         <div className="max-w-260 mx-auto">
           <div className="flex flex-col gap-12">
             <div className="flex flex-col gap-4">
@@ -302,7 +302,7 @@ const ProgramPage = () => {
       </section>
 
       {/* Your 3-Year Journey Section */}
-      <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
+      <section className="py-20 px-4 md:px-25 lg:px-50 bg-[#3036411A]">
         <div className="max-w-260 mx-auto">
           <div className="flex flex-col gap-16">
             <h2 className=" font-bold text-black text-4xl text-center tracking-[-0.90px] leading-10">
@@ -527,7 +527,7 @@ const ProgramPage = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4 md:px-50 bg-gray-50">
+      <section className="py-20 px-4 md:px-25 lg:px-50 bg-gray-50">
         <div className="max-w-260 mx-auto">
           {/* Quarterly Cycle Testimonial */}
           <div className="bg-white border-2 border-black rounded-lg p-8 md:p-10">
@@ -566,7 +566,7 @@ const ProgramPage = () => {
       </section>
 
       {/* How TRIIBE Helps Section */}
-      <section className="py-20 px-4 md:px-50 bg-white">
+      <section className="py-20 px-4 md:px-25 lg:px-50 bg-white">
         <div className="max-w-260 mx-auto">
           <div className="flex flex-col gap-12">
             <h2 className=" font-bold text-black text-4xl text-center tracking-[-0.90px] leading-10">
@@ -685,14 +685,14 @@ const ProgramPage = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 px-4 md:px-50 bg-[#3036411A]">
+      <section className="py-20 px-4 md:px-25 lg:px-50 bg-[#3036411A]">
         <div className="max-w-260 mx-auto">
           <TestimonialCarousel />
         </div>
       </section>
 
       {/* Deck Section */}
-      <section className="py-12 px-4 md:px-[200px]">
+      <section className="py-12 px-4 md:px-25 lg:px-[200px]">
         <div className="max-w-260 mx-auto">
           <div className="max-w-7xl mx-auto transition-all duration-300 hover:scale-105">
             <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
@@ -713,7 +713,10 @@ const ProgramPage = () => {
       </section>
 
       {/* FAQ Section */}
-      <section id="faqProgram" className="py-20 px-4 md:px-50 bg-[#3036411A]">
+      <section
+        id="faqProgram"
+        className="py-20 px-4 md:px-25 lg:px-50 bg-[#3036411A]"
+      >
         <div className="max-w-260 mx-auto flex flex-col gap-12">
           <h2 className=" font-bold text-black text-4xl text-center tracking-[-0.90px] leading-10">
             Frequently Asked Questions

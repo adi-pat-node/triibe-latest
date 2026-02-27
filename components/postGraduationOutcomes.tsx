@@ -26,7 +26,7 @@ const outcomes = [
 
 export default function PostGraduationOutcomes() {
   return (
-    <section className="flex flex-col items-start px-4 md:px-40 lg:px-50 py-20 w-full bg-gray-50 border-t border-b border-gray-200">
+    <section className="flex flex-col items-start px-4 md:px-25 lg:px-50 py-20 w-full bg-gray-50 border-t border-b border-gray-200">
       <div className="flex flex-col items-start gap-16 w-full">
         <div className="flex flex-col items-start gap-4 max-w-3xl">
           <h2 className=" font-bold text-[#000000] text-4xl tracking-[-0.90px] leading-10">
