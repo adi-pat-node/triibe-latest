@@ -1,12 +1,9 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { useRouter } from "next/navigation";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+
 import Image from "next/image";
-import CTASection from "@/components/cta";
-import Link from "next/link";
+
 import {
   MapPin,
   Calendar,
@@ -18,18 +15,17 @@ import {
 
 const MONTHLY_EVENTS: Record<string, any[]> = {
   "January 2026": [
-    {
-      id: 0,
-      title: "TRIIBE Fundraising Mixer",
-      date: "Saturday, Jan 24",
-      time: "10:00 AM – 6:30 PM",
-      location: "Copacabana Nightclub, New York, New York",
-      image: "/images/events/Jan.png",
-      isPast: true,
-      type: "IN-PERSON",
-      footerText: "This event ended 30 days ago",
-      slug: "",
-    },
+    // {
+    //   id: 0,
+    //   title: "TRIIBE Fundraising Mixer",
+    //   date: "Saturday, Jan 24",
+    //   time: "10:00 AM – 6:30 PM",
+    //   location: "Copacabana Nightclub, New York, New York",
+    //   image: "/images/events/Jan.png",
+    //   isPast: true,
+    //   type: "IN-PERSON",
+    //   footerText: "This event ended 30 days ago",
+    // },
   ],
   "February 2026": [
     {
@@ -43,7 +39,6 @@ const MONTHLY_EVENTS: Record<string, any[]> = {
       status: "closed",
       type: "VIRTUAL",
       lumaUrl: "https://luma.com/mef8t5cw",
-      slug: "",
     },
     {
       id: 2,
@@ -55,40 +50,24 @@ const MONTHLY_EVENTS: Record<string, any[]> = {
       status: "closed",
       type: "IN-PERSON",
       lumaUrl: "https://luma.com/7zynhb71",
-      slug: "/events/eventlist",
     },
   ],
   "March 2026": [
     {
       id: 3,
       title:
-        "TRIIBE Talk: The Future Of Education, Powering Entrepreneurship And Philentrepreneurship",
-      date: "Thursday, March 12",
-      time: "6:00 PM - 9:30 PM EDT",
-      location: "Copacabana Nightclub, New York, New York",
-      image: "/images/events/event3.avif",
-      status: "open",
-      type: "IN-PERSON",
-      lumaUrl: "https://luma.com/pvrqm3ok",
-      slug: "",
-    },
-    {
-      id: 4,
-      title: "Do The Thing x TRIIBE Virtual Auction",
-      date: "Friday, March 20",
-      time: "10:30 AM PDT",
-      location: "Zoom",
-      image: "/images/events/event4.png",
+        "TRIIBE TALK | Navigating Partnerships x Augmented Media Development",
+      date: "Wednesday, March 4",
+      time: "5:30 PM - 6:30 PM EST",
+      location: "YouTube",
+      image: "/images/media/UpcomingEvent1.jpg",
       status: "open",
       type: "VIRTUAL",
-      lumaUrl: "https://signup.thebilliondollarimpact.com/auction/triibe",
-      slug: "",
+      lumaUrl: "https://luma.com/4akmpnxv",
     },
   ],
 };
-
-const EventsPage = () => {
-  const router = useRouter();
+export default function MediaEventsList() {
   const [viewDate, setViewDate] = useState(new Date());
   const [calendarYear, setCalendarYear] = useState(2026);
   const [isCalendarOpen, setIsCalendarOpen] = useState(false);
@@ -140,77 +119,10 @@ const EventsPage = () => {
     setViewDate(newDate);
     setIsCalendarOpen(false);
   };
-
   return (
-    <main className="min-h-screen bg-white">
-      <style jsx global>{`
-        html {
-          overflow-y: scroll;
-        }
-      `}</style>
-      <Header />
-
-      {/* Hero Section  */}
-      <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50">
-        <div className="max-w-300 mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 items-center">
-            <div>
-              <h1 className="font-bold text-black text-4xl md:text-5xl mb-6 leading-tight">
-                Connecting Youth Leaders with the Resources to Scale Impact
-              </h1>
-              <p className="text-[#495565] text-lg mb-8 leading-relaxed">
-                TRIIBE hosts convening experiences that bring together youth
-                nonprofit founders, mentors, and partners to build connections.
-              </p>
-              <div className="flex">
-                <a
-                  href="#updates"
-                  className="px-8 py-3 bg-[#1C5945] text-white rounded-lg font-medium"
-                >
-                  Get Updates
-                </a>
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-2">
-              <div className="relative aspect-square rounded-tl-4xl overflow-hidden">
-                <Image
-                  src="/images/events/summit-1.jpg"
-                  alt="1"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative aspect-square rounded-tr-4xl overflow-hidden">
-                <Image
-                  src="/images/events/newImg.jpg"
-                  alt="2"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative aspect-square rounded-bl-4xl overflow-hidden">
-                <Image
-                  src="/images/events/summit-2.jpg"
-                  alt="3"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative aspect-square rounded-br-4xl overflow-hidden">
-                <Image
-                  src="/images/events/summit-4.jpg"
-                  alt="4"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+    <>
       {/* Events Section */}
-      <section className="py-20 px-4 md:px-25 lg:px-50 bg-[#3036411A]">
+      <section className="py-20 px-4 md:px-25 lg:px-50 bg-white">
         <div className="max-w-300 mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-6">
             <h2 className="text-4xl font-bold text-black">
@@ -288,10 +200,7 @@ const EventsPage = () => {
               filteredEvents.map((event) => (
                 <div
                   key={event.id}
-                  onClick={() => (event.slug ? router.push(event.slug) : null)}
-                  className={`p-6 border border-gray-100 rounded-xl bg-white shadow-sm transition-all group ${
-                    event.slug ? "cursor-pointer  hover:shadow-md" : ""
-                  }`}
+                  className="p-6 border border-gray-100 rounded-xl bg-white shadow-sm"
                 >
                   <div className="flex flex-col md:flex-row gap-6">
                     <div className="relative w-full md:w-32 h-32 flex-shrink-0">
@@ -339,19 +248,13 @@ const EventsPage = () => {
 
                       {!event.isPast && (
                         <div className="flex items-center gap-4 w-full md:w-auto">
-                          <button
-                            onClick={(e) => {
-                              e.stopPropagation();
-                            }}
-                            className="p-3 text-gray-400 border border-gray-200 rounded-xl hover:bg-gray-50"
-                          >
+                          <button className="p-3 text-gray-400 border border-gray-200 rounded-xl hover:bg-gray-50">
                             <Share size={20} className="text-black" />
                           </button>
                           {event.status === "open" ? (
                             <a
                               href={event.lumaUrl || "#"}
                               target="_blank"
-                              onClick={(e) => e.stopPropagation()}
                               className="w-full md:w-[180px] py-3 bg-[#002C19] text-white rounded-xl font-bold text-center"
                             >
                               Register
@@ -359,7 +262,6 @@ const EventsPage = () => {
                           ) : (
                             <button
                               disabled
-                              onClick={(e) => e.stopPropagation()}
                               className="w-full md:w-[180px] py-3 bg-[#30364199] text-white rounded-xl font-bold cursor-not-allowed text-center"
                             >
                               Registration Closed
@@ -382,11 +284,6 @@ const EventsPage = () => {
           </div>
         </div>
       </section>
-
-      <CTASection />
-      <Footer />
-    </main>
+    </>
   );
-};
-
-export default EventsPage;
+}

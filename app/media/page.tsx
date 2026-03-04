@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import { ChevronLeft, ChevronRight, Bell, Play } from "lucide-react";
 import Image from "next/image";
 import CTASection from "@/components/cta";
+import MediaEventsList from "@/components/mediaEventsList";
 
 const workshops = [
   {
@@ -560,115 +561,9 @@ const MediaPage = () => {
         </div>
       </section>
 
-      {/* Latest Newsletter Section */}
-      {/* <section className="py-20 px-4 md:px-50 bg-white">
-        <div className="max-w-300 mx-auto">
-          <div className="flex items-center justify-between mb-12">
-            <h2 className="font-bold text-black text-3xl">Latest Newsletter</h2>
-            <a
-              href="#"
-              className="font-normal text-black text-base underline  inline-flex items-center gap-2"
-            >
-              Past issues
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </a>
-          </div>
-
-          <div className="mb-8">
-            <p className="font-normal text-[#697282] text-sm mb-4 uppercase tracking-wider">
-              TRIIBE TALK • ISSUE #12 • JANUARY 2026
-            </p>
-            <h3 className="font-bold text-black text-xl md:text-[26px] mb-8">
-              [Newsletter Title: How 3 Fellows Scaled Their Impact in 6 Months]
-            </h3>
-
-            <div className="border-l-4 border-black pl-6 mb-8">
-              <ul className="space-y-4">
-                <li className="flex gap-3">
-                  <span className="font-semibold text-black text-base">
-                    • Scaling strategy:
-                  </span>
-                  <span className="font-normal text-black text-base">
-                    Framework for growth without sacrificing mission
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="font-semibold text-black text-base">
-                    • Scaling strategy:
-                  </span>
-                  <span className="font-normal text-black text-base">
-                    Framework for growth without sacrificing mission
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="font-semibold text-black text-base">
-                    • Scaling strategy:
-                  </span>
-                  <span className="font-normal text-black text-base">
-                    Framework for growth without sacrificing mission
-                  </span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="flex gap-4">
-              <a
-                href="#"
-                className="px-6 py-3 bg-[#002c19] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base inline-flex items-center gap-2"
-              >
-                Read latest
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </a>
-              <a
-                href="#"
-                className="px-6 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base inline-flex items-center gap-2"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-                Subscribe
-              </a>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/* Upcoming Events Section */}
-      <section className="py-20 px-4 md:px-15 lg:px-50 bg-white">
+      <MediaEventsList />
+      {/* <section className="py-20 px-4 md:px-15 lg:px-50 bg-white">
         <div className="max-w-300 mx-auto">
           <h2 className="font-bold text-black text-4xl mb-12">
             Upcoming Events
@@ -680,7 +575,7 @@ const MediaPage = () => {
                 key={index}
                 className="bg-white border border-gray-200 overflow-hidden flex flex-col h-full"
               >
-                {/* Image Container */}
+
                 <div className="relative w-full h-64 bg-black">
                   <Image
                     src={event.image}
@@ -691,7 +586,7 @@ const MediaPage = () => {
                   />
                 </div>
 
-                {/* Content Container */}
+
                 <div className="p-6 flex flex-col justify-between flex-1">
                   <div>
                     <h3 className="font-bold text-black text-base mb-4">
@@ -699,7 +594,7 @@ const MediaPage = () => {
                     </h3>
 
                     <div className="flex flex-col gap-3 text-sm text-gray-600">
-                      {/* Date */}
+
                       <div className="flex items-center gap-3">
                         <svg
                           className="w-5 h-5"
@@ -717,7 +612,7 @@ const MediaPage = () => {
                         <span>{event.date}</span>
                       </div>
 
-                      {/* Time */}
+
                       <div className="flex items-center gap-3">
                         <svg
                           className="w-5 h-5"
@@ -735,7 +630,7 @@ const MediaPage = () => {
                         <span>{event.time}</span>
                       </div>
 
-                      {/* Location */}
+
                       <div className="flex items-center gap-3">
                         <svg
                           className="w-5 h-5"
@@ -761,7 +656,7 @@ const MediaPage = () => {
                     </div>
                   </div>
 
-                  {/* Register Button - Pinned to bottom */}
+
                   <div className="mt-8">
                     <a
                       href={event.registrationLink || "#"}
@@ -777,7 +672,7 @@ const MediaPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Social Links */}
       <section className="py-12 bg-[#3036411A] ">
