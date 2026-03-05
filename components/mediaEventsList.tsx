@@ -56,18 +56,18 @@ const MONTHLY_EVENTS: Record<string, any[]> = {
     },
   ],
   "March 2026": [
-    {
-      id: 3,
-      title:
-        "TRIIBE TALK | Navigating Partnerships x Augmented Media Development",
-      isoStart: "2026-03-04T22:30:00Z",
-      isoEnd: "2026-03-04T23:30:00Z",
-      location: "Virtual",
-      image: "/images/media/UpcomingEvent1.jpg",
-      status: "closed",
-      type: "VIRTUAL",
-      lumaUrl: "https://luma.com/4akmpnxv",
-    },
+    // {
+    //   id: 3,
+    //   title:
+    //     "TRIIBE TALK | Navigating Partnerships x Augmented Media Development",
+    //   isoStart: "2026-03-04T22:30:00Z",
+    //   isoEnd: "2026-03-04T23:30:00Z",
+    //   location: "Virtual",
+    //   image: "/images/media/UpcomingEvent1.jpg",
+    //   status: "closed",
+    //   type: "VIRTUAL",
+    //   lumaUrl: "https://luma.com/4akmpnxv",
+    // },
     {
       id: 4,
       title:
@@ -96,8 +96,8 @@ const MONTHLY_EVENTS: Record<string, any[]> = {
     {
       id: 6,
       title: "TRIIBE x Learning Planet Institute Paris Reception",
-      isoStart: "2026-03-31T16:00:00Z",
-      isoEnd: "2026-03-31T18:00:00Z",
+      isoStart: "2026-03-31T16:30:00Z",
+      isoEnd: "2026-03-31T18:30:00Z",
       location: "Learning Planet Institue, Paris, Ile-de-France",
       image: "/images/events/event5_Mar31st.avif",
       status: "open",
