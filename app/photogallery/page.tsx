@@ -266,13 +266,13 @@ const PhotoGallery = () => {
             onClick={prevPhoto}
             className="absolute left-4 md:left-10 text-white/50 hover:text-white z-[110]"
           >
-            <ChevronLeft size={48} />
+            <ChevronLeft size={64} className="w-16 h-16" />
           </button>
           <button
             onClick={nextPhoto}
             className="absolute right-4 md:right-10 text-white/50 hover:text-white z-[110]"
           >
-            <ChevronRight size={48} />
+            <ChevronRight size={64} className="w-16 h-16" />
           </button>
           <div className="relative w-[90%] h-[80%] flex flex-col items-center">
             <div className="relative w-full h-full">
