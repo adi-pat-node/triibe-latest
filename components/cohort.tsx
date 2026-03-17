@@ -42,8 +42,7 @@ export default function Cohort() {
       description:
         "Mobilizing youth to tackle issues including hunger, education, and climate justice with volunteering & education",
       founded: "FOUNDED 2016",
-      image:
-        "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4af42d2ddbc8f126cf2c7_esha%202.png",
+      image: "/images/home/homepage---changemakers-3.png",
       website: "https://nest4us.org/",
     },
     {
@@ -67,7 +66,7 @@ export default function Cohort() {
       description:
         "Revive the culture of in-person interaction through a mobile app",
       founded: "FOUNDED 2021",
-      image: "/images/home/SaminBhan.png",
+      image: "/images/home/saminbhan-2.png",
       website: "https://www.lookupp.net/",
     },
 

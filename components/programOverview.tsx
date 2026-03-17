@@ -9,8 +9,8 @@ const programSections = [
       <>
         Everyone wants a village, but nobody wants to be a villager. So we built
         a TRIIBE. Next-gen for next-gen, a foundation made up of incredible
-        changemakers under the age of 30 supporting fellow nonprofit founders to
-        ensure they don't burn out.
+        changemakers under the age of 30 supporting next-gen nonprofit founders
+        to ensure they don't burn out.
       </>
     ),
     bgColor: "bg-[#002c19]",
@@ -24,7 +24,7 @@ const programSections = [
   {
     title: "What We Do",
     description:
-      "We ensure next-gen changemakers are always at the table, as a focal point, not a footnote. Whether through our college fellowship, or the TRIIBE 100 fund (supporting the top 100 nonprofits run by founders under 30), we are the seal of credibility, improving the perception of next-gen capabilities, and inspiring others to pursue social impact.",
+      "We ensure next-gen changemakers are always at the table, as a focal point, not a footnote. Whether through our college fellowship, TRIIBE Talks, or the TRIIBE 100, we are improving the perception of next-gen capabilities and inspiring others to pursue social impact.",
     bgColor: "bg-[#002c19]",
     textColor: "text-[#fffefee6]",
     descriptionColor: "text-[#ffffffcc]",
@@ -36,7 +36,7 @@ const programSections = [
   {
     title: "How We Do It",
     description:
-      "We provide a comprehensive support system: direct funding for organizational needs, structured mentorship from experienced nonprofit leaders and social entrepreneurs, and a tight-knit community of fellow student founders who understand the unique challenges of building impact organizations.",
+      "We provide unrestricted funding for your organizational needs, structured mentorship from experienced leaders, and a tight-knit community of fellow student and alumni founders who truly understand the unique challenges of building impact organizations while in college.",
     bgColor: "bg-[#002c19]",
     textColor: "text-white",
     descriptionColor: "text-[#ffffffcc]",

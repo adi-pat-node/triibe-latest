@@ -54,54 +54,54 @@ const workshops = [
     signupLink: "#",
     watchLink: "https://www.youtube.com/watch?v=Ku365Mu1onw",
   },
-  {
-    title: "Samin Bahn’s App Helps You Stay Present and Lookupp",
-    speakers: [
-      {
-        name: "Samin Bahn",
-        avatar: "/images/home/SaminBhan.png",
-        topic: "App Helps You Stay Present and Lookupp",
-        description:
-          "Samin is establishing “Lookup Zones” across college campuses to help young people reclaim in-person connection",
-      },
-      {
-        name: "Kyle Matthys",
-        avatar: "/images/about/team/KyleMatthys.jpg",
-        topic: "App Helps You Stay Present and Lookupp",
-        description:
-          "Samin shares the middle-school brunch moment that sparked his mission",
-      },
-    ],
-    duration: "30 minutes",
-    type: "Podcast",
-    youtubeId: "-OXibXdyUqg", // Actual YouTube ID
-    signupLink: "",
-    watchLink: "http://youtube.com/watch?v=-OXibXdyUqg",
-  },
-  {
-    title: "Pursuing Ambition x Mastering Webinars",
-    speakers: [
-      {
-        name: "Mahir Laul",
-        avatar: "/images/about/team/Mahir Laul.png",
-        topic: "Pursuing Ambition x Mastering Webinars",
-        description:
-          "Discussing the intersection of technological innovation and professional execution",
-      },
-      {
-        name: "Nick Salvatorello",
-        avatar: "/images/events/speakers/Nick Salvatoriello1.png",
-        topic: "Pursuing Ambition x Mastering Webinars",
-        description:
-          "They explore how to maintain momentum while scaling a startup and provide actionable frameworks",
-      },
-    ],
-    duration: "60 minutes",
-    type: "Triibe Talk",
-    youtubeId: "9LU6ll0MY6U", // Actual YouTube ID
-    signupLink: "https://luma.com/4akmpnxv",
-    watchLink: "https://www.youtube.com/watch?v=9LU6ll0MY6U",
-  },
+  // {
+  //   title: "Samin Bahn’s App Helps You Stay Present and Lookupp",
+  //   speakers: [
+  //     {
+  //       name: "Samin Bahn",
+  //       avatar: "/images/home/SaminBhan.png",
+  //       topic: "App Helps You Stay Present and Lookupp",
+  //       description:
+  //         "Samin is establishing “Lookup Zones” across college campuses to help young people reclaim in-person connection",
+  //     },
+  //     {
+  //       name: "Kyle Matthys",
+  //       avatar: "/images/about/team/KyleMatthys.jpg",
+  //       topic: "App Helps You Stay Present and Lookupp",
+  //       description:
+  //         "Samin shares the middle-school brunch moment that sparked his mission",
+  //     },
+  //   ],
+  //   duration: "30 minutes",
+  //   type: "Podcast",
+  //   youtubeId: "-OXibXdyUqg", // Actual YouTube ID
+  //   signupLink: "",
+  //   watchLink: "http://youtube.com/watch?v=-OXibXdyUqg",
+  // },
+  // {
+  //   title: "Pursuing Ambition x Mastering Webinars",
+  //   speakers: [
+  //     {
+  //       name: "Mahir Laul",
+  //       avatar: "/images/about/team/Mahir Laul.png",
+  //       topic: "Pursuing Ambition x Mastering Webinars",
+  //       description:
+  //         "Discussing the intersection of technological innovation and professional execution",
+  //     },
+  //     {
+  //       name: "Nick Salvatorello",
+  //       avatar: "/images/events/speakers/Nick Salvatoriello1.png",
+  //       topic: "Pursuing Ambition x Mastering Webinars",
+  //       description:
+  //         "They explore how to maintain momentum while scaling a startup and provide actionable frameworks",
+  //     },
+  //   ],
+  //   duration: "60 minutes",
+  //   type: "Triibe Talk",
+  //   youtubeId: "9LU6ll0MY6U", // Actual YouTube ID
+  //   signupLink: "https://luma.com/4akmpnxv",
+  //   watchLink: "https://www.youtube.com/watch?v=9LU6ll0MY6U",
+  // },
 ];
 
 const socialLinks = [
@@ -246,7 +246,7 @@ const upcomingEvents = [
 const mediaCards = [
   {
     id: "podcasts",
-    title: "Podcasts",
+    title: " Latest Podcast",
     image: "/images/media/podcast1.png",
     badge: "Latest Episode",
     heading: "When Youth Meet Purpose, People Lean In",
@@ -262,7 +262,7 @@ const mediaCards = [
   },
   {
     id: "workshops",
-    title: "Workshops",
+    title: "Latest TRIIBE Talk",
     image: "/images/media/workshop.png",
     badge: "Latest Workshop",
     heading: "Signal to Noise Branding x The SuperBetter Mindset",
@@ -278,7 +278,7 @@ const mediaCards = [
   },
   {
     id: "newsletter",
-    title: "TRIBUNE Newsletter",
+    title: "TRIIBUNE Newsletter",
     image:
       "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/6914b8fe53e5c6fdf6125a6c_70632aae-58b7-18fb-bdca-711530df92dd.png",
     badge: "NOV 2025",
@@ -286,9 +286,6 @@ const mediaCards = [
     description:
       "In the past month, we onboarded 25 new members, bringing our total to nearly 70 and keeping us on track toward our goal of 100 by year-end. We launched...",
     buttons: [
-      {
-        type: "modal",
-      },
       {
         type: "link",
         text: "Read",
@@ -324,151 +321,99 @@ const MediaPage = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50 bg-white">
         <div className="max-w-300 mx-auto">
-          <div className="mb-12 flex flex-col items-start">
-            <Image
-              src="https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/690ec0097fad8b2d6aa19eec_Screenshot_2025-11-07_at_10.58.29_PM-removebg-preview.png"
-              alt="TRIIBE TALK"
-              width={600}
-              height={150}
-              priority
-              className="w-full max-w-[400px] md:max-w-[500px] h-auto -ml-3 md:-ml-5 lg:-ml-6 object-contain object-left"
-            />
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-top">
+            {/* Title */}
+            <div>
+              <h1 className="font-bold text-black text-4xl md:text-[40px]  leading-tight">
+                Connecting Next-Gen Changemakers with the Resources to Scale
+                Impact
+              </h1>
+            </div>
 
-            <p className="font-normal text-[#495565] text-xl mt-4">
-              Alternating lessons from current and next-gen changemakers to
-              demonstrate that age doesn’t impact the quality of one’s work
-            </p>
-          </div>
-
-          {/* Workshop Card */}
-
-          <div className="mb-8">
-            {workshop.title && (
-              <h2 className="font-semibold text-black text-2xl mb-6">
-                {workshop.title}
-              </h2>
-            )}
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-              {/* Video Embed */}
-              <div
-                className={`w-full ${!workshop.title ? "lg:col-span-2 max-w-[500px] mx-auto" : ""}`}
-              >
-                <div className="relative aspect-video bg-gray-200 rounded-lg overflow-hidden h-full max-w-full">
-                  <iframe
-                    src={`https://www.youtube.com/embed/${workshop.youtubeId}?autoplay=1&mute=1`}
-                    title={workshop.title || "Workshop Video"}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="absolute inset-0 w-full h-full"
-                  />
-                </div>
+            {/* Video */}
+            <div>
+              <div className="relative aspect-video bg-gray-200 rounded-lg overflow-hidden mb-4">
+                <iframe
+                  src={`https://www.youtube.com/embed/${workshop.youtubeId}?autoplay=1&mute=1&rel=0`}
+                  title={workshop.title || "Workshop Video"}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                />
               </div>
 
-              {/* Right Column */}
-              {workshop.title && (
-                <div className="flex flex-col justify-between md:min-h-[350px]">
-                  {/* Top Content */}
-                  <div>
-                    {hasSpeakers && (
-                      <>
-                        <div className="flex gap-6 mb-6">
-                          {workshop.speakers.map((speaker, index) => (
-                            <div key={index} className="flex-1">
-                              <div className="w-16 h-16 bg-gray-300 rounded-full mb-3 overflow-hidden">
-                                <img
-                                  src={speaker.avatar ?? undefined}
-                                  alt={speaker.name}
-                                  width={64}
-                                  height={64}
-                                  className="object-cover"
-                                />
-                              </div>
-                              <h3 className="font-semibold text-black text-lg mb-1">
-                                {speaker.name}
-                              </h3>
-                              <p className="font-semibold text-black text-sm mb-2">
-                                {speaker.topic}
-                              </p>
-                              <p className="font-normal text-[#495565] text-sm">
-                                {speaker.description}
-                              </p>
-                            </div>
-                          ))}
-                        </div>
-                        <div className="border-t border-gray-200 pt-4"></div>
-                        <div className="text-sm text-[#697282] mt-4">
-                          {workshop.duration} · {workshop.type}
-                        </div>
-                      </>
-                    )}
-                  </div>
+              <div className="flex items-center justify-between w-full">
+                <button
+                  onClick={goToPrevious}
+                  className="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow hover:bg-gray-100 transition"
+                  aria-label="Previous video"
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
 
-                  {/* Bottom Buttons */}
-                  <div className="flex mt-6 flex-col md:flex-row gap-4">
-                    {/* {hasSpeakers && (
-                      <a
-                        href={workshop.signupLink}
-                        target="_blank"
-                        className="px-8 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base inline-flex items-center gap-2 justify-center min-w-35"
-                      >
-                        <Bell className="w-4 h-4" />
-                        Sign up
-                      </a>
-                    )} */}
-
-                    <a
-                      href={workshop.watchLink}
-                      target="_blank"
-                      className="px-8 py-3 bg-[#002c19] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base inline-flex items-center gap-2 justify-center min-w-45"
-                    >
-                      <Play className="w-4 h-4" />
-                      Watch / Listen
-                    </a>
-                  </div>
+                <div className="flex gap-2 justify-center flex-1">
+                  {workshops.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentWorkshop(index)}
+                      className={`h-2 w-2 rounded-full transition-all ${
+                        index === currentWorkshop ? "bg-black" : "bg-gray-300"
+                      }`}
+                      aria-label={`Go to video ${index + 1}`}
+                    />
+                  ))}
                 </div>
-              )}
+
+                <button
+                  onClick={goToNext}
+                  className="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow hover:bg-gray-100 transition"
+                  aria-label="Next video"
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </button>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Navigation */}
-          <div className="flex items-center justify-between mt-12">
-            <button
-              onClick={goToPrevious}
-              className="w-12 h-12 flex items-center justify-center hover:bg-gray-100 rounded-full transition-colors"
-              aria-label="Previous workshop"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-
-            <div className="flex gap-2">
-              {workshops.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentWorkshop(index)}
-                  className={`h-2 rounded-full transition-all ${
-                    index === currentWorkshop
-                      ? "bg-black w-2"
-                      : "bg-gray-300 w-2"
-                  }`}
-                  aria-label={`Go to workshop ${index + 1}`}
-                />
-              ))}
-            </div>
-
-            <button
-              onClick={goToNext}
-              className="w-12 h-12 flex items-center justify-center hover:bg-gray-100 rounded-full transition-colors"
-              aria-label="Next workshop"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
+      {/* Social Links */}
+      <section className="pt-12 pb-8 bg-[#3036411A]  md:px-12 lg:px-50 ">
+        <div className="max-w-4xl mx-auto px-6">
+          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
+            Connect With Us
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6  mx-auto">
+            {socialLinks.map((social) => (
+              <Link
+                key={social.name}
+                href={social.url}
+                target={social.isSubscribe ? undefined : "_blank"}
+                rel={social.isSubscribe ? undefined : "noopener noreferrer"}
+                onClick={
+                  social.isSubscribe
+                    ? (e) => {
+                        e.preventDefault();
+                        setShowNewsletter(true);
+                      }
+                    : undefined
+                }
+                className="group flex flex-col items-center gap-2 transition-transform hover:scale-110"
+              >
+                <div className="w-20 h-20 rounded-full bg-white shadow-lg flex items-center justify-center group-hover:shadow-xl transition-shadow text-black group-hover:text-gray-600">
+                  {social.svg}
+                </div>
+                {/* <span className="text-sm font-medium text-gray-700">
+                  {social.name}
+                </span> */}
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Media Cards Section */}
-      <section className="py-20 px-4  md:px-12 lg:px-50 bg-[#3036411A]">
+      <section className="pt-20 pb-4 px-4  md:px-12 lg:px-50 bg-[#3036411A]">
         <div className="max-w-300 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {mediaCards.map((card) => (
@@ -557,6 +502,15 @@ const MediaPage = () => {
                 </div>
               </div>
             ))}
+          </div>
+          {/* Archive Link */}
+          <div className="text-center pt-16">
+            <Link
+              href="/media/archive"
+              className="inline-block px-8 py-4  bg-[#1C5945] text-white  font-bold hover:shadow-lg  border  rounded-[12px] "
+            >
+              View Complete Archive
+            </Link>
           </div>
         </div>
       </section>
@@ -674,40 +628,6 @@ const MediaPage = () => {
         </div>
       </section> */}
 
-      {/* Social Links */}
-      <section className="py-12 bg-[#3036411A] ">
-        <div className="max-w-4xl mx-auto px-6">
-          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
-            Connect With Us
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-[450px] mx-auto">
-            {socialLinks.map((social) => (
-              <Link
-                key={social.name}
-                href={social.url}
-                target={social.isSubscribe ? undefined : "_blank"}
-                rel={social.isSubscribe ? undefined : "noopener noreferrer"}
-                onClick={
-                  social.isSubscribe
-                    ? (e) => {
-                        e.preventDefault();
-                        setShowNewsletter(true);
-                      }
-                    : undefined
-                }
-                className="group flex flex-col items-center gap-2 transition-transform hover:scale-110"
-              >
-                <div className="w-20 h-20 rounded-full bg-white shadow-lg flex items-center justify-center group-hover:shadow-xl transition-shadow text-black group-hover:text-gray-600">
-                  {social.svg}
-                </div>
-                {/* <span className="text-sm font-medium text-gray-700">
-                  {social.name}
-                </span> */}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
       <CTASection />
 
       <Footer />

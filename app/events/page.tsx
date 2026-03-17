@@ -31,20 +31,26 @@ const EventsPage = () => {
       <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50">
         <div className="max-w-300 mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 items-center">
-            <div>
-              <h1 className="font-bold text-black text-4xl md:text-5xl mb-6 leading-tight">
-                Connecting Next-Gen Leaders with the Resources to Scale Impact
-              </h1>
-              <p className="text-[#495565] text-lg mb-8 leading-relaxed">
-                TRIIBE hosts convening experiences that bring together next-gen
-                nonprofit founders, mentors, and partners to build connections.
+            <div className="">
+              <Image
+                src="https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/690ec0097fad8b2d6aa19eec_Screenshot_2025-11-07_at_10.58.29_PM-removebg-preview.png"
+                alt="TRIIBE TALK"
+                width={600}
+                height={150}
+                priority
+                className="w-full max-w-[400px] md:max-w-[500px] h-auto -ml-3 md:-ml-5 lg:-ml-6 object-contain object-left"
+              />
+              <p className="text-[#495565] text-lg mb-8 leading-relaxed mt-4">
+                Pairing established and next-gen changemakers in dialogue to
+                demonstrate that age doesn’t determine the quality of one’s
+                voice
               </p>
               <div className="flex">
                 <a
-                  href="#updates"
+                  href="#"
                   className="px-8 py-3 bg-[#1C5945] text-white rounded-lg font-medium"
                 >
-                  Get Updates
+                  Host a TRIIBE Talk
                 </a>
               </div>
             </div>
