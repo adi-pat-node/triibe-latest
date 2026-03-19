@@ -22,9 +22,9 @@ import {
 interface Speaker {
   name: string;
   role: string;
-  company: string;
+  organisation: string;
   linkedin: string;
-  category: "Next-Gen" | "Established";
+  category: "Established (Over 30)" | "Next-Gen";
 }
 
 interface FormData {
@@ -33,13 +33,14 @@ interface FormData {
   linkedin: string;
   organization: string;
   bio: string;
+  readGuide: string;
   venueName: string;
   city: string;
   state: string;
   eventDate: string;
   startTime: string;
   endTime: string;
-  themes: string[];
+  theme: string;
   description: string;
   speakers: Speaker[];
   eventDescription: string;
@@ -55,6 +56,7 @@ const HostEventPage = () => {
     linkedin: "",
     organization: "",
     bio: "",
+    readGuide: "No",
     venueName: "",
     city: "",
     state: "",
@@ -62,15 +64,30 @@ const HostEventPage = () => {
     startTime: "",
     endTime: "",
     eventDescription: "",
-    themes: [],
+    theme: "",
     description: "",
     speakers: [
-      { name: "", role: "", company: "", linkedin: "", category: "Next-Gen" },
+      {
+        name: "",
+        role: "",
+        organisation: "",
+        linkedin: "",
+        category: "Next-Gen",
+      },
     ],
   });
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const isEmailValid = emailRegex.test(formData.email);
+
+  const isStep3Valid = formData.speakers.every(
+    (s) =>
+      s.name.trim() !== "" &&
+      s.role.trim() !== "" &&
+      s.organisation.trim() !== "" &&
+      s.linkedin.trim() !== "" &&
+      formData.theme !== "",
+  );
 
   const isStepValid = () => {
     if (step === 1) {
@@ -81,6 +98,7 @@ const HostEventPage = () => {
         formData.bio.trim() !== ""
       );
     }
+
     if (step === 2) {
       return (
         formData.venueName.trim() !== "" &&
@@ -91,12 +109,21 @@ const HostEventPage = () => {
         formData.endTime !== ""
       );
     }
+
     if (step === 3) {
       return (
-        formData.themes.length > 0 &&
-        formData.speakers.every((s) => s.name.trim() !== "")
+        formData.theme !== "" &&
+        formData.eventDescription.trim() !== "" &&
+        formData.speakers.every(
+          (s) =>
+            s.name.trim() !== "" &&
+            s.role.trim() !== "" &&
+            s.organisation.trim() !== "" &&
+            s.linkedin.trim() !== "",
+        )
       );
     }
+
     return true;
   };
 
@@ -104,13 +131,23 @@ const HostEventPage = () => {
   const prevStep = () => setStep((s) => Math.max(s - 1, 1));
 
   const addSpeaker = () => {
-    setFormData({
-      ...formData,
-      speakers: [
-        ...formData.speakers,
-        { name: "", role: "", company: "", linkedin: "", category: "Next-Gen" },
-      ],
-    });
+    if (formData.speakers.length < 4) {
+      setFormData({
+        ...formData,
+        speakers: [
+          ...formData.speakers,
+          {
+            name: "",
+            role: "",
+            organisation: "",
+            linkedin: "",
+            category: "Next-Gen",
+          },
+        ],
+      });
+    } else {
+      alert("Maximum of 4 speakers allowed.");
+    }
   };
 
   const updateSpeaker = (
@@ -118,9 +155,9 @@ const HostEventPage = () => {
     field: keyof Speaker,
     value: string,
   ) => {
-    const newSpeakers = [...formData.speakers];
-    newSpeakers[index] = { ...newSpeakers[index], [field]: value } as Speaker;
-    setFormData({ ...formData, speakers: newSpeakers });
+    const updatedSpeakers = [...formData.speakers];
+    updatedSpeakers[index] = { ...updatedSpeakers[index], [field]: value };
+    setFormData({ ...formData, speakers: updatedSpeakers });
   };
 
   const steps = [
@@ -223,7 +260,7 @@ const HostEventPage = () => {
                         if (!emailTouched) setEmailTouched(true);
                       }}
                     />
-                    {/* Error Message */}
+
                     {emailTouched &&
                       formData.email.length > 0 &&
                       !isEmailValid && (
@@ -260,6 +297,43 @@ const HostEventPage = () => {
                         }
                       />
                     </div>
+
+                    <div className="space-y-3">
+                      <label className="text-sm font-bold text-gray-700 block">
+                        Have you read the guide? *
+                      </label>
+                      <div className="flex gap-4">
+                        {["Yes", "No"].map((option) => (
+                          <label
+                            key={option}
+                            className="flex items-center gap-2 cursor-pointer group"
+                          >
+                            <div className="relative flex items-center justify-center">
+                              <input
+                                type="radio"
+                                name="readGuide"
+                                value={option}
+                                checked={formData.readGuide === option}
+                                onChange={(e) =>
+                                  setFormData({
+                                    ...formData,
+                                    readGuide: e.target.value,
+                                  })
+                                }
+                                className="peer appearance-none w-5 h-5 border-2 border-gray-200 rounded-full checked:border-[#1C5945] transition-all"
+                              />
+
+                              <div className="absolute w-2.5 h-2.5 rounded-full bg-[#1C5945] opacity-0 peer-checked:opacity-100 transition-opacity" />
+                            </div>
+                            <span
+                              className={`text-sm font-medium ${formData.readGuide === option ? "text-black" : "text-gray-500"}`}
+                            >
+                              {option}
+                            </span>
+                          </label>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </div>
               )}
@@ -278,15 +352,12 @@ const HostEventPage = () => {
                     <div className="col-span-2 relative">
                       <InputField
                         label="Venue Name *"
-                        placeholder="e.g. Copacabana Nightclub"
+                        placeholder="e.g. WeWork Midtown, NYC"
                         value={formData.venueName}
                         onChange={(v: string) =>
                           setFormData({ ...formData, venueName: v })
                         }
                       />
-                      <button className="absolute right-4 bottom-4 text-xs font-medium text-[#1C5945] uppercase tracking-wider">
-                        Open Maps
-                      </button>
                     </div>
                     <InputField
                       label="City *"
@@ -347,25 +418,21 @@ const HostEventPage = () => {
                   </div>
 
                   <div className="space-y-4">
-                    <label className="text-sm font-medium text-gray-700">
+                    <label className="text-sm font-bold text-gray-700 block">
                       Theme *
                     </label>
 
-                    <div className="relative w-full border border-gray-200 rounded-2xl bg-white hover:border-gray-300 focus-within:ring-2 focus-within:ring-[#1C5945]/10 transition-all cursor-pointer overflow-hidden mt-2">
+                    <div className="relative min-h-[56px] w-full border border-gray-200 rounded-2xl bg-white flex items-center px-4 hover:border-gray-300 focus-within:ring-2 focus-within:ring-[#1C5945]/10 transition-all cursor-pointer">
                       <select
-                        className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-0"
-                        onChange={(e) => {
-                          const val = e.target.value;
-                          if (val && !formData.themes.includes(val)) {
-                            setFormData({
-                              ...formData,
-                              themes: [...formData.themes, val],
-                            });
-                          }
-                          e.target.value = "";
-                        }}
+                        value={formData.theme}
+                        onChange={(e) =>
+                          setFormData({ ...formData, theme: e.target.value })
+                        }
+                        className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-20"
                       >
-                        <option value="">Select themes...</option>
+                        <option value="" disabled>
+                          Select a theme...
+                        </option>
                         <option value="Food">Food</option>
                         <option value="Water">Water</option>
                         <option value="Shelter">Shelter</option>
@@ -373,65 +440,32 @@ const HostEventPage = () => {
                         <option value="Education">Education</option>
                       </select>
 
-                      <div className="flex flex-wrap gap-2 items-center p-2 relative z-10 pointer-events-none">
-                        {formData.themes.length === 0 && (
-                          <span className="text-gray-400 text-sm ml-2">
-                            Select event themes...
+                      <div className="flex items-center w-full z-10 pointer-events-none">
+                        {!formData.theme ? (
+                          <span className="text-gray-400 text-sm">
+                            Select a theme...
+                          </span>
+                        ) : (
+                          <span className="px-4 py-1.5 bg-[#D1FAE5] text-[#065F46] border border-[#1C5945]/30 rounded-full text-xs font-bold animate-in zoom-in-95 duration-200">
+                            {formData.theme}
                           </span>
                         )}
-
-                        {formData.themes.map((t) => (
-                          <span
-                            key={t}
-                            className="px-3 py-1 bg-[#D1FAE5] text-[#065F46] border border-[#1C5945]/30 rounded-full text-xs font-bold flex items-center gap-2 pointer-events-auto"
-                          >
-                            {t}
-                            <button
-                              type="button"
-                              onClick={(e) => {
-                                e.preventDefault();
-                                e.stopPropagation();
-                                setFormData({
-                                  ...formData,
-                                  themes: formData.themes.filter(
-                                    (theme) => theme !== t,
-                                  ),
-                                });
-                              }}
-                              className="hover:text-red-600 transition-colors cursor-pointer relative z-30"
-                            >
-                              <X size={12} strokeWidth={3} />
-                            </button>
-                          </span>
-                        ))}
                       </div>
 
                       <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400 z-10">
                         <ChevronDown size={20} />
                       </div>
                     </div>
-
-                    {formData.themes.length > 1 && (
-                      <div className="mt-2 p-4 bg-amber-50 border border-amber-100 rounded-2xl flex gap-3 animate-in slide-in-from-top-2">
-                        <div className="text-amber-600 pt-0.5">
-                          <AlertCircle size={18} />
-                        </div>
-                        <p className="text-xs text-amber-800 leading-relaxed">
-                          <strong>Note:</strong> Selecting multiple themes
-                          requires additional time allotment.
-                        </p>
-                      </div>
-                    )}
                   </div>
 
                   <div className="space-y-4">
                     <label className="text-sm font-medium text-gray-700">
-                      Event Description
+                      Event Description *
                     </label>
                     <textarea
                       rows={4}
                       placeholder="Describe what attendees can expect..."
-                      className="w-full p-4 rounded-2xl border border-gray-200 bg-white focus:ring-2 focus:ring-[#1C5945]/10 outline-none transition-all resize-none text-sm placeholder:text-gray-300 mt-2"
+                      className="w-full p-4 rounded-2xl border border-gray-200 bg-white focus:ring-2 focus:ring-[#1C5945]/10 outline-none transition-all resize-none text-sm placeholder:text-[#30364180] mt-2"
                       value={formData.eventDescription}
                       onChange={(e) =>
                         setFormData({
@@ -441,6 +475,170 @@ const HostEventPage = () => {
                       }
                     />
                   </div>
+
+                  <div className="space-y-6">
+                    <div className="flex justify-between items-center">
+                      <label className="text-sm font-bold text-gray-700">
+                        Speakers *
+                      </label>
+                    </div>
+                    {formData.speakers.map((s, i) => {
+                      const isLastSpeaker = i === formData.speakers.length - 1;
+
+                      return (
+                        <div
+                          key={i}
+                          className="p-6 bg-[#F9FAFB] rounded-3xl border border-gray-100 space-y-4 mb-4"
+                        >
+                          <div className="flex justify-between items-center text-xs font-medium text-black  tracking-widest px-1">
+                            <span>Speaker {i + 1} </span>
+                            <span className="text-gray-900">
+                              {s.category === "Next-Gen"
+                                ? "Next-Gen Changemaker"
+                                : "Established"}
+                            </span>
+                          </div>
+
+                          <div className="space-y-3">
+                            <input
+                              className="w-full p-4 text-sm rounded-xl border border-gray-200 bg-white outline-none focus:ring-1 focus:ring-black placeholder:text-gray-400"
+                              placeholder="Speaker name"
+                              value={s.name}
+                              onChange={(e) =>
+                                updateSpeaker(i, "name", e.target.value)
+                              }
+                            />
+                            <input
+                              className="w-full p-4 text-sm rounded-xl border border-gray-200 bg-white outline-none focus:ring-1 focus:ring-black placeholder:text-gray-400"
+                              placeholder="Title / Role"
+                              value={s.role}
+                              onChange={(e) =>
+                                updateSpeaker(i, "role", e.target.value)
+                              }
+                            />
+                            <input
+                              className="w-full p-4 text-sm rounded-xl border border-gray-200 bg-white outline-none focus:ring-1 focus:ring-black placeholder:text-gray-400"
+                              placeholder="Organization"
+                              value={s.organisation}
+                              onChange={(e) =>
+                                updateSpeaker(i, "organisation", e.target.value)
+                              }
+                            />
+                            <input
+                              className="w-full p-4 text-sm rounded-xl border border-gray-200 bg-white outline-none focus:ring-1 focus:ring-black placeholder:text-gray-400"
+                              placeholder="LinkedIn"
+                              value={s.linkedin}
+                              onChange={(e) =>
+                                updateSpeaker(i, "linkedin", e.target.value)
+                              }
+                            />
+                          </div>
+
+                          <div className="flex justify-between items-end pt-2">
+                            <div className="flex gap-6">
+                              {[
+                                {
+                                  id: "Established",
+                                  label: "Established (Over 30)",
+                                },
+                                { id: "Next-Gen", label: "Next-Gen" },
+                              ].map((option) => (
+                                <label
+                                  key={option.id}
+                                  className="flex items-center gap-2 cursor-pointer group"
+                                >
+                                  <div className="relative flex items-center justify-center">
+                                    <input
+                                      type="radio"
+                                      name={`category-${i}`}
+                                      checked={s.category === option.id}
+                                      onChange={() =>
+                                        updateSpeaker(i, "category", option.id)
+                                      }
+                                      className="peer appearance-none w-4 h-4 border border-gray-400 rounded-full checked:border-black transition-all"
+                                    />
+                                    <div className="absolute w-2 h-2 rounded-full bg-black opacity-0 peer-checked:opacity-100 transition-opacity" />
+                                  </div>
+                                  <span
+                                    className={`text-sm ${s.category === option.id ? "text-black font-medium" : "text-gray-500"}`}
+                                  >
+                                    {option.label}
+                                  </span>
+                                </label>
+                              ))}
+                            </div>
+
+                            {isLastSpeaker && (
+                              <button
+                                type="button"
+                                onClick={addSpeaker}
+                                disabled={formData.speakers.length >= 4}
+                                className={`font-bold text-sm transition-all ${
+                                  formData.speakers.length >= 4
+                                    ? "text-gray-500 cursor-not-allowed"
+                                    : "text-[#1C5945] hover:opacity-80"
+                                }`}
+                              >
+                                {formData.speakers.length >= 4
+                                  ? "Only 4 speakers allowed"
+                                  : "+ Add Speaker"}
+                              </button>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {step === 4 && (
+                <div className="space-y-6 animate-in fade-in duration-500">
+                  <div>
+                    <h2 className="text-2xl font-bold text-[#002C19] mb-2">
+                      Review Your Request
+                    </h2>
+                    <p className="text-sm text-gray-500 mb-8">
+                      Please review all details before submitting.
+                    </p>
+                  </div>
+
+                  <ReviewSection
+                    title="Host Information"
+                    data={[
+                      { l: "Name", v: formData.fullName },
+                      { l: "Email", v: formData.email },
+                      { l: "LinkedIn", v: formData.linkedin },
+                      { l: "Organization", v: formData.organization },
+                      { l: "Bio", v: formData.bio },
+                    ]}
+                  />
+
+                  <ReviewSection
+                    title="Event Location & Time"
+                    showMap={true}
+                    data={[
+                      { l: "Venue", v: formData.venueName },
+                      {
+                        l: "Location",
+                        v: `${formData.city}, ${formData.state}`,
+                      },
+                      { l: "Date", v: formData.eventDate },
+                      {
+                        l: "Time",
+                        v: `${formData.startTime} - ${formData.endTime}`,
+                      },
+                    ]}
+                  />
+
+                  <ReviewSection
+                    title="Theme & Speakers"
+                    theme={formData.theme}
+                    description={formData.eventDescription}
+                    speakers={formData.speakers}
+                    venue={formData.venueName}
+                    city={formData.city}
+                  />
                 </div>
               )}
 
@@ -463,12 +661,19 @@ const HostEventPage = () => {
                   disabled={!isStepValid()}
                   className={`flex items-center gap-3 px-10 py-4 rounded-2xl font-bold transition-all duration-300 ${
                     isStepValid()
-                      ? "bg-[#1C5945] text-white  cursor-pointer"
+                      ? "bg-[#1C5945] text-white cursor-pointer"
                       : "bg-[#E5E7EB] text-[#30364166] cursor-not-allowed"
                   }`}
                 >
-                  {step === 4 ? "Submit Request" : "Continue"}
-                  <ArrowRight size={18} />
+                  {step === 4 ? (
+                    <>
+                      <Send size={18} /> Submit Request
+                    </>
+                  ) : (
+                    <>
+                      Continue <ArrowRight size={18} />
+                    </>
+                  )}
                 </button>
               </div>
             </div>
@@ -504,6 +709,82 @@ const InputField = ({
       onChange={(e: ChangeEvent<HTMLInputElement>) => onChange(e.target.value)}
       className="w-full p-4 rounded-2xl bg-white border border-gray-200 focus:ring-2 focus:ring-[#1C5945]/10 outline-none transition-all"
     />
+  </div>
+);
+
+const ReviewSection = ({
+  title,
+  data,
+  showMap = false,
+  theme,
+  description,
+  speakers,
+  venue,
+  city,
+}: {
+  title: string;
+  data?: { l: string; v: string }[];
+  showMap?: boolean;
+  theme?: string;
+  description?: string;
+  speakers?: Speaker[];
+  venue?: string;
+  city?: string;
+}) => (
+  <div className="p-8 bg-[#F9FAFB] rounded-[32px] border border-gray-100">
+    <h4 className="text-[14px] font-bold text-[#1C5945]  mb-2 ">{title}</h4>
+    <div className="flex justify-between gap-6 items-center">
+      <div className="space-y-3 flex-1">
+        {data?.map((item, i) => (
+          <p key={i} className="text-sm text-gray-600">
+            <span className="font-bold text-gray-900">{item.l}:</span>{" "}
+            {item.v || "Not provided"}
+          </p>
+        ))}
+
+        {theme && (
+          <div className="space-y-4 mt-0">
+            <p className="text-sm text-gray-600">
+              <span className="font-bold text-gray-900">Topic:</span> {theme}
+            </p>
+
+            {description && (
+              <p className="text-sm text-gray-600">
+                <span className="font-bold text-gray-900">Description:</span>{" "}
+                {description}
+              </p>
+            )}
+            {speakers && (
+              <div className="space-y-1">
+                <p className="text-sm font-bold text-gray-900">Speakers:</p>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  •{" "}
+                  {speakers
+                    .map((s) => s.name)
+                    .filter((n) => n.trim() !== "")
+                    .join(", ")}{" "}
+                  at {venue || "Venue"}, {city || "City"}
+                </p>
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+
+      {showMap && (
+        <div className="hidden md:block w-[200px] h-[140px] rounded-[24px] overflow-hidden flex-shrink-0">
+          <img
+            src="/images/host/mapPlaceholder.png"
+            alt="Map View"
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              e.currentTarget.src =
+                "https://via.placeholder.com/200x120?text=Map+View";
+            }}
+          />
+        </div>
+      )}
+    </div>
   </div>
 );
 
