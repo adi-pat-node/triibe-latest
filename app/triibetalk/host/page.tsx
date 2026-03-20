@@ -494,7 +494,7 @@ const HostEventPage = () => {
                           key={i}
                           className="p-6 bg-[#F9FAFB] rounded-3xl border border-gray-100 space-y-4 mb-4"
                         >
-                          <div className="flex justify-between items-center text-xs font-medium text-black  tracking-widest px-1">
+                          <div className="flex flex-col md:flex-row justify-between md:items-center gap-3 md:gap-0 text-xs font-medium text-black tracking-wide px-1">
                             <span>Speaker {i + 1} </span>
                             <span className="text-gray-900">
                               {s.category === "Next-Gen"
