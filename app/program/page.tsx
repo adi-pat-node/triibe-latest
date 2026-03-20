@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import ApplicationProcess from "@/components/applicationProcess";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import CTASection from "@/components/cta";
@@ -196,20 +197,19 @@ const ProgramPage = () => {
               </p>
             </div>
 
-            <div className="flex items-center gap-4 flex-col md:flex-row ">
+            <div className="flex flex-col gap-4 w-full">
               <button
-                zeffy-form-link="https://www.zeffy.com/embed/donation-form/invest-in-the-future-3?modal=true"
-                className="px-6 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors  font-semibold text-base w-full md:w-auto text-center cursor-pointer"
-              >
-                Donate
+              className="w-full md:w-auto px-6 py-3 bg-[#002c19] text-white rounded hover:bg-[#003d24] transition-colors text-center font-semibold text-base"
+            >
+             Apply
               </button>
 
               <a
-                href="/apply"
-                className="w-full md:w-auto px-6 py-3 bg-[#002c19] text-white rounded hover:bg-[#003d24] transition-colors text-center font-semibold text-base"
+              zeffy-form-link="https://www.zeffy.com/embed/donation-form/invest-in-the-future-3?modal=true"
+              className="px-6 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base w-full md:w-auto text-center cursor-pointer"
               >
-                Apply
-              </a>
+             Donate
+             </a>
             </div>
           </div>
         </div>
@@ -221,7 +221,7 @@ const ProgramPage = () => {
         <div className="max-w-260 mx-auto">
           <div className="max-w-5xl mx-auto text-center">
             <h1 className="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
-              Nonprofit founders are cut off from funding when entering College
+              Nonprofit founders are cut off from funding when entering college
             </h1>
           </div>
 
@@ -240,6 +240,9 @@ const ProgramPage = () => {
           </div>
         </div>
       </section>
+
+      <ApplicationProcess />
+
 
       {/* Three Pillars of Support Section */}
       <section className="py-20 px-4 md:px-25 lg:px-50 bg-white border-t border-gray-200">
