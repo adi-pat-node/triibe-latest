@@ -167,6 +167,7 @@ const ProgramPage = () => {
       <Header />
 
       {/* Hero Section */}
+      {/*
       <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50 bg-white">
         <div className="max-w-260 mx-auto">
           <div className="flex flex-col gap-8">
@@ -192,14 +193,13 @@ const ProgramPage = () => {
               </div>
 
               <p className=" font-normal text-[#495565] text-xl leading-8 max-w-200">
-                TRIIBE provides funding, mentorship, and community for college
-                students taking root today to advance tomorrow
+                TRIIBE provides funding, mentorship, and community for college students building organizations that create social impact.
               </p>
             </div>
 
             <div className="flex flex-col gap-4 w-full">
               <button
-              className="w-full md:w-auto px-6 py-3 bg-[#002c19] text-white rounded hover:bg-[#003d24] transition-colors text-center font-semibold text-base"
+              className="w-full md:w-auto px-6 py-3 bg-[#1C5945] hover:bg-[#003d24] text-white rounded border border-[#1C5945] transition-colors text-center font-semibold text-base"
             >
              Apply
               </button>
@@ -214,16 +214,17 @@ const ProgramPage = () => {
           </div>
         </div>
       </section>
+      */ }
 
       {/* Problem Visual/Infographic */}
 
       <section className="  px-6 bg-white md:px-25 lg:px-[200px]">
         <div className="max-w-260 mx-auto">
-          <div className="max-w-5xl mx-auto text-center">
-            <h1 className="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
-              Nonprofit founders are cut off from funding when entering college
-            </h1>
-          </div>
+          <div className="max-w-5xl mx-auto">
+          <p className="text-base md:text-lg font-medium text-gray-600 leading-relaxed text-left">
+           Nonprofit founders are cut off from funding when entering college
+  </p>
+</div>
 
           {/* <section className="py-8 px-6 bg-gray-50"> */}
           <div className="max-w-7xl mx-auto">
