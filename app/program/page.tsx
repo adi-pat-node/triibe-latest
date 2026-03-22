@@ -218,13 +218,13 @@ const ProgramPage = () => {
 
       {/* Problem Visual/Infographic */}
 
-      <section className="  px-6 bg-white md:px-25 lg:px-[200px]">
-        <div className="max-w-260 mx-auto">
+        <section className="pt-20 px-6 bg-white md:px-25 lg:px-50">        
+          <div className="max-w-260 mx-auto">
           <div className="max-w-5xl mx-auto">
           <p className="text-base md:text-lg font-medium text-gray-600 leading-relaxed text-left">
            Nonprofit founders are cut off from funding when entering college
-  </p>
-</div>
+          </p>
+          </div>
 
           {/* <section className="py-8 px-6 bg-gray-50"> */}
           <div className="max-w-7xl mx-auto">

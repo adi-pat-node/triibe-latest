@@ -45,7 +45,7 @@ const EventsPage = () => {
                 demonstrate that age doesn’t determine the quality of one’s
                 voice
               </p>
-              <div className="flex w-full items-center justify-between">
+              <div className="flex w-full items-center justify-center gap-4">
 
               <a
               href="/triibetalk/guide"
