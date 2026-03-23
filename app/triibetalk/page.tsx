@@ -45,10 +45,12 @@ const EventsPage = () => {
                 demonstrate that age doesn’t determine the quality of one’s
                 voice
               </p>
-              <div className="flex w-full items-center justify-center gap-4">
+              <div className="flex w-full items-center justify-start gap-4">
 
               <a
               href="https://drive.google.com/file/d/1rALrh5bjpWnbKq2AvxeudYOpPG7kFsZ-/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-medium"
               >
                 TRIIBE Talk Guide
