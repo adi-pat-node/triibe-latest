@@ -221,7 +221,7 @@ const ProgramPage = () => {
         <section className="pt-32 px-6 bg-white md:px-25 lg:px-50">        
           <div className="max-w-260 mx-auto">
           <div className="max-w-5xl mx-auto">
-          <p className="text-base md:text-lg font-medium text-gray-600 leading-relaxed text-left">
+          <p className="font-bold text-black text-4xl md:text-[40px]  leading-tight">
            Nonprofit founders are cut off from funding when entering college
           </p>
           </div>

@@ -40,7 +40,7 @@ const EventsPage = () => {
                 priority
                 className="w-full max-w-[400px] md:max-w-[500px] h-auto -ml-3 md:-ml-5 lg:-ml-6 object-contain object-left"
               />
-              <p className="text-[#495565] text-lg mb-8 leading-relaxed mt-4 font-bold">
+              <p className="text-[#495565] text-lg mb-8 leading-relaxed mt-4 font-normal">
                 Pairing established and next-gen changemakers in dialogue to
                 demonstrate that age doesn’t determine the quality of one’s
                 voice
@@ -51,14 +51,14 @@ const EventsPage = () => {
               href="https://drive.google.com/file/d/1rALrh5bjpWnbKq2AvxeudYOpPG7kFsZ-/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-medium"
+              className="h-9 px-4 py-2 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-medium inline-flex items-center cursor-pointer"
               >
                 TRIIBE Talk Guide
               </a>
 
               <a
               href="/triibetalk/host"
-              className="px-8 py-3 bg-[#1C5945] text-white rounded-lg font-medium hover:bg-[#003d24] transition-colors"
+              className="h-9 px-4 py-2 bg-[#1C5945] text-white border border-green rounded font-medium hover:bg-[#003d24] transition-colors font-medium inline-flex items-center cursor-pointer"
               >
                 Host a TRIIBE Talk
               </a>
