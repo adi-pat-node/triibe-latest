@@ -1,3 +1,4 @@
+import DeckSection from "@/components/deckSection";
 import dynamic from "next/dynamic";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
@@ -21,7 +22,7 @@ export default function Home() {
       <Hero />
       {/* <MissionStatement /> */}
       <ProgramOverview />
-      
+      <DeckSection />
       <FellowshipBenefits />
       <KeyStatistics />
       <Changemakers />
