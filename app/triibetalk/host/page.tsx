@@ -24,7 +24,7 @@ interface Speaker {
   role: string;
   organisation: string;
   linkedin: string;
-  category: "Established (Over 30)" | "Next-Gen";
+  category: "Established (Over 30)" | "Next-Gen" | "";
 }
 
 interface FormData {
@@ -48,6 +48,12 @@ interface FormData {
 
 const HostEventPage = () => {
   const [emailTouched, setEmailTouched] = useState(false);
+  const [linkedinTouched, setLinkedinTouched] = useState(false);
+  const [endTimeTouched, setEndTimeTouched] = useState(false);
+  const [dateTouched, setDateTouched] = useState(false);
+  const [speakerLinkedinTouched, setSpeakerLinkedinTouched] = useState<
+    boolean[]
+  >([false]);
   const router = useRouter();
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState<FormData>({
@@ -80,12 +86,34 @@ const HostEventPage = () => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const isEmailValid = emailRegex.test(formData.email);
 
+  const isLinkedinValid = (url: string) =>
+    url.startsWith("https://") && url.includes("www.linkedin.com/");
+
+  const isHostLinkedinValid = isLinkedinValid(formData.linkedin);
+
+  const isEndTimeValid =
+    !formData.startTime ||
+    !formData.endTime ||
+    formData.endTime > formData.startTime;
+
+  // Date validation: today onwards, max 6 months out
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const sixMonthsOut = new Date(today);
+  sixMonthsOut.setMonth(sixMonthsOut.getMonth() + 6);
+  const todayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
+  const maxDateStr = `${sixMonthsOut.getFullYear()}-${String(sixMonthsOut.getMonth() + 1).padStart(2, "0")}-${String(sixMonthsOut.getDate()).padStart(2, "0")}`;
+
+  const isDateValid =
+    !formData.eventDate ||
+    (formData.eventDate >= todayStr && formData.eventDate <= maxDateStr);
+
   const isStep3Valid = formData.speakers.every(
     (s) =>
       s.name.trim() !== "" &&
       s.role.trim() !== "" &&
       s.organisation.trim() !== "" &&
-      s.linkedin.trim() !== "" &&
+      isLinkedinValid(s.linkedin) &&
       formData.theme !== "",
   );
 
@@ -94,7 +122,7 @@ const HostEventPage = () => {
       return (
         formData.fullName.trim() !== "" &&
         isEmailValid &&
-        formData.linkedin.trim() !== "" &&
+        isHostLinkedinValid &&
         formData.bio.trim() !== ""
       );
     }
@@ -105,8 +133,10 @@ const HostEventPage = () => {
         formData.city.trim() !== "" &&
         formData.state.trim() !== "" &&
         formData.eventDate !== "" &&
+        isDateValid &&
         formData.startTime !== "" &&
-        formData.endTime !== ""
+        formData.endTime !== "" &&
+        isEndTimeValid
       );
     }
 
@@ -119,7 +149,7 @@ const HostEventPage = () => {
             s.name.trim() !== "" &&
             s.role.trim() !== "" &&
             s.organisation.trim() !== "" &&
-            s.linkedin.trim() !== "",
+            isLinkedinValid(s.linkedin),
         )
       );
     }
@@ -141,10 +171,11 @@ const HostEventPage = () => {
             role: "",
             organisation: "",
             linkedin: "",
-            category: "Next-Gen",
+            category: "",
           },
         ],
       });
+      setSpeakerLinkedinTouched([...speakerLinkedinTouched, false]);
     } else {
       alert("Maximum of 4 speakers allowed.");
     }
@@ -272,14 +303,26 @@ const HostEventPage = () => {
                           Please enter a valid email address
                         </p>
                       )}
-                    <InputField
-                      label="LinkedIn Profile *"
-                      placeholder="www.linkedin.com/in/"
-                      value={formData.linkedin}
-                      onChange={(v: string) =>
-                        setFormData({ ...formData, linkedin: v })
-                      }
-                    />
+                    <div className="flex flex-col gap-2">
+                      <InputField
+                        label="LinkedIn Profile *"
+                        type="url"
+                        placeholder="https://www.linkedin.com/in/username"
+                        value={formData.linkedin}
+                        onChange={(v: string) => {
+                          setFormData({ ...formData, linkedin: v });
+                          if (!linkedinTouched) setLinkedinTouched(true);
+                        }}
+                      />
+                      {linkedinTouched &&
+                        formData.linkedin.length > 0 &&
+                        !isHostLinkedinValid && (
+                          <p className="text-red-500 text-xs font-medium ml-1 animate-in fade-in slide-in-from-top-1">
+                            Please enter a valid LinkedIn URL (e.g.
+                            https://www.linkedin.com/in/username)
+                          </p>
+                        )}
+                    </div>
                     <InputField
                       label="Organization"
                       placeholder="Your organization name"
@@ -380,14 +423,32 @@ const HostEventPage = () => {
                       }
                     />
                     <div className="col-span-2">
-                      <InputField
-                        label="Event Date *"
-                        type="date"
-                        value={formData.eventDate}
-                        onChange={(v: string) =>
-                          setFormData({ ...formData, eventDate: v })
-                        }
-                      />
+                      <div className="flex flex-col gap-2">
+                        <label className="text-sm font-bold text-gray-700">
+                          Event Date *
+                        </label>
+                        <input
+                          type="date"
+                          min={todayStr}
+                          max={maxDateStr}
+                          placeholder="MM-DD-YYYY"
+                          value={formData.eventDate}
+                          onChange={(v) => {
+                            setFormData({
+                              ...formData,
+                              eventDate: v.target.value,
+                            });
+                            if (!dateTouched) setDateTouched(true);
+                          }}
+                          className="w-full p-4 rounded-2xl bg-white border border-gray-200 focus:ring-2 focus:ring-[#1C5945]/10 outline-none transition-all"
+                        />
+                        {dateTouched && formData.eventDate && !isDateValid && (
+                          <p className="text-red-500 text-xs font-medium ml-1 animate-in fade-in slide-in-from-top-1">
+                            Event date must be today or within the next 6
+                            months.
+                          </p>
+                        )}
+                      </div>
                     </div>
                     <InputField
                       label="Start Time *"
@@ -397,14 +458,24 @@ const HostEventPage = () => {
                         setFormData({ ...formData, startTime: v })
                       }
                     />
-                    <InputField
-                      label="End Time *"
-                      type="time"
-                      value={formData.endTime}
-                      onChange={(v: string) =>
-                        setFormData({ ...formData, endTime: v })
-                      }
-                    />
+                    <div className="flex flex-col gap-2">
+                      <InputField
+                        label="End Time *"
+                        type="time"
+                        value={formData.endTime}
+                        onChange={(v: string) => {
+                          setFormData({ ...formData, endTime: v });
+                          if (!endTimeTouched) setEndTimeTouched(true);
+                        }}
+                      />
+                      {endTimeTouched &&
+                        formData.endTime &&
+                        !isEndTimeValid && (
+                          <p className="text-red-500 text-xs font-medium ml-1 animate-in fade-in slide-in-from-top-1">
+                            End time cannot be before start time.
+                          </p>
+                        )}
+                    </div>
                   </div>
                 </div>
               )}
@@ -488,6 +559,7 @@ const HostEventPage = () => {
                     </div>
                     {formData.speakers.map((s, i) => {
                       const isLastSpeaker = i === formData.speakers.length - 1;
+                      const isFirstSpeaker = i === 0;
 
                       return (
                         <div
@@ -497,9 +569,13 @@ const HostEventPage = () => {
                           <div className="flex flex-col md:flex-row justify-between md:items-center gap-3 md:gap-0 text-xs font-medium text-black tracking-wide px-1">
                             <span>Speaker {i + 1} </span>
                             <span className="text-gray-900">
-                              {s.category === "Next-Gen"
+                              {isFirstSpeaker
                                 ? "Next-Gen Changemaker"
-                                : "Established"}
+                                : s.category === "Next-Gen"
+                                  ? "Next-Gen Changemaker"
+                                  : s.category === "Established (Over 30)"
+                                    ? "Established"
+                                    : ""}
                             </span>
                           </div>
 
@@ -528,73 +604,93 @@ const HostEventPage = () => {
                                 updateSpeaker(i, "organisation", e.target.value)
                               }
                             />
-                            <input
-                              className="w-full p-4 text-sm rounded-xl border border-gray-200 bg-white outline-none focus:ring-1 focus:ring-black placeholder:text-gray-400"
-                              placeholder="LinkedIn"
-                              value={s.linkedin}
-                              onChange={(e) =>
-                                updateSpeaker(i, "linkedin", e.target.value)
-                              }
-                            />
-                          </div>
-
-                          <div className="flex flex-col gap-4 pt-2">
-                            <div className="flex flex-col md:flex-row gap-4 md:gap-6">
-                              {[
-                                {
-                                  id: "Established",
-                                  label: "Established (Over 30)",
-                                },
-                                { id: "Next-Gen", label: "Next-Gen" },
-                              ].map((option) => (
-                                <label
-                                  key={option.id}
-                                  className="flex items-center gap-2 cursor-pointer group"
-                                >
-                                  <div className="relative flex items-center justify-center">
-                                    <input
-                                      type="radio"
-                                      name={`category-${i}`}
-                                      checked={s.category === option.id}
-                                      onChange={() =>
-                                        updateSpeaker(i, "category", option.id)
-                                      }
-                                      className="peer appearance-none w-4 h-4 border border-gray-400 rounded-full checked:border-black transition-all"
-                                    />
-                                    <div className="absolute w-2 h-2 rounded-full bg-black opacity-0 peer-checked:opacity-100 transition-opacity" />
-                                  </div>
-                                  <span
-                                    className={`text-sm ${
-                                      s.category === option.id
-                                        ? "text-black font-medium"
-                                        : "text-gray-500"
-                                    }`}
-                                  >
-                                    {option.label}
-                                  </span>
-                                </label>
-                              ))}
+                            <div className="flex flex-col gap-1">
+                              <input
+                                type="url"
+                                className="w-full p-4 text-sm rounded-xl border border-gray-200 bg-white outline-none focus:ring-1 focus:ring-black placeholder:text-gray-400"
+                                placeholder="https://www.linkedin.com/in/username"
+                                value={s.linkedin}
+                                onChange={(e) => {
+                                  updateSpeaker(i, "linkedin", e.target.value);
+                                  const updated = [...speakerLinkedinTouched];
+                                  updated[i] = true;
+                                  setSpeakerLinkedinTouched(updated);
+                                }}
+                              />
+                              {speakerLinkedinTouched[i] &&
+                                s.linkedin.length > 0 &&
+                                !isLinkedinValid(s.linkedin) && (
+                                  <p className="text-red-500 text-xs font-medium ml-1 animate-in fade-in slide-in-from-top-1">
+                                    Please enter a valid LinkedIn URL (e.g.
+                                    https://www.linkedin.com/in/username)
+                                  </p>
+                                )}
                             </div>
-
-                            {isLastSpeaker && (
-                              <div className="flex justify-end">
-                                <button
-                                  type="button"
-                                  onClick={addSpeaker}
-                                  disabled={formData.speakers.length >= 4}
-                                  className={`font-bold text-sm transition-all ${
-                                    formData.speakers.length >= 4
-                                      ? "text-gray-500 cursor-not-allowed"
-                                      : "text-[#1C5945] hover:opacity-80"
-                                  }`}
-                                >
-                                  {formData.speakers.length >= 4
-                                    ? "Only 4 speakers allowed"
-                                    : "+ Add Speaker"}
-                                </button>
-                              </div>
-                            )}
                           </div>
+
+                          {!isFirstSpeaker && (
+                            <div className="flex flex-col gap-4 pt-2">
+                              <div className="flex flex-col md:flex-row gap-4 md:gap-6">
+                                {[
+                                  {
+                                    id: "Established (Over 30)",
+                                    label: "Established (Over 30)",
+                                  },
+                                  { id: "Next-Gen", label: "Next-Gen" },
+                                ].map((option) => (
+                                  <label
+                                    key={option.id}
+                                    className="flex items-center gap-2 cursor-pointer group"
+                                  >
+                                    <div className="relative flex items-center justify-center">
+                                      <input
+                                        type="radio"
+                                        name={`category-${i}`}
+                                        checked={s.category === option.id}
+                                        onChange={() =>
+                                          updateSpeaker(
+                                            i,
+                                            "category",
+                                            option.id,
+                                          )
+                                        }
+                                        className="peer appearance-none w-4 h-4 border border-gray-400 rounded-full checked:border-black transition-all"
+                                      />
+                                      <div className="absolute w-2 h-2 rounded-full bg-black opacity-0 peer-checked:opacity-100 transition-opacity" />
+                                    </div>
+                                    <span
+                                      className={`text-sm ${
+                                        s.category === option.id
+                                          ? "text-black font-medium"
+                                          : "text-gray-500"
+                                      }`}
+                                    >
+                                      {option.label}
+                                    </span>
+                                  </label>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+
+                          {isLastSpeaker && (
+                            <div className="flex justify-end">
+                              <button
+                                type="button"
+                                onClick={addSpeaker}
+                                disabled={formData.speakers.length >= 4}
+                                className={`font-bold text-sm transition-all ${
+                                  formData.speakers.length >= 4
+                                    ? "text-gray-500 cursor-not-allowed"
+                                    : "text-[#1C5945] hover:opacity-80"
+                                }`}
+                              >
+                                {formData.speakers.length >= 4
+                                  ? "Only 4 speakers allowed"
+                                  : "+ Add Speaker"}
+                              </button>
+                            </div>
+                          )}
                         </div>
                       );
                     })}
