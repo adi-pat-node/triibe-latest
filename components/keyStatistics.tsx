@@ -49,7 +49,7 @@ const supportedByLogos = [
   },
 
   {
-    src: "/images/home/streamr.png",
+    src: "/images/home/streamr1.png",
     alt: "Supported by partner 3",
     className: "w-64 h-[58px] object-contain",
   },
@@ -107,12 +107,12 @@ const partneredWithLogos = [
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
   {
-    src: "/images/home/touchalife.png",
+    src: "/images/home/touchalife1.png",
     alt: "Partnered with organization 4",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
   {
-    src: "/images/home/impacthub.png",
+    src: "/images/home/impacthub1.png",
     alt: "Partnered with organization 4",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
@@ -127,12 +127,12 @@ const partneredWithLogos = [
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
   {
-    src: "/images/home/finpublica.png",
+    src: "/images/home/finpublica1.png",
     alt: "Partnered with organization 4",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
   {
-    src: "/images/home/silc.png",
+    src: "/images/home/silc1.png",
     alt: "Partnered with organization 4",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },

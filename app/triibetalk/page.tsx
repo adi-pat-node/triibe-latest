@@ -46,23 +46,21 @@ const EventsPage = () => {
                 voice
               </p>
               <div className="flex w-full items-center justify-start gap-4">
+                <a
+                  href="https://drive.google.com/file/d/1rALrh5bjpWnbKq2AvxeudYOpPG7kFsZ-/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="h-9 px-4 py-2 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-medium inline-flex items-center cursor-pointer"
+                >
+                  TRIIBE Talk Guide
+                </a>
 
-              <a
-              href="https://drive.google.com/file/d/1rALrh5bjpWnbKq2AvxeudYOpPG7kFsZ-/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="h-9 px-4 py-2 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-medium inline-flex items-center cursor-pointer"
-              >
-                TRIIBE Talk Guide
-              </a>
-
-              <a
-              href="/triibetalk/host"
-              className="h-9 px-4 py-2 bg-[#1C5945] text-white border border-green rounded font-medium hover:bg-[#003d24] transition-colors font-medium inline-flex items-center cursor-pointer"
-              >
-                Host a TRIIBE Talk
-              </a>
-
+                <a
+                  href="/triibetalk/host"
+                  className="h-9 px-4 py-2 bg-[#1C5945] text-white border border-green rounded font-medium hover:bg-[#003d24] transition-colors font-medium inline-flex items-center cursor-pointer"
+                >
+                  Host a TRIIBE Talk
+                </a>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-2">
@@ -74,6 +72,7 @@ const EventsPage = () => {
                   className="object-cover"
                 />
               </div>
+
               <div className="relative aspect-square rounded-tr-4xl overflow-hidden">
                 <Image
                   src="/images/events/newImg.jpg"
@@ -82,18 +81,11 @@ const EventsPage = () => {
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-square rounded-bl-4xl overflow-hidden">
+
+              <div className="relative aspect-[2/1] col-span-2 rounded-b-4xl overflow-hidden">
                 <Image
-                  src="/images/events/summit-2.jpg"
+                  src="/images/events/summit-3.png"
                   alt="3"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative aspect-square rounded-br-4xl overflow-hidden">
-                <Image
-                  src="/images/events/summit-4.jpg"
-                  alt="4"
                   fill
                   className="object-cover"
                 />

@@ -17,7 +17,7 @@ const teamMembers = [
     name: "Kyle Matthys",
     role: "CEO & FOUNDER",
     bio: "Founder and CEO of TRIIBE. We help young nonprofit founders scale from sophomore to senior year of college: Those advancing food, water, shelter, health, education, or energy.",
-    image: "/images/about/team/KyleMatthys.jpg",
+    image: "/images/about/team/KyleMatthys.png",
     linkedin: "https://www.linkedin.com/in/kylematthys/",
   },
   {

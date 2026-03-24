@@ -10,7 +10,7 @@ export default function Hero() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 w-full h-full ">
           <Image
-            src="/images/home/heroImage.png"
+            src="/images/home/heroImage1.png"
             alt="College students collaborating"
             fill
             priority
