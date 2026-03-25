@@ -75,7 +75,7 @@ const EventsPage = () => {
 
               <div className="relative aspect-square rounded-tr-4xl overflow-hidden">
                 <Image
-                  src="/images/events/newImg.jpg"
+                  src="/images/events/summit-2.jpg"
                   alt="2"
                   fill
                   className="object-cover"

@@ -31,7 +31,7 @@ const programSections = [
     imageUrl: "/images/home/whatWeDo2.png",
     imagePosition: "left",
     fontWeight: "font-semibold",
-    imageObjectPosition: "object-cover object-bottom",
+    imageObjectPosition: "object-cover object-top",
   },
   {
     title: "How We Do It",

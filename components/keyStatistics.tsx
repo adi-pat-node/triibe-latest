@@ -172,7 +172,7 @@ export default function KeyStatistics() {
             SPONSORED BY
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-12 md:gap-8 place-items-center">
+          <div className="flex flex-wrap justify-center gap-12 md:gap-8">
             {supportedByLogos.map((logo, index) => (
               <Image
                 key={index}
@@ -194,7 +194,7 @@ export default function KeyStatistics() {
             {partneredWithLogos.map((logo, index) => (
               <Image
                 key={index}
-                className={logo.className}
+                className={`h-12 w-auto object-contain ${logo.className}`}
                 alt={logo.alt}
                 src={logo.src}
                 width={256}
