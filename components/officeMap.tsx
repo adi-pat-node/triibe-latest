@@ -17,7 +17,7 @@ const REGIONS: Region[] = [
   {
     id: "toronto",
     name: "Toronto, Canada",
-    coordinates: { x: 25.5, y: 35 },
+    coordinates: { x: 25, y: 23 },
     description:
       "Explore our Canadian cohorts, social entrepreneurship, and local news.",
     status: "Active Hub",
@@ -26,29 +26,29 @@ const REGIONS: Region[] = [
   {
     id: "london",
     name: "London, UK",
-    coordinates: { x: 46.8, y: 29 },
+    coordinates: { x: 48.8, y: 20 },
     description:
       "Expansion hub focusing on European sustainability initiatives.",
     status: "Branch Office",
-    link: "/london",
+    link: "/about",
   },
   {
     id: "mumbai",
     name: "Mumbai, India",
-    coordinates: { x: 67.5, y: 51 },
+    coordinates: { x: 73.5, y: 44 },
     description:
       "Partnering for cross-border mentorship and economic development.",
     status: "Strategic Partner",
-    link: "/mumbai",
+    link: "/about",
   },
   {
     id: "manila",
     name: "Manila, Philippines",
-    coordinates: { x: 81.0, y: 53 },
+    coordinates: { x: 89.2, y: 50 },
     description:
       "Supporting the Philippine Health Initiative and local social enterprises.",
     status: "Impact Site",
-    link: "/manila",
+    link: "/about",
   },
 ];
 
@@ -66,9 +66,9 @@ export default function OfficeMap() {
           globe <br /> Click on the map to learn more
         </p>
 
-        <div className="relative bg-white rounded-3xl border border-gray-100 shadow-sm aspect-video  overflow-hidden w-full">
+        <div className="relative bg-white rounded-3xl border border-gray-100 shadow-sm  aspect-[2/1]  overflow-hidden w-full">
           <img
-            src="/images/world.svg"
+            src="/images/world1.svg"
             alt="World Map"
             className="absolute inset-0 w-full h-full object-cover pointer-events-none"
           />
@@ -80,7 +80,7 @@ export default function OfficeMap() {
               href={region.link}
               onMouseEnter={() => setHoveredRegion(region)}
               onMouseLeave={() => setHoveredRegion(null)}
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 z-10 hover:scale-110 transition-transform cursor-pointer"
+              className="absolute transform bg-white/80 rounded-full  -translate-x-1/2 -translate-y-1/2 z-10 hover:scale-110 transition-transform cursor-pointer"
               style={{
                 top: `${region.coordinates.y}%`,
                 left: `${region.coordinates.x}%`,

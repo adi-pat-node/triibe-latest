@@ -23,11 +23,12 @@ export default function Home() {
       {/* <MissionStatement /> */}
       <ProgramOverview />
       <DeckSection />
+      {/* <OfficeMap /> */}
       <FellowshipBenefits />
       <KeyStatistics />
       <Changemakers />
       <PostGraduationOutcomes />
-       {/*  <OfficeMap /> */}
+
       {/* <SponsorsAndPartners /> */}
       {/* <ImpactMetrics /> */}
       <CTASection />
