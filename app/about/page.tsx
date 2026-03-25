@@ -870,6 +870,13 @@ const legacyBoard = [
     image: "/images/about/team/Lara Stein.jpg",
     linkedin: "https://www.linkedin.com/in/citizenstein/",
   },
+  {
+    name: "Dr. Purnima Voria",
+    role: "Legacy Board Member",
+    bio: "Dr. Purnima Voria is the Founder and CEO of the National US India Chamber of Commerce and a former national advisor to the US Secretary of Commerce for MBDA.",
+    image: "/images/about/team/Purnima Voria.png",
+    linkedin: "https://www.linkedin.com/in/purnimavoria/",
+  },
 ];
 
 const southAmerica = [];

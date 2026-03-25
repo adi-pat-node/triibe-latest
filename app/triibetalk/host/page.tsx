@@ -96,7 +96,6 @@ const HostEventPage = () => {
     !formData.endTime ||
     formData.endTime > formData.startTime;
 
-  // Date validation: today onwards, max 6 months out
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   const sixMonthsOut = new Date(today);
