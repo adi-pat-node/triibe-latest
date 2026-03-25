@@ -122,7 +122,7 @@ const partneredWithLogos = [
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
   {
-    src: "/images/home/one.png",
+    src: "/images/home/onePercentBack.png",
     alt: "Partnered with organization 4",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
@@ -138,6 +138,11 @@ const partneredWithLogos = [
   },
   {
     src: "/images/home/fwe.png",
+    alt: "Partnered with organization 4",
+    className: "w-80 h-[150px] md:h-[150px] object-contain ",
+  },
+  {
+    src: "/images/home/zenithLogo.png",
     alt: "Partnered with organization 4",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
