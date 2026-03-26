@@ -43,8 +43,7 @@ export default function ApplicationProcess() {
                 Opening Soon
               </h3>
               <p className=" font-normal text-[#495565] text-base leading-[25.6px]">
-                Applications for the Fall 2026 cohort will open later this
-                spring.
+                Applications for the Fall 2026 cohort will open May 1st
               </p>
             </div>
 

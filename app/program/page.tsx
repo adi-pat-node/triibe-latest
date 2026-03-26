@@ -766,7 +766,7 @@ const ProgramPage = () => {
             Ready to build your nonprofit?
           </h3>
           <p className=" font-normal text-white text-lg mb-8 max-w-150 mx-auto">
-            Applications for the 2026 cohort open March 1st. Join a community of
+            Applications for the 2026 cohort open May 1st. Join a community of
             student founders building sustainable impact.
           </p>
           <a

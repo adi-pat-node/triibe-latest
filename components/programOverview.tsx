@@ -31,7 +31,7 @@ const programSections = [
     imageUrl: "/images/home/whatWeDo2.png",
     imagePosition: "left",
     fontWeight: "font-semibold",
-    imageObjectPosition: "object-cover object-top",
+    imageObjectPosition: "object-cover object-[50%_0%]",
   },
   {
     title: "How We Do It",
@@ -70,16 +70,17 @@ export default function ProgramOverview() {
       {programSections.map((section, index) => (
         <div
           key={index}
-          className="grid grid-cols-1 md:grid-cols-2 min-h-[490px]"
+          className="grid grid-cols-1 md:grid-cols-2 md:h-[490px]"
         >
           {section.imagePosition === "left" ? (
             <>
-              <div className="relative w-full h-full min-h-[490px] order-2 md:order-1">
+              <div className="relative w-full h-[300px] md:h-full overflow-hidden">
                 <Image
+                 key={section.imageObjectPosition}
                   src={section.imageUrl}
                   alt={`${section.title} illustration`}
                   fill
-                  className={`object-cover ${section.imageObjectPosition || "object-center"}`}
+                  className={section.imageObjectPosition || "object-cover object-[50%_-10%]"}
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
