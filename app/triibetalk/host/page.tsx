@@ -62,7 +62,7 @@ const HostEventPage = () => {
     linkedin: "",
     organization: "",
     bio: "",
-    readGuide: "No",
+    readGuide: "",
     venueName: "",
     city: "",
     state: "",
@@ -122,7 +122,8 @@ const HostEventPage = () => {
         formData.fullName.trim() !== "" &&
         isEmailValid &&
         isHostLinkedinValid &&
-        formData.bio.trim() !== ""
+        formData.bio.trim() !== "" &&
+        formData.readGuide === "Yes"
       );
     }
 
@@ -178,6 +179,13 @@ const HostEventPage = () => {
     } else {
       alert("Maximum of 4 speakers allowed.");
     }
+  };
+
+  const removeSpeaker = (index: number) => {
+    const updatedSpeakers = formData.speakers.filter((_, i) => i !== index);
+    const updatedTouched = speakerLinkedinTouched.filter((_, i) => i !== index);
+    setFormData({ ...formData, speakers: updatedSpeakers });
+    setSpeakerLinkedinTouched(updatedTouched);
   };
 
   const updateSpeaker = (
@@ -345,9 +353,19 @@ const HostEventPage = () => {
                     </div>
 
                     <div className="space-y-3">
-                      <label className="text-sm font-bold text-gray-700 block">
-                        Have you read the guide? *
-                      </label>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <label className="text-sm font-bold text-gray-700">
+                          Have you read the guide? *
+                        </label>
+                        <a
+                          href="https://drive.google.com/file/d/1rALrh5bjpWnbKq2AvxeudYOpPG7kFsZ-/view?usp=sharing"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-medium text-[#1C5945] underline hover:opacity-70 transition-opacity"
+                        >
+                          View the guide here
+                        </a>
+                      </div>
                       <div className="flex gap-4">
                         {["Yes", "No"].map((option) => (
                           <label
@@ -573,7 +591,7 @@ const HostEventPage = () => {
                                 : s.category === "Next-Gen"
                                   ? "Next-Gen Changemaker"
                                   : s.category === "Established (Over 30)"
-                                    ? "Established"
+                                    ? "Established Changemaker"
                                     : ""}
                             </span>
                           </div>
@@ -636,44 +654,95 @@ const HostEventPage = () => {
                                     label: "Established (Over 30)",
                                   },
                                   { id: "Next-Gen", label: "Next-Gen" },
-                                ].map((option) => (
-                                  <label
-                                    key={option.id}
-                                    className="flex items-center gap-2 cursor-pointer group"
-                                  >
-                                    <div className="relative flex items-center justify-center">
-                                      <input
-                                        type="radio"
-                                        name={`category-${i}`}
-                                        checked={s.category === option.id}
-                                        onChange={() =>
-                                          updateSpeaker(
-                                            i,
-                                            "category",
-                                            option.id,
-                                          )
-                                        }
-                                        className="peer appearance-none w-4 h-4 border border-gray-400 rounded-full checked:border-black transition-all"
-                                      />
-                                      <div className="absolute w-2 h-2 rounded-full bg-black opacity-0 peer-checked:opacity-100 transition-opacity" />
-                                    </div>
-                                    <span
-                                      className={`text-sm ${
-                                        s.category === option.id
-                                          ? "text-black font-medium"
-                                          : "text-gray-500"
-                                      }`}
+                                ].map((option) => {
+                                  const countOfType =
+                                    formData.speakers.filter(
+                                      (sp, si) =>
+                                        si !== i && sp.category === option.id,
+                                    ).length +
+                                    (i === 0 && option.id === "Next-Gen"
+                                      ? 1
+                                      : 0);
+                                  const wouldExceedLimit =
+                                    s.category !== option.id &&
+                                    countOfType >= 2;
+                                  return (
+                                    <label
+                                      key={option.id}
+                                      className="flex items-center gap-2 cursor-pointer group"
                                     >
-                                      {option.label}
-                                    </span>
-                                  </label>
-                                ))}
+                                      <div className="relative flex items-center justify-center">
+                                        <input
+                                          type="radio"
+                                          name={`category-${i}`}
+                                          checked={s.category === option.id}
+                                          onChange={() => {
+                                            if (!wouldExceedLimit) {
+                                              updateSpeaker(
+                                                i,
+                                                "category",
+                                                option.id,
+                                              );
+                                            }
+                                          }}
+                                          className="peer appearance-none w-4 h-4 border border-gray-400 rounded-full checked:border-black transition-all"
+                                        />
+                                        <div className="absolute w-2 h-2 rounded-full bg-black opacity-0 peer-checked:opacity-100 transition-opacity" />
+                                      </div>
+                                      <span
+                                        className={`text-sm ${
+                                          s.category === option.id
+                                            ? "text-black font-medium"
+                                            : wouldExceedLimit
+                                              ? "text-gray-300"
+                                              : "text-gray-500"
+                                        }`}
+                                      >
+                                        {option.label}
+                                      </span>
+                                    </label>
+                                  );
+                                })}
                               </div>
+                              {(() => {
+                                const establishedCount =
+                                  formData.speakers.filter(
+                                    (sp) =>
+                                      sp.category === "Established (Over 30)",
+                                  ).length;
+                                const nextGenCount =
+                                  formData.speakers.filter(
+                                    (sp) => sp.category === "Next-Gen",
+                                  ).length + 1; // +1 for speaker 1
+                                if (
+                                  establishedCount >= 2 ||
+                                  nextGenCount >= 3
+                                ) {
+                                  return (
+                                    <p className="text-amber-600 text-xs font-medium ml-1 animate-in fade-in slide-in-from-top-1">
+                                      There is a maximum of two Established and
+                                      two Next-Gen speakers in any TRIIBE Talk.
+                                    </p>
+                                  );
+                                }
+                                return null;
+                              })()}
                             </div>
                           )}
 
-                          {isLastSpeaker && (
-                            <div className="flex justify-end">
+                          <div className="flex justify-between items-center pt-1">
+                            <div>
+                              {!isFirstSpeaker && (
+                                <button
+                                  type="button"
+                                  onClick={() => removeSpeaker(i)}
+                                  className="text-red-400 hover:text-red-600 font-bold text-sm transition-all"
+                                >
+                                  − Remove Speaker
+                                </button>
+                              )}
+                            </div>
+                            {isLastSpeaker && (
                               <button
                                 type="button"
                                 onClick={addSpeaker}
@@ -688,8 +757,8 @@ const HostEventPage = () => {
                                   ? "Only 4 speakers allowed"
                                   : "+ Add Speaker"}
                               </button>
-                            </div>
-                          )}
+                            )}
+                          </div>
                         </div>
                       );
                     })}
