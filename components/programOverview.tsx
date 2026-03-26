@@ -70,13 +70,13 @@ export default function ProgramOverview() {
       {programSections.map((section, index) => (
         <div
           key={index}
-          className="grid grid-cols-1 md:grid-cols-2 md:h-[490px]"
+          className="grid grid-cols-1 md:grid-cols-2 md:h-490px"
         >
           {section.imagePosition === "left" ? (
             <>
               <div className="relative w-full h-[300px] md:h-full overflow-hidden">
                 <Image
-                 key={section.imageObjectPosition}
+                  key={section.imageObjectPosition}
                   src={section.imageUrl}
                   alt={`${section.title} illustration`}
                   fill
