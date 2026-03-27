@@ -290,8 +290,7 @@ const Page = () => {
                 Opening Soon
               </h3>
               <p className="text-[#495565] text-lg">
-                Applications for the Spring 2026 cohort will open later this
-                spring.
+                Applications for the Fall 2026 cohort will open May 1st.
               </p>
             </div>
           )}
