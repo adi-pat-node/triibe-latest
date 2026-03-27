@@ -247,16 +247,16 @@ const mediaCards = [
   {
     id: "podcasts",
     title: " Latest Podcast",
-    image: "/images/media/podcast1.png",
+    image: "/images/media/podcastLatest.jpg",
     badge: "Latest Episode",
-    heading: "When Youth Meet Purpose, People Lean In",
+    heading: "Why the Non-Profit Model is Broken and How Triibe is Fixing It with Kyle Matthys",
     description:
       "Kyle Matthys, Founder and CEO of TRIIBE, speaks about how his cause inspires young people to develop their skills, connect with their communities, and take action.",
     buttons: [
       {
         type: "link",
         text: "Watch",
-        href: "https://www.youtube.com/watch?v=dLrNM4RXhW4",
+        href: "https://youtu.be/5tjyws4mq-E?si=0lc8YOvT9BTDog4t",
       },
     ],
   },
