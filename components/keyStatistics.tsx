@@ -125,6 +125,7 @@ const partneredWithLogos = [
     src: "/images/home/onePercentBack.png",
     alt: "Partnered with organization 4",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
+    scale: "large",
   },
   {
     src: "/images/home/finpublica1.png",
@@ -195,7 +196,7 @@ export default function KeyStatistics() {
               <div className="flex items-center justify-center h-full">
               <Image
                 key={index}
-                className={`max-h-[60px] w-auto object-contain ${logo.className}`}
+                className={`max-h-[60px] w-auto object-contain ${logo.className} ${logo.scale === "large" ? "max-h-[80px]" : "max-h-[60px]"}`}
                 alt={logo.alt}
                 src={logo.src}
                 width={200}
