@@ -54,6 +54,28 @@ const workshops = [
     signupLink: "#",
     watchLink: "https://www.youtube.com/watch?v=Ku365Mu1onw",
   },
+  {
+    title: "",
+    speakers: [
+      {
+        name: "",
+        avatar: null,
+        topic: "",
+        description: "",
+      },
+      {
+        name: "",
+        avatar: null,
+        topic: "",
+        description: "",
+      },
+    ],
+    duration: "",
+    type: "",
+    youtubeId: "-TY4Iz5BNxg", // Actual YouTube ID
+    signupLink: "#",
+    watchLink: "https://www.youtube.com/watch?v=-TY4Iz5BNxg",
+  },
   // {
   //   title: "Samin Bahn’s App Helps You Stay Present and Lookupp",
   //   speakers: [
@@ -249,7 +271,8 @@ const mediaCards = [
     title: " Latest Podcast",
     image: "/images/media/podcastLatest.jpg",
     badge: "Latest Episode",
-    heading: "Why the Non-Profit Model is Broken and How Triibe is Fixing It with Kyle Matthys",
+    heading:
+      "Why the Non-Profit Model is Broken and How Triibe is Fixing It with Kyle Matthys",
     description:
       "Kyle Matthys, Founder and CEO of TRIIBE, speaks about how his cause inspires young people to develop their skills, connect with their communities, and take action.",
     buttons: [
@@ -263,16 +286,17 @@ const mediaCards = [
   {
     id: "workshops",
     title: "Latest TRIIBE Talk",
-    image: "/images/media/workshop.png",
+    image: "/images/media/archive/workshop16.jpg",
     badge: "Latest Workshop",
-    heading: "Signal to Noise Branding x The SuperBetter Mindset",
+    heading:
+      "Nancy Bonges on First-Generation Wealth Building at William Blair",
     description:
       "Watch our latest workshop session with industry leaders and experts as they share insights.",
     buttons: [
       {
         type: "link",
         text: "Watch",
-        href: "https://www.youtube.com/watch?v=pNKGIByJNnk",
+        href: "https://www.youtube.com/watch?v=-TY4Iz5BNxg",
       },
     ],
   },
