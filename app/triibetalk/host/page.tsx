@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, ChangeEvent } from "react";
+import React, { useState, useEffect, useRef, ChangeEvent } from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { useRouter } from "next/navigation";
@@ -17,6 +17,17 @@ import {
   X,
   AlertCircle,
 } from "lucide-react";
+
+const GOOGLE_MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!;
+
+const SHEET_URL = process.env.NEXT_PUBLIC_SHEET_URL!;
+
+declare global {
+  interface Window {
+    google: any;
+    initGoogleMaps: () => void;
+  }
+}
 
 // --- Types for Form Data ---
 interface Speaker {
@@ -54,8 +65,67 @@ const HostEventPage = () => {
   const [speakerLinkedinTouched, setSpeakerLinkedinTouched] = useState<
     boolean[]
   >([false]);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const venueInputRef = useRef<HTMLInputElement>(null);
+  const autocompleteRef = useRef<any>(null);
   const router = useRouter();
   const [step, setStep] = useState(1);
+  // Load Google Maps script once
+  useEffect(() => {
+    if (document.getElementById("google-maps-script")) return;
+    window.initGoogleMaps = () => {}; // placeholder, autocomplete init happens on step 2
+    const script = document.createElement("script");
+    script.id = "google-maps-script";
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}&libraries=places&callback=initGoogleMaps`;
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+  }, []);
+
+  // Init autocomplete when step 2 mounts and input is available
+  useEffect(() => {
+    if (step !== 2) return;
+    const tryInit = () => {
+      if (!venueInputRef.current || !window.google?.maps?.places) return;
+      if (autocompleteRef.current) return; // already initialized
+      const ac = new window.google.maps.places.Autocomplete(
+        venueInputRef.current,
+        {
+          types: ["establishment"],
+          fields: ["name", "address_components", "formatted_address"],
+        },
+      );
+      ac.addListener("place_changed", () => {
+        const place = ac.getPlace();
+        if (!place) return;
+        const name = place.name || "";
+        let city = "";
+        let state = "";
+        (place.address_components || []).forEach((comp: any) => {
+          if (comp.types.includes("locality")) city = comp.long_name;
+          if (comp.types.includes("administrative_area_level_1"))
+            state = comp.long_name;
+        });
+        setFormData((prev) => ({
+          ...prev,
+          venueName: name,
+          city: city || prev.city,
+          state: state || prev.state,
+        }));
+      });
+      autocompleteRef.current = ac;
+    };
+    // Poll until google is ready
+    const interval = setInterval(() => {
+      if (window.google?.maps?.places) {
+        tryInit();
+        clearInterval(interval);
+      }
+    }, 200);
+    return () => clearInterval(interval);
+  }, [step]);
+
   const [formData, setFormData] = useState<FormData>({
     fullName: "",
     email: "",
@@ -198,6 +268,22 @@ const HostEventPage = () => {
     setFormData({ ...formData, speakers: updatedSpeakers });
   };
 
+  const handleSubmit = async () => {
+    setIsSubmitting(true);
+    try {
+      await fetch(SHEET_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+    } catch (err) {
+    } finally {
+      setIsSubmitting(false);
+      setSubmitSuccess(true);
+    }
+  };
+
   const steps = [
     { id: 1, label: "Your Information" },
     { id: 2, label: "Event Location" },
@@ -208,6 +294,27 @@ const HostEventPage = () => {
   return (
     <main className=" min-h-screen ">
       <Header />
+
+      {submitSuccess && (
+        <div className="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center gap-6 px-4">
+          <div className="w-16 h-16 rounded-full bg-[#D1FAE5] flex items-center justify-center">
+            <CircleCheckBig size={32} className="text-[#1C5945]" />
+          </div>
+          <h2 className="text-2xl font-bold text-[#002C19] text-center">
+            Request Submitted!
+          </h2>
+          <p className="text-gray-500 text-center max-w-sm">
+            Thank you! We've received your event request and will be in touch
+            soon.
+          </p>
+          <button
+            onClick={() => window.history.back()}
+            className="px-8 py-4 bg-[#1C5945] text-white font-bold rounded-2xl hover:opacity-90 transition-all"
+          >
+            Back to Events
+          </button>
+        </div>
+      )}
 
       <section className="pt-20  px-4 md:px-25 lg:px-50 bg-white">
         <div>
@@ -414,14 +521,24 @@ const HostEventPage = () => {
                   </div>
                   <div className="grid grid-cols-2 gap-6">
                     <div className="col-span-2 relative">
-                      <InputField
-                        label="Venue Name *"
-                        placeholder="e.g. WeWork Midtown, NYC"
-                        value={formData.venueName}
-                        onChange={(v: string) =>
-                          setFormData({ ...formData, venueName: v })
-                        }
-                      />
+                      <div className="flex flex-col gap-2">
+                        <label className="text-sm font-bold text-gray-700">
+                          Venue Name *
+                        </label>
+                        <input
+                          ref={venueInputRef}
+                          type="text"
+                          placeholder="e.g. WeWork Midtown, NYC"
+                          value={formData.venueName}
+                          onChange={(e) =>
+                            setFormData({
+                              ...formData,
+                              venueName: e.target.value,
+                            })
+                          }
+                          className="w-full p-4 rounded-2xl bg-white border border-gray-200 focus:ring-2 focus:ring-[#1C5945]/10 outline-none transition-all"
+                        />
+                      </div>
                     </div>
                     <InputField
                       label="City *"
@@ -591,7 +708,7 @@ const HostEventPage = () => {
                                 : s.category === "Next-Gen"
                                   ? "Next-Gen Changemaker"
                                   : s.category === "Established (Over 30)"
-                                    ? "Established Changemaker"
+                                    ? "Established"
                                     : ""}
                             </span>
                           </div>
@@ -791,6 +908,7 @@ const HostEventPage = () => {
                   <ReviewSection
                     title="Event Location & Time"
                     showMap={true}
+                    mapQuery={`${formData.venueName}, ${formData.city}, ${formData.state}`}
                     data={[
                       { l: "Venue", v: formData.venueName },
                       {
@@ -825,17 +943,18 @@ const HostEventPage = () => {
                 </button>
 
                 <button
-                  onClick={step === 4 ? () => alert("Submitting...") : nextStep}
-                  disabled={!isStepValid()}
+                  onClick={step === 4 ? handleSubmit : nextStep}
+                  disabled={!isStepValid() || isSubmitting}
                   className={`flex items-center justify-center gap-3 px-10 py-4 rounded-2xl font-bold transition-all duration-300 order-1 md:order-2 ${
-                    isStepValid()
+                    isStepValid() && !isSubmitting
                       ? "bg-[#1C5945] text-white cursor-pointer"
                       : "bg-[#E5E7EB] text-[#30364166] cursor-not-allowed"
                   }`}
                 >
                   {step === 4 ? (
                     <>
-                      <Send size={18} /> Submit
+                      <Send size={18} />{" "}
+                      {isSubmitting ? "Submitting..." : "Submit"}
                     </>
                   ) : (
                     <>
@@ -884,6 +1003,7 @@ const ReviewSection = ({
   title,
   data,
   showMap = false,
+  mapQuery,
   theme,
   description,
   speakers,
@@ -893,6 +1013,7 @@ const ReviewSection = ({
   title: string;
   data?: { l: string; v: string }[];
   showMap?: boolean;
+  mapQuery?: string;
   theme?: string;
   description?: string;
   speakers?: Speaker[];
@@ -939,16 +1060,16 @@ const ReviewSection = ({
         )}
       </div>
 
-      {showMap && (
+      {showMap && mapQuery && (
         <div className="hidden md:block w-[200px] h-[140px] rounded-[24px] overflow-hidden flex-shrink-0">
-          <img
-            src="/images/host/mapPlaceholder.png"
-            alt="Map View"
-            className="w-full h-full object-cover"
-            onError={(e) => {
-              e.currentTarget.src =
-                "https://via.placeholder.com/200x120?text=Map+View";
-            }}
+          <iframe
+            width="200"
+            height="140"
+            style={{ border: 0 }}
+            loading="lazy"
+            allowFullScreen
+            referrerPolicy="no-referrer-when-downgrade"
+            src={`https://www.google.com/maps/embed/v1/place?key=${GOOGLE_MAPS_API_KEY}&q=${encodeURIComponent(mapQuery)}`}
           />
         </div>
       )}
