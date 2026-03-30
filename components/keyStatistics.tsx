@@ -117,7 +117,7 @@ const partneredWithLogos = [
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
   {
-    src: "/images/home/billiondollar.png",
+    src: "/images/home/billiondollar2.png",
     alt: "Partnered with organization 4",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
