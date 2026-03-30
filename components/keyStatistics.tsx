@@ -125,7 +125,6 @@ const partneredWithLogos = [
     src: "/images/home/onePercentBack.png",
     alt: "Partnered with organization 4",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
-    scale: "large",
   },
   {
     src: "/images/home/finpublica1.png",
@@ -146,6 +145,11 @@ const partneredWithLogos = [
     src: "/images/home/zenithLogo.png",
     alt: "Partnered with organization 4",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
+  },
+  {
+    src: "/images/home/bluePlanetAlliance2.png",
+    alt: "Partnered with organization 3",
+    className: "w-80 h-[100px] object-contain",
   },
 ];
 
@@ -193,17 +197,15 @@ export default function KeyStatistics() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 md:gap-8 place-items-center auto-rows-[100px]">
             {partneredWithLogos.map((logo, index) => (
-              <div
+              <div className="flex items-center justify-center h-full">
+              <Image
                 key={index}
-                className="flex items-center justify-center h-full"
-              >
-                <Image
-                  className={`max-h-[60px] w-auto object-contain ${logo.className} ${logo.scale === "large" ? "max-h-[80px]" : "max-h-[60px]"}`}
-                  alt={logo.alt}
-                  src={logo.src}
-                  width={200}
-                  height={100}
-                />
+                className={`max-h-[60px] w-auto object-contain ${logo.className}`}
+                alt={logo.alt}
+                src={logo.src}
+                width={200}
+                height={100}
+              />
               </div>
             ))}
           </div>
