@@ -23,6 +23,7 @@ export default function MediaEventsList() {
   const [events, setEvents] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const calendarRef = useRef<HTMLDivElement>(null);
+  const [eventView, setEventView] = useState<"upcoming" | "past">("upcoming");
 
   useEffect(() => {
     setIsMounted(true);
@@ -88,18 +89,23 @@ export default function MediaEventsList() {
   ];
   const currentMonthName = months[viewDate.getMonth()];
 
-  const today = new Date();
+
+const today = new Date();
 today.setHours(0, 0, 0, 0);
 
 const filteredEvents = events
   .filter((event) => {
     const eventDate = new Date(event.isoStart);
-    return (
-      eventDate >= today &&
-      (filter === "ALL EVENTS" || event.type === filter)
-    );
+    const isUpcoming = eventDate >= today;
+    const matchesView = eventView === "upcoming" ? isUpcoming : !isUpcoming;
+    return matchesView && (filter === "ALL EVENTS" || event.type === filter);
   })
-  .sort((a, b) => new Date(a.isoStart).getTime() - new Date(b.isoStart).getTime());
+  .sort((a, b) => {
+    if (eventView === "past") {
+      return new Date(b.isoStart).getTime() - new Date(a.isoStart).getTime();
+    }
+    return new Date(a.isoStart).getTime() - new Date(b.isoStart).getTime();
+  });
 
   const handleMonthSelect = (monthIndex: number) => {
     const newDate = new Date(viewDate);
@@ -127,42 +133,24 @@ const filteredEvents = events
       <div className="max-w-300 mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-6">
           <h2 className="text-4xl font-bold text-black">
-            Upcoming Events
-          </h2>
+            {eventView === "upcoming" ? "Upcoming Events" : "Past Events"}
+          </h2> 
 
           <div className="flex flex-col items-end gap-4 w-full md:w-auto">
-            <div className="relative" ref={calendarRef}>
-              <button
-                onClick={() => setIsCalendarOpen(!isCalendarOpen)}
-                className="p-2.5 bg-white border border-gray-100 rounded-xl shadow-sm"
-              >
-                <Calendar size={22} className="text-black" />
-              </button>
-              {isCalendarOpen && (
-                <div className="absolute top-full mt-4 right-0 w-[300px] bg-white rounded-2xl shadow-2xl border border-gray-100 z-[100] p-6">
-                  <div className="flex justify-between items-center mb-6">
-                    <button onClick={() => setCalendarYear(calendarYear - 1)}>
-                      <ChevronLeft size={20} />
-                    </button>
-                    <span className="font-bold text-xl">{calendarYear}</span>
-                    <button onClick={() => setCalendarYear(calendarYear + 1)}>
-                      <ChevronRight size={20} />
-                    </button>
-                  </div>
-                  <div className="grid grid-cols-3 border-l border-t border-gray-100">
-                    {months.map((m, idx) => (
-                      <button
-                        key={m}
-                        onClick={() => handleMonthSelect(idx)}
-                        className={`py-4 text-sm border-r border-b ${idx === viewDate.getMonth() && calendarYear === viewDate.getFullYear() ? "bg-[#303641] text-white" : "hover:bg-gray-50"}`}
-                      >
-                        {m.substring(0, 3)}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
+  <div className="flex gap-2">
+    <button
+      onClick={() => setEventView("upcoming")}
+      className={`px-5 py-2 rounded-full text-xs font-bold ${eventView === "upcoming" ? "bg-[#1C5945] text-white" : "bg-white border"}`}
+    >
+      UPCOMING
+    </button>
+    <button
+      onClick={() => setEventView("past")}
+      className={`px-5 py-2 rounded-full text-xs font-bold ${eventView === "past" ? "bg-[#1C5945] text-white" : "bg-white border"}`}
+    >
+      PAST
+    </button>
+  </div>
             <div className="flex gap-2">
               {["ALL EVENTS", "VIRTUAL", "IN-PERSON"].map((type) => (
                 <button
