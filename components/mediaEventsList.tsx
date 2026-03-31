@@ -88,14 +88,18 @@ export default function MediaEventsList() {
   ];
   const currentMonthName = months[viewDate.getMonth()];
 
-  const filteredEvents = events.filter((event) => {
+  const today = new Date();
+today.setHours(0, 0, 0, 0);
+
+const filteredEvents = events
+  .filter((event) => {
     const eventDate = new Date(event.isoStart);
     return (
-      eventDate.getMonth() === viewDate.getMonth() &&
-      eventDate.getFullYear() === viewDate.getFullYear() &&
+      eventDate >= today &&
       (filter === "ALL EVENTS" || event.type === filter)
     );
-  });
+  })
+  .sort((a, b) => new Date(a.isoStart).getTime() - new Date(b.isoStart).getTime());
 
   const handleMonthSelect = (monthIndex: number) => {
     const newDate = new Date(viewDate);
@@ -123,7 +127,7 @@ export default function MediaEventsList() {
       <div className="max-w-300 mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-6">
           <h2 className="text-4xl font-bold text-black">
-            {currentMonthName} Events
+            Upcoming Events
           </h2>
 
           <div className="flex flex-col items-end gap-4 w-full md:w-auto">
