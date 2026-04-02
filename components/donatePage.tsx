@@ -77,8 +77,8 @@ export default function DonatePage() {
               <Image
                 src="/images/donate/logo.svg"
                 alt="TRIIBE"
-                width={180}
-                height={60}
+                width={240}
+                height={80}
                 className="object-contain"
               />
             </div>
@@ -87,7 +87,7 @@ export default function DonatePage() {
               Your investment launches the next generation of changemakers.
             </h1>
 
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 mb-8">
               {bullets.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <Image
