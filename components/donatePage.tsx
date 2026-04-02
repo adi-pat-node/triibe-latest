@@ -107,10 +107,10 @@ export default function DonatePage() {
 
           <div className="w-full lg:w-125 bg-white rounded-2xl border border-gray-200 shadow-sm p-6 flex flex-col gap-6">
             <div>
-              <h2 className="text-2xl font-bold text-black mb-1">
+              <h2 className="text-2xl font-bold text-[#1B4332] mb-1">
                 Choose Your Impact
               </h2>
-              <p className="text-sm text-[#495565]">
+              <p className="text-sm text-[#6B7C72]">
                 Every dollar goes directly to funding and supporting the next
                 generation of nonprofit founders.
               </p>
@@ -145,52 +145,53 @@ export default function DonatePage() {
                       </svg>
                     </span>
                   )}
-                  <p className="text-sm text-[#495565] mb-1">{tier.name}</p>
-                  <p className="text-2xl font-bold text-black mb-1">
+                  <p className="text-sm text-[#3D5A4C] mb-1">{tier.name}</p>
+                  <p className="text-2xl font-bold text-[#1B4332] mb-1">
                     {formatAmount(tier.amount)}
                   </p>
-                  <p className="text-xs text-[#495565] mb-2">{tier.subtitle}</p>
-                  <p className="text-xs text-[#495565] leading-relaxed">
+                  <p className="text-xs text-[#A09B91] mb-2">{tier.subtitle}</p>
+                  <p className="text-xs text-[#6B7C72] leading-relaxed">
                     {tier.description}
                   </p>
                 </button>
               ))}
             </div>
 
-            <div className="flex rounded-xl border border-gray-200 overflow-hidden">
-              <button
-                onClick={() => setPaymentMode("full")}
-                className={`flex-1 py-3 text-sm font-semibold transition-colors ${
-                  paymentMode === "full"
-                    ? "bg-[#1C5945] text-white"
-                    : "bg-white text-black hover:bg-gray-50"
-                }`}
-              >
-                Pay in Full
-              </button>
-              <button
-                onClick={() => setPaymentMode("installments")}
-                className={`flex-1 py-3 text-sm font-semibold transition-colors ${
-                  paymentMode === "installments"
-                    ? "bg-[#1C5945] text-white"
-                    : "bg-white text-black hover:bg-gray-50"
-                }`}
-              >
-                Monthly Installments
-              </button>
-            </div>
+            <div className="bg-[#FAFAF7] m-4 p-4 rounded-lg  text-center border border-[#E8E4DD]">
+              <div className="flex gap-3">
+                <button
+                  onClick={() => setPaymentMode("full")}
+                  className={`flex-1 py-3 text-sm font-semibold  rounded-xl  transition-colors border border-gray-200 ${
+                    paymentMode === "full"
+                      ? "bg-[#1C5945] text-white"
+                      : "bg-white text-[#6B7C72] hover:bg-gray-50"
+                  }`}
+                >
+                  Pay in Full
+                </button>
+                <button
+                  onClick={() => setPaymentMode("installments")}
+                  className={`flex-1 py-3 text-sm font-semibold rounded-xl border border-gray-200 transition-colors ${
+                    paymentMode === "installments"
+                      ? "bg-[#1C5945] text-white"
+                      : "bg-white text-[#6B7C72] hover:bg-gray-50"
+                  }`}
+                >
+                  Monthly Installments
+                </button>
+              </div>
 
-            <div className="text-center">
-              <p className="text-sm text-[#495565] mb-1">
-                One-time contribution
-              </p>
-              <p className="text-4xl font-bold text-black">
-                {formatAmount(selected.amount)}
-              </p>
+              <div className="text-center mt-4">
+                <p className="text-sm text-[#6B7C72] mb-1">
+                  One-time contribution
+                </p>
+                <p className="text-4xl font-normal text-[#1B4332]">
+                  {formatAmount(selected.amount)}
+                </p>
+              </div>
             </div>
-
             <button className="w-full py-4 bg-[#1C5945] text-white rounded-xl font-bold text-base flex items-center justify-center gap-2 hover:bg-[#164a38] transition-colors">
-              <Heart size={18} fill="white" />
+              <Heart size={18} fill="none" />
               Donate {formatAmount(selected.amount)}
             </button>
 
@@ -200,7 +201,6 @@ export default function DonatePage() {
                 <span>Secure donation</span>
               </div>
               <div className="flex items-center gap-1.5">
-                <Lock size={12} />
                 <span>Tax-deductible contribution</span>
               </div>
             </div>
