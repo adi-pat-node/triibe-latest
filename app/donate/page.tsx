@@ -1,24 +1,20 @@
 import React from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import DonatePage from "@/components/donatePage";
+import KeyStatistics from "@/components/keyStatistics";
+import ScheduleCall from "@/components/scheduleCall";
 const page = () => {
   return (
     <main>
-      {/* <Header /> */}
-      <section>
-        <div className="h-screen flex items-center justify-center">
-          <div className="flex items-center">
-            <h1 className="text-2xl font-semibold pr-6">404</h1>
+      <Header />
 
-            <div className="h-8 w-px bg-gray-300"></div>
+      <DonatePage />
 
-            <p className="pl-6 text-gray-600 text-base">
-              This page could not be found.
-            </p>
-          </div>
-        </div>
-      </section>
-      {/* <Footer /> */}
+      <KeyStatistics />
+      <ScheduleCall />
+
+      <Footer />
     </main>
   );
 };

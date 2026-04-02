@@ -197,15 +197,17 @@ export default function KeyStatistics() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 md:gap-8 place-items-center auto-rows-[100px]">
             {partneredWithLogos.map((logo, index) => (
-              <div className="flex items-center justify-center h-full">
-              <Image
+              <div
                 key={index}
-                className={`max-h-[60px] w-auto object-contain ${logo.className}`}
-                alt={logo.alt}
-                src={logo.src}
-                width={200}
-                height={100}
-              />
+                className="flex items-center justify-center h-full "
+              >
+                <Image
+                  className={`max-h-[60px] w-auto object-contain ${logo.className}`}
+                  alt={logo.alt}
+                  src={logo.src}
+                  width={200}
+                  height={100}
+                />
               </div>
             ))}
           </div>
