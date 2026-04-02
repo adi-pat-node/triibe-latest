@@ -71,7 +71,7 @@ export default function DonatePage() {
   return (
     <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50 bg-white">
       <div className="max-w-300 mx-auto">
-        <div className="flex flex-col lg:flex-row gap-16 items-center justify-between">
+        <div className="flex flex-col lg:flex-row gap-6 items-center justify-between">
           <div className="flex-1 max-w-xl">
             <div className="mb-12">
               <Image
@@ -87,7 +87,7 @@ export default function DonatePage() {
               Your investment launches the next generation of changemakers.
             </h1>
 
-            <div className="flex flex-col gap-6 mb-8">
+            <div className="flex flex-col gap-6 mb-16">
               {bullets.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <Image
@@ -97,7 +97,7 @@ export default function DonatePage() {
                     height={20}
                     className="mt-0.5 flex-shrink-0"
                   />
-                  <p className="text-[#495565] text-base leading-relaxed">
+                  <p className="text-[#495565] text-[15px] leading-relaxed">
                     {b.text}
                   </p>
                 </div>
