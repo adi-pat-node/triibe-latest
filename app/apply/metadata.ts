@@ -8,9 +8,9 @@ export const metadata: Metadata = {
     title: "Apply to TRIIBE - Join Our Programs",
     description:
       "Apply to join TRIIBE's mentorship program and accelerate your social impact journey with experienced guidance.",
-    url: "https://triibe.org/apply",
+    url: "https://www.triibe.org/apply",
   },
   alternates: {
-    canonical: "https://triibe.org/apply",
+    canonical: "https://www.triibe.org/apply",
   },
 };

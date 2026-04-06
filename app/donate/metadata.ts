@@ -8,9 +8,9 @@ export const metadata: Metadata = {
     title: "Donate to TRIIBE - Support Change Makers",
     description:
       "Your donation helps TRIIBE provide mentorship and resources to young change makers creating positive social impact.",
-    url: "https://triibe.org/donate",
+    url: "https://www.triibe.org/donate",
   },
   alternates: {
-    canonical: "https://triibe.org/donate",
+    canonical: "https://www.triibe.org/donate",
   },
 };

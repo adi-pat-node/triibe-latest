@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://triibe.org";
+  const baseUrl = "https://www.triibe.org";
   const currentDate = new Date().toISOString();
 
   return [
@@ -12,19 +12,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/about-us`,
+      url: `${baseUrl}/about`,
       lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/programs`,
+      url: `${baseUrl}/program`,
       lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/cohort`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/media`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/photogallery`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/triibetalk`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.8,
@@ -36,7 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/contact-us`,
+      url: `${baseUrl}/contact`,
       lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.7,

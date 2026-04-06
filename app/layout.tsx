@@ -25,7 +25,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://triibe.org"),
+  metadataBase: new URL("https://www.triibe.org"),
   title: {
     default: "TRIIBE - Supporting the Next Generation of Change Makers",
     template: "%s | TRIIBE",
@@ -61,14 +61,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://triibe.org",
+    url: "https://www.triibe.org",
     siteName: "TRIIBE",
     title: "TRIIBE - Supporting the Next Generation of Change Makers",
     description:
       "Supporting and developing the next generation of change makers advancing food, water, shelter, health, education, or energy.",
     images: [
       {
-        url: "https://triibe.org/triibe-logo-51.png",
+        url: "https://www.triibe.org/triibe-logo-51.png",
         width: 512,
         height: 512,
         alt: "TRIIBE - Supporting Change Makers",
@@ -80,15 +80,15 @@ export const metadata: Metadata = {
     title: "TRIIBE - Supporting the Next Generation of Change Makers",
     description:
       "Supporting and developing the next generation of change makers advancing food, water, shelter, health, education, or energy.",
-    images: ["https://triibe.org/triibe-logo-51.png"],
+    images: ["https://www.triibe.org/triibe-logo-51.png"],
     creator: "@triibe_us",
   },
-  verification: {
-    google: "google-site-verification-code",
-    yandex: "yandex-verification-code",
-  },
+  // verification: {
+  //   google: "google-site-verification-code",
+  //   yandex: "yandex-verification-code",
+  // },
   alternates: {
-    canonical: "https://triibe.org",
+    canonical: "https://www.triibe.org",
   },
 
   icons: {
@@ -111,8 +111,8 @@ export default function RootLayout({
     "@type": "NGO",
     name: "TRIIBE",
     alternateName: "TRIIBE Organization",
-    url: "https://triibe.org",
-    logo: "https://triibe.org/images/headerlogo.png",
+    url: "https://www.triibe.org",
+    logo: "https://www.triibe.org/images/headerlogo.png",
     description:
       "Supporting and developing the next generation of change makers advancing food, water, shelter, health, education, or energy.",
     foundingDate: "2023",
@@ -134,7 +134,7 @@ export default function RootLayout({
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "General Inquiries",
-      url: "https://triibe.org/contact",
+      url: "https://www.triibe.org/contact",
     },
     knowsAbout: [
       "Social Impact",

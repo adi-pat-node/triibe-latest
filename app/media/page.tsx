@@ -286,7 +286,7 @@ const mediaCards = [
   {
     id: "workshops",
     title: "Latest TRIIBE Talk",
-    image: "/images/media/archive/workshop16.jpg",
+    image: "/images/media/archive/Workshop16.jpg",
     badge: "Latest Workshop",
     heading:
       "Nancy Bonges on First-Generation Wealth Building at William Blair",
