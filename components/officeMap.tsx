@@ -19,8 +19,8 @@ const REGIONS: Region[] = [
     name: "Toronto, Canada",
     coordinates: { x: 25, y: 23 },
     description:
-      "Explore our Canadian cohorts, social entrepreneurship, and local news.",
-    status: "Active Hub",
+      "Helping next-gen nonprofit founders continue their work in Canada.",
+    status: "TRIIBE Branch",
     link: "/canada",
   },
   {
@@ -28,8 +28,8 @@ const REGIONS: Region[] = [
     name: "London, UK",
     coordinates: { x: 48.8, y: 20 },
     description:
-      "Expansion hub focusing on European sustainability initiatives.",
-    status: "Branch Office",
+      "Helping next-gen nonprofit founders continue their work in the UK.",
+    status: "TRIIBE Branch",
     link: "/about",
   },
   {
@@ -37,8 +37,8 @@ const REGIONS: Region[] = [
     name: "Mumbai, India",
     coordinates: { x: 73.5, y: 44 },
     description:
-      "Partnering for cross-border mentorship and economic development.",
-    status: "Strategic Partner",
+      "Helping next-gen nonprofit founders continue their work in India.",
+    status: "TRIIBE Branch",
     link: "/about",
   },
   {
@@ -46,8 +46,8 @@ const REGIONS: Region[] = [
     name: "Manila, Philippines",
     coordinates: { x: 89.2, y: 50 },
     description:
-      "Supporting the Philippine Health Initiative and local social enterprises.",
-    status: "Impact Site",
+      "Helping next-gen nonprofit founders continue their work in the Philippines.",
+    status: "TRIIBE Branch",
     link: "/about",
   },
 ];
@@ -120,7 +120,7 @@ export default function OfficeMap() {
                 {hoveredRegion.description}
               </p>
               <p className="text-[10px] text-gray-400 italic font-medium">
-                Click to view full details →
+                Click to learn more →
               </p>
             </div>
           )}

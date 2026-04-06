@@ -13,7 +13,7 @@ const ArchivePage = () => {
       items: [
         {
           image: "/images/media/archive/Workshop16.jpg",
-          category: "workshop",
+          category: "podcast",
           title:
             "Nancy Bonges on First-Generation Wealth Building at William Blair",
           description:
@@ -27,7 +27,7 @@ const ArchivePage = () => {
       items: [
         {
           image: "/images/media/archive/Workshop12.jpg",
-          category: "workshop",
+          category: "podcast",
           title: "Shrusti Amula Makes Her Spirit of Giving Back Rise N Shine",
           description:
             "Shrusti Amula, Founder and CEO of Rise N Shine Foundation, unpacks how a student-run composting program grew into a youth-powered movement tackling food waste, climate change, and food insecurity across Maryland.",
@@ -35,7 +35,7 @@ const ArchivePage = () => {
         },
         {
           image: "/images/media/archive/Workshop13.jpg",
-          category: "workshop",
+          category: "podcast",
           title: "What Motivated Nayla Jimenez's Philippine Health Initiative",
           description:
             "Nayla Jimenez, founder and executive director of the Philippine Health Initiative, shares how sending balikbayan boxes to her family’s hometown in Cebu City grew into a youth-led nonprofit improving pediatric health, education, and wellness across the Philippines.",
@@ -43,7 +43,7 @@ const ArchivePage = () => {
         },
         {
           image: "/images/media/archive/Workshop14.jpg",
-          category: "workshop",
+          category: "podcast",
           title:
             "Kahina Haynes on Institutional Knowledge & Revolutionizing Access",
           description:
@@ -52,7 +52,7 @@ const ArchivePage = () => {
         },
         {
           image: "/images/media/archive/Workshop15.jpg",
-          category: "workshop",
+          category: "podcast",
           title: "Samin Bhan’s App Helps You Stay Present and Lookupp",
           description:
             "Samin Bhan, founder and CEO of Lookupp, is establishing “Lookup Zones” across college campuses to help young people reclaim in-person connection in a screen-saturated world.",
@@ -73,7 +73,7 @@ const ArchivePage = () => {
         },
         {
           image: "/images/media/archive/Workshop.png",
-          category: "workshop",
+          category: "podcast",
           title: "Signal to Noise Branding x The SuperBetter Mindset",
           description:
             "In these virtual workshops, current and next-gen changemakers will present actionable strategies for entrepreneurs, intrapreneurs, and philentrepreneurs.",
@@ -81,7 +81,7 @@ const ArchivePage = () => {
         },
         {
           image: "/images/media/archive/Workshop9.jpg",
-          category: "workshop",
+          category: "podcast",
           title: "Danielle Guindo Brings Young Leaders Into a Read Alliance",
           description:
             "Danielle Guindo, Executive Director of Read Alliance, knows just a single word can change how young people see themselves.",
@@ -89,7 +89,7 @@ const ArchivePage = () => {
         },
         {
           image: "/images/media/archive/Workshop10.jpg",
-          category: "workshop",
+          category: "podcast",
           title: "Varuni Chopra’s Calling to Bridge the Gap in Tech",
           description:
             "Varuni Chopra, Founder of Bridge the Gap, shares how a pandemic-era initiative grew into a national movement connecting young volunteers with senior citizens through technology, empathy, and human connection.",
@@ -97,7 +97,7 @@ const ArchivePage = () => {
         },
         {
           image: "/images/media/archive/Workshop11.jpg",
-          category: "workshop",
+          category: "podcast",
           title:
             "Listening Is About Love: Paul Spivey's Path From the Board to Board Search",
           description:
@@ -111,7 +111,7 @@ const ArchivePage = () => {
       items: [
         {
           image: "/images/media/archive/Workshop4.jpg",
-          category: "workshop",
+          category: "podcast",
           title: "Climate Literacy Is a Human Right",
           description:
             "At just 14 years old, Maya Gowda founded SEED to fill a gap she saw in her school’s curriculum: real, actionable climate education.",
@@ -120,7 +120,7 @@ const ArchivePage = () => {
 
         {
           image: "/images/media/archive/Workshop5.jpg",
-          category: "workshop",
+          category: "podcast",
           title: "On a Mission to Serve, Esha Venkat Built a NEST4US",
           description:
             "When she was ten, Esha Venkat never imagined the small acts of service she did with her family would grow into NEST4US, one of the country’s fastest-scaling youth-powered volunteer organizations.",
@@ -129,7 +129,7 @@ const ArchivePage = () => {
 
         {
           image: "/images/media/archive/Workshop6.jpg",
-          category: "workshop",
+          category: "podcast",
           title:
             "Carl Nassib’s Journey from Philly and the NFL to Philanthropy",
           description:
@@ -138,7 +138,7 @@ const ArchivePage = () => {
         },
         {
           image: "/images/media/archive/Workshop7.jpg",
-          category: "workshop",
+          category: "podcast",
           title: "How Adeline Azrack Became a Restorer of Dignity",
           description:
             "Adeline Azrack's early work with young people from underresourced backgrounds has led to a lifetime of service and leadership inside one of the world's most influential brands.",
@@ -146,7 +146,7 @@ const ArchivePage = () => {
         },
         {
           image: "/images/media/archive/Workshop8.jpg",
-          category: "workshop",
+          category: "podcast",
           title: "For Wendy Diamond, Every Day is Women's Entrepreneurship Day",
           description:
             "In this powerful episode of Tribe Talk, host Kyle Matthys sits down with global entrepreneur, philanthropist, and founder Wendy Diamond to explore a life defined not by circumstance, but by resilience, purpose, and action.",
@@ -168,7 +168,7 @@ const ArchivePage = () => {
         },
         {
           image: "/images/media/archive/Workshop1New.jpg",
-          category: "workshop",
+          category: "podcast",
           title: "From the NFL to Fixing Philanthropy",
           description:
             "Former NFL star and Rayze founder Carl Nassib joins TRIIBE Talk to reveal how a single volunteer day near the Buccaneers’ stadium opened his eyes to a broken system, motivating him give philanthropic giving an upgrade.",
@@ -176,7 +176,7 @@ const ArchivePage = () => {
         },
         {
           image: "/images/media/archive/Workshop2.jpg",
-          category: "workshop",
+          category: "podcast",
           title:
             "Inspired by Early Tragedy, Olivia Zhang is Putting Cancer Kids First",
           description:
@@ -185,7 +185,7 @@ const ArchivePage = () => {
         },
         {
           image: "/images/media/archive/Workshop3.jpg",
-          category: "workshop",
+          category: "podcast",
           title:
             "Hunger into Hope: Robert Lee is Rescuing Leftover Cuisine One Plate at a Time",
           description:

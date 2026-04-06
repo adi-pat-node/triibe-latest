@@ -528,7 +528,7 @@ const MediaPage = () => {
             ))}
           </div>
           {/* Archive Link */}
-          <div className="text-center pt-16">
+          <div className="text-center pt-16 pb-16">
             <Link
               href="/media/archive"
               className="inline-block px-8 py-4  bg-[#1C5945] text-white  font-bold hover:shadow-lg  border  rounded-[12px] "
