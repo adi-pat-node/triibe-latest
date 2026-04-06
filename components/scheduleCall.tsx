@@ -10,7 +10,7 @@ export default function ScheduleCall() {
           </h3>
 
           <a
-            href="#"
+            href="https://calendly.com/kylematthys/30min"
             className="w-[80%] px-6 py-3 bg-white text-black rounded hover:bg-gray-100 transition-colors font-semibold text-base text-center mx-auto"
           >
             Schedule a Call
