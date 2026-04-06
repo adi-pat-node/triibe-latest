@@ -44,6 +44,13 @@ const testimonials = [
     year: "TRIIBE Fellow Spring 2025",
     organization: "Founder, SEED est. 2019",
   },
+  {
+    quote:
+      "Being part of TRIIBE has shown me how powerful it is to be surrounded by people who are all committed to creating tangible change. I’m driven by the belief that small acts of connection can scale into meaningful change.",
+    name: "Varuni Chopra",
+    year: "TRIIBE Fellow Spring 2025",
+    organization: "Founder, Bridge The Gap est. 2022",
+  },
 ];
 
 const faqs = [
