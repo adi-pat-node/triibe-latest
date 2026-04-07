@@ -20,6 +20,15 @@ const ArchivePage = () => {
             "Nancy Bonges’s story starts as the daughter of Korean immigrants whose experience as a first-generation American informs her work as Executive Director of Community Engagement at William Blair, now spearheading a global corporate community strategy.",
           link: "https://www.youtube.com/watch?v=-TY4Iz5BNxg",
         },
+        {
+          image: "/images/media/archive/Workshop17.jpg",
+          category: "podcast",
+          title:
+            "Why the Non-Profit Model is Broken and How Triibe is Fixing It with Kyle Matthys",
+          description:
+            "Kyle explains why Gen Z and Gen Alpha are the most socially conscious generations in history and how Triibe is providing the funding, mentorship, and community needed to turn student projects into sustainable non-profit organizations.",
+          link: "https://www.youtube.com/watch?v=5tjyws4mq-E",
+        },
       ],
     },
     {
@@ -57,6 +66,15 @@ const ArchivePage = () => {
           description:
             "Samin Bhan, founder and CEO of Lookupp, is establishing “Lookup Zones” across college campuses to help young people reclaim in-person connection in a screen-saturated world.",
           link: "https://www.youtube.com/watch?v=-OXibXdyUqg",
+        },
+        {
+          image: "/images/media/archive/Workshop19.jpg",
+          category: "podcast",
+          title:
+            "When Youth Meet Purpose, People Lean In: A Conversation with Kyle Matthys",
+          description:
+            "Hear how his cause inspires young people to grow their skills, connect with their communities, and take action, creating a ripple effect where people naturally lean in and ask, “Tell me more.”",
+          link: "https://www.youtube.com/watch?v=dLrNM4RXhW4",
         },
       ],
     },
@@ -261,6 +279,14 @@ const ArchivePage = () => {
           description:
             "Announcing event sponsors, speakers, and funding for our first summit, alongside new partnerships.",
           link: "https://mailchi.mp/triibe.us/triibe-newsletter-april-edition-4763882",
+        },
+        {
+          image: "/images/media/archive/Workshop18.jpg",
+          category: "podcast",
+          title: "Kyle Matthys from Triibe.us on Impact Entrepreneurship",
+          description:
+            "Kyle Matthys shares his journey as a young entrepreneur passionate about sustainability and community building. He discusses his work with Triibe.us, a nonprofit supporting youth-led initiatives in climate action.",
+          link: "https://www.youtube.com/watch?v=CQQ-MjnsG4g",
         },
       ],
     },
