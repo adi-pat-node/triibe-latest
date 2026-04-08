@@ -90,9 +90,9 @@ export const metadata: Metadata = {
   //   google: "google-site-verification-code",
   //   yandex: "yandex-verification-code",
   // },
-  alternates: {
-    canonical: "https://www.triibe.org",
-  },
+  // alternates: {
+  //   canonical: "https://www.triibe.org",
+  // },
 
   icons: {
     icon: [
