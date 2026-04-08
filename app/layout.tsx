@@ -27,11 +27,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.triibe.org"),
   title: {
-    default: "TRIIBE - Supporting the Next Generation of Change Makers",
+    default: "TRIIBE - Funding next-gen nonprofit founders",
     template: "%s | TRIIBE",
   },
-  description:
-    "Supporting and developing the next generation of change makers advancing food, water, shelter, health, education, or energy. Join our mentorship program and impact initiatives.",
+  description: `Everyone wants a village, but nobody wants to be a villager. So we built a TRIIBE. Next-gen for next-gen, a foundation made up of incredible changemakers under the age of 30, ensuring next-gen nonprofit founders don't burn out when transitioning from a "youth" nonprofit to an established nonprofit.
+
+  Whether through our College Fellowship, TRIIBE Talks, or the TRIIBE 100, we are building out the nonprofit startup ecosystem, providing stability, visibility, and credibility to next-gen nonprofit founders taking root today to advance tomorrow.`,
   keywords: [
     "nonprofit",
     "changemakers",
@@ -63,9 +64,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.triibe.org",
     siteName: "TRIIBE",
-    title: "TRIIBE - Supporting the Next Generation of Change Makers",
-    description:
-      "Supporting and developing the next generation of change makers advancing food, water, shelter, health, education, or energy.",
+    title: "TRIIBE - Funding next-gen nonprofit founders",
+    description: `Everyone wants a village, but nobody wants to be a villager. So we built a TRIIBE. Next-gen for next-gen, a foundation made up of incredible changemakers under the age of 30, ensuring next-gen nonprofit founders don't burn out when transitioning from a "youth" nonprofit to an established nonprofit.
+
+    Whether through our College Fellowship, TRIIBE Talks, or the TRIIBE 100, we are building out the nonprofit startup ecosystem, providing stability, visibility, and credibility to next-gen nonprofit founders taking root today to advance tomorrow.`,
     images: [
       {
         url: "https://www.triibe.org/triibe-logo-51.png",
@@ -77,9 +79,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TRIIBE - Supporting the Next Generation of Change Makers",
-    description:
-      "Supporting and developing the next generation of change makers advancing food, water, shelter, health, education, or energy.",
+    title: "TRIIBE - Funding next-gen nonprofit founders",
+    description: `Everyone wants a village, but nobody wants to be a villager. So we built a TRIIBE. Next-gen for next-gen, a foundation made up of incredible changemakers under the age of 30, ensuring next-gen nonprofit founders don't burn out when transitioning from a "youth" nonprofit to an established nonprofit.
+
+    Whether through our College Fellowship, TRIIBE Talks, or the TRIIBE 100, we are building out the nonprofit startup ecosystem, providing stability, visibility, and credibility to next-gen nonprofit founders taking root today to advance tomorrow.`,
     images: ["https://www.triibe.org/triibe-logo-51.png"],
     creator: "@triibe_us",
   },
@@ -113,8 +116,9 @@ export default function RootLayout({
     alternateName: "TRIIBE Organization",
     url: "https://www.triibe.org",
     logo: "https://www.triibe.org/images/headerlogo.png",
-    description:
-      "Supporting and developing the next generation of change makers advancing food, water, shelter, health, education, or energy.",
+    description: `Everyone wants a village, but nobody wants to be a villager. So we built a TRIIBE. Next-gen for next-gen, a foundation made up of incredible changemakers under the age of 30, ensuring next-gen nonprofit founders don't burn out when transitioning from a "youth" nonprofit to an established nonprofit.
+
+    Whether through our College Fellowship, TRIIBE Talks, or the TRIIBE 100, we are building out the nonprofit startup ecosystem, providing stability, visibility, and credibility to next-gen nonprofit founders taking root today to advance tomorrow.`,
     foundingDate: "2023",
     areaServed: "Worldwide",
     founder: [
