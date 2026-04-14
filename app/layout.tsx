@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.triibe.org"),
   title: {
     default: "TRIIBE - Funding next-gen nonprofit founders",
-    template: "%s | TRIIBE",
+    template: "%s",
   },
   description: `Everyone wants a village, but nobody wants to be a villager. So we built a TRIIBE. Next-gen for next-gen, a foundation made up of incredible changemakers under the age of 30, ensuring next-gen nonprofit founders don't burn out when transitioning from a "youth" nonprofit to an established nonprofit.
 
