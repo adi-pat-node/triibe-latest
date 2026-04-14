@@ -877,6 +877,22 @@ const legacyBoard = [
     image: "/images/about/team/Purnima Voria.png",
     linkedin: "https://www.linkedin.com/in/purnimavoria/",
   },
+
+  {
+    name: "Chelsea Toler",
+    role: "Legacy Board Member",
+    bio: "Chelsea Toler is the Co-Founder of Logictry, President of the The Family Foundation, and holds a PhD in Community and Adult Education.",
+    image: "/images/about/team/Chelsea Toler.jpg",
+    linkedin: "https://www.linkedin.com/in/catoler92/",
+  },
+
+  {
+    name: "Geoffrey Sargeant",
+    role: "Legacy Board Member",
+    bio: "Geoffrey Sargeant is the Managing Director & Head of Capital Markets and Executive Ambassador of The REAL",
+    image: "/images/about/team/Geoffrey Sargeant.png",
+    linkedin: "https://www.linkedin.com/in/geoffsargeant/",
+  },
 ];
 
 const southAmerica = [];
