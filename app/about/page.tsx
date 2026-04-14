@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Nonprofit for Next-Gen Founders | About TRIIBE",
+  title: "Nonprofit for Next-Gen Founders | TRIIBE",
   description:
     "Learn about TRIIBE, a nonprofit for next-gen founders supporting student changemakers with resources, community, and long-term impact.",
 };
