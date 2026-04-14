@@ -221,16 +221,16 @@ const ProgramPage = () => {
           </div>
         </div>
       </section>
-      */ }
+      */}
 
       {/* Problem Visual/Infographic */}
 
-        <section className="pt-32 px-6 bg-white md:px-25 lg:px-50">        
-          <div className="max-w-260 mx-auto">
+      <section className="pt-32 px-6 bg-white md:px-25 lg:px-50">
+        <div className="max-w-260 mx-auto">
           <div className="max-w-5xl mx-auto">
-          <p className="font-bold text-black text-4xl md:text-[40px]  leading-tight">
-           Nonprofit founders are cut off from funding when entering college
-          </p>
+            <p className="font-bold text-black text-4xl md:text-[40px]  leading-tight">
+              Nonprofit founders are cut off from funding when entering college
+            </p>
           </div>
 
           {/* <section className="py-8 px-6 bg-gray-50"> */}
@@ -250,7 +250,6 @@ const ProgramPage = () => {
       </section>
 
       <ApplicationProcess />
-
 
       {/* Three Pillars of Support Section */}
       <section className="py-20 px-4 md:px-25 lg:px-50 bg-white border-t border-gray-200">

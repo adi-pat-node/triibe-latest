@@ -12,6 +12,12 @@ import {
   Droplet,
 } from "lucide-react";
 
+export const metadata = {
+  title: "Nonprofit for Next-Gen Founders | About TRIIBE",
+  description:
+    "Learn about TRIIBE, a nonprofit for next-gen founders supporting student changemakers with resources, community, and long-term impact.",
+};
+
 const teamMembers = [
   {
     name: "Kyle Matthys",

@@ -15,6 +15,12 @@ import ImpactMetrics from "@/components/impactMetrics";
 import CTASection from "@/components/cta";
 import OfficeMap from "@/components/officeMap";
 
+export const metadata = {
+  title: "Funding for Next-Gen Nonprofit Founders | TRIIBE",
+  description:
+    "Get funding for next-gen nonprofit founders through TRIIBE's fellowship, mentorship, and community support designed for next-gen changemakers.",
+};
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
