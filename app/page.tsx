@@ -29,7 +29,7 @@ export default function Home() {
       {/* <MissionStatement /> */}
       <ProgramOverview />
       <DeckSection />
-      <OfficeMap />
+      {/* <OfficeMap /> */}
       <FellowshipBenefits />
       <KeyStatistics />
       <Changemakers />
