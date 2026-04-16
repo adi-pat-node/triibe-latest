@@ -146,8 +146,7 @@ export default function OfficeMap() {
           Global Network
         </h2>
         <p className="text-[#495565] text-lg max-w-2xl mx-auto mb-12">
-          With 50+ volunteers, TRIIBE Has 10+ branches in regions across the
-          globe <br /> Click on the map to learn more
+          Click on the map to learn more
         </p>
 
         <div className="relative bg-white rounded-3xl border border-gray-100 shadow-sm aspect-[2/1] overflow-hidden w-full">
