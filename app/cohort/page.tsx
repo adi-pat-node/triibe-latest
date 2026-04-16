@@ -8,6 +8,9 @@ export const metadata = {
   title: "Student Nonprofit Cohort | TRIIBE",
   description:
     "Join our student nonprofit cohort offering funding, mentorship, and community support for next-gen changemakers building impactful organizations.",
+  alternates: {
+    canonical: "https://www.triibe.org/cohort",
+  },
 };
 
 const page = () => {

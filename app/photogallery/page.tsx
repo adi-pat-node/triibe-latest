@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Nonprofit Event Photos | TRIIBE",
   description:
     "Explore nonprofit event photos featuring student leaders, workshops, and community initiatives led by next-gen changemakers.",
+  alternates: {
+    canonical: "https://www.triibe.org/photogallery",
+  },
 };
 
 export default function Page() {
