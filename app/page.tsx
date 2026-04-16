@@ -19,6 +19,9 @@ export const metadata = {
   title: "Funding for Next-Gen Nonprofit Founders | TRIIBE",
   description:
     "Get funding for next-gen nonprofit founders through TRIIBE's fellowship, mentorship, and community support designed for next-gen changemakers.",
+  alternates: {
+    canonical: "https://www.triibe.org",
+  },
 };
 
 export default function Home() {
