@@ -12,6 +12,14 @@ const ArchivePage = () => {
       month: "March 2026",
       items: [
         {
+          image: "/images/media/archive/March_Newsletter.jpg",
+          category: "newsletter",
+          title: "Monthly Update | March 2026",
+          description:
+            "100+ Changemakers. One Room. We brought together 100+ attendees for the Billion Dollar Impact Summit in NYC.",
+          link: "https://blog.triibe.org/p/monthly-update-march-2026",
+        },
+        {
           image: "/images/media/archive/Workshop16.jpg",
           category: "podcast",
           title:
@@ -34,6 +42,14 @@ const ArchivePage = () => {
     {
       month: "February 2026",
       items: [
+        {
+          image: "/images/media/archive/Billion_Dollar_Impact.webp",
+          category: "newsletter",
+          title: "TRIIBE Next-Gen Changemaker Summit Invitation",
+          description:
+            "Youth-led organizations receive a fraction of philanthropic funding, and most early-stage nonprofits lose momentum before they ever reach scale.",
+          link: "https://blog.triibe.org/p/triibe-next-gen-changemaker-summit-invitation",
+        },
         {
           image: "/images/media/archive/Workshop12.jpg",
           category: "podcast",
@@ -182,7 +198,7 @@ const ArchivePage = () => {
           title: "Onboarding Our 6th TRIIBE Branch!",
           description:
             "In the past month, we onboarded 25 new members, bringing our total to nearly 70 and keeping us on track toward our goal of 100 by year-end.",
-          link: "https://mailchi.mp/triibe.us/the-triibune-october-newsletter",
+          link: "https://blog.triibe.org/p/monthly-update-november-2025",
         },
         {
           image: "/images/media/archive/Workshop1New.jpg",
@@ -222,24 +238,24 @@ const ArchivePage = () => {
           title: "TRIIBE talk Podcast Launched",
           description:
             "25 new members, NEST, a $268K podcast partnership, dozens of cohort applicants, and a 6th global branch.",
-          link: "https://mailchi.mp/triibe.us/the-triibune-october-newsletter",
+          link: "https://blog.triibe.org/p/monthly-update-october-2025",
         },
       ],
     },
-    {
-      month: "September 2025",
-      items: [
-        {
-          image:
-            "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/692cb8157677d1fb7dfb7fb8_septembernewsletter-min.jpg",
-          category: "newsletter",
-          title: "New TRIIBE Office",
-          description:
-            "Major Climate Week turnout, another new office, global expansion, rapid team growth, updated materials.",
-          link: "https://us9.campaign-archive.com/?u=88e516b0368da342b9b8c8a74&id=e03ca8d46f",
-        },
-      ],
-    },
+    // {
+    //   month: "September 2025",
+    //   items: [
+    //     {
+    //       image:
+    //         "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/692cb8157677d1fb7dfb7fb8_septembernewsletter-min.jpg",
+    //       category: "newsletter",
+    //       title: "New TRIIBE Office",
+    //       description:
+    //         "Major Climate Week turnout, another new office, global expansion, rapid team growth, updated materials.",
+    //       link: "https://us9.campaign-archive.com/?u=88e516b0368da342b9b8c8a74&id=e03ca8d46f",
+    //     },
+    //   ],
+    // },
     {
       month: "August 2025",
       items: [
@@ -250,7 +266,7 @@ const ArchivePage = () => {
           title: "Growing Tenfold",
           description:
             "Announcing new mentors, a new office, major partnerships, grant progress, media features, and an updated mission.",
-          link: "https://us9.campaign-archive.com/?u=88e516b0368da342b9b8c8a74&id=f4d75358ac",
+          link: "https://blog.triibe.org/p/monthly-update-august-2025",
         },
       ],
     },
@@ -264,22 +280,22 @@ const ArchivePage = () => {
           title: "Summit 2025 Recap",
           description:
             "Recapping the Changemaker Summit 2025 with over 110 high-profile attendees while expanding our digital presence.",
-          link: "https://mailchi.mp/triibe.us/the-triibune-july-edition",
+          link: "https://blog.triibe.org/p/the-triibune-july-edition",
         },
       ],
     },
     {
       month: "June 2025",
       items: [
-        {
-          image:
-            "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4e4d92bcc1dd2b90c8c5a_f363186d-31d2-002b-e5f7-9380774261f3.png",
-          category: "newsletter",
-          title: "Launching Our Summit",
-          description:
-            "Announcing event sponsors, speakers, and funding for our first summit, alongside new partnerships.",
-          link: "https://mailchi.mp/triibe.us/triibe-newsletter-april-edition-4763882",
-        },
+        // {
+        //   image:
+        //     "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4e4d92bcc1dd2b90c8c5a_f363186d-31d2-002b-e5f7-9380774261f3.png",
+        //   category: "newsletter",
+        //   title: "Launching Our Summit",
+        //   description:
+        //     "Announcing event sponsors, speakers, and funding for our first summit, alongside new partnerships.",
+        //   link: "https://mailchi.mp/triibe.us/triibe-newsletter-april-edition-4763882",
+        // },
         {
           image: "/images/media/archive/Workshop18.jpg",
           category: "podcast",
@@ -290,20 +306,20 @@ const ArchivePage = () => {
         },
       ],
     },
-    {
-      month: "May 2025",
-      items: [
-        {
-          image:
-            "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4e4b9c1cd99f5b1d43464_d5ad1fc5-982a-4cc7-031c-ea1ab13290ea.png",
-          category: "newsletter",
-          title: "Our First Cohort",
-          description:
-            "Welcoming our first cohort as they connect with mentors and debuting TRIIBE merchandise.",
-          link: "https://mailchi.mp/triibe.us/triibe-newsletter-april-edition-4763842",
-        },
-      ],
-    },
+    // {
+    //   month: "May 2025",
+    //   items: [
+    //     {
+    //       image:
+    //         "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4e4b9c1cd99f5b1d43464_d5ad1fc5-982a-4cc7-031c-ea1ab13290ea.png",
+    //       category: "newsletter",
+    //       title: "Our First Cohort",
+    //       description:
+    //         "Welcoming our first cohort as they connect with mentors and debuting TRIIBE merchandise.",
+    //       link: "https://mailchi.mp/triibe.us/triibe-newsletter-april-edition-4763842",
+    //     },
+    //   ],
+    // },
     {
       month: "April 2025",
       items: [
@@ -314,7 +330,7 @@ const ArchivePage = () => {
           title: "6 Month Anniversary",
           description:
             "Celebrating our 6-month anniversary, achieving 501(c)(3) status, joining the Wasserman Unstoppable Accelerator.",
-          link: "https://mailchi.mp/cd1434665037/triibe-newsletter-april-edition",
+          link: "https://blog.triibe.org/p/triibe-newsletter-april-edition",
         },
       ],
     },

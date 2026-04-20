@@ -303,17 +303,16 @@ const mediaCards = [
   {
     id: "newsletter",
     title: "TRIIBUNE Newsletter",
-    image:
-      "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/6914b8fe53e5c6fdf6125a6c_70632aae-58b7-18fb-bdca-711530df92dd.png",
-    badge: "NOV 2025",
-    heading: "Our 6th TRIIBE Branch is Here!",
+    image: "/images/media/archive/March_Newsletter.jpg",
+    badge: "MARCH 2026",
+    heading: "Monthly Update | March 2026",
     description:
-      "In the past month, we onboarded 25 new members, bringing our total to nearly 70 and keeping us on track toward our goal of 100 by year-end. We launched...",
+      "100+ Changemakers. One Room. We brought together 100+ attendees for the Billion Dollar Impact Summit in NYC.",
     buttons: [
       {
         type: "link",
         text: "Read",
-        href: "https://mailchi.mp/triibe.us/the-triibune-october-newsletter",
+        href: "https://blog.triibe.org/p/monthly-update-march-2026",
       },
     ],
   },
