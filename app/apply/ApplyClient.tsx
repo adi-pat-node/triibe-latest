@@ -132,7 +132,7 @@ const Page = () => {
             <div className="bg-white rounded-lg p-8 md:p-12">
               <form
                 ref={formRef}
-                action="https://formsubmit.co/partnerships@triibe.org" //team@triibe.us
+                action="https://formsubmit.co/partnerships@triibe.org"
                 method="POST"
               >
                 {/* Hidden FormSubmit configurations */}

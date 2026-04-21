@@ -1,22 +1,20 @@
-import React from "react";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import DonatePage from "@/components/donatePage";
-import KeyStatistics from "@/components/keyStatistics";
-import ScheduleCall from "@/components/scheduleCall";
-const page = () => {
-  return (
-    <main>
-      <Header />
+import { redirect } from "next/navigation";
 
-      <DonatePage />
-
-      <KeyStatistics />
-      <ScheduleCall />
-
-      <Footer />
-    </main>
-  );
+export const metadata = {
+  title: "Donate - Support TRIIBE's Mission",
+  description:
+    "Support TRIIBE's mission to empower the next generation of change makers. Your donation helps fund mentorship programs and resources for young social entrepreneurs.",
+  openGraph: {
+    title: "Donate to TRIIBE - Support Change Makers",
+    description:
+      "Your donation helps TRIIBE provide mentorship and resources to young change makers creating positive social impact.",
+    url: "https://www.triibe.org/donate",
+  },
+  alternates: {
+    canonical: "https://www.triibe.org/donate",
+  },
 };
 
-export default page;
+export default function page() {
+  redirect("https://donate.rayzeapp.com/orgs/tIbe07j0XKkLQezHHXoz");
+}

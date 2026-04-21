@@ -21,9 +21,8 @@ const footerColumns = [
     links: [
       {
         label: "Donate",
-        href: "#",
-        zeffyFormLink:
-          "https://www.zeffy.com/embed/donation-form/invest-in-the-future-3?modal=true",
+        href: "https://donate.rayzeapp.com/orgs/tIbe07j0XKkLQezHHXoz",
+        target: "_blank",
       },
 
       { label: "Contact", href: "mailto:partnerships@triibe.org" },
@@ -51,25 +50,19 @@ export default function Footer() {
                 {column.title}
               </h3>
               <nav className="flex flex-col items-start gap-2">
-                {column.links.map((link, linkIndex) =>
-                  link.zeffyFormLink ? (
-                    <button
-                      key={linkIndex}
-                      zeffy-form-link={link.zeffyFormLink}
-                      className="font-normal text-[#495565] text-sm hover:text-black transition-colors cursor-pointer bg-transparent border-none p-0"
-                    >
-                      {link.label}
-                    </button>
-                  ) : (
-                    <a
-                      key={linkIndex}
-                      href={link.href}
-                      className=" font-normal text-[#495565] text-sm tracking-[0] leading-5 hover:text-black transition-colors"
-                    >
-                      {link.label}
-                    </a>
-                  ),
-                )}
+                {column.links.map((link, linkIndex) => (
+                  <a
+                    key={linkIndex}
+                    href={link.href}
+                    {...(link.target && {
+                      target: link.target,
+                      rel: "noopener noreferrer",
+                    })}
+                    className=" font-normal text-[#495565] text-sm tracking-[0] leading-5 hover:text-black transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                ))}
               </nav>
             </div>
           ))}

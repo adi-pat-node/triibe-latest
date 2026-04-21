@@ -84,12 +84,14 @@ export default function CTASection() {
               Your donation helps founders make an impact in food, water,
               shelter, health and education.
             </p>
-            <button
-              zeffy-form-link="https://www.zeffy.com/embed/donation-form/invest-in-the-future-3?modal=true"
+            <a
+              href="https://donate.rayzeapp.com/orgs/tIbe07j0XKkLQezHHXoz"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full px-6 py-3 bg-white text-black rounded hover:bg-gray-100 transition-colors font-semibold text-base text-center cursor-pointer"
             >
               Donate
-            </button>
+            </a>
           </div>
         </div>
       </div>

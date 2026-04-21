@@ -287,39 +287,18 @@ const ArchivePage = () => {
     {
       month: "June 2025",
       items: [
-        // {
-        //   image:
-        //     "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4e4d92bcc1dd2b90c8c5a_f363186d-31d2-002b-e5f7-9380774261f3.png",
-        //   category: "newsletter",
-        //   title: "Launching Our Summit",
-        //   description:
-        //     "Announcing event sponsors, speakers, and funding for our first summit, alongside new partnerships.",
-        //   link: "https://mailchi.mp/triibe.us/triibe-newsletter-april-edition-4763882",
-        // },
+
         {
           image: "/images/media/archive/Workshop18.jpg",
           category: "podcast",
-          title: "Kyle Matthys from Triibe.us on Impact Entrepreneurship",
+          title: "Kyle Matthys from Triibe.org on Impact Entrepreneurship",
           description:
-            "Kyle Matthys shares his journey as a young entrepreneur passionate about sustainability and community building. He discusses his work with Triibe.us, a nonprofit supporting youth-led initiatives in climate action.",
+            "Kyle Matthys shares his journey as a young entrepreneur passionate about sustainability and community building. He discusses his work with Triibe.org, a nonprofit supporting youth-led initiatives in climate action.",
           link: "https://www.youtube.com/watch?v=CQQ-MjnsG4g",
         },
       ],
     },
-    // {
-    //   month: "May 2025",
-    //   items: [
-    //     {
-    //       image:
-    //         "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4e4b9c1cd99f5b1d43464_d5ad1fc5-982a-4cc7-031c-ea1ab13290ea.png",
-    //       category: "newsletter",
-    //       title: "Our First Cohort",
-    //       description:
-    //         "Welcoming our first cohort as they connect with mentors and debuting TRIIBE merchandise.",
-    //       link: "https://mailchi.mp/triibe.us/triibe-newsletter-april-edition-4763842",
-    //     },
-    //   ],
-    // },
+
     {
       month: "April 2025",
       items: [
@@ -436,24 +415,7 @@ const ArchivePage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      {/* <section className="py-12 px-6 bg-gray-100">
-        <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-lg px-8 md:px-12 py-8 md:py-10 hover:scale-105 transition-transform">
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              Stay informed. Join the TRIIBE
-            </h3>
-            <Link
-              href="https://mailchi.mp/triibe.us/subscribe-to-triibe"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white text-black border-2 border-black px-8 py-3 rounded-full font-semibold text-base hover:bg-green-950 hover:text-white transition-all duration-300 whitespace-nowrap"
-            >
-              Subscribe
-            </Link>
-          </div>
-        </div>
-      </section> */}
+
 
       <Footer />
     </main>

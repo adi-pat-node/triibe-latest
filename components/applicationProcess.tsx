@@ -27,7 +27,8 @@ export default function ApplicationProcess() {
           Apply to the Fellowship
         </h2>
         <p className="max-w-191 font-normal text-[#495565] text-lg leading-[29.2px]">
-          TRIIBE provides funding, mentorship, and community for college students taking root today to advance tomorrow
+          TRIIBE provides funding, mentorship, and community for college
+          students taking root today to advance tomorrow
         </p>
       </header>
 
@@ -60,21 +61,23 @@ export default function ApplicationProcess() {
                   </div>
                 ))}
               </div>
-            <div className="flex flex-col gap-4 w-full">
-              <a
-              href="/apply"
-              className="w-full md:w-auto px-6 py-3 bg-[#1C5945] hover:bg-[#003d24] text-white rounded border border-[#1C5945] transition-colors text-center font-semibold text-base"
-            >
-             Begin Application
-              </a>
+              <div className="flex flex-col gap-4 w-full">
+                <a
+                  href="/apply"
+                  className="w-full md:w-auto px-6 py-3 bg-[#1C5945] hover:bg-[#003d24] text-white rounded border border-[#1C5945] transition-colors text-center font-semibold text-base"
+                >
+                  Begin Application
+                </a>
 
-              <a
-              zeffy-form-link="https://www.zeffy.com/embed/donation-form/invest-in-the-future-3?modal=true"
-              className="px-6 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base w-full md:w-auto text-center cursor-pointer"
-              >
-             Donate
-             </a>
-            </div> 
+                <a
+                  href="https://donate.rayzeapp.com/orgs/tIbe07j0XKkLQezHHXoz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base w-full md:w-auto text-center cursor-pointer"
+                >
+                  Donate
+                </a>
+              </div>
             </div>
           </div>
         </div>
