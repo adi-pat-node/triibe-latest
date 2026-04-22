@@ -294,7 +294,7 @@ const PhotoGallery = () => {
         </div>
       )}
 
-      <CTASection />
+      {/* <CTASection /> */}
 
       <Footer />
     </main>

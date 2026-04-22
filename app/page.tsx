@@ -40,7 +40,7 @@ export default function Home() {
 
       {/* <SponsorsAndPartners /> */}
       {/* <ImpactMetrics /> */}
-      <CTASection />
+      {/* <CTASection /> */}
       <Footer />
       {/* <Newsletter /> */}
     </div>

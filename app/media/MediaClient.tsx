@@ -28,9 +28,9 @@ const workshops = [
     ],
     duration: "",
     type: "",
-    youtubeId: "Npc6NkJ9YVc",
+    youtubeId: "_kjTepZUvuM",
     signupLink: "#",
-    watchLink: "https://www.youtube.com/watch?v=Npc6NkJ9YVc",
+    watchLink: "https://www.youtube.com/watch?v=_kjTepZUvuM",
   },
   {
     title: "",
@@ -560,7 +560,7 @@ const MediaPage = () => {
       </section>
 
       {/* Upcoming Events Section */}
-      <MediaEventsList />
+      {/* <MediaEventsList /> */}
       {/* <section className="py-20 px-4 md:px-15 lg:px-50 bg-white">
         <div className="max-w-300 mx-auto">
           <h2 className="font-bold text-black text-4xl mb-12">
@@ -672,7 +672,7 @@ const MediaPage = () => {
         </div>
       </section> */}
 
-      <CTASection />
+      {/* <CTASection /> */}
 
       <Footer />
 

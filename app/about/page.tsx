@@ -1856,7 +1856,7 @@ const page = () => {
         </div>
       </section>
 
-      <CTASection />
+      {/* <CTASection /> */}
 
       <Footer />
     </main>

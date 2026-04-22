@@ -98,7 +98,7 @@ const EventsPage = () => {
       {/* Events Section */}
       <MediaEventsList />
 
-      <CTASection />
+      {/* <CTASection /> */}
       <Footer />
     </main>
   );

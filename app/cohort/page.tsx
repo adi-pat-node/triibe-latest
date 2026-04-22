@@ -21,7 +21,7 @@ const page = () => {
         <Cohort />
       </section>
 
-      <CTASection />
+      {/* <CTASection /> */}
 
       <Footer />
     </main>
