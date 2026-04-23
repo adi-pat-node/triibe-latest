@@ -687,6 +687,8 @@ const SummitPage = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 };
