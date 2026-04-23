@@ -3,40 +3,40 @@
 import { useEffect } from "react";
 
 export default function CTASection() {
-  useEffect(() => {
-    const observer = new MutationObserver(() => {
-      const zeffyModal = document.querySelector(
-        'iframe[src*="zeffy.com"]',
-      ) as HTMLIFrameElement | null;
+  // useEffect(() => {
+  //   const observer = new MutationObserver(() => {
+  //     const zeffyModal = document.querySelector(
+  //       'iframe[src*="zeffy.com"]',
+  //     ) as HTMLIFrameElement | null;
 
-      if (zeffyModal && zeffyModal.offsetParent !== null) {
-        document.body.style.overflow = "hidden";
-      } else {
-        document.body.style.overflow = "";
-      }
-    });
+  //     if (zeffyModal && zeffyModal.offsetParent !== null) {
+  //       document.body.style.overflow = "hidden";
+  //     } else {
+  //       document.body.style.overflow = "";
+  //     }
+  //   });
 
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true,
-      attributes: true,
-      attributeFilter: ["style", "class"],
-    });
+  //   observer.observe(document.body, {
+  //     childList: true,
+  //     subtree: true,
+  //     attributes: true,
+  //     attributeFilter: ["style", "class"],
+  //   });
 
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        document.body.style.overflow = "";
-      }
-    };
+  //   const handleKeyDown = (e: KeyboardEvent) => {
+  //     if (e.key === "Escape") {
+  //       document.body.style.overflow = "";
+  //     }
+  //   };
 
-    window.addEventListener("keydown", handleKeyDown);
+  //   window.addEventListener("keydown", handleKeyDown);
 
-    return () => {
-      observer.disconnect();
-      window.removeEventListener("keydown", handleKeyDown);
-      document.body.style.overflow = "";
-    };
-  }, []);
+  //   return () => {
+  //     observer.disconnect();
+  //     window.removeEventListener("keydown", handleKeyDown);
+  //     document.body.style.overflow = "";
+  //   };
+  // }, []);
 
   return (
     /* Outer padding:

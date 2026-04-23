@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import MediaClient from "./MediaClient";
 
 export const metadata: Metadata = {
-  title: "Nonprofit Content for Students | TRIIBE",
+  title: "TRIIBE Media | Youth Nonprofit Stories, TRIIBE Talks & Impact Content",
   description:
-    "Discover nonprofit content for students including podcasts, events, workshops, and insights for next-gen founders scaling impact.",
+    "Watch TRIIBE Talks, discover youth nonprofit founders, and explore media content highlighting next-generation changemakers creating real impact globally.",
   alternates: {
     canonical: "https://www.triibe.org/media",
   },

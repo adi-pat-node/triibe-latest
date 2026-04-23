@@ -16,9 +16,9 @@ import CTASection from "@/components/cta";
 import OfficeMap from "@/components/officeMap";
 
 export const metadata = {
-  title: "Funding for Next-Gen Nonprofit Founders | TRIIBE",
+  title: "Undergraduate Nonprofit Fellowship & Grants for Founders Under 30 | TRIIBE",
   description:
-    "Get funding for next-gen nonprofit founders through TRIIBE's fellowship, mentorship, and community support designed for next-gen changemakers.",
+    "TRIIBE supports student and young nonprofit founders under 30 with fellowships, funding, and mentorship. Apply for grants, work on real projects, and scale your impact.",
   alternates: {
     canonical: "https://www.triibe.org",
   },
