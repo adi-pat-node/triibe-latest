@@ -10,15 +10,17 @@ function useCountdown(target: Date) {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
+    minutes: 0,
   });
 
   useEffect(() => {
     const calc = () => {
       const diff = target.getTime() - Date.now();
-      if (diff <= 0) return setTimeLeft({ days: 0, hours: 0 });
+      if (diff <= 0) return setTimeLeft({ days: 0, hours: 0, minutes: 0 });
       setTimeLeft({
         days: Math.floor(diff / (1000 * 60 * 60 * 24)),
         hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((diff / (1000 * 60)) % 60),
       });
     };
     calc();
@@ -91,6 +93,12 @@ export default function HeroSummit() {
                   {String(earlyBird.hours).padStart(2, "0")}
                 </span>
                 <span className="text-black text-xs mt-1">Hours</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <span className="text-black font-bold text-4xl leading-none">
+                  {String(earlyBird.minutes).padStart(2, "0")}
+                </span>
+                <span className="text-black text-xs mt-1">Mins</span>
               </div>
             </div>
           </div>

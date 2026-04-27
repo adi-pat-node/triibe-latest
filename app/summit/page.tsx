@@ -291,9 +291,9 @@ const SummitPage = () => {
       highlight: {
         image: "/images/summit/Curated2.png",
         label: "SATURDAY · MIDDAY INTERLUDE",
-        name: "Steve Madden Fashion Show",
+        name: "Fashion Show",
         description:
-          "Presented by Steve Madden · a 20-minute runway moment staged between the morning and afternoon TRIIBE Talks.",
+          "A 20-minute runway moment staged between the morning and afternoon TRIIBE Talks.", //  "Presented by Steve Madden · a 20-minute runway moment staged between the morning and afternoon TRIIBE Talks.",
         bullets: [
           "1:10 PM · Seating",
           "Main Hall runway",
@@ -330,7 +330,7 @@ const SummitPage = () => {
         },
         {
           time: "1:15 PM",
-          title: "Steve Madden Fashion Show",
+          title: "Fashion Show",
           description: "Full film crew coverage with TV livestream",
         },
         {
@@ -392,14 +392,13 @@ const SummitPage = () => {
               About the Summit
             </h2>
             <p className="text-black text-base leading-relaxed">
-              The Invite Only x TRIIBE Next-Gen Changemaker Summit is a
-              three-day invite-only convening bringing together the next
-              generation of nonprofit founders, established changemakers,
-              funders, mentors, and partners for an extraordinary weekend of
-              community, storytelling, and social impact. From a VIP Gala on
-              Friday evening to a full-day summit on Saturday and intimate
-              cohort workshops on Sunday, this experience is designed to fund,
-              connect, and celebrate the leaders building a better world.
+              The Invite Only x TRIIBE Next-Gen Changemaker Summit brings
+              together the next generation of nonprofit founders, established
+              changemakers, funders, mentors, and partners for an extraordinary
+              weekend of community, storytelling, and social impact. From a VIP
+              Gala on Friday evening to a full-day summit on Saturday, this
+              experience is designed to fund, connect, and celebrate the leaders
+              taking root today to advance tomorrow.
             </p>
           </div>
 
@@ -416,7 +415,7 @@ const SummitPage = () => {
         "
             >
               <Image
-                src="/images/summit/SnoopDogg.png"
+                src="/images/summit/snoopSiloutte1.png"
                 alt="Snoop Dogg"
                 fill
                 className="object-contain object-bottom"
@@ -453,13 +452,16 @@ const SummitPage = () => {
                     fontWeight: 100,
                   }}
                 >
-                  Snoop Dogg
+                  Coming Soon...
                 </h3>
 
                 <p className="text-white/80 text-base leading-relaxed">
+                  An intimate fireside on community, capital and the long game
+                  of building something that outlasts you.
+                  {/*
                   Artist, entrepreneur, cultural architect. An intimate fireside
                   on community, capital, and the long game of building something
-                  that outlasts you.
+                  that outlasts you. */}
                 </p>
 
                 <div className="flex flex-wrap gap-x-10 gap-y-2 mt-2 text-white text-base">
@@ -487,7 +489,7 @@ const SummitPage = () => {
                   image: "/images/summit/Curated1.png",
                 },
                 {
-                  name: "Steve Madden Fashion Show",
+                  name: "Fashion Show",
                   image: "/images/summit/Curated2.png",
                 },
                 {
