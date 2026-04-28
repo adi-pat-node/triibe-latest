@@ -304,7 +304,7 @@ const SummitPage = () => {
         {
           time: "9:30 AM",
           title: "Opening Ceremony",
-          description: "Welcome remarks by Kyle Matthys and Estuardo Meda",
+          description: "Welcome remarks by Kyle Matthys",
         },
         {
           time: "9:40 AM",
@@ -326,7 +326,7 @@ const SummitPage = () => {
         {
           time: "12:25 PM",
           title: "Lunch Reception",
-          description: "Diverse food bars",
+          description: "Diverse food trucks",
         },
         {
           time: "1:15 PM",
@@ -364,7 +364,7 @@ const SummitPage = () => {
         {
           time: "5:35 PM",
           title: "Closing Remarks",
-          description: "Kyle on stage thanking the audience",
+          description: "Kyle Matthys on stage thanking the audience",
         },
         {
           time: "5:45 PM",
