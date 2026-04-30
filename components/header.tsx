@@ -34,7 +34,7 @@ export default function Header() {
           {[
             { name: "Home", href: "/" },
             { name: "Program", href: "/program" },
-            { name: "Summit", href: "/summit" },
+            { name: "Next-Gen Summit", href: "/summit" },
             { name: "TRIIBE Talk", href: "/triibetalk" },
             { name: "Media", href: "/media" },
             { name: "About Us", href: "/about" },
@@ -97,7 +97,7 @@ export default function Header() {
           {[
             { name: "Home", href: "/" },
             { name: "Program", href: "/program" },
-            { name: "Summit", href: "/summit" },
+            { name: "Next-Gen Summit", href: "/summit" },
             { name: "TRIIBE Talk", href: "/triibetalk" },
             { name: "Media", href: "/media" },
             { name: "About Us", href: "/about" },

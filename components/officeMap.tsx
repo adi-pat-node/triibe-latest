@@ -102,6 +102,15 @@ const REGIONS: Region[] = [
       },
     ],
   },
+  {
+    id: "singapore",
+    name: "Singapore",
+    coordinates: { x: 84, y: 58 },
+    description:
+      "Helping next-gen nonprofit founders continue their work in Singapore.",
+    status: "TRIIBE Branch",
+    link: "/about",
+  },
 ];
 
 function SingleCard({ region }: { region: Region }) {

@@ -8,14 +8,14 @@ const benefits = [
     icon: "/images/home/container-3.svg",
     title: "Direct Funding",
     description:
-      "Financial grants to support nonprofit operations, programming, and organizational growth",
+      "Financial grants to support foundation operations, programming, and organizational growth",
   },
   {
     number: "02",
     icon: "/images/home/container-2.svg",
     title: "Mentorship",
     description:
-      "One-on-one guidance from two experienced nonprofit leaders and social entrepreneurs each quarter",
+      "One-on-one guidance from two experienced executives or philentrepreneurs each quarter",
   },
   {
     number: "03",
@@ -29,7 +29,7 @@ const benefits = [
     icon: "/images/home/container-7.svg",
     title: "Programming",
     description:
-      "Workshops and speaker series covering governance, fundraising, and organizational development",
+      "Personalized documentaries and TRIIBE Talks covering governance, fundraising, and organizational development",
   },
   {
     number: "05",
@@ -40,7 +40,6 @@ const benefits = [
   },
 ];
 
-
 export default function FellowshipBenefits() {
   return (
     <section className="flex flex-col items-start gap-12 px-4 md:px-25 lg:px-50 pt-10 pb-20 w-full bg-gray-50">
@@ -49,9 +48,8 @@ export default function FellowshipBenefits() {
           What Fellows Receive
         </h2>
         <p className=" font-normal text-[#495565] text-lg leading-[29.2px] max-w-219">
-          Comprehensive support designed for undergraduate nonprofit founders
-          navigating the unique challenges of building organizations while in
-          college.
+          Comprehensive support designed for foundations navigating the unique
+          challenges of scaling organizations while in their early 20s.
         </p>
       </div>
 

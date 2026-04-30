@@ -8,19 +8,19 @@ const outcomes = [
     icon: "images/home/container-6.svg",
     title: "Alumni Network",
     description:
-      "Continued connection with fellow founders and access to an expanding community of social entrepreneurs",
+      "Continued connection with fellow founders and access to an expanding community of philentrepreneurs",
   },
   {
     icon: "images/home/container-5.svg",
     title: "Ongoing Support",
     description:
-      "Access to resources, consultation, and guidance as your organization continues to develop",
+      "Access to resources, consultation, and guidance as your foundation continues to develop",
   },
   {
     icon: "images/home/container-1.svg",
     title: "Leadership Opportunities",
     description:
-      "Mentor current fellows and contribute to the next generation of nonprofit leaders",
+      "Mentor current fellows and contribute to the next generation of foundation executives",
   },
 ];
 
@@ -33,8 +33,8 @@ export default function PostGraduationOutcomes() {
             Beyond the Fellowship
           </h2>
           <p className=" font-normal text-[#495565] text-lg tracking-[0] leading-[29.2px]">
-            Support extends beyond graduation. TRIIBE alumni remain part of a
-            community committed to sustained social impact.
+            TRIIBE alumni remain part of a community committed to sustained
+            social impact.
           </p>
         </div>
 

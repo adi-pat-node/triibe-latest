@@ -168,11 +168,10 @@ export default function Changemakers() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-8">
           <h2 className=" font-bold text-black text-4xl tracking-[-0.90px] leading-10 mb-4">
-            Our First Two Cohorts
+            First Two Cohorts
           </h2>
           <p className=" font-normal text-[#495565] text-lg leading-7 mb-4">
-            Undergraduate students building organizations that address critical
-            social challenges
+            Next-Gen TRIIBE fellows growing their foundations
           </p>
         </div>
 

@@ -48,11 +48,11 @@ const supportedByLogos = [
     className: "w-[130px] h-[84px]",
   },
 
-  {
-    src: "/images/home/streamr1.png",
-    alt: "Supported by partner 3",
-    className: "w-64 h-[58px] object-contain",
-  },
+  // {
+  //   src: "/images/home/streamr1.png",
+  //   alt: "Supported by partner 3",
+  //   className: "w-64 h-[58px] object-contain",
+  // },
 ];
 
 const partneredWithLogos = [

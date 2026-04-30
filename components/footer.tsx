@@ -44,7 +44,7 @@ export default function Footer() {
                 TRIIBE
               </h2>
               <p className=" font-normal text-[#495565] text-sm tracking-[0] leading-[22.8px]">
-                Helping next-gen nonprofit founders continue their work
+                Helping next-gen founders grow their foundations
               </p>
             </div>
 
@@ -184,6 +184,28 @@ export default function Footer() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     d="M16 11.37a4 4 0 11-7.914 1.174A4 4 0 0116 11.37zM17.5 6.75h.01"
+                  />
+                </svg>
+              </a>
+
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#697282] hover:text-black transition-colors"
+                aria-label="TikTok"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M16.5 3v3.75a4.5 4.5 0 004.5 4.5M16.5 3h-3v12.75a3.75 3.75 0 11-3.75-3.75"
                   />
                 </svg>
               </a>

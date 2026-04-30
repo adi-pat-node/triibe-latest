@@ -5,7 +5,7 @@ import Image from "next/image";
 const programSections = [
   {
     title: "Why We Do It",
-    description: `Everyone wants a village, but nobody wants to be a villager. So we built a TRIIBE. Next-gen for next-gen, a foundation made up of incredible changemakers under the age of 30, ensuring next-gen nonprofit founders don't burn out when transitioning from a "youth" nonprofit to an established nonprofit.`,
+    description: `Everyone wants a village, but nobody wants to be a villager. So we built a TRIIBE. Next-gen for next-gen, we are ensuring next-gen founders don't burn out when transitioning from a "youth" foundation to an established foundation.`,
     bgColor: "bg-[#002c19]",
     textColor: "text-white",
     descriptionColor: "text-[#ffffffcc]",
@@ -17,7 +17,7 @@ const programSections = [
   {
     title: "What We Do",
     description:
-      "We are building out the nonprofit startup ecosystem. Whether through our College Fellowship, TRIIBE Talks, or the TRIIBE I00, we are providing stability, visibility, and credibility to next-gen nonprofit founders taking root today to advance tomorrow.",
+      "We are building out the foundation startup ecosystem, maximizing a return on impact, not income. Whether through our Fellowship, TRIIBE Talks, or the TRIIBE I00, we are providing stability, visibility, and credibility to next-gen founders taking root today to advance tomorrow. ",
     bgColor: "bg-[#002c19]",
     textColor: "text-[#fffefee6]",
     descriptionColor: "text-[#ffffffcc]",
@@ -28,8 +28,15 @@ const programSections = [
   },
   {
     title: "How We Do It",
-    description:
-      "The TRIIBE College Fellowship provides unrestricted funding, mentorship and community. Through TRIIBE Talks, we empower a decentralized global network to highlight the quality of next-gen voices. Finally, The TRIIBE I00 serves as a definitive seal of credibility for nonprofit founders under 30 building with humility.",
+    description: (
+      <>
+        • The TRIIBE Fellowship provides unrestricted funding, mentorship and
+        community. <br /> • TRIIBE Talks empower a decentralized global network
+        to highlight the quality of next-gen voices. <br /> • The TRIIBE I00
+        serves as a definitive seal of credibility for founders in their 20s
+        growing foundations with humility.
+      </>
+    ),
     bgColor: "bg-[#002c19]",
     textColor: "text-white",
     descriptionColor: "text-[#ffffffcc]",
@@ -64,7 +71,7 @@ export default function ProgramOverview() {
         <div key={index} className="grid grid-cols-1 md:grid-cols-2 md:h-490px">
           {section.imagePosition === "left" ? (
             <>
-              <div className="relative w-full h-[300px] md:h-full overflow-hidden">
+              <div className="relative w-full h-[300px] md:h-full overflow-hidden order-2 md:order-1">
                 <Image
                   key={section.imageObjectPosition}
                   src={section.imageUrl}
