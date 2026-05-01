@@ -704,9 +704,9 @@ const HostEventPage = () => {
                             <span>Speaker {i + 1} </span>
                             <span className="text-gray-900">
                               {isFirstSpeaker
-                                ? "Next-Gen Changemaker"
+                                ? "Next-Gen"
                                 : s.category === "Next-Gen"
-                                  ? "Next-Gen Changemaker"
+                                  ? "Next-Gen"
                                   : s.category === "Established (Over 30)"
                                     ? "Established"
                                     : ""}

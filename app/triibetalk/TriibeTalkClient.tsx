@@ -41,7 +41,7 @@ const EventsPage = () => {
                 className="w-full max-w-[400px] md:max-w-[500px] h-auto -ml-3 md:-ml-5 lg:-ml-6 object-contain object-left"
               />
               <p className="text-[#495565] text-lg mb-8 leading-relaxed mt-4 font-normal">
-                Pairing established and next-gen changemakers in dialogue to
+                Pairing established and next-gen founders in dialogue to
                 demonstrate that age doesn’t determine the quality of one’s
                 voice
               </p>

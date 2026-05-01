@@ -3,14 +3,14 @@
 import { ArrowRight } from "lucide-react";
 
 const eligibilityRequirements = [
-  "Currently enrolled undergraduate students",
-  "Founders or co-founders of registered 501(c)(3) nonprofit organizations",
-  "Active leadership role in organizational operations",
-  "Aspiring to continue their work full-time after graduating",
+  "Aged 20 and 25",
+  "Founders or co-founders of registered 501(c)(3) foundations",
+  "Active leadership in organizational operations",
+  "Committed to growing your foundation over the next 3 years",
 ];
 
 const cohortDetails = [
-  { label: "Cohort Size", value: "5 Fellows" },
+  { label: "Cohort Size per Branch", value: "5 Fellows" },
   { label: "Duration", value: "3 years" },
 ];
 
@@ -27,8 +27,8 @@ export default function ApplicationProcess() {
           Apply to the Fellowship
         </h2>
         <p className="max-w-191 font-normal text-[#495565] text-lg leading-[29.2px]">
-          TRIIBE provides funding, mentorship, and community for college
-          students taking root today to advance tomorrow
+          TRIIBE provides funding, mentorship, and community for next-gen
+          founders taking root today to advance tomorrow
         </p>
       </header>
 

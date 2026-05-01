@@ -189,7 +189,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://www.tiktok.com/@triibetalk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#697282] hover:text-black transition-colors"

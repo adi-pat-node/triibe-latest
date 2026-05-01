@@ -308,20 +308,23 @@ const SummitPage = () => {
         },
         {
           time: "9:40 AM",
-          title: "TRIIBE Talk 1",
-          description: "Speakers to be announced",
+          title: "TRIIBE Talk",
+          description:
+            "2 established speakers over 30 and two next-gen TRIIBE Fellows under 30",
         },
         { time: "10:25 AM", title: "BREAK" },
         {
           time: "10:40 AM",
-          title: "TRIIBE Talk 2",
-          description: "Speakers to be announced",
+          title: "TRIIBE Talk",
+          description:
+            "2 established speakers over 30 and two next-gen TRIIBE Fellows under 30",
         },
         { time: "11:25 AM", title: "BREAK" },
         {
           time: "11:40 AM",
-          title: "TRIIBE Talk 3: Shelter",
-          description: "Speakers to be announced",
+          title: "TRIIBE Talk",
+          description:
+            "2 established speakers over 30 and two next-gen TRIIBE Fellows under 30",
         },
         {
           time: "12:25 PM",
@@ -335,26 +338,30 @@ const SummitPage = () => {
         },
         {
           time: "1:50 PM",
-          title: "TRIIBE Talk 4: Health",
-          description: "Speakers to be announced",
+          title: "TRIIBE Talk",
+          description:
+            "2 established speakers over 30 and two next-gen TRIIBE Fellows under 30",
         },
         { time: "2:35 PM", title: "BREAK" },
         {
           time: "2:45 PM",
-          title: "TRIIBE Talk 5: Education",
-          description: "Speakers to be announced",
+          title: "TRIIBE Talk",
+          description:
+            "2 established speakers over 30 and two next-gen TRIIBE Fellows under 30",
         },
         { time: "3:30 PM", title: "BREAK" },
         {
           time: "3:40 PM",
-          title: "TRIIBE Talk 6: Food",
-          description: "Speakers to be announced",
+          title: "TRIIBE Talk",
+          description:
+            "2 established speakers over 30 and two next-gen TRIIBE Fellows under 30",
         },
         { time: "4:25 PM", title: "BREAK" },
         {
           time: "4:35 PM",
-          title: "TRIIBE Talk 7: Education",
-          description: "Speakers to be announced",
+          title: "TRIIBE Talk",
+          description:
+            "2 established speakers over 30 and two next-gen TRIIBE Fellows under 30",
         },
         {
           time: "5:20 PM",
@@ -392,13 +399,13 @@ const SummitPage = () => {
               About the Summit
             </h2>
             <p className="text-black text-base leading-relaxed">
-              The Invite Only x TRIIBE Next-Gen Changemaker Summit brings
-              together the next generation of nonprofit founders, established
+              The Invite Only x TRIIBE Next-Gen Summit brings together TRIIBE
+              Fellows growing their foundations, next-gen founders, established
               changemakers, funders, mentors, and partners for an extraordinary
-              weekend of community, storytelling, and social impact. From a VIP
-              Gala on Friday evening to a full-day summit on Saturday, this
-              experience is designed to fund, connect, and celebrate the leaders
-              taking root today to advance tomorrow.
+              weekend. From a VIP Gala on Friday evening to a full-day summit on
+              Saturday, this experience is designed to fund, connect, and
+              celebrate the next-gen foundations taking root today to advance
+              tomorrow.
             </p>
           </div>
 
@@ -466,10 +473,10 @@ const SummitPage = () => {
 
                 <div className="flex flex-wrap gap-x-10 gap-y-2 mt-2 text-white text-base">
                   <span>7:00 PM · VIP Opening Ceremony</span>
-                  <span>Fireside format · ~25 min + Q&A</span>
+                  {/* <span>Fireside format · ~25 min + Q&A</span> */}
                 </div>
 
-                <p className="text-white text-base">Stage A · Main Hall</p>
+                {/* <p className="text-white text-base">Stage A · Main Hall</p> */}
               </div>
             </div>
           </div>

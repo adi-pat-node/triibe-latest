@@ -41,7 +41,7 @@ const testimonials = [
     quote:
       "I am immensely grateful for the TRIIBE community that has inspired me to continue SEED’s mission in bridging the global climate literacy gap. My TRIIBE mentors and peers are the leaders our world needs.",
     name: "Maya Gowda",
-    year: "TRIIBE Fellow Spring 2025",
+    year: "TRIIBE Fellow Spring 2024",
     organization: "Founder, SEED est. 2019",
   },
   {
@@ -62,22 +62,22 @@ const faqs = [
   {
     question: "Who is eligible to apply?",
     answer:
-      "Any undergraduate sophomore who has founded and is actively leading a nonprofit organization. You must be enrolled full-time at a college or university.",
+      "Next-gen founders aged 20-25 committed to growing your registered foundation over the next 3 years.",
   },
   {
     question: "What can I use the funding for?",
     answer:
-      "The funding is unrestricted and can be used for any legitimate organizational expenses including operations, program costs, team compensation, technology, marketing, or other needs that support your nonprofit's mission and growth.",
+      "The funding is unrestricted and can be used for any legitimate organizational expenses including operations, program costs, team compensation, technology, marketing, or other needs that support your foundation’s mission and growth.",
   },
   {
     question: "How much time commitment is required?",
     answer:
-      "We ask for approximately 5-8 hours per week, which includes monthly check-ins, quarterly mentor meetings, cohort workshops, and time for implementing your organizational goals. The program is designed to work alongside your academic commitments.",
+      "You should be working on your foundation for at least 20 hours per week, making time for monthly TRIIBE check-ins, mentor meetings, summits, retreats, and broader community engagement.",
   },
   {
-    question: "What happens after graduation?",
+    question: "What happens after year 3?",
     answer:
-      "Fellows transition to our alumni network with continued access to mentorship, resources, and community. We provide support for post-graduation planning and help ensure organizational continuity as you navigate the next phase of your nonprofit's journey.",
+      "Fellows transition to our alumni network with continued access to mentorship, resources, and community. We help ensure organizational continuity as you navigate the next phase of your foundation's journey.",
   },
 ];
 
@@ -229,7 +229,7 @@ const ProgramPage = () => {
         <div className="max-w-260 mx-auto">
           <div className="max-w-5xl mx-auto">
             <p className="font-bold text-black text-4xl md:text-[40px]  leading-tight">
-              Nonprofit founders are cut off from funding when entering college
+              Young founders are cut off from funding at adulthood
             </p>
           </div>
 
@@ -257,7 +257,7 @@ const ProgramPage = () => {
           <div className="flex flex-col gap-12">
             <div className="flex flex-col gap-4">
               <h2 className=" font-bold text-black text-4xl tracking-[-0.90px] leading-10">
-                TRIIBE provides Three Pillars of Support
+                Three Pillars of Support
               </h2>
               <p className=" font-normal text-[#495565] text-lg leading-7">
                 Everything you need to sustain your growth
@@ -302,8 +302,7 @@ const ProgramPage = () => {
                   Community
                 </h3>
                 <p className=" font-normal text-[#495565] text-sm leading-[22.8px]">
-                  Join a cohort of peer founders inspired to pursue social
-                  impact.
+                  Join a cohort of peers and wider TRIIBE network.
                 </p>
               </div>
             </div>
@@ -333,9 +332,9 @@ const ProgramPage = () => {
                   <h3 className=" font-bold text-black text-3xl mb-2">
                     Year 1: Roots
                   </h3>
-                  <p className=" font-normal text-[#495565] text-lg">
+                  {/* <p className=" font-normal text-[#495565] text-lg">
                     Sophomore Year
-                  </p>
+                  </p> */}
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
@@ -351,8 +350,8 @@ const ProgramPage = () => {
                       CADENCE
                     </p>
                     <p className=" font-normal text-[#495565] text-sm">
-                      Monthly check-ins, Quarterly mentor cycles, Bi-annual
-                      cohort meetups
+                      Monthly check-ins, Quarterly mentor cycles, Annual branch
+                      summits and retreats
                     </p>
                   </div>
                 </div>
@@ -403,9 +402,9 @@ const ProgramPage = () => {
                   <h3 className=" font-bold text-black text-3xl mb-2">
                     Year 2: Skyline
                   </h3>
-                  <p className=" font-normal text-[#495565] text-lg">
+                  {/* <p className=" font-normal text-[#495565] text-lg">
                     Junior Year
-                  </p>
+                  </p> */}
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
@@ -423,8 +422,8 @@ const ProgramPage = () => {
                       CADENCE
                     </p>
                     <p className=" font-normal text-[#495565] text-sm">
-                      Monthly check-ins, Quarterly mentor cycles, Bi-annual
-                      cohort meetups
+                      Monthly check-ins, Quarterly mentor cycles, Annual branch
+                      summits and retreats
                     </p>
                   </div>
                 </div>
@@ -476,9 +475,9 @@ const ProgramPage = () => {
                   <h3 className=" font-bold text-black text-3xl mb-2">
                     Year 3: Stars
                   </h3>
-                  <p className=" font-normal text-[#495565] text-lg">
+                  {/* <p className=" font-normal text-[#495565] text-lg">
                     Senior Year
-                  </p>
+                  </p> */}
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
@@ -496,8 +495,8 @@ const ProgramPage = () => {
                       CADENCE
                     </p>
                     <p className=" font-normal text-[#495565] text-sm">
-                      Monthly check-ins, Quarterly mentor cycles, Bi-annual
-                      cohort meetups
+                      Monthly check-ins, Quarterly mentor cycles, Annual branch
+                      summits and retreats
                     </p>
                   </div>
                 </div>
@@ -510,7 +509,7 @@ const ProgramPage = () => {
                     <li className=" font-normal text-[#495565] text-sm flex items-start">
                       <span className="mr-3">•</span>
                       <span>
-                        Develop post-graduation transition & continuity plan
+                        Develop merger, transition, or continuity plan
                       </span>
                     </li>
                     <li className=" font-normal text-[#495565] text-sm flex items-start">
@@ -594,23 +593,24 @@ const ProgramPage = () => {
                     Onboard & Assess
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
-                    Baseline assessment of your nonprofit, goals, and current
+                    Baseline assessment of your foundation, goals, and current
                     capacity
                   </p>
                 </div>
               </div>
 
-              {/* Step 5 */}
+              {/* New Step */}
               <div className="flex gap-6">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
                   <span className=" font-bold text-black text-xl">5</span>
                 </div>
                 <div className="flex flex-col gap-2">
                   <h3 className=" font-semibold text-black text-xl">
-                    Measure & Reflect
+                    Present with Humility
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
-                    Regular checkpoints, surveys, and progress reviews
+                    Speak at branch summits, meet donors, supporters, and
+                    partners
                   </p>
                 </div>
               </div>
@@ -630,17 +630,17 @@ const ProgramPage = () => {
                 </div>
               </div>
 
-              {/* Step 6 */}
+              {/* New Step */}
               <div className="flex gap-6">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
                   <span className=" font-bold text-black text-xl">6</span>
                 </div>
                 <div className="flex flex-col gap-2">
                   <h3 className=" font-semibold text-black text-xl">
-                    Unlock Funding
+                    Measure & Reflect
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
-                    Grants distributed each year as you grow your foundation
+                    Regular checkpoints, surveys, and progress reviews
                   </p>
                 </div>
               </div>
@@ -660,17 +660,17 @@ const ProgramPage = () => {
                 </div>
               </div>
 
-              {/* Step 7 */}
+              {/* Step 6 */}
               <div className="flex gap-6">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
                   <span className=" font-bold text-black text-xl">7</span>
                 </div>
                 <div className="flex flex-col gap-2">
                   <h3 className=" font-semibold text-black text-xl">
-                    Transition to Alumni
+                    Unlock Funding
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
-                    Continuity planning and long-term support beyond graduation
+                    Grants distributed each year as you grow your foundation
                   </p>
                 </div>
               </div>
@@ -686,6 +686,22 @@ const ProgramPage = () => {
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
                     Office hours, tools, resources, and peer community
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 7 */}
+              <div className="flex gap-6">
+                <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
+                  <span className=" font-bold text-black text-xl">8</span>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className=" font-semibold text-black text-xl">
+                    Transition to Alumni
+                  </h3>
+                  <p className=" font-normal text-[#495565] text-sm">
+                    Continuity planning and long-term support beyond the
+                    fellowship
                   </p>
                 </div>
               </div>
