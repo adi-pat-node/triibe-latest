@@ -16,7 +16,7 @@ export default function Changemakers() {
     {
       name: "Olivia Zhang",
       title: "Founder and CEO, Cancer Kids First",
-      university: "Harvard University, Spring 25 fellow",
+      university: "Harvard University, Spring 24 fellow",
       description:
         "Supporting young cancer patients and their families through donating goods and hosting interactive events",
       founded: "FOUNDED 2019",
@@ -27,7 +27,7 @@ export default function Changemakers() {
     {
       name: "Anne-Sophie Frédérick",
       title: "Founder, Haitech Learning",
-      university: "Williams College, Spring 25 fellow",
+      university: "Williams College, Spring 24 fellow",
       description:
         "Expanding access to education for young Haitians around the globe through technology and language workshops",
       founded: "FOUNDED 2022",
@@ -38,7 +38,7 @@ export default function Changemakers() {
     {
       name: "Esha Venkat",
       title: "Founder, Next4Us",
-      university: "Georgia Institute of Technology, Spring 25 fellow",
+      university: "Georgia Institute of Technology, Spring 24 fellow",
       description:
         "Mobilizing youth to tackle issues including hunger, education, and climate justice with volunteering & education",
       founded: "FOUNDED 2016",
@@ -48,7 +48,7 @@ export default function Changemakers() {
     {
       name: "Maya Gowda",
       title: "Founder, (SEED)",
-      university: "Cornell University, Spring 25 fellow",
+      university: "Cornell University, Spring 24 fellow",
       description:
         "Advancing climate literacy and justice through workshops, curriculum development, and community initiatives",
       founded: "FOUNDED 2019",

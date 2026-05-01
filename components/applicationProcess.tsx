@@ -41,10 +41,10 @@ export default function ApplicationProcess() {
                 APPLICATION WINDOW
               </p>
               <h3 className=" font-normal text-[#000000] text-2xl leading-8">
-                Opening Soon
+                Now Open
               </h3>
               <p className=" font-normal text-[#495565] text-base leading-[25.6px]">
-                Applications for the Fall 2026 cohort will open May 1st
+                Applications for the Spring 2026 cohort are being accepted now.
               </p>
             </div>
 

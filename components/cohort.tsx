@@ -177,7 +177,7 @@ export default function Cohort() {
 
         <div className="mb-4">
           <p className=" font-bold text-[#495565] text-lg leading-7 text-center">
-            Spring 25 Fellow
+            Spring 24 Fellow
           </p>
         </div>
 

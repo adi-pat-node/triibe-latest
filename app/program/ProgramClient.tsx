@@ -584,7 +584,7 @@ const ProgramPage = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8">
               {/* Step 1 */}
-              <div className="flex gap-6">
+              <div className="flex gap-6 order-1 md:order-none">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
                   <span className=" font-bold text-black text-xl">1</span>
                 </div>
@@ -599,8 +599,8 @@ const ProgramPage = () => {
                 </div>
               </div>
 
-              {/* New Step */}
-              <div className="flex gap-6">
+              {/* New Step 5 */}
+              <div className="flex gap-6 order-5 md:order-none">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
                   <span className=" font-bold text-black text-xl">5</span>
                 </div>
@@ -616,7 +616,7 @@ const ProgramPage = () => {
               </div>
 
               {/* Step 2 */}
-              <div className="flex gap-6">
+              <div className="flex gap-6 order-2 md:order-none">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
                   <span className=" font-bold text-black text-xl">2</span>
                 </div>
@@ -630,8 +630,8 @@ const ProgramPage = () => {
                 </div>
               </div>
 
-              {/* New Step */}
-              <div className="flex gap-6">
+              {/* Step 6 */}
+              <div className="flex gap-6 order-6 md:order-none">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
                   <span className=" font-bold text-black text-xl">6</span>
                 </div>
@@ -646,7 +646,7 @@ const ProgramPage = () => {
               </div>
 
               {/* Step 3 */}
-              <div className="flex gap-6">
+              <div className="flex gap-6 order-3 md:order-none">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
                   <span className=" font-bold text-black text-xl">3</span>
                 </div>
@@ -660,8 +660,8 @@ const ProgramPage = () => {
                 </div>
               </div>
 
-              {/* Step 6 */}
-              <div className="flex gap-6">
+              {/* Step 7 */}
+              <div className="flex gap-6 order-7 md:order-none">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
                   <span className=" font-bold text-black text-xl">7</span>
                 </div>
@@ -676,7 +676,7 @@ const ProgramPage = () => {
               </div>
 
               {/* Step 4 */}
-              <div className="flex gap-6">
+              <div className="flex gap-6 order-4 md:order-none">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
                   <span className=" font-bold text-black text-xl">4</span>
                 </div>
@@ -690,8 +690,8 @@ const ProgramPage = () => {
                 </div>
               </div>
 
-              {/* Step 7 */}
-              <div className="flex gap-6">
+              {/* Step 8 */}
+              <div className="flex gap-6 order-8 md:order-none">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
                   <span className=" font-bold text-black text-xl">8</span>
                 </div>
