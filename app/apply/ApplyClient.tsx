@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Page = () => {
-  const isApplicationOpen = false;
+  const isApplicationOpen = true;
   const formRef = useRef<HTMLFormElement>(null);
 
   const handleCancel = () => {
@@ -26,7 +26,7 @@ const Page = () => {
     {
       question: "Who is eligible to apply?",
       answer:
-        "Any undergraduate sophomore who has founded and is actively leading a nonprofit organization. You must be enrolled full-time at a college or university.",
+        "Next-gen founders aged 20-25 committed to growing your registered foundation over the next 3 years.",
     },
     {
       question: "What is the selection process?",
@@ -34,14 +34,14 @@ const Page = () => {
         "Our process starts with a thoughtful review of your application and video, then invites semi-finalists for interviews.",
     },
     {
-      question: "What support do selected sophomores receive?",
+      question: "What support do selected fellows receive?",
       answer:
-        "Finalists receive a $5,000 grant, mentorship, podcast feature, and entry into our community. For a fuller look at additional opportunities, like the Summit, retreat, and documentaries, see the deck above.",
+        "TRIIBE Fellows receive their first $5,000 grant, mentorship, and a peer community. For a full look at additional support, like the Summit, retreat, and documentaries, see the deck above.",
     },
     {
-      question: "How long is the program?",
+      question: "How long is the Fellowship",
       answer:
-        "TRIIBE's three-year program supports you through the rest of college, with each year building toward continuing your work beyond graduation. Afterwards, alumni stay connected, ensuring lifelong belonging and support.",
+        "TRIIBE's fellowship supports you for three years, with each year further growing your foundation. Afterwards, alumni stay connected, ensuring lifelong belonging and support.",
     },
     {
       question: "When will I hear back?",
@@ -65,9 +65,9 @@ const Page = () => {
         <div className="max-w-[1200px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-[0.8fr_1.2fr]  gap-16 items-start">
             {/* Left - Image */}
-            <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
+            <div className="relative aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/images/about/about-photo-2.jpg"
+                src="/images/home/whatWeDo2.png"
                 alt="TRIIBE Cohort"
                 fill
                 className="object-cover"
@@ -77,12 +77,12 @@ const Page = () => {
             {/* Right - Content */}
             <div>
               <h1 className="font-bold text-black text-4xl md:text-[40px] mb-6 leading-tight">
-                Apply to be in a Cohort
+                Apply to the Fellowship
               </h1>
 
               <p className="font-normal text-[#495565] text-[16px] leading-relaxed mb-4">
-                We're looking for passionate undergraduate nonprofit founders
-                ready to take their organizations to the next level.
+                We're looking for passionate next-gen founders to help grow your
+                foundations.
               </p>
 
               {/* How to Apply Box */}
