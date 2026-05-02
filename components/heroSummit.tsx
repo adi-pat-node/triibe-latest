@@ -52,7 +52,7 @@ export default function HeroSummit() {
         <div className="relative z-10 flex flex-col items-center px-6 max-w-225 mx-auto ">
           <div className="flex flex-col items-center  pb-3">
             <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-4xl md:text-4xl lg:text-5xl text-center tracking-tight leading-tight max-w-200">
-              Next-Gen Summit
+              Next-Gen Collective Summit
             </h1>
           </div>
 

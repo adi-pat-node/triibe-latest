@@ -26,7 +26,7 @@ const Page = () => {
     {
       question: "Who is eligible to apply?",
       answer:
-        "Next-gen founders aged 20-25 committed to growing your registered foundation over the next 3 years.",
+        "Next-gen founders aged 20-25 committed to growing your registered collective over the next 3 years.",
     },
     {
       question: "What is the selection process?",
@@ -41,7 +41,7 @@ const Page = () => {
     {
       question: "How long is the Fellowship",
       answer:
-        "TRIIBE's fellowship supports you for three years, with each year further growing your foundation. Afterwards, alumni stay connected, ensuring lifelong belonging and support.",
+        "TRIIBE's fellowship supports you for three years, with each year helping you further continue your collective. Afterwards, alumni stay connected, ensuring lifelong belonging and support.",
     },
     {
       question: "When will I hear back?",
@@ -81,8 +81,8 @@ const Page = () => {
               </h1>
 
               <p className="font-normal text-[#495565] text-[16px] leading-relaxed mb-4">
-                We're looking for passionate next-gen founders to help grow your
-                foundations.
+                We're looking to help passionate next-gen founders continue
+                their collectives.
               </p>
 
               {/* How to Apply Box */}
@@ -208,12 +208,12 @@ const Page = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label className="block font-semibold text-black text-sm mb-2">
-                      Organization Name *
+                      Name of Collective *
                     </label>
                     <input
                       type="text"
                       name="Organization Name"
-                      placeholder="Your nonprofit organization name"
+                      placeholder="Your 501(c)(3) organization's name"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
                       required
                     />
@@ -221,7 +221,7 @@ const Page = () => {
 
                   <div>
                     <label className="block font-semibold text-black text-sm mb-2">
-                      Organization Website
+                      Website
                     </label>
                     <input
                       type="url"
