@@ -1036,24 +1036,24 @@ const page = () => {
 
             <div className="space-y-2">
               <div>
-                <h3 className="font-semibold text-black text-2xl mb-6">
-                  Next-Gen for Next-Gen, TRIIBE helps next-gen founders grow
-                  their foundations
+                <h3 className="font-semibold text-black/85 text-lg leading-relaxed mb-6">
+                  TRIIBE helps next-gen founders continue their collectives in
+                  their early 20s
                 </h3>
               </div>
 
               <p className="font-normal text-black/75 text-lg leading-relaxed mb-2">
-                The TRIIBE Fellowship provides unrestricted funding, mentorship
-                and community.
+                • The TRIIBE Fellowship provides unrestricted funding,
+                mentorship and community.
               </p>
 
               <p className="font-normal text-black/75 text-lg leading-relaxed  mb-2">
-                TRIIBE Talks empower a decentralized global network to highlight
-                the quality of next-gen voices.
+                • TRIIBE Talks empower a decentralized global network to
+                highlight the quality of next-gen voices.
               </p>
               <p className="font-normal text-black/75 text-lg leading-relaxed">
-                The TRIIBE I00 serves as a definitive seal of credibility for
-                founders in their 20s growing foundations with humility.
+                • The TRIIBE I00 serves as the seal of credibility for next-gen
+                founders continuing their collectives with humility.
               </p>
             </div>
           </div>

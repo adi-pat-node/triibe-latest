@@ -32,7 +32,7 @@ const programSections = [
       <>
         • The TRIIBE Fellowship provides unrestricted funding, mentorship and
         community. <br /> • TRIIBE Talks empower a decentralized global network
-        to highlight the quality of next-gen voices. <br /> • The TRIIBE I00
+        to highlight the quality of next-gen voices. <br /> • The TRIIBE 100
         serves as a definitive seal of credibility for founders in their 20s
         growing foundations with humility.
       </>
