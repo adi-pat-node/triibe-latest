@@ -4,9 +4,9 @@ import { ArrowRight } from "lucide-react";
 
 const eligibilityRequirements = [
   "Aged 20 and 25",
-  "Founders or co-founders of registered 501(c)(3) foundations",
+  "Founders or co-founders of registered 501(c)(3) collectives",
   "Active leadership in organizational operations",
-  "Committed to growing your foundation over the next 3 years",
+  "Committed to continuing your collective over the next 3 years",
 ];
 
 const cohortDetails = [

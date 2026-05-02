@@ -62,22 +62,22 @@ const faqs = [
   {
     question: "Who is eligible to apply?",
     answer:
-      "Next-gen founders aged 20-25 committed to growing your registered foundation over the next 3 years.",
+      "Next-gen founders aged 20-25 committed to continuing your registered collective over the next 3 years.",
   },
   {
     question: "What can I use the funding for?",
     answer:
-      "The funding is unrestricted and can be used for any legitimate organizational expenses including operations, program costs, team compensation, technology, marketing, or other needs that support your foundation’s mission and growth.",
+      "The funding is unrestricted and can be used for any legitimate organizational expenses including operations, program costs, team compensation, technology, marketing, or other needs that support your collective's mission and growth.",
   },
   {
     question: "How much time commitment is required?",
     answer:
-      "You should be working on your foundation for at least 20 hours per week, making time for monthly TRIIBE check-ins, mentor meetings, summits, retreats, and broader community engagement.",
+      "You should be working on your collective for at least 20 hours per week, making time for monthly TRIIBE check-ins, mentor meetings, summits, retreats, and broader community engagement.",
   },
   {
     question: "What happens after year 3?",
     answer:
-      "Fellows transition to our alumni network with continued access to mentorship, resources, and community. We help ensure organizational continuity as you navigate the next phase of your foundation's journey.",
+      "Fellows transition to our alumni network with continued access to mentorship, resources, and community. We help ensure organizational continuity as you navigate the next phase of your collective’s journey.",
   },
 ];
 
@@ -229,7 +229,7 @@ const ProgramPage = () => {
         <div className="max-w-260 mx-auto">
           <div className="max-w-5xl mx-auto">
             <p className="font-bold text-black text-4xl md:text-[40px]  leading-tight">
-              Young founders are cut off from funding at adulthood
+              Young founders are cut off from funding
             </p>
           </div>
 
@@ -544,8 +544,8 @@ const ProgramPage = () => {
               "TRIIBE's Mentorship Program is nothing short of astounding. With
               a busy schedule, I wasn't sure how much time I could give, but the
               ease of entry, flexible commitment, and thoughtful organization
-              made it possible to truly support my young changemaker in a way
-              that was both meaningful and deeply rewarding."
+              made it possible to truly support my mentee in a way that was both
+              meaningful and deeply rewarding."
             </blockquote>
 
             <div className="mt-6 flex items-center gap-3">
@@ -593,7 +593,7 @@ const ProgramPage = () => {
                     Onboard & Assess
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
-                    Baseline assessment of your foundation, goals, and current
+                    Baseline assessment of your collective, goals, and current
                     capacity
                   </p>
                 </div>
@@ -670,7 +670,7 @@ const ProgramPage = () => {
                     Unlock Funding
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
-                    Grants distributed each year as you grow your foundation
+                    Grants distributed each year as you continue your collective
                   </p>
                 </div>
               </div>
