@@ -5,7 +5,7 @@ import Image from "next/image";
 const programSections = [
   {
     title: "Why We Do It",
-    description: `Everyone wants a village, but nobody wants to be a villager. So we built a TRIIBE. Next-gen for next-gen, we are ensuring next-gen founders don't burn out when transitioning from a "youth" foundation to an established foundation.`,
+    description: `Everyone wants a village, but nobody wants to be a villager. So we built a TRIIBE. Next-gen for next-gen, a foundation funding next-gen founders, ensuring they don't burn out when transitioning from a "youth" nonprofit to an established collective.`,
     bgColor: "bg-[#002c19]",
     textColor: "text-white",
     descriptionColor: "text-[#ffffffcc]",
@@ -17,7 +17,7 @@ const programSections = [
   {
     title: "What We Do",
     description:
-      "We are building out the foundation startup ecosystem, maximizing a return on impact, not income. Whether through our Fellowship, TRIIBE Talks, or the TRIIBE I00, we are providing stability, visibility, and credibility to next-gen founders taking root today to advance tomorrow. ",
+      "We are building out the startup ecosystem for collectives, maximizing a return on impact, not income. Whether through our Fellowship, TRIIBE Talks, or the TRIIBE I00, we are providing stability, visibility, and credibility to next-gen founders taking root today to advance tomorrow. ",
     bgColor: "bg-[#002c19]",
     textColor: "text-[#fffefee6]",
     descriptionColor: "text-[#ffffffcc]",
@@ -30,11 +30,11 @@ const programSections = [
     title: "How We Do It",
     description: (
       <>
-        • The TRIIBE Fellowship provides unrestricted funding, mentorship and
-        community. <br /> • TRIIBE Talks empower a decentralized global network
-        to highlight the quality of next-gen voices. <br /> • The TRIIBE 100
-        serves as a definitive seal of credibility for founders in their 20s
-        growing foundations with humility.
+        • The TRIIBE Fellowship provides unrestricted funding, mentorship and community.
+         <br /> • TRIIBE Talks empower a decentralized global network to highlight
+          the quality of next-gen voices. <br /> • The TRIIBE I00 serves as the seal of credibility for
+           next-gen founders continuing their collectives with humility.
+
       </>
     ),
     bgColor: "bg-[#002c19]",

@@ -51,8 +51,8 @@ export default function CTASection() {
           <div className="bg-[#002c19] border border-white rounded-lg p-8 flex flex-col gap-6 justify-between w-full">
             <h3 className="font-semibold text-white text-2xl">Join A Cohort</h3>
             <p className="font-normal text-[#D1D5DC] text-base leading-relaxed">
-              Are you a nonprofit founder in your early 20s? Apply to become a
-              TRIIBE Fellow.
+              Are you a next-gen founder looking to turn your youth nonprofit into an 
+              established collective? Apply to become a TRIIBE Fellow.
             </p>
             <a
               href="/apply"
@@ -66,7 +66,7 @@ export default function CTASection() {
           <div className="bg-[#002c19] border border-white rounded-lg p-8 flex flex-col gap-6 justify-between w-full">
             <h3 className="font-semibold text-white text-2xl">Get Involved</h3>
             <p className="font-normal text-[#D1D5DC] text-base leading-relaxed">
-              Partner with TRIIBE to empower next-gen foundation executives.
+              Partner with TRIIBE to empower next-gen founders.
             </p>
             <a
               href="mailto:partnerships@triibe.org"

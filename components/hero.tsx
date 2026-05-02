@@ -27,15 +27,14 @@ export default function Hero() {
             <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-4xl md:text-4xl lg:text-[64px] text-center tracking-tight leading-tight max-w-200">
               Funding Next-Gen
               <br />
-              Foundations
+              Collectives
             </h1>
           </div>
 
           {/* Description */}
           <div className="flex flex-col items-center pb-6">
             <p className="font-['DM_Sans',Helvetica]font-normal text-white/90 text-base md:text-lg text-center tracking-[0] leading-relaxed max-w-125 ">
-              Funding, mentorship and community for TRIIBE Fellows taking root
-              today to advance tomorrow
+              Funding, mentorship, and community for next-gen founders taking root today to advance tomorrow
             </p>
           </div>
 
