@@ -24,8 +24,8 @@ export const metadata = {
 const teamMembers = [
   {
     name: "Kyle Matthys",
-    role: "CEO & FOUNDER",
-    bio: "Founder and CEO of TRIIBE. We help young nonprofit founders scale from sophomore to senior year of college: Those advancing food, water, shelter, health, education, or energy.",
+    role: "FOUNDER & CEO",
+    bio: "Founder and CEO of TRIIBE. Helping next-gen founders grow their foundations.",
     image: "/images/about/team/KyleMatthys.png",
     linkedin: "https://www.linkedin.com/in/kylematthys/",
   },
@@ -791,14 +791,14 @@ const members = [
     isInstagram: false,
   },
 
-  {
-    name: "Stephen Michael",
-    role: "Member",
-    bio: "Stephen Michael is the Founder and CEO of Propel Earth, building a platform (an 'operating system') to help changemakers coordinate globally.",
-    image: "/images/about/team/Stephen Michael.jpg",
-    linkedin: "https://www.linkedin.com/in/stephennmichael/",
-    isInstagram: false,
-  },
+  // {
+  //   name: "Stephen Michael",
+  //   role: "Member",
+  //   bio: "Stephen Michael is the Founder and CEO of Propel Earth, building a platform (an 'operating system') to help changemakers coordinate globally.",
+  //   image: "/images/about/team/Stephen Michael.jpg",
+  //   linkedin: "https://www.linkedin.com/in/stephennmichael/",
+  //   isInstagram: false,
+  // },
   {
     name: "Shashank Shandilya",
     role: "Member",
@@ -969,18 +969,18 @@ const page = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50 bg-white     ">
+      <section className="pt-32 px-4 md:px-25 lg:px-50 bg-white     ">
         <div className="max-w-300 mx-auto">
           <div className="flex md:items-start justify-between mb-12 flex-col md:flex-row gap-4 items-center ">
             <h1 className="font-bold text-black text-5xl md:text-6xl">
               About Us
             </h1>
-            <a
+            {/* <a
               href="/photogallery"
               className="px-6 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base "
             >
               Photo Gallery
-            </a>
+            </a> */}
           </div>
 
           {/* Photo Grid */}
@@ -1037,18 +1037,23 @@ const page = () => {
             <div className="space-y-2">
               <div>
                 <h3 className="font-semibold text-black text-2xl mb-6">
-                  TRIIBE helps next-gen nonprofit founders continue their work
-                  when they enter college.
+                  Next-Gen for Next-Gen, TRIIBE helps next-gen founders grow
+                  their foundations
                 </h3>
               </div>
 
-              <p className="font-normal text-[#495565] text-lg leading-relaxed mb-2">
-                Three-year fellowship combining funding, mentorship, and
-                community for student founders.
+              <p className="font-normal text-black/75 text-lg leading-relaxed mb-2">
+                The TRIIBE Fellowship provides unrestricted funding, mentorship
+                and community.
               </p>
 
-              <p className="font-normal text-[#495565] text-lg leading-relaxed">
-                Structured support that grows with your organization each year.
+              <p className="font-normal text-black/75 text-lg leading-relaxed  mb-2">
+                TRIIBE Talks empower a decentralized global network to highlight
+                the quality of next-gen voices.
+              </p>
+              <p className="font-normal text-black/75 text-lg leading-relaxed">
+                The TRIIBE I00 serves as a definitive seal of credibility for
+                founders in their 20s growing foundations with humility.
               </p>
             </div>
           </div>
@@ -1056,30 +1061,24 @@ const page = () => {
       </section>
 
       {/* Impact Areas Section */}
-      <section className="py-2 px-4 md:px-25 lg:px-50 bg-white/90 ">
+      {/* <section className="py-2 px-4 md:px-25 lg:px-50 bg-white/90 ">
         <div className=" mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-16">
-            {/* Left Side - Section Title */}
+
             <div>
               <h2 className="font-bold text-black text-3xl">IMPACT AREAS</h2>
             </div>
 
-            {/* Right Side - Content */}
+
             <div>
-              {/* Header */}
+
               <div className="mb-0">
-                {/* <h3 className="font-semibold text-black text-2xl mb-4">
-                  Human needs first.
-                </h3>
-                <p className="font-normal text-[#495565] text-[16px] leading-relaxed">
-                  TRIIBE supports the founders. Founders lead the work in their
-                  communities.
-                </p> */}
+
               </div>
 
-              {/* Impact Grid */}
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
-                {/* Food */}
+
                 <div>
                   <div className="flex items-center gap-2 mb-3">
                     <Utensils className="w-5 h-5 mb-2" />
@@ -1091,7 +1090,7 @@ const page = () => {
                   </p>
                 </div>
 
-                {/* Water */}
+
                 <div>
                   <div className="flex items-center gap-2 mb-3">
                     <Droplet className="w-5 h-5 mb-2" />
@@ -1103,7 +1102,7 @@ const page = () => {
                   </p>
                 </div>
 
-                {/* Shelter */}
+
                 <div>
                   <div className="flex items-center gap-2 mb-3">
                     <House className="w-5 h-5 mb-2" />
@@ -1117,7 +1116,7 @@ const page = () => {
                   </p>
                 </div>
 
-                {/* Health */}
+
                 <div>
                   <div className="flex items-center gap-2 mb-3">
                     <Cross className="w-5 h-5 mb-2" />
@@ -1131,7 +1130,7 @@ const page = () => {
                   </p>
                 </div>
 
-                {/* Education */}
+
                 <div>
                   <div className="flex items-center gap-2 mb-3">
                     <GraduationCap className="w-6 h-6 mb-2" />
@@ -1149,7 +1148,7 @@ const page = () => {
           </div>
         </div>
         <div className="border-b border-gray-200 mt-8"></div>
-      </section>
+      </section> */}
 
       {/* C-Suite and Board Section */}
       <section className="pt-16 pb-8 px-4 md:px-25 lg:px-50 bg-white">

@@ -6,241 +6,317 @@ import Image from "next/image";
 import { createElement } from "react";
 
 const SummitPage = () => {
-  const featuredSpeakers = [
+  // const featuredSpeakers = [
+  //   {
+  //     title: "TRIIBE Talk 1",
+  //     speakers: [
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Next-Gen",
+  //       },
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Next-Gen",
+  //       },
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Established",
+  //       },
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Established",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     title: "TRIIBE Talk 2",
+  //     speakers: [
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Next-Gen",
+  //       },
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Next-Gen",
+  //       },
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Established",
+  //       },
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Established",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     title: "TRIIBE Talk 3: Shelter",
+  //     speakers: [
+  //       {
+  //         name: "Varuni Chopra",
+  //         title: "Founder, Bridge the Gap Initiative",
+  //         image: "/images/home/VaruniChopra.png",
+  //         linkedin: "https://www.linkedin.com/in/varuni-chopra1/",
+  //         tag: "Next-Gen",
+  //       },
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Next-Gen",
+  //       },
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Established",
+  //       },
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Established",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     title: "TRIIBE Talk 4: Health",
+  //     speakers: [
+  //       {
+  //         name: "Olivia Zhang",
+  //         title: "Founder and CEO, Cancer Kids First",
+  //         image:
+  //           "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68aa07201e49da83227f817d_1%20(1).png",
+  //         linkedin: "https://www.linkedin.com/in/olivia-zhang-a792b8229/",
+  //         tag: "Next-Gen",
+  //       },
+  //       {
+  //         name: "Nayla Jimenez",
+  //         title: "Founder, Philippine Health Initiative",
+  //         image: "/images/home/NaylaJimenez.png",
+  //         linkedin: "https://www.linkedin.com/in/naylajimenez/",
+  //         tag: "Next-Gen",
+  //       },
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Established",
+  //       },
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Established",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     title: "TRIIBE Talk 5: Education",
+  //     speakers: [
+  //       {
+  //         name: "Anne Frédérick",
+  //         title: "Founder, Haitech Learning",
+  //         image:
+  //           "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4ae976ac21db37b22369d_anna.png",
+  //         linkedin:
+  //           "https://www.linkedin.com/in/anne-sophie-frederick-1364ba235/",
+  //         tag: "Next-Gen",
+  //       },
+  //       {
+  //         name: "Samin Bhan",
+  //         title: "Founder, Lookupp",
+  //         image: "/images/home/saminbhan-2.png",
+  //         linkedin: "https://www.linkedin.com/in/samin-bhan/",
+  //         tag: "Next-Gen",
+  //       },
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Established",
+  //       },
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Established",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     title: "TRIIBE Talk 6: Food",
+  //     speakers: [
+  //       {
+  //         name: "Esha Venkat",
+  //         title: "Founder, Next4Us",
+  //         image: "/images/home/homepage---changemakers-3.png",
+  //         linkedin: "https://www.linkedin.com/in/eshavenkat/",
+  //         tag: "Next-Gen",
+  //       },
+  //       {
+  //         name: "Shrusti Amula",
+  //         title: "Founder, Rise N Shine Foundation",
+  //         image: "/images/home/ShrustiAmula.png",
+  //         linkedin: "https://www.linkedin.com/in/shrusti-amula/",
+  //         tag: "Next-Gen",
+  //       },
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Established",
+  //       },
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Established",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     title: "TRIIBE Talk 7: Education",
+  //     speakers: [
+  //       {
+  //         name: "Maya Gowda",
+  //         title: "Founder, SEED",
+  //         image:
+  //           "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4ca26ae82ac604cfa0e61_maya%2022.png",
+  //         linkedin: "https://www.linkedin.com/in/maya-gowda-a20484240/",
+  //         tag: "Next-Gen",
+  //       },
+  //       {
+  //         name: "Gitanjali Rao",
+  //         title: "Global Keynote, Vervient Foundation",
+  //         image: "/images/home/GitanjaliRao.png",
+  //         linkedin: "https://www.linkedin.com/in/gitanjalirao/",
+  //         tag: "Next-Gen",
+  //       },
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Established",
+  //       },
+  //       {
+  //         name: "Coming Soon",
+  //         title: "",
+  //         image: null,
+  //         linkedin: "#",
+  //         tag: "Established",
+  //       },
+  //     ],
+  //   },
+  // ];
+
+  const speakers = [
     {
-      title: "TRIIBE Talk 1",
-      speakers: [
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Next-Gen",
-        },
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Next-Gen",
-        },
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Established",
-        },
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Established",
-        },
-      ],
+      name: "Varuni Chopra",
+      title: "Founder, Bridge the Gap Initiative",
+      image: "/images/home/VaruniChopra.png",
+      linkedin: "https://www.linkedin.com/in/varuni-chopra1/",
+      tag: "Next-Gen",
     },
     {
-      title: "TRIIBE Talk 2",
-      speakers: [
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Next-Gen",
-        },
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Next-Gen",
-        },
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Established",
-        },
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Established",
-        },
-      ],
+      name: "Olivia Zhang",
+      title: "Founder and CEO, Cancer Kids First",
+      image:
+        "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68aa07201e49da83227f817d_1%20(1).png",
+      linkedin: "https://www.linkedin.com/in/olivia-zhang-a792b8229/",
+      tag: "Next-Gen",
     },
     {
-      title: "TRIIBE Talk 3: Shelter",
-      speakers: [
-        {
-          name: "Varuni Chopra",
-          title: "Founder, Bridge the Gap Initiative",
-          image: "/images/home/VaruniChopra.png",
-          linkedin: "https://www.linkedin.com/in/varuni-chopra1/",
-          tag: "Next-Gen",
-        },
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Next-Gen",
-        },
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Established",
-        },
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Established",
-        },
-      ],
+      name: "Nayla Jimenez",
+      title: "Founder, Philippine Health Initiative",
+      image: "/images/home/NaylaJimenez.png",
+      linkedin: "https://www.linkedin.com/in/naylajimenez/",
+      tag: "Next-Gen",
     },
     {
-      title: "TRIIBE Talk 4: Health",
-      speakers: [
-        {
-          name: "Olivia Zhang",
-          title: "Founder and CEO, Cancer Kids First",
-          image:
-            "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68aa07201e49da83227f817d_1%20(1).png",
-          linkedin: "https://www.linkedin.com/in/olivia-zhang-a792b8229/",
-          tag: "Next-Gen",
-        },
-        {
-          name: "Nayla Jimenez",
-          title: "Founder, Philippine Health Initiative",
-          image: "/images/home/NaylaJimenez.png",
-          linkedin: "https://www.linkedin.com/in/naylajimenez/",
-          tag: "Next-Gen",
-        },
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Established",
-        },
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Established",
-        },
-      ],
+      name: "Anne Frédérick",
+      title: "Founder, Haitech Learning",
+      image:
+        "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4ae976ac21db37b22369d_anna.png",
+      linkedin: "https://www.linkedin.com/in/anne-sophie-frederick-1364ba235/",
+      tag: "Next-Gen",
     },
     {
-      title: "TRIIBE Talk 5: Education",
-      speakers: [
-        {
-          name: "Anne Frédérick",
-          title: "Founder, Haitech Learning",
-          image:
-            "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4ae976ac21db37b22369d_anna.png",
-          linkedin:
-            "https://www.linkedin.com/in/anne-sophie-frederick-1364ba235/",
-          tag: "Next-Gen",
-        },
-        {
-          name: "Samin Bhan",
-          title: "Founder, Lookupp",
-          image: "/images/home/saminbhan-2.png",
-          linkedin: "https://www.linkedin.com/in/samin-bhan/",
-          tag: "Next-Gen",
-        },
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Established",
-        },
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Established",
-        },
-      ],
+      name: "Samin Bhan",
+      title: "Founder, Lookupp",
+      image: "/images/home/saminbhan-2.png",
+      linkedin: "https://www.linkedin.com/in/samin-bhan/",
+      tag: "Next-Gen",
     },
     {
-      title: "TRIIBE Talk 6: Food",
-      speakers: [
-        {
-          name: "Esha Venkat",
-          title: "Founder, Next4Us",
-          image: "/images/home/homepage---changemakers-3.png",
-          linkedin: "https://www.linkedin.com/in/eshavenkat/",
-          tag: "Next-Gen",
-        },
-        {
-          name: "Shrusti Amula",
-          title: "Founder, Rise N Shine Foundation",
-          image: "/images/home/ShrustiAmula.png",
-          linkedin: "https://www.linkedin.com/in/shrusti-amula/",
-          tag: "Next-Gen",
-        },
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Established",
-        },
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Established",
-        },
-      ],
+      name: "Esha Venkat",
+      title: "Founder, Next4Us",
+      image: "/images/home/homepage---changemakers-3.png",
+      linkedin: "https://www.linkedin.com/in/eshavenkat/",
+      tag: "Next-Gen",
     },
     {
-      title: "TRIIBE Talk 7: Education",
-      speakers: [
-        {
-          name: "Maya Gowda",
-          title: "Founder, SEED",
-          image:
-            "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4ca26ae82ac604cfa0e61_maya%2022.png",
-          linkedin: "https://www.linkedin.com/in/maya-gowda-a20484240/",
-          tag: "Next-Gen",
-        },
-        {
-          name: "Gitanjali Rao",
-          title: "Global Keynote, Vervient Foundation",
-          image: "/images/home/GitanjaliRao.png",
-          linkedin: "https://www.linkedin.com/in/gitanjalirao/",
-          tag: "Next-Gen",
-        },
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Established",
-        },
-        {
-          name: "Coming Soon",
-          title: "",
-          image: null,
-          linkedin: "#",
-          tag: "Established",
-        },
-      ],
+      name: "Shrusti Amula",
+      title: "Founder, Rise N Shine Foundation",
+      image: "/images/home/ShrustiAmula.png",
+      linkedin: "https://www.linkedin.com/in/shrusti-amula/",
+      tag: "Next-Gen",
+    },
+    {
+      name: "Maya Gowda",
+      title: "Founder, SEED",
+      image:
+        "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4ca26ae82ac604cfa0e61_maya%2022.png",
+      linkedin: "https://www.linkedin.com/in/maya-gowda-a20484240/",
+      tag: "Next-Gen",
+    },
+    {
+      name: "Gitanjali Rao",
+      title: "Global Keynote, Vervient Foundation",
+      image: "/images/home/GitanjaliRao.png",
+      linkedin: "https://www.linkedin.com/in/gitanjalirao/",
+      tag: "Next-Gen",
+    },
+    {
+      name: "Kyle Matthys",
+      title: "Moderator",
+      image: "/images/about/team/KyleMatthys.png",
+      linkedin: "https://www.linkedin.com/in/kylematthys/",
+      tag: "Moderator",
     },
   ];
 
@@ -385,6 +461,13 @@ const SummitPage = () => {
         },
       ],
     },
+    {
+      title: "Day 3, Sunday September 6th",
+      location: "Exclusively for Cohorts",
+      badge: "",
+      highlight: null,
+      items: [],
+    },
   ];
 
   return (
@@ -526,7 +609,7 @@ const SummitPage = () => {
         </div>
       </section>
 
-      <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]">
+      {/* <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]">
         <div className="max-w-260 mx-auto flex flex-col gap-12">
           <h2 className="text-3xl md:text-4xl font-bold text-black text-center">
             Featured Speakers
@@ -589,6 +672,74 @@ const SummitPage = () => {
             </div>
           ))}
         </div>
+      </section> */}
+
+      <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]">
+        <div className="max-w-260 mx-auto flex flex-col gap-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-black text-center">
+            Featured Speakers
+          </h2>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
+            {speakers.map((speaker, i) => (
+              <a
+                key={i}
+                href={speaker.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow w-full max-w-[260px]"
+              >
+                <div className="relative w-full aspect-[4/3] bg-gray-200">
+                  <Image
+                    src={speaker.image}
+                    alt={speaker.name}
+                    fill
+                    className="object-cover object-top"
+                  />
+
+                  {(speaker.tag === "Next-Gen" ||
+                    speaker.tag === "Established") && (
+                    <span
+                      className={`absolute -top-0.5 -left-0.5 text-xs font-medium px-3 py-1 rounded-br-xl ${
+                        speaker.tag === "Next-Gen"
+                          ? "bg-[#D8EFE4] text-[#1C5945]"
+                          : "bg-[#F5F0C9] text-[#6B5B00]"
+                      }`}
+                    >
+                      {speaker.tag}
+                    </span>
+                  )}
+                </div>
+
+                <div className="p-4 flex flex-col gap-2">
+                  <div className="flex items-center justify-between">
+                    <p className="font-semibold text-black text-sm">
+                      {speaker.name}
+                    </p>
+
+                    {speaker.linkedin !== "#" && (
+                      <svg
+                        className="w-4 h-4"
+                        viewBox="0 0 24 24"
+                        fill="#0A66C2"
+                      >
+                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" />
+                      </svg>
+                    )}
+                  </div>
+
+                  <p className="text-xs text-[#495565] leading-tight">
+                    {speaker.title}
+                  </p>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <p className="text-center text-sm text-[#495565]">
+            more speakers coming soon...
+          </p>
+        </div>
       </section>
 
       <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-white">
@@ -599,87 +750,108 @@ const SummitPage = () => {
 
           {scheduleDays.map((day, dayIndex) => (
             <div
-              key={dayIndex}
+              key={day.title}
               className="bg-[#F5F5F5] rounded-2xl p-8 flex flex-col gap-6"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
-                <div className="flex flex-col gap-1">
+                <div
+                  className={`flex flex-col ${
+                    day.highlight ? "gap-1" : "gap-4"
+                  }`}
+                >
                   <h3 className="text-2xl font-bold text-black">{day.title}</h3>
-                  <p className="text-xs text-[#495565]">{day.location}</p>
+
+                  <p
+                    className={`text-xs ${
+                      day.highlight
+                        ? "text-[#495565]"
+                        : "text-[#1A1A1A] font-semibold"
+                    }`}
+                  >
+                    {day.location}
+                  </p>
                 </div>
-                <span className="bg-[#002C19] text-white text-xs font-semibold px-4 py-2 rounded-full self-start">
-                  {day.badge}
-                </span>
+
+                {day.badge && (
+                  <span className="bg-[#002C19] text-white text-xs font-semibold px-4 py-2 rounded-full self-start">
+                    {day.badge}
+                  </span>
+                )}
               </div>
 
-              <div className="bg-white rounded-xl flex flex-col md:flex-row overflow-hidden">
-                <div className="relative w-full md:w-56 h-48 md:h-auto flex-shrink-0">
-                  <Image
-                    src={day.highlight.image}
-                    alt={day.highlight.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="flex flex-col gap-3 p-6">
-                  <p className="text-xs font-semibold text-[#495565] uppercase tracking-widest">
-                    {day.highlight.label}
-                  </p>
-                  <h4
-                    className="text-2xl italic text-black"
-                    style={{ fontFamily: "'Cormorant Garamond', serif" }}
-                  >
-                    {day.highlight.name}
-                  </h4>
-                  <p className="text-sm text-[#30364199] leading-relaxed">
-                    {day.highlight.description}
-                  </p>
-                  <div className="flex flex-wrap gap-x-8 gap-y-2 mt-2">
-                    {day.highlight.bullets.map((bullet, i) => (
-                      <span
-                        key={i}
-                        className="text-sm text-black/70 flex items-center gap-2"
+              {day.highlight && (
+                <>
+                  <div className="bg-white rounded-xl flex flex-col md:flex-row overflow-hidden">
+                    <div className="relative w-full md:w-56 h-48 md:h-auto flex-shrink-0">
+                      <Image
+                        src={day.highlight.image}
+                        alt={day.highlight.name}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-3 p-6">
+                      <p className="text-xs font-semibold text-[#495565] uppercase tracking-widest">
+                        {day.highlight.label}
+                      </p>
+                      <h4
+                        className="text-2xl italic text-black"
+                        style={{ fontFamily: "'Cormorant Garamond', serif" }}
                       >
-                        <span className="w-1 h-1 bg-black rounded-full"></span>
-                        {bullet}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col">
-                {day.items.map((item, i) => (
-                  <div
-                    key={i}
-                    className="grid grid-cols-[80px_1fr] gap-4 py-3 border-t border-gray-200 items-start"
-                  >
-                    <span className="text-sm font-semibold text-black">
-                      {item.time}
-                    </span>
-                    {item.title === "BREAK" ? (
-                      <div className="flex items-center gap-4 w-full">
-                        <div className="flex-1 h-px bg-gray-300"></div>
-                        <span className="text-xs text-[#495565] tracking-[0.3em]">
-                          BREAK
-                        </span>
-                        <div className="flex-1 h-px bg-gray-300"></div>
+                        {day.highlight.name}
+                      </h4>
+                      <p className="text-sm text-[#30364199] leading-relaxed">
+                        {day.highlight.description}
+                      </p>
+                      <div className="flex flex-wrap gap-x-8 gap-y-2 mt-2">
+                        {day.highlight.bullets.map((bullet, i) => (
+                          <span
+                            key={i}
+                            className="text-sm text-black/70 flex items-center gap-2"
+                          >
+                            <span className="w-1 h-1 bg-black rounded-full"></span>
+                            {bullet}
+                          </span>
+                        ))}
                       </div>
-                    ) : (
-                      <div className="flex flex-col">
-                        <p className="text-sm font-semibold text-black mb-2">
-                          {item.title}
-                        </p>
-                        {item.description && (
-                          <p className="text-xs text-[#495565]">
-                            {item.description}
-                          </p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col">
+                    {day.items.map((item, i) => (
+                      <div
+                        key={i}
+                        className="grid grid-cols-[80px_1fr] gap-4 py-3 border-t border-gray-200 items-start"
+                      >
+                        <span className="text-sm font-semibold text-black">
+                          {item.time}
+                        </span>
+
+                        {item.title === "BREAK" ? (
+                          <div className="flex items-center gap-4 w-full">
+                            <div className="flex-1 h-px bg-gray-300"></div>
+                            <span className="text-xs text-[#495565] tracking-[0.3em]">
+                              BREAK
+                            </span>
+                            <div className="flex-1 h-px bg-gray-300"></div>
+                          </div>
+                        ) : (
+                          <div className="flex flex-col">
+                            <p className="text-sm font-semibold text-black mb-2">
+                              {item.title}
+                            </p>
+                            {item.description && (
+                              <p className="text-xs text-[#495565]">
+                                {item.description}
+                              </p>
+                            )}
+                          </div>
                         )}
                       </div>
-                    )}
+                    ))}
                   </div>
-                ))}
-              </div>
+                </>
+              )}
             </div>
           ))}
         </div>
