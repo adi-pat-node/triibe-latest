@@ -131,7 +131,7 @@ export default function Changemakers() {
         />
       </div>
 
-      <div className="bg-white rounded-b-2xl p-6 md:p-2 lg:p-6 border border-t-0 border-gray-200 h-58 lg:h-88  md:h-100 flex flex-col gap-3">
+      <div className="bg-white rounded-b-2xl p-6 md:p-4 lg:p-6 border border-t-0 border-gray-200 flex flex-col gap-3 h-auto">
         <div className="flex flex-col gap-1">
           <h3 className=" font-semibold text-black text-lg">
             {changemaker.name}
