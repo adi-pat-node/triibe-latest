@@ -39,9 +39,9 @@ const Page = () => {
         "TRIIBE Fellows receive their first $5,000 grant, mentorship, and a peer community. For a full look at additional support, like the Summit, retreat, and documentaries, see the deck above.",
     },
     {
-      question: "How long is the Fellowship",
+      question: "How long is the Residency",
       answer:
-        "TRIIBE's fellowship supports you for three years, with each year helping you further continue your nonprofit. Afterwards, alumni stay connected, ensuring lifelong belonging and support.",
+        "TRIIBE supports you for three years, with each year helping you further your nonprofit. Afterwards, fellows stay part of the fellowship for life.",
     },
     {
       question: "When will I hear back?",
@@ -81,8 +81,8 @@ const Page = () => {
               </h1>
 
               <p className="font-normal text-[#495565] text-[16px] leading-relaxed mb-4">
-                We're looking to help passionate next-gen founders continue
-                their nonprofits.
+                We’re looking for next-gen nonprofit founders maximizing a
+                return on impact, not income
               </p>
 
               {/* How to Apply Box */}
@@ -169,7 +169,7 @@ const Page = () => {
                     <input
                       type="email"
                       name="Email"
-                      placeholder="your.email@university.edu"
+                      placeholder="your.email@gmail.com"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
                       required
                     />
@@ -208,12 +208,12 @@ const Page = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label className="block font-semibold text-black text-sm mb-2">
-                      Name of Nonprofit *
+                      Your Nonprofit *
                     </label>
                     <input
                       type="text"
                       name="Organization Name"
-                      placeholder="Your 501(c)(3) organization's name"
+                      placeholder="Your 501(c)(3) Organization’s Name"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002c19] focus:border-transparent"
                       required
                     />

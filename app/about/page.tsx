@@ -1036,24 +1036,24 @@ const page = () => {
 
             <div className="space-y-2">
               <div>
-                <h3 className="font-semibold text-black/85 text-lg leading-relaxed mb-6">
-                  TRIIBE helps next-gen founders continue their nonprofit in
-                  their early 20s
+                <h3 className="font-semibold text-black text-2xl mb-6">
+                  We are building the nonprofit startup ecosystem, maximizing a
+                  return on impact, not income
                 </h3>
               </div>
 
               <p className="font-normal text-black/75 text-lg leading-relaxed mb-2">
-                • The TRIIBE Fellowship provides unrestricted funding,
-                mentorship and community.
+                • TRIIBE Talks highlight next-gen founders alongside established
+                ones, because age doesn't define the quality of a voice.
               </p>
 
               <p className="font-normal text-black/75 text-lg leading-relaxed  mb-2">
-                • TRIIBE Talks empower a decentralized global network to
-                highlight the quality of next-gen voices.
+                • The TRIIBE Fellowship ensures founders don’t burn out while
+                transitioning from a “youth” nonprofit to an established one.
               </p>
               <p className="font-normal text-black/75 text-lg leading-relaxed">
-                • The TRIIBE I00 serves as the seal of credibility for next-gen
-                founders continuing their nonprofit with humility.
+                • The TRIIBE I00 is the definitive list of the 100 next-gen
+                nonprofit founders to know.
               </p>
             </div>
           </div>
