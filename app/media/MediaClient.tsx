@@ -449,14 +449,14 @@ const MediaPage = () => {
       {/* Media Cards Section */}
       <section className="pt-20 pb-4 px-4  md:px-12 lg:px-50 bg-[#3036411A]">
         <div className="max-w-300 mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {mediaCards.map((card) => (
               <div
                 key={card.id}
-                className="bg-white rounded-lg overflow-hidden shadow-sm flex flex-col h-full"
+                className="bg-white rounded-lg overflow-hidden shadow-sm flex flex-col"
               >
                 {/* Title */}
-                <div className="p-6">
+                <div className="p-6 pb-0">
                   <h3 className="font-bold text-black text-2xl mb-4 text-center">
                     {card.title}
                   </h3>
@@ -464,7 +464,7 @@ const MediaPage = () => {
 
                 {/* Image */}
                 <div className="px-6">
-  <div className="relative w-full rounded-lg overflow-hidden">
+  <div className="relative w-full h-[500px] rounded-lg overflow-hidden">
     {card.id === "workshops" ? (
       <video
   src="/videos/Triibe-talk-latest.mp4"
@@ -472,24 +472,22 @@ const MediaPage = () => {
   className="w-full h-full object-cover"
 />
     ) : (
-      <div className="relative w-full aspect-video rounded-lg overflow-hidden bg-black mb-6">
-              <Image
-                src={card.image}
-                alt={card.title}
-                fill
-                className="object-cover"
-              />
-            </div>
+      <Image
+        src={card.image}
+        alt={card.title}
+        fill
+        className="object-cover"
+      />
     )}
   </div>
 </div>
 
                 {/* Content */}
-                <div className="px-6 pb-6 flex flex-col flex-1">
+                <div className="p-6 flex flex-col justify-between flex-1">
                   {card.id !== "workshops" && (
-  <div className="flex-1 flex items-center justify-center">
+  <div className="p-6 flex flex-col justify-between flex-1">
     <div>
-      <div className="inline-block self-start px-3 py-1 bg-[#3036411A] rounded mb-4">
+      <div className="inline-block px-3 py-1 bg-[#3036411A] rounded mb-4">
         <span className="font-semibold text-black text-sm">
           {card.badge}
         </span>
@@ -505,14 +503,14 @@ const MediaPage = () => {
     </div>
 
     {/* Buttons */}
-    <div className="mt-auto">
+    <div className="flex gap-3">
       {card.buttons.map((btn, index) => {
         if (btn.type === "modal") {
           return (
             <button
               key={index}
               onClick={() => setShowNewsletter(true)}
-              className="w-full px-6 py-3 bg-[#1C5945] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base inline-flex items-center justify-center"
+              className="px-6 py-2 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base inline-flex items-center justify-center cursor-pointer"
             >
               {/* icon */}
             </button>
@@ -526,7 +524,7 @@ const MediaPage = () => {
             target="_blank"
             className={`${
               card.buttons.length > 1 ? "flex-1" : "w-full"
-            } w-full px-6 py-3 bg-[#1C5945] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base inline-flex items-center justify-center`}
+            } px-6 py-3 bg-[#1C5945] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base inline-flex items-center justify-center`}
           >
             {btn.text}
           </a>
