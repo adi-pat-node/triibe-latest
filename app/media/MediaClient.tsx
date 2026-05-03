@@ -325,11 +325,7 @@ const MediaPage = () => {
   const mediaItems = [
     { type: "youtube", id: workshops[0].youtubeId },
     { type: "youtube", id: workshops[1].youtubeId },
-    { type: "youtube", id: workshops[2].youtubeId },
-
-    { type: "instagram", id: "DXu0db1CNlp", format: "reel" },
-    { type: "instagram", id: "DXsPbF1jD1s", format: "reel" },
-    { type: "instagram", id: "DXnGD6BEYC4", format: "reel" },
+    
   ];
 
   const goToPrevious = () => {
