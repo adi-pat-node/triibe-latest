@@ -171,7 +171,8 @@ export default function Changemakers() {
             First Two Cohorts
           </h2>
           <p className=" font-normal text-[#495565] text-lg leading-7 mb-4">
-            TRIIBE’s Next-gen fellows continuing their nonprofit
+            TRIIBE’s next-gen fellows in residence prioritizing a return on
+            impact, not income
           </p>
         </div>
 

@@ -77,7 +77,7 @@ const faqs = [
   {
     question: "What happens after year 3?",
     answer:
-      "Fellows transition to our alumni network with continued access to mentorship, resources, and community. We help ensure organizational continuity as you navigate the next phase of your nonprofit's journey.",
+      "Fellows in residence transition into our fellowship with access to funders, advisors, and an expanding fellowship of philentrepreneurs for life. We help you become the bench of operators future leaders and institutions need to deliver a return on impact.",
   },
 ];
 
@@ -105,7 +105,7 @@ function TestimonialCarousel() {
           Hear from Our Fellows
         </h2>
         <p className=" font-normal text-[#303641] text-lg">
-          Real stories from student founders who've built sustainable impact
+          Real stories from founders prioritizing impact over income
         </p>
       </div>
 
@@ -302,7 +302,8 @@ const ProgramPage = () => {
                   Community
                 </h3>
                 <p className=" font-normal text-[#495565] text-sm leading-[22.8px]">
-                  Join a cohort of peers and wider TRIIBE network.
+                  Gain access to funders, advisors, and an expanding fellowship
+                  of philentrepreneurs for life
                 </p>
               </div>
             </div>
@@ -367,9 +368,7 @@ const ProgramPage = () => {
                     </li>
                     <li className=" font-normal text-[#495565] text-sm flex items-start">
                       <span className="mr-3">•</span>
-                      <span>
-                        Build foundational operating model & governance
-                      </span>
+                      <span>Build nonprofit operating model & governance</span>
                     </li>
                     <li className=" font-normal text-[#495565] text-sm flex items-start">
                       <span className="mr-3">•</span>
@@ -453,9 +452,7 @@ const ProgramPage = () => {
                     </li>
                     <li className=" font-normal text-[#495565] text-sm flex items-start">
                       <span className="mr-3">•</span>
-                      <span>
-                        Launch digital campaigns and thought leadership
-                      </span>
+                      <span>Launch digital campaigns</span>
                     </li>
                   </ul>
                 </div>
@@ -526,7 +523,9 @@ const ProgramPage = () => {
                     </li>
                     <li className=" font-normal text-[#495565] text-sm flex items-start">
                       <span className="mr-3">•</span>
-                      <span>Launch alumni engagement & long-term support</span>
+                      <span>
+                        Launch community engagement & long-term support
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -697,11 +696,11 @@ const ProgramPage = () => {
                 </div>
                 <div className="flex flex-col gap-2">
                   <h3 className=" font-semibold text-black text-xl">
-                    Transition to Alumni
+                    Beyond the Residence
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
-                    Continuity planning and long-term support beyond the
-                    fellowship
+                    Become the bench of operators institutions need to deliver a
+                    return on impact
                   </p>
                 </div>
               </div>

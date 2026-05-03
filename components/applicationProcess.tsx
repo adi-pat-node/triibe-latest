@@ -4,8 +4,8 @@ import { ArrowRight } from "lucide-react";
 
 const eligibilityRequirements = [
   "Aged 20 and 25",
-  "Founders or co-founders of registered 501(c)(3) nonprofit",
-  "Active leadership in organizational operations",
+  "Founders or co-founders of registered 501(c)(3) nonprofits",
+  "Active leadership in nonprofit operations",
   "Committed to continuing your nonprofit over the next 3 years",
 ];
 
@@ -28,7 +28,7 @@ export default function ApplicationProcess() {
         </h2>
         <p className="max-w-191 font-normal text-[#495565] text-lg leading-[29.2px]">
           TRIIBE provides funding, mentorship, and community for next-gen
-          founders taking root today to advance tomorrow
+          nonprofit founders
         </p>
       </header>
 

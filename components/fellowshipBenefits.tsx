@@ -8,7 +8,7 @@ const benefits = [
     icon: "/images/home/container-3.svg",
     title: "Direct Funding",
     description:
-      "Financial grants to support foundation operations, programming, and organizational growth",
+      "Financial grants to support nonprofit operations, programming, and organizational growth",
   },
   {
     number: "02",
@@ -22,7 +22,7 @@ const benefits = [
     icon: "/images/home/container.svg",
     title: "Community",
     description:
-      "A cohort of fellow undergraduate founders building meaningful organizations",
+      "A cohort of fellow next-gen nonprofit founders and TRIIBE fellows",
   },
   {
     number: "04",
@@ -48,8 +48,8 @@ export default function FellowshipBenefits() {
           What Fellows Receive
         </h2>
         <p className=" font-normal text-[#495565] text-lg leading-[29.2px] max-w-219">
-          Comprehensive support designed for foundations navigating the unique
-          challenges of scaling organizations while in their early 20s.
+          Comprehensive support designed for founders navigating the unique
+          challenges of scaling their nonprofits while in their early 20s.
         </p>
       </div>
 

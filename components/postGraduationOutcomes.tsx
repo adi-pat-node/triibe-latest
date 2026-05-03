@@ -6,19 +6,19 @@ import Link from "next/link";
 const outcomes = [
   {
     icon: "images/home/container-6.svg",
-    title: "Alumni Network",
+    title: "Fellowship network",
     description:
-      "Continued connection with fellow founders and access to an expanding community of philentrepreneurs",
+      "Continued access to funders, advisors, and an expanding fellowship of philentrepreneurs",
   },
   {
     icon: "images/home/container-5.svg",
-    title: "Ongoing Support",
+    title: "Executive Placement",
     description:
-      "Access to resources, consultation, and guidance as you continue your nonprofit",
+      "Become the bench of operators future leaders and institutions need to deliver a return on impact",
   },
   {
     icon: "images/home/container-1.svg",
-    title: "Leadership Opportunities",
+    title: "Mentorship Opportunities",
     description:
       "Mentor future fellows, helping them continue their own nonprofits",
   },
@@ -30,11 +30,10 @@ export default function PostGraduationOutcomes() {
       <div className="flex flex-col items-start gap-16 w-full">
         <div className="flex flex-col items-start gap-4 max-w-3xl">
           <h2 className=" font-bold text-[#000000] text-4xl tracking-[-0.90px] leading-10">
-            Beyond the Fellowship
+            Beyond The Residence
           </h2>
           <p className=" font-normal text-[#495565] text-lg tracking-[0] leading-[29.2px]">
-            TRIIBE alumni remain part of a community committed to sustained
-            social impact.
+            Fellows remain part of the fellowship for life
           </p>
         </div>
 

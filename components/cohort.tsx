@@ -171,7 +171,8 @@ export default function Cohort() {
             First Two Cohorts
           </h2>
           <p className=" font-normal text-[#495565] text-lg leading-7 mb-4 text-center">
-            Next-Gen TRIIBE fellows growing their foundations
+            TRIIBE’s next-gen fellows in residence prioritizing a return on
+            impact, not income
           </p>
         </div>
 

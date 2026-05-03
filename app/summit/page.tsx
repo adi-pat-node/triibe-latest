@@ -313,10 +313,17 @@ const SummitPage = () => {
     },
     {
       name: "Kyle Matthys",
-      title: "Moderator",
+      title: "CEO, TRIIBE",
       image: "/images/about/team/KyleMatthys.png",
       linkedin: "https://www.linkedin.com/in/kylematthys/",
       tag: "Moderator",
+    },
+    {
+      name: "Chirag Nijjer",
+      title: "Brand Historian for Google and the History Channel",
+      image: "/images/summit/Chirag Nijjer.png",
+      linkedin: "https://www.linkedin.com/in/chiragspeaks/",
+      tag: "MC",
     },
   ];
 
@@ -332,7 +339,7 @@ const SummitPage = () => {
         name: "Chef Kim Yong",
         description:
           "Tokyo-trained, Michelin-starred known for single-source bluefin and a minimalist rice program. Curating Friday's tasting and the evening sushi show.",
-        bullets: ["Tableside carving at lunch", "Sushi show during Gala"],
+        bullets: ["Sushi show during Gala"],
       },
       items: [
         {
@@ -386,21 +393,21 @@ const SummitPage = () => {
           time: "9:40 AM",
           title: "TRIIBE Talk",
           description:
-            "2 established speakers over 30 and two next-gen TRIIBE Fellows under 30",
+            "Highlighting next-gen founders alongside established ones, because age doesn't define the quality of a voice.",
         },
         { time: "10:25 AM", title: "BREAK" },
         {
           time: "10:40 AM",
           title: "TRIIBE Talk",
           description:
-            "2 established speakers over 30 and two next-gen TRIIBE Fellows under 30",
+            "Highlighting next-gen founders alongside established ones, because age doesn't define the quality of a voice.",
         },
         { time: "11:25 AM", title: "BREAK" },
         {
           time: "11:40 AM",
           title: "TRIIBE Talk",
           description:
-            "2 established speakers over 30 and two next-gen TRIIBE Fellows under 30",
+            "Highlighting next-gen founders alongside established ones, because age doesn't define the quality of a voice.",
         },
         {
           time: "12:25 PM",
@@ -416,28 +423,28 @@ const SummitPage = () => {
           time: "1:50 PM",
           title: "TRIIBE Talk",
           description:
-            "2 established speakers over 30 and two next-gen TRIIBE Fellows under 30",
+            "Highlighting next-gen founders alongside established ones, because age doesn't define the quality of a voice.",
         },
         { time: "2:35 PM", title: "BREAK" },
         {
           time: "2:45 PM",
           title: "TRIIBE Talk",
           description:
-            "2 established speakers over 30 and two next-gen TRIIBE Fellows under 30",
+            "Highlighting next-gen founders alongside established ones, because age doesn't define the quality of a voice.",
         },
         { time: "3:30 PM", title: "BREAK" },
         {
           time: "3:40 PM",
           title: "TRIIBE Talk",
           description:
-            "2 established speakers over 30 and two next-gen TRIIBE Fellows under 30",
+            "Highlighting next-gen founders alongside established ones, because age doesn't define the quality of a voice.",
         },
         { time: "4:25 PM", title: "BREAK" },
         {
           time: "4:35 PM",
           title: "TRIIBE Talk",
           description:
-            "2 established speakers over 30 and two next-gen TRIIBE Fellows under 30",
+            "Highlighting next-gen founders alongside established ones, because age doesn't define the quality of a voice.",
         },
         {
           time: "5:20 PM",
@@ -482,13 +489,14 @@ const SummitPage = () => {
               About the Summit
             </h2>
             <p className="text-black text-base leading-relaxed">
-              The Invite Only x TRIIBE Next-Gen Summit brings together TRIIBE
-              Fellows growing their foundations, next-gen founders, established
-              changemakers, funders, mentors, and partners for an extraordinary
-              weekend. From a VIP Gala on Friday evening to a full-day summit on
-              Saturday, this experience is designed to fund, connect, and
-              celebrate the next-gen foundations taking root today to advance
-              tomorrow.
+              The Invite Only x TRIIBE Next-Gen Summit is where the TRIIBE comes
+              together. Next-gen founders, established voices, foundations,
+              funders, mentors, and partners gather for a weekend designed to
+              celebrate those prioritizing a return on impact, not income.
+              <br />
+              <br />A VIP Gala on Friday evening. A full-day summit on Saturday.
+              One weekend to recognize the bench of operators future leaders and
+              institutions need to deliver a return on impact.
             </p>
           </div>
 
@@ -698,12 +706,14 @@ const SummitPage = () => {
                   />
 
                   {(speaker.tag === "Next-Gen" ||
-                    speaker.tag === "Established") && (
+                    speaker.tag === "Established" ||
+                    speaker.tag === "Moderator" ||
+                    speaker.tag === "MC") && (
                     <span
                       className={`absolute -top-0.5 -left-0.5 text-xs font-medium px-3 py-1 rounded-br-xl ${
                         speaker.tag === "Next-Gen"
                           ? "bg-[#D8EFE4] text-[#1C5945]"
-                          : "bg-[#F5F0C9] text-[#6B5B00]"
+                          : "bg-[#D8EFE4] text-[#1C5945]"
                       }`}
                     >
                       {speaker.tag}
