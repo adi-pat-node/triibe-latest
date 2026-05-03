@@ -62,22 +62,22 @@ const faqs = [
   {
     question: "Who is eligible to apply?",
     answer:
-      "Next-gen founders aged 20-25 committed to continuing your registered collective over the next 3 years.",
+      "Next-gen founders aged 20-25 committed to continuing your registered nonprofit over the next 3 years.",
   },
   {
     question: "What can I use the funding for?",
     answer:
-      "The funding is unrestricted and can be used for any legitimate organizational expenses including operations, program costs, team compensation, technology, marketing, or other needs that support your collective's mission and growth.",
+      "The funding is unrestricted and can be used for any legitimate organizational expenses including operations, program costs, team compensation, technology, marketing, or other needs that support your nonprofit's mission and growth.",
   },
   {
     question: "How much time commitment is required?",
     answer:
-      "You should be working on your collective for at least 20 hours per week, making time for monthly TRIIBE check-ins, mentor meetings, summits, retreats, and broader community engagement.",
+      "You should be working on your nonprofit for at least 20 hours per week, making time for monthly TRIIBE check-ins, mentor meetings, summits, retreats, and broader community engagement.",
   },
   {
     question: "What happens after year 3?",
     answer:
-      "Fellows transition to our alumni network with continued access to mentorship, resources, and community. We help ensure organizational continuity as you navigate the next phase of your collective’s journey.",
+      "Fellows transition to our alumni network with continued access to mentorship, resources, and community. We help ensure organizational continuity as you navigate the next phase of your nonprofit's journey.",
   },
 ];
 
@@ -229,7 +229,7 @@ const ProgramPage = () => {
         <div className="max-w-260 mx-auto">
           <div className="max-w-5xl mx-auto">
             <p className="font-bold text-black text-4xl md:text-[40px]  leading-tight">
-              Young founders are cut off from funding
+              Next-gen nonprofit founders are cut off from funding
             </p>
           </div>
 
@@ -593,7 +593,7 @@ const ProgramPage = () => {
                     Onboard & Assess
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
-                    Baseline assessment of your collective, goals, and current
+                    Baseline assessment of your nonprofit, goals, and current
                     capacity
                   </p>
                 </div>
@@ -670,7 +670,7 @@ const ProgramPage = () => {
                     Unlock Funding
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
-                    Grants distributed each year as you continue your collective
+                    Grants distributed each year as you continue your nonprofit
                   </p>
                 </div>
               </div>

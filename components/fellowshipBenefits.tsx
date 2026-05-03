@@ -8,7 +8,7 @@ const benefits = [
     icon: "/images/home/container-3.svg",
     title: "Direct Funding",
     description:
-      "Financial grants to support operations, programming, and organizational growth",
+      "Financial grants to support foundation operations, programming, and organizational growth",
   },
   {
     number: "02",
@@ -22,7 +22,7 @@ const benefits = [
     icon: "/images/home/container.svg",
     title: "Community",
     description:
-      "A cohort of next-gen founders continuing their collectives",
+      "A cohort of fellow undergraduate founders building meaningful organizations",
   },
   {
     number: "04",
@@ -48,7 +48,8 @@ export default function FellowshipBenefits() {
           What Fellows Receive
         </h2>
         <p className=" font-normal text-[#495565] text-lg leading-[29.2px] max-w-219">
-          Comprehensive support designed for next-gen founders navigating the unique challenge of continuing their collectives.
+          Comprehensive support designed for foundations navigating the unique
+          challenges of scaling organizations while in their early 20s.
         </p>
       </div>
 

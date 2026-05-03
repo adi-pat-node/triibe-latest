@@ -44,7 +44,7 @@ export default function Footer() {
                 TRIIBE
               </h2>
               <p className=" font-normal text-[#495565] text-sm tracking-[0] leading-[22.8px]">
-                Helping next-gen founders continue their collectives
+                Helping next-gen founders continue their nonprofits
               </p>
             </div>
 

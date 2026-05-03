@@ -5,7 +5,7 @@ import Image from "next/image";
 const programSections = [
   {
     title: "Why We Do It",
-    description: `Everyone wants a village, but nobody wants to be a villager. So we built a TRIIBE. Next-gen for next-gen, a foundation funding next-gen founders, ensuring they don't burn out when transitioning from a "youth" nonprofit to an established collective.`,
+    description: `Everyone wants a village, but nobody wants to be a villager. So we built a TRIIBE: the foundation funding next-gen nonprofit founders.`,
     bgColor: "bg-[#002c19]",
     textColor: "text-white",
     descriptionColor: "text-[#ffffffcc]",
@@ -17,7 +17,7 @@ const programSections = [
   {
     title: "What We Do",
     description:
-      "We are building out the startup ecosystem for collectives, maximizing a return on impact, not income. Whether through our Fellowship, TRIIBE Talks, or the TRIIBE I00, we are providing stability, visibility, and credibility to next-gen founders taking root today to advance tomorrow. ",
+      "We are building the nonprofit startup ecosystem, maximizing a return on impact, not income. Through TRIIBE Talks, the TRIIBE Fellowship, and the TRIIBE I00, we provide next-gen nonprofit founders visibility, stability, and credibility.",
     bgColor: "bg-[#002c19]",
     textColor: "text-[#fffefee6]",
     descriptionColor: "text-[#ffffffcc]",
@@ -30,10 +30,10 @@ const programSections = [
     title: "How We Do It",
     description: (
       <>
-        • The TRIIBE Fellowship provides unrestricted funding, mentorship and community.
-         <br /> • TRIIBE Talks empower a decentralized global network to highlight
-          the quality of next-gen voices. <br /> • The TRIIBE I00 serves as the seal of credibility for
-           next-gen founders continuing their collectives with humility.
+        • TRIIBE Talks highlight next-gen founders alongside established ones, because age doesn't define the quality of a voice.
+         <br /> • The TRIIBE Fellowship ensures founders don’t burn out while transitioning from
+          a “youth” nonprofit to an established one. <br /> • The TRIIBE I00 is the definitive
+           list of the 100 next-gen nonprofit founders to know.
 
       </>
     ),

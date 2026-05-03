@@ -356,7 +356,7 @@ const MediaPage = () => {
             {/* Title */}
             <div>
               <h1 className="font-bold text-black text-4xl md:text-[40px]  leading-tight">
-                Visibility for next-gen founders continuing their collectives
+                Visibility for next-gen founders continuing their nonprofit
               </h1>
             </div>
 

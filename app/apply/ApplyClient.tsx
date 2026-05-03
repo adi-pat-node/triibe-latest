@@ -26,7 +26,7 @@ const Page = () => {
     {
       question: "Who is eligible to apply?",
       answer:
-        "Next-gen founders aged 20-25 committed to growing your registered collective over the next 3 years.",
+        "Next-gen founders aged 20-25 committed to growing your registered nonprofit over the next 3 years.",
     },
     {
       question: "What is the selection process?",
@@ -41,7 +41,7 @@ const Page = () => {
     {
       question: "How long is the Fellowship",
       answer:
-        "TRIIBE's fellowship supports you for three years, with each year helping you further continue your collective. Afterwards, alumni stay connected, ensuring lifelong belonging and support.",
+        "TRIIBE's fellowship supports you for three years, with each year helping you further continue your nonprofit. Afterwards, alumni stay connected, ensuring lifelong belonging and support.",
     },
     {
       question: "When will I hear back?",
@@ -82,7 +82,7 @@ const Page = () => {
 
               <p className="font-normal text-[#495565] text-[16px] leading-relaxed mb-4">
                 We're looking to help passionate next-gen founders continue
-                their collectives.
+                their nonprofits.
               </p>
 
               {/* How to Apply Box */}
@@ -208,7 +208,7 @@ const Page = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label className="block font-semibold text-black text-sm mb-2">
-                      Name of Collective *
+                      Name of Nonprofit *
                     </label>
                     <input
                       type="text"

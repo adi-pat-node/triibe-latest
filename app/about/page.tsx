@@ -1037,7 +1037,7 @@ const page = () => {
             <div className="space-y-2">
               <div>
                 <h3 className="font-semibold text-black/85 text-lg leading-relaxed mb-6">
-                  TRIIBE helps next-gen founders continue their collectives in
+                  TRIIBE helps next-gen founders continue their nonprofit in
                   their early 20s
                 </h3>
               </div>
@@ -1053,7 +1053,7 @@ const page = () => {
               </p>
               <p className="font-normal text-black/75 text-lg leading-relaxed">
                 • The TRIIBE I00 serves as the seal of credibility for next-gen
-                founders continuing their collectives with humility.
+                founders continuing their nonprofit with humility.
               </p>
             </div>
           </div>

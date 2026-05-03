@@ -14,13 +14,13 @@ const outcomes = [
     icon: "images/home/container-5.svg",
     title: "Ongoing Support",
     description:
-      "Access to resources, consultation, and guidance as you continue your collective",
+      "Access to resources, consultation, and guidance as you continue your nonprofit",
   },
   {
     icon: "images/home/container-1.svg",
     title: "Leadership Opportunities",
     description:
-      "Mentor future fellows, helping them continue their own collectives",
+      "Mentor future fellows, helping them continue their own nonprofits",
   },
 ];
 

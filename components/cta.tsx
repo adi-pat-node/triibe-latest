@@ -52,7 +52,7 @@ export default function CTASection() {
             <h3 className="font-semibold text-white text-2xl">Join A Cohort</h3>
             <p className="font-normal text-[#D1D5DC] text-base leading-relaxed">
               Are you a next-gen founder looking to turn your youth nonprofit into an 
-              established collective? Apply to become a TRIIBE Fellow.
+              established nonprofit? Apply to become a TRIIBE Fellow.
             </p>
             <a
               href="/apply"
