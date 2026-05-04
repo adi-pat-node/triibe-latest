@@ -34,10 +34,10 @@ export default function Header() {
           {[
             { name: "Home", href: "/" },
             { name: "Program", href: "/program" },
-            { name: "Next-Gen Summit", href: "/summit" },
+            { name: "Next-gen summit", href: "/summit" },
             { name: "TRIIBE Talk", href: "/triibetalk" },
             { name: "Media", href: "/media" },
-            { name: "About Us", href: "/about" },
+            { name: "About us", href: "/about" },
             // { name: "Contact Us", href: "/contact" },
           ].map((link) => (
             <a
@@ -97,11 +97,11 @@ export default function Header() {
           {[
             { name: "Home", href: "/" },
             { name: "Program", href: "/program" },
-            { name: "Next-Gen Summit", href: "/summit" },
+            { name: "Next-gen summit", href: "/summit" },
             { name: "TRIIBE Talk", href: "/triibetalk" },
             { name: "Media", href: "/media" },
-            { name: "About Us", href: "/about" },
-            // { name: "Contact Us", href: "/contact" },
+            { name: "About us", href: "/about" },
+            // { name: "Contact us", href: "/contact" },
           ].map((link) => (
             <a
               key={link.href}
