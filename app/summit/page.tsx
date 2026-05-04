@@ -1,9 +1,54 @@
+"use client";
 import React from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import HeroSummit from "@/components/heroSummit";
 import Image from "next/image";
 import { createElement } from "react";
+
+const Countdown = ({ targetDate }: { targetDate: string }) => {
+  const [timeLeft, setTimeLeft] = React.useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+    expired: false,
+  });
+
+  React.useEffect(() => {
+    const calculate = () => {
+      const diff = new Date(targetDate).getTime() - new Date().getTime();
+
+      if (diff <= 0) {
+        setTimeLeft((prev) => ({ ...prev, expired: true }));
+        return;
+      }
+
+      setTimeLeft({
+        days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((diff / (1000 * 60)) % 60),
+        seconds: Math.floor((diff / 1000) % 60),
+        expired: false,
+      });
+    };
+
+    calculate();
+    const interval = setInterval(calculate, 60000);
+
+    return () => clearInterval(interval);
+  }, [targetDate]);
+
+  if (timeLeft.expired) return <span>Expired</span>;
+
+  return (
+    <div className="flex gap-2 text-sm font-medium text-black">
+      <span>{timeLeft.days}d</span>
+      <span>{timeLeft.hours}h</span>
+      <span>{timeLeft.minutes}m</span>
+    </div>
+  );
+};
 
 const SummitPage = () => {
   // const featuredSpeakers = [
@@ -875,6 +920,68 @@ const SummitPage = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-black text-center">
             Buy Tickets
           </h2>
+
+          <div className="max-w-3xl mx-auto flex flex-col gap-6 mb-6 text-sm text-[#303641]">
+            <div className="flex flex-col gap-4 text-left">
+              <p>
+                VIP Full Weekend Access: Friday VIP Gala + Saturday Summit.
+                <br />
+                <br />
+                The VIP Pass includes our Friday gala dinner featuring a live
+                tuna carving show, opening ceremony, cocktail reception, and
+                jazz performance.
+                <br />
+                <br />
+                Saturday brings 7 TRIIBE Talks, the fashion show, supercar
+                showcase, and closing reception.
+              </p>
+
+              <p>
+                Next-Gen passes are reserved for active nonprofit founders,
+                co-founders, and staff members under the age of 30.
+              </p>
+
+              <p>
+                Street Fan passes give access to the supercar showcase, fashion
+                show live-streaming, and include a food truck voucher.
+              </p>
+
+              <p>
+                Media passes provide online only livestream access to all 7
+                TRIIBE Talks and the fashion show.
+              </p>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-xl p-4 flex flex-col gap-3 text-center">
+              <p className="font-semibold text-black">
+                Ticket Pricing Increases
+              </p>
+
+              <p>
+                Next price increase: <strong>June 1</strong>
+              </p>
+
+              <div className="flex flex-col items-center mt-1">
+                <p className="text-xs text-[#495565]">Price increases in</p>
+                <div className="text-sm text-black font-medium">
+                  <Countdown targetDate="2026-06-01T00:00:00" />
+                </div>
+              </div>
+
+              <p className="mt-2">
+                Final price increase: <strong>August 1</strong>
+              </p>
+
+              <div className="flex flex-col items-center mt-1 gap-1">
+                <p className="text-xs text-[#495565]">
+                  Final price increase in
+                </p>
+                <div className="text-xs text-[#495565] font-medium">
+                  <Countdown targetDate="2026-08-01T00:00:00" />
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div className="w-full max-w-4xl mx-auto min-h-[600px]">
             {createElement("givebutter-widget", { id: "gKZZ35" })}
