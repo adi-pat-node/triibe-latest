@@ -12,7 +12,7 @@ const page = () => {
         <div className="max-w-[1200px] mx-auto">
           {/* Heading - Centered */}
           <h1 className="text-5xl md:text-5xl font-bold text-gray-900 mb-4 text-center">
-            Contact Us
+            Contact us
           </h1>
 
           {/* Subheading - Centered */}

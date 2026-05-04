@@ -73,7 +73,7 @@ export default function CTASectionContact() {
               href="mailto:partnerships@triibe.org"
               className="w-full px-6 py-3 bg-white text-black rounded hover:bg-gray-100 transition-colors font-semibold text-base text-center"
             >
-              Contact Us
+              Contact us
             </a>
           </div>
 
