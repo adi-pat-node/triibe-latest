@@ -18,7 +18,7 @@ export default function MediaEventsList() {
   const [viewDate, setViewDate] = useState(new Date());
   const [calendarYear, setCalendarYear] = useState(new Date().getFullYear());
   const [isCalendarOpen, setIsCalendarOpen] = useState(false);
-  const [filter, setFilter] = useState("ALL EVENTS");
+  const [filter, setFilter] = useState("All events");
   const [isMounted, setIsMounted] = useState(false);
   const [events, setEvents] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
@@ -52,7 +52,7 @@ export default function MediaEventsList() {
             isoStart: entry.event.start_at,
             isoEnd: entry.event.end_at,
             location: locationString,
-            type: entry.event.geo_address_json ? "IN-PERSON" : "VIRTUAL",
+            type: entry.event.geo_address_json ? "In-person" : "Virtual",
             image: entry.event.cover_url,
             lumaUrl: entry.event.url,
             status:
@@ -98,7 +98,7 @@ const filteredEvents = events
     const eventDate = new Date(event.isoStart);
     const isUpcoming = eventDate >= today;
     const matchesView = eventView === "upcoming" ? isUpcoming : !isUpcoming;
-    return matchesView && (filter === "ALL EVENTS" || event.type === filter);
+    return matchesView && (filter === "All events" || event.type === filter);
   })
   .sort((a, b) => {
     if (eventView === "past") {
@@ -133,7 +133,7 @@ const filteredEvents = events
       <div className="max-w-300 mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-6">
           <h2 className="text-4xl font-bold text-black">
-            {eventView === "upcoming" ? "Upcoming events" : "Past Events"}
+            {eventView === "upcoming" ? "Upcoming events" : "Past events"}
           </h2> 
 
           <div className="flex flex-col items-end gap-4 w-full md:w-auto">
@@ -142,17 +142,17 @@ const filteredEvents = events
       onClick={() => setEventView("upcoming")}
       className={`px-5 py-2 rounded-full text-xs font-bold ${eventView === "upcoming" ? "bg-[#1C5945] text-white" : "bg-white border"}`}
     >
-      UPCOMING
+      Upcoming
     </button>
     <button
       onClick={() => setEventView("past")}
       className={`px-5 py-2 rounded-full text-xs font-bold ${eventView === "past" ? "bg-[#1C5945] text-white" : "bg-white border"}`}
     >
-      PAST
+      Past
     </button>
   </div>
             <div className="flex gap-2">
-              {["ALL EVENTS", "VIRTUAL", "IN-PERSON"].map((type) => (
+              {["All events", "Virtual", "In-person"].map((type) => (
                 <button
                   key={type}
                   onClick={() => setFilter(type)}
@@ -238,7 +238,7 @@ const filteredEvents = events
                           disabled
                           className="w-full md:w-[180px] py-3 bg-[#30364199] text-white rounded-xl font-bold cursor-not-allowed text-center"
                         >
-                          Registration Closed
+                          Registration closed
                         </button>
                       ) : (
                         <a

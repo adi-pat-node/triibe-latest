@@ -51,7 +51,7 @@ const EventsPage = () => {
                   rel="noopener noreferrer"
                   className="h-9 px-4 py-2 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-medium inline-flex items-center cursor-pointer"
                 >
-                  TRIIBE Talk Guide
+                  TRIIBE Talk guide
                 </a>
 
                 <a
