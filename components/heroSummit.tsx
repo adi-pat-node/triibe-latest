@@ -52,7 +52,7 @@ export default function HeroSummit() {
         <div className="relative z-10 flex flex-col items-center px-6 max-w-225 mx-auto ">
           <div className="flex flex-col items-center  pb-3">
             <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-4xl md:text-4xl lg:text-5xl text-center tracking-tight leading-tight max-w-200">
-              TRIIBE Next-Gen Summit
+              TRIIBE Next-gen summit
             </h1>
           </div>
 
@@ -69,7 +69,7 @@ export default function HeroSummit() {
             </div>
             <div className="flex items-center gap-2">
               <Clock size={15} />
-              <span>Multi-Day Experience</span>
+              <span>Multi-day experience</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin size={15} />
@@ -79,7 +79,7 @@ export default function HeroSummit() {
 
           <div className="bg-white backdrop-blur-sm border border-white/20 rounded-xl px-8 py-4 mb-6 text-center">
             <p className="text-black text-lg font-bold mb-3">
-              Early Bird Sale ends in
+              Early Bird sale ends in
             </p>
             <div className="flex items-end justify-center gap-6">
               <div className="flex flex-col items-center">

@@ -973,7 +973,7 @@ const page = () => {
         <div className="max-w-300 mx-auto">
           <div className="flex md:items-start justify-between mb-12 flex-col md:flex-row gap-4 items-center ">
             <h1 className="font-bold text-black text-5xl md:text-6xl">
-              About Us
+              About us
             </h1>
             {/* <a
               href="/photogallery"

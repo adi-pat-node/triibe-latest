@@ -168,7 +168,7 @@ export default function Cohort() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-8">
           <h2 className=" font-bold text-black text-4xl tracking-[-0.90px] leading-10 mb-4 text-center">
-            First Two Cohorts
+            First two cohorts
           </h2>
           <p className=" font-normal text-[#495565] text-lg leading-7 mb-4 text-center">
             TRIIBE’s next-gen fellows in residence prioritizing a return on

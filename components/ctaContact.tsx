@@ -49,7 +49,7 @@ export default function CTASectionContact() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12 xl:gap-12 ">
           {/* Be a Cohort */}
           <div className="bg-[#002c19] border border-white rounded-lg p-8 flex flex-col gap-6 justify-between w-full">
-            <h3 className="font-semibold text-white text-2xl">Join A Cohort</h3>
+            <h3 className="font-semibold text-white text-2xl">Join a cohort</h3>
             <p className="font-normal text-[#D1D5DC] text-base leading-relaxed">
               Are you an undergraduate nonprofit founder? Apply to join our
               community of changemakers.
@@ -79,7 +79,7 @@ export default function CTASectionContact() {
 
           {/* Give */}
           <div className="bg-[#002c19] border border-white rounded-lg p-8 flex flex-col gap-6 justify-between w-full">
-            <h3 className="font-semibold text-white text-2xl">Fund Our Work</h3>
+            <h3 className="font-semibold text-white text-2xl">Fund our work</h3>
             <p className="font-normal text-[#D1D5DC] text-base leading-relaxed">
               Your donation helps founders make an impact in food, water,
               shelter, health and education.

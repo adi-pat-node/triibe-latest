@@ -382,7 +382,7 @@ const MediaPage = () => {
       <section className="pt-12 pb-8 bg-[#3036411A]  md:px-12 lg:px-50 ">
         <div className="max-w-4xl mx-auto px-6">
           <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
-            Connect With Us
+            Connect with us
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6  mx-auto">
             {socialLinks.map((social) => (
@@ -510,7 +510,7 @@ const MediaPage = () => {
               href="/media/archive"
               className="inline-block px-8 py-4  bg-[#1C5945] text-white  font-bold hover:shadow-lg  border  rounded-[12px] "
             >
-              View Complete Archive
+              View complete archive
             </Link>
           </div>
         </div>
@@ -522,7 +522,7 @@ const MediaPage = () => {
           <div className="max-w-7xl mx-auto transition-all duration-300 hover:scale-105">
             <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
               <p className="text-2xl md:text-3xl font-medium text-gray-900">
-                For a Visual Journey, See Our Brand Book
+                For a visual journey, see our brand book
               </p>
               <Link
                 href="https://drive.google.com/file/d/1ZNTNHHHPhV_4-cXh6JdtdzaRmxQ6IdJs/view?usp=drive_link"

@@ -45,7 +45,7 @@ export default function FellowshipBenefits() {
     <section className="flex flex-col items-start gap-12 px-4 md:px-25 lg:px-50 pt-10 pb-20 w-full bg-gray-50">
       <div className="flex flex-col items-start gap-4 w-full">
         <h2 className=" font-bold text-black text-4xl tracking-[-0.90px] leading-10">
-          What Fellows Receive
+          What fellows receive
         </h2>
         <p className=" font-normal text-[#495565] text-lg leading-[29.2px] max-w-219">
           Comprehensive support designed for founders navigating the unique

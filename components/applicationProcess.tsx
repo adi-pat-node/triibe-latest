@@ -10,7 +10,7 @@ const eligibilityRequirements = [
 ];
 
 const cohortDetails = [
-  { label: "Cohort Size per Branch", value: "5 Fellows" },
+  { label: "Cohort size per branch", value: "5 Fellows" },
   { label: "Duration", value: "3 years" },
 ];
 
@@ -41,7 +41,7 @@ export default function ApplicationProcess() {
                 APPLICATION WINDOW
               </p>
               <h3 className=" font-normal text-[#000000] text-2xl leading-8">
-                Now Open
+                Now open
               </h3>
               <p className=" font-normal text-[#495565] text-base leading-[25.6px]">
                 Applications for the Spring 2026 cohort are being accepted now.

@@ -25,7 +25,7 @@ export default function Hero() {
           {/* Heading */}
           <div className="flex flex-col items-center mt-24 pb-3 ">
             <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-4xl md:text-4xl lg:text-[64px] text-center tracking-tight leading-tight max-w-200">
-              Funding Next-Gen
+              Funding next-gen
               <br />
               nonprofit founders
             </h1>

@@ -77,7 +77,7 @@ const Page = () => {
             {/* Right - Content */}
             <div>
               <h1 className="font-bold text-black text-4xl md:text-[40px] mb-6 leading-tight">
-                Apply to the Fellowship
+                Apply to the fellowship
               </h1>
 
               <p className="font-normal text-[#495565] text-[16px] leading-relaxed mb-4">
@@ -88,7 +88,7 @@ const Page = () => {
               {/* How to Apply Box */}
               <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
                 <h2 className="font-bold text-black text-xl mb-3">
-                  How to Apply
+                  How to apply
                 </h2>
 
                 <p className="font-normal text-[#495565] text-base mb-3 leading-relaxed">
@@ -303,7 +303,7 @@ const Page = () => {
           <div className="max-w-7xl mx-auto transition-all duration-300 hover:scale-105">
             <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
               <p className="text-2xl md:text-3xl font-medium text-gray-900">
-                For a Full Overview, See Our Deck
+                For a full overview, see our deck
               </p>
               <Link
                 href="https://drive.google.com/file/d/1XxPb8UfeLXAVUy2zl0mle1lkUe7A2q1K/view?usp=drive_link"

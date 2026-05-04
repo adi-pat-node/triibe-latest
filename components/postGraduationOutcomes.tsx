@@ -12,13 +12,13 @@ const outcomes = [
   },
   {
     icon: "images/home/container-5.svg",
-    title: "Executive Placement",
+    title: "Executive placement",
     description:
       "Become the bench of operators future leaders and institutions need to deliver a return on impact",
   },
   {
     icon: "images/home/container-1.svg",
-    title: "Mentorship Opportunities",
+    title: "Mentorship opportunities",
     description:
       "Mentor future fellows, helping them continue their own nonprofits",
   },
@@ -30,7 +30,7 @@ export default function PostGraduationOutcomes() {
       <div className="flex flex-col items-start gap-16 w-full">
         <div className="flex flex-col items-start gap-4 max-w-3xl">
           <h2 className=" font-bold text-[#000000] text-4xl tracking-[-0.90px] leading-10">
-            Beyond The Residence
+            Beyond the residence
           </h2>
           <p className=" font-normal text-[#495565] text-lg tracking-[0] leading-[29.2px]">
             Fellows remain part of the fellowship for life

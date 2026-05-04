@@ -257,7 +257,7 @@ const ProgramPage = () => {
           <div className="flex flex-col gap-12">
             <div className="flex flex-col gap-4">
               <h2 className=" font-bold text-black text-4xl tracking-[-0.90px] leading-10">
-                Three Pillars of Support
+                Three pillars of support
               </h2>
               <p className=" font-normal text-[#495565] text-lg leading-7">
                 Everything you need to sustain your growth
@@ -578,7 +578,7 @@ const ProgramPage = () => {
         <div className="max-w-260 mx-auto">
           <div className="flex flex-col gap-12">
             <h2 className=" font-bold text-black text-4xl text-center tracking-[-0.90px] leading-10">
-              How TRIIBE Helps: Step-by-Step
+              How TRIIBE helps: Step-by-Step
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8">
@@ -696,7 +696,7 @@ const ProgramPage = () => {
                 </div>
                 <div className="flex flex-col gap-2">
                   <h3 className=" font-semibold text-black text-xl">
-                    Beyond the Residence
+                    Beyond the residence
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
                     Become the bench of operators institutions need to deliver a
@@ -722,7 +722,7 @@ const ProgramPage = () => {
           <div className="max-w-7xl mx-auto transition-all duration-300 hover:scale-105">
             <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
               <p className="text-2xl md:text-3xl font-medium text-gray-900">
-                For a Full Overview, See Our Deck
+                For a full overview, see our deck
               </p>
               <Link
                 href="https://drive.google.com/file/d/1XxPb8UfeLXAVUy2zl0mle1lkUe7A2q1K/view?usp=drive_link"

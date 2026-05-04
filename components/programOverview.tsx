@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const programSections = [
   {
-    title: "Why We Do It",
+    title: "Why we do it",
 description: [
     "Everyone wants a village, but nobody wants to be a villager. So we built a TRIIBE: the foundation funding next-gen nonprofit founders.",
     "$83 trillion will transfer between generations over the next two decades. TRIIBE Fellows are the bench of operators future leaders and institutions need to deliver a return on impact."
@@ -18,7 +18,7 @@ description: [
     imageObjectPosition: "object-center",
   },
   {
-    title: "What We Do",
+    title: "What we do",
     description:
       "We are building the nonprofit startup ecosystem, maximizing a return on impact, not income. Through TRIIBE Talks, the TRIIBE Fellowship, and the TRIIBE I00, we provide next-gen nonprofit founders visibility, stability, and credibility.",
     bgColor: "bg-[#002c19]",
@@ -30,7 +30,7 @@ description: [
     imageObjectPosition: "object-cover object-[50%_0%]",
   },
   {
-    title: "How We Do It",
+    title: "How we do it",
     description: (
       <>
         • TRIIBE Talks highlight next-gen founders alongside established ones, because age doesn't define the quality of a voice.

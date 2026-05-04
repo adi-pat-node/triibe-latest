@@ -622,7 +622,7 @@ const SummitPage = () => {
       <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-white">
         <div className="max-w-260 mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-black text-center mb-12">
-            Curated Experiences
+            Curated experiences
           </h2>
           <div className="max-w-200 mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-6">

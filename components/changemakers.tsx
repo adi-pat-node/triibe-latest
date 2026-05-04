@@ -168,7 +168,7 @@ export default function Changemakers() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-8">
           <h2 className=" font-bold text-black text-4xl tracking-[-0.90px] leading-10 mb-4">
-            First Two Cohorts
+            First two cohorts
           </h2>
           <p className=" font-normal text-[#495565] text-lg leading-7 mb-4">
             TRIIBE’s next-gen fellows in residence prioritizing a return on
@@ -213,7 +213,7 @@ export default function Changemakers() {
           href="/cohort"
           className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors  font-semibold text-black text-sm"
         >
-          View All Cohort
+          View all cohort
           <ArrowRightIcon className="w-4 h-4" />
         </a>
       </div>

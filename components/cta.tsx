@@ -49,7 +49,7 @@ export default function CTASection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12 xl:gap-12 ">
           {/* Be a Cohort */}
           <div className="bg-[#002c19] border border-white rounded-lg p-8 flex flex-col gap-6 justify-between w-full">
-            <h3 className="font-semibold text-white text-2xl">Join A Cohort</h3>
+            <h3 className="font-semibold text-white text-2xl">Join a cohort</h3>
             <p className="font-normal text-[#D1D5DC] text-base leading-relaxed">
               Are you a next-gen nonprofit founder? Apply to become a TRIIBE
               Fellow.
@@ -64,7 +64,7 @@ export default function CTASection() {
 
           {/* Contact Us */}
           <div className="bg-[#002c19] border border-white rounded-lg p-8 flex flex-col gap-6 justify-between w-full">
-            <h3 className="font-semibold text-white text-2xl">Get Involved</h3>
+            <h3 className="font-semibold text-white text-2xl">Get involved</h3>
             <p className="font-normal text-[#D1D5DC] text-base leading-relaxed">
               Partner with TRIIBE to empower next-gen founders.
             </p>
@@ -78,7 +78,7 @@ export default function CTASection() {
 
           {/* Give */}
           <div className="bg-[#002c19] border border-white rounded-lg p-8 flex flex-col gap-6 justify-between w-full">
-            <h3 className="font-semibold text-white text-2xl">Fund Our Work</h3>
+            <h3 className="font-semibold text-white text-2xl">Fund our work</h3>
             <p className="font-normal text-[#D1D5DC] text-base leading-relaxed">
               Your donation helps next-gen founders take root today to advance
               tomorrow.
