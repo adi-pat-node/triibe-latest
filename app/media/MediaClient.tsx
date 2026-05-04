@@ -247,11 +247,11 @@ const upcomingEvents = [
 const mediaCards = [
   {
     id: "podcasts",
-    title: " Latest Podcast",
+    title: " Latest podcast",
     image: "/images/media/podcastLatest.jpg",
-    badge: "Latest Episode",
+    badge: "Latest episode",
     heading:
-      "Why the Non-Profit Model is Broken and How Triibe is Fixing It with Kyle Matthys",
+      "Why the Non-Profit model is broken and how TRIIBE is fixing it with Kyle Matthys",
     description:
       "Kyle Matthys, Founder and CEO of TRIIBE, speaks about how his cause inspires young people to develop their skills, connect with their communities, and take action.",
     buttons: [
@@ -266,9 +266,9 @@ const mediaCards = [
     id: "workshops",
     title: "Latest TRIIBE Talk",
     image: "/images/media/archive/Workshop16.jpg",
-    badge: "Latest Workshop",
+    badge: "Latest workshop",
     heading:
-      "Nancy Bonges on First-Generation Wealth Building at William Blair",
+      "Nancy Bonges on first-generation wealth building at William Blair",
     description:
       "Watch our latest workshop session with industry leaders and experts as they share insights.",
     buttons: [
@@ -281,12 +281,12 @@ const mediaCards = [
   },
   {
     id: "newsletter",
-    title: "TRIIBUNE Newsletter",
+    title: "TRIIBUNE newsletter",
     image: "/images/media/archive/March_Newsletter.jpg",
-    badge: "MARCH 2026",
+    badge: "March 2026",
     heading: "Monthly Update | March 2026",
     description:
-      "100+ Changemakers. One Room. We brought together 100+ attendees for the Billion Dollar Impact Summit in NYC.",
+      "100+ Changemakers. One room. We brought together 100+ attendees for the Billion Dollar Impact Summit in NYC.",
     buttons: [
       {
         type: "link",

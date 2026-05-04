@@ -838,35 +838,35 @@ const members = [
 const legacyBoard = [
   {
     name: "JapNeet K",
-    role: "Legacy Board Member",
+    role: "Legacy board member",
     bio: "JapNeet K. is a strategy driven cybersecurity and risk management professional at Mphasis with an education background at Columbia University.",
     image: "/images/about/team/JapNeet K.jpg",
     linkedin: "https://www.linkedin.com/in/japneet-k-34816426/",
   },
   {
     name: "Flaviu Simihaian",
-    role: "Legacy Board Member",
+    role: "Legacy board member",
     bio: "Flaviu Simihaian is a New York City based founder (1PB.org) and co-host of the Founder Secrets podcast who supports impact-focused entrepreneurs.",
     image: "/images/about/team/Flaviu Simihaian.jpg",
     linkedin: "https://www.linkedin.com/in/flaviusimihaian/",
   },
   {
     name: "Stacey Lauren",
-    role: "Legacy Board Member",
+    role: "Legacy board member",
     bio: "Stacey Lauren is a TEDx speaker, charity fundraising auctioneer, and founder of Do The Thing, building purpose driven communities around billion dollar impact initiatives.",
     image: "/images/about/team/Stacey Lauren.jpg",
     linkedin: "https://www.linkedin.com/in/staceylauren/",
   },
   {
     name: "Gregg Meyer",
-    role: "Legacy Board Member",
+    role: "Legacy board member",
     bio: "Gregg Meyer is Chief Sustainability Officer and strategic counsel at Steve Madden, and leads the Steve Madden Corporate Foundation, with a Cornell University background.",
     image: "/images/about/team/Gregg Meyer.jpg",
     linkedin: "https://www.linkedin.com/in/gregg-meyer/",
   },
   {
     name: "Stefan Avivson",
-    role: "Legacy Board Member",
+    role: "Legacy board member",
     bio: "Stefan Avivson is a UK based CEO advisor and entrepreneur who says he helps B2B companies build traction and sales, drawing on decades of startup experience.",
     image: "/images/about/team/Stefan Avivson.jpg",
     linkedin: "https://www.linkedin.com/in/avivson/",
@@ -874,14 +874,14 @@ const legacyBoard = [
 
   {
     name: "Lara Stein",
-    role: "Legacy Board Member",
+    role: "Legacy board member",
     bio: "Lara Stein is the founder of TEDx, the global platform for independently organized TED-style events, and a leader in organizations at the intersection of technology, art, education, and sustainability.",
     image: "/images/about/team/Lara Stein.jpg",
     linkedin: "https://www.linkedin.com/in/citizenstein/",
   },
   {
     name: "Dr. Purnima Voria",
-    role: "Legacy Board Member",
+    role: "Legacy board member",
     bio: "Dr. Purnima Voria is the Founder and CEO of the National US India Chamber of Commerce and a former national advisor to the US Secretary of Commerce for MBDA.",
     image: "/images/about/team/Purnima Voria.png",
     linkedin: "https://www.linkedin.com/in/purnimavoria/",
@@ -889,7 +889,7 @@ const legacyBoard = [
 
   {
     name: "Chelsea Toler",
-    role: "Legacy Board Member",
+    role: "Legacy board member",
     bio: "Chelsea Toler is the Co-Founder of Logictry, President of the The Family Foundation, and holds a PhD in Community and Adult Education.",
     image: "/images/about/team/Chelsea Toler.jpg",
     linkedin: "https://www.linkedin.com/in/catoler92/",
@@ -897,7 +897,7 @@ const legacyBoard = [
 
   {
     name: "Geoffrey Sargeant",
-    role: "Legacy Board Member",
+    role: "Legacy board member",
     bio: "Geoffrey Sargeant is the Managing Director & Head of Capital Markets and Executive Ambassador of The REAL",
     image: "/images/about/team/Geoffrey Sargeant.png",
     linkedin: "https://www.linkedin.com/in/geoffsargeant/",
@@ -1030,7 +1030,7 @@ const page = () => {
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-16">
             <div>
               <h2 className="font-bold text-black text-3xl mb-8">
-                HOW TRIIBE WORKS
+                How TRIIBE works
               </h2>
             </div>
 
@@ -1154,7 +1154,7 @@ const page = () => {
       <section className="pt-16 pb-8 px-4 md:px-25 lg:px-50 bg-white">
         <div className="max-w-300 mx-auto">
           <h2 className="font-bold text-black text-3xl mb-12">
-            C-SUITE AND BOARD
+            C-Suite and board
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -1208,7 +1208,7 @@ const page = () => {
 
       <section className="pb-12 px-4 md:px-25 lg:px-50 bg-white">
         <div className="max-w-300 mx-auto">
-          <h2 className="font-bold text-black text-3xl mb-12">Legacy Board</h2>
+          <h2 className="font-bold text-black text-3xl mb-12">Legacy board</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {legacyBoard.map((member, index) => (
@@ -1257,8 +1257,8 @@ const page = () => {
       {/* Members Section */}
       <section className=" px-4 md:px-25 lg:px-50 bg-white  ">
         <div className="max-w-300 mx-auto">
-          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
-            Media TEAM
+          <h2 className="font-bold text-black text-3xl tracking-wider mb-12">
+            Media team
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
@@ -1337,8 +1337,8 @@ const page = () => {
             ))}
           </div>
 
-          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
-            EVENTS TEAM
+          <h2 className="font-bold text-black text-3xl tracking-wider mb-12">
+            Events team
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
@@ -1381,8 +1381,8 @@ const page = () => {
             ))}
           </div>
 
-          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
-            Partnerships TEAM
+          <h2 className="font-bold text-black text-3xl tracking-wider mb-12">
+            Partnerships team
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
@@ -1425,8 +1425,8 @@ const page = () => {
             ))}
           </div>
 
-          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
-            Outreach TEAM
+          <h2 className="font-bold text-black text-3xl tracking-wider mb-12">
+            Outreach team
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
@@ -1505,8 +1505,8 @@ const page = () => {
             ))}
           </div>
 
-          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
-            Design TEAM
+          <h2 className="font-bold text-black text-3xl tracking-wider mb-12">
+            Design team
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
@@ -1549,8 +1549,8 @@ const page = () => {
             ))}
           </div>
 
-          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
-            TECH TEAM
+          <h2 className="font-bold text-black text-3xl tracking-wider mb-12">
+            Tech team
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
@@ -1593,8 +1593,8 @@ const page = () => {
             ))}
           </div>
 
-          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
-            Research TEAM
+          <h2 className="font-bold text-black text-3xl tracking-wider mb-12">
+            Research team
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
@@ -1637,8 +1637,8 @@ const page = () => {
             ))}
           </div>
 
-          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
-            Global Relations TEAM
+          <h2 className="font-bold text-black text-3xl tracking-wider mb-12">
+            Global relations team
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
@@ -1681,8 +1681,8 @@ const page = () => {
             ))}
           </div>
 
-          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
-            Regional Directors Team
+          <h2 className="font-bold text-black text-3xl tracking-wider mb-12">
+            Regional directors team
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
@@ -1725,7 +1725,7 @@ const page = () => {
             ))}
           </div>
 
-          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
+          <h2 className="font-bold text-black text-3xl tracking-wider mb-12">
             Mentors
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
@@ -1773,8 +1773,8 @@ const page = () => {
             ))}
           </div>
 
-          <h2 className="font-bold text-black text-3xl  uppercase tracking-wider mb-12">
-            Members Team
+          <h2 className="font-bold text-black text-3xl tracking-wider mb-12">
+            Members team
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">

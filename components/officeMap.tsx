@@ -152,7 +152,7 @@ export default function OfficeMap() {
     <section id="globalMap" className="pt-12 pb-24 px-4 md:px-50 bg-white">
       <div className="max-w-260 mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
-          Global Network
+          Global network
         </h2>
         <p className="text-[#495565] text-lg max-w-2xl mx-auto mb-12">
           Click on the map to learn more
