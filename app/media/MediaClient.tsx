@@ -54,28 +54,7 @@ const workshops = [
     signupLink: "#",
     watchLink: "https://www.youtube.com/watch?v=Ku365Mu1onw",
   },
-  {
-    title: "",
-    speakers: [
-      {
-        name: "",
-        avatar: null,
-        topic: "",
-        description: "",
-      },
-      {
-        name: "",
-        avatar: null,
-        topic: "",
-        description: "",
-      },
-    ],
-    duration: "",
-    type: "",
-    youtubeId: "-TY4Iz5BNxg", // Actual YouTube ID
-    signupLink: "#",
-    watchLink: "https://www.youtube.com/watch?v=-TY4Iz5BNxg",
-  },
+
   // {
   //   title: "Samin Bahn’s App Helps You Stay Present and Lookupp",
   //   speakers: [
@@ -320,26 +299,22 @@ const mediaCards = [
 
 const MediaPage = () => {
   const [showNewsletter, setShowNewsletter] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const mediaItems = [
-    { type: "youtube", id: workshops[0].youtubeId },
-    { type: "youtube", id: workshops[1].youtubeId },
-    
-  ];
+  const [currentWorkshop, setCurrentWorkshop] = useState(0);
 
   const goToPrevious = () => {
-    setCurrentIndex((prev) => (prev === 0 ? mediaItems.length - 1 : prev - 1));
+    setCurrentWorkshop((prev) =>
+      prev === 0 ? workshops.length - 1 : prev - 1,
+    );
   };
 
   const goToNext = () => {
-    setCurrentIndex((prev) => (prev === mediaItems.length - 1 ? 0 : prev + 1));
+    setCurrentWorkshop((prev) =>
+      prev === workshops.length - 1 ? 0 : prev + 1,
+    );
   };
 
-  const media = mediaItems[currentIndex];
-
-  // const workshop = workshops[currentWorkshop];
-  // const hasSpeakers = workshop.speakers?.some((s) => s.name?.trim().length > 0);
+  const workshop = workshops[currentWorkshop];
+  const hasSpeakers = workshop.speakers?.some((s) => s.name?.trim().length > 0);
 
   return (
     <main>
@@ -358,23 +333,14 @@ const MediaPage = () => {
 
             {/* Video */}
             <div>
-              <div className="relative w-full h-[400px] md:h-[565px] bg-black rounded-lg overflow-hidden mb-4">
-                {media.type === "youtube" ? (
-                  <iframe
-                    src={`https://www.youtube.com/embed/${media.id}?autoplay=1&mute=1&rel=0`}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="absolute inset-0 w-full h-full"
-                  />
-                ) : (
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <iframe
-                      src={`https://www.instagram.com/reel/${media.id}/embed`}
-                      className="h-full w-auto max-w-full"
-                      loading="lazy"
-                    />
-                  </div>
-                )}
+              <div className="relative aspect-video bg-gray-200 rounded-lg overflow-hidden mb-4">
+                <iframe
+                  src={`https://www.youtube.com/embed/${workshop.youtubeId}?autoplay=1&mute=1&rel=0`}
+                  title={workshop.title || "Workshop Video"}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                />
               </div>
 
               <div className="flex items-center justify-between w-full">
@@ -387,13 +353,14 @@ const MediaPage = () => {
                 </button>
 
                 <div className="flex gap-2 justify-center flex-1">
-                  {mediaItems.map((_, index) => (
+                  {workshops.map((_, index) => (
                     <button
                       key={index}
-                      onClick={() => setCurrentIndex(index)}
-                      className={`h-2 w-2 rounded-full ${
-                        index === currentIndex ? "bg-black" : "bg-gray-300"
+                      onClick={() => setCurrentWorkshop(index)}
+                      className={`h-2 w-2 rounded-full transition-all ${
+                        index === currentWorkshop ? "bg-black" : "bg-gray-300"
                       }`}
+                      aria-label={`Go to video ${index + 1}`}
                     />
                   ))}
                 </div>
