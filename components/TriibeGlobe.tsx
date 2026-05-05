@@ -27,39 +27,87 @@ type Branch = {
 
 const BRANCHES: Branch[] = [
   {
-    id: "canada",
-    label: "Canada",
-    flag: "🇨🇦",
-    lat: 56.13,
-    lng: -106.35,
-    city: "Toronto (HQ)",
-    description:
-      "TRIIBE Canada, our founding chapter. Home of the College Fellowship, TRIIBE Talks, and the TRIIBE I00 headquarters.",
-    link: "https://triibe.org/canada",
-    hasLink: true,
-  },
-  {
-    id: "usa",
-    label: "United States",
+    id: "newyork",
+    label: "New York, USA",
     flag: "🇺🇸",
-    lat: 37.09,
-    lng: -95.71,
-    city: "United States",
+    lat: 40.7128,
+    lng: -74.006,
+    city: "New York, USA",
     description:
-      "TRIIBE USA is expanding the next-gen nonprofit ecosystem across American cities. City details coming soon.",
-    link: "#",
+      "Helping next-gen nonprofit founders continue their work in New York.",
+    link: "/about",
     hasLink: false,
   },
   {
-    id: "india",
-    label: "India",
-    flag: "🇮🇳",
-    lat: 20.59,
-    lng: 78.96,
-    city: "India",
+    id: "dc",
+    label: "Washington DC, USA",
+    flag: "🇺🇸",
+    lat: 38.9072,
+    lng: -77.0369,
+    city: "Washington DC, USA",
     description:
-      "TRIIBE India is bringing the fellowship model to South Asia's vibrant nonprofit startup scene. City details coming soon.",
-    link: "#",
+      "Helping next-gen nonprofit founders continue their work in DC.",
+    link: "/about",
+    hasLink: false,
+  },
+  {
+    id: "toronto",
+    label: "Toronto, Canada",
+    flag: "🇨🇦",
+    lat: 43.6532,
+    lng: -79.3832,
+    city: "Toronto, Canada",
+    description:
+      "Helping next-gen nonprofit founders continue their work in Canada.",
+    link: "/canada",
+    hasLink: true,
+  },
+  {
+    id: "jamaica",
+    label: "Jamaica",
+    flag: "🇯🇲",
+    lat: 18.1096,
+    lng: -77.2975,
+    city: "Jamaica",
+    description:
+      "Helping next-gen nonprofit founders continue their work in Jamaica.",
+    link: "/about",
+    hasLink: false,
+  },
+  {
+    id: "london",
+    label: "London, UK",
+    flag: "🇬🇧",
+    lat: 51.5074,
+    lng: -0.1278,
+    city: "London, UK",
+    description:
+      "Helping next-gen nonprofit founders continue their work in the UK.",
+    link: "/about",
+    hasLink: false,
+  },
+  {
+    id: "sierraleone",
+    label: "Sierra Leone",
+    flag: "🇸🇱",
+    lat: 8.4606,
+    lng: -11.7799,
+    city: "Sierra Leone",
+    description:
+      "Helping next-gen nonprofit founders continue their work in Sierra Leone.",
+    link: "/about",
+    hasLink: false,
+  },
+  {
+    id: "ranchi",
+    label: "Ranchi, India",
+    flag: "🇮🇳",
+    lat: 23.3441,
+    lng: 85.3096,
+    city: "Ranchi, India",
+    description:
+      "Helping next-gen nonprofit founders continue their work in Ranchi.",
+    link: "/about",
     hasLink: false,
   },
   {
@@ -70,8 +118,8 @@ const BRANCHES: Branch[] = [
     lng: 103.82,
     city: "Singapore",
     description:
-      "TRIIBE Singapore is our Southeast Asia hub, connecting next-gen founders across the Asia-Pacific region.",
-    link: "#",
+      "Helping next-gen nonprofit founders continue their work in Singapore.",
+    link: "/about",
     hasLink: false,
   },
 ];
@@ -79,12 +127,16 @@ const BRANCHES: Branch[] = [
 const RING_DATA = BRANCHES.map(({ lat, lng }) => ({ lat, lng }));
 
 const ARCS = [
-  { startLat: 56.13, startLng: -106.35, endLat: 37.09, endLng: -95.71 },
-  { startLat: 56.13, startLng: -106.35, endLat: 20.59, endLng: 78.96 },
-  { startLat: 56.13, startLng: -106.35, endLat: 1.35, endLng: 103.82 },
-  { startLat: 37.09, startLng: -95.71, endLat: 20.59, endLng: 78.96 },
-  { startLat: 37.09, startLng: -95.71, endLat: 1.35, endLng: 103.82 },
-  { startLat: 20.59, startLng: 78.96, endLat: 1.35, endLng: 103.82 },
+
+  { startLat: 43.6532, startLng: -79.3832, endLat: 41.5,    endLng: -73.5 },
+  { startLat: 43.6532, startLng: -79.3832, endLat: 37.5,    endLng: -78.5 },
+  { startLat: 43.6532, startLng: -79.3832, endLat: 18.1096, endLng: -77.2975 },
+  { startLat: 43.6532, startLng: -79.3832, endLat: 51.5074, endLng: -0.1278 },
+  { startLat: 43.6532, startLng: -79.3832, endLat: 8.4606,  endLng: -11.7799 },
+  { startLat: 43.6532, startLng: -79.3832, endLat: 23.3441, endLng: 85.3096 },
+  { startLat: 43.6532, startLng: -79.3832, endLat: 1.35,    endLng: 103.82 },
+  { startLat: 51.5074, startLng: -0.1278, endLat: 8.4606,  endLng: -11.7799 },
+  { startLat: 23.3441, startLng: 85.3096, endLat: 1.35,    endLng: 103.82 },
 ];
 
 export default function TriibeGlobe() {
