@@ -924,9 +924,6 @@ const SummitPage = () => {
           <div className="max-w-3xl mx-auto flex flex-col gap-6 mb-6 text-sm text-[#303641]">
             <div className="flex flex-col gap-4 text-left">
               <p>
-                VIP Full Weekend Access: Friday VIP Gala + Saturday Summit.
-                <br />
-                <br />
                 The VIP Pass includes our Friday gala dinner featuring a live
                 tuna carving show, opening ceremony, cocktail reception, and
                 jazz performance.
