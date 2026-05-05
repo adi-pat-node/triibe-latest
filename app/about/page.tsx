@@ -1052,8 +1052,7 @@ const page = () => {
                 transitioning from a “youth” nonprofit to an established one.
               </p>
               <p className="font-normal text-black/75 text-lg leading-relaxed">
-                • The TRIIBE I00 is the definitive list of the 100 next-gen
-                nonprofit founders to know.
+                • The TRIIBE I00 is the definitive list of next-gen nonprofit founders under 30 to know.
               </p>
             </div>
           </div>
