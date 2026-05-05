@@ -988,7 +988,7 @@ const page = () => {
             {/* 1. Narrow (Green) */}
             <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden">
               <Image
-                src="/images/photogallery/photo1.0.jpeg"
+                src="/images/photogallery/Photo1.0.jpeg"
                 alt="TRIIBE Team"
                 fill
                 className="object-cover"
