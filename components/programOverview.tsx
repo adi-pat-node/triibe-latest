@@ -35,8 +35,8 @@ description: [
       <>
         • TRIIBE Talks highlight next-gen founders alongside established ones, because age doesn't define the quality of a voice.
          <br /> • The TRIIBE Fellowship ensures founders don’t burn out while transitioning from
-          a “youth” nonprofit to an established one. <br /> • The TRIIBE I00 is the definitive
-           list of the 100 next-gen nonprofit founders to know.
+          a “youth” nonprofit to an established one. <br /> • The TRIIBE I00 is the definitive list
+           of next-gen nonprofit founders under 30 to know.
 
       </>
     ),

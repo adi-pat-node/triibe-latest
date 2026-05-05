@@ -988,7 +988,7 @@ const page = () => {
             {/* 1. Narrow (Green) */}
             <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden">
               <Image
-                src="/images/photogallery/photo-1.jpg"
+                src="/images/photogallery/Photo1.0.jpeg"
                 alt="TRIIBE Team"
                 fill
                 className="object-cover"
@@ -1052,8 +1052,7 @@ const page = () => {
                 transitioning from a “youth” nonprofit to an established one.
               </p>
               <p className="font-normal text-black/75 text-lg leading-relaxed">
-                • The TRIIBE I00 is the definitive list of the 100 next-gen
-                nonprofit founders to know.
+                • The TRIIBE I00 is the definitive list of next-gen nonprofit founders under 30 to know.
               </p>
             </div>
           </div>
