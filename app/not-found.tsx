@@ -37,7 +37,7 @@ export default function NotFound() {
               built a TRIIBE.
             </p>
             <p className="text-sm font-semibold text-[#1C5945] tracking-wider">
-              TRIIBE: Funding next-gen nonprofit founders.
+              TRIIBE: Funding next-gen nonprofit founders
             </p>
           </div>
 

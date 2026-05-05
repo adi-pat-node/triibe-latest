@@ -14,9 +14,11 @@ import SponsorsAndPartners from "@/components/sponsorsAndPartners";
 import ImpactMetrics from "@/components/impactMetrics";
 import CTASection from "@/components/cta";
 import OfficeMap from "@/components/officeMap";
+import TriibeGlobeWrapper from "@/components/TriibeGlobeWrapper";
 
 export const metadata = {
-  title: "Undergraduate Nonprofit Fellowship & Grants for Founders Under 30 | TRIIBE",
+  title:
+    "Undergraduate Nonprofit Fellowship & Grants for Founders Under 30 | TRIIBE",
   description:
     "TRIIBE supports student and young nonprofit founders under 30 with fellowships, funding, and mentorship. Apply for grants, work on real projects, and scale your impact.",
   alternates: {
@@ -33,6 +35,7 @@ export default function Home() {
       <ProgramOverview />
       <DeckSection />
       <OfficeMap />
+      {/* <TriibeGlobeWrapper /> */}
       <FellowshipBenefits />
       <KeyStatistics />
       <Changemakers />
