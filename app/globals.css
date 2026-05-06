@@ -150,3 +150,41 @@ body {
 .animate-gradient-rotate {
   animation: rotate-gradient 6s linear infinite;
 }
+
+.zone-founder-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+@media (min-width: 640px) {
+  .zone-founder-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .zone-founder-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@keyframes branchGrow {
+  from {
+    clip-path: inset(0% 0 100% 0);
+    opacity: 0;
+  }
+  to {
+    clip-path: inset(0% 0 0% 0);
+    opacity: 0.12;
+  }
+}
+
+.branch-hidden {
+  opacity: 0;
+  clip-path: inset(0% 0 100% 0);
+}
+
+.branch-revealed {
+  animation: branchGrow 1.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}

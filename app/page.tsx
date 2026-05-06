@@ -34,8 +34,8 @@ export default function Home() {
       {/* <MissionStatement /> */}
       <ProgramOverview />
       <DeckSection />
-      <OfficeMap />
-      {/* <TriibeGlobeWrapper /> */}
+      {/* <OfficeMap /> */}
+      <TriibeGlobeWrapper />
       <FellowshipBenefits />
       <KeyStatistics />
       <Changemakers />

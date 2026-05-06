@@ -30,11 +30,12 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden xl:flex items-center gap-8">
           {[
             { name: "Home", href: "/" },
             { name: "Program", href: "/program" },
-            { name: "Next-gen summit", href: "/summit" },
+            { name: "TRIIBE I00", href: "/triibe100" },
+            { name: "Summit", href: "/summit" },
             { name: "TRIIBE Talk", href: "/triibetalk" },
             { name: "Media", href: "/media" },
             { name: "About us", href: "/about" },
@@ -55,7 +56,7 @@ export default function Header() {
         </div>
 
         {/* Desktop CTA Buttons */}
-        <div className="hidden lg:flex items-center gap-4">
+        <div className="hidden xl:flex items-center gap-4">
           <a
             href="https://donate.rayzeapp.com/orgs/tIbe07j0XKkLQezHHXoz"
             target="_blank"
@@ -73,7 +74,7 @@ export default function Header() {
         </div>
 
         {/* Mobile menu button */}
-        <div className="lg:hidden relative ">
+        <div className="xl:hidden relative ">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="text-white hover:text-gray-300 transition-colors"
@@ -89,7 +90,7 @@ export default function Header() {
       </nav>
 
       <div
-        className={`lg:hidden px-4 py-4 bg-[#002c19] ${
+        className={`xl:hidden px-4 py-4 bg-[#002c19] ${
           mobileMenuOpen ? "block" : "hidden"
         }`}
       >
@@ -97,7 +98,8 @@ export default function Header() {
           {[
             { name: "Home", href: "/" },
             { name: "Program", href: "/program" },
-            { name: "Next-gen summit", href: "/summit" },
+            { name: "TRIIBE I00", href: "/triibe100" },
+            { name: "Summit", href: "/summit" },
             { name: "TRIIBE Talk", href: "/triibetalk" },
             { name: "Media", href: "/media" },
             { name: "About us", href: "/about" },
