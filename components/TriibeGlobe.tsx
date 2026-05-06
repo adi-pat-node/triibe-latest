@@ -57,10 +57,10 @@ const BRANCHES: Branch[] = [
     lat: 43.6532,
     lng: -79.3832,
     city: "Toronto, Canada",
-    description:
-      "Helping next-gen nonprofit founders continue their work in Canada.",
+    description: "",
+    // "Helping next-gen nonprofit founders continue their work in Canada.",
     link: "/canada",
-    hasLink: true,
+    hasLink: false,
   },
   {
     id: "jamaica",
@@ -127,16 +127,15 @@ const BRANCHES: Branch[] = [
 const RING_DATA = BRANCHES.map(({ lat, lng }) => ({ lat, lng }));
 
 const ARCS = [
-
-  { startLat: 43.6532, startLng: -79.3832, endLat: 41.5,    endLng: -73.5 },
-  { startLat: 43.6532, startLng: -79.3832, endLat: 37.5,    endLng: -78.5 },
+  { startLat: 43.6532, startLng: -79.3832, endLat: 41.5, endLng: -73.5 },
+  { startLat: 43.6532, startLng: -79.3832, endLat: 37.5, endLng: -78.5 },
   { startLat: 43.6532, startLng: -79.3832, endLat: 18.1096, endLng: -77.2975 },
   { startLat: 43.6532, startLng: -79.3832, endLat: 51.5074, endLng: -0.1278 },
-  { startLat: 43.6532, startLng: -79.3832, endLat: 8.4606,  endLng: -11.7799 },
+  { startLat: 43.6532, startLng: -79.3832, endLat: 8.4606, endLng: -11.7799 },
   { startLat: 43.6532, startLng: -79.3832, endLat: 23.3441, endLng: 85.3096 },
-  { startLat: 43.6532, startLng: -79.3832, endLat: 1.35,    endLng: 103.82 },
-  { startLat: 51.5074, startLng: -0.1278, endLat: 8.4606,  endLng: -11.7799 },
-  { startLat: 23.3441, startLng: 85.3096, endLat: 1.35,    endLng: 103.82 },
+  { startLat: 43.6532, startLng: -79.3832, endLat: 1.35, endLng: 103.82 },
+  { startLat: 51.5074, startLng: -0.1278, endLat: 8.4606, endLng: -11.7799 },
+  { startLat: 23.3441, startLng: 85.3096, endLat: 1.35, endLng: 103.82 },
 ];
 
 export default function TriibeGlobe() {
