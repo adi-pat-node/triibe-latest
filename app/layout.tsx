@@ -96,9 +96,21 @@ export const metadata: Metadata = {
 
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      // Fallback for browsers that don't support media queries
+
+      // For users in Light Mode (Shows the dark 'T' logo)
+      {
+        url: "/favicon-light.ico",
+        media: "(prefers-color-scheme: light)",
+        type: "image/x-icon",
+      },
+
+      // For users in Dark Mode (Shows the white 'T' logo)
+      {
+        url: "/favicon-dark.ico",
+        media: "(prefers-color-scheme: dark)",
+        type: "image/x-icon",
+      },
     ],
     apple: "/apple-touch-icon.png",
   },
