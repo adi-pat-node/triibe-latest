@@ -27,26 +27,7 @@ const supportedByLogos = [
   //   alt: "Supported by partner 1",
   //   className: "w-64 h-[59px]",
   // },
-  {
-    src: "/images/home/image-128.png",
-    alt: "Supported by partner 2",
-    className: "w-64 h-[59px]",
-  },
-  {
-    src: "/images/home/image-129.png",
-    alt: "Supported by partner 3",
-    className: "w-64 h-[58px] object-contain",
-  },
-  {
-    src: "/images/home/image-130.png",
-    alt: "Supported by partner 4",
-    className: "w-[130px] h-[84px]",
-  },
-  {
-    src: "/images/home/dothething.png",
-    alt: "Supported by partner 4",
-    className: "w-[130px] h-[84px]",
-  },
+  
 
   // {
   //   src: "/images/home/streamr1.png",
@@ -112,7 +93,7 @@ const partneredWithLogos = [
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
   {
-    src: "/images/home/impacthub1.png",
+    src: "/images/home/Kids-Rights2.png",
     alt: "Partnered with organization 4",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
@@ -151,6 +132,26 @@ const partneredWithLogos = [
     alt: "Partnered with organization 3",
     className: "w-80 h-[100px] object-contain",
   },
+  {
+    src: "/images/home/image-128.png",
+    alt: "Supported by partner 2",
+    className: "w-64 h-[59px]",
+  },
+  {
+    src: "/images/home/image-129.png",
+    alt: "Supported by partner 3",
+    className: "w-64 h-[58px] object-contain",
+  },
+  {
+    src: "/images/home/image-130.png",
+    alt: "Supported by partner 4",
+    className: "w-[130px] h-[84px]",
+  },
+  {
+    src: "/images/home/dothething.png",
+    alt: "Supported by partner 4",
+    className: "w-[130px] h-[84px]",
+  },
 ];
 
 export default function KeyStatistics() {
@@ -173,9 +174,9 @@ export default function KeyStatistics() {
         </div> */}
 
         <div className="flex flex-col items-center gap-8 w-full">
-          <p className="font-normal text-[#697282] text-xl text-center tracking-[0.60px] leading-5">
+          {/* <p className="font-normal text-[#697282] text-xl text-center tracking-[0.60px] leading-5">
             Sponsored by
-          </p>
+          </p> */}
 
           <div className="flex flex-wrap justify-center gap-12 md:gap-8">
             {supportedByLogos.map((logo, index) => (
