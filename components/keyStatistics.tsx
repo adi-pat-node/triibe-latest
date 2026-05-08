@@ -28,8 +28,6 @@ const supportedByLogos = [
   //   alt: "Supported by partner 1",
   //   className: "w-64 h-[59px]",
   // },
-  
-
   // {
   //   src: "/images/home/streamr1.png",
   //   alt: "Supported by partner 3",
@@ -180,7 +178,7 @@ const partneredWithLogos = [
 
 export default function KeyStatistics() {
   return (
-    <section className="flex flex-col items-center px-4 md:px-20 lg:px-50 py-20 w-full bg-[#3036411A] border-t border-b border-gray-200">
+    <section className="flex flex-col items-center px-4 md:px-20 lg:px-50 py-4 w-full bg-[#3036411A] border-t border-b border-gray-200">
       <div className="flex flex-col items-center gap-20 w-full max-w-260">
         {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-12 w-full">
           {statistics.map((stat, index) => (

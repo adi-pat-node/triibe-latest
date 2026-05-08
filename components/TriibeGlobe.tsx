@@ -4,15 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import GlobeImport from "react-globe.gl";
 const Globe = GlobeImport as any;
 
-// ── Colors ────────────────────────────────────────────────────────────────────
-const BG = "#000d07";
-const CARD_DARK = "#0a1f12";
 const GREEN_GLOW = "#00ff88";
-const WHITE = "#ffffff";
-const TEXT_GRAY = "#9ab0a0";
-const TEXT_DIM = "#6a8a78";
 
-// ── Branch Data ───────────────────────────────────────────────────────────────
 type Branch = {
   id: string;
   label: string;
@@ -58,7 +51,6 @@ const BRANCHES: Branch[] = [
     lng: -79.3832,
     city: "Toronto, Canada",
     description: "",
-    // "Helping next-gen nonprofit founders continue their work in Canada.",
     link: "/canada",
     hasLink: false,
   },
@@ -141,6 +133,7 @@ const ARCS = [
 export default function TriibeGlobe() {
   const globeEl = useRef<any>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
+  const idleTimerRef = useRef<NodeJS.Timeout | null>(null);
   const [countries, setCountries] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeBranch, setActiveBranch] = useState<Branch | null>(null);
@@ -179,27 +172,38 @@ export default function TriibeGlobe() {
     controls.autoRotateSpeed = 0.6;
     controls.enableZoom = true;
 
-    let isZooming = false;
+    // Start globe at a closer/larger initial view
+    globeEl.current.pointOfView({ altitude: 2.2 }, 0);
 
-    const onWheel = () => {
-      isZooming = true;
-    };
-    const onStart = () => {
-      if (!isZooming) controls.autoRotate = false;
-    };
-    const onEnd = () => {
-      isZooming = false;
+    const resumeRotation = () => {
+      if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+      idleTimerRef.current = setTimeout(() => {
+        if (globeEl.current?.controls()) {
+          globeEl.current.controls().autoRotate = true;
+        }
+      }, 5000);
     };
 
-    globeEl.current.renderer().domElement.addEventListener("wheel", onWheel);
-    controls.addEventListener("start", onStart);
-    controls.addEventListener("end", onEnd);
+    const onInteractStart = () => {
+      controls.autoRotate = false;
+      if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+    };
+    const onInteractEnd = () => {
+      resumeRotation();
+    };
+
+    const domEl = globeEl.current.renderer().domElement;
+    domEl.addEventListener("wheel", onInteractStart);
+    domEl.addEventListener("wheel", resumeRotation);
+    controls.addEventListener("start", onInteractStart);
+    controls.addEventListener("end", onInteractEnd);
+
     return () => {
-      globeEl.current
-        ?.renderer()
-        .domElement.removeEventListener("wheel", onWheel);
-      controls.removeEventListener("start", onStart);
-      controls.removeEventListener("end", onEnd);
+      domEl.removeEventListener("wheel", onInteractStart);
+      domEl.removeEventListener("wheel", resumeRotation);
+      controls.removeEventListener("start", onInteractStart);
+      controls.removeEventListener("end", onInteractEnd);
+      if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
     };
   }, []);
 
@@ -221,45 +225,78 @@ export default function TriibeGlobe() {
       1000,
     );
 
-    setTimeout(() => {
+    if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+    idleTimerRef.current = setTimeout(() => {
       if (globeEl.current?.controls()) {
         globeEl.current.controls().autoRotate = true;
       }
-    }, 3000);
+    }, 5000);
   };
 
   const makeMarker = (d: Branch) => {
     const el = document.createElement("div");
     el.style.cssText = `
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: #002C19;
-      border: 2px solid #00ff88;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      box-shadow: 0 0 14px #00ff8855;
-      overflow: hidden;
-      padding: 6px;
-      pointer-events: auto;
-    `;
+    width: 44px;
+    height: 44px;
+    pointer-events: auto;
+    cursor: pointer;
+  `;
+
+    const inner = document.createElement("div");
+    inner.style.cssText = `
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #002C19;
+    border: 2px solid #00ff88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 14px #00ff8855;
+    overflow: hidden;
+    padding: 6px;
+    box-sizing: border-box;
+    transition: transform 200ms ease, box-shadow 200ms ease;
+    will-change: transform;
+  `;
+
     const img = document.createElement("img");
     img.src = "/triibe-marker.png";
     img.style.cssText = `
-      width: 28px;
-      height: 28px;
-      object-fit: contain;
-      filter: brightness(0) invert(1);
-    `;
-    el.appendChild(img);
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+  `;
+    inner.appendChild(img);
+    el.appendChild(inner);
+
+    el.addEventListener("mouseenter", () => {
+      inner.style.transform = "scale(1.2)";
+      inner.style.boxShadow = "0 0 22px #00ff8899";
+    });
+    el.addEventListener("mouseleave", () => {
+      inner.style.transform = "scale(1)";
+      inner.style.boxShadow = "0 0 14px #00ff8855";
+    });
+
     el.addEventListener("click", (ev) => {
       ev.stopPropagation();
+      // Stop rotation immediately
+      const controls = globeEl.current?.controls();
+      if (controls) controls.autoRotate = false;
+      if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+      idleTimerRef.current = setTimeout(() => {
+        if (globeEl.current?.controls()) {
+          globeEl.current.controls().autoRotate = true;
+        }
+      }, 5000);
+
       el.dispatchEvent(
         new CustomEvent("branch-click", { bubbles: true, detail: d }),
       );
     });
+
     return el;
   };
 
@@ -272,7 +309,7 @@ export default function TriibeGlobe() {
         padding: "64px 0 48px",
       }}
     >
-      <div style={{ textAlign: "center", marginBottom: 28 }}>
+      <div style={{ textAlign: "center", marginBottom: 20 }}>
         <h2
           style={{
             fontSize: 34,
@@ -282,29 +319,15 @@ export default function TriibeGlobe() {
             letterSpacing: "-0.3px",
           }}
         >
-          Global Network
+          Global network
         </h2>
-        <p
-          style={{
-            fontSize: 15,
-            color: "#555555",
-            marginTop: 10,
-            marginBottom: 0,
-          }}
-        >
-          Click on the map to learn more
-        </p>
       </div>
 
       <div
         style={{
-          maxWidth: 1040,
+          maxWidth: 1200,
           margin: "0 auto",
-          background: "#f7f8f6",
-          borderRadius: 16,
-          border: "1px solid #e0e8e4",
-          boxShadow: "0 2px 20px rgba(0,44,25,0.07)",
-          padding: "28px 20px 24px",
+          padding: "0 20px",
           position: "relative",
         }}
       >
@@ -317,7 +340,12 @@ export default function TriibeGlobe() {
         >
           <div
             ref={wrapperRef}
-            style={{ position: "relative", width: 900, height: 680 }}
+            style={{
+              position: "relative",
+              width: 1100,
+              height: 800,
+              maxWidth: "100%",
+            }}
           >
             {loading && (
               <div
@@ -328,8 +356,6 @@ export default function TriibeGlobe() {
                   alignItems: "center",
                   justifyContent: "center",
                   zIndex: 10,
-                  background: "#f7f8f6",
-                  borderRadius: 10,
                 }}
               >
                 <style>{`@keyframes triibe-spin { to { transform: rotate(360deg); } }`}</style>
@@ -348,8 +374,8 @@ export default function TriibeGlobe() {
 
             <Globe
               ref={globeEl}
-              width={900}
-              height={680}
+              width={1100}
+              height={800}
               backgroundColor="rgba(0,0,0,0)"
               showAtmosphere={true}
               atmosphereColor={GREEN_GLOW}
@@ -395,7 +421,7 @@ export default function TriibeGlobe() {
             <div
               style={{
                 position: "absolute",
-                right: 0,
+                right: 20,
                 top: "50%",
                 transform: "translateY(-50%)",
                 width: 220,
@@ -543,18 +569,6 @@ export default function TriibeGlobe() {
             );
           })}
         </div>
-
-        <p
-          style={{
-            textAlign: "center",
-            fontSize: 11,
-            color: TEXT_DIM,
-            marginTop: 14,
-            marginBottom: 0,
-          }}
-        >
-          Drag to rotate · Click a marker or country to explore
-        </p>
       </div>
     </section>
   );
