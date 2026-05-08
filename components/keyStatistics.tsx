@@ -225,7 +225,7 @@ export default function KeyStatistics() {
                 href={logo.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center h-full "
+                className="flex items-center justify-center h-full transition-transform hover:scale-105"
               >
                 <Image
                   className={`max-h-[60px] w-auto object-contain ${logo.className}`}
