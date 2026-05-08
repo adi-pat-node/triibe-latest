@@ -141,10 +141,6 @@ export default function RootLayout({
     ],
     address: {
       "@type": "PostalAddress",
-      streetAddress: "456 W 47th St",
-      addressLocality: "New York",
-      addressRegion: "NY",
-      postalCode: "10036",
       addressCountry: "US",
     },
     sameAs: [
