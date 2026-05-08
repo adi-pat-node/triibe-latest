@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 
 const statistics = [
@@ -27,26 +28,7 @@ const supportedByLogos = [
   //   alt: "Supported by partner 1",
   //   className: "w-64 h-[59px]",
   // },
-  {
-    src: "/images/home/image-128.png",
-    alt: "Supported by partner 2",
-    className: "w-64 h-[59px]",
-  },
-  {
-    src: "/images/home/image-129.png",
-    alt: "Supported by partner 3",
-    className: "w-64 h-[58px] object-contain",
-  },
-  {
-    src: "/images/home/image-130.png",
-    alt: "Supported by partner 4",
-    className: "w-[130px] h-[84px]",
-  },
-  {
-    src: "/images/home/dothething.png",
-    alt: "Supported by partner 4",
-    className: "w-[130px] h-[84px]",
-  },
+  
 
   // {
   //   src: "/images/home/streamr1.png",
@@ -59,97 +41,140 @@ const partneredWithLogos = [
   {
     src: "/images/home/image-131.png",
     alt: "Partnered with organization 1",
+    url: "https://esgnews.com",
     className: "w-40 h-[100px]",
   },
   {
     src: "/images/home/image-132.png",
     alt: "Partnered with organization 2",
+    url: "https://cloztalk.com/",
     className: "w-[129px] h-[60px] md:h-[100px] object-contain",
   },
   {
     src: "/images/home/image-133.png",
     alt: "Partnered with organization 3",
+    url: "https://www.brooklaw.edu/",
     className: "w-64 h-[60px] md:h-[70px] object-contain",
   },
   {
     src: "/images/home/womensOrg1.png",
     alt: "Partnered with organization 3",
+    url: "https://www.joinwedo.org/",
     className: "w-80 h-[100px] object-contain",
   },
   {
     src: "/images/home/illuminen1.png",
     alt: "Partnered with organization 3",
+    url: "https://illuminem.com/",
     className: "w-64 h-[40px] md:h-[70px] object-contain",
   },
   {
     src: "/images/home/unitedPlanet.png",
     alt: "Partnered with organization 4",
+    url: "https://www.up.game/",
     className: "w-80 h-[150px] md:h-[100px] object-contain ",
   },
   {
     src: "/images/home/inspireYouthJournal.png",
     alt: "Partnered with organization 4",
+    url: "http://inspireyouthjournal.org/",
     className: "w-80 h-[150px] md:h-[100px] object-contain ",
   },
   {
     src: "/images/home/learningplanet.png",
     alt: "Partnered with organization 4",
+    url: "https://www.learningplanetinstitute.org/en/",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   }, //
   {
     src: "/images/home/climatecafe.png",
     alt: "Partnered with organization 4",
+    url: "https://www.climatecafe.eco/",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
   {
     src: "/images/home/we.png",
     alt: "Partnered with organization 4",
+    url: "https://we7.ai/",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
   {
     src: "/images/home/touchalife1.png",
     alt: "Partnered with organization 4",
+    url: "https://touchalife.org/",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
   {
-    src: "/images/home/impacthub1.png",
+    src: "/images/home/Kids-Rights2.png",
     alt: "Partnered with organization 4",
+    url: "https://www.kidsrights.org/",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
   {
     src: "/images/home/billionDollar2.png",
     alt: "Partnered with organization 4",
+    url: "https://www.thebilliondollarimpact.com/",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
   {
     src: "/images/home/onePercentBack.png",
     alt: "Partnered with organization 4",
+    url: "https://1pb.org/",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
   {
     src: "/images/home/finpublica1.png",
     alt: "Partnered with organization 4",
+    url: "https://www.finpublica.org/",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
   {
     src: "/images/home/silc1.png",
     alt: "Partnered with organization 4",
+    url: "https://silcus.org/",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
   {
     src: "/images/home/fwe.png",
     alt: "Partnered with organization 4",
+    url: "https://www.fweforum.org/",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
   {
     src: "/images/home/zenithLogo.png",
     alt: "Partnered with organization 4",
+    url: "https://app.zenithproject.co/",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
   {
     src: "/images/home/bluePlanetAlliance2.png",
     alt: "Partnered with organization 3",
+    url: "https://blueplanetalliance.org/",
     className: "w-80 h-[100px] object-contain",
+  },
+  {
+    src: "/images/home/image-128.png",
+    alt: "Supported by partner 2",
+    url: "https://www.stevemadden.com/",
+    className: "w-64 h-[59px]",
+  },
+  {
+    src: "/images/home/image-129.png",
+    alt: "Supported by partner 3",
+    url: "https://www.allegiance-partners.com/",
+    className: "w-64 h-[58px] object-contain",
+  },
+  {
+    src: "/images/home/image-130.png",
+    alt: "Supported by partner 4",
+    url: "https://www.rayzeapp.com/",
+    className: "w-[130px] h-[84px]",
+  },
+  {
+    src: "/images/home/dothething.png",
+    alt: "Supported by partner 4",
+    url: "https://dothething.org/",
+    className: "w-[130px] h-[84px]",
   },
 ];
 
@@ -173,9 +198,9 @@ export default function KeyStatistics() {
         </div> */}
 
         <div className="flex flex-col items-center gap-8 w-full">
-          <p className="font-normal text-[#697282] text-xl text-center tracking-[0.60px] leading-5">
+          {/* <p className="font-normal text-[#697282] text-xl text-center tracking-[0.60px] leading-5">
             Sponsored by
-          </p>
+          </p> */}
 
           <div className="flex flex-wrap justify-center gap-12 md:gap-8">
             {supportedByLogos.map((logo, index) => (
@@ -197,8 +222,11 @@ export default function KeyStatistics() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 md:gap-8 place-items-center auto-rows-[100px]">
             {partneredWithLogos.map((logo, index) => (
-              <div
+              <Link
                 key={index}
+                href={logo.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center h-full "
               >
                 <Image
@@ -208,7 +236,7 @@ export default function KeyStatistics() {
                   width={200}
                   height={100}
                 />
-              </div>
+              </Link>
             ))}
           </div>
         </div>
