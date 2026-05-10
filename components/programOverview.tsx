@@ -19,8 +19,11 @@ description: [
   },
   {
     title: "What we do",
-    description:
-      "We are building out the nonprofit startup ecosystem, maximizing return on impact, not income. Through TRIIBE Talks, the TRIIBE Fellowship, and the TRIIBE I00, we provide next-gen nonprofit founders visibility, stability, and credibility.",
+    description: [
+  "We are building out the nonprofit startup ecosystem, maximizing return on impact, not income.",
+
+  "Through TRIIBE Talks, the TRIIBE Fellowship, and the TRIIBE I00, we provide next-gen nonprofit founders visibility, stability, and credibility.",
+],
     bgColor: "bg-[#002c19]",
     textColor: "text-[#fffefee6]",
     descriptionColor: "text-[#ffffffcc]",
@@ -31,15 +34,14 @@ description: [
   },
   {
     title: "How we do it",
-    description: (
-      <>
-        • TRIIBE Talks highlight next-gen founders alongside established ones, because age doesn't determine the quality of a voice.
-         <br /> • The TRIIBE Fellowship ensures founders don’t burn out while transitioning
-          from a “youth” nonprofit to an established one. <br /> • The TRIIBE I00 is funding the definitive list
-           of next-gen nonprofit founders under 30 to know.
 
-      </>
-    ),
+    description: [
+  " • TRIIBE Talks highlight next-gen founders alongside established ones, because age doesn't determine the quality of a voice.",
+
+  " • The TRIIBE Fellowship ensures founders don’t burn out while transitioning from a “youth” nonprofit to an established one.",
+
+  " • The TRIIBE I00 is funding the definitive list of next-gen nonprofit founders under 30 to know."
+],
     bgColor: "bg-[#002c19]",
     textColor: "text-white",
     descriptionColor: "text-[#ffffffcc]",
