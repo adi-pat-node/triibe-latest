@@ -636,7 +636,7 @@ const SummitPage = () => {
                   image: "/images/summit/fashion-show5.jpg",
                 },
                 {
-                  name: "Super car street takeover",
+                  name: "Vice city district super car street takeover",
                   image: "/images/summit/supercar_street.jpeg",
                 },
                 { name: "Food trucks", image: "/images/summit/Curated4.png" },

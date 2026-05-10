@@ -174,6 +174,12 @@ const partneredWithLogos = [
     url: "https://dothething.org/",
     className: "w-[130px] h-[84px]",
   },
+  {
+    src: "/images/home/vice_city_district2.png",
+    alt: "Partnered with organization 3",
+    url: "https://www.supercarrooms.com/vicecitydistrict",
+    className: "w-80 h-[100px] object-contain",
+  },
 ];
 
 export default function KeyStatistics() {
