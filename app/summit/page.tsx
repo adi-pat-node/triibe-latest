@@ -374,7 +374,7 @@ const SummitPage = () => {
 
   const scheduleDays = [
     {
-      title: "Day 1, Friday September 4th",
+      title: "Day 1, Friday September 11th",
       location:
         "Invite Only Studios, 207 W 25th St, New York NY. Attendees: 400",
       badge: "VIP Gala",
@@ -412,7 +412,7 @@ const SummitPage = () => {
       ],
     },
     {
-      title: "Day 2, Saturday September 5th",
+      title: "Day 2, Saturday September 12th",
       location:
         "Invite Only Studios, 207 W 25th St, New York NY. Attendees: 600",
       badge: "Summit Day",
@@ -514,7 +514,7 @@ const SummitPage = () => {
       ],
     },
     {
-      title: "Day 3, Sunday September 6th",
+      title: "Day 3, Sunday September 13th",
       location: "Exclusively for cohorts",
       badge: "",
       highlight: null,
@@ -632,7 +632,7 @@ const SummitPage = () => {
                   image: "/images/summit/Curated1.png",
                 },
                 {
-                  name: "Fashion show",
+                  name: "Give To Empower Fashion show",
                   image: "/images/summit/fashion-show5.jpg",
                 },
                 {
