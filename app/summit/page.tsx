@@ -389,25 +389,25 @@ const SummitPage = () => {
       items: [
         {
           time: "6:00 PM",
-          title: "VIP Reception",
+          title: "VIP reception",
           description:
-            "Networking And Tours With Jazz Performance And Drink Reception",
+            "Networking and tours With musical performance and drink reception",
         },
         {
           time: "6:45 PM",
-          title: "Gala Dinner",
-          description: "Sit-Down Meal For 400 Guests",
+          title: "Gala dinner",
+          description: "Sit-down meal for 400 guests",
         },
         {
           time: "7:00 PM",
-          title: "VIP Opening Ceremony",
+          title: "VIP opening ceremony",
           description:
             "keynote with gifts and sushi show",
         },
         {
           time: "8:15 PM",
-          title: "Networking Reception",
-          description: "jazz band performance and event photography",
+          title: "Networking reception",
+          description: "Musical band performance and event photography",
         },
       ],
     },
@@ -417,9 +417,9 @@ const SummitPage = () => {
         "Invite Only Studios, 207 W 25th St, New York NY. Attendees: 600",
       badge: "Summit Day",
       highlight: {
-        image: "/images/summit/Curated2.png",
+        image: "/images/summit/fashion-show5.jpg",
         label: "SATURDAY · MIDDAY INTERLUDE",
-        name: "Fashion Show",
+        name: "Fashion show",
         description:
           "A 20-minute runway moment staged between the morning and afternoon TRIIBE Talks.", //  "Presented by Steve Madden · a 20-minute runway moment staged between the morning and afternoon TRIIBE Talks.",
         bullets: [
@@ -431,7 +431,7 @@ const SummitPage = () => {
       items: [
         {
           time: "9:30 AM",
-          title: "Opening Ceremony",
+          title: "Opening ceremony",
           description: "Welcome remarks by Kyle Matthys",
         },
         {
@@ -456,12 +456,12 @@ const SummitPage = () => {
         },
         {
           time: "12:25 PM",
-          title: "Lunch Reception",
+          title: "Lunch reception",
           description: "Diverse food trucks",
         },
         {
           time: "1:15 PM",
-          title: "Fashion Show",
+          title: "Fashion show",
           description: "Full film crew coverage with TV livestream",
         },
         {
@@ -493,29 +493,29 @@ const SummitPage = () => {
         },
         {
           time: "5:20 PM",
-          title: "Founder Recognition",
+          title: "Founder recognition",
           description: "LED screen presentation with cohorts on stage",
         },
         {
           time: "5:35 PM",
-          title: "Closing Remarks",
+          title: "Closing remarks",
           description: "Kyle Matthys on stage thanking the audience",
         },
         {
           time: "5:45 PM",
-          title: "Drinks Reception",
+          title: "Drinks reception",
           description: "Rooftop networking with jazz band",
         },
         {
           time: "6:00 PM",
-          title: "Evening Reception",
+          title: "Evening reception",
           description: "Full bar service and continued networking",
         },
       ],
     },
     {
       title: "Day 3, Sunday September 6th",
-      location: "Exclusively for Cohorts",
+      location: "Exclusively for cohorts",
       badge: "",
       highlight: null,
       items: [],
@@ -580,7 +580,7 @@ const SummitPage = () => {
               <div className="flex flex-col gap-4 max-w-[600px]">
                 <div className="flex flex-col gap-1">
                   <h4 className="text-white font-bold text-2xl tracking-wide mb-4">
-                    Headlining Keynote · Friday Night
+                    Headlining keynote · Friday night
                   </h4>
                   <p className="text-white/70 text-base">
                     In conversation with TRIIBE
@@ -595,7 +595,7 @@ const SummitPage = () => {
                     fontWeight: 100,
                   }}
                 >
-                  Coming Soon...
+                  Coming soon...
                 </h3>
 
                 <p className="text-white/80 text-base leading-relaxed">
@@ -608,7 +608,7 @@ const SummitPage = () => {
                 </p>
 
                 <div className="flex flex-wrap gap-x-10 gap-y-2 mt-2 text-white text-base">
-                  <span>7:00 PM · VIP Opening Ceremony</span>
+                  <span>7:00 PM · VIP opening ceremony</span>
                   {/* <span>Fireside format · ~25 min + Q&A</span> */}
                 </div>
 
@@ -628,20 +628,20 @@ const SummitPage = () => {
             <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
               {[
                 {
-                  name: "Tuna Carving by Chef Kim Yong",
+                  name: "Tuna carving by Chef Kim Yong",
                   image: "/images/summit/Curated1.png",
                 },
                 {
-                  name: "Fashion Show",
-                  image: "/images/summit/Curated2.png",
+                  name: "Fashion show",
+                  image: "/images/summit/fashion-show5.jpg",
                 },
                 {
-                  name: "Super Car Street Takeover",
-                  image: "/images/summit/Curated3.png",
+                  name: "Super car street takeover",
+                  image: "/images/summit/supercar_street.jpeg",
                 },
-                { name: "Food Trucks", image: "/images/summit/Curated4.png" },
+                { name: "Food trucks", image: "/images/summit/Curated4.png" },
                 {
-                  name: "Musical Performance",
+                  name: "Musical performance",
                   image: "/images/summit/Curated5.png",
                 },
               ].map((item, i) => (
@@ -730,7 +730,7 @@ const SummitPage = () => {
       <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]">
         <div className="max-w-260 mx-auto flex flex-col gap-12">
           <h2 className="text-3xl md:text-4xl font-bold text-black text-center">
-            Featured Speakers
+            Featured speakers
           </h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
@@ -918,7 +918,7 @@ const SummitPage = () => {
       >
         <div className="max-w-260 mx-auto flex flex-col gap-10">
           <h2 className="text-3xl md:text-4xl font-bold text-black text-center">
-            Buy Tickets
+            Buy tickets
           </h2>
 
           <div className="max-w-3xl mx-auto flex flex-col gap-6 mb-6 text-black text-base leading-relaxed">
@@ -951,7 +951,7 @@ const SummitPage = () => {
 
             <div className="bg-white border border-gray-200 rounded-xl p-4 flex flex-col gap-3 text-center">
               <p className="font-semibold text-black">
-                Ticket Pricing Increases
+                Ticket pricing increases
               </p>
 
               <p>
