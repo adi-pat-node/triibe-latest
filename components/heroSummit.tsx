@@ -58,14 +58,14 @@ export default function HeroSummit() {
 
           <div className="flex flex-col items-center pb-6">
             <p className="font-['DM_Sans',Helvetica] font-normal text-white text-base md:text-lg text-center tracking-[0] leading-relaxed">
-              Hosted by Invite Only x TRIIBE
+              Hosted by Invite Only, Supercar Rooms Miami, Give To Empower, and TRIIBE
             </p>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-white text-sm mb-8">
             <div className="flex items-center gap-2">
               <Calendar size={15} />
-              <span>September 4–6, 2026</span>
+              <span>September 11–13, 2026</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock size={15} />

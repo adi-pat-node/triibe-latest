@@ -402,7 +402,7 @@ const SummitPage = () => {
           time: "7:00 PM",
           title: "VIP Opening Ceremony",
           description:
-            "keynote by Kyle and Doc and Pat with gifts and sushi show",
+            "keynote with gifts and sushi show",
         },
         {
           time: "8:15 PM",
@@ -531,10 +531,10 @@ const SummitPage = () => {
         <div className="max-w-260 mx-auto overflow-visible">
           <div className="flex flex-col gap-4">
             <h2 className="text-3xl md:text-4xl font-bold text-black text-center mb-4">
-              About the Summit
+              About the summit
             </h2>
             <p className="text-black text-base leading-relaxed">
-              The Invite Only x TRIIBE Next-Gen Summit is where the TRIIBE comes
+              TRIIBE Next-Gen Summit is where the TRIIBE comes
               together. Next-gen founders, established voices, foundations,
               funders, mentors, and partners gather for a weekend designed to
               celebrate those prioritizing a return on impact, not income.
@@ -641,7 +641,7 @@ const SummitPage = () => {
                 },
                 { name: "Food Trucks", image: "/images/summit/Curated4.png" },
                 {
-                  name: "Jazz Performance",
+                  name: "Musical Performance",
                   image: "/images/summit/Curated5.png",
                 },
               ].map((item, i) => (
@@ -921,7 +921,7 @@ const SummitPage = () => {
             Buy Tickets
           </h2>
 
-          <div className="max-w-3xl mx-auto flex flex-col gap-6 mb-6 text-sm text-[#303641]">
+          <div className="max-w-3xl mx-auto flex flex-col gap-6 mb-6 text-black text-base leading-relaxed">
             <div className="flex flex-col gap-4 text-left">
               <p>
                 The VIP Pass includes our Friday gala dinner featuring a live
