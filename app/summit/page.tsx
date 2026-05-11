@@ -364,6 +364,13 @@ const SummitPage = () => {
       tag: "Moderator",
     },
     {
+      name: "Kathryn Lancioni",
+      title: "Cornell University Program Director, Cayuga Forum",
+      image: "/images/summit/KathrynLancioni.jpg",
+      linkedin: "https://www.linkedin.com/in/kathrynlancioni335/",
+      tag: "Moderator",
+    },
+    {
       name: "Chirag Nijjer",
       title: "Brand Historian for Google and the History Channel",
       image: "/images/summit/Chirag Nijjer.png",
@@ -390,6 +397,13 @@ const SummitPage = () => {
       image: "/images/summit/PrinceMarioMax.png",
       linkedin: "#",
       instagram: "https://www.instagram.com/princemariomax",
+      tag: "Established",
+    },
+    {
+      name: "Lauren Shenkman",
+      title: "Director of Partnerships, Riley’s Way Foundation",
+      image: "/images/summit/LaurenShenkman2.jpg",
+      linkedin: "https://www.linkedin.com/in/laurenshenkman/",
       tag: "Established",
     },
   ];
