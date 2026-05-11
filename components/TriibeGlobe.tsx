@@ -137,6 +137,7 @@ export default function TriibeGlobe() {
   const [countries, setCountries] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeBranch, setActiveBranch] = useState<Branch | null>(null);
+  const [dimensions, setDimensions] = useState({ width: 1100, height: 800 });
 
   useEffect(() => {
     fetch("/countries.geojson")
@@ -213,6 +214,18 @@ export default function TriibeGlobe() {
     const onBranchClick = (e: any) => setActiveBranch(e.detail);
     wrapper.addEventListener("branch-click", onBranchClick);
     return () => wrapper.removeEventListener("branch-click", onBranchClick);
+  }, []);
+
+  useEffect(() => {
+    const updateSize = () => {
+      if (!wrapperRef.current) return;
+      const w = wrapperRef.current.offsetWidth;
+      // Maintain ~aspect ratio: height = width * 0.72
+      setDimensions({ width: w, height: Math.min(w * 0.85, 800) });
+    };
+    updateSize();
+    window.addEventListener("resize", updateSize);
+    return () => window.removeEventListener("resize", updateSize);
   }, []);
 
   const handleCountryClick = (branch: Branch) => {
@@ -342,9 +355,9 @@ export default function TriibeGlobe() {
             ref={wrapperRef}
             style={{
               position: "relative",
-              width: 1100,
-              height: 800,
-              maxWidth: "100%",
+              width: "100%",
+              maxWidth: 1100,
+              height: dimensions.height,
             }}
           >
             {loading && (
@@ -374,8 +387,8 @@ export default function TriibeGlobe() {
 
             <Globe
               ref={globeEl}
-              width={1100}
-              height={800}
+              width={dimensions.width}
+              height={dimensions.height}
               backgroundColor="rgba(0,0,0,0)"
               showAtmosphere={true}
               atmosphereColor={GREEN_GLOW}
