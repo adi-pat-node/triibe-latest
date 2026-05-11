@@ -370,6 +370,20 @@ const SummitPage = () => {
       linkedin: "https://www.linkedin.com/in/chiragspeaks/",
       tag: "MC",
     },
+    {
+      name: "Mariela Dabbah",
+      title: "Founder, Red Shoe Movement",
+      image: "/images/summit/MarielaDabbah3.png",
+      linkedin: "https://www.linkedin.com/in/marieladabbah/",
+      tag: "Established",
+    },
+    {
+      name: "Gregg Meyer",
+      title: "CSO & President, Steve Madden Corporate Foundation",
+      image: "/images/summit/GreggMeyer.jpg",
+      linkedin: "https://www.linkedin.com/in/gregg-meyer/",
+      tag: "Established",
+    },
   ];
 
   const scheduleDays = [
@@ -750,20 +764,20 @@ const SummitPage = () => {
                     className="object-cover object-top"
                   />
 
-                  {(speaker.tag === "Next-Gen" ||
-                    speaker.tag === "Established" ||
-                    speaker.tag === "Moderator" ||
-                    speaker.tag === "MC") && (
-                    <span
-                      className={`absolute -top-0.5 -left-0.5 text-xs font-medium px-3 py-1 rounded-br-xl ${
-                        speaker.tag === "Next-Gen"
-                          ? "bg-[#D8EFE4] text-[#1C5945]"
-                          : "bg-[#D8EFE4] text-[#1C5945]"
-                      }`}
-                    >
-                      {speaker.tag}
-                    </span>
-                  )}
+                {(speaker.tag === "Next-Gen" ||
+                  speaker.tag === "Established" ||
+                  speaker.tag === "Moderator" ||
+                  speaker.tag === "MC") && (
+                  <span
+                    className={`absolute -top-0.5 -left-0.5 text-xs font-medium px-3 py-1 rounded-br-xl ${
+                      speaker.tag === "Established"
+                        ? "bg-black text-white"
+                        : "bg-[#D8EFE4] text-[#1C5945]"
+                    }`}
+                  >
+                    {speaker.tag}
+                  </span>
+                )}
                 </div>
 
                 <div className="p-4 flex flex-col gap-2">
