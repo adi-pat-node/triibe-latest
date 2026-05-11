@@ -229,7 +229,7 @@ const ProgramPage = () => {
         <div className="max-w-260 mx-auto">
           <div className="max-w-5xl mx-auto">
             <p className="font-bold text-black text-4xl md:text-[40px]  leading-tight">
-              Next-gen nonprofit founders are cut off from funding
+              Nonprofit founders are cut off from funding
             </p>
           </div>
 
@@ -238,7 +238,7 @@ const ProgramPage = () => {
             <div className="relative w-full h-100 ">
               <div className="relative w-full h-100 rounded-2xl overflow-hidden bg-white">
                 <Image
-                  src="/images/programs/problem_infographic3.png"
+                  src="/images/programs/problem_infographic4.jpeg"
                   alt="The Problem - 80% of student-led nonprofits fade within a year"
                   fill
                   className="object-contain"

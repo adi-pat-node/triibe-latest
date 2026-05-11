@@ -52,20 +52,20 @@ export default function HeroSummit() {
         <div className="relative z-10 flex flex-col items-center px-6 max-w-225 mx-auto ">
           <div className="flex flex-col items-center  pb-3">
             <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-4xl md:text-4xl lg:text-5xl text-center tracking-tight leading-tight max-w-200">
-              TRIIBE Next-gen summit
+              TRIIBE NEXT-GEN SUMMIT
             </h1>
           </div>
 
           <div className="flex flex-col items-center pb-6">
             <p className="font-['DM_Sans',Helvetica] font-normal text-white text-base md:text-lg text-center tracking-[0] leading-relaxed">
-              Hosted by Invite Only x TRIIBE
+              Hosted by Invite Only, Vice City District, Give To Empower, and TRIIBE
             </p>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-white text-sm mb-8">
             <div className="flex items-center gap-2">
               <Calendar size={15} />
-              <span>September 4–6, 2026</span>
+              <span>September 11–13, 2026</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock size={15} />

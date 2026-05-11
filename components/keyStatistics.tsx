@@ -174,6 +174,12 @@ const partneredWithLogos = [
     url: "https://dothething.org/",
     className: "w-[130px] h-[84px]",
   },
+  {
+    src: "/images/home/vice_city_district2.png",
+    alt: "Partnered with organization 3",
+    url: "https://www.supercarrooms.com/vicecitydistrict",
+    className: "w-80 h-[100px] object-contain",
+  },
 ];
 
 export default function KeyStatistics() {
@@ -225,7 +231,7 @@ export default function KeyStatistics() {
                 href={logo.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center h-full "
+                className="flex items-center justify-center h-full transition-transform hover:scale-105"
               >
                 <Image
                   className={`max-h-[60px] w-auto object-contain ${logo.className}`}
