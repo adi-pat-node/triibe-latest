@@ -1037,14 +1037,13 @@ const page = () => {
             <div className="space-y-2">
               <div>
                 <h3 className="font-semibold text-black text-2xl mb-6">
-                  We are building the nonprofit startup ecosystem, maximizing a
-                  return on impact, not income
+                  We are building out the nonprofit startup ecosystem, maximizing return on impact.
                 </h3>
               </div>
 
               <p className="font-normal text-black/75 text-lg leading-relaxed mb-2">
-                • TRIIBE Talks highlight next-gen founders alongside established
-                ones, because age doesn't define the quality of a voice.
+                • TRIIBE Talks highlight next-gen founders alongside established ones, 
+                because age doesn't determine the quality of a voice.
               </p>
 
               <p className="font-normal text-black/75 text-lg leading-relaxed  mb-2">

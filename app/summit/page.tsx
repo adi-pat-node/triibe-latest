@@ -551,7 +551,7 @@ const SummitPage = () => {
     },
     {
       title: "Day 3, Sunday September 13th",
-      location: "Exclusively for cohorts",
+      location: "Workshop by Alethos and recording session exclusively for TRIIBE Fellows, partners, select actors and artists",
       badge: "",
       highlight: null,
       items: [],
