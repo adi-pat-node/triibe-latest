@@ -406,6 +406,20 @@ const SummitPage = () => {
       linkedin: "https://www.linkedin.com/in/laurenshenkman/",
       tag: "Established",
     },
+    {
+      name: "Chelsea Toler",
+      title: "Co-CEO Logictry",
+      image: "/images/summit/ChelseaToler.png",
+      linkedin: "https://www.linkedin.com/in/catoler92/",
+      tag: "Established",
+    },
+    {
+      name: "Holland Haiis",
+      title: "Co-founder, Avita House",
+      image: "/images/summit/HollandHaiis.png",
+      linkedin: "https://www.linkedin.com/in/hollandhaiis/",
+      tag: "Established",
+    },
   ];
 
   const scheduleDays = [
