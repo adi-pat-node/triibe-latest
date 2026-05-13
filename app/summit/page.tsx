@@ -976,33 +976,59 @@ const SummitPage = () => {
             Buy tickets
           </h2>
 
-          <div className="max-w-3xl mx-auto flex flex-col gap-6 mb-6 text-black text-base leading-relaxed">
-            <div className="flex flex-col gap-4 text-left">
-              <p>
-                The VIP Pass includes our Friday gala dinner featuring a live
-                tuna carving show, opening ceremony, cocktail reception, and
-                jazz performance.
-                <br />
-                <br />
-                Saturday brings 7 TRIIBE Talks, the fashion show, supercar
-                showcase, and closing reception.
-              </p>
+          <div className="w-full">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            {/* BOX 1 */}
+            <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm flex flex-col gap-5 h-full">
+    
+              <div className="flex flex-col gap-1">
+                <h3 className="text-2xl font-bold text-black">
+                  VIP Pass
+                </h3>
 
-              <p>
-                Next-Gen passes are reserved for active nonprofit founders,
-                co-founders, and staff members under the age of 30.
-              </p>
+                <p className="text-base font-medium text-[#495565]">
+                  Includes:
+                </p>
+                </div>
 
-              <p>
-                Street Fan passes give access to the supercar showcase, fashion
-                show live-streaming, and include a food truck voucher.
-              </p>
+                <ul className="flex flex-col gap-4 text-black text-base leading-relaxed list-disc pl-5">
+                  <li>
+                    Friday gala dinner featuring a live tuna carving show,
+                    opening ceremony, cocktail reception, and jazz performance.
+                  </li>
 
-              <p>
-                Media passes provide online only livestream access to all 7
-                TRIIBE Talks and the fashion show.
-              </p>
-            </div>
+                </ul>
+              </div>
+
+              {/* BOX 2 */}
+              <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm flex flex-col gap-5 h-full">
+    
+                <div className="flex flex-col gap-1">
+                  <h3 className="text-2xl font-bold text-black">
+                    Saturday Only
+                  </h3>
+
+                  <p className="text-base font-medium text-[#495565]">
+                    Includes:
+                  </p>
+                </div>
+
+                <ul className="flex flex-col gap-4 text-black text-base leading-relaxed list-disc pl-5">
+                  
+                  <li>
+                    Saturday includes 7 TRIIBE Talks, the fashion show,
+                    supercar showcase, and closing reception.
+                  </li>
+
+                  
+                  <li>
+                    Next-Gen passes are reserved for active nonprofit founders, co-founders,
+                     and staff members under the age of 30.
+                  </li>
+                </ul>
+              </div>
+                </div>
+
 
             <div className="bg-white border border-gray-200 rounded-xl p-4 flex flex-col gap-3 text-center">
               <p className="font-semibold text-black">
