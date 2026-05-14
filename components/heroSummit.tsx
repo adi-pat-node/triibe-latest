@@ -58,7 +58,7 @@ export default function HeroSummit() {
 
           <div className="flex flex-col items-center pb-6">
             <p className="font-['DM_Sans',Helvetica] font-normal text-white text-base md:text-lg text-center tracking-[0] leading-relaxed">
-              Hosted by Invite Only, Vice City District, Give To Empower, and TRIIBE
+              Hosted by Vice City District, Give To Empower, and TRIIBE
             </p>
           </div>
 

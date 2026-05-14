@@ -28,7 +28,7 @@ const faqs = [
   {
     question: "Where is TRIIBE located?",
     answer:
-      "TRIIBE is headquartered in New York City. Our flagship event, the Next-Gen Changemaker Summit, takes place at Invite Only Studios at 207 W 25th St, New York NY. We also have a global network with regional directors in Sierra Leone, Zambia, Nigeria, Canada, India, and Jamaica.",
+      "TRIIBE is headquartered in New York City. Our flagship event, the Next-Gen Changemaker Summit, takes place at New York, NY. We also have a global network with regional directors in Sierra Leone, Zambia, Nigeria, Canada, India, and Jamaica.",
   },
   {
     question: "Is TRIIBE a registered nonprofit?",
@@ -117,7 +117,7 @@ const faqs = [
   {
     question: "What is the Next-Gen Changemaker Summit?",
     answer:
-      "The Next-Gen Changemaker Summit is TRIIBE's flagship invite-only event held September 4–6, 2026 in New York City, hosted in partnership with Invite Only. It brings together next-gen nonprofit founders, established changemakers, funders, mentors, and partners for a multi-day weekend including a VIP Gala on Friday evening, a full-day summit on Saturday with seven TRIIBE Talks, and curated experiences such as the Steve Madden Fashion Show.",
+      "The Next-Gen Changemaker Summit is TRIIBE's flagship invite-only event held September 4–6, 2026 in New York City. It brings together next-gen nonprofit founders, established changemakers, funders, mentors, and partners for a multi-day weekend including a VIP Gala on Friday evening, a full-day summit on Saturday with seven TRIIBE Talks, and curated experiences such as the Steve Madden Fashion Show.",
   },
 
   {
