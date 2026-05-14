@@ -17,7 +17,7 @@ const nextConfig = {
       },
       {
         source: "/programs",
-        destination: "/program",
+        destination: "/fellowship",
         permanent: true,
       },
       {

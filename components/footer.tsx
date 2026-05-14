@@ -7,8 +7,8 @@ const footerColumns = [
     title: "For applicants",
     links: [
       { label: "Apply Now", href: "/apply" },
-      { label: "Fellowship Details", href: "/program" },
-      { label: "FAQ", href: "/program#faqProgram" },
+      { label: "Fellowship Details", href: "/fellowship" },
+      { label: "FAQ", href: "/fellowship#faqFellowship" },
     ],
   },
   {

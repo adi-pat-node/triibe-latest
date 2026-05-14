@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/program`,
+      url: `${baseUrl}/fellowship`,
       lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.9,

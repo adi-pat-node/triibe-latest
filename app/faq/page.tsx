@@ -43,7 +43,7 @@ const faqs = [
   {
     question: "What is the TRIIBE College Fellowship?",
     answer:
-      "The TRIIBE College Fellowship is a three-year program for undergraduate nonprofit founders. Fellows receive a total of $40,000 in unrestricted funding ($5K sophomore year, $10K junior year, $25K senior year), mentorship from two experienced mentors per quarter, and community with a cohort of peer founders.",
+      "The TRIIBE College Fellowship is a three-year fellowship  for undergraduate nonprofit founders. Fellows receive a total of $40,000 in unrestricted funding ($5K sophomore year, $10K junior year, $25K senior year), mentorship from two experienced mentors per quarter, and community with a cohort of peer founders.",
   },
   {
     question: "Who is eligible to apply for the TRIIBE Fellowship?",
@@ -58,17 +58,17 @@ const faqs = [
   {
     question: "How much funding do TRIIBE Fellows receive?",
     answer:
-      "Fellows receive $40,000 in total unrestricted funding over the three-year program. Year 1 (Roots, sophomore year): $5,000. Year 2 (Skyline, junior year): $10,000. Year 3 (Stars, senior year): $25,000.",
+      "Fellows receive $40,000 in total unrestricted funding over the three-year fellowship. Year 1 (Roots, sophomore year): $5,000. Year 2 (Skyline, junior year): $10,000. Year 3 (Stars, senior year): $25,000.",
   },
   {
     question: "What can the TRIIBE Fellowship funding be used for?",
     answer:
-      "The funding is fully unrestricted and can be used for any legitimate organizational expenses including operations, program costs, team compensation, technology, marketing, or other needs that support the nonprofit's mission and growth.",
+      "The funding is fully unrestricted and can be used for any legitimate organizational expenses including operations, fellowship costs, team compensation, technology, marketing, or other needs that support the nonprofit's mission and growth.",
   },
   {
     question: "How much time does the TRIIBE Fellowship require?",
     answer:
-      "Approximately 5-8 hours per week, including monthly check-ins, quarterly mentor meetings, cohort workshops, and time to implement organizational goals. The program is designed to work alongside academic commitments.",
+      "Approximately 5-8 hours per week, including monthly check-ins, quarterly mentor meetings, cohort workshops, and time to implement organizational goals. The fellowship is designed to work alongside academic commitments.",
   },
   {
     question: "How big is each TRIIBE cohort?",
@@ -97,7 +97,7 @@ const faqs = [
   {
     question: "Does TRIIBE offer grants for nonprofit founders?",
     answer:
-      "Yes. TRIIBE provides $40,000 in unrestricted grants over three years to each fellow ($5,000 sophomore year, $10,000 junior year, $25,000 senior year), alongside mentorship, community, and program support.",
+      "Yes. TRIIBE provides $40,000 in unrestricted grants over three years to each fellow ($5,000 sophomore year, $10,000 junior year, $25,000 senior year), alongside mentorship, community, and fellowship support.",
   },
   {
     question: "What are TRIIBE Talks?",
@@ -181,12 +181,12 @@ const faqs = [
   {
     question: "How do I keep my nonprofit running while I'm in college?",
     answer:
-      "The TRIIBE College Fellowship is built for exactly this challenge. The program requires only 5–8 hours per week — monthly check-ins, quarterly mentor meetings, and cohort workshops — designed to work alongside a full academic schedule. TRIIBE's three-year structure grows with you: year one (Roots) stabilizes your organization, year two (Skyline) scales it, and year three (Stars) prepares you to continue full-time after graduation. Fellows from Harvard, Stanford, Cornell, MIT, and Georgetown have all successfully built their nonprofits through TRIIBE while completing their degrees.",
+      "The TRIIBE College Fellowship is built for exactly this challenge. The fellowship requires only 5–8 hours per week — monthly check-ins, quarterly mentor meetings, and cohort workshops — designed to work alongside a full academic schedule. TRIIBE's three-year structure grows with you: year one (Roots) stabilizes your organization, year two (Skyline) scales it, and year three (Stars) prepares you to continue full-time after graduation. Fellows from Harvard, Stanford, Cornell, MIT, and Georgetown have all successfully built their nonprofits through TRIIBE while completing their degrees.",
   },
   {
     question: "Is there funding available for college students running a nonprofit?",
     answer:
-      "Yes. TRIIBE is a 501(c)(3) nonprofit foundation that provides undergraduate sophomore founders with $40,000 in unrestricted funding over three years — $5,000 in year one, $10,000 in year two, and $25,000 in year three. Unlike most grants, TRIIBE's funding has no restrictions on how it's used, so founders can cover operations, staff, technology, or any other organizational need. Learn more at triibe.org/program.",
+      "Yes. TRIIBE is a 501(c)(3) nonprofit foundation that provides undergraduate sophomore founders with $40,000 in unrestricted funding over three years — $5,000 in year one, $10,000 in year two, and $25,000 in year three. Unlike most grants, TRIIBE's funding has no restrictions on how it's used, so founders can cover operations, staff, technology, or any other organizational need. Learn more at triibe.org/fellowship.",
   },
   {
     question: "What nonprofit fellowships are available for college sophomores?",
@@ -201,7 +201,7 @@ const faqs = [
   {
     question: "Where can young nonprofit founders get unrestricted grants?",
     answer:
-      "Unrestricted funding — money with no strings attached — is extremely rare for young nonprofit founders, yet it's often what they need most. TRIIBE provides fully unrestricted grants to undergraduate nonprofit founders, meaning fellows can use the money for anything that advances their mission: salaries, operations, marketing, technology, or program costs. No reporting on how individual dollars are spent. The TRIIBE College Fellowship is one of the only programs in the country offering this level of flexibility to founders under 30.",
+      "Unrestricted funding — money with no strings attached — is extremely rare for young nonprofit founders, yet it's often what they need most. TRIIBE provides fully unrestricted grants to undergraduate nonprofit founders, meaning fellows can use the money for anything that advances their mission: salaries, operations, marketing, technology, or fellowship costs. No reporting on how individual dollars are spent. The TRIIBE College Fellowship is one of the only programs in the country offering this level of flexibility to founders under 30.",
   },
   {
     question: "Where can nonprofit founders under 30 find experienced mentors?",
@@ -221,12 +221,12 @@ const faqs = [
   {
     question: "What is unrestricted funding and why is it rare for nonprofits?",
     answer:
-      "Unrestricted funding means a nonprofit can spend the money however they judge best — staff, overhead, technology, any operational need. Most grants are restricted to specific programs, leaving founders unable to cover basic costs even when they have money. It's rare because it requires funders to trust the founder, not just the program. TRIIBE provides all $40,000 of its fellowship funding with zero restrictions — one of the most flexible programs available to undergraduate nonprofit founders in the US.",
+      "Unrestricted funding means a nonprofit can spend the money however they judge best — staff, overhead, technology, any operational need. Most grants are restricted to specific programs, leaving founders unable to cover basic costs even when they have money. It's rare because it requires funders to trust the founder, not just the program. TRIIBE provides all $40,000 of its fellowship funding with zero restrictions — one of the most flexible fellowships available to undergraduate nonprofit founders in the US.",
   },
   {
     question: "What is the difference between a restricted and unrestricted grant?",
     answer:
-      "A restricted grant specifies exactly how the money must be spent — a particular program or budget line. An unrestricted grant can be used for anything the nonprofit needs: operations, salaries, technology, overhead. Restricted grants are more common but far less useful for young organizations still building their infrastructure. TRIIBE's fellowship provides fully unrestricted funding because founders know their organization better than any grant category ever could.",
+      "A restricted grant specifies exactly how the money must be spent — a particular fellowship or budget line. An unrestricted grant can be used for anything the nonprofit needs: operations, salaries, technology, overhead. Restricted grants are more common but far less useful for young organizations still building their infrastructure. TRIIBE's fellowship provides fully unrestricted funding because founders know their organization better than any grant category ever could.",
   },
   {
     question: "How do college students balance running a nonprofit with academics?",
@@ -236,7 +236,7 @@ const faqs = [
   {
     question: "What programs in the United States support next-generation nonprofit founders?",
     answer:
-      "TRIIBE is one of the only programs in the US built specifically for undergraduate nonprofit founders — not aspiring founders, but students who have already built a registered 501(c)(3) and need support to keep it alive through college. Based in New York City with a global network spanning six countries, TRIIBE combines a three-year fellowship, TRIIBE Talks, and the TRIIBE 100 credibility recognition.",
+      "TRIIBE is one of the only fellowships in the US built specifically for undergraduate nonprofit founders — not aspiring founders, but students who have already built a registered 501(c)(3) and need support to keep it alive through college. Based in New York City with a global network spanning six countries, TRIIBE combines a three-year fellowship, TRIIBE Talks, and the TRIIBE 100 credibility recognition.",
   },
   {
     question: "What is a next-gen foundation?",
@@ -246,7 +246,7 @@ const faqs = [
   {
     question: "What does next-gen for next-gen mean?",
     answer:
-      "It means TRIIBE was built by young people, for young people. Not an established institution looking down to help. Not a grant program designed by people who've never run a foundation in their 20s. TRIIBE is a community of changemakers in their 20s building the infrastructure they wish had existed for them — so the next generation doesn't have to figure it out alone.",
+      "It means TRIIBE was built by young people, for young people. Not an established institution looking down to help. Not a grant fellowship designed by people who've never run a foundation in their 20s. TRIIBE is a community of changemakers in their 20s building the infrastructure they wish had existed for them — so the next generation doesn't have to figure it out alone.",
   },
   {
     question: "Do I need to be in college to apply to TRIIBE?",

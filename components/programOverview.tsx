@@ -43,7 +43,7 @@ const programSections = [
       },
       {
         label: "TRIIBE Fellowship",
-        link: "/program",
+        link: "/fellowship",
         text: "The TRIIBE Fellowship ensures founders don’t burn out while transitioning from a “youth” nonprofit to an established one.",
       },
       {

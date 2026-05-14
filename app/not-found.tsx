@@ -49,10 +49,10 @@ export default function NotFound() {
               Back to Homepage
             </Link>
             <Link
-              href="/program"
+              href="/fellowship"
               className="bg-white text-black border border-black px-8 py-3.5 rounded-lg font-bold hover:bg-gray-50 transition-colors w-full sm:w-auto"
             >
-              Explore Programs
+              Explore Fellowships
             </Link>
           </div>
         </div>
