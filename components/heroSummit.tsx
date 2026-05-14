@@ -71,10 +71,7 @@ export default function HeroSummit() {
               <Clock size={15} />
               <span>Multi-day experience</span>
             </div>
-            <div className="flex items-center gap-2">
-              <MapPin size={15} />
-              <span>25th and 7th St, New York, NY</span>
-            </div>
+            
           </div>
 
           <div className="bg-white backdrop-blur-sm border border-white/20 rounded-xl px-8 py-4 mb-6 text-center">
