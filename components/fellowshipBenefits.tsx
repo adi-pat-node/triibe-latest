@@ -15,7 +15,7 @@ const benefits = [
     icon: "/images/home/container-2.svg",
     title: "Mentorship",
     description:
-      "One-on-one guidance from two experienced executives or philentrepreneurs each quarter.",
+      "One-on-one guidance from two experienced executives or philentrepreneurs each quarter",
   },
   {
     number: "03",
