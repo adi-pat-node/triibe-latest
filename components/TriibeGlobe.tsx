@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import GlobeImport from "react-globe.gl";
+import * as THREE from "three";
 const Globe = GlobeImport as any;
 
 const GREEN_GLOW = "#00ff88";
@@ -158,69 +159,155 @@ export default function TriibeGlobe() {
   useEffect(() => {
     if (!globeEl.current) return;
 
-    try {
+    let cleanup: (() => void) | null = null;
+    let raf: number | null = null;
+
+    const setup = () => {
+      if (!globeEl.current) return;
+
+      let globeMesh: any = null;
       globeEl.current.scene().traverse((obj: any) => {
-        if (obj.isMesh && obj.geometry?.type === "SphereGeometry") {
-          obj.material.color.setHex(0x051a0d);
-          obj.material.needsUpdate = true;
+        if (
+          obj.isMesh &&
+          obj.geometry &&
+          (obj.geometry.type === "SphereGeometry" ||
+            obj.geometry.type === "SphereBufferGeometry") &&
+          !globeMesh
+        ) {
+          globeMesh = obj;
         }
       });
-    } catch (_) {}
 
-    const controls = globeEl.current.controls();
-    if (!controls) return;
-    controls.autoRotate = true;
-    controls.autoRotateSpeed = 0.6;
-    controls.enableZoom = true;
+      // If mesh not ready yet, retry on next frame
+      if (!globeMesh) {
+        raf = requestAnimationFrame(setup);
+        return;
+      }
 
-    // Start globe at a closer/larger initial view
-    globeEl.current.pointOfView({ altitude: 2.2 }, 0);
+      // Style the globe
+      try {
+        globeEl.current.scene().traverse((obj: any) => {
+          if (obj.isMesh && obj.geometry?.type === "SphereGeometry") {
+            obj.material.color.setHex(0x051a0d);
+            obj.material.needsUpdate = true;
+          }
+        });
+      } catch (_) {}
 
-    const resumeRotation = () => {
-      if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
-      idleTimerRef.current = setTimeout(() => {
-        if (globeEl.current?.controls()) {
-          globeEl.current.controls().autoRotate = true;
-        }
-      }, 5000);
+      const controls = globeEl.current.controls();
+      if (!controls) return;
+      controls.autoRotate = true;
+      controls.autoRotateSpeed = 0.6;
+      controls.enableZoom = true;
+
+      globeEl.current.pointOfView({ altitude: 2.2 }, 0);
+
+      const resumeRotation = () => {
+        if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+        idleTimerRef.current = setTimeout(() => {
+          if (globeEl.current?.controls()) {
+            globeEl.current.controls().autoRotate = true;
+          }
+        }, 5000);
+      };
+
+      const onInteractStart = () => {
+        controls.autoRotate = false;
+        if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+      };
+      const onInteractEnd = () => {
+        resumeRotation();
+      };
+
+      const domEl = globeEl.current.renderer().domElement;
+
+      domEl.addEventListener("wheel", onInteractStart);
+      domEl.addEventListener("wheel", resumeRotation);
+      controls.addEventListener("start", onInteractStart);
+      controls.addEventListener("end", onInteractEnd);
+
+      cleanup = () => {
+        domEl.removeEventListener("wheel", onInteractStart);
+        domEl.removeEventListener("wheel", resumeRotation);
+        controls.removeEventListener("start", onInteractStart);
+        controls.removeEventListener("end", onInteractEnd);
+        if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+      };
     };
 
-    const onInteractStart = () => {
-      controls.autoRotate = false;
-      if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
-    };
-    const onInteractEnd = () => {
-      resumeRotation();
-    };
-
-    const domEl = globeEl.current.renderer().domElement;
-    domEl.addEventListener("wheel", onInteractStart);
-    domEl.addEventListener("wheel", resumeRotation);
-    controls.addEventListener("start", onInteractStart);
-    controls.addEventListener("end", onInteractEnd);
+    setup();
 
     return () => {
-      domEl.removeEventListener("wheel", onInteractStart);
-      domEl.removeEventListener("wheel", resumeRotation);
-      controls.removeEventListener("start", onInteractStart);
-      controls.removeEventListener("end", onInteractEnd);
-      if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+      if (raf) cancelAnimationFrame(raf);
+      if (cleanup) cleanup();
     };
   }, []);
 
-  useEffect(() => {
-    const wrapper = wrapperRef.current;
-    if (!wrapper) return;
-    const onBranchClick = (e: any) => setActiveBranch(e.detail);
-    wrapper.addEventListener("branch-click", onBranchClick);
-    return () => wrapper.removeEventListener("branch-click", onBranchClick);
-  }, []);
+ useEffect(() => {
+  const wrapper = wrapperRef.current;
+  if (!wrapper || !globeEl.current) return;
+
+  const raycaster = new THREE.Raycaster();
+  const mouse = new THREE.Vector2();
+
+  // 1. Helper function to check if pointing at the globe
+  const checkIntersection = (clientX: number, clientY: number) => {
+    if (!globeEl.current?.camera || !globeEl.current?.scene) return false;
+
+    const rect = wrapper.getBoundingClientRect();
+    mouse.x = ((clientX - rect.left) / rect.width) * 2 - 1;
+    mouse.y = -((clientY - rect.top) / rect.height) * 2 + 1;
+
+    raycaster.setFromCamera(mouse, globeEl.current.camera());
+    const intersects = raycaster.intersectObjects(
+      globeEl.current.scene().children,
+      true
+    );
+
+    return intersects.length > 0;
+  };
+
+  // 2. Mouse Wheel Handler (Desktop)
+  const handleWheel = (e: WheelEvent) => {
+    if (checkIntersection(e.clientX, e.clientY)) {
+      e.preventDefault(); // Stop page scroll
+    } else {
+      e.stopImmediatePropagation(); // Stop globe zoom
+    }
+  };
+
+  // 3. Touch Move Handler (Mobile/Tablet)
+  const handleTouchMove = (e: TouchEvent) => {
+    if (e.touches.length === 0) return;
+
+    // We use the coordinates of the first finger touching the screen
+    const touch = e.touches[0];
+
+    if (checkIntersection(touch.clientX, touch.clientY)) {
+      e.preventDefault(); // Stop page scroll, let globe rotate/zoom
+    } else {
+      e.stopImmediatePropagation(); // Let page scroll, stop globe interacting
+    }
+  };
+
+  // Attach listeners with passive: false so preventDefault() works
+  wrapper.addEventListener("wheel", handleWheel, { passive: false, capture: true });
+  wrapper.addEventListener("touchmove", handleTouchMove, { passive: false, capture: true });
+
+  const onBranchClick = (e: any) => setActiveBranch(e.detail);
+  wrapper.addEventListener("branch-click", onBranchClick);
+
+  return () => {
+    wrapper.removeEventListener("wheel", handleWheel, { capture: true } as any);
+    wrapper.removeEventListener("touchmove", handleTouchMove, { capture: true } as any);
+    wrapper.removeEventListener("branch-click", onBranchClick);
+  };
+}, []);
 
   useEffect(() => {
     const updateSize = () => {
       if (!wrapperRef.current) return;
       const w = wrapperRef.current.offsetWidth;
-      // Maintain ~aspect ratio: height = width * 0.72
       setDimensions({ width: w, height: Math.min(w * 0.85, 800) });
     };
     updateSize();
@@ -295,7 +382,6 @@ export default function TriibeGlobe() {
 
     el.addEventListener("click", (ev) => {
       ev.stopPropagation();
-      // Stop rotation immediately
       const controls = globeEl.current?.controls();
       if (controls) controls.autoRotate = false;
       if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
@@ -411,7 +497,7 @@ export default function TriibeGlobe() {
               arcStartLng="startLng"
               arcEndLat="endLat"
               arcEndLng="endLng"
-              arcColor={() => "#ffffff66"}
+              arcColor={() => "#ffffff"}
               arcStroke={0.4}
               arcDashLength={0.08}
               arcDashGap={0.92}

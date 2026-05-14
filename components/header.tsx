@@ -33,10 +33,10 @@ export default function Header() {
         <div className="hidden xl:flex items-center gap-8">
           {[
             { name: "Home", href: "/" },
+            { name: "TRIIBE Talk", href: "/triibetalk" },
             { name: "Program", href: "/program" },
             { name: "TRIIBE I00", href: "/triibe100" },
             { name: "Summit", href: "/summit" },
-            { name: "TRIIBE Talk", href: "/triibetalk" },
             { name: "Media", href: "/media" },
             { name: "About us", href: "/about" },
             // { name: "Contact Us", href: "/contact" },
@@ -97,10 +97,10 @@ export default function Header() {
         <div className="flex flex-col gap-1">
           {[
             { name: "Home", href: "/" },
+            { name: "TRIIBE Talk", href: "/triibetalk" },
             { name: "Program", href: "/program" },
             { name: "TRIIBE I00", href: "/triibe100" },
             { name: "Summit", href: "/summit" },
-            { name: "TRIIBE Talk", href: "/triibetalk" },
             { name: "Media", href: "/media" },
             { name: "About us", href: "/about" },
             // { name: "Contact us", href: "/contact" },
