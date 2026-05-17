@@ -16,6 +16,7 @@ const footerColumns = [
     links: [
       { label: "Team", href: "/about" },
       { label: "Fellows", href: "/cohort" },
+      { label: "Privacy policy", href: "/index/privacy" },
     ],
   },
   {
@@ -44,7 +45,7 @@ export default function Footer() {
                 TRIIBE
               </h2>
               <p className=" font-normal text-[#495565] text-sm tracking-[0] leading-[22.8px]">
-                Building a world that prioritizes a return on impact, not income
+                Building a world that prioritizes a return on impact
               </p>
             </div>
 

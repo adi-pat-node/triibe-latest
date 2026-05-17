@@ -41,13 +41,12 @@ const IndexPage = () => {
             <Image
               src="/images/media/TRIIBEIndex.png"
               alt="TRIIBE Index"
-              width={1200}
-              height={600}
-              className="w-full max-w-5xl h-auto rounded-3xl object-cover"
+              width={1100}
+              height={250}
+              className="w-full max-w-5xl h-auto"
               priority
             />
           </div>
-
         </div>
       </section>
 
@@ -60,7 +59,7 @@ const IndexPage = () => {
               className="bg-white rounded-2xl shadow-sm p-8 flex flex-col justify-between min-h-[360px]"
             >
               <div>
-              <p className="text-[#495565] font-semibold text-black leading-relaxed text-base">
+                <p className="text-[#495565] font-semibold text-black leading-relaxed text-base">
                   {card.description}
                 </p>
               </div>
@@ -79,10 +78,7 @@ const IndexPage = () => {
       </section>
 
       {/* Survey Section */}
-      <section
-        id="survey"
-        className="py-20 px-4 md:px-12 lg:px-24 bg-white"
-      >
+      <section id="survey" className="py-20 px-4 md:px-12 lg:px-24 bg-white">
         <div className="max-w-7xl mx-auto text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
             TRIIBE Index Survey
@@ -95,15 +91,15 @@ const IndexPage = () => {
         </div>
 
         <div className="max-w-7xl mx-auto rounded-3xl overflow-hidden border border-gray-200 shadow-sm">
-  <iframe
-    style={{
-      border: 0,
-      width: "100%",
-      height: "1400px",
-    }}
-    src="https://logictry.com/content/6a071c734c4cef96ac706b9e?autoresize=true&autoscroll=true&allowredirects=true&allowfullscreen=true&onlyscrollfullscreen=false&onclickshowfullscreen=false&showplaceholder=false&showchatbot=false&showbutton=false&showtoggle=true"
-  ></iframe>
-</div>
+          <iframe
+            style={{
+              border: 0,
+              width: "100%",
+              height: "1400px",
+            }}
+            src="https://logictry.com/content/6a071c734c4cef96ac706b9e?autoresize=true&autoscroll=true&allowredirects=true&allowfullscreen=true&onlyscrollfullscreen=false&onclickshowfullscreen=false&showplaceholder=false&showchatbot=false&showbutton=false&showtoggle=true"
+          ></iframe>
+        </div>
       </section>
 
       {/* Index Partners */}
@@ -122,8 +118,8 @@ const IndexPage = () => {
       </section>
 
       <Script
-      src="https://logictry.com/js/connect/v1.js"
-      strategy="afterInteractive"
+        src="https://logictry.com/js/connect/v1.js"
+        strategy="afterInteractive"
       />
 
       <Footer />
@@ -132,4 +128,3 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
-
