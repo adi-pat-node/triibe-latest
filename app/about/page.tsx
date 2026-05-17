@@ -3,6 +3,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Image from "next/image";
 import CTASection from "@/components/cta";
+import Link from "next/link";
 import {
   House,
   Cross,
@@ -998,7 +999,7 @@ const page = () => {
             {/* 2. Wide (Photo) */}
             <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden">
               <Image
-                src="/images/about/about-photo-3.jpg"
+                src="/images/events/summit-1.jpg"
                 alt="TRIIBE Team"
                 fill
                 className="object-cover"
@@ -1042,7 +1043,7 @@ const page = () => {
               </div>
 
               <p className="font-normal text-black/75 text-lg leading-relaxed mb-2">
-                • TRIIBE Talks highlight next-gen founders alongside established ones, 
+                • TRIIBE Talks highlight next-gen founders alongside established ones,
                 because age doesn't determine the quality of a voice.
               </p>
 
@@ -1053,6 +1054,71 @@ const page = () => {
               <p className="font-normal text-black/75 text-lg leading-relaxed">
                 • The TRIIBE I00 is the definitive list of next-gen nonprofit founders under 30 to know.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+{/* Newsletter Section */}
+<section className="py-12 px-4 md:px-25 lg:px-50 bg-[#3036411A] mt-8">
+  <div className="max-w-300 mx-auto">
+    <div className="bg-white rounded-lg overflow-hidden shadow-sm flex flex-col md:flex-row">
+      {/* Image */}
+      <div className="relative w-full md:w-1/3 aspect-video md:aspect-auto md:min-h-[280px]">
+        <Image
+          src="/images/media/archive/March_Newsletter.jpg"
+          alt="TRIIBUNE newsletter"
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      {/* Content */}
+      <div className="p-6 md:p-8 flex flex-col justify-between flex-1 gap-4">
+        <div>
+          <h3 className="font-bold text-black text-2xl mb-4">
+            TRIIBUNE newsletter
+          </h3>
+          <div className="inline-block px-3 py-1 bg-[#3036411A] rounded mb-4">
+            <span className="font-semibold text-black text-sm">March 2026</span>
+          </div>
+          <h4 className="font-semibold text-black text-lg mb-3">
+            Monthly Update | March 2026
+          </h4>
+          <p className="font-normal text-[#495565] text-sm leading-relaxed mb-6">
+            100+ Changemakers. One room. We brought together 100+ attendees for the Billion Dollar Impact Summit in NYC.
+          </p>
+        </div>
+
+        <a
+          href="https://blog.triibe.org/p/monthly-update-march-2026"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="self-start px-6 py-3 bg-[#1C5945] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base"
+        >
+          Read
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+ {/* Brand Book Section */}
+      <section className="py-12 px-4 md:px-25 lg:px-[200px]">
+        <div className="max-w-260 mx-auto">
+          <div className="max-w-7xl mx-auto transition-all duration-300 hover:scale-105">
+            <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+              <p className="text-2xl md:text-3xl font-medium text-gray-900">
+                For a visual journey, see our brand book
+              </p>
+              <Link
+                href="https://drive.google.com/file/d/1ZNTNHHHPhV_4-cXh6JdtdzaRmxQ6IdJs/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-black text-black px-10 py-3 rounded-full font-semibold text-base hover:bg-green-950 hover:text-white hover:scale-105 transition-all duration-300 whitespace-nowrap"
+              >
+                View
+              </Link>
             </div>
           </div>
         </div>
