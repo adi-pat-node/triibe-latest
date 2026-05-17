@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import IndexPage from "../index/IndexClient"; // Imports your exact production client component
+import IndexPage from "./IndexClient"; // Imports your exact production client component
 
 // Crucial: This prevents Google from indexing this test URL on your live domain
 export const metadata: Metadata = {
