@@ -65,10 +65,10 @@ export default function PostGraduationOutcomes() {
         {/* Programs Button */}
         <div className="flex justify-center w-full">
           <a
-            href="/program"
+            href="/fellowship"
             className="px-6 py-3 bg-[#1a5a4a] hover:bg-[#144539] text-white font-semibold rounded-lg transition-colors"
           >
-            Programs
+            Fellowships
           </a>
         </div>
       </div>

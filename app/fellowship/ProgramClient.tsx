@@ -540,7 +540,7 @@ const ProgramPage = () => {
           {/* Quarterly Cycle Testimonial */}
           <div className="bg-white border-2 border-black rounded-lg p-8 md:p-10">
             <blockquote className="text-black text-xl font-normal leading-relaxed italic">
-              "TRIIBE's Mentorship Program is nothing short of astounding. With
+              "TRIIBE's Mentorship program is nothing short of astounding. With
               a busy schedule, I wasn't sure how much time I could give, but the
               ease of entry, flexible commitment, and thoughtful organization
               made it possible to truly support my mentee in a way that was both
