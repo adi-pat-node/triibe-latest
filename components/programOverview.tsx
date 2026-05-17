@@ -13,7 +13,7 @@ const programSections = [
     bgColor: "bg-[#002c19]",
     textColor: "text-white",
     descriptionColor: "text-[#ffffffcc]",
-    imageUrl: "/images/home/whatWeDo1.jpg",
+    imageUrl: "/images/events/summit-2.jpg",
     imagePosition: "right",
     fontWeight: "font-semibold",
     imageObjectPosition: "object-center",
