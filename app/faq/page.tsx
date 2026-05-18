@@ -174,9 +174,10 @@ const faqs = [
       "TRIIBE can be reached at partnerships@triibe.org. You can also connect on LinkedIn (linkedin.com/company/thetriibe), Instagram (@triibe__talk), or YouTube (@TRIIBEorg).",
   },
   {
-    question: "Why do most student-led nonprofits fail when founders go to college?",
+    question:
+      "Why do most student-led nonprofits fail when founders go to college?",
     answer:
-      "80% of student-led nonprofits fade within a year of their founder entering college. The core problem is a funding cliff — foundations that supported a \"youth nonprofit\" stop funding once the founder turns 18 or enrolls in college, even if the work is more impactful than ever. Founders also lose their peer support network and face new academic pressures with no infrastructure. TRIIBE was built specifically to solve this transition gap, providing the funding, mentorship, and community that keeps next-gen founders going through college and beyond.",
+      '80% of student-led nonprofits fade within a year of their founder entering college. The core problem is a funding cliff — foundations that supported a "youth nonprofit" stop funding once the founder turns 18 or enrolls in college, even if the work is more impactful than ever. Founders also lose their peer support network and face new academic pressures with no infrastructure. TRIIBE was built specifically to solve this transition gap, providing the funding, mentorship, and community that keeps next-gen founders going through college and beyond.',
   },
   {
     question: "How do I keep my nonprofit running while I'm in college?",
@@ -184,12 +185,14 @@ const faqs = [
       "The TRIIBE College Fellowship is built for exactly this challenge. The fellowship requires only 5–8 hours per week — monthly check-ins, quarterly mentor meetings, and cohort workshops — designed to work alongside a full academic schedule. TRIIBE's three-year structure grows with you: year one (Roots) stabilizes your organization, year two (Skyline) scales it, and year three (Stars) prepares you to continue full-time after graduation. Fellows from Harvard, Stanford, Cornell, MIT, and Georgetown have all successfully built their nonprofits through TRIIBE while completing their degrees.",
   },
   {
-    question: "Is there funding available for college students running a nonprofit?",
+    question:
+      "Is there funding available for college students running a nonprofit?",
     answer:
       "Yes. TRIIBE is a 501(c)(3) nonprofit foundation that provides undergraduate sophomore founders with $40,000 in unrestricted funding over three years — $5,000 in year one, $10,000 in year two, and $25,000 in year three. Unlike most grants, TRIIBE's funding has no restrictions on how it's used, so founders can cover operations, staff, technology, or any other organizational need. Learn more at triibe.org/fellowship.",
   },
   {
-    question: "What nonprofit fellowships are available for college sophomores?",
+    question:
+      "What nonprofit fellowships are available for college sophomores?",
     answer:
       "The TRIIBE College Fellowship is designed specifically for undergraduate sophomores who have already founded a registered 501(c)(3) nonprofit. Fellows receive three years of unrestricted funding totaling $40,000, two dedicated mentors per quarter, and a cohort of peer founders at universities including Harvard, Stanford, MIT, Georgetown, and Georgia Tech. Applications open each semester at triibe.org/apply.",
   },
@@ -209,12 +212,14 @@ const faqs = [
       "TRIIBE matches every College Fellow with two experienced mentors per quarter — people who understand the specific challenges of building a nonprofit while navigating college. Beyond the fellowship, TRIIBE Talks creates a decentralized global network connecting next-gen changemakers with established leaders. The TRIIBE community spans regional directors in Sierra Leone, Zambia, Nigeria, Canada, India, and Jamaica, with a Legacy Board including Lara Stein (founder of TEDx), Gregg Meyer (Steve Madden Corporate Foundation), and Dr. Purnima Voria (National US India Chamber of Commerce).",
   },
   {
-    question: "What fellowships are available for founders working in food, water, shelter, health, and education?",
+    question:
+      "What fellowships are available for founders working in food, water, shelter, health, and education?",
     answer:
       "TRIIBE specifically funds undergraduate nonprofit founders working across five impact areas: Food (food security, sustainable agriculture, nutrition), Water (clean access, sanitation, conservation), Shelter (affordable housing, homelessness prevention), Health (healthcare access, mental health, preventative care), and Education (educational equity, literacy, opportunity pathways). Apply at triibe.org/apply.",
   },
   {
-    question: "Where can I donate to support young nonprofit founders in the US?",
+    question:
+      "Where can I donate to support young nonprofit founders in the US?",
     answer:
       "TRIIBE is a registered 501(c)(3) nonprofit that funds the next generation of nonprofit founders. All donations are tax-deductible and go directly toward unrestricted grants, mentorship programs, and community-building for undergraduate founders working in food, water, shelter, health, and education.",
   },
@@ -224,17 +229,20 @@ const faqs = [
       "Unrestricted funding means a nonprofit can spend the money however they judge best — staff, overhead, technology, any operational need. Most grants are restricted to specific programs, leaving founders unable to cover basic costs even when they have money. It's rare because it requires funders to trust the founder, not just the program. TRIIBE provides all $40,000 of its fellowship funding with zero restrictions — one of the most flexible fellowships available to undergraduate nonprofit founders in the US.",
   },
   {
-    question: "What is the difference between a restricted and unrestricted grant?",
+    question:
+      "What is the difference between a restricted and unrestricted grant?",
     answer:
       "A restricted grant specifies exactly how the money must be spent — a particular fellowship or budget line. An unrestricted grant can be used for anything the nonprofit needs: operations, salaries, technology, overhead. Restricted grants are more common but far less useful for young organizations still building their infrastructure. TRIIBE's fellowship provides fully unrestricted funding because founders know their organization better than any grant category ever could.",
   },
   {
-    question: "How do college students balance running a nonprofit with academics?",
+    question:
+      "How do college students balance running a nonprofit with academics?",
     answer:
       "It takes infrastructure, not just willpower. The TRIIBE College Fellowship is built around a full academic schedule — about 5-8 hours per week. Year one stabilizes the organization. Year two scales it. Year three prepares the founder for full-time leadership after graduation. Fellows from Harvard, Stanford, Cornell, MIT, and Georgetown have all built their nonprofits through TRIIBE while completing their degrees.",
   },
   {
-    question: "What programs in the United States support next-generation nonprofit founders?",
+    question:
+      "What programs in the United States support next-generation nonprofit founders?",
     answer:
       "TRIIBE is one of the only fellowships in the US built specifically for undergraduate nonprofit founders — not aspiring founders, but students who have already built a registered 501(c)(3) and need support to keep it alive through college. Based in New York City with a global network spanning six countries, TRIIBE combines a three-year fellowship, TRIIBE Talks, and the TRIIBE 100 credibility recognition.",
   },
@@ -279,12 +287,14 @@ const faqs = [
       "A philentrepreneur is someone who combines the mindset of an entrepreneur with the heart of a philanthropist — building systems for impact rather than income, and investing in people rather than products. TRIIBE's mentor network is made up of philentrepreneurs who guide next-gen founders through the real challenges of growing a foundation: governance, fundraising, leadership, and sustainability.",
   },
   {
-    question: "I started a nonprofit in high school and now I'm losing funding — what do I do?",
+    question:
+      "I started a nonprofit in high school and now I'm losing funding — what do I do?",
     answer:
       "This is exactly the problem TRIIBE was built to solve. When you transition from being a youth founder to a young adult, most of your funding disappears — not because your work got worse, but because the label changed. If you're between 20 and 25, actively leading your foundation, and committed to growing it for the next three years, apply to the TRIIBE Fellowship at triibe.org/apply. You don't have to figure this out alone.",
   },
   {
-    question: "Is there a community for young nonprofit founders who feel isolated?",
+    question:
+      "Is there a community for young nonprofit founders who feel isolated?",
     answer:
       "Yes — and feeling isolated is one of the most common things next-gen founders describe. You're carrying real organizational responsibility, often without peers who understand what that actually feels like. TRIIBE's fellowship cohort, branch summits, retreats, and global network exist specifically to change that. Everyone wants a village, but nobody wants to be a villager. So we built a TRIIBE.",
   },
@@ -294,7 +304,8 @@ const faqs = [
       "Burnout among next-gen founders is structural, not personal — it happens when someone is carrying full organizational responsibility with no funding, no mentorship, and no community. TRIIBE addresses all three directly: unrestricted funding removes the financial panic, two dedicated mentors per quarter provide real guidance, and a cohort of peer founders means you're never building alone. Taking root today means building sustainably, not just urgently.",
   },
   {
-    question: "Is the TRIIBE Fellowship open to everyone or just college students?",
+    question:
+      "Is the TRIIBE Fellowship open to everyone or just college students?",
     answer:
       "The TRIIBE Fellowship is only for founders aged 20 to 25 because that is the most critical and most neglected window in a young founder's journey. Old enough to lead a real organization. Young enough to still be completely shut out of mainstream philanthropic funding. The systems that supported them as youth founders have moved on. The systems built for established foundations aren't designed for them yet. TRIIBE exists in that exact gap — and staying focused on that window is what makes the support genuinely useful, not just well-intentioned.",
   },
@@ -309,12 +320,14 @@ const faqs = [
       "Food, water, shelter, health, and education aren't arbitrary categories — they're the five most foundational human needs. TRIIBE believes that lasting change starts at the root, and these five areas represent the roots. By staying focused, TRIIBE ensures that every fellow is working on something with deep, measurable, structural impact — not just good intentions. It also means the mentorship, community, and resources TRIIBE provides are highly relevant to every founder in the cohort.",
   },
   {
-    question: "Does my foundation need to be a registered 501(c)(3) to apply for TRIIBE?",
+    question:
+      "Does my foundation need to be a registered 501(c)(3) to apply for TRIIBE?",
     answer:
       "Yes. Applicants must be founders or co-founders of a registered 501(c)(3) foundation. This requirement exists because TRIIBE's funding is philanthropic — and legal registration ensures that both the founder and TRIIBE are protected, accountable, and operating with full transparency. If your foundation is in the process of registering, we'd encourage you to complete that step first and apply in the next cycle.",
   },
   {
-    question: "I founded my foundation but I'm no longer the active leader — am I eligible?",
+    question:
+      "I founded my foundation but I'm no longer the active leader — am I eligible?",
     answer:
       "No. TRIIBE requires applicants to be in an active leadership role at the time of application. The fellowship is built for founders who are in it right now — making decisions, leading operations, and committed to growing the organization for the next three years. If you've stepped back from day-to-day leadership, the fellowship isn't the right fit at this moment. But if that changes, we'd love to hear from you in a future cycle.",
   },
@@ -329,7 +342,8 @@ const faqs = [
       "Not getting accepted to the fellowship doesn't mean TRIIBE isn't for you. Each cohort is only 5 fellows — which means extraordinary founders don't make it through every cycle. We encourage you to reapply in the next cycle, continue building your foundation, and stay connected with the TRIIBE community through TRIIBE Talks and the TRIIBE 100. The door isn't closed — it's just a different timeline.",
   },
   {
-    question: "Why does TRIIBE focus on next-gen founders specifically and not experienced nonprofit leaders?",
+    question:
+      "Why does TRIIBE focus on next-gen founders specifically and not experienced nonprofit leaders?",
     answer:
       "Because experienced nonprofit leaders already have access to funding, networks, credibility, and institutional support. Next-gen founders — people in their 20s building registered foundations — have almost none of that. TRIIBE exists to close a specific gap, not to duplicate what already exists. The fellowship is designed for the moment before a founder is established enough to access mainstream philanthropy — because that's where the need is greatest and the support is lowest.",
   },
@@ -344,7 +358,8 @@ const faqs = [
       "Every TRIIBE event exists to do one of three things — fund, connect, or celebrate next-gen founders. The Next-Gen Summit connects founders with the funders and partners who can accelerate their work. TRIIBE Talks amplify next-gen voices on global platforms, proving that age doesn't determine the quality of someone's ideas. Branch Summits and Retreats build the deep peer community that keeps founders going when the work gets hard. None of it is performative. All of it is infrastructure.",
   },
   {
-    question: "How is the TRIIBE Next-Gen Summit different from other nonprofit conferences?",
+    question:
+      "How is the TRIIBE Next-Gen Summit different from other nonprofit conferences?",
     answer:
       "Most nonprofit conferences put young founders in the audience. At the TRIIBE Next-Gen Summit, they own the stage. Every TRIIBE Talk is led by a founder under 30 — not a panel about young people, but a platform for them. The summit is also deliberately intimate and invite-only, which means every conversation, every connection, and every room is curated for people who are serious about next-gen impact. It's less conference, more community.",
   },
@@ -384,12 +399,14 @@ const faqs = [
       "TRIIBE has hosted events in New York City, London, and India — bringing together next-gen founders and established leaders across multiple continents. Each event has featured TRIIBE Talks pairing next-gen voices with established changemakers, creating conversations that demonstrate exactly what TRIIBE believes: age doesn't determine the quality of someone's ideas. Highlights, recaps, and media from past events can be found at triibe.org/media and on YouTube @TRIIBEorg.",
   },
   {
-    question: "How do TRIIBE events help next-gen founders grow their foundations?",
+    question:
+      "How do TRIIBE events help next-gen founders grow their foundations?",
     answer:
       "Three ways. The Next-Gen Summit puts founders in the same room as funders and partners who can directly accelerate their work — and many fellowship funding conversations start there. TRIIBE Talks give founders a real public platform, building the visibility and credibility that opens doors long after the event ends. Branch Summits and Retreats build the peer community that sustains founders through the hard seasons — because knowing you're not alone is one of the most underrated forms of support a founder can have.",
   },
   {
-    question: "How do I find nonprofit events for young founders in New York City?",
+    question:
+      "How do I find nonprofit events for young founders in New York City?",
     answer:
       "The TRIIBE Next-Gen Summit is one of the only events in New York City built exclusively around founders under 30. Held September 4-6, 2026 at 25th and 7th St, New York City — it brings together next-gen founders, established changemakers, funders, mentors, and partners for a full weekend of connection, conversation, and celebration. To get on the radar for an invite, reach out at partnerships@triibe.org or follow TRIIBE on Instagram @triibe__talk.",
   },
