@@ -25,7 +25,7 @@ const programSections = [
     ],
     button: {
       label: "TRIIBE Index",
-      link: "/index",
+      link: "/triibeindex",
     },
     bgColor: "bg-[#002c19]",
     textColor: "text-[#fffefee6]",
@@ -51,7 +51,7 @@ const programSections = [
       },
       {
         label: "TRIIBE I00",
-        link: "/100",
+        link: "/triibe100",
         text: "The TRIIBE I00 is the definitive list of next-gen nonprofit founders under 30 to know.",
       },
     ],

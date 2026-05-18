@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "The TRIIBE Index is a dataset of the nonprofit sector built from direct input by the people working in it.",
   alternates: {
-    canonical: "https://www.triibe.org/index",
+    canonical: "https://www.triibe.org/triibeindex",
   },
 };
 
