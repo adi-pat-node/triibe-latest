@@ -25,7 +25,7 @@ const programSections = [
     ],
     button: {
       label: "TRIIBE Index",
-      link: "/triibeindex",
+      link: "/index",
     },
     bgColor: "bg-[#002c19]",
     textColor: "text-[#fffefee6]",

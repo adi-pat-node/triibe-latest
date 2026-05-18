@@ -25,6 +25,28 @@ const nextConfig = {
         destination: "/talk",
         permanent: true,
       },
+      {
+        source: "/triibeindex",
+        destination: "/index",
+        permanent: true,
+      },
+      {
+        source: "/triibeindex/:path*",
+        destination: "/index/:path*",
+        permanent: true,
+      },
+    ];
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/index",
+        destination: "/triibeindex",
+      },
+      {
+        source: "/index/:path*",
+        destination: "/triibeindex/:path*",
+      },
     ];
   },
   images: {

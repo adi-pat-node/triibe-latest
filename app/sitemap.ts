@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/triibeindex`,
+      url: `${baseUrl}/index`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.8,
