@@ -9,7 +9,7 @@ import Script from "next/script";
 const infoCards = [
   {
     description:
-      "The TRIIBE Index is the dataset of the nonprofit sector built from direct input by the people working in it: founders, directors, board members, staff, and volunteers, across all ages, roles, and stages.",
+      "The TRIIBE Index is the dataset of the nonprofit sector built from direct input by the people working in it: founders, directors, board members, staff, and volunteers, across all ages, roles, and stages",
     buttonText: "Take the survey",
     buttonLink: "#survey",
   },
