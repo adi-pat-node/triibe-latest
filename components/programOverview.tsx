@@ -25,7 +25,7 @@ const programSections = [
     ],
     button: {
       label: "TRIIBE Index",
-      link: "/triibeindex",
+      link: "/index",
     },
     bgColor: "bg-[#002c19]",
     textColor: "text-[#fffefee6]",
@@ -51,7 +51,7 @@ const programSections = [
       },
       {
         label: "TRIIBE I00",
-        link: "/triibe100",
+        link: "/100",
         text: "The TRIIBE I00 is the definitive list of next-gen nonprofit founders under 30 to know.",
       },
     ],
@@ -107,7 +107,7 @@ export default function ProgramOverview() {
                             <div className="w-[160px] flex-shrink-0">
                               <Link
                                 href={item.link}
-                                className="block w-full text-center px-4 py-2 bg-white text-[#002c19] text-[13px] font-bold rounded-full whitespace-nowrap hover:bg-gray-100 transition-colors"
+                                className="block w-full text-center px-4 py-2 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
                               >
                                 {item.label}
                               </Link>
@@ -124,7 +124,7 @@ export default function ProgramOverview() {
                     <div className="mt-2">
                       <Link
                         href={section.button.link}
-                        className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-full whitespace-nowrap hover:bg-gray-100 transition-colors"
+                        className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
                       >
                         {section.button.label}
                       </Link>
@@ -152,17 +152,17 @@ export default function ProgramOverview() {
                           <p key={i}>{item}</p>
                         ) : (
                           <div key={i} className="flex flex-col gap-4">
-  <p>{item.text}</p>
+                            <p>{item.text}</p>
 
-  <div>
-    <Link
-      href={item.link}
-      className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-full whitespace-nowrap hover:bg-gray-100 transition-colors"
-    >
-      {item.label}
-    </Link>
-  </div>
-</div>
+                            <div>
+                              <Link
+                                href={item.link}
+                                className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
+                              >
+                                {item.label}
+                              </Link>
+                            </div>
+                          </div>
                         ),
                       )
                     ) : (

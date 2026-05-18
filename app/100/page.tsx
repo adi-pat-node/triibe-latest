@@ -1,7 +1,7 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import Hero from "@/components/triibe100/Hero";
-import ZoneSection from "@/components/triibe100/ZoneSection";
+import Hero from "@/components/100/Hero";
+import ZoneSection from "@/components/100/ZoneSection";
 import { zones } from "@/lib/triibe100/zones";
 import { founders } from "@/lib/triibe100/founders";
 
@@ -10,7 +10,7 @@ export const metadata = {
   description:
     "The definitive list of next-gen nonprofit founders under 30 to know.",
   alternates: {
-    canonical: "https://www.triibe.org/triibe100",
+    canonical: "https://www.triibe.org/100",
   },
 };
 

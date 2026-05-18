@@ -231,12 +231,12 @@ const IndexPage = () => {
 
       {/* Survey Section */}
       <section id="survey" className="py-12 px-4 md:px-12 lg:px-24 bg-white">
-        <div className="max-w-7xl mx-auto text-center mb-10">
+        {/* <div className="max-w-7xl mx-auto text-center mb-10">
           <p className="text-[#495565] text-lg max-w-3xl mx-auto leading-relaxed">
             Your experiences help shape a more transparent, informed, and
             collaborative nonprofit ecosystem.
           </p>
-        </div>
+        </div> */}
         <div className="max-w-7xl mx-auto">
           <iframe
             title="TRIIBE Index Survey"
@@ -289,10 +289,21 @@ const IndexPage = () => {
             Index Partners
           </h2>
 
-          <div className="bg-white rounded-3xl border border-gray-200 p-16">
-            <p className="text-[#495565] text-lg leading-relaxed max-w-2xl mx-auto">
-              Coming Soon...
-            </p>
+          <div className="bg-white rounded-3xl border border-gray-200 p-16 flex items-center justify-center">
+            <Link
+              href="https://www.unitedyc.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-transform hover:scale-105"
+            >
+              <Image
+                src="/images/home/unitedyouthcouncil.png"
+                alt="Index Partner"
+                width={260}
+                height={120}
+                className="object-contain"
+              />
+            </Link>
           </div>
         </div>
       </section>

@@ -33,7 +33,7 @@ export default function PostGraduationOutcomes() {
             Beyond the residence
           </h2>
           <p className=" font-normal text-[#495565] text-lg tracking-[0] leading-[29.2px]">
-            Fellows remain part of the fellowships for life
+            Fellows remain part of the fellowship for life
           </p>
         </div>
 
@@ -68,7 +68,7 @@ export default function PostGraduationOutcomes() {
             href="/fellowship"
             className="px-6 py-3 bg-[#1a5a4a] hover:bg-[#144539] text-white font-semibold rounded-lg transition-colors"
           >
-            Fellowships
+            Fellowship
           </a>
         </div>
       </div>

@@ -16,7 +16,7 @@ const footerColumns = [
     links: [
       { label: "Team", href: "/about" },
       { label: "Fellows", href: "/cohort" },
-      { label: "Privacy policy", href: "/triibeindex/privacy" },
+      { label: "Privacy policy", href: "/index/privacy" },
     ],
   },
   {
