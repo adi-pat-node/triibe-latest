@@ -33,7 +33,7 @@ export default function PostGraduationOutcomes() {
             Beyond the residence
           </h2>
           <p className=" font-normal text-[#495565] text-lg tracking-[0] leading-[29.2px]">
-            Fellows remain part of the fellowship for life
+            Fellows remain part of the fellowships for life
           </p>
         </div>
 

@@ -7,8 +7,8 @@ const programSections = [
   {
     title: "Why we do it",
     description: [
-      "Everyone wants a village, but nobody wants to be a villager. So we built a TRIIBE: the foundation funding next-gen nonprofit founders.",
-      "$83 trillion will transfer to the next generation over the next two decades. TRIIBE Fellows are the bench institutions need to deliver the return on impact.",
+      "TRIIBE is the foundation building out the nonprofit startup ecosystem, the bench institutions need to deliver return on impact.",
+      //"$83 trillion will transfer to the next generation over the next two decades. TRIIBE Fellows are the bench institutions need to deliver the return on impact.",
     ],
     bgColor: "bg-[#002c19]",
     textColor: "text-white",
@@ -19,11 +19,14 @@ const programSections = [
     imageObjectPosition: "object-center",
   },
   {
-    title: "What we do",
+    title: "Data-driven approach",
     description: [
-      "We are building out the nonprofit startup ecosystem, maximizing return on impact.",
-      "Through TRIIBE Talks, the TRIIBE Fellowship, and the TRIIBE I00, we back next-gen nonprofit founders with visibility, stability, and credibility.",
+      "We fund with data-driven precision, built by the people working in the nonprofit sector, across all ages, roles, and stages.",
     ],
+    button: {
+      label: "TRIIBE Index",
+      link: "/triibeindex",
+    },
     bgColor: "bg-[#002c19]",
     textColor: "text-[#fffefee6]",
     descriptionColor: "text-[#ffffffcc]",
@@ -37,14 +40,14 @@ const programSections = [
 
     description: [
       {
-        label: "TRIIBE Talks",
-        link: "/triibetalk",
-        text: "TRIIBE Talks highlight next-gen founders alongside established ones, because age doesn't determine the quality of a voice.",
-      },
-      {
         label: "TRIIBE Fellowship",
         link: "/fellowship",
         text: "The TRIIBE Fellowship ensures founders don’t burn out while transitioning from a “youth” nonprofit to an established one.",
+      },
+      {
+        label: "TRIIBE Talks",
+        link: "/triibetalk",
+        text: "TRIIBE Talks highlight next-gen founders alongside established ones, because age doesn't determine the quality of a voice.",
       },
       {
         label: "TRIIBE I00",
@@ -117,6 +120,16 @@ export default function ProgramOverview() {
                       <p>{section.description}</p>
                     )}
                   </div>
+                  {section.button && (
+                    <div className="mt-2">
+                      <Link
+                        href={section.button.link}
+                        className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-full whitespace-nowrap hover:bg-gray-100 transition-colors"
+                      >
+                        {section.button.label}
+                      </Link>
+                    </div>
+                  )}
                 </div>
               </div>
             </>
@@ -138,23 +151,34 @@ export default function ProgramOverview() {
                         typeof item === "string" ? (
                           <p key={i}>{item}</p>
                         ) : (
-                          <div key={i} className="flex items-center gap-6">
-                            <div className="w-[160px] flex-shrink-0">
-                              <Link
-                                href={item.link}
-                                className="block w-full text-center px-4 py-2 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
-                              >
-                                {item.label}
-                              </Link>
-                            </div>
-                            <p className="flex-1">{item.text}</p>
-                          </div>
+                          <div key={i} className="flex flex-col gap-4">
+  <p>{item.text}</p>
+
+  <div>
+    <Link
+      href={item.link}
+      className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-full whitespace-nowrap hover:bg-gray-100 transition-colors"
+    >
+      {item.label}
+    </Link>
+  </div>
+</div>
                         ),
                       )
                     ) : (
                       <p>{section.description}</p>
                     )}
                   </div>
+                  {section.button && (
+                    <div className="mt-2">
+                      <Link
+                        href={section.button.link}
+                        className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-full whitespace-nowrap hover:bg-gray-100 transition-colors"
+                      >
+                        {section.button.label}
+                      </Link>
+                    </div>
+                  )}
                 </div>
               </div>
 

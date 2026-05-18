@@ -33,11 +33,11 @@ export default function Header() {
         <div className="hidden xl:flex items-center gap-8">
           {[
             { name: "Home", href: "/" },
-            { name: "TRIIBE Talk", href: "/triibetalk" },
-            { name: "Fellowship", href: "/fellowship" },
-            { name: "TRIIBE I00", href: "/triibe100" },
-            { name: "Summit", href: "/summit" },
             { name: "TRIIBE Index", href: "/triibeindex" },
+            { name: "Fellowship", href: "/fellowship" },
+            { name: "TRIIBE Talk", href: "/triibetalk" },
+            { name: "Summit", href: "/summit" },
+            { name: "TRIIBE I00", href: "/triibe100" },
             { name: "About us", href: "/about" },
             // { name: "Contact Us", href: "/contact" },
           ].map((link) => (
@@ -97,11 +97,11 @@ export default function Header() {
         <div className="flex flex-col gap-1">
           {[
             { name: "Home", href: "/" },
-            { name: "TRIIBE Talk", href: "/triibetalk" },
-            { name: "Fellowship", href: "/fellowship" },
-            { name: "TRIIBE I00", href: "/triibe100" },
-            { name: "Summit", href: "/summit" },
             { name: "TRIIBE Index", href: "/triibeindex" },
+            { name: "Fellowship", href: "/fellowship" },
+            { name: "TRIIBE Talk", href: "/triibetalk" },
+            { name: "Summit", href: "/summit" },
+            { name: "TRIIBE I00", href: "/triibe100" },
             { name: "About us", href: "/about" },
             // { name: "Contact us", href: "/contact" },
           ].map((link) => (
