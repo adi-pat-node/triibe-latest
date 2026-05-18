@@ -290,7 +290,7 @@ const IndexPage = () => {
           </h2>
 
           <div className="bg-white rounded-3xl border border-gray-200 p-16 flex items-center justify-center">
-            <Link
+            {/* <Link
               href="https://www.unitedyc.org/"
               target="_blank"
               rel="noopener noreferrer"
@@ -303,7 +303,10 @@ const IndexPage = () => {
                 height={120}
                 className="object-contain"
               />
-            </Link>
+            </Link> */}
+            <p className="text-xl md:text-2xl font-medium text-gray-400 tracking-wide uppercase">
+              Coming Soon...
+            </p>
           </div>
         </div>
       </section>
