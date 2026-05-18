@@ -22,7 +22,7 @@ const nextConfig = {
       },
       {
         source: "/events",
-        destination: "/triibetalk",
+        destination: "/talk",
         permanent: true,
       },
     ];

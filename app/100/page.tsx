@@ -10,7 +10,7 @@ export const metadata = {
   description:
     "The definitive list of next-gen nonprofit founders under 30 to know.",
   alternates: {
-    canonical: "https://www.triibe.org/triibe100",
+    canonical: "https://www.triibe.org/100",
   },
 };
 

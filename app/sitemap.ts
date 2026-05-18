@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
-      url: `${baseUrl}/triibetalk`,
+      url: `${baseUrl}/talk`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.8,

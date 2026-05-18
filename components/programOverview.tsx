@@ -46,12 +46,12 @@ const programSections = [
       },
       {
         label: "TRIIBE Talks",
-        link: "/triibetalk",
+        link: "/talk",
         text: "TRIIBE Talks highlight next-gen founders alongside established ones, because age doesn't determine the quality of a voice.",
       },
       {
         label: "TRIIBE I00",
-        link: "/triibe100",
+        link: "/100",
         text: "The TRIIBE I00 is the definitive list of next-gen nonprofit founders under 30 to know.",
       },
     ],

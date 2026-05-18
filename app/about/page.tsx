@@ -1067,7 +1067,7 @@ const page = () => {
                   </p>
 
                   <Link
-                    href="/triibetalk"
+                    href="/talk"
                     className="inline-block px-5 py-3 bg-[#1a5a4a] hover:bg-[#144539] text-white text-[13px] font-bold rounded-lg whitespace-nowrap transition-colors"
                   >
                     TRIIBE Talks
@@ -1081,7 +1081,7 @@ const page = () => {
                   </p>
 
                   <Link
-                    href="/triibe100"
+                    href="/100"
                     className="inline-block px-5 py-3 bg-[#1a5a4a] hover:bg-[#144539] text-white text-[13px] font-bold rounded-lg whitespace-nowrap transition-colors"
                   >
                     TRIIBE I00

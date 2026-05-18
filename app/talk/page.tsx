@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Join talks for next-gen changemakers featuring workshops, discussions, and insights from leaders empowering the next generation.",
   alternates: {
-    canonical: "https://www.triibe.org/triibetalk",
+    canonical: "https://www.triibe.org/talk",
   },
 };
 

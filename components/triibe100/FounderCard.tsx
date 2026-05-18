@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import type { Founder } from "@/lib/triibe100/founders";
+import type { Founder } from "@/lib/founders";
 
 export default function FounderCard({ founder }: { founder: Founder }) {
   const ref = useRef<HTMLDivElement>(null);

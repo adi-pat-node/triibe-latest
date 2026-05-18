@@ -35,9 +35,9 @@ export default function Header() {
             { name: "Home", href: "/" },
             { name: "TRIIBE Index", href: "/triibeindex" },
             { name: "Fellowship", href: "/fellowship" },
-            { name: "TRIIBE Talk", href: "/triibetalk" },
+            { name: "TRIIBE Talk", href: "/talk" },
             { name: "Summit", href: "/summit" },
-            { name: "TRIIBE I00", href: "/triibe100" },
+            { name: "TRIIBE I00", href: "/100" },
             { name: "About us", href: "/about" },
             // { name: "Contact Us", href: "/contact" },
           ].map((link) => (
@@ -99,9 +99,9 @@ export default function Header() {
             { name: "Home", href: "/" },
             { name: "TRIIBE Index", href: "/triibeindex" },
             { name: "Fellowship", href: "/fellowship" },
-            { name: "TRIIBE Talk", href: "/triibetalk" },
+            { name: "TRIIBE Talk", href: "/talk" },
             { name: "Summit", href: "/summit" },
-            { name: "TRIIBE I00", href: "/triibe100" },
+            { name: "TRIIBE I00", href: "/100" },
             { name: "About us", href: "/about" },
             // { name: "Contact us", href: "/contact" },
           ].map((link) => (

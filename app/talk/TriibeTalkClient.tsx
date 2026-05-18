@@ -191,7 +191,7 @@ const EventsPage = () => {
                 </a>
 
                 <a
-                  href="/triibetalk/host"
+                  href="/talk/host"
                   className="h-9 px-4 py-2 bg-[#1C5945] text-white border border-green rounded font-medium hover:bg-[#003d24] transition-colors font-medium inline-flex items-center cursor-pointer"
                 >
                   Host a TRIIBE Talk
