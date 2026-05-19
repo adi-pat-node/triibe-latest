@@ -439,7 +439,7 @@ const SummitPage = () => {
   const scheduleDays = [
     {
       title: "Day 1, Friday September 11th",
-      
+
       badge: "VIP Gala",
       highlight: {
         image: "/images/summit/Curated1.png",
@@ -464,8 +464,7 @@ const SummitPage = () => {
         {
           time: "7:00 PM",
           title: "VIP opening ceremony",
-          description:
-            "keynote with gifts and sushi show",
+          description: "keynote with gifts and sushi show",
         },
         {
           time: "8:15 PM",
@@ -476,7 +475,7 @@ const SummitPage = () => {
     },
     {
       title: "Day 2, Saturday September 12th",
-      
+
       badge: "Summit Day",
       highlight: {
         image: "/images/summit/fashion-show5.jpg",
@@ -577,7 +576,8 @@ const SummitPage = () => {
     },
     {
       title: "Day 3, Sunday September 13th",
-      location: "Workshop by Alethos and recording session exclusively for TRIIBE Fellows, partners, select actors and artists",
+      location:
+        "Workshop by Alethos and recording session exclusively for TRIIBE Fellows, partners, select actors and artists",
       badge: "",
       highlight: null,
       items: [],
@@ -596,10 +596,10 @@ const SummitPage = () => {
               About the summit
             </h2>
             <p className="text-black text-base leading-relaxed">
-              TRIIBE Next-Gen Summit is where the TRIIBE comes
-              together. Next-gen founders, established voices, foundations,
-              funders, mentors, and partners gather for a weekend designed to
-              celebrate those prioritizing a return on impact, not income.
+              TRIIBE Next-Gen Summit is where the TRIIBE comes together.
+              Next-gen founders, established voices, foundations, funders,
+              mentors, and partners gather for a weekend designed to celebrate
+              those prioritizing a return on impact, not income.
               <br />
               <br />A VIP Gala on Friday evening. A full-day summit on Saturday.
               One weekend to recognize the bench of operators future leaders and
@@ -799,7 +799,11 @@ const SummitPage = () => {
             {speakers.map((speaker, i) => (
               <a
                 key={i}
-                href={speaker.instagram && speaker.instagram !== "#" ? speaker.instagram : speaker.linkedin}
+                href={
+                  speaker.instagram && speaker.instagram !== "#"
+                    ? speaker.instagram
+                    : speaker.linkedin
+                }
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow w-full max-w-[260px]"
@@ -812,50 +816,47 @@ const SummitPage = () => {
                     className="object-cover object-top"
                   />
 
-                {(speaker.tag === "Next-Gen" ||
-                  speaker.tag === "Established" ||
-                  speaker.tag === "Moderator" ||
-                  speaker.tag === "MC") && (
-                  <span
-    className={`absolute top-0 left-0 text-xs font-semibold px-3 py-1 rounded-br-xl ${
-      speaker.tag === "Established"
-        ? "bg-black text-white"
-        : speaker.tag === "Moderator"
-        ? "bg-gray-200 text-gray-600" 
-        : "bg-[#D8EFE4] text-[#1C5945]" 
-    }`}
-  >
-    {speaker.tag}
-  </span>
-                )}
+                  {(speaker.tag === "Next-Gen" ||
+                    speaker.tag === "Established" ||
+                    speaker.tag === "Moderator" ||
+                    speaker.tag === "MC") && (
+                    <span
+                      className={`absolute top-0 left-0 text-xs font-semibold px-3 py-1 rounded-br-xl ${
+                        speaker.tag === "Established"
+                          ? "bg-black text-white"
+                          : speaker.tag === "Moderator"
+                            ? "bg-gray-200 text-gray-600"
+                            : "bg-[#D8EFE4] text-[#1C5945]"
+                      }`}
+                    >
+                      {speaker.tag}
+                    </span>
+                  )}
                 </div>
 
                 <div className="p-4 flex flex-col gap-2">
-                <div className="flex items-center justify-between">
-               <p className="font-semibold text-black text-sm">
-                 {speaker.name}
-               </p>
+                  {/* REVERSED: Left-aligned flex layout containing the icon and name */}
+                  <div className="flex items-center gap-2">
+                    {speaker.linkedin !== "#" &&
+                      (!speaker.instagram || speaker.instagram === "#") && (
+                        <svg
+                          className="w-4 h-4 flex-shrink-0"
+                          viewBox="0 0 24 24"
+                          fill="#0A66C2"
+                        >
+                          <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" />
+                        </svg>
+                      )}
 
-               {/*
-                 Show the LinkedIn icon ONLY if:
-                 1. They have a valid LinkedIn link ("#").
-                 2. AND they do NOT have an Instagram link provided.
-               */}
-               {speaker.linkedin !== "#" && (!speaker.instagram || speaker.instagram === "#") && (
-                 <svg
-                   className="w-4 h-4"
-                   viewBox="0 0 24 24"
-                  fill="#0A66C2"
-                >
-                  <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" />
-                </svg>
-              )}
-            </div>
+                    <p className="font-semibold text-black text-sm tracking-tight truncate">
+                      {speaker.name}
+                    </p>
+                  </div>
 
-            <p className="text-xs text-[#495565] leading-tight">
-              {speaker.title}
-            </p>
-          </div>
+                  <p className="text-xs text-[#495565] leading-tight">
+                    {speaker.title}
+                  </p>
+                </div>
               </a>
             ))}
           </div>
@@ -992,17 +993,14 @@ const SummitPage = () => {
 
           <div className="w-full">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            {/* BOX 1 */}
-            <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm flex flex-col gap-5 h-full">
-    
-              <div className="flex flex-col gap-1">
-                <h3 className="text-2xl font-bold text-black">
-                  VIP Pass
-                </h3>
+              {/* BOX 1 */}
+              <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm flex flex-col gap-5 h-full">
+                <div className="flex flex-col gap-1">
+                  <h3 className="text-2xl font-bold text-black">VIP Pass</h3>
 
-                <p className="text-base font-medium text-[#495565]">
-                  Includes:
-                </p>
+                  <p className="text-base font-medium text-[#495565]">
+                    Includes:
+                  </p>
                 </div>
 
                 <ul className="flex flex-col gap-4 text-black text-base leading-relaxed list-disc pl-5">
@@ -1010,13 +1008,11 @@ const SummitPage = () => {
                     Friday gala dinner featuring a live tuna carving show,
                     opening ceremony, cocktail reception, and jazz performance.
                   </li>
-
                 </ul>
               </div>
 
               {/* BOX 2 */}
               <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm flex flex-col gap-5 h-full">
-    
                 <div className="flex flex-col gap-1">
                   <h3 className="text-2xl font-bold text-black">
                     Saturday Only
@@ -1028,21 +1024,18 @@ const SummitPage = () => {
                 </div>
 
                 <ul className="flex flex-col gap-4 text-black text-base leading-relaxed list-disc pl-5">
-                  
                   <li>
-                    Saturday includes 7 TRIIBE Talks, the fashion show,
-                    supercar showcase, and closing reception.
+                    Saturday includes 7 TRIIBE Talks, the fashion show, supercar
+                    showcase, and closing reception.
                   </li>
 
-                  
                   <li>
-                    Next-Gen passes are reserved for active nonprofit founders, co-founders,
-                     and staff members under the age of 30.
+                    Next-Gen passes are reserved for active nonprofit founders,
+                    co-founders, and staff members under the age of 30.
                   </li>
                 </ul>
               </div>
-                </div>
-
+            </div>
 
             <div className="bg-white border border-gray-200 rounded-xl p-4 flex flex-col gap-3 text-center">
               <p className="font-semibold text-black">
