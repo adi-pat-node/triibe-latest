@@ -371,6 +371,13 @@ const SummitPage = () => {
       tag: "Moderator",
     },
     {
+      name: "Zoya Kalinsky",
+      title: "Founder, UnitEd Youth Counsil",
+      image: "/images/summit/ZoyaKalinsky.png",
+      instagram: "https://www.instagram.com/zoyakalinsky/",
+      tag: "Moderator",
+    },
+    {
       name: "Chirag Nijjer",
       title: "Brand Historian for Google and the History Channel",
       image: "/images/summit/Chirag Nijjer.png",
@@ -418,6 +425,13 @@ const SummitPage = () => {
       title: "Co-founder, Avita House",
       image: "/images/summit/HollandHaiis.png",
       linkedin: "https://www.linkedin.com/in/hollandhaiis/",
+      tag: "Established",
+    },
+    {
+      name: "Griffin Pinkow",
+      title: "CEO and Founder, Foreseeable Future Foundation",
+      image: "/images/summit/GriffinPinkow.png",
+      linkedin: "https://www.linkedin.com/in/gpinkow/",
       tag: "Established",
     },
   ];
