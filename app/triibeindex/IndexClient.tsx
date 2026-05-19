@@ -283,13 +283,13 @@ const IndexPage = () => {
       </section>
 
       {/* Index Partners */}
-      <section className="py-20 px-4 md:px-12 lg:px-24 bg-[#3036411A]">
+     {/*  <section className="py-20 px-4 md:px-12 lg:px-24 bg-[#3036411A]">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-8">
             Index Partners
           </h2>
 
-          <div className="bg-white rounded-3xl border border-gray-200 p-16 flex items-center justify-center">
+          <div className="bg-white rounded-3xl border border-gray-200 p-16 flex items-center justify-center"> */}
             {/* <Link
               href="https://www.unitedyc.org/"
               target="_blank"
@@ -304,12 +304,12 @@ const IndexPage = () => {
                 className="object-contain"
               />
             </Link> */}
-            <p className="text-xl md:text-2xl font-medium text-gray-400 tracking-wide uppercase">
+           {/*  <p className="text-xl md:text-2xl font-medium text-gray-400 tracking-wide uppercase">
               Coming Soon...
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Script
         src="https://logictry.com/js/connect/v1.js"
