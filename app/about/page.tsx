@@ -1046,9 +1046,7 @@ const page = () => {
               <div className="space-y-8">
                 <div>
                   <p className="font-normal text-black/75 text-lg leading-relaxed mb-4">
-                    The TRIIBE Fellowship ensures founders don’t burn out while
-                    transitioning from a “youth” nonprofit to an established
-                    one.
+                    Our 3-year Fellowship ensures founders don't burn out while transitioning from a 'youth' nonprofit to an established one
                   </p>
 
                   <Link
@@ -1061,9 +1059,7 @@ const page = () => {
 
                 <div>
                   <p className="font-normal text-black/75 text-lg leading-relaxed mb-4">
-                    TRIIBE Talks highlight next-gen founders alongside
-                    established ones, because age doesn't determine the quality
-                    of a voice.
+                    TRIIBE Talks highlight next-gen nonprofit founders alongside peers over 30, because age doesn't determine the quality of a voice
                   </p>
 
                   <Link
@@ -1076,8 +1072,8 @@ const page = () => {
 
                 <div>
                   <p className="font-normal text-black/75 text-lg leading-relaxed mb-4">
-                    The TRIIBE I00 is the definitive list of next-gen nonprofit
-                    founders under 30 to know.
+                    The TRIIBE I00 is the definitive global list of nonprofit founders under 30 to know
+
                   </p>
 
                   <Link

@@ -7,7 +7,7 @@ const programSections = [
   {
     title: "Why we do it",
     description: [
-      "TRIIBE is the foundation building out the nonprofit startup ecosystem, the bench institutions need to deliver return on impact.",
+      "Even successful nonprofit founders are cut off from funding by 20",
       //"$83 trillion will transfer to the next generation over the next two decades. TRIIBE Fellows are the bench institutions need to deliver the return on impact.",
     ],
     bgColor: "bg-[#002c19]",
@@ -21,7 +21,7 @@ const programSections = [
   {
     title: "Data-driven approach",
     description: [
-      "We fund with data-driven precision, built by the people working in the nonprofit sector, across all ages, roles, and stages.",
+      "The TRIIBE Index is the dataset helping us and our partners fund with data-driven precision, built by those in the nonprofit sector, across all ages, roles, and stages",
     ],
     button: {
       label: "TRIIBE Index",
@@ -42,17 +42,17 @@ const programSections = [
       {
         label: "TRIIBE Fellowship",
         link: "/fellowship",
-        text: "The TRIIBE Fellowship ensures founders don’t burn out while transitioning from a “youth” nonprofit to an established one.",
+        text: "Our 3-year Fellowship ensures founders don't burn out while transitioning from a 'youth' nonprofit to an established one",
       },
       {
         label: "TRIIBE Talks",
         link: "/talk",
-        text: "TRIIBE Talks highlight next-gen founders alongside established ones, because age doesn't determine the quality of a voice.",
+        text: "TRIIBE Talks highlight next-gen nonprofit founders alongside peers over 30, because age doesn't determine the quality of a voice",
       },
       {
         label: "TRIIBE I00",
         link: "/100",
-        text: "The TRIIBE I00 is the definitive list of next-gen nonprofit founders under 30 to know.",
+        text: "The TRIIBE I00 is the definitive global list of nonprofit founders under 30 to know",
       },
     ],
     bgColor: "bg-[#002c19]",

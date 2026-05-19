@@ -10,13 +10,13 @@ import Script from "next/script";
 const infoCards = [
   {
     description:
-      "The TRIIBE Index is the dataset of the nonprofit sector built from direct input by founders, directors, board members, staff, and volunteers across all ages, roles, and stages.",
+      "The TRIIBE Index is the dataset helping us and our partners fund with data-driven precision, built by those in the nonprofit sector, across all ages, roles, and stages.",
     buttonText: "Take the survey",
     buttonLink: "#survey",
   },
   {
     description:
-      "$83 trillion will transfer between generations over the next two decades. Using the TRIIBE Index, we offer data-driven advisory and consultancy work so other funders, foundations, and donor-advised funds can deploy with the same precision.",
+      "$83 trillion will transfer between generations over the next two decades. We offer data-driven advisory and consultancy support so other funders, foundations, and donor-advised funds can deploy with the same precision.",
     buttonText: "Access our insights",
     buttonLink:
       "mailto:partnerships@triibe.org?subject=TRIIBE%20Index%20Advisory%20Interest",
