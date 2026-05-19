@@ -817,14 +817,16 @@ const SummitPage = () => {
                   speaker.tag === "Moderator" ||
                   speaker.tag === "MC") && (
                   <span
-                    className={`absolute -top-0.5 -left-0.5 text-xs font-medium px-3 py-1 rounded-br-xl ${
-                      speaker.tag === "Established"
-                        ? "bg-black text-white"
-                        : "bg-[#D8EFE4] text-[#1C5945]"
-                    }`}
-                  >
-                    {speaker.tag}
-                  </span>
+    className={`absolute top-0 left-0 text-xs font-semibold px-3 py-1 rounded-br-xl ${
+      speaker.tag === "Established"
+        ? "bg-black text-white"
+        : speaker.tag === "Moderator"
+        ? "bg-gray-200 text-gray-600" 
+        : "bg-[#D8EFE4] text-[#1C5945]" 
+    }`}
+  >
+    {speaker.tag}
+  </span>
                 )}
                 </div>
 
