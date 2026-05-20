@@ -476,7 +476,7 @@ const SummitPage = () => {
     {
       title: "Day 2, Saturday September 12th",
 
-      badge: "Summit Day",
+      badge: "Forum",
       highlight: {
         image: "/images/summit/fashion-show5.jpg",
         label: "SATURDAY · MIDDAY INTERLUDE",
@@ -578,7 +578,7 @@ const SummitPage = () => {
       title: "Day 3, Sunday September 13th",
       location:
         "Workshop by Alethos and recording session exclusively for TRIIBE Fellows, partners, select actors and artists",
-      badge: "",
+      badge: "Workshop",
       highlight: null,
       items: [],
     },
@@ -596,14 +596,13 @@ const SummitPage = () => {
               About the summit
             </h2>
             <p className="text-black text-base leading-relaxed">
-              TRIIBE Next-Gen Summit is where the TRIIBE comes together.
-              Next-gen founders, established voices, foundations, funders,
-              mentors, and partners gather for a weekend designed to celebrate
-              those prioritizing a return on impact, not income.
+              Friday's VIP Gala is a 300-guest dinner featuring Michelin-starred celebrity sushi chefs performing two live tuna carvings, a keynote, and a live auction.
               <br />
-              <br />A VIP Gala on Friday evening. A full-day summit on Saturday.
-              One weekend to recognize the bench of operators future leaders and
-              institutions need to deliver a return on impact.
+              <br />Saturday's Forum for 500 is a full day featuring seven TRIIBE Talks pairing our Fellows with peers over 30, a supercar street takeover, and a fashion show.
+              <br />
+              <br />Sunday’s cohort-only workshop pairs our founders with guest artists and musicians for media training with Alethos, followed by a Michelin-starred lunch to close the Summit.
+              <br />
+              <br />Documentaries on each nonprofit and the TRIIBE Anthem music video, recorded in TRIIBE fashion by five musicians over 30 and five under 30, release in November two weeks before Giving Tuesday.
             </p>
           </div>
 
