@@ -6,10 +6,8 @@ import Link from "next/link";
 const programSections = [
   {
     title: "Why we do it",
-    description: [
+    description:
       "Even successful nonprofit founders are cut off from funding by 20",
-      //"$83 trillion will transfer to the next generation over the next two decades. TRIIBE Fellows are the bench institutions need to deliver the return on impact.",
-    ],
     bgColor: "bg-[#002c19]",
     textColor: "text-white",
     descriptionColor: "text-[#ffffffcc]",
@@ -20,9 +18,8 @@ const programSections = [
   },
   {
     title: "Data-driven approach",
-    description: [
+    description:
       "The TRIIBE Index is the dataset helping us and our partners fund with data-driven precision, built by those in the nonprofit sector, across all ages, roles, and stages",
-    ],
     button: {
       label: "TRIIBE Index",
       link: "/index",
@@ -37,8 +34,8 @@ const programSections = [
   },
   {
     title: "How we do it",
-
-    description: [
+    description: "",
+    listItems: [
       {
         label: "TRIIBE Fellowship",
         link: "/fellowship",
@@ -61,14 +58,14 @@ const programSections = [
     imageUrl: "/images/home/whatWeDo4.jpg",
     imagePosition: "right",
     fontWeight: "font-bold",
-    imageObjectPosition: "object-center ",
+    imageObjectPosition: "object-center",
   },
 ];
 
 export default function ProgramOverview() {
   return (
     <section className="flex flex-col w-full items-start md:px-25 lg:px-50 pt-3">
-       <div className="w-full bg-white flex flex-col md:flex-row items-center justify-center py-12 px-10 gap-8 md:gap-10">
+      <div className="w-full bg-white flex flex-col md:flex-row items-center justify-center py-12 px-10 gap-8 md:gap-10">
         <div className="max-w-xl text-center md:text-left">
           <p className="text-gray-700 leading-relaxed text-lg">
             Independent member of the United World Leaders
@@ -85,93 +82,49 @@ export default function ProgramOverview() {
           />
         </div>
       </div>
-      {programSections.map((section, index) => (
-        <div key={index} className="grid grid-cols-1 md:grid-cols-2 md:h-490px">
-          {section.imagePosition === "left" ? (
-            <>
-              {/* Image Column */}
-              <div className="relative w-full h-[300px] md:h-full overflow-hidden order-2 md:order-1">
-                <Image
-                  src={section.imageUrl}
-                  alt={`${section.title} illustration`}
-                  fill
-                  className={
-                    section.imageObjectPosition || "object-cover object-center"
-                  }
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
 
-              {/* Text Column */}
-              <div
-                className={`${section.bgColor} flex items-center order-1 md:order-2`}
-              >
-                <div className="flex flex-col justify-center gap-6 px-5 md:px-8 lg:px-16 py-12 h-full">
-                  <h2
-                    className={`${section.textColor} ${section.fontWeight} text-xl md:text-[32px] leading-10`}
-                  >
-                    {section.title}
-                  </h2>
-                  <div
-                    className={`${section.descriptionColor} text-lg leading-[29.2px] flex flex-col gap-6`}
-                  >
-                    {Array.isArray(section.description) ? (
-                      section.description.map((item, i) =>
-                        typeof item === "string" ? (
-                          <p key={i}>{item}</p>
-                        ) : (
-                          <div key={i} className="flex items-center gap-6">
-                            <div className="w-[160px] flex-shrink-0">
-                              <Link
-                                href={item.link}
-                                className="block w-full text-center px-4 py-2 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
-                              >
-                                {item.label}
-                              </Link>
-                            </div>
-                            <p className="flex-1">{item.text}</p>
-                          </div>
-                        ),
-                      )
-                    ) : (
-                      <p>{section.description}</p>
-                    )}
-                  </div>
-                  {section.button && (
-                    <div className="mt-2">
-                      <Link
-                        href={section.button.link}
-                        className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
-                      >
-                        {section.button.label}
-                      </Link>
-                    </div>
-                  )}
+      <div className="w-full flex flex-col">
+        {programSections.map((section, index) => (
+          <div
+            key={index}
+            className="flex flex-col md:flex-row items-stretch w-full md:min-h-[490px]"
+          >
+            {section.imagePosition === "left" ? (
+              <>
+                <div className="relative w-full md:w-1/2 min-h-[300px] overflow-hidden order-2 md:order-1">
+                  <Image
+                    key={section.imageObjectPosition}
+                    src={section.imageUrl}
+                    alt={`${section.title} illustration`}
+                    fill
+                    className={`object-cover ${section.imageObjectPosition || "object-center"}`}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
-              </div>
-            </>
-          ) : (
-            <>
-              {/* Text Column */}
-              <div className={`${section.bgColor} flex items-center`}>
-                <div className="flex flex-col justify-center gap-6 px-5 md:px-8 lg:px-16 py-12 h-full">
-                  <h2
-                    className={`${section.textColor} ${section.fontWeight} text-[32px] leading-10 `}
-                  >
-                    {section.title}
-                  </h2>
-                  <div
-                    className={`${section.descriptionColor} text-lg leading-[29.2px] flex flex-col gap-6`}
-                  >
-                    {Array.isArray(section.description) ? (
-                      section.description.map((item, i) =>
-                        typeof item === "string" ? (
-                          <p key={i}>{item}</p>
-                        ) : (
-                          <div key={i} className="flex flex-col gap-4">
-                            <p>{item.text}</p>
 
-                            <div>
+                <div
+                  className={`${section.bgColor} flex items-center w-full md:w-1/2 order-1 md:order-2`}
+                >
+                  <div className="flex flex-col justify-center gap-6 px-5 md:px-8 lg:px-16 py-12 w-full h-full">
+                    <h2
+                      className={`${section.textColor} ${section.fontWeight} text-xl md:text-[32px] leading-10`}
+                    >
+                      {section.title}
+                    </h2>
+
+                    <div
+                      className={`${section.descriptionColor} text-lg leading-[29.2px] flex flex-col gap-6`}
+                    >
+                      {section.description && <p>{section.description}</p>}
+
+                      {section.listItems && (
+                        <div className="flex flex-col gap-8">
+                          {section.listItems.map((item, i) => (
+                            <div
+                              key={i}
+                              className="flex flex-col items-start gap-4"
+                            >
+                              <p>{item.text}</p>
                               <Link
                                 href={item.link}
                                 className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
@@ -179,40 +132,88 @@ export default function ProgramOverview() {
                                 {item.label}
                               </Link>
                             </div>
-                          </div>
-                        ),
-                      )
-                    ) : (
-                      <p>{section.description}</p>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+
+                    {section.button && (
+                      <div className="mt-4">
+                        <Link
+                          href={section.button.link}
+                          className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
+                        >
+                          {section.button.label}
+                        </Link>
+                      </div>
                     )}
                   </div>
-                  {section.button && (
-                    <div className="mt-2">
-                      <Link
-                        href={section.button.link}
-                        className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-full whitespace-nowrap hover:bg-gray-100 transition-colors"
-                      >
-                        {section.button.label}
-                      </Link>
-                    </div>
-                  )}
                 </div>
-              </div>
+              </>
+            ) : (
+              <>
+                <div
+                  className={`${section.bgColor} flex items-center w-full md:w-1/2`}
+                >
+                  <div className="flex flex-col justify-center  gap-6 px-5 md:px-8 lg:px-16 py-12 w-full h-full">
+                    <h2
+                      className={`${section.textColor} ${section.fontWeight} text-[32px] leading-10`}
+                    >
+                      {section.title}
+                    </h2>
 
-              {/* Image Column */}
-              <div className="relative w-full h-full min-h-[490px]">
-                <Image
-                  src={section.imageUrl}
-                  alt={`${section.title} illustration`}
-                  fill
-                  className={`object-cover ${section.imageObjectPosition || "object-center"}`}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-            </>
-          )}
-        </div>
-      ))}
+                    <div
+                      className={`${section.descriptionColor} text-lg leading-[29.2px] flex flex-col gap-6`}
+                    >
+                      {section.description && <p>{section.description}</p>}
+
+                      {section.listItems && (
+                        <div className="flex flex-col gap-8">
+                          {section.listItems.map((item, i) => (
+                            <div
+                              key={i}
+                              className="flex flex-col items-start gap-4"
+                            >
+                              <p>{item.text}</p>
+                              <Link
+                                href={item.link}
+                                className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
+                              >
+                                {item.label}
+                              </Link>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+
+                    {section.button && (
+                      <div className="mt-4">
+                        <Link
+                          href={section.button.link}
+                          className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
+                        >
+                          {section.button.label}
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                <div className="relative w-full md:w-1/2 min-h-[300px] overflow-hidden">
+                  <Image
+                    src={section.imageUrl}
+                    alt={`${section.title} illustration`}
+                    fill
+                    className={`object-cover ${section.imageObjectPosition || "object-center"}`}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+              </>
+            )}
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
