@@ -91,6 +91,15 @@ export default function Footer() {
             </div>
           </div>
 
+          <div className="w-full">
+            <p className="font-normal text-[#697282] text-xs md:text-sm tracking-[0] leading-5">
+              United World Leaders exercises no operational control over and
+              assumes no responsibility for the activities of TRIIBE. TRIIBE is
+              not authorized to legally bind United World Leaders or any of its
+              representatives.
+            </p>
+          </div>
+
           <div className="flex flex-col md:flex-row items-center justify-between w-full border-t border-gray-200 pt-4 pb-4 gap-4">
             <p className=" font-normal text-[#697282] text-sm tracking-[0] leading-5">
               © 2026 TRIIBE 501(c)(3). All rights reserved.

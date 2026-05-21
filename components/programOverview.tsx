@@ -64,8 +64,8 @@ const programSections = [
 
 export default function ProgramOverview() {
   return (
-    <section className="flex flex-col w-full items-start md:px-25 lg:px-50 pt-3">
-      <div className="w-full bg-white flex flex-col md:flex-row items-center justify-center py-12 px-10 gap-8 md:gap-10">
+    <section className="flex flex-col w-full items-start md:px-25 lg:px-50 mt-16">
+      {/* <div className="w-full bg-white flex flex-col md:flex-row items-center justify-center py-12 px-10 gap-8 md:gap-10">
         <div className="max-w-xl text-center md:text-left">
           <p className="text-gray-700 leading-relaxed text-lg">
             Independent member of the United World Leaders
@@ -81,7 +81,7 @@ export default function ProgramOverview() {
             className="object-contain"
           />
         </div>
-      </div>
+      </div> */}
 
       <div className="w-full flex flex-col">
         {programSections.map((section, index) => (

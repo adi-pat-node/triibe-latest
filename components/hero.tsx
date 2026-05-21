@@ -31,7 +31,7 @@ export default function Hero() {
             </h1>
           </div>
 
-          {/* Description 
+          {/* Description
           <div className="flex flex-col items-center pb-6">
             <p className="font-['DM_Sans',Helvetica]font-normal text-white/90 text-base md:text-lg text-center tracking-[0] leading-relaxed max-w-125 ">
               The foundation building a world that prioritizes a return on impact, not income
@@ -62,6 +62,19 @@ export default function Hero() {
               height={40}
               priority
               className="h-20 w-80"
+            />
+          </div>
+
+          <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4">
+            <p className="leading-relaxed text-lg text-white tracking-wide md:text-2xl text-center">
+              Independent member of the United World Leaders
+            </p>
+            <Image
+              src="/UWL Raster File.png"
+              alt="United World Leaders"
+              width={60}
+              height={60}
+              className="object-contain"
             />
           </div>
         </div>
