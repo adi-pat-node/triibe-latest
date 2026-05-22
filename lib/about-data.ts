@@ -136,7 +136,7 @@ export const legacyBoard: Person[] = [
   },
   {
     name: "Chelsea Toler",
-    role: "Vice Chair",
+    //role: "Vice Chair",
     title: "Co-Founder, Logictry & President, The Family Foundation",
     imagePath: "/images/team/chelsea-toler.jpg",
     linkedIn: "https://www.linkedin.com/in/catoler92/",
@@ -273,6 +273,7 @@ export const locations: LocationEntry[] = [
     flag: "🇬🇧",
     mdName: "Maryam Rana",
     mdImagePath: "/images/team/maryam-rana.jpg",
+    mdLinkedIn: "https://www.linkedin.com/in/maryam-rana-0b21a728b/",
     advisoryBoard: [
       /* hidden:
       { name: "Adam Management CIO", imagePath: "/images/team/adam-management-cio.jpg", role: "Chair" },
@@ -692,8 +693,9 @@ export const honoraryMembers: HonoraryMember[] = [
     linkedIn: "https://www.linkedin.com/in/mahirlaul/",
   },
   {
-    name: "Aria Mariam",
-    imagePath: "/images/team/aria-mariam.png",
+    name: "Aria Mohajer",
+    imagePath: "/images/team/aria-mohajer.png",
+    linkedIn: "https://www.linkedin.com/in/aria-mohajer/",
   },
   /* hidden:
   {
