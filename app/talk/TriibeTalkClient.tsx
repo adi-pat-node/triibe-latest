@@ -120,17 +120,18 @@ const socialLinks = [
 
 const mediaCards = [
   {
-    id: "podcasts",
-    title: "Latest podcast",
-    image: "/images/media/podcastLatest.jpg",
-    badge: "Latest episode",
+    id: "newsletter",
+    title: "The TRIIBUNE",
+    image: "/images/media/archive/March_Newsletter.jpg",
+    badge: "March 2026",
     heading:
-      "Why the Non-Profit model is broken and how TRIIBE is fixing it with Kyle Matthys",
+      "Monthly Update | March 2026",
+    description: "100+ Changemakers. One room. We brought together 100+ attendees for the Billion Dollar Impact Summit in NYC.", 
     buttons: [
       {
         type: "link",
-        text: "Watch",
-        href: "https://youtu.be/5tjyws4mq-E?si=0lc8YOvT9BTDog4t",
+        text: "Read",
+        href: "https://blog.triibe.org/p/monthly-update-march-2026",
       },
     ],
   },
@@ -141,6 +142,7 @@ const mediaCards = [
     badge: "Latest workshop",
     heading:
       "Nancy Bonges on first-generation wealth building at William Blair",
+    description: "",
     buttons: [
       {
         type: "link",
@@ -215,6 +217,9 @@ const EventsPage = () => {
         </div>
       </section>
 
+      {/* Upcoming Events */}
+      <MediaEventsList />
+
       {/* Social Links */}
       <section className="pt-12 pb-8 bg-[#3036411A]  md:px-12 lg:px-50 ">
         <div className="max-w-4xl mx-auto px-6">
@@ -287,6 +292,12 @@ const EventsPage = () => {
                     <h4 className="font-semibold text-black text-lg mb-6">
                       {card.heading}
                     </h4>
+
+                    {card.description && (
+                <p className="font-normal text-[#495565] text-sm leading-relaxed mb-6">
+                  {card.description}
+                </p>
+              )}
                   </div>
 
                   <div className="flex gap-3">
@@ -309,8 +320,28 @@ const EventsPage = () => {
         </div>
       </section>
 
-      {/* Upcoming Events */}
-      <MediaEventsList />
+      {/* Brand Book Section */}
+      <section className="py-12 px-4 md:px-25 lg:px-[200px]">
+        <div className="max-w-260 mx-auto">
+          <div className="max-w-7xl mx-auto transition-all duration-300 hover:scale-105">
+            <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+              <p className="text-2xl md:text-3xl font-medium text-gray-900">
+                For a visual journey, see our brand book
+              </p>
+              <Link
+                href="https://drive.google.com/file/d/1ZNTNHHHPhV_4-cXh6JdtdzaRmxQ6IdJs/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-black text-black px-10 py-3 rounded-full font-semibold text-base hover:bg-green-950 hover:text-white hover:scale-105 transition-all duration-300 whitespace-nowrap"
+              >
+                View
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
 
       <Footer />
 

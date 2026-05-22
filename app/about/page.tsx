@@ -1090,10 +1090,10 @@ const page = () => {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-12 px-4 md:px-25 lg:px-50 bg-[#3036411A] mt-8">
+      {/* <section className="py-12 px-4 md:px-25 lg:px-50 bg-[#3036411A] mt-8">
         <div className="max-w-300 mx-auto">
           <div className="bg-white rounded-lg overflow-hidden shadow-sm flex flex-col md:flex-row">
-            {/* Image */}
+            Image
             <div className="relative w-full md:w-1/3 aspect-video md:aspect-auto md:min-h-[280px]">
               <Image
                 src="/images/media/archive/March_Newsletter.jpg"
@@ -1103,7 +1103,7 @@ const page = () => {
               />
             </div>
 
-            {/* Content */}
+             Content 
             <div className="p-6 md:p-8 flex flex-col justify-between flex-1 gap-4">
               <div>
                 <h3 className="font-bold text-black text-2xl mb-4">
@@ -1134,10 +1134,10 @@ const page = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Brand Book Section */}
-      <section className="py-12 px-4 md:px-25 lg:px-[200px]">
+      {/* <section className="py-12 px-4 md:px-25 lg:px-[200px]">
         <div className="max-w-260 mx-auto">
           <div className="max-w-7xl mx-auto transition-all duration-300 hover:scale-105">
             <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
@@ -1155,7 +1155,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Impact Areas Section */}
       {/* <section className="py-2 px-4 md:px-25 lg:px-50 bg-white/90 ">
