@@ -441,7 +441,7 @@ export const departments: Department[] = [
       },
       {
         name: "Pranay Mishra",
-        imagePath: "/images/team/pranay-mishra.jpg",
+        imagePath: "/images/team/pranay-mishra.jpeg",
         linkedIn: "https://www.linkedin.com/in/pranay--mishra/",
       },
       {
@@ -537,7 +537,7 @@ export const departments: Department[] = [
     members: [
       {
         name: "Pranay Mishra",
-        imagePath: "/images/team/pranay-mishra.jpg",
+        imagePath: "/images/team/pranay-mishra.jpeg",
         linkedIn: "https://www.linkedin.com/in/pranay--mishra/",
         isHead: true,
       },
