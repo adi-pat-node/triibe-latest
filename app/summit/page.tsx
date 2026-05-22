@@ -378,6 +378,21 @@ const SummitPage = () => {
       tag: "Moderator",
     },
     {
+      name: "Hayfa Sdiri",
+      title: "Co-Founder and CIO, RIVET",
+      image: "/images/summit/HayfaSdiri.png",
+      linkedin: "https://www.linkedin.com/in/hayfa-sdiri/",
+      tag: "Moderator",
+    },
+    {
+      name: "Laurie Dhue",
+      title: `Managing Director, Family Office Resource Group
+      Past anchor for CNN, NBC, Fox, and PIX11`,
+      image: "/images/summit/LaurieDhue.png",
+      linkedin: "https://www.linkedin.com/in/laurie-dhue-705a7326/",
+      tag: "Moderator",
+    },
+    {
       name: "Chirag Nijjer",
       title: "Brand Historian for Google and the History Channel",
       image: "/images/summit/Chirag Nijjer.png",
@@ -432,6 +447,27 @@ const SummitPage = () => {
       title: "CEO and Founder, Foreseeable Future Foundation",
       image: "/images/summit/GriffinPinkow.png",
       linkedin: "https://www.linkedin.com/in/gpinkow/",
+      tag: "Established",
+    },
+    {
+      name: "Megahan Peterson",
+      title: "CIO, The Family Offices Global",
+      image: "/images/summit/MegahanPeterson.png",
+      linkedin: "https://www.linkedin.com/in/megahan-peterson-3b6b5012/",
+      tag: "Established",
+    },
+    {
+      name: "Adeline Azrack",
+      title: "Managing Director, Fondation CHANEL",
+      image: "/images/summit/AdelineAzrack.png",
+      linkedin: "https://www.linkedin.com/in/adeline-azrack-0853023/",
+      tag: "Established",
+    },
+    {
+      name: "Laura Bakosh",
+      title: "Cofounder, Inner Explorer",
+      image: "/images/summit/LauraBakosh.png",
+      linkedin: "https://www.linkedin.com/in/laurabakosh/",
       tag: "Established",
     },
   ];
@@ -852,7 +888,7 @@ const SummitPage = () => {
                     </p>
                   </div>
 
-                  <p className="text-xs text-[#495565] leading-tight">
+                  <p className="text-xs text-[#495565] leading-tight whitespace-pre-line">
                     {speaker.title}
                   </p>
                 </div>
