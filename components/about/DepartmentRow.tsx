@@ -51,10 +51,12 @@ export default function DepartmentRow({ department }: Props) {
   const { name, Icon, members } = department;
 
   return (
-    <div className="flex rounded-xl overflow-hidden border border-[#C0DD97]">
+    // 1. Stacks vertically on mobile, horizontally on desktop
+    <div className="flex flex-col md:flex-row rounded-xl overflow-hidden border border-[#C0DD97]">
       <div
-        className="flex flex-col justify-center gap-1.5 p-4 border-r border-[#C0DD97] flex-shrink-0"
-        style={{ width: 130, background: "rgba(26,107,60,0.12)" }}
+        // 2. Full width on mobile, fixed width (130px) on desktop. Fixed bottom border switches to right border on desktop.
+        className="flex flex-col justify-center gap-1.5 p-4 border-b md:border-b-0 md:border-r border-[#C0DD97] flex-shrink-0 w-full md:w-[130px]"
+        style={{ background: "rgba(26,107,60,0.12)" }}
       >
         <Icon size={20} className="text-[#1A6B3C]" />
         <p className="text-[#1A6B3C] font-bold text-sm leading-tight">{name}</p>
@@ -62,24 +64,20 @@ export default function DepartmentRow({ department }: Props) {
           {members.length} {members.length === 1 ? "member" : "members"}
         </p>
       </div>
+      
+      {/* 3. Removed inline flex styles; replaced with a 2-column mobile grid and fallback desktop flex row */}
       <div
-        style={{
-          flex: 1,
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "16px 28px",
-          padding: 16,
-          alignItems: "flex-start",
-          alignContent: "flex-start",
-        }}
+        className="grid grid-cols-2 gap-x-7 gap-y-4 p-4 items-start md:flex md:flex-wrap md:gap-[16px_28px] md:items-start md:content-start md:flex-1"
       >
         {members.map((member) => (
-          <MemberChip
-            key={member.name}
-            name={member.name}
-            imagePath={member.imagePath}
-            linkedIn={member.linkedIn}
-          />
+          // 4. Container wrapper to prevent any alignment shifting inside the grid cells
+          <div key={member.name} className="min-w-0 w-full md:w-auto">
+            <MemberChip
+              name={member.name}
+              imagePath={member.imagePath}
+              linkedIn={member.linkedIn}
+            />
+          </div>
         ))}
       </div>
     </div>

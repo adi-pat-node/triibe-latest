@@ -263,7 +263,7 @@ export const locations: LocationEntry[] = [
         name: "Cassandra Seidenfeld",
         imagePath: "/images/team/cassandra-seidenfeld.jfif",
         linkedIn: "https://www.linkedin.com/in/cassandra-seidenfeld-01b88452/",
-        title: "Professional Actor",
+        title: "Global Real Estate Advisor and CEO, Luxury Level Consultants LLC",
       },
     ],
     advisoryBoardForming: false,
