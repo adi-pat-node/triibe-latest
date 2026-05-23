@@ -66,11 +66,13 @@ interface Props {
 
 export default function LocationCard({ entry }: Props) {
   return (
-    <div className="flex rounded-xl overflow-hidden border border-[#C0DD97]">
+    // 1. Made the card stack vertically on mobile, horizontally on desktop
+    <div className="flex flex-col md:flex-row rounded-xl overflow-hidden border border-[#C0DD97]">
       {/* Left sidebar */}
       <div
-        className="flex flex-col justify-start gap-2 p-4 border-r border-[#C0DD97] flex-shrink-0"
-        style={{ width: 140, background: "rgba(26,107,60,0.12)" }}
+        // 2. Removed static width and used tailwind responsive sizing (Full width on mobile, fixed on desktop)
+        className="flex flex-col justify-start gap-2 p-4 border-b md:border-b-0 md:border-r border-[#C0DD97] flex-shrink-0 w-full md:w-[140px]"
+        style={{ background: "rgba(26,107,60,0.12)" }}
       >
         <span style={{ fontSize: 22, lineHeight: 1 }}>{entry.flag}</span>
         <p
@@ -152,17 +154,15 @@ export default function LocationCard({ entry }: Props) {
           </p>
         ) : entry.advisoryBoard.length > 0 ? (
           <div>
+            {/* 3. Replaced inline flex styles with responsive CSS Grid for mobile & flex row for desktop */}
             <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: "20px 24px",
-                padding: "12px 0",
-                alignItems: "stretch",
-              }}
+              className="grid grid-cols-2 gap-x-6 gap-y-5 py-3 items-start md:flex md:flex-wrap md:gap-[20px_24px] md:items-stretch"
             >
               {entry.advisoryBoard.map((member) => (
-                <AdvisoryChip key={member.name} member={member} />
+                // 4. Wrapped each chip to ensure it behaves correctly inside the grid cells
+                <div key={member.name} className="min-w-0 w-full md:w-auto">
+                  <AdvisoryChip member={member} />
+                </div>
               ))}
             </div>
           </div>
