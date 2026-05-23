@@ -474,7 +474,7 @@ export default function AboutPage() {
         {/* Associate Board */}
         <section
           id="associate"
-          className="py-16 border-t border-gray-100 scroll-mt-28"
+          className="py-16 border-t border-gray-100 scroll-mt-28 px-4" // Added responsive side padding
         >
           <FadeUp delay={0}>
             <SectionHeader
@@ -482,7 +482,9 @@ export default function AboutPage() {
               description="Associate Board Members serve as a pipeline to the Board of Directors, contribute to the Corporation's standing committees, and provide perspective and recommendations on the direction of the Corporation."
             />
           </FadeUp>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          {/* Changed grid-cols-1 to grid-cols-2 for perfect mobile side-by-side look */}
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto">
             {associateBoard.map((person, i) => (
               <FadeUp key={person.name} delay={i * 80}>
                 <PersonCard person={person} photoSize={80} />
@@ -494,7 +496,7 @@ export default function AboutPage() {
         {/* Legacy Board */}
         <section
           id="legacy"
-          className="py-16 border-t border-gray-100 scroll-mt-28"
+          className="py-16 border-t border-gray-100 scroll-mt-28 px-4"
         >
           <FadeUp delay={0}>
             <SectionHeader
@@ -502,27 +504,24 @@ export default function AboutPage() {
               description="Legacy Board members serve as ambassadors, connectors, and advisors, providing institutional credibility, senior-level counsel, and access to networks that advance its mission."
             />
           </FadeUp>
+
           <FadeUp delay={100}>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                marginBottom: "1.5rem",
-              }}
-            >
-              <div style={{ width: "25%" }}>
-                <LegacyMemberItem person={legacyBoard[0]} />
+            {/* Combined Single Grid Container for all members */}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {/* The Chair (First Person) - Centered on desktop, 
+        but flows naturally into the 2-column grid on mobile 
+      */}
+              <div className="col-span-2 md:col-span-3 lg:col-span-4 flex justify-center mb-2 lg:mb-4">
+                <div className="w-full max-w-[160px] sm:max-w-[200px] md:max-w-xs lg:w-1/4">
+                  <LegacyMemberItem person={legacyBoard[0]} />
+                </div>
               </div>
-            </div>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(4, 1fr)",
-                gap: "1.5rem",
-              }}
-            >
+
+              {/* The remaining board members automatically forming rows of 2 on mobile */}
               {legacyBoard.slice(1).map((person) => (
-                <LegacyMemberItem key={person.name} person={person} />
+                <div key={person.name} className="w-full">
+                  <LegacyMemberItem person={person} />
+                </div>
               ))}
             </div>
           </FadeUp>
