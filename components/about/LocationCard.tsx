@@ -12,6 +12,7 @@ function AdvisoryChip({ member }: { member: LocationAdvisoryMember }) {
         gap: 3,
         minWidth: 100,
         maxWidth: 140,
+        alignSelf: "stretch",
       }}
     >
       <PersonAvatar src={member.imagePath} name={member.name} size={40} />
@@ -52,7 +53,9 @@ function AdvisoryChip({ member }: { member: LocationAdvisoryMember }) {
           {member.title}
         </p>
       )}
-      <LinkedInBadge url={member.linkedIn} />
+      <div style={{ marginTop: "auto", paddingTop: 6 }}>
+        <LinkedInBadge url={member.linkedIn} />
+      </div>
     </div>
   );
 }
@@ -91,7 +94,14 @@ export default function LocationCard({ entry }: Props) {
       <div style={{ flex: 1, padding: 16, minWidth: 0 }}>
         {/* Managing Director */}
         {entry.mdName && (
-          <div style={{ marginBottom: entry.advisoryBoard.length > 0 || entry.advisoryBoardForming ? 14 : 0 }}>
+          <div
+            style={{
+              marginBottom:
+                entry.advisoryBoard.length > 0 || entry.advisoryBoardForming
+                  ? 14
+                  : 0,
+            }}
+          >
             <p
               style={{
                 fontSize: 9,
@@ -110,7 +120,14 @@ export default function LocationCard({ entry }: Props) {
                 size={64}
               />
               <div>
-                <p style={{ fontSize: 13, fontWeight: 700, color: "#111111", lineHeight: 1.3 }}>
+                <p
+                  style={{
+                    fontSize: 13,
+                    fontWeight: 700,
+                    color: "#111111",
+                    lineHeight: 1.3,
+                  }}
+                >
                   {entry.mdName}
                 </p>
                 <div style={{ marginTop: 4 }}>
@@ -123,12 +140,27 @@ export default function LocationCard({ entry }: Props) {
 
         {/* Advisory Board */}
         {entry.advisoryBoardForming ? (
-          <p style={{ fontSize: 11, color: "#aaa", fontStyle: "italic", lineHeight: 1.5 }}>
+          <p
+            style={{
+              fontSize: 11,
+              color: "#aaa",
+              fontStyle: "italic",
+              lineHeight: 1.5,
+            }}
+          >
             Advisory board forming.
           </p>
         ) : entry.advisoryBoard.length > 0 ? (
           <div>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "20px 24px", padding: "12px 0" }}>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "20px 24px",
+                padding: "12px 0",
+                alignItems: "stretch",
+              }}
+            >
               {entry.advisoryBoard.map((member) => (
                 <AdvisoryChip key={member.name} member={member} />
               ))}
