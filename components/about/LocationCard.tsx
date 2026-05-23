@@ -5,55 +5,58 @@ import type { LocationEntry, LocationAdvisoryMember } from "@/types/about";
 function AdvisoryChip({ member }: { member: LocationAdvisoryMember }) {
   return (
     <div
+      className="flex flex-col items-center justify-between h-full w-full mx-auto"
       style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: 3,
         minWidth: 100,
         maxWidth: 140,
         alignSelf: "stretch",
       }}
     >
-      <PersonAvatar src={member.imagePath} name={member.name} size={40} />
-      <p
-        style={{
-          fontSize: 11,
-          color: "#111111",
-          fontWeight: 500,
-          textAlign: "center",
-          whiteSpace: "normal",
-          width: "100%",
-        }}
-      >
-        {member.name}
-      </p>
-      {member.role && (
+      {/* Top Group: Avatar, Name, and Titles */}
+      <div className="flex flex-col items-center w-full text-center">
+        <PersonAvatar src={member.imagePath} name={member.name} size={40} />
+        
         <p
-          style={{
-            fontSize: 10,
-            color: "#1A6B3C",
-            whiteSpace: "nowrap",
-            marginTop: 2,
-          }}
+          className="font-medium w-full line-clamp-1 mt-2"
+          style={{ fontSize: 11, lineHeight: 1.3, color: "#111111" }}
         >
-          {member.role}
+          {member.name}
         </p>
-      )}
-      {member.title && (
-        <p
-          style={{
-            fontSize: 11,
-            color: "#888",
-            textAlign: "center",
-            marginTop: 2,
-            whiteSpace: "normal",
-          }}
-        >
-          {member.title}
-        </p>
-      )}
-      <div style={{ marginTop: "auto", paddingTop: 6 }}>
+
+        {/* FIXED CONTAINER: Keeps the horizontal alignment intact */}
+        <div className="w-full min-h-[3rem] flex flex-col justify-start items-center mt-1">
+          {member.role && (
+            <p
+              className="line-clamp-1"
+              style={{ 
+                fontSize: 10, 
+                color: "#1A6B3C", 
+                fontWeight: 500 
+              }}
+            >
+              {member.role}
+            </p>
+          )}
+          
+          {member.title && (
+            <p
+              className="line-clamp-2"
+              style={{ 
+                fontSize: 11, 
+                color: "#888",        // Restored your precise faded look
+                textAlign: "center", 
+                lineHeight: 1.2,
+                whiteSpace: "normal" 
+              }}
+            >
+              {member.title}
+            </p>
+          )}
+        </div>
+      </div>
+
+      {/* Bottom Group: Badge anchored evenly to the base */}
+      <div className="mt-auto pt-2">
         <LinkedInBadge url={member.linkedIn} />
       </div>
     </div>
