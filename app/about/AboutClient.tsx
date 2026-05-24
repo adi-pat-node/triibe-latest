@@ -300,7 +300,7 @@ export default function AboutPage() {
         </FadeUp>
 
         {/* How TRIIBE works */}
-        <FadeUp delay={0}>
+        {/* <FadeUp delay={0}>
           <div
             style={{
               paddingTop: "3rem",
@@ -317,7 +317,6 @@ export default function AboutPage() {
                 display: "block",
               }}
             >
-              How TRIIBE works
             </h2>
             <div
               style={{
@@ -447,7 +446,7 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-        </FadeUp>
+        </FadeUp> */}
       </div>
 
       {/* ── Sticky Table of Contents ──────────────────────────────── */}
