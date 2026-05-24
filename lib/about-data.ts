@@ -110,14 +110,12 @@ export const associateBoard: Person[] = [
     imagePath: "/images/team/maximilian-goetz.jpg",
     linkedIn: "https://www.linkedin.com/in/maxgoetz/",
   },
-  /* hidden:
-  {
+ {
     name: "Aveneel Waadhwa",
     role: "Member",
     imagePath: "/images/team/aveneel-waadhwa.jpg",
     linkedIn: "https://www.linkedin.com/in/aveneel/",
   },
-  */
   {
     name: "Zachary Anglemyer",
     role: "Member",
