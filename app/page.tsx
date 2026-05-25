@@ -36,7 +36,7 @@ export default function Home() {
       <DeckSection />
       {/* <OfficeMap /> */}
       <TriibeGlobeWrapper />
-      <FellowshipBenefits />
+      {/* <FellowshipBenefits /> */}
       <KeyStatistics />
       <Changemakers />
       <PostGraduationOutcomes />

@@ -17,22 +17,6 @@ const programSections = [
     imageObjectPosition: "object-center",
   },
   {
-    title: "Data-driven approach",
-    description:
-      "The TRIIBE Index is the dataset helping us and our partners fund with data-driven precision, built by those in the nonprofit sector, across all ages, roles, and stages",
-    button: {
-      label: "TRIIBE Index",
-      link: "/index",
-    },
-    bgColor: "bg-[#002c19]",
-    textColor: "text-[#fffefee6]",
-    descriptionColor: "text-[#ffffffcc]",
-    imageUrl: "/images/home/whatWeDo2.png",
-    imagePosition: "left",
-    fontWeight: "font-semibold",
-    imageObjectPosition: "object-cover object-[50%_0%]",
-  },
-  {
     title: "How we do it",
     description: "",
     listItems: [
@@ -60,6 +44,22 @@ const programSections = [
     fontWeight: "font-bold",
     imageObjectPosition: "object-center",
   },
+  {
+    title: "Data-driven approach",
+    description:
+      "The TRIIBE Index is the dataset helping us and our partners fund with data-driven precision, built by those in the nonprofit sector, across all ages, roles, and stages",
+    button: {
+      label: "TRIIBE Index",
+      link: "/index",
+    },
+    bgColor: "bg-[#002c19]",
+    textColor: "text-[#fffefee6]",
+    descriptionColor: "text-[#ffffffcc]",
+    imageUrl: "/images/home/whatWeDo2.png",
+    imagePosition: "left",
+    fontWeight: "font-semibold",
+    imageObjectPosition: "object-cover object-[50%_0%]",
+  },
 ];
 
 export default function ProgramOverview() {
@@ -84,135 +84,86 @@ export default function ProgramOverview() {
       </div> */}
 
       <div className="w-full flex flex-col">
-        {programSections.map((section, index) => (
-          <div
-            key={index}
-            className="flex flex-col md:flex-row items-stretch w-full md:min-h-[490px]"
-          >
-            {section.imagePosition === "left" ? (
-              <>
-                <div className="relative w-full md:w-1/2 min-h-[300px] overflow-hidden order-2 md:order-1">
-                  <Image
-                    key={section.imageObjectPosition}
-                    src={section.imageUrl}
-                    alt={`${section.title} illustration`}
-                    fill
-                    className={`object-cover ${section.imageObjectPosition || "object-center"}`}
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
+        {programSections.map((section, index) => {
+          // Determine if the image should be on the left for medium screens and up
+          // Index 1 (How we do it) will be true (image on left)
+          // Index 0 (Why) and Index 2 (Data-driven) will be false (image on right)
+          const isImageLeft = index % 2 !== 0;
 
-                <div
-                  className={`${section.bgColor} flex items-center w-full md:w-1/2 order-1 md:order-2`}
-                >
-                  <div className="flex flex-col justify-center gap-6 px-5 md:px-8 lg:px-16 py-12 w-full h-full">
-                    <h2
-                      className={`${section.textColor} ${section.fontWeight} text-xl md:text-[32px] leading-10`}
-                    >
-                      {section.title}
-                    </h2>
+          return (
+            <div
+              key={index}
+              className="flex flex-col md:flex-row items-stretch w-full md:min-h-[490px]"
+            >
+              {/* Image Container */}
+              <div
+                className={`relative w-full md:w-1/2 min-h-[300px] overflow-hidden order-2 ${
+                  isImageLeft ? "md:order-1" : "md:order-2"
+                }`}
+              >
+                <Image
+                  key={section.imageObjectPosition}
+                  src={section.imageUrl}
+                  alt={`${section.title} illustration`}
+                  fill
+                  className={`object-cover ${section.imageObjectPosition || "object-center"}`}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
 
-                    <div
-                      className={`${section.descriptionColor} text-lg leading-[29.2px] flex flex-col gap-6`}
-                    >
-                      {section.description && <p>{section.description}</p>}
+              {/* Content Container */}
+              <div
+                className={`${section.bgColor} flex items-center w-full md:w-1/2 order-1 ${
+                  isImageLeft ? "md:order-2" : "md:order-1"
+                }`}
+              >
+                <div className="flex flex-col justify-center gap-6 px-5 md:px-8 lg:px-16 py-12 w-full h-full">
+                  <h2
+                    className={`${section.textColor} ${section.fontWeight} text-xl md:text-[32px] leading-10`}
+                  >
+                    {section.title}
+                  </h2>
 
-                      {section.listItems && (
-                        <div className="flex flex-col gap-8">
-                          {section.listItems.map((item, i) => (
-                            <div
-                              key={i}
-                              className="flex flex-col items-start gap-4"
+                  <div
+                    className={`${section.descriptionColor} text-lg leading-[29.2px] flex flex-col gap-6`}
+                  >
+                    {section.description && <p>{section.description}</p>}
+
+                    {section.listItems && (
+                      <div className="flex flex-col gap-8">
+                        {section.listItems.map((item, i) => (
+                          <div
+                            key={i}
+                            className="flex flex-col items-start gap-4"
+                          >
+                            <p>{item.text}</p>
+                            <Link
+                              href={item.link}
+                              className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
                             >
-                              <p>{item.text}</p>
-                              <Link
-                                href={item.link}
-                                className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
-                              >
-                                {item.label}
-                              </Link>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-
-                    {section.button && (
-                      <div className="mt-4">
-                        <Link
-                          href={section.button.link}
-                          className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
-                        >
-                          {section.button.label}
-                        </Link>
+                              {item.label}
+                            </Link>
+                          </div>
+                        ))}
                       </div>
                     )}
                   </div>
-                </div>
-              </>
-            ) : (
-              <>
-                <div
-                  className={`${section.bgColor} flex items-center w-full md:w-1/2`}
-                >
-                  <div className="flex flex-col justify-center  gap-6 px-5 md:px-8 lg:px-16 py-12 w-full h-full">
-                    <h2
-                      className={`${section.textColor} ${section.fontWeight} text-[32px] leading-10`}
-                    >
-                      {section.title}
-                    </h2>
 
-                    <div
-                      className={`${section.descriptionColor} text-lg leading-[29.2px] flex flex-col gap-6`}
-                    >
-                      {section.description && <p>{section.description}</p>}
-
-                      {section.listItems && (
-                        <div className="flex flex-col gap-8">
-                          {section.listItems.map((item, i) => (
-                            <div
-                              key={i}
-                              className="flex flex-col items-start gap-4"
-                            >
-                              <p>{item.text}</p>
-                              <Link
-                                href={item.link}
-                                className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
-                              >
-                                {item.label}
-                              </Link>
-                            </div>
-                          ))}
-                        </div>
-                      )}
+                  {section.button && (
+                    <div className="mt-4">
+                      <Link
+                        href={section.button.link}
+                        className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
+                      >
+                        {section.button.label}
+                      </Link>
                     </div>
-
-                    {section.button && (
-                      <div className="mt-4">
-                        <Link
-                          href={section.button.link}
-                          className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
-                        >
-                          {section.button.label}
-                        </Link>
-                      </div>
-                    )}
-                  </div>
+                  )}
                 </div>
-
-                <div className="relative w-full md:w-1/2 min-h-[300px] overflow-hidden">
-                  <Image
-                    src={section.imageUrl}
-                    alt={`${section.title} illustration`}
-                    fill
-                    className={`object-cover ${section.imageObjectPosition || "object-center"}`}
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-              </>
-            )}
-          </div>
-        ))}
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

@@ -3,6 +3,7 @@ import React from "react";
 import ApplicationProcess from "@/components/applicationProcess";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import FellowshipBenefits from "@/components/fellowshipBenefits";
 import CTASection from "@/components/cta";
 import { useState } from "react";
 import Link from "next/link";
@@ -250,9 +251,10 @@ const ProgramPage = () => {
       </section>
 
       <ApplicationProcess />
+      <FellowshipBenefits />
 
       {/* Three Pillars of Support Section */}
-      <section className="py-20 px-4 md:px-25 lg:px-50 bg-white border-t border-gray-200">
+      {/* <section className="py-20 px-4 md:px-25 lg:px-50 bg-white border-t border-gray-200">
         <div className="max-w-260 mx-auto">
           <div className="flex flex-col gap-12">
             <div className="flex flex-col gap-4">
@@ -262,11 +264,11 @@ const ProgramPage = () => {
               <p className=" font-normal text-[#495565] text-lg leading-7">
                 Everything you need to sustain your growth
               </p>
-            </div>
+            </div> */}
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Pillar 1 - Funding */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
+              {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
                 <div className="w-12 h-12 bg-[#3036411A] rounded flex items-center justify-center">
                   <span className=" font-bold text-black text-xl">1</span>
                 </div>
@@ -277,10 +279,10 @@ const ProgramPage = () => {
                   Receive $40K in unrestricted funding to cover operations,
                   team, and program costs.
                 </p>
-              </div>
+              </div> */}
 
               {/* Pillar 2 - Mentorship */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
+              {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
                 <div className="w-12 h-12 bg-[#3036411A] rounded flex items-center justify-center">
                   <span className=" font-bold text-black text-xl">2</span>
                 </div>
@@ -291,10 +293,10 @@ const ProgramPage = () => {
                   Get matched with two experienced mentors each quarter who
                   understand your specific challenges.
                 </p>
-              </div>
+              </div> */}
 
               {/* Pillar 3 - Community */}
-              <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
+              {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
                 <div className="w-12 h-12 bg-[#3036411A] rounded flex items-center justify-center">
                   <span className=" font-bold text-black text-xl">3</span>
                 </div>
@@ -309,7 +311,7 @@ const ProgramPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Your 3-Year Journey Section */}
       <section className="py-20 px-4 md:px-25 lg:px-50 bg-[#3036411A]">
