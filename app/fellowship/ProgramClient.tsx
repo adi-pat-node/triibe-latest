@@ -4,6 +4,7 @@ import ApplicationProcess from "@/components/applicationProcess";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import FellowshipBenefits from "@/components/fellowshipBenefits";
+import PostGraduationOutcomes from "@/components/postGraduationOutcomes";
 import CTASection from "@/components/cta";
 import { useState } from "react";
 import Link from "next/link";
@@ -717,6 +718,8 @@ const ProgramPage = () => {
           <TestimonialCarousel />
         </div>
       </section>
+
+      <PostGraduationOutcomes />
 
       {/* Deck Section */}
       <section className="py-12 px-4 md:px-25 lg:px-[200px]">

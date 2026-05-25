@@ -33,13 +33,13 @@ export default function Home() {
       <Hero />
       {/* <MissionStatement /> */}
       <ProgramOverview />
-      <DeckSection />
+      {/* <DeckSection /> */}
       {/* <OfficeMap /> */}
       <TriibeGlobeWrapper />
       {/* <FellowshipBenefits /> */}
       <KeyStatistics />
       <Changemakers />
-      <PostGraduationOutcomes />
+      {/* <PostGraduationOutcomes /> */}
 
       {/* <SponsorsAndPartners /> */}
       {/* <ImpactMetrics /> */}
