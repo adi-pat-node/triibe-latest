@@ -203,6 +203,12 @@ export const legacyBoard: Person[] = [
     imagePath: "/images/team/laurie-dhue.jfif",
     linkedIn: "https://www.linkedin.com/in/laurie-dhue-705a7326/",
   },
+  {
+    name: "Cheng Davis",
+    title: "Special Advisor to President, University of Pennsylvania Senior Advisor to Pudong Government",
+    imagePath: "/images/team/ChengDavis.png",
+    linkedIn: "https://www.linkedin.com/in/cheng-davis-82511937/",
+  },
   /* hidden:
   { name: "Laurence Kalinsky", title: "CEO, PVBLIC.org", imagePath: "/images/team/laurence-kalinsky.jpg" },
   { name: "David Homan", title: "Founder, Orchestrated Connections", imagePath: "/images/team/david-homan.jpg", linkedIn: "https://www.linkedin.com/in/davidrhoman/" },
