@@ -35,6 +35,26 @@ const nextConfig = {
         destination: "/index/:path*",
         permanent: true,
       },
+      {
+        source: "/program",
+        destination: "/fellowship",
+        permanent: true,
+      },
+      {
+        source: "/media",
+        destination: "/about",
+        permanent: true,
+      },
+      {
+        source: "/triibetalk",
+        destination: "/talk",
+        permanent: true,
+      },
+      {
+        source: "/triibe100",
+        destination: "/100",
+        permanent: true,
+      },
     ];
   },
   async rewrites() {
