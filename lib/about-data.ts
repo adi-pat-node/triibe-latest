@@ -51,13 +51,13 @@ export const associateBoard: Person[] = [
   },
   {
     name: "Jade Kashemsant",
-    role: "Treasurer",
+    //role: "Treasurer",
     imagePath: "/images/team/jade-kashemsant.jpg",
     linkedIn: "https://www.linkedin.com/in/jadekashemsant/",
   },
   {
     name: "Maryam Rana",
-    role: "Secretary",
+    //role: "Secretary",
     imagePath: "/images/team/maryam-rana.jpg",
     linkedIn: "https://www.linkedin.com/in/maryam-rana-0b21a728b/",
   },
