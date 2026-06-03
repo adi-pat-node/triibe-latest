@@ -205,9 +205,15 @@ export const legacyBoard: Person[] = [
   },
   {
     name: "Cheng Davis",
-    title: "Special Advisor to President, University of Pennsylvania Senior Advisor to Pudong Government",
+    title: "President, Forum for World Education",
     imagePath: "/images/team/ChengDavis.png",
     linkedIn: "https://www.linkedin.com/in/cheng-davis-82511937/",
+  },
+  {
+    name: "Gurdon “Topper” Flagg Quinn",
+    title: "Managing Partner, Challenge Capital Advisors",
+    imagePath: "/images/team/GurdonQuinn.jpg",
+    linkedIn: "https://www.linkedin.com/in/gurdon-%E2%80%9Ctopper%E2%80%9D-flagg-quinn-61931b1/",
   },
   /* hidden:
   { name: "Laurence Kalinsky", title: "CEO, PVBLIC.org", imagePath: "/images/team/laurence-kalinsky.jpg" },
