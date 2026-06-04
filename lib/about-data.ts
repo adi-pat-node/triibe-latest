@@ -215,6 +215,12 @@ export const legacyBoard: Person[] = [
     imagePath: "/images/team/GurdonQuinn.jpg",
     linkedIn: "https://www.linkedin.com/in/gurdon-%E2%80%9Ctopper%E2%80%9D-flagg-quinn-61931b1/",
   },
+  {
+    name: "Stanley Goldstein",
+    title: "Chairman, Sustainability Investment Leadership Council",
+    imagePath: "/images/team/StanleyGoldstein.jpg",
+    linkedIn: "https://www.linkedin.com/in/stanley-goldstein-baa86a/",
+  },
   /* hidden:
   { name: "Laurence Kalinsky", title: "CEO, PVBLIC.org", imagePath: "/images/team/laurence-kalinsky.jpg" },
   { name: "David Homan", title: "Founder, Orchestrated Connections", imagePath: "/images/team/david-homan.jpg", linkedIn: "https://www.linkedin.com/in/davidrhoman/" },
