@@ -20,7 +20,7 @@ export const metadata = {
   title:
     "Undergraduate Nonprofit Fellowship & Grants for Founders Under 30 | TRIIBE",
   description:
-    "TRIIBE supports student and young nonprofit founders under 30 with fellowships, funding, and mentorship. Apply for grants, work on real projects, and scale your impact.",
+    "TRIIBE funds and mentors nonprofit founders aged 20-25 — unrestricted grants, real mentorship, and a community of next-gen changemakers. Apply today.",
   alternates: {
     canonical: "https://www.triibe.org",
   },

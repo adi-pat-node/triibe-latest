@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import ApplyClient from "./ApplyClient";
 
 export const metadata: Metadata = {
-  title: "Apply for Nonprofit Fellowship for Students | TRIIBE",
+  title: "Apply to the TRIIBE Fellowship | TRIIBE",
   description:
-    "Apply for a nonprofit fellowship for students and join a community of next-gen founders receiving funding, mentorship, and support.",
+    "Are you a nonprofit founder aged 20–25 with an active 501(c)(3)? Apply to the Spring 2026 TRIIBE Fellowship for $40K in unrestricted funding, mentorship, and a 3-year community. Applications open now.",
   openGraph: {
-    title: "Apply for Nonprofit Fellowship for Students | TRIIBE",
+    title: "Apply to the TRIIBE Fellowship | TRIIBE",
     description:
-      "Apply for a nonprofit fellowship for students and join a community of next-gen founders receiving funding, mentorship, and support.",
+      "Are you a nonprofit founder aged 20–25 with an active 501(c)(3)? Apply to the Spring 2026 TRIIBE Fellowship for $40K in unrestricted funding, mentorship, and a 3-year community. Applications open now.",
     url: "https://www.triibe.org/apply",
   },
   alternates: {
