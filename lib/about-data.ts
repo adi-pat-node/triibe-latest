@@ -330,7 +330,7 @@ export const locations: LocationEntry[] = [
         name: "Rajeev Saxena",
         imagePath: "/images/team/rajeev-saxena.jpg",
         linkedIn: "",
-        title: "",
+        title: "Project Head at Marie Projects Ltd.",
       },
     ],
     advisoryBoardForming: false,
