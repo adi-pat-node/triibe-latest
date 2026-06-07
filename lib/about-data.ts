@@ -110,7 +110,7 @@ export const associateBoard: Person[] = [
     imagePath: "/images/team/maximilian-goetz.jpg",
     linkedIn: "https://www.linkedin.com/in/maxgoetz/",
   },
- {
+  {
     name: "Aveneel Waadhwa",
     role: "Member",
     imagePath: "/images/team/aveneel-waadhwa.jpg",
@@ -213,7 +213,8 @@ export const legacyBoard: Person[] = [
     name: "Gurdon “Topper” Flagg Quinn",
     title: "Managing Partner, Challenge Capital Advisors",
     imagePath: "/images/team/GurdonQuinn.jpg",
-    linkedIn: "https://www.linkedin.com/in/gurdon-%E2%80%9Ctopper%E2%80%9D-flagg-quinn-61931b1/",
+    linkedIn:
+      "https://www.linkedin.com/in/gurdon-%E2%80%9Ctopper%E2%80%9D-flagg-quinn-61931b1/",
   },
   {
     name: "Stanley Goldstein",
@@ -279,7 +280,8 @@ export const locations: LocationEntry[] = [
         name: "Cassandra Seidenfeld",
         imagePath: "/images/team/cassandra-seidenfeld.jfif",
         linkedIn: "https://www.linkedin.com/in/cassandra-seidenfeld-01b88452/",
-        title: "Global Real Estate Advisor and CEO, Luxury Level Consultants LLC",
+        title:
+          "Global Real Estate Advisor and CEO, Luxury Level Consultants LLC",
       },
     ],
     advisoryBoardForming: false,
@@ -323,8 +325,15 @@ export const locations: LocationEntry[] = [
     mdName: "Satyam Pandey",
     mdImagePath: "/images/team/satyam-pandey.jpg",
     mdLinkedIn: "https://www.linkedin.com/in/satyyampandey/",
-    advisoryBoard: [],
-    advisoryBoardForming: true,
+    advisoryBoard: [
+      {
+        name: "Rajeev Saxena",
+        imagePath: "/images/team/rajeev-saxena.jpg",
+        linkedIn: "",
+        title: "",
+      },
+    ],
+    advisoryBoardForming: false,
   },
   {
     location: "Singapore",
