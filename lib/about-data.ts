@@ -322,6 +322,12 @@ export const locations: LocationEntry[] = [
         linkedIn: "https://www.linkedin.com/in/anthony-h-sandoval/",
         title: "Principal, VesperStone Capital",
       },
+      {
+        name: "Harriet Vocking",
+        imagePath: "/images/team/HarrietVocking.jpg",
+        linkedIn: "https://www.linkedin.com/in/harriet-vocking-62bab57/",
+        title: "Founder, For.Tomorrow",
+      },
     ],
     advisoryBoardForming: false,
   },
