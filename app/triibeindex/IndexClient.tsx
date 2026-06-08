@@ -21,13 +21,13 @@ const infoCards = [
     buttonLink:
       "mailto:partnerships@triibe.org?subject=TRIIBE%20Index%20Advisory%20Interest",
   },
-  {
+  /* {
     description:
       "Because the anonymized data comes from the network, 50% of advisory revenue is shared with partner organizations who help build it, proportional to the responses they contributed.",
     buttonText: "Become a partner",
     buttonLink:
       "mailto:partnerships@triibe.org?subject=TRIIBE%20Index%20Partnership%20Interest",
-  },
+  }, */
 ];
 
 const socialLinks = [
