@@ -122,6 +122,12 @@ export const associateBoard: Person[] = [
     imagePath: "/images/team/zachary-anglemyer.jfif",
     linkedIn: "https://www.linkedin.com/in/zacharyanglemyer/",
   },
+  {
+    name: "Imane Abdel Jelil",
+    role: "Member",
+    imagePath: "/images/team/ImaneAbdel.jpg",
+    linkedIn: "https://www.linkedin.com/in/imane-abdel-jelil/",
+  },
 ];
 
 export const legacyBoard: Person[] = [
