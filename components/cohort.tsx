@@ -29,7 +29,7 @@ export default function Cohort() {
       title: "Founder, Haitech Learning",
       university: "Williams College",
       description:
-        "Expanding access to education for young Haitians around the globe through technology and language workshops",
+        "Expanding multilingual technology education access across borders",
       founded: "FOUNDED 2022",
       image:
         "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4ae976ac21db37b22369d_anna.png",
@@ -37,7 +37,7 @@ export default function Cohort() {
     },
     {
       name: "Esha Venkat",
-      title: "Founder, Next4Us",
+      title: "Founder, Nest4Us",
       university: "Georgia Institute of Technology",
       description:
         "Mobilizing youth to tackle issues including hunger, education, and climate justice with volunteering & education",

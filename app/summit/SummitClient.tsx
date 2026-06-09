@@ -225,7 +225,7 @@ const SummitPage = () => {
   //     speakers: [
   //       {
   //         name: "Esha Venkat",
-  //         title: "Founder, Next4Us",
+  //         title: "Founder, Nest4Us",
   //         image: "/images/home/homepage---changemakers-3.png",
   //         linkedin: "https://www.linkedin.com/in/eshavenkat/",
   //         tag: "Next-Gen",
@@ -329,7 +329,7 @@ const SummitPage = () => {
     },
     {
       name: "Esha Venkat",
-      title: "Founder, Next4Us",
+      title: "Founder, Nest4Us",
       image: "/images/home/homepage---changemakers-3.png",
       linkedin: "https://www.linkedin.com/in/eshavenkat/",
       tag: "Next-Gen",
