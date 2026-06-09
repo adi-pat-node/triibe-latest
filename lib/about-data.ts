@@ -51,13 +51,13 @@ export const associateBoard: Person[] = [
   },
   {
     name: "Jade Kashemsant",
-    //role: "Treasurer",
+    role: "Member",
     imagePath: "/images/team/jade-kashemsant.jpg",
     linkedIn: "https://www.linkedin.com/in/jadekashemsant/",
   },
   {
     name: "Maryam Rana",
-    //role: "Secretary",
+    role: "Member",
     imagePath: "/images/team/maryam-rana.jpg",
     linkedIn: "https://www.linkedin.com/in/maryam-rana-0b21a728b/",
   },
@@ -227,6 +227,18 @@ export const legacyBoard: Person[] = [
     title: "Chairman, Sustainability Investment Leadership Council",
     imagePath: "/images/team/StanleyGoldstein.jpg",
     linkedIn: "https://www.linkedin.com/in/stanley-goldstein-baa86a/",
+  },
+  {
+    name: "Bleu Blakslee",
+    title: "Managing Director, Quantum Philanthropy Partners",
+    imagePath: "/images/team/BleuBlakslee.jpg",
+    linkedIn: "https://www.linkedin.com/in/bleublakslee/",
+  },
+  {
+    name: "Lanz Pierce",
+    title: "Founder & CEO, Luminary Creative Agency",
+    imagePath: "/images/team/LanzPierce.jpg",
+    linkedIn: "https://www.linkedin.com/in/lanzpierce/",
   },
   /* hidden:
   { name: "Laurence Kalinsky", title: "CEO, PVBLIC.org", imagePath: "/images/team/laurence-kalinsky.jpg" },
