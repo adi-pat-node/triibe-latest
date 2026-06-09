@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Calendar, Clock, MapPin } from "lucide-react";
 
-const EARLY_BIRD_DEADLINE = new Date("2026-06-01T00:00:00");
+const EARLY_BIRD_DEADLINE = new Date("2026-08-01T00:00:00");
 
 function useCountdown(target: Date) {
   const [timeLeft, setTimeLeft] = useState({
@@ -76,7 +76,7 @@ export default function HeroSummit() {
 
           <div className="bg-white backdrop-blur-sm border border-white/20 rounded-xl px-8 py-4 mb-6 text-center">
             <p className="text-black text-lg font-bold mb-3">
-              Early Bird sale ends in
+              Regular Tickets sell out in
             </p>
             <div className="flex items-end justify-center gap-6">
               <div className="flex flex-col items-center">
