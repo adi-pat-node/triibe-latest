@@ -243,66 +243,76 @@ export default function TriibeGlobe() {
     };
   }, []);
 
- useEffect(() => {
-  const wrapper = wrapperRef.current;
-  if (!wrapper || !globeEl.current) return;
+  useEffect(() => {
+    const wrapper = wrapperRef.current;
+    if (!wrapper || !globeEl.current) return;
 
-  const raycaster = new THREE.Raycaster();
-  const mouse = new THREE.Vector2();
+    const raycaster = new THREE.Raycaster();
+    const mouse = new THREE.Vector2();
 
-  // 1. Helper function to check if pointing at the globe
-  const checkIntersection = (clientX: number, clientY: number) => {
-    if (!globeEl.current?.camera || !globeEl.current?.scene) return false;
+    // 1. Helper function to check if pointing at the globe
+    const checkIntersection = (clientX: number, clientY: number) => {
+      if (!globeEl.current?.camera || !globeEl.current?.scene) return false;
 
-    const rect = wrapper.getBoundingClientRect();
-    mouse.x = ((clientX - rect.left) / rect.width) * 2 - 1;
-    mouse.y = -((clientY - rect.top) / rect.height) * 2 + 1;
+      const rect = wrapper.getBoundingClientRect();
+      mouse.x = ((clientX - rect.left) / rect.width) * 2 - 1;
+      mouse.y = -((clientY - rect.top) / rect.height) * 2 + 1;
 
-    raycaster.setFromCamera(mouse, globeEl.current.camera());
-    const intersects = raycaster.intersectObjects(
-      globeEl.current.scene().children,
-      true
-    );
+      raycaster.setFromCamera(mouse, globeEl.current.camera());
+      const intersects = raycaster.intersectObjects(
+        globeEl.current.scene().children,
+        true,
+      );
 
-    return intersects.length > 0;
-  };
+      return intersects.length > 0;
+    };
 
-  // 2. Mouse Wheel Handler (Desktop)
-  const handleWheel = (e: WheelEvent) => {
-    if (checkIntersection(e.clientX, e.clientY)) {
-      e.preventDefault(); // Stop page scroll
-    } else {
-      e.stopImmediatePropagation(); // Stop globe zoom
-    }
-  };
+    // 2. Mouse Wheel Handler (Desktop)
+    const handleWheel = (e: WheelEvent) => {
+      if (checkIntersection(e.clientX, e.clientY)) {
+        e.preventDefault(); // Stop page scroll
+      } else {
+        e.stopImmediatePropagation(); // Stop globe zoom
+      }
+    };
 
-  // 3. Touch Move Handler (Mobile/Tablet)
-  const handleTouchMove = (e: TouchEvent) => {
-    if (e.touches.length === 0) return;
+    // 3. Touch Move Handler (Mobile/Tablet)
+    const handleTouchMove = (e: TouchEvent) => {
+      if (e.touches.length === 0) return;
 
-    // We use the coordinates of the first finger touching the screen
-    const touch = e.touches[0];
+      // We use the coordinates of the first finger touching the screen
+      const touch = e.touches[0];
 
-    if (checkIntersection(touch.clientX, touch.clientY)) {
-      e.preventDefault(); // Stop page scroll, let globe rotate/zoom
-    } else {
-      e.stopImmediatePropagation(); // Let page scroll, stop globe interacting
-    }
-  };
+      if (checkIntersection(touch.clientX, touch.clientY)) {
+        e.preventDefault(); // Stop page scroll, let globe rotate/zoom
+      } else {
+        e.stopImmediatePropagation(); // Let page scroll, stop globe interacting
+      }
+    };
 
-  // Attach listeners with passive: false so preventDefault() works
-  wrapper.addEventListener("wheel", handleWheel, { passive: false, capture: true });
-  wrapper.addEventListener("touchmove", handleTouchMove, { passive: false, capture: true });
+    // Attach listeners with passive: false so preventDefault() works
+    wrapper.addEventListener("wheel", handleWheel, {
+      passive: false,
+      capture: true,
+    });
+    wrapper.addEventListener("touchmove", handleTouchMove, {
+      passive: false,
+      capture: true,
+    });
 
-  const onBranchClick = (e: any) => setActiveBranch(e.detail);
-  wrapper.addEventListener("branch-click", onBranchClick);
+    const onBranchClick = (e: any) => setActiveBranch(e.detail);
+    wrapper.addEventListener("branch-click", onBranchClick);
 
-  return () => {
-    wrapper.removeEventListener("wheel", handleWheel, { capture: true } as any);
-    wrapper.removeEventListener("touchmove", handleTouchMove, { capture: true } as any);
-    wrapper.removeEventListener("branch-click", onBranchClick);
-  };
-}, []);
+    return () => {
+      wrapper.removeEventListener("wheel", handleWheel, {
+        capture: true,
+      } as any);
+      wrapper.removeEventListener("touchmove", handleTouchMove, {
+        capture: true,
+      } as any);
+      wrapper.removeEventListener("branch-click", onBranchClick);
+    };
+  }, []);
 
   useEffect(() => {
     const updateSize = () => {
@@ -362,6 +372,7 @@ export default function TriibeGlobe() {
 
     const img = document.createElement("img");
     img.src = "/triibe-marker.png";
+    img.alt = "Triibe Marker";
     img.style.cssText = `
     width: 28px;
     height: 28px;
