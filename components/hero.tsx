@@ -18,6 +18,7 @@ export default function Hero() {
             fetchPriority="high"
             className="object-cover object-top"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            quality={50}
           />
           <div className="absolute inset-0 w-full h-full bg-black/60" />
         </div>
