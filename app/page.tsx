@@ -2,10 +2,7 @@ import Header from "@/components/header";
 import Hero from "@/components/hero";
 import dynamic from "next/dynamic";
 const ProgramOverview = dynamic(() => import("@/components/programOverview"));
-const TriibeGlobeWrapper = dynamic(
-  () => import("@/components/TriibeGlobeWrapper"),
-  { ssr: false },
-);
+import TriibeGlobeWrapper from "@/components/TriibeGlobeWrapper";
 const KeyStatistics = dynamic(() => import("@/components/keyStatistics"));
 const Changemakers = dynamic(() => import("@/components/changemakers"));
 const Footer = dynamic(() => import("@/components/footer"));
