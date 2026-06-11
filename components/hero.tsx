@@ -1,7 +1,8 @@
-"use client";
+// "use client";
 
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -10,13 +11,13 @@ export default function Hero() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <Image
-            src="/images/home/heroImage1.webp"
+            src="/images/home/heroImage1.jpg"
             alt="College students collaborating"
             fill
             priority
             className="object-cover object-top"
             sizes="100vw"
-            quality={80}
+            quality={60}
           />
           <div className="absolute inset-0 w-full h-full bg-black/60" />
         </div>
@@ -41,28 +42,27 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="  flex flex-col md:flex-row items-center justify-center  gap-6 md:gap-12   ">
-            <a
+            <Link
               href="/fellowship"
               className="px-6 py-3 font-bold bg-white text-black hover:bg-gray-100 font-['DM_Sans',Helvetica] font-normal text-sm rounded inline-flex items-center justify-center transition-colors"
             >
               Explore our Program
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/apply"
               className="px-6 py-3  font-bold bg-[#002c19] text-white rounded hover:bg-[#003d24] font-['DM_Sans',Helvetica] font-normal text-sm rounded inline-flex items-center justify-center transition-colors gap-2"
             >
               Apply to Fellowship
-            </a>
+            </Link>
           </div>
           <div className="mt-20">
             <Image
               src="/images/home/TRIIBEHeroWhite.svg"
               alt="TRIIBE"
-              width={40}
+              width={320}
               height={40}
               priority
-              className="h-20 w-80"
             />
           </div>
 
