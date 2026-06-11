@@ -16,6 +16,7 @@ export default function Hero() {
             priority
             className="object-cover object-top"
             sizes="100vw"
+            quality={80}
           />
           <div className="absolute inset-0 w-full h-full bg-black/60" />
         </div>
