@@ -134,14 +134,39 @@ const ARCS = [
 export default function TriibeGlobe() {
   const globeEl = useRef<any>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null); // Visibility Tracker
   const idleTimerRef = useRef<NodeJS.Timeout | null>(null);
+
+  const [isVisible, setIsVisible] = useState(false); // Visibility State
   const [countries, setCountries] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeBranch, setActiveBranch] = useState<Branch | null>(null);
   const [dimensions, setDimensions] = useState({ width: 1100, height: 800 });
 
+  // 1. Intersection Observer to delay loading
   useEffect(() => {
-    fetch("/countries.geojson")
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px" },
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  // 2. Fetch data ONLY when visible
+  useEffect(() => {
+    if (!isVisible) return;
+
+    fetch("/countries1.json")
       .then((r) => {
         if (!r.ok) throw new Error("Network error");
         return r.json();
@@ -154,10 +179,11 @@ export default function TriibeGlobe() {
         console.error("Failed to load globe data:", err);
         setLoading(false);
       });
-  }, []);
+  }, [isVisible]);
 
+  // 3. Setup Globe ONLY when visible
   useEffect(() => {
-    if (!globeEl.current) return;
+    if (!globeEl.current || !isVisible) return;
 
     let cleanup: (() => void) | null = null;
     let raf: number | null = null;
@@ -178,13 +204,11 @@ export default function TriibeGlobe() {
         }
       });
 
-      // If mesh not ready yet, retry on next frame
       if (!globeMesh) {
         raf = requestAnimationFrame(setup);
         return;
       }
 
-      // Style the globe
       try {
         globeEl.current.scene().traverse((obj: any) => {
           if (obj.isMesh && obj.geometry?.type === "SphereGeometry") {
@@ -241,16 +265,17 @@ export default function TriibeGlobe() {
       if (raf) cancelAnimationFrame(raf);
       if (cleanup) cleanup();
     };
-  }, []);
+  }, [isVisible]);
 
+  // 4. Attach wheel/touch listeners ONLY when visible
   useEffect(() => {
+    if (!isVisible) return;
     const wrapper = wrapperRef.current;
     if (!wrapper || !globeEl.current) return;
 
     const raycaster = new THREE.Raycaster();
     const mouse = new THREE.Vector2();
 
-    // 1. Helper function to check if pointing at the globe
     const checkIntersection = (clientX: number, clientY: number) => {
       if (!globeEl.current?.camera || !globeEl.current?.scene) return false;
 
@@ -267,30 +292,25 @@ export default function TriibeGlobe() {
       return intersects.length > 0;
     };
 
-    // 2. Mouse Wheel Handler (Desktop)
     const handleWheel = (e: WheelEvent) => {
       if (checkIntersection(e.clientX, e.clientY)) {
-        e.preventDefault(); // Stop page scroll
+        e.preventDefault();
       } else {
-        e.stopImmediatePropagation(); // Stop globe zoom
+        e.stopImmediatePropagation();
       }
     };
 
-    // 3. Touch Move Handler (Mobile/Tablet)
     const handleTouchMove = (e: TouchEvent) => {
       if (e.touches.length === 0) return;
-
-      // We use the coordinates of the first finger touching the screen
       const touch = e.touches[0];
 
       if (checkIntersection(touch.clientX, touch.clientY)) {
-        e.preventDefault(); // Stop page scroll, let globe rotate/zoom
+        e.preventDefault();
       } else {
-        e.stopImmediatePropagation(); // Let page scroll, stop globe interacting
+        e.stopImmediatePropagation();
       }
     };
 
-    // Attach listeners with passive: false so preventDefault() works
     wrapper.addEventListener("wheel", handleWheel, {
       passive: false,
       capture: true,
@@ -312,7 +332,7 @@ export default function TriibeGlobe() {
       } as any);
       wrapper.removeEventListener("branch-click", onBranchClick);
     };
-  }, []);
+  }, [isVisible]);
 
   useEffect(() => {
     const updateSize = () => {
@@ -412,11 +432,13 @@ export default function TriibeGlobe() {
 
   return (
     <section
+      ref={containerRef}
       style={{
         background: "#ffffff",
         fontFamily: "'Avenir Next', 'Avenir', -apple-system, sans-serif",
         width: "100%",
         padding: "64px 0 48px",
+        minHeight: "800px", // Prevents layout shift
       }}
     >
       <div style={{ textAlign: "center", marginBottom: 20 }}>
@@ -457,7 +479,7 @@ export default function TriibeGlobe() {
               height: dimensions.height,
             }}
           >
-            {loading && (
+            {(!isVisible || loading) && (
               <div
                 style={{
                   position: "absolute",
@@ -482,49 +504,51 @@ export default function TriibeGlobe() {
               </div>
             )}
 
-            <Globe
-              ref={globeEl}
-              width={dimensions.width}
-              height={dimensions.height}
-              backgroundColor="rgba(0,0,0,0)"
-              showAtmosphere={true}
-              atmosphereColor={GREEN_GLOW}
-              atmosphereAltitude={0.15}
-              globeImageUrl={null as any}
-              showGraticules={true}
-              polygonsData={countries}
-              polygonCapColor={() => "#0a3d20"}
-              polygonSideColor={() => "#051a0d"}
-              polygonStrokeColor={() => "#00ff8822"}
-              polygonAltitude={0.005}
-              polygonLabel={() => ""}
-              htmlElementsData={BRANCHES}
-              htmlLat="lat"
-              htmlLng="lng"
-              htmlAltitude={0.01}
-              htmlElement={makeMarker as any}
-              arcsData={ARCS}
-              arcStartLat="startLat"
-              arcStartLng="startLng"
-              arcEndLat="endLat"
-              arcEndLng="endLng"
-              arcColor={() => "#ffffff"}
-              arcStroke={0.4}
-              arcDashLength={0.08}
-              arcDashGap={0.92}
-              arcDashAnimateTime={4000}
-              arcAltitude={0.25}
-              arcOpacity={0.8}
-              ringsData={RING_DATA}
-              ringLat="lat"
-              ringLng="lng"
-              ringLabel={() => ""}
-              ringColor={() => "#00ff8866"}
-              ringMaxRadius={3}
-              ringPropagationSpeed={2}
-              ringRepeatPeriod={1000}
-              pointLabel={() => ""}
-            />
+            {isVisible && !loading && (
+              <Globe
+                ref={globeEl}
+                width={dimensions.width}
+                height={dimensions.height}
+                backgroundColor="rgba(0,0,0,0)"
+                showAtmosphere={true}
+                atmosphereColor={GREEN_GLOW}
+                atmosphereAltitude={0.15}
+                globeImageUrl={null as any}
+                showGraticules={true}
+                polygonsData={countries}
+                polygonCapColor={() => "#0a3d20"}
+                polygonSideColor={() => "#051a0d"}
+                polygonStrokeColor={() => "#00ff8822"}
+                polygonAltitude={0.005}
+                polygonLabel={() => ""}
+                htmlElementsData={BRANCHES}
+                htmlLat="lat"
+                htmlLng="lng"
+                htmlAltitude={0.01}
+                htmlElement={makeMarker as any}
+                arcsData={ARCS}
+                arcStartLat="startLat"
+                arcStartLng="startLng"
+                arcEndLat="endLat"
+                arcEndLng="endLng"
+                arcColor={() => "#ffffff"}
+                arcStroke={0.4}
+                arcDashLength={0.08}
+                arcDashGap={0.92}
+                arcDashAnimateTime={4000}
+                arcAltitude={0.25}
+                arcOpacity={0.8}
+                ringsData={RING_DATA}
+                ringLat="lat"
+                ringLng="lng"
+                ringLabel={() => ""}
+                ringColor={() => "#00ff8866"}
+                ringMaxRadius={3}
+                ringPropagationSpeed={2}
+                ringRepeatPeriod={1000}
+                pointLabel={() => ""}
+              />
+            )}
           </div>
 
           {activeBranch && (
