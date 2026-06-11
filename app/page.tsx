@@ -2,19 +2,25 @@ import DeckSection from "@/components/deckSection";
 import dynamic from "next/dynamic";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
-import Footer from "@/components/footer";
+
 import MissionStatement from "@/components/missionStatement";
-import ProgramOverview from "@/components/programOverview";
+
 import ApplicationProcess from "@/components/applicationProcess";
 import FellowshipBenefits from "@/components/fellowshipBenefits";
-import KeyStatistics from "@/components/keyStatistics";
-import Changemakers from "@/components/changemakers";
+
 import PostGraduationOutcomes from "@/components/postGraduationOutcomes";
 import SponsorsAndPartners from "@/components/sponsorsAndPartners";
 import ImpactMetrics from "@/components/impactMetrics";
 import CTASection from "@/components/cta";
 import OfficeMap from "@/components/officeMap";
-import TriibeGlobeWrapper from "@/components/TriibeGlobeWrapper";
+
+const ProgramOverview = dynamic(() => import("@/components/programOverview"));
+const TriibeGlobeWrapper = dynamic(
+  () => import("@/components/TriibeGlobeWrapper"),
+);
+const KeyStatistics = dynamic(() => import("@/components/keyStatistics"));
+const Changemakers = dynamic(() => import("@/components/changemakers"));
+const Footer = dynamic(() => import("@/components/footer"));
 
 export const metadata = {
   title:
