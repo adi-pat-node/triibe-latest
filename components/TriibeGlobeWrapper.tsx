@@ -6,7 +6,7 @@ const TriibeGlobe = dynamic(() => import("@/components/TriibeGlobe"), {
   ssr: false,
   loading: () => (
     <div className="w-full min-h-[800px] flex items-center justify-center">
-      <p className="text-black">Loading interactive globe...</p>
+      <p className="text-black ">Loading interactive 3D globe...</p>
     </div>
   ),
 });
