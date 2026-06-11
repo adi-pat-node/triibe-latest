@@ -1,22 +1,10 @@
-import DeckSection from "@/components/deckSection";
-import dynamic from "next/dynamic";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
-
-import MissionStatement from "@/components/missionStatement";
-
-import ApplicationProcess from "@/components/applicationProcess";
-import FellowshipBenefits from "@/components/fellowshipBenefits";
-
-import PostGraduationOutcomes from "@/components/postGraduationOutcomes";
-import SponsorsAndPartners from "@/components/sponsorsAndPartners";
-import ImpactMetrics from "@/components/impactMetrics";
-import CTASection from "@/components/cta";
-import OfficeMap from "@/components/officeMap";
-
+import dynamic from "next/dynamic";
 const ProgramOverview = dynamic(() => import("@/components/programOverview"));
 const TriibeGlobeWrapper = dynamic(
   () => import("@/components/TriibeGlobeWrapper"),
+  { ssr: false },
 );
 const KeyStatistics = dynamic(() => import("@/components/keyStatistics"));
 const Changemakers = dynamic(() => import("@/components/changemakers"));
@@ -37,21 +25,12 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Header />
       <Hero />
-      {/* <MissionStatement /> */}
+
       <ProgramOverview />
-      {/* <DeckSection /> */}
-      {/* <OfficeMap /> */}
       <TriibeGlobeWrapper />
-      {/* <FellowshipBenefits /> */}
       <KeyStatistics />
       <Changemakers />
-      {/* <PostGraduationOutcomes /> */}
-
-      {/* <SponsorsAndPartners /> */}
-      {/* <ImpactMetrics /> */}
-      {/* <CTASection /> */}
       <Footer />
-      {/* <Newsletter /> */}
     </div>
   );
 }
