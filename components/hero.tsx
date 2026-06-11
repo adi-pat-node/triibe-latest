@@ -15,6 +15,7 @@ export default function Hero() {
             alt="College students collaborating"
             fill
             priority
+            fetchPriority="high"
             className="object-cover object-top"
             sizes="100vw"
             quality={60}

@@ -19,11 +19,13 @@ const dmSans = DM_Sans({
   display: "swap",
   weight: ["400", "500", "600", "700"], // normal, medium, semibold, bold
   variable: "--font-dm-sans",
+  preload: true,
 });
 const geistMono = Geist_Mono({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-mono",
+  preload: false,
 });
 
 export const metadata: Metadata = {
