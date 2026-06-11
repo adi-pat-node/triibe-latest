@@ -487,7 +487,7 @@ export default function TriibeGlobe() {
               width={dimensions.width}
               height={dimensions.height}
               backgroundColor="rgba(0,0,0,0)"
-              showAtmosphere={true}
+              showAtmosphere={false}
               atmosphereColor={GREEN_GLOW}
               atmosphereAltitude={0.15}
               globeImageUrl={null as any}
