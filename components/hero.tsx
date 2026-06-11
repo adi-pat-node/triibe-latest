@@ -17,8 +17,7 @@ export default function Hero() {
             priority
             fetchPriority="high"
             className="object-cover object-top"
-            sizes="100vw"
-            quality={60}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <div className="absolute inset-0 w-full h-full bg-black/60" />
         </div>
@@ -77,6 +76,7 @@ export default function Hero() {
               width={60}
               height={60}
               className="object-contain"
+              priority
             />
           </div>
         </div>
