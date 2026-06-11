@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import HeroSummit from "@/components/heroSummit";
 import Image from "next/image";
 import { createElement } from "react";
+import Script from "next/script";
 
 const Countdown = ({ targetDate }: { targetDate: string }) => {
   const [timeLeft, setTimeLeft] = React.useState({
@@ -1119,6 +1120,11 @@ const SummitPage = () => {
           </div>
         </div>
       </section>
+
+      <Script
+        src="https://widgets.givebutter.com/latest.umd.cjs?acct=xLAdgtMt2xZoh67c&p=other"
+        strategy="lazyOnload"
+      />
 
       <Footer />
     </main>
