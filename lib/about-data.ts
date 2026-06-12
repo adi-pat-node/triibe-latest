@@ -128,6 +128,12 @@ export const associateBoard: Person[] = [
     imagePath: "/images/team/ImaneAbdel.jpg",
     linkedIn: "https://www.linkedin.com/in/imane-abdel-jelil/",
   },
+  {
+    name: "Tahnoon Murtza",
+    role: "Member",
+    imagePath: "/images/team/TahnoonMurtza.jpg",
+    linkedIn: "https://www.linkedin.com/in/tahnoon-m-b4071419a/",
+  },
 ];
 
 export const legacyBoard: Person[] = [
@@ -239,6 +245,12 @@ export const legacyBoard: Person[] = [
     title: "Founder & CEO, Luminary Creative Agency",
     imagePath: "/images/team/LanzPierce.jpg",
     linkedIn: "https://www.linkedin.com/in/lanzpierce/",
+  },
+  {
+    name: "Zachary Pogue",
+    title: "CTO, Dapper Care Inc",
+    imagePath: "/images/team/ZacharyPogue.jpg",
+    linkedIn: "https://www.linkedin.com/in/zachpogue/",
   },
   /* hidden:
   { name: "Laurence Kalinsky", title: "CEO, PVBLIC.org", imagePath: "/images/team/laurence-kalinsky.jpg" },
