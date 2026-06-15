@@ -141,7 +141,7 @@ export default function TriibeGlobe() {
   const [dimensions, setDimensions] = useState({ width: 1100, height: 800 });
 
   useEffect(() => {
-    fetch("/countries1.json")
+    fetch("/countries.geojson")
       .then((r) => {
         if (!r.ok) throw new Error("Network error");
         return r.json();
@@ -372,7 +372,6 @@ export default function TriibeGlobe() {
 
     const img = document.createElement("img");
     img.src = "/triibe-marker.png";
-    img.alt = "Triibe Marker";
     img.style.cssText = `
     width: 28px;
     height: 28px;
@@ -487,7 +486,7 @@ export default function TriibeGlobe() {
               width={dimensions.width}
               height={dimensions.height}
               backgroundColor="rgba(0,0,0,0)"
-              showAtmosphere={false}
+              showAtmosphere={true}
               atmosphereColor={GREEN_GLOW}
               atmosphereAltitude={0.15}
               globeImageUrl={null as any}
