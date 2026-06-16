@@ -374,6 +374,13 @@ export const locations: LocationEntry[] = [
         linkedIn: "",
         title: "Project Head at Marie Projects Ltd.",
       },
+
+      {
+        name: "Sanjoy Roy Choudhury",
+        imagePath: "/images/team/SanjoyRoyChoudhury.jpg",
+        linkedIn: "https://www.linkedin.com/in/sanjoy-roychoudhury-2535a5325/",
+        title: "International Energy & Commodities Strategist",
+      },
     ],
     advisoryBoardForming: false,
   },
