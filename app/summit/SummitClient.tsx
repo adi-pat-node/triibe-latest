@@ -471,13 +471,6 @@ const SummitPage = () => {
       linkedin: "https://www.linkedin.com/in/laurabakosh/",
       tag: "Speaker",
     },
-    {
-      name: "Dr. Steven Melnik",
-      title: "Chairman of United World Leaders: Lives Amplified",
-      image: "/images/summit/StevenMelnik.jpg",
-      linkedin: "https://www.linkedin.com/in/stevenvmelnik/",
-      tag: "Speaker",
-    },
   ];
 
   const scheduleDays = [
