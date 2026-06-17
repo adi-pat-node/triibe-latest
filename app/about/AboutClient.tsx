@@ -115,7 +115,7 @@ const ctaCards = [
 export default function AboutPage() {
   const { count: count0, start: start0 } = useCountUp(8);
   const { count: count1, start: start1 } = useCountUp(9);
-  const { count: count2, start: start2 } = useCountUp(80);
+  const { count: count2, start: start2 } = useCountUp(90);
   const { count: count3, start: start3 } = useCountUp(7);
 
   const statsRef = useRef<HTMLDivElement>(null);
@@ -281,7 +281,7 @@ export default function AboutPage() {
                 {count2}
                 <span
                   style={{
-                    opacity: count2 === 80 ? 1 : 0,
+                    opacity: count2 === 90 ? 1 : 0,
                     transition: "opacity 0.3s ease",
                   }}
                 >
@@ -545,7 +545,7 @@ export default function AboutPage() {
                 display: "block",
               }}
             >
-              
+
             </span>
           </FadeUp>
           <div className="space-y-4">
