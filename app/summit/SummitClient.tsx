@@ -405,14 +405,14 @@ const SummitPage = () => {
       title: "Founder, Red Shoe Movement",
       image: "/images/summit/MarielaDabbah3.png",
       linkedin: "https://www.linkedin.com/in/marieladabbah/",
-      tag: "Established",
+      tag: "Speaker",
     },
     {
       name: "Gregg Meyer",
       title: "CSO & President, Steve Madden Corporate Foundation",
       image: "/images/summit/GreggMeyer.jpg",
       linkedin: "https://www.linkedin.com/in/gregg-meyer/",
-      tag: "Established",
+      tag: "Speaker",
     },
     {
       name: "His Highness Dr. Prince Mario-Max Schaumburg-Lippe",
@@ -420,56 +420,63 @@ const SummitPage = () => {
       image: "/images/summit/PrinceMarioMax.png",
       linkedin: "#",
       instagram: "https://www.instagram.com/princemariomax",
-      tag: "Established",
+      tag: "Speaker",
     },
     {
       name: "Lauren Shenkman",
       title: "Director of Partnerships, Riley’s Way Foundation",
       image: "/images/summit/LaurenShenkman2.jpg",
       linkedin: "https://www.linkedin.com/in/laurenshenkman/",
-      tag: "Established",
+      tag: "Speaker",
     },
     {
       name: "Chelsea Toler",
       title: "Co-CEO Logictry",
       image: "/images/summit/ChelseaToler.png",
       linkedin: "https://www.linkedin.com/in/catoler92/",
-      tag: "Established",
+      tag: "Speaker",
     },
     {
       name: "Holland Haiis",
       title: "Co-founder, Avita House",
       image: "/images/summit/HollandHaiis.png",
       linkedin: "https://www.linkedin.com/in/hollandhaiis/",
-      tag: "Established",
+      tag: "Speaker",
     },
     {
       name: "Griffin Pinkow",
       title: "CEO and Founder, Foreseeable Future Foundation",
       image: "/images/summit/GriffinPinkow.png",
       linkedin: "https://www.linkedin.com/in/gpinkow/",
-      tag: "Established",
+      tag: "Speaker",
     },
     {
       name: "Megahan Peterson",
       title: "CIO, The Family Offices Global",
       image: "/images/summit/MegahanPeterson.png",
       linkedin: "https://www.linkedin.com/in/megahan-peterson-3b6b5012/",
-      tag: "Established",
+      tag: "Speaker",
     },
     {
       name: "Adeline Azrack",
       title: "Managing Director, Fondation CHANEL",
       image: "/images/summit/AdelineAzrack.png",
       linkedin: "https://www.linkedin.com/in/adeline-azrack-0853023/",
-      tag: "Established",
+      tag: "Speaker",
     },
     {
       name: "Laura Bakosh",
       title: "Cofounder, Inner Explorer",
       image: "/images/summit/LauraBakosh.png",
       linkedin: "https://www.linkedin.com/in/laurabakosh/",
-      tag: "Established",
+      tag: "Speaker",
+    },
+    {
+      name: "Dr. Steven Melnik",
+      title: "Chairman of United World Leaders: Lives Amplified",
+      image: "/images/summit/StevenMelnik.jpg",
+      linkedin: "https://www.linkedin.com/in/stevenvmelnik/",
+      tag: "Speaker",
     },
   ];
 
@@ -689,14 +696,14 @@ const SummitPage = () => {
               <div className="flex flex-col gap-4 max-w-[600px]">
                 <div className="flex flex-col gap-1">
                   <h4 className="text-white font-bold text-2xl tracking-wide mb-4">
-                    Headlining keynote · Friday night
+                    Opening Gala Remarks
                   </h4>
-                  <p className="text-white/70 text-base">
+                  {/* <p className="text-white/70 text-base">
                     In conversation with TRIIBE
-                  </p>
+                  </p> */}
                 </div>
 
-                <h3
+                {/* <h3
                   className="text-white text-4xl md:text-5xl lg:text-6xl"
                   style={{
                     fontFamily: "'Cormorant Garamond', serif",
@@ -705,19 +712,19 @@ const SummitPage = () => {
                   }}
                 >
                   Coming soon...
-                </h3>
+                </h3> */}
 
-                <p className="text-white/80 text-base leading-relaxed">
+                {/* <p className="text-white/80 text-base leading-relaxed">
                   An intimate fireside on community, capital and the long game
-                  of building something that outlasts you.
+                  of building something that outlasts you. */}
                   {/*
                   Artist, entrepreneur, cultural architect. An intimate fireside
                   on community, capital, and the long game of building something
                   that outlasts you. */}
-                </p>
+                {/* </p> */}
 
                 <div className="flex flex-wrap gap-x-10 gap-y-2 mt-2 text-white text-base">
-                  <span>7:00 PM · VIP opening ceremony</span>
+                  <span>Headlining keynote coming soon</span>
                   {/* <span>Fireside format · ~25 min + Q&A</span> */}
                 </div>
 
@@ -839,7 +846,7 @@ const SummitPage = () => {
       <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]">
         <div className="max-w-260 mx-auto flex flex-col gap-12">
           <h2 className="text-3xl md:text-4xl font-bold text-black text-center">
-            Featured speakers
+            Featured Intergenerational Speakers
           </h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
@@ -864,12 +871,12 @@ const SummitPage = () => {
                   />
 
                   {(speaker.tag === "Next-Gen" ||
-                    speaker.tag === "Established" ||
+                    speaker.tag === "Speaker" ||
                     speaker.tag === "Moderator" ||
                     speaker.tag === "MC") && (
                     <span
                       className={`absolute top-0 left-0 text-xs font-semibold px-3 py-1 rounded-br-xl ${
-                        speaker.tag === "Established"
+                        speaker.tag === "Speaker"
                           ? "bg-black text-white"
                           : speaker.tag === "Moderator"
                             ? "bg-gray-200 text-gray-600"

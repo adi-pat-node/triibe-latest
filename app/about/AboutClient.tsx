@@ -545,8 +545,7 @@ export default function AboutPage() {
                 display: "block",
               }}
             >
-              Local advisors who open doors, build community, and drive
-              fundraising on the ground.
+              
             </span>
           </FadeUp>
           <div className="space-y-4">
