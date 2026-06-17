@@ -660,7 +660,7 @@ const SummitPage = () => {
               {/* Left Image */}
               <div className="relative w-[35%] min-h-[400px]">
                 <Image
-                  src="/images/summit/StevenMelnik.jpg"
+                  src="/images/summit/StevenMelnik.png"
                   alt="Dr. Steven Melnik"
                   fill
                   className="object-cover"
