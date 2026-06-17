@@ -632,6 +632,7 @@ const SummitPage = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-black text-center mb-4">
               About the summit
             </h2>
+
             <p className="text-black text-base leading-relaxed">
               Friday's VIP Gala is a 300-guest dinner featuring Michelin-starred
               celebrity sushi chefs performing two live tuna carvings, a
@@ -655,73 +656,39 @@ const SummitPage = () => {
           </div>
 
           <div className="relative mt-12">
-            <div
-              className="
-          w-full h-[300px] relative mb-6
+            <div className="bg-[#002C19] rounded-[10px] overflow-hidden min-h-[400px] flex">
+              {/* Left Image */}
+              <div className="relative w-[35%] min-h-[400px]">
+                <Image
+                  src="/images/summit/StevenMelnik.jpg"
+                  alt="Dr. Steven Melnik"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
 
-          md:absolute md:left-0 md:-top-24 md:w-[350px] md:h-[450px]
-
-          lg:left-[-150px] lg:bottom-[-65px] lg:top-auto lg:w-[650px] lg:h-[750px]
-
-          z-10
-        "
-            >
-              <Image
-                src="/images/summit/snoopSiloutte1.png"
-                alt="Snoop Dogg"
-                fill
-                className="object-contain object-bottom"
-                priority
-              />
-            </div>
-
-            <div
-              className="
-          bg-[#002C19] rounded-[10px] py-12 px-6
-
-          md:pl-[380px] md:pr-10
-
-          lg:pl-[360px] lg:pr-12
-
-          min-h-[400px] flex items-center
-        "
-            >
-              <div className="flex flex-col gap-4 max-w-[600px]">
-                <div className="flex flex-col gap-1">
-                  <h4 className="text-white font-bold text-2xl tracking-wide mb-4">
-                    Opening Gala Remarks
+              {/* Right Content */}
+              <div className="flex-1 flex items-center px-12 py-12">
+                <div>
+                  <h4 className="text-white font-bold text-5xl mb-8">
+                    Dr. Steven V. Melnik
                   </h4>
-                  {/* <p className="text-white/70 text-base">
-                    In conversation with TRIIBE
-                  </p> */}
+
+                  <p className="text-white/70 text-lg mb-8 leading-relaxed">
+                    Chairman,
+                    <br />
+                    United World Leaders, Lives Amplified
+                  </p>
+
+                  <p className="text-white text-2xl mb-24">
+                    Opening Gala Remarks
+                  </p>
+
+                  <p className="text-white/70 text-lg">
+                    Headlining keynote coming soon
+                  </p>
                 </div>
-
-                {/* <h3
-                  className="text-white text-4xl md:text-5xl lg:text-6xl"
-                  style={{
-                    fontFamily: "'Cormorant Garamond', serif",
-                    fontStyle: "italic",
-                    fontWeight: 100,
-                  }}
-                >
-                  Coming soon...
-                </h3> */}
-
-                {/* <p className="text-white/80 text-base leading-relaxed">
-                  An intimate fireside on community, capital and the long game
-                  of building something that outlasts you. */}
-                  {/*
-                  Artist, entrepreneur, cultural architect. An intimate fireside
-                  on community, capital, and the long game of building something
-                  that outlasts you. */}
-                {/* </p> */}
-
-                <div className="flex flex-wrap gap-x-10 gap-y-2 mt-2 text-white text-base">
-                  <span>Headlining keynote coming soon</span>
-                  {/* <span>Fireside format · ~25 min + Q&A</span> */}
-                </div>
-
-                {/* <p className="text-white text-base">Stage A · Main Hall</p> */}
               </div>
             </div>
           </div>
