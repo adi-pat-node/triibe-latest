@@ -79,43 +79,75 @@ const firstTen: Founder[] = [
   },
 ];
 
-const rest: Founder[] = [
+const restOverrides: Partial<Founder>[] = [
   {
-    id: 11,
     name: "Nils Rauscher",
     org: "Liberating Education Organization",
     bio: "",
     image: "/images/triibe100/Nils Rauscher.png",
   },
   {
-    id: 12,
     name: "Nayla Jimenez",
     org: "Philippine Health Initiative",
     bio: "",
     image: "/images/triibe100/Nayla Jimenez.png",
   },
   {
-    id: 13,
     name: "Mirus Ponon",
     org: "ASEAN Youth Advocates Network (AYAN)",
     bio: "",
     image: "/images/triibe100/Mirus Ponon.png",
   },
   {
-    id: 14,
     name: "Mathias Charles Yabe",
     org: "AkoFresh",
     bio: "",
     image: "/images/triibe100/Mathias Charles Yabe.png",
   },
   {
-    id: 15,
     name: "Maria Keller",
     org: "Read Indeed",
     bio: "",
     image: "/images/triibe100/Maria Keller.png",
   },
-  
+  {
+    name: "Josh Fields",
+    org: "The Next Step Programs",
+    bio: "",
+    image: "/images/triibe100/Josh Fields.png",
+  },
+  {
+    name: "Jared Fenton",
+    org: "The Reflect Organization",
+    bio: "",
+    image: "/images/triibe100/Jared Fenton.png",
+  },
+  {
+    name: "Jahnavi Rao",
+    org: "New Voters",
+    bio: "",
+    image: "/images/triibe100/Jahnavi Rao.png",
+  },
+  {
+    name: "Stanley Anigbogu",
+    org: "LightEd Impact Foundation",
+    bio: "",
+    image: "/images/triibe100/Stanley Anigbogu.png",
+  },
+  {
+    name: "Hikaru (Wakeel) Hayakawa",
+    org: "Climate Cardinals",
+    bio: "",
+    image: "/images/triibe100/Hikaru Wakeel Hayakawa.png",
+  },
 ];
+
+const rest: Founder[] = Array.from({ length: 90 }, (_, i) => ({
+  id: i + 11,
+  name: "Name",
+  org: "Non Profit",
+  bio: "Coming soon.",
+  ...restOverrides[i],
+}));
 
 export const founders: Founder[] = [...firstTen, ...rest];
