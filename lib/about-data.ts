@@ -144,13 +144,13 @@ export const legacyBoard: Person[] = [
     imagePath: "/images/team/stefan-avivson.jpg",
     linkedIn: "https://www.linkedin.com/in/avivson/",
   },
-  {
+  /* {
     name: "Chelsea Toler",
     //role: "Vice Chair",
     title: "Co-Founder, Logictry & President, The Family Foundation",
     imagePath: "/images/team/chelsea-toler.jpg",
     linkedIn: "https://www.linkedin.com/in/catoler92/",
-  },
+  }, */
   {
     name: "Gregg Meyer",
     title: "Chief Sustainability Officer, Steve Madden",
