@@ -37,7 +37,7 @@ export default function Changemakers() {
     },
     {
       name: "Esha Venkat",
-      title: "Founder, Nest4Us",
+      title: "Founder, NEST4US",
       university: "Georgia Institute of Technology, Spring 24 fellow",
       description:
         "Mobilizing youth to tackle issues including hunger, education, and climate justice with volunteering & education",

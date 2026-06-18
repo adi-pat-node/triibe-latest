@@ -37,7 +37,7 @@ export default function Cohort() {
     },
     {
       name: "Esha Venkat",
-      title: "Founder, Nest4Us",
+      title: "Founder, NEST4US",
       university: "Georgia Institute of Technology",
       description:
         "Mobilizing youth to tackle issues including hunger, education, and climate justice with volunteering & education",

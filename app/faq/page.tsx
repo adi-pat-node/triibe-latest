@@ -139,7 +139,7 @@ const faqs = [
   {
     question: "Who are TRIIBE's current Fellows?",
     answer:
-      "Spring 2025 cohort: Olivia Zhang (Cancer Kids First, Harvard), Anne-Sophie Frédérick (Haitech Learning, Williams), Esha Venkat (Nest4Us, Georgia Tech), and Maya Gowda (SEED, Cornell). Fall 2025 cohort: Samin Bhan (Lookupp, Stanford), Shrusti Amula (Rise N Shine Foundation, Georgetown), Nayla Jimenez (Philippine Health Initiative, University of Florida), Varuni Chopra (Bridge the Gap Initiative, Georgia Tech), and Gitanjali Rao (Vervient Foundation, MIT).",
+      "Spring 2025 cohort: Olivia Zhang (Cancer Kids First, Harvard), Anne-Sophie Frédérick (Haitech Learning, Williams), Esha Venkat (NEST4US, Georgia Tech), and Maya Gowda (SEED, Cornell). Fall 2025 cohort: Samin Bhan (Lookupp, Stanford), Shrusti Amula (Rise N Shine Foundation, Georgetown), Nayla Jimenez (Philippine Health Initiative, University of Florida), Varuni Chopra (Bridge the Gap Initiative, Georgia Tech), and Gitanjali Rao (Vervient Foundation, MIT).",
   },
 
   {

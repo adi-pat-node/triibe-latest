@@ -330,7 +330,7 @@ const SummitPage = () => {
     },
     {
       name: "Esha Venkat",
-      title: "Founder, Nest4Us",
+      title: "Founder, NEST4US",
       image: "/images/home/homepage---changemakers-3.png",
       linkedin: "https://www.linkedin.com/in/eshavenkat/",
       tag: "Next-Gen",
