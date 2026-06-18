@@ -142,8 +142,8 @@ const restOverrides: Partial<Founder>[] = [
   },
   {
     name: "Hayfa Sdiri",
-    org: "Rivet",
-    bio: "Co-Founder and CIO - Rivet | BBC 100 2019",
+    org: "RIVET",
+    bio: "Co-Founder and CIO - RIVET | BBC 100 2019",
     image: "/images/triibe100/Hayfa Sdiri.png",
   },
   {
