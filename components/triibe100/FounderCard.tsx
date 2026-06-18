@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import type { Founder } from "@/lib/founders";
+import type { Founder } from "@/lib/triibe100/founders";
 
 export default function FounderCard({ founder }: { founder: Founder }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -48,23 +48,36 @@ export default function FounderCard({ founder }: { founder: Founder }) {
           transition: "transform 200ms ease",
         }}
       >
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="rgba(255,255,255,0.3)"
-          strokeWidth="1"
-          style={{
-            width: "45%",
-            height: "45%",
-            position: "absolute",
-            bottom: 0,
-            left: "50%",
-            transform: "translateX(-50%)",
-          }}
-        >
-          <circle cx="12" cy="8" r="5" />
-          <path d="M2 22c0-5.5 4.5-9 10-9s10 3.5 10 9" />
-        </svg>
+        {founder.image ? (
+  <img
+    src={founder.image}
+    alt={founder.name}
+    style={{
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+      display: "block",
+    }}
+  />
+) : (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="rgba(255,255,255,0.3)"
+    strokeWidth="1"
+    style={{
+      width: "45%",
+      height: "45%",
+      position: "absolute",
+      bottom: 0,
+      left: "50%",
+      transform: "translateX(-50%)",
+    }}
+  >
+    <circle cx="12" cy="8" r="5" />
+    <path d="M2 22c0-5.5 4.5-9 10-9s10 3.5 10 9" />
+  </svg>
+)}
       </div>
 
       <p
