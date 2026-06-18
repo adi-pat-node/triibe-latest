@@ -140,6 +140,78 @@ const restOverrides: Partial<Founder>[] = [
     bio: "",
     image: "/images/triibe100/Hikaru Wakeel Hayakawa.png",
   },
+  {
+    name: "Hayfa Sdiri",
+    org: "Rivet",
+    bio: "",
+    image: "/images/triibe100/Hayfa Sdiri.png",
+  },
+  {
+    name: "Grace Liu",
+    org: "Research To Empower",
+    bio: "",
+    image: "/images/triibe100/Grace Liu.png",
+  },
+  {
+    name: "Gitanjali Rao",
+    org: "Vervient Foundation",
+    bio: "",
+    image: "/images/triibe100/Gitanjali Rao.png",
+  },
+  {
+    name: "Esha Venkat",
+    org: "NEST4US",
+    bio: "",
+    image: "/images/triibe100/Esha Venkat.png",
+  },
+  {
+    name: "Dr. Khadija Owusu",
+    org: "AKAYA Foundation",
+    bio: "",
+    image: "/images/triibe100/Dr. Khadija Serwaah Owusu.png",
+  },
+  {
+    name: "Diana Chao",
+    org: "Letters to Strangers",
+    bio: "",
+    image: "/images/triibe100/Diana Chao.png",
+  },
+  {
+    name: "Cole Mattox",
+    org: "First Generation Investors",
+    bio: "",
+    image: "/images/triibe100/Cole Mattox.png",
+  },
+  {
+    name: "Claire Chi",
+    org: "Dancing Against Hunger",
+    bio: "",
+    image: "/images/triibe100/Claire Chi.png",
+  },
+  {
+    name: "Chethan M",
+    org: "Khoon",
+    bio: "",
+    image: "/images/triibe100/Chethan M.png",
+  },
+  {
+    name: "Ben Erler",
+    org: "Young Founders Network",
+    bio: "",
+    image: "/images/triibe100/Ben Erler.png",
+  },
+  {
+    name: "Anna Luísa Beserra",
+    org: "Sustainable Development & Water For All",
+    bio: "",
+    image: "/images/triibe100/Anna Luísa Beserra.png",
+  },
+  {
+    name: "Alexia Hilbertidou",
+    org: "GirlBoss New Zealand",
+    bio: "",
+    image: "/images/triibe100/Alexia Hilbertidou.png",
+  },
 ];
 
 const rest: Founder[] = Array.from({ length: 90 }, (_, i) => ({
