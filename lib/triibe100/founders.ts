@@ -19,7 +19,7 @@ const firstTen: Founder[] = [
     name: "Varuni Chopra",
     org: "Bridge The Gap",
     bio: "Founder - Bridge The Gap",
-    image: "/images/triibe100/Varuni Chopra.png",
+    image: "/images/triibe100/VaruniChopra.png",
   },
   {
     id: 3,
@@ -54,7 +54,7 @@ const firstTen: Founder[] = [
     name: "Samin Bhan",
     org: "Lookup",
     bio: "Founder - Lookup",
-    image: "/images/triibe100/Samin Bhan.png",
+    image: "/images/triibe100/SaminBhan.jpg",
   },
   {
     id: 8,
@@ -90,7 +90,7 @@ const restOverrides: Partial<Founder>[] = [
     name: "Nayla Jimenez",
     org: "Philippine Health Initiative",
     bio: "Executive Director - Philippine Health Initiative",
-    image: "/images/triibe100/Nayla Jimenez.png",
+    image: "/images/triibe100/NaylaJimenez.jpg",
   },
   {
     name: "Mirus Ponon",
@@ -210,7 +210,7 @@ const restOverrides: Partial<Founder>[] = [
     name: "Alexia Hilbertidou",
     org: "GirlBoss New Zealand",
     bio: "Founder & CEO - GirlBoss New Zealand",
-    image: "/images/triibe100/Alexia Hilbertidou.png",
+    image: "/images/triibe100/AlexiaHilbertidou.jpg",
   },
 ];
 
