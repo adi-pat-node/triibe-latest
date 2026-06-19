@@ -252,6 +252,12 @@ export const legacyBoard: Person[] = [
     imagePath: "/images/team/ZacharyPogue.jpg",
     linkedIn: "https://www.linkedin.com/in/zachpogue/",
   },
+  {
+    name: "Shirley Hon",
+    title: "Principal, Globoconsult & Co-founder United Womens Sports NIL Agency",
+    imagePath: "/images/team/ShirleyHon.jpg",
+    linkedIn: "https://www.linkedin.com/in/shirleyw-hon/",
+  },
   /* {
     name: "Todd Jacobson",
     title: "Founder & CEO, TAJ Global & past head of social responsibility, NBA",
@@ -318,6 +324,18 @@ export const locations: LocationEntry[] = [
         linkedIn: "https://www.linkedin.com/in/cassandra-seidenfeld-01b88452/",
         title:
           "Global Real Estate Advisor and CEO, Luxury Level Consultants LLC",
+      },
+      {
+        name: "Hanadi Zakour",
+        imagePath: "/images/team/HanadiZakour.jpg",
+        linkedIn: "https://www.linkedin.com/in/hanadi-zakour/",
+        title: "Operational Growth Strategist, Simone Soleil Advisors",
+      },
+      {
+        name: "Marc Segelnick",
+        imagePath: "/images/team/MarcSegelnick.jpg",
+        linkedIn: "https://www.linkedin.com/in/marc-segelnick-01346715/",
+        title: "Managing Director, Clutch Capital MGMT",
       },
     ],
     advisoryBoardForming: false,
