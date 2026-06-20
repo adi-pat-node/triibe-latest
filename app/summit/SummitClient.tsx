@@ -471,6 +471,22 @@ const SummitPage = () => {
       linkedin: "https://www.linkedin.com/in/laurabakosh/",
       tag: "Speaker",
     },
+    {
+      name: "Todd Jacobson",
+      title:
+        "Founder & CEO, TAJ Global & past head of social responsibility, NBA",
+      image: "/images/team/ToddJacobson.jpg",
+      linkedin: "https://www.linkedin.com/in/todd-jacobson/",
+      tag: "Speaker",
+    },
+    {
+      name: "Christyl C. Johnson",
+      title:
+        "Co-Founder and GP, Andromeda Ventures, past Executive Director of the National Science and Technology Council at the White House",
+      image: "/images/summit/ChristylJohnson.jpg",
+      linkedin: "https://www.linkedin.com/in/christyl-johnson-phd-1091256/",
+      tag: "Speaker",
+    },
   ];
 
   const scheduleDays = [
