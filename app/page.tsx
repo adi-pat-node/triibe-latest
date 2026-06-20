@@ -9,9 +9,9 @@ const Footer = dynamic(() => import("@/components/footer"));
 
 export const metadata = {
   title:
-    "Undergraduate Nonprofit Fellowship & Grants for Founders Under 30 | TRIIBE",
+    "TRIIBE | Funding Next-Gen Nonprofit Founders",
   description:
-    "TRIIBE funds and mentors nonprofit founders aged 20-25 — unrestricted grants, real mentorship, and a community of next-gen changemakers. Apply today.",
+    "TRIIBE funds and supports nonprofit founders in their 20s through unrestricted fellowships, global recognition, and a community built for the next generation of changemakers.",
   alternates: {
     canonical: "https://www.triibe.org",
   },
