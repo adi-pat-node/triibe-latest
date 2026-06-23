@@ -27,8 +27,7 @@ export default function ApplicationProcess() {
           Apply to the Fellowship
         </h2>
         <p className="max-w-191 font-normal text-[#495565] text-lg leading-[29.2px]">
-          TRIIBE provides funding, mentorship, and community for next-gen
-          nonprofit founders
+          A multi-year recoverable grant, financial audit, mentorship, and visibility for next-gen nonprofit founders
         </p>
       </header>
 

@@ -57,6 +57,11 @@ const testimonials = [
 
 const faqs = [
   {
+    question: "What is a recoverable grant?",
+    answer:
+      "A recoverable grant only comes back if a fellow succeeds. After three years, 50% of surplus, capped at the original grant, returns to TRIIBE, in a pay-it-forward model for future fellows. Nothing is owed if the surplus isn't there.",
+  },
+  {
     question: "How does triibe measure impact?",
     answer:
       "We use case studies and quarterly surveys to measure each founder's digital presence, their sense of community and wellbeing, the impact of their organization, and the funds they raise beyond TRIIBE's grants.",
@@ -231,7 +236,7 @@ const ProgramPage = () => {
         <div className="max-w-260 mx-auto">
           <div className="max-w-5xl mx-auto">
             <p className="font-bold text-black text-4xl md:text-[40px]  leading-tight">
-              Nonprofit founders are cut off from funding
+              We’re building the nonprofit startup infrastructure
             </p>
           </div>
 

@@ -39,10 +39,10 @@ export default function Hero() {
             lineHeight: 1.6,
           }}
         >
-          The definitive list of next-gen nonprofit founders under 30 to know.
+          The definitive global list of nonprofit founders under 30 to know.
         </p>
 
-        <p
+        {/* <p
           style={{
             display: "inline-block",
             fontSize: "11px",
@@ -57,7 +57,7 @@ export default function Hero() {
           }}
         >
           Coming Soon
-        </p>
+        </p> */}
       </div>
     </section>
   );
