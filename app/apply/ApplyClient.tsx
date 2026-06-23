@@ -40,11 +40,6 @@ const Page = () => {
         "TRIIBE Fellows receive their first $5,000 grant, mentorship, and a peer community. For a full look at additional support, like the Summit, retreat, and documentaries, see the deck above.",
     },
     {
-      question: "What is a recoverable grant?",
-      answer:
-        "A recoverable grant only comes back if a fellow succeeds. After three years, 50% of surplus, capped at the original grant, returns to TRIIBE, in a pay-it-forward model for future fellows. Nothing is owed if the surplus isn't there.",
-    },
-    {
       question: "How long is the Residency",
       answer:
         "TRIIBE supports you for three years, with each year helping you further your nonprofit. Afterwards, fellows stay part of the fellowship for life.",
