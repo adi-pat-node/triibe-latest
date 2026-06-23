@@ -240,58 +240,16 @@ const ProgramPage = () => {
             </p>
           </div>
 
-          <div className="max-w-7xl mx-auto mt-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-              <div>
-                <h3 className="text-[#495565] font-bold text-3xl md:text-3xl leading-tight mb-14">
-                  Seed funding for young <br /> nonprofits
-                </h3>
-
-                <div className="flex items-center justify-center min-h-[400px]">
-                  <div className="relative w-full h-[300px] md:h-[360px]">
-                    <Image
-                      src="/images/home/section1.png"
-                      alt="Nonprofit partner and youth organization logos"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-[#495565] font-bold text-3xl md:text-3xl leading-tight mb-14">
-                  No infrastructure for <br /> startups to scale
-                </h3>
-
-                <div className="space-y-10 min-h-[400px] flex flex-col justify-center">
-                  <div className="border-l-4 border-black pl-8">
-                    <h3 className="text-black font-bold text-2xl md:text-2xl leading-tight">
-                      No equity
-                    </h3>
-                    <p className="text-[#555] font-semibold text-lg md:text-lg mt-2 leading-snug">
-                      A funder can’t own a share of the business
-                    </p>
-                  </div>
-
-                  <div className="border-l-4 border-black pl-8">
-                    <h3 className="text-black font-bold text-2xl md:text-2xl leading-tight">
-                      No future returns
-                    </h3>
-                    <p className="text-[#555] font-semibold text-lg md:text-lg mt-2 leading-snug">
-                      A funder can’t take a share of the profit
-                    </p>
-                  </div>
-
-                  <div className="border-l-4 border-black pl-8">
-                    <h3 className="text-black font-bold text-2xl md:text-2xl leading-tight">
-                      No commission
-                    </h3>
-                    <p className="text-[#555] font-semibold text-lg md:text-lg mt-2 leading-snug">
-                      A fundraiser can’t earn a share of the raise
-                    </p>
-                  </div>
-                </div>
+          {/* <section className="py-8 px-6 bg-gray-50"> */}
+          <div className="max-w-7xl mx-auto">
+            <div className="relative w-full h-100 ">
+              <div className="relative w-full h-100 rounded-2xl overflow-hidden bg-white">
+                <Image
+                  src="/images/programs/problem_infographic4.jpeg"
+                  alt="The Problem - 80% of student-led nonprofits fade within a year"
+                  fill
+                  className="object-contain"
+                />
               </div>
             </div>
           </div>
@@ -314,9 +272,9 @@ const ProgramPage = () => {
               </p>
             </div> */}
 
-      {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Pillar 1 - Funding */}
-      {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
+              {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
                 <div className="w-12 h-12 bg-[#3036411A] rounded flex items-center justify-center">
                   <span className=" font-bold text-black text-xl">1</span>
                 </div>
@@ -329,8 +287,8 @@ const ProgramPage = () => {
                 </p>
               </div> */}
 
-      {/* Pillar 2 - Mentorship */}
-      {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
+              {/* Pillar 2 - Mentorship */}
+              {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
                 <div className="w-12 h-12 bg-[#3036411A] rounded flex items-center justify-center">
                   <span className=" font-bold text-black text-xl">2</span>
                 </div>
@@ -343,8 +301,8 @@ const ProgramPage = () => {
                 </p>
               </div> */}
 
-      {/* Pillar 3 - Community */}
-      {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
+              {/* Pillar 3 - Community */}
+              {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
                 <div className="w-12 h-12 bg-[#3036411A] rounded flex items-center justify-center">
                   <span className=" font-bold text-black text-xl">3</span>
                 </div>
