@@ -39,25 +39,9 @@ export default function Hero() {
             lineHeight: 1.6,
           }}
         >
-          The definitive list of next-gen nonprofit founders under 30 to know.
+          The definitive global list of nonprofit founders under 30 to know
         </p>
 
-        <p
-          style={{
-            display: "inline-block",
-            fontSize: "11px",
-            fontWeight: 600,
-            letterSpacing: "0.12em",
-            textTransform: "uppercase",
-            color: "#002C19",
-            border: "1px solid #002C19",
-            padding: "4px 14px",
-            borderRadius: "99px",
-            marginTop: "20px",
-          }}
-        >
-          Coming Soon
-        </p>
       </div>
     </section>
   );
