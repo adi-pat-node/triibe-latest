@@ -195,7 +195,7 @@ export default function ProgramOverviewTest() {
 
               <div className="relative w-full min-h-[500px] rounded-xl overflow-hidden">
                 <Image
-                  src="/images/home/whatWeDo2.png"
+                  src="/images/events/summit-2.jpg"
                   alt="TRIIBE Talks"
                   fill
                   className="object-contain"
