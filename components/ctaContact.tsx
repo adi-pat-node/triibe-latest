@@ -81,8 +81,7 @@ export default function CTASectionContact() {
           <div className="bg-[#002c19] border border-white rounded-lg p-8 flex flex-col gap-6 justify-between w-full">
             <h3 className="font-semibold text-white text-2xl">Fund our work</h3>
             <p className="font-normal text-[#D1D5DC] text-base leading-relaxed">
-              Your donation helps founders make an impact in food, water,
-              shelter, health and education.
+              Back the founder before the world knows their name
             </p>
             <a
               href="https://donate.rayzeapp.com/orgs/tIbe07j0XKkLQezHHXoz"

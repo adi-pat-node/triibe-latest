@@ -16,7 +16,7 @@ export default function Cohort() {
     {
       name: "Olivia Zhang",
       title: "Founder and CEO, Cancer Kids First",
-      university: "Harvard University",
+      university: "2024 U.S. fellow",
       description:
         "Supporting young cancer patients and their families through donating goods and hosting interactive events",
       founded: "FOUNDED 2019",
@@ -27,7 +27,7 @@ export default function Cohort() {
     {
       name: "Anne-Sophie Frédérick",
       title: "Founder, Haitech Learning",
-      university: "Williams College",
+      university: "2024 U.S. fellow",
       description:
         "Expanding multilingual technology education access across borders",
       founded: "FOUNDED 2022",
@@ -38,7 +38,7 @@ export default function Cohort() {
     {
       name: "Esha Venkat",
       title: "Founder, NEST4US",
-      university: "Georgia Institute of Technology",
+      university: "2024 U.S. fellow",
       description:
         "Mobilizing youth to tackle issues including hunger, education, and climate justice with volunteering & education",
       founded: "FOUNDED 2016",
@@ -48,7 +48,7 @@ export default function Cohort() {
     {
       name: "Maya Gowda",
       title: "Founder, (SEED)",
-      university: "Cornell University",
+      university: "2024 U.S. fellow",
       description:
         "Advancing climate literacy and justice through workshops, curriculum development, and community initiatives",
       founded: "FOUNDED 2019",
@@ -62,7 +62,7 @@ export default function Cohort() {
     {
       name: "Samin Bhan",
       title: "Founder, Lookupp",
-      university: "Stanford University",
+      university: "2025 U.S. fellow",
       description:
         "Revive the culture of in-person interaction through a mobile app",
       founded: "FOUNDED 2021",
@@ -73,7 +73,7 @@ export default function Cohort() {
     {
       name: "Shrusti Amula",
       title: "Founder, Rise N Shine Foundation",
-      university: "Georgetown University",
+      university: "2025 U.S. fellow",
       description:
         "Reduce food waste through compost and food recovery programs to combat climate change and food insecurity",
       founded: "FOUNDED 2019",
@@ -84,9 +84,9 @@ export default function Cohort() {
     {
       name: "Nayla Jimenez",
       title: "Founder, Philippine Health Initiative",
-      university: "University of Florida",
+      university: "2025 U.S. fellow",
       description:
-        "Advance pediatric health and educational equity in the Philippines through resource mobilization, cultural exchange, and community collaborations",
+        "Advance pediatric health and educational equity in the Philippines",
       founded: "FOUNDED 2017",
       image: "/images/home/NaylaJimenez.png",
       website: "https://www.philippinehealthinitiative.org/",
@@ -94,9 +94,9 @@ export default function Cohort() {
     {
       name: "Varuni Chopra",
       title: "Founder, Bridge the Gap Initiative",
-      university: "Georgia Institute of Technology",
+      university: "2025 U.S. fellow",
       description:
-        "Empower senior citizens to confidently use technology by providing accessible and community-driven education that connects them to essential digital tools and services",
+        "Empower senior citizens to confidently use technology, connecting them to essential digital tools and services",
       founded: "FOUNDED 2022",
       image: "/images/home/VaruniChopra.png",
       website: "https://helpinghandsmain.wixsite.com/mysite",
@@ -104,7 +104,7 @@ export default function Cohort() {
     {
       name: "Gitanjali Rao",
       title: "Founder, Vervient Foundation",
-      university: "MIT",
+      university: "2025 U.S. fellow",
       description:
         "Help other students discover their passion for innovation and STEM",
       founded: "FOUNDED 2018",
@@ -168,12 +168,12 @@ export default function Cohort() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-8">
           <h2 className=" font-bold text-black text-4xl tracking-[-0.90px] leading-10 mb-4 text-center">
-            First two cohorts
+            Our first two cohorts
           </h2>
-          <p className=" font-normal text-[#495565] text-lg leading-7 mb-4 text-center">
+          {/* <p className=" font-normal text-[#495565] text-lg leading-7 mb-4 text-center">
             TRIIBE’s next-gen fellows in residence prioritizing a return on
             impact, not income
-          </p>
+          </p> */}
         </div>
 
         <div className="mb-4">
