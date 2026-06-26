@@ -222,8 +222,8 @@ const EventsPage = () => {
           <div className="mt-12 flex justify-center">
             <div className="relative w-full max-w-xl aspect-video rounded-2xl overflow-hidden shadow-2xl">
               <iframe
-                src="https://www.youtube.com/embed/cz4n2SjIB0g"
-                title="Educator Parents: How They Shaped My Belief in Student Potential | TRIIBE Talk Shorts"
+                src="https://www.youtube.com/embed/LFz4qnhMj74"
+                title="Danielle Guindo Brings Young Leaders Into a Read Alliance"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
