@@ -55,18 +55,18 @@ const BRANCHES: Branch[] = [
     link: "/canada",
     hasLink: false,
   },
-  {
-    id: "jamaica",
-    label: "Jamaica",
-    flag: "🇯🇲",
-    lat: 18.1096,
-    lng: -77.2975,
-    city: "Jamaica",
-    description:
-      "Helping next-gen nonprofit founders continue their work in Jamaica.",
-    link: "/about",
-    hasLink: false,
-  },
+  // {
+  //   id: "jamaica",
+  //   label: "Jamaica",
+  //   flag: "🇯🇲",
+  //   lat: 18.1096,
+  //   lng: -77.2975,
+  //   city: "Jamaica",
+  //   description:
+  //     "Helping next-gen nonprofit founders continue their work in Jamaica.",
+  //   link: "/about",
+  //   hasLink: false,
+  // },
   {
     id: "london",
     label: "London, UK",
@@ -122,7 +122,7 @@ const RING_DATA = BRANCHES.map(({ lat, lng }) => ({ lat, lng }));
 const ARCS = [
   { startLat: 43.6532, startLng: -79.3832, endLat: 41.5, endLng: -73.5 },
   { startLat: 43.6532, startLng: -79.3832, endLat: 37.5, endLng: -78.5 },
-  { startLat: 43.6532, startLng: -79.3832, endLat: 18.1096, endLng: -77.2975 },
+  // { startLat: 43.6532, startLng: -79.3832, endLat: 18.1096, endLng: -77.2975 },
   { startLat: 43.6532, startLng: -79.3832, endLat: 51.5074, endLng: -0.1278 },
   { startLat: 43.6532, startLng: -79.3832, endLat: 8.4606, endLng: -11.7799 },
   { startLat: 43.6532, startLng: -79.3832, endLat: 23.3441, endLng: 85.3096 },
