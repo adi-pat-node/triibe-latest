@@ -213,6 +213,18 @@ export default function Changemakers() {
           <ArrowRightIcon className="w-4 h-4" />
         </a>
       </div>
+
+      <div className="flex flex-col items-center justify-center w-full mt-8 pt-12 border-t border-gray-200 px-8">
+        <p className="text-lg text-[#495565] font-medium mb-6 text-center max-w-2xl">
+          Learn more about the dataset we use to deploy capital
+        </p>
+        <a
+          href="/index"
+          className="inline-flex items-center gap-2 px-8 py-3 bg-[#002c19] text-white rounded-lg hover:bg-[#003d24] transition-colors font-bold text-sm"
+        >
+          TRIIBE Index
+        </a>
+      </div>
     </section>
   );
 }
