@@ -2,169 +2,120 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import Header from "./header";
+import Footer from "./footer";
 
-const programSections = [
-  {
-    title: "Why we do it",
-    description:
-      "Even successful nonprofit founders are cut off from funding by 20",
-    bgColor: "bg-[#002c19]",
-    textColor: "text-white",
-    descriptionColor: "text-[#ffffffcc]",
-    imageUrl: "/images/events/summit-2.jpg",
-    imagePosition: "right",
-    fontWeight: "font-semibold",
-    imageObjectPosition: "object-center",
-  },
-  {
-    title: "How we do it",
-    description: "",
-    listItems: [
-      {
-        label: "TRIIBE Fellowship",
-        link: "/fellowship",
-        text: "Our 3-year Fellowship ensures founders don't burn out while transitioning from a 'youth' nonprofit to an established one",
-      },
-      {
-        label: "TRIIBE Talks",
-        link: "/talk",
-        text: "TRIIBE Talks highlight next-gen nonprofit founders alongside peers over 30, because age doesn't determine the quality of a voice",
-      },
-      {
-        label: "TRIIBE I00",
-        link: "/100",
-        text: "The TRIIBE I00 is the definitive global list of nonprofit founders under 30 to know",
-      },
-    ],
-    bgColor: "bg-[#002c19]",
-    textColor: "text-white",
-    descriptionColor: "text-[#ffffffcc]",
-    imageUrl: "/images/home/whatWeDo4.jpg",
-    imagePosition: "right",
-    fontWeight: "font-bold",
-    imageObjectPosition: "object-center",
-  },
-  {
-    title: "Data-driven approach",
-    description:
-      "The TRIIBE Index is the dataset helping us and our partners fund with data-driven precision, built by those in the nonprofit sector, across all ages, roles, and stages",
-    button: {
-      label: "TRIIBE Index",
-      link: "/index",
-    },
-    bgColor: "bg-[#002c19]",
-    textColor: "text-[#fffefee6]",
-    descriptionColor: "text-[#ffffffcc]",
-    imageUrl: "/images/home/whatWeDo2.png",
-    imagePosition: "left",
-    fontWeight: "font-semibold",
-    imageObjectPosition: "object-cover object-[50%_0%]",
-  },
-];
-
-export default function ProgramOverview() {
+export default function ProgramOverviewTest() {
   return (
-    <section className="flex flex-col w-full items-start md:px-25 lg:px-50 mt-16">
-      {/* <div className="w-full bg-white flex flex-col md:flex-row items-center justify-center py-12 px-10 gap-8 md:gap-10">
-        <div className="max-w-xl text-center md:text-left">
-          <p className="text-gray-700 leading-relaxed text-lg">
-            Independent member of the United World Leaders
-          </p>
-        </div>
+    <>
+      <main className="w-full flex flex-col">
+        <section className="pt-16 pb-16 px-4 md:px-25 lg:px-[200px] bg-white">
+          <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
+            <h2 className="text-4xl md:text-6xl font-bold mb-4">
+              All seed, no soil
+            </h2>
+            <h3 className="text-xl md:text-2xl font-semibold mb-16">
+              There’s no instrument for nonprofits to scale past seed grants
+            </h3>
 
-        <div className="flex justify-center md:justify-end md:items-center">
-          <Image
-            src="/UWL Raster File.png"
-            alt="logo"
-            width={100}
-            height={100}
-            className="object-contain"
-          />
-        </div>
-      </div> */}
-
-      <div className="w-full flex flex-col">
-        {programSections.map((section, index) => {
-          // Determine if the image should be on the left for medium screens and up
-          // Index 1 (How we do it) will be true (image on left)
-          // Index 0 (Why) and Index 2 (Data-driven) will be false (image on right)
-          const isImageLeft = index % 2 !== 0;
-
-          return (
-            <div
-              key={index}
-              className="flex flex-col md:flex-row items-stretch w-full md:min-h-[490px]"
-            >
-              {/* Image Container */}
-              <div
-                className={`relative w-full md:w-1/2 min-h-[300px] overflow-hidden order-2 ${
-                  isImageLeft ? "md:order-1" : "md:order-2"
-                }`}
-              >
-                <Image
-                  key={section.imageObjectPosition}
-                  src={section.imageUrl}
-                  alt={`${section.title} illustration`}
-                  fill
-                  className={`object-cover ${section.imageObjectPosition || "object-center"}`}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="border border-[#002c19] p-10 flex flex-col items-center text-center rounded-lg">
+                <h4 className="text-2xl font-bold mb-6">Returns</h4>
+                <p className="text-[#002c19]/80 font-medium">
+                  A funder can&apos;t take a share of the profit
+                </p>
               </div>
 
-              {/* Content Container */}
-              <div
-                className={`${section.bgColor} flex items-center w-full md:w-1/2 order-1 ${
-                  isImageLeft ? "md:order-2" : "md:order-1"
-                }`}
-              >
-                <div className="flex flex-col justify-center gap-6 px-5 md:px-8 lg:px-16 py-12 w-full h-full">
-                  <h2
-                    className={`${section.textColor} ${section.fontWeight} text-xl md:text-[32px] leading-10`}
+              <div className="border border-[#002c19] p-10 flex flex-col items-center text-center rounded-lg">
+                <h4 className="text-2xl font-bold mb-6">Commission</h4>
+                <p className="text-[#002c19]/80 font-medium">
+                  A fundraiser can&apos;t earn a share of the raise
+                </p>
+              </div>
+
+              <div className="border border-[#002c19] p-10 flex flex-col items-center text-center rounded-lg">
+                <h4 className="text-2xl font-bold mb-6">Equity</h4>
+                <p className="text-[#002c19]/80 font-medium">
+                  A funder can&apos;t own a share of the business
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#002c19] text-white py-24 px-4 md:px-25 lg:px-[200px] w-full">
+          <div className="max-w-[1200px] mx-auto text-center">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 flex flex-wrap items-center justify-center gap-4">
+              So we built a
+              <Image
+                src="/images/home/TRIIBEHeroWhite.svg"
+                alt="TRIIBE"
+                width={180}
+                height={60}
+                className="inline-block object-contain"
+              />
+            </h2>
+            <h3 className="text-xl md:text-2xl font-medium mb-16 max-w-4xl mx-auto">
+              Two I&apos;s uniting innovators and investors to build nonprofit
+              startup instruments and infrastructure
+            </h3>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="border border-white p-8 md:p-10 flex flex-col h-full rounded-lg">
+                <h4 className="text-xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center">
+                  Recoverable Grants
+                </h4>
+
+                <p className="text-white/90 mb-10 flex-grow  text-center">
+                  We recover our three year grant from future surplus
+                </p>
+                <div className="w-full flex justify-center">
+                  <Link
+                    href="/fellowship"
+                    className="flex flex-col items-center justify-center w-[200px] h-[50px] bg-white text-[#002c19] rounded font-bold hover:bg-gray-100 transition-colors leading-tight"
                   >
-                    {section.title}
-                  </h2>
+                    <span>TRIIBE Fellowship</span>
+                  </Link>
+                </div>
+              </div>
 
-                  <div
-                    className={`${section.descriptionColor} text-lg leading-[29.2px] flex flex-col gap-6`}
+              <div className="border border-white p-8 md:p-10 flex flex-col h-full rounded-lg">
+                <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center">
+                  Mentorship
+                </h4>
+                <p className="text-white/90 mb-10 flex-grow  text-center">
+                  We pair fellows with mentors who help them scale
+                </p>
+                <div className="w-full flex justify-center">
+                  <Link
+                    href="/talk"
+                    className="flex flex-col items-center justify-center w-[200px] h-[50px] bg-white text-[#002c19] rounded font-bold hover:bg-gray-100 transition-colors leading-tight"
                   >
-                    {section.description && <p>{section.description}</p>}
+                    <span>TRIIBE Talks</span>
+                  </Link>
+                </div>
+              </div>
 
-                    {section.listItems && (
-                      <div className="flex flex-col gap-8">
-                        {section.listItems.map((item, i) => (
-                          <div
-                            key={i}
-                            className="flex flex-col items-start gap-4"
-                          >
-                            <p>{item.text}</p>
-                            <Link
-                              href={item.link}
-                              className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
-                            >
-                              {item.label}
-                            </Link>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-
-                  {section.button && (
-                    <div className="mt-4">
-                      <Link
-                        href={section.button.link}
-                        className="inline-block px-6 py-3 bg-white text-[#002c19] text-[13px] font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-colors"
-                      >
-                        {section.button.label}
-                      </Link>
-                    </div>
-                  )}
+              <div className="border border-white p-8 md:p-10 flex flex-col h-full rounded-lg">
+                <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center">
+                  Visibility
+                </h4>
+                <p className="text-white/90 mb-10 flex-grow  text-center">
+                  We showcase fellows in front of funders
+                </p>
+                <div className="w-full flex justify-center">
+                  <Link
+                    href="/100"
+                    className="flex items-center justify-center w-[200px] h-[50px] bg-white text-[#002c19] rounded font-bold hover:bg-gray-100 transition-colors leading-tight"
+                  >
+                    TRIIBE I00
+                  </Link>
                 </div>
               </div>
             </div>
-          );
-        })}
-      </div>
-    </section>
+          </div>
+        </section>
+      </main>
+    </>
   );
 }
