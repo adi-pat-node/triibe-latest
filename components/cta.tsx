@@ -49,8 +49,10 @@ export default function CTASection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12 xl:gap-12 ">
           {/* Be a Cohort */}
           <div className="bg-[#002c19] border border-white rounded-lg p-8 flex flex-col gap-6 justify-between w-full">
-            <h3 className="font-semibold text-white text-2xl">Join a cohort</h3>
-            <p className="font-normal text-[#D1D5DC] text-base leading-relaxed">
+            <h3 className="font-semibold text-white text-2xl text-center">
+              Join a cohort
+            </h3>
+            <p className="font-normal text-[#D1D5DC] text-base leading-relaxed text-center">
               Are you a next-gen nonprofit founder? Apply to become a TRIIBE
               Fellow.
             </p>
@@ -64,8 +66,10 @@ export default function CTASection() {
 
           {/* Contact Us */}
           <div className="bg-[#002c19] border border-white rounded-lg p-8 flex flex-col gap-6 justify-between w-full">
-            <h3 className="font-semibold text-white text-2xl">Get involved</h3>
-            <p className="font-normal text-[#D1D5DC] text-base leading-relaxed">
+            <h3 className="font-semibold text-white text-2xl text-center">
+              Get involved
+            </h3>
+            <p className="font-normal text-[#D1D5DC] text-base leading-relaxed text-center">
               Partner with TRIIBE to empower next-gen founders.
             </p>
             <a
@@ -78,8 +82,10 @@ export default function CTASection() {
 
           {/* Give */}
           <div className="bg-[#002c19] border border-white rounded-lg p-8 flex flex-col gap-6 justify-between w-full">
-            <h3 className="font-semibold text-white text-2xl">Fund our work</h3>
-            <p className="font-normal text-[#D1D5DC] text-base leading-relaxed">
+            <h3 className="font-semibold text-white text-2xl text-center">
+              Fund our work
+            </h3>
+            <p className="font-normal text-[#D1D5DC] text-base leading-relaxed text-center">
               Back the founder before the world knows their name
             </p>
             <a
