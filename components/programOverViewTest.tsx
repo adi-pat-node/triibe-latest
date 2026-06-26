@@ -5,206 +5,119 @@ import Link from "next/link";
 import Header from "./header";
 import Footer from "./footer";
 
-function CircleGraphic() {
-  return (
-    <div className="relative w-full max-w-[650px] aspect-square mx-auto">
-      <div className="absolute inset-[10%] rounded-full border-[3px] border-dashed border-white/70" />
-
-      <div className="absolute inset-[22%] rounded-full border-[10px] border-white bg-[#002c19] flex items-center justify-center text-white font-bold text-2xl text-center p-8">
-        TRIIBE
-      </div>
-
-      <div className="absolute top-0 left-0 w-[34%] aspect-[1.5/1] bg-[#003d24] rounded-full flex items-center justify-center text-center p-4 text-white text-sm font-semibold">
-        Fund next-gen nonprofit founders under 30
-      </div>
-
-      <div className="absolute top-0 right-0 w-[34%] aspect-[1.5/1] bg-[#003d24] rounded-full flex items-center justify-center text-center p-4 text-white text-sm font-semibold">
-        Back them with mentorship and visibility
-      </div>
-
-      <div className="absolute bottom-0 left-0 w-[34%] aspect-[1.5/1] bg-[#003d24] rounded-full flex items-center justify-center text-center p-4 text-white text-sm font-semibold">
-        Inspire more founders to launch their own nonprofit
-      </div>
-
-      <div className="absolute bottom-0 right-0 w-[34%] aspect-[1.5/1] bg-[#003d24] rounded-full flex items-center justify-center text-center p-4 text-white text-sm font-semibold">
-        TRIIBE Fellows set the standard for nonprofit leadership
-      </div>
-    </div>
-  );
-}
-
 export default function ProgramOverviewTest() {
   return (
     <>
       <Header />
-      <section className="w-full md:px-25 lg:px-50  flex flex-col my-32">
-        {/* SECTION 1 */}
-        <div className="bg-[#002c19] text-white pt-20 px-6 md:px-16">
-          <div className="max-w-[1200px] mx-auto">
-            <h2 className="text-center text-3xl md:text-5xl font-bold mb-16">
-              Nonprofit startup founders are funded for traction, not scale
+
+      <main className="w-full flex flex-col">
+        <section className="pt-32 pb-8 px-4 md:px-25 lg:px-[200px] bg-white">
+          <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
+            <h2 className="text-4xl md:text-6xl font-bold mb-4">
+              All seed, no soil
             </h2>
+            <h3 className="text-xl md:text-2xl font-semibold mb-16">
+              There’s no instrument for nonprofits to scale past seed grants
+            </h3>
 
-            <div className="grid lg:grid-cols-2 gap-16 mb-10">
-              <h3 className="text-center text-2xl font-semibold">
-                Seed funding for young nonprofits
-              </h3>
-
-              <h3 className="text-center text-2xl font-semibold">
-                No infrastructure for startups to scale
-              </h3>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-16 ">
-              <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
-                <Image
-                  src="/images/home/section1.png"
-                  alt="Seed funding for young nonprofits"
-                  fill
-                  className="object-contain "
-                />
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="border border-[#002c19] p-10 flex flex-col items-center text-center rounded-lg">
+                <h4 className="text-2xl font-bold mb-6">Returns</h4>
+                <p className="text-[#002c19]/80 font-medium">
+                  A funder can&apos;t take a share of the profit
+                </p>
               </div>
-              <div className="flex h-full items-center justify-center ">
-                <div className="space-y-8 ">
-                  <div className="border-l-2 border-white/80 pl-4">
-                    <h4 className="text-2xl font-semibold leading-none mb-2">
-                      No equity
-                    </h4>
-                    <p className="text-white/70 text-base">
-                      A funder can't own a share of the business
-                    </p>
-                  </div>
 
-                  <div className="border-l-2 border-white/80 pl-4">
-                    <h4 className="text-2xl font-semibold leading-none mb-2">
-                      No future returns
-                    </h4>
-                    <p className="text-white/70 text-base">
-                      A funder can't take a share of the profit
-                    </p>
-                  </div>
+              <div className="border border-[#002c19] p-10 flex flex-col items-center text-center rounded-lg">
+                <h4 className="text-2xl font-bold mb-6">Commission</h4>
+                <p className="text-[#002c19]/80 font-medium">
+                  A fundraiser can&apos;t earn a share of the raise
+                </p>
+              </div>
 
-                  <div className="border-l-2 border-white/80 pl-4">
-                    <h4 className="text-2xl font-semibold leading-none mb-2">
-                      No commission
-                    </h4>
-                    <p className="text-white/70 text-base">
-                      A fundraiser can't earn a share of the raise
-                    </p>
-                  </div>
-                </div>
+              <div className="border border-[#002c19] p-10 flex flex-col items-center text-center rounded-lg">
+                <h4 className="text-2xl font-bold mb-6">Equity</h4>
+                <p className="text-[#002c19]/80 font-medium">
+                  A funder can&apos;t own a share of the business
+                </p>
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* SECTION 2 */}
-        <div className="bg-[#002c19] text-white pt-20 px-6 md:px-16">
-          <div className="max-w-[1200px] mx-auto">
-            <h2 className="text-center text-3xl md:text-5xl font-bold mb-16">
-              We&apos;re building the nonprofit startup infrastructure
+        <section className="bg-[#002c19] text-white py-24 px-4 md:px-25 lg:px-[200px] w-full">
+          <div className="max-w-[1200px] mx-auto text-center">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 flex flex-wrap items-center justify-center gap-4">
+              So we built a
+              <Image
+                src="/images/home/TRIIBEHeroWhite.svg"
+                alt="TRIIBE"
+                width={180}
+                height={60}
+                className="inline-block object-contain"
+              />
             </h2>
+            <h3 className="text-xl md:text-2xl font-medium mb-16 max-w-4xl mx-auto">
+              Two I&apos;s uniting innovators and investors to build nonprofit
+              startup instruments and infrastructure
+            </h3>
 
-            <div className="grid md:grid-cols-2 gap-16 items-center">
-              <div className="space-y-12">
-                <div>
-                  <p className="mb-4">
-                    Our fellowship: a multi-year recoverable grant, financial
-                    audit, mentorship, and visibility for next-gen nonprofit
-                    founders
-                  </p>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="border border-white p-8 md:p-10 flex flex-col h-full rounded-lg">
+                <h4 className="text-xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center">
+                  Recoverable Grants
+                </h4>
 
+                <p className="text-white/90 mb-10 flex-grow  text-center">
+                  We recover our three year grant from future surplus
+                </p>
+                <div className="w-full flex justify-center">
                   <Link
                     href="/fellowship"
-                    className="inline-block px-6 py-3 bg-white text-[#002c19] rounded-lg font-bold"
+                    className="flex flex-col items-center justify-center w-[200px] h-[50px] bg-white text-[#002c19] rounded font-bold hover:bg-gray-100 transition-colors leading-tight"
                   >
-                    TRIIBE Fellowship
+                    <span>TRIIBE Fellowship</span>
                   </Link>
                 </div>
+              </div>
 
-                <div>
-                  <p className="mb-4">
-                    Intergenerational talks and summits with next-gen nonprofit
-                    founders alongside peers over 30
-                  </p>
-
+              <div className="border border-white p-8 md:p-10 flex flex-col h-full rounded-lg">
+                <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center">
+                  Mentorship
+                </h4>
+                <p className="text-white/90 mb-10 flex-grow  text-center">
+                  We pair fellows with mentors who help them scale
+                </p>
+                <div className="w-full flex justify-center">
                   <Link
                     href="/talk"
-                    className="inline-block px-6 py-3 bg-white text-[#002c19] rounded-lg font-bold"
+                    className="flex flex-col items-center justify-center w-[200px] h-[50px] bg-white text-[#002c19] rounded font-bold hover:bg-gray-100 transition-colors leading-tight"
                   >
-                    TRIIBE Talks
+                    <span>TRIIBE Talks</span>
                   </Link>
                 </div>
+              </div>
 
-                <div>
-                  <p className="mb-4">
-                    Funding the definitive global list of nonprofit founders
-                    under 30 to know
-                  </p>
-
+              <div className="border border-white p-8 md:p-10 flex flex-col h-full rounded-lg">
+                <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center">
+                  Visibility
+                </h4>
+                <p className="text-white/90 mb-10 flex-grow  text-center">
+                  We showcase fellows in front of funders
+                </p>
+                <div className="w-full flex justify-center">
                   <Link
                     href="/100"
-                    className="inline-block px-6 py-3 bg-white text-[#002c19] rounded-lg font-bold"
+                    className="flex items-center justify-center w-[200px] h-[50px] bg-white text-[#002c19] rounded font-bold hover:bg-gray-100 transition-colors leading-tight"
                   >
                     TRIIBE I00
                   </Link>
                 </div>
               </div>
-
-              <CircleGraphic />
             </div>
           </div>
-        </div>
-
-        {/* SECTION 3 */}
-        <div className="bg-[#002c19] text-white py-20 px-6 md:px-16">
-          <div className="max-w-[1200px] mx-auto">
-            <h2 className="text-center text-3xl md:text-5xl font-bold mb-12">
-              How we sustain it
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-16 items-center">
-              <div className="space-y-12">
-                <div>
-                  <p className="mb-4">
-                    Branded stages, gatherings, and cross-border exchanges
-                  </p>
-
-                  <Link
-                    href="/summit"
-                    className="inline-block px-6 py-3 bg-white text-[#002c19] rounded-lg font-bold"
-                  >
-                    Summit
-                  </Link>
-                </div>
-
-                <div>
-                  <p className="mb-4">
-                    Proprietary data used to make recommendations on where to
-                    deploy capital or hire talent
-                  </p>
-
-                  <Link
-                    href="/index"
-                    className="inline-block px-6 py-3 bg-white text-[#002c19] rounded-lg font-bold"
-                  >
-                    TRIIBE Index
-                  </Link>
-                </div>
-              </div>
-
-              <div className="relative w-full min-h-[500px] rounded-xl overflow-hidden">
-                <Image
-                  src="/images/events/summit-2.jpg"
-                  alt="TRIIBE Talks"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
       <Footer />
     </>
