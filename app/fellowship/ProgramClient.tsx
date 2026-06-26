@@ -266,7 +266,7 @@ const ProgramPage = () => {
               </div>
 
               <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-8 min-h-[280px] flex flex-col items-center justify-center text-center transition-all hover:shadow-md">
-                <h3 className="text-4xl font-bold text-black leading-tight mb-8 min-h-[88px] flex items-center justify-center">
+                <h3 className="text-4xl font-bold text-black leading-tight mb-8 -mt-5 min-h-[88px] flex items-center justify-center">
                   Visibility
                 </h3>
 
