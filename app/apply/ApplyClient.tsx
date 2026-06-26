@@ -40,6 +40,11 @@ const Page = () => {
         "TRIIBE Fellows receive their first $5,000 grant, mentorship, and a peer community. For a full look at additional support, like the Summit, retreat, and documentaries, see the deck above.",
     },
     {
+      question: "What is a recoverable grant?",
+      answer:
+        "A recoverable grant only comes back if a fellow succeeds. After three years, 50% of surplus, capped at the original grant, returns to TRIIBE, in a pay-it-forward model for future fellows. Nothing is owed if the surplus isn't there.",
+    },
+    {
       question: "How long is the Residency",
       answer:
         "TRIIBE supports you for three years, with each year helping you further your nonprofit. Afterwards, fellows stay part of the fellowship for life.",
@@ -71,12 +76,14 @@ const Page = () => {
         <div className="max-w-[1200px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-[0.8fr_1.2fr]  gap-16 items-start">
             {/* Left - Image */}
-            <div className="relative aspect-square rounded-lg overflow-hidden">
+            <div className="w-full max-w-[520px] mx-auto lg:mx-0">
               <Image
                 src="/images/home/whatWeDo2.png"
                 alt="TRIIBE Cohort"
-                fill
-                className="object-cover"
+                width={520}
+                height={650}
+                className="w-full h-auto rounded-lg object-contain"
+                priority
               />
             </div>
 

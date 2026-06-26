@@ -124,9 +124,9 @@ const mediaCards = [
     title: "The TRIIBUNE",
     image: "/images/media/archive/March_Newsletter.jpg",
     badge: "March 2026",
-    heading:
-      "Monthly Update | March 2026",
-    description: "100+ Changemakers. One room. We brought together 100+ attendees for the Billion Dollar Impact Summit in NYC.", 
+    heading: "Monthly Update | March 2026",
+    description:
+      "100+ Changemakers. One room. We brought together 100+ attendees for the Billion Dollar Impact Summit in NYC.",
     buttons: [
       {
         type: "link",
@@ -168,7 +168,9 @@ const EventsPage = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50">
         <div className="max-w-300 mx-auto">
+          {/* Hero */}
           <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 items-center">
+            {/* Left */}
             <div>
               <Image
                 src="https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/690ec0097fad8b2d6aa19eec_Screenshot_2025-11-07_at_10.58.29_PM-removebg-preview.png"
@@ -178,10 +180,12 @@ const EventsPage = () => {
                 priority
                 className="w-full max-w-[400px] md:max-w-[500px] h-auto -ml-3 md:-ml-5 lg:-ml-6 object-contain object-left"
               />
+
               <p className="text-[#495565] text-lg mb-8 leading-relaxed mt-4 font-normal">
                 Highlighting next-gen founders alongside established ones,
                 because age doesn't define the quality of a voice
               </p>
+
               <div className="flex w-full items-center justify-start gap-4">
                 <a
                   href="https://drive.google.com/file/d/1rALrh5bjpWnbKq2AvxeudYOpPG7kFsZ-/view?usp=sharing"
@@ -194,24 +198,36 @@ const EventsPage = () => {
 
                 <a
                   href="/talk/host"
-                  className="h-9 px-4 py-2 bg-[#1C5945] text-white border border-green rounded font-medium hover:bg-[#003d24] transition-colors font-medium inline-flex items-center cursor-pointer"
+                  className="h-9 px-4 py-2 bg-[#1C5945] text-white border border-green rounded hover:bg-[#003d24] transition-colors font-medium inline-flex items-center cursor-pointer"
                 >
                   Host a TRIIBE Talk
                 </a>
               </div>
             </div>
 
-            {/* Intro TRIIBE Talk Video (replaces the 3-image grid) */}
             <div>
-              <div className="relative aspect-video bg-gray-200 rounded-lg overflow-hidden">
-                <iframe
-                  src="https://www.youtube.com/embed/_kjTepZUvuM?autoplay=1&mute=1&rel=0"
-                  title="Intro to TRIIBE Talk"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="absolute inset-0 w-full h-full"
-                />
+              <div className="ml-auto w-full max-w-[560px]">
+                <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="/images/home/TRIIBE-TALK.png"
+                    alt="TRIIBE Talk"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
+            </div>
+          </div>
+
+          <div className="mt-20">
+            <div className="relative w-full max-w-xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl">
+              <iframe
+                src="https://www.youtube.com/embed/_kjTepZUvuM?rel=0"
+                title="Intro to TRIIBE Talk"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+              />
             </div>
           </div>
         </div>
@@ -294,10 +310,10 @@ const EventsPage = () => {
                     </h4>
 
                     {card.description && (
-                <p className="font-normal text-[#495565] text-sm leading-relaxed mb-6">
-                  {card.description}
-                </p>
-              )}
+                      <p className="font-normal text-[#495565] text-sm leading-relaxed mb-6">
+                        {card.description}
+                      </p>
+                    )}
                   </div>
 
                   <div className="flex gap-3">
@@ -340,8 +356,6 @@ const EventsPage = () => {
           </div>
         </div>
       </section>
-
-      
 
       <Footer />
 

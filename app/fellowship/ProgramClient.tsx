@@ -57,6 +57,11 @@ const testimonials = [
 
 const faqs = [
   {
+    question: "What is a recoverable grant?",
+    answer:
+      "A recoverable grant only comes back if a fellow succeeds. After three years, 50% of surplus, capped at the original grant, returns to TRIIBE, in a pay-it-forward model for future fellows. Nothing is owed if the surplus isn't there.",
+  },
+  {
     question: "How does triibe measure impact?",
     answer:
       "We use case studies and quarterly surveys to measure each founder's digital presence, their sense of community and wellbeing, the impact of their organization, and the funds they raise beyond TRIIBE's grants.",
@@ -227,24 +232,47 @@ const ProgramPage = () => {
 
       {/* Problem Visual/Infographic */}
 
-      <section className="pt-32 px-6 bg-white md:px-25 lg:px-50">
+      <section className="pt-32 pb-20 px-6 bg-white md:px-25 lg:px-50">
         <div className="max-w-260 mx-auto">
           <div className="max-w-5xl mx-auto">
             <p className="font-bold text-black text-4xl md:text-[40px]  leading-tight">
-              Nonprofit founders are cut off from funding
+              Building nonprofit startup instruments and infrastructure
             </p>
           </div>
 
           {/* <section className="py-8 px-6 bg-gray-50"> */}
-          <div className="max-w-7xl mx-auto">
-            <div className="relative w-full h-100 ">
-              <div className="relative w-full h-100 rounded-2xl overflow-hidden bg-white">
-                <Image
-                  src="/images/programs/problem_infographic4.jpeg"
-                  alt="The Problem - 80% of student-led nonprofits fade within a year"
-                  fill
-                  className="object-contain"
-                />
+          <div className="max-w-7xl mx-auto mt-20">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-8 min-h-[280px] flex flex-col items-center justify-center text-center transition-all hover:shadow-md">
+                <h3 className="text-4xl font-bold text-black leading-tight mb-8 min-h-[88px] flex items-center justify-center">
+                  Recoverable
+                  <br />
+                  Grants
+                </h3>
+
+                <p className="text-[#495565] text-lg leading-relaxed font-medium">
+                  We recover our three year grant from future surplus.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-8 min-h-[280px] flex flex-col items-center justify-center text-center transition-all hover:shadow-md">
+                <h3 className="text-4xl font-bold text-black leading-tight mb-8 min-h-[88px] flex items-center justify-center">
+                  Mentorship
+                </h3>
+
+                <p className="text-[#495565] text-lg leading-relaxed font-medium">
+                  We pair fellows with mentors who help them scale.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-8 min-h-[280px] flex flex-col items-center justify-center text-center transition-all hover:shadow-md">
+                <h3 className="text-4xl font-bold text-black leading-tight mb-8 min-h-[88px] flex items-center justify-center">
+                  Visibility
+                </h3>
+
+                <p className="text-[#495565] text-lg leading-relaxed font-medium">
+                  We showcase fellows in front of funders.
+                </p>
               </div>
             </div>
           </div>
@@ -267,9 +295,9 @@ const ProgramPage = () => {
               </p>
             </div> */}
 
-            {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Pillar 1 - Funding */}
-              {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
+      {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
                 <div className="w-12 h-12 bg-[#3036411A] rounded flex items-center justify-center">
                   <span className=" font-bold text-black text-xl">1</span>
                 </div>
@@ -282,8 +310,8 @@ const ProgramPage = () => {
                 </p>
               </div> */}
 
-              {/* Pillar 2 - Mentorship */}
-              {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
+      {/* Pillar 2 - Mentorship */}
+      {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
                 <div className="w-12 h-12 bg-[#3036411A] rounded flex items-center justify-center">
                   <span className=" font-bold text-black text-xl">2</span>
                 </div>
@@ -296,8 +324,8 @@ const ProgramPage = () => {
                 </p>
               </div> */}
 
-              {/* Pillar 3 - Community */}
-              {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
+      {/* Pillar 3 - Community */}
+      {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
                 <div className="w-12 h-12 bg-[#3036411A] rounded flex items-center justify-center">
                   <span className=" font-bold text-black text-xl">3</span>
                 </div>

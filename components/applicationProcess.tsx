@@ -26,10 +26,10 @@ export default function ApplicationProcess() {
         <h2 className=" font-bold text-[#000000] text-4xl tracking-[-0.90px] leading-10">
           Apply to the Fellowship
         </h2>
-        <p className="max-w-191 font-normal text-[#495565] text-lg leading-[29.2px]">
+        {/* <p className="max-w-191 font-normal text-[#495565] text-lg leading-[29.2px]">
           TRIIBE provides funding, mentorship, and community for next-gen
           nonprofit founders
-        </p>
+        </p> */}
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">

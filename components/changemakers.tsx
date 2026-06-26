@@ -1,5 +1,6 @@
 import { ArrowRightIcon, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Changemaker {
   name: string;
@@ -203,28 +204,24 @@ export default function Changemakers() {
         </div>
       </div>
 
-      {/* View All Fellows Button */}
-      <div className="flex justify-center w-full mt-12 mb-8">
-        <a
-          href="/cohort"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors  font-semibold text-black text-sm"
-        >
-          View all cohort
-          <ArrowRightIcon className="w-4 h-4" />
-        </a>
-      </div>
+      <section className="py-12 px-4 md:px-25 lg:px-[200px]">
+        <div className="max-w-260 mx-auto">
+          <div className="max-w-7xl mx-auto transition-all duration-300 hover:scale-[1.02]">
+            <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+              <p className="text-2xl md:text-3xl font-medium text-gray-900">
+                Learn more about the dataset we use to deploy capital
+              </p>
 
-      <div className="flex flex-col items-center justify-center w-full mt-8 pt-12 border-t border-gray-200 px-8">
-        <p className="text-lg text-[#495565] font-medium mb-6 text-center max-w-2xl">
-          Learn more about the dataset we use to deploy capital
-        </p>
-        <a
-          href="/index"
-          className="inline-flex items-center gap-2 px-8 py-3 bg-[#002c19] text-white rounded-lg hover:bg-[#003d24] transition-colors font-bold text-sm"
-        >
-          TRIIBE Index
-        </a>
-      </div>
+              <Link
+                href="/index"
+                className="border-2 border-black text-black px-10 py-3 rounded-full font-semibold text-base hover:bg-green-950 hover:text-white hover:scale-105 transition-all duration-300 whitespace-nowrap"
+              >
+                TRIIBE Index
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
   );
 }
