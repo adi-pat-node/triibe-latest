@@ -219,14 +219,15 @@ const EventsPage = () => {
             </div>
           </div>
 
-          <div className="mt-20">
-            <div className="relative w-full max-w-xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl">
+          <div className="mt-12 flex justify-center">
+            <div className="relative w-full max-w-xl aspect-video rounded-2xl overflow-hidden shadow-2xl">
               <iframe
-                src="https://www.youtube.com/embed/_kjTepZUvuM?rel=0"
-                title="Intro to TRIIBE Talk"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
+                src="https://www.youtube.com/embed/cz4n2SjIB0g"
+                title="Educator Parents: How They Shaped My Belief in Student Potential | TRIIBE Talk Shorts"
                 className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
               />
             </div>
           </div>
