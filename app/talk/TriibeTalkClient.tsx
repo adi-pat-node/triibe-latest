@@ -206,8 +206,8 @@ const EventsPage = () => {
             </div>
 
             <div>
-              <div className="ml-auto w-full max-w-[560px]">
-                <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
+              <div className="flex justify-end">
+                <div className="relative w-full max-w-[630px] h-[360px] rounded-xl overflow-hidden shadow-lg">
                   <Image
                     src="/images/home/TRIIBE-TALK.png"
                     alt="TRIIBE Talk"
@@ -222,7 +222,7 @@ const EventsPage = () => {
           <div className="mt-12 flex justify-center">
             <div className="relative w-full max-w-xl aspect-video rounded-2xl overflow-hidden shadow-2xl">
               <iframe
-                src="https://www.youtube.com/embed/LFz4qnhMj74"
+                src="https://www.youtube.com/embed/LFz4qnhMj74?autoplay=1&mute=1&rel=0"
                 title="Danielle Guindo Brings Young Leaders Into a Read Alliance"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
