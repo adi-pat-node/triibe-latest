@@ -1,6 +1,13 @@
 "use client";
 
-import { Users2, UserCheck, Star, MapPin, LayoutGrid, Award } from "lucide-react";
+import {
+  Users2,
+  UserCheck,
+  Star,
+  MapPin,
+  LayoutGrid,
+  Award,
+} from "lucide-react";
 
 const sections = [
   { id: "csuite", label: "C-Suite & Board", Icon: Users2 },
@@ -25,7 +32,7 @@ export default function TableOfContents() {
             <button
               key={id}
               onClick={() => scrollTo(id)}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border border-gray-200 text-gray-600 hover:border-[#1A6B3C] hover:text-[#1A6B3C] hover:bg-[#EAF3DE] transition-colors cursor-pointer"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-sm h-[44px] text-xs font-medium border border-gray-200 text-gray-600 hover:border-[#1A6B3C] hover:text-[#1A6B3C] hover:bg-[#EAF3DE] transition-colors cursor-pointer"
             >
               <Icon size={12} />
               {label}

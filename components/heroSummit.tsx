@@ -71,7 +71,6 @@ export default function HeroSummit() {
               <Clock size={15} />
               <span>Multi-day experience</span>
             </div>
-            
           </div>
 
           <div className="bg-white backdrop-blur-sm border border-white/20 rounded-xl px-8 py-4 mb-6 text-center">
@@ -102,7 +101,7 @@ export default function HeroSummit() {
 
           <a
             href="#tickets"
-            className="px-12 py-3 bg-white text-black font-bold text-sm rounded hover:bg-gray-100 transition-colors mt-4"
+            className="px-12 py-3 bg-white text-black font-bold text-sm rounded-sm h-[44px] hover:bg-gray-100 transition-colors mt-4"
           >
             Buy Tickets
           </a>

@@ -1017,7 +1017,7 @@ const SummitPage = () => {
         id="tickets"
       >
         <div className="max-w-260 mx-auto flex flex-col gap-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-black text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-black text-center ">
             Buy tickets
           </h2>
 
