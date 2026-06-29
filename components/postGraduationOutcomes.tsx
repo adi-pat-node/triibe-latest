@@ -63,14 +63,14 @@ export default function PostGraduationOutcomes() {
         </div>
 
         {/* Programs Button */}
-        <div className="flex justify-center w-full">
+        {/* <div className="flex justify-center w-full">
           <a
             href="/fellowship"
             className="px-6 py-3 bg-[#1a5a4a] hover:bg-[#144539] text-white font-semibold rounded-lg transition-colors"
           >
             Fellowship
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

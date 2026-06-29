@@ -175,7 +175,7 @@ const IndexPage = () => {
               </p>
               <Link
                 href={card.buttonLink}
-                className="inline-flex min-w-[220px] items-center justify-center rounded-xl bg-[#1C5945] px-8 py-4 text-center font-semibold text-white transition-colors hover:bg-[#003d24]"
+                className="inline-flex min-w-[220px] items-center justify-center rounded-sm h-[44px] bg-[#1C5945] px-8 py-4 text-center font-semibold text-white transition-colors hover:bg-[#003d24]"
               >
                 {card.buttonText}
               </Link>
@@ -283,14 +283,14 @@ const IndexPage = () => {
       </section>
 
       {/* Index Partners */}
-     {/*  <section className="py-20 px-4 md:px-12 lg:px-24 bg-[#3036411A]">
+      {/*  <section className="py-20 px-4 md:px-12 lg:px-24 bg-[#3036411A]">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-8">
             Index Partners
           </h2>
 
           <div className="bg-white rounded-3xl border border-gray-200 p-16 flex items-center justify-center"> */}
-            {/* <Link
+      {/* <Link
               href="https://www.unitedyc.org/"
               target="_blank"
               rel="noopener noreferrer"
@@ -304,7 +304,7 @@ const IndexPage = () => {
                 className="object-contain"
               />
             </Link> */}
-           {/*  <p className="text-xl md:text-2xl font-medium text-gray-400 tracking-wide uppercase">
+      {/*  <p className="text-xl md:text-2xl font-medium text-gray-400 tracking-wide uppercase">
               Coming Soon...
             </p>
           </div>
