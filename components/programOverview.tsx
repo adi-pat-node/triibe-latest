@@ -72,7 +72,7 @@ export default function ProgramOverviewTest() {
                 <div className="w-full flex justify-center">
                   <Link
                     href="/fellowship"
-                    className="flex flex-col items-center justify-center w-[200px] h-[50px] bg-white text-[#002c19] rounded font-bold hover:bg-gray-100 transition-colors leading-tight"
+                    className="flex flex-col items-center justify-center w-[200px]  bg-white text-[#002c19] rounded-sm h-[44px] font-bold hover:bg-gray-100 transition-colors leading-tight"
                   >
                     <span>TRIIBE Fellowship</span>
                   </Link>
@@ -89,7 +89,7 @@ export default function ProgramOverviewTest() {
                 <div className="w-full flex justify-center">
                   <Link
                     href="/talk"
-                    className="flex flex-col items-center justify-center w-[200px] h-[50px] bg-white text-[#002c19] rounded font-bold hover:bg-gray-100 transition-colors leading-tight"
+                    className="flex flex-col items-center justify-center w-[200px] rounded-sm h-[44px] bg-white text-[#002c19]  font-bold hover:bg-gray-100 transition-colors leading-tight"
                   >
                     <span>TRIIBE Talks</span>
                   </Link>
@@ -106,7 +106,7 @@ export default function ProgramOverviewTest() {
                 <div className="w-full flex justify-center">
                   <Link
                     href="/100"
-                    className="flex items-center justify-center w-[200px] h-[50px] bg-white text-[#002c19] rounded font-bold hover:bg-gray-100 transition-colors leading-tight"
+                    className="flex items-center justify-center w-[200px] rounded-sm h-[44px] bg-white text-[#002c19]  font-bold hover:bg-gray-100 transition-colors leading-tight"
                   >
                     TRIIBE I00
                   </Link>

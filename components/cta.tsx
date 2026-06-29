@@ -58,7 +58,7 @@ export default function CTASection() {
             </p>
             <a
               href="/apply"
-              className="w-full px-6 py-3 bg-white text-black rounded hover:bg-gray-100 transition-colors font-semibold text-base text-center"
+              className=" inline-flex items-center justify-center w-full px-6 py-3 bg-white text-black rounded-sm h-[44px] hover:bg-gray-100 transition-colors font-semibold text-base text-center"
             >
               Apply
             </a>
@@ -74,7 +74,7 @@ export default function CTASection() {
             </p>
             <a
               href="mailto:partnerships@triibe.org"
-              className="w-full px-6 py-3 bg-white text-black rounded hover:bg-gray-100 transition-colors font-semibold text-base text-center"
+              className="inline-flex items-center justify-center w-full px-6 py-3 bg-white text-black rounded-sm h-[44px] hover:bg-gray-100 transition-colors font-semibold text-base text-center"
             >
               Contact us
             </a>
@@ -92,7 +92,7 @@ export default function CTASection() {
               href="https://donate.rayzeapp.com/orgs/tIbe07j0XKkLQezHHXoz"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full px-6 py-3 bg-white text-black rounded hover:bg-gray-100 transition-colors font-semibold text-base text-center cursor-pointer"
+              className="inline-flex items-center justify-center w-full px-6 py-3 bg-white text-black rounded-sm h-[44px] hover:bg-gray-100 transition-colors font-semibold text-base text-center cursor-pointer"
             >
               Donate
             </a>

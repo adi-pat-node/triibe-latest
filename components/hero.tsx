@@ -45,14 +45,14 @@ export default function Hero() {
           <div className=" mt-7 flex flex-col md:flex-row items-center justify-center  gap-6 md:gap-12   ">
             <Link
               href="/fellowship"
-              className="px-6 py-3 font-bold bg-white text-black hover:bg-gray-100 font-['DM_Sans',Helvetica] font-normal text-sm rounded inline-flex items-center justify-center transition-colors"
+              className="px-6 py-3 font-bold bg-white text-black hover:bg-gray-100 font-['DM_Sans',Helvetica] font-normal text-sm h-11 inline-flex items-center justify-center transition-colors rounded-sm h-[44px]"
             >
               Explore our Program
             </Link>
 
             <Link
               href="/apply"
-              className="px-6 py-3  font-bold bg-[#002c19] text-white rounded hover:bg-[#003d24] font-['DM_Sans',Helvetica] font-normal text-sm rounded inline-flex items-center justify-center transition-colors gap-2"
+              className="px-6 py-3  font-bold bg-[#002c19] text-white rounded-sm h-[44px] hover:bg-[#003d24] font-['DM_Sans',Helvetica] font-normal text-sm  inline-flex items-center justify-center transition-colors "
             >
               Apply to Fellowship
             </Link>

@@ -214,7 +214,7 @@ export default function Changemakers() {
 
               <Link
                 href="/index"
-                className="border-2 border-black text-black px-10 py-3 rounded-full font-semibold text-base hover:bg-green-950 hover:text-white hover:scale-105 transition-all duration-300 whitespace-nowrap"
+                className="inline-flex items-center justify-center h-[44px] px-10 border-2 border-black rounded-sm font-semibold text-base text-black whitespace-nowrap transition-all duration-300 hover:bg-green-950 hover:text-white hover:scale-105"
               >
                 TRIIBE Index
               </Link>
