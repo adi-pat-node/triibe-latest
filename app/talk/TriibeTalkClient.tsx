@@ -191,14 +191,14 @@ const EventsPage = () => {
                   href="https://drive.google.com/file/d/1rALrh5bjpWnbKq2AvxeudYOpPG7kFsZ-/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="h-9 px-4 py-2 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-medium inline-flex items-center cursor-pointer"
+                  className=" px-4 py-2 bg-white text-black border border-black rounded-sm h-[44px] hover:bg-gray-50 transition-colors font-medium inline-flex items-center cursor-pointer"
                 >
                   TRIIBE Talk guide
                 </a>
 
                 <a
                   href="/talk/host"
-                  className="h-9 px-4 py-2 bg-[#1C5945] text-white border border-green rounded hover:bg-[#003d24] transition-colors font-medium inline-flex items-center cursor-pointer"
+                  className="rounded-sm h-[44px] px-4 py-2 bg-[#1C5945] text-white border border-green  hover:bg-[#003d24] transition-colors font-medium inline-flex items-center cursor-pointer"
                 >
                   Host a TRIIBE Talk
                 </a>
@@ -324,7 +324,7 @@ const EventsPage = () => {
                         href={btn.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full px-6 py-3 bg-[#1C5945] text-white rounded hover:bg-[#003d24] transition-colors font-semibold text-base inline-flex items-center justify-center"
+                        className="w-full px-6 py-3 bg-[#1C5945] text-white rounded-sm h-[44px] hover:bg-[#003d24] transition-colors font-semibold text-base inline-flex items-center justify-center"
                       >
                         {btn.text}
                       </a>
@@ -349,7 +349,7 @@ const EventsPage = () => {
                 href="https://drive.google.com/file/d/1ZNTNHHHPhV_4-cXh6JdtdzaRmxQ6IdJs/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-black text-black px-10 py-3 rounded-full font-semibold text-base hover:bg-green-950 hover:text-white hover:scale-105 transition-all duration-300 whitespace-nowrap"
+                className="inline-flex items-center justify-center border-2 border-black text-black px-10 py-3 rounded-sm h-[44px] font-semibold text-base hover:bg-green-950 hover:text-white hover:scale-105 transition-all duration-300 whitespace-nowrap"
               >
                 View
               </Link>
