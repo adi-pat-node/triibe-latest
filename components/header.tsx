@@ -49,7 +49,7 @@ export default function Header() {
               href={link.href}
               className={` ${
                 isActive(link.href)
-                  ? "font-bold  text-white "
+                  ? "font-black  text-white "
                   : "font-normal text-white/80"
               } text-[#fffefecc] text-sm tracking-[0] leading-5 cursor-pointer hover:text-white transition-colors`}
             >

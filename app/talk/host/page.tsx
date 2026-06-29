@@ -945,7 +945,7 @@ const HostEventPage = () => {
                 <button
                   onClick={step === 4 ? handleSubmit : nextStep}
                   disabled={!isStepValid() || isSubmitting}
-                  className={`flex items-center justify-center gap-3 px-10 py-4 rounded-2xl font-bold transition-all duration-300 order-1 md:order-2 ${
+                  className={`flex items-center justify-center gap-3 px-10 py-4 rounded-sm h-[44px] font-bold transition-all duration-300 order-1 md:order-2 ${
                     isStepValid() && !isSubmitting
                       ? "bg-[#1C5945] text-white cursor-pointer"
                       : "bg-[#E5E7EB] text-[#30364166] cursor-not-allowed"

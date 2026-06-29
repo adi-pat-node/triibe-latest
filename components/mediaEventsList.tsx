@@ -139,13 +139,13 @@ export default function MediaEventsList() {
             <div className="flex gap-2">
               <button
                 onClick={() => setEventView("upcoming")}
-                className={`px-5 py-2 rounded-sm h-[44px] text-xs font-bold ${eventView === "upcoming" ? "bg-[#1C5945] text-white" : "bg-white border"}`}
+                className={`px-5 py-2 rounded-sm h-[44px]   ${eventView === "upcoming" ? "bg-[#1C5945] text-white font-medium" : "bg-white border"}`}
               >
                 Upcoming
               </button>
               <button
                 onClick={() => setEventView("past")}
-                className={`px-5 py-2 rounded-sm h-[44px] text-xs font-bold ${eventView === "past" ? "bg-[#1C5945] text-white" : "bg-white border"}`}
+                className={`px-5 py-2 rounded-sm h-[44px]  ${eventView === "past" ? "bg-[#1C5945] text-white font-medium" : "bg-white border"}`}
               >
                 Past
               </button>
@@ -155,7 +155,7 @@ export default function MediaEventsList() {
                 <button
                   key={type}
                   onClick={() => setFilter(type)}
-                  className={`px-5 py-2 rounded-sm h-[44px] text-xs font-bold ${filter === type ? "bg-[#1C5945] text-white" : "bg-white border"}`}
+                  className={`px-5 py-2 rounded-sm h-[44px]   ${filter === type ? "bg-[#1C5945] text-white font-medium" : "bg-white border"}`}
                 >
                   {type}
                 </button>
