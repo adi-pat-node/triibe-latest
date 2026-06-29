@@ -188,8 +188,8 @@ export const legacyBoard: Person[] = [
     linkedIn: "https://www.linkedin.com/in/staceylauren/",
   },
   {
-    name: "Dr. Purnima Voria",
-    title: "Founder & CEO, US India Chamber of Commerce",
+    name: "Purnima Voria",
+    title: "Founder & CEO, National US India Chamber of Commerce",
     imagePath: "/images/team/dr-purnima-voria.jpg",
     linkedIn: "https://www.linkedin.com/in/purnimavoria/",
   },
