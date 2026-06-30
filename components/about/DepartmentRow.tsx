@@ -27,7 +27,7 @@ function MemberChip({
       <p
         style={{
           fontSize: 11,
-          color: "#111111",
+          color: "#002c19",
           fontWeight: 500,
           textAlign: "center",
           whiteSpace: "nowrap",
@@ -58,17 +58,17 @@ export default function DepartmentRow({ department }: Props) {
         className="flex flex-col justify-center gap-1.5 p-4 border-b md:border-b-0 md:border-r border-[#C0DD97] flex-shrink-0 w-full md:w-[130px]"
         style={{ background: "rgba(26,107,60,0.12)" }}
       >
-        <Icon size={20} className="text-[#1A6B3C]" />
-        <p className="text-[#1A6B3C] font-bold text-sm leading-tight">{name}</p>
-        <p className="text-[#2D7A4B] text-xs">
+        <Icon size={20} className="text-[#002c19]/80" />
+        <p className="text-[#002c19]/80 font-bold text-sm leading-tight">
+          {name}
+        </p>
+        <p className="text-[#002c19]/80 text-xs">
           {members.length} {members.length === 1 ? "member" : "members"}
         </p>
       </div>
-      
+
       {/* 3. Removed inline flex styles; replaced with a 2-column mobile grid and fallback desktop flex row */}
-      <div
-        className="grid grid-cols-2 gap-x-7 gap-y-4 p-4 items-start md:flex md:flex-wrap md:gap-[16px_28px] md:items-start md:content-start md:flex-1"
-      >
+      <div className="grid grid-cols-2 gap-x-7 gap-y-4 p-4 items-start md:flex md:flex-wrap md:gap-[16px_28px] md:items-start md:content-start md:flex-1">
         {members.map((member) => (
           // 4. Container wrapper to prevent any alignment shifting inside the grid cells
           <div key={member.name} className="min-w-0 w-full md:w-auto">

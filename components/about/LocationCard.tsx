@@ -15,10 +15,10 @@ function AdvisoryChip({ member }: { member: LocationAdvisoryMember }) {
       {/* Top Group: Avatar, Name, and Titles */}
       <div className="flex flex-col items-center w-full text-center">
         <PersonAvatar src={member.imagePath} name={member.name} size={40} />
-        
+
         <p
           className="font-medium w-full line-clamp-1 mt-2"
-          style={{ fontSize: 11, lineHeight: 1.3, color: "#111111" }}
+          style={{ fontSize: 11, lineHeight: 1.3, color: "#002c19cc" }}
         >
           {member.name}
         </p>
@@ -28,25 +28,25 @@ function AdvisoryChip({ member }: { member: LocationAdvisoryMember }) {
           {member.role && (
             <p
               className="line-clamp-1"
-              style={{ 
-                fontSize: 10, 
-                color: "#1A6B3C", 
-                fontWeight: 500 
+              style={{
+                fontSize: 10,
+                color: "#1A6B3C",
+                fontWeight: 500,
               }}
             >
               {member.role}
             </p>
           )}
-          
+
           {member.title && (
             <p
               className="line-clamp-2"
-              style={{ 
-                fontSize: 11, 
-                color: "#888",        // Restored your precise faded look
-                textAlign: "center", 
+              style={{
+                fontSize: 11,
+                color: "#002c19cc", // Restored your precise faded look
+                textAlign: "center",
                 lineHeight: 1.2,
-                whiteSpace: "normal" 
+                whiteSpace: "normal",
               }}
             >
               {member.title}
@@ -79,7 +79,7 @@ export default function LocationCard({ entry }: Props) {
       >
         <span style={{ fontSize: 22, lineHeight: 1 }}>{entry.flag}</span>
         <p
-          className="text-[#1A6B3C] font-bold leading-snug"
+          className="text-[#002c19]/80 font-bold leading-snug"
           style={{ fontSize: 11 }}
         >
           {entry.location}
@@ -87,7 +87,7 @@ export default function LocationCard({ entry }: Props) {
         {entry.locationPath && (
           <a
             href={entry.locationPath}
-            className="text-[#1A6B3C] underline mt-1"
+            className="text-[#002c19] underline mt-1"
             style={{ fontSize: 10 }}
           >
             View →
@@ -110,7 +110,7 @@ export default function LocationCard({ entry }: Props) {
             <p
               style={{
                 fontSize: 9,
-                color: "#999",
+                color: "#002c19",
                 textTransform: "uppercase",
                 letterSpacing: 1.2,
                 marginBottom: 8,
@@ -129,7 +129,7 @@ export default function LocationCard({ entry }: Props) {
                   style={{
                     fontSize: 13,
                     fontWeight: 700,
-                    color: "#111111",
+                    color: "#002c19",
                     lineHeight: 1.3,
                   }}
                 >
@@ -148,7 +148,7 @@ export default function LocationCard({ entry }: Props) {
           <p
             style={{
               fontSize: 11,
-              color: "#aaa",
+              color: "#002c19cc",
               fontStyle: "italic",
               lineHeight: 1.5,
             }}
@@ -158,9 +158,7 @@ export default function LocationCard({ entry }: Props) {
         ) : entry.advisoryBoard.length > 0 ? (
           <div>
             {/* 3. Replaced inline flex styles with responsive CSS Grid for mobile & flex row for desktop */}
-            <div
-              className="grid grid-cols-2 gap-x-6 gap-y-5 py-3 items-start md:flex md:flex-wrap md:gap-[20px_24px] md:items-stretch"
-            >
+            <div className="grid grid-cols-2 gap-x-6 gap-y-5 py-3 items-start md:flex md:flex-wrap md:gap-[20px_24px] md:items-stretch">
               {entry.advisoryBoard.map((member) => (
                 // 4. Wrapped each chip to ensure it behaves correctly inside the grid cells
                 <div key={member.name} className="min-w-0 w-full md:w-auto">

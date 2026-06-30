@@ -13,7 +13,17 @@ export default function HonoraryItem({ member }: Props) {
   return (
     <div className="flex flex-col items-center gap-1 text-center">
       <PersonAvatar src={member.imagePath} name={member.name} size={32} />
-      <p style={{ fontSize: 13, fontWeight: 500, color: '#111111', whiteSpace: 'nowrap', textAlign: 'center' }}>{member.name}</p>
+      <p
+        style={{
+          fontSize: 13,
+          fontWeight: 500,
+          color: "#002c19",
+          whiteSpace: "nowrap",
+          textAlign: "center",
+        }}
+      >
+        {member.name}
+      </p>
       {isInstagram ? (
         <InstagramBadge url={member.linkedIn!} />
       ) : (

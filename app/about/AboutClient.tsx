@@ -855,10 +855,10 @@ export default function AboutPage() {
                 height={64}
                 className="h-16 w-auto mx-auto mb-6"
               />
-              <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">
+              <h3 className="text-2xl md:text-3xl font-bold text-[#002c19] mb-4">
                 Subscribe to the TRIIBUNE!
               </h3>
-              <p className="text-base text-gray-700">
+              <p className="text-base text-[#002c19]/80">
                 Monthly updates on our impact, new projects, and ways to get
                 involved!
               </p>
@@ -886,7 +886,7 @@ export default function AboutPage() {
               <button
                 type="button"
                 onClick={() => setShowNewsletter(false)}
-                className="w-full text-base text-gray-600 hover:text-gray-900 transition-colors"
+                className="w-full text-base text-[#002c19]/80 hover:text-[#002c19]/80 transition-colors"
               >
                 No, thank you
               </button>
