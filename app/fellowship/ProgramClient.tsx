@@ -356,9 +356,7 @@ const ProgramPage = () => {
 
               <div className="flex-1 pb-12">
                 <div className="mb-6">
-                  <h3 className=" font-bold text-black text-3xl mb-2">
-                    Year 1: Roots
-                  </h3>
+                  <h3 className=" font-bold text-black text-3xl mb-2"></h3>
                   {/* <p className=" font-normal text-[#495565] text-lg">
                     Sophomore Year
                   </p> */}
@@ -367,9 +365,9 @@ const ProgramPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div className="bg-white border border-gray-200 rounded-lg p-6">
                     <p className=" font-normal text-[#697282] text-xs uppercase mb-3 tracking-[0.60px]">
-                      FUNDING
+                      YEAR 1
                     </p>
-                    <p className=" font-bold text-black text-3xl">$5,000</p>
+                    <p className=" font-bold text-black text-3xl">Roots</p>
                   </div>
 
                   <div className="bg-white border border-gray-200 rounded-lg p-6">
@@ -377,8 +375,8 @@ const ProgramPage = () => {
                       CADENCE
                     </p>
                     <p className=" font-normal text-[#495565] text-sm">
-                      Monthly check-ins, Quarterly mentor cycles, Annual branch
-                      summits and retreats
+                      Monthly check-ins, quarterly mentor cycles, annual branch
+                      summits and exchanges
                     </p>
                   </div>
                 </div>
@@ -424,9 +422,7 @@ const ProgramPage = () => {
 
               <div className="flex-1 pb-12">
                 <div className="mb-6">
-                  <h3 className=" font-bold text-black text-3xl mb-2">
-                    Year 2: Skyline
-                  </h3>
+                  <h3 className=" font-bold text-black text-3xl mb-2"></h3>
                   {/* <p className=" font-normal text-[#495565] text-lg">
                     Junior Year
                   </p> */}
@@ -435,10 +431,10 @@ const ProgramPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div className="bg-white border border-gray-200 rounded-lg p-6">
                     <p className=" font-normal text-[#697282] text-xs uppercase mb-3 tracking-[0.60px]">
-                      FUNDING
+                      YEAR 2
                     </p>
                     <p className=" font-bold text-black text-3xl  md:text-[26px] lg:text-3xl">
-                      $10,000
+                      Skyline
                     </p>
                   </div>
 
@@ -447,8 +443,8 @@ const ProgramPage = () => {
                       CADENCE
                     </p>
                     <p className=" font-normal text-[#495565] text-sm">
-                      Monthly check-ins, Quarterly mentor cycles, Annual branch
-                      summits and retreats
+                      Monthly check-ins, quarterly mentor cycles, annual branch
+                      summits and exchanges
                     </p>
                   </div>
                 </div>
@@ -495,9 +491,7 @@ const ProgramPage = () => {
 
               <div className="flex-1">
                 <div className="mb-6">
-                  <h3 className=" font-bold text-black text-3xl mb-2">
-                    Year 3: Stars
-                  </h3>
+                  <h3 className=" font-bold text-black text-3xl mb-2"></h3>
                   {/* <p className=" font-normal text-[#495565] text-lg">
                     Senior Year
                   </p> */}
@@ -506,10 +500,10 @@ const ProgramPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div className="bg-white border border-gray-200 rounded-lg p-6">
                     <p className=" font-normal text-[#697282] text-xs uppercase mb-3 tracking-[0.60px]">
-                      FUNDING
+                      YEAR 3
                     </p>
                     <p className=" font-bold text-black text-3xl md:text-[26px] lg:text-3xl">
-                      $25,000
+                      Stars
                     </p>
                   </div>
 
@@ -518,8 +512,8 @@ const ProgramPage = () => {
                       CADENCE
                     </p>
                     <p className=" font-normal text-[#495565] text-sm">
-                      Monthly check-ins, Quarterly mentor cycles, Annual branch
-                      summits and retreats
+                      Monthly check-ins, quarterly mentor cycles, annual branch
+                      summits and exchanges
                     </p>
                   </div>
                 </div>
