@@ -109,11 +109,8 @@ function TestimonialCarousel() {
     <div className="flex flex-col gap-12">
       <div className="text-center">
         <h2 className=" font-bold text-black text-4xl mb-4 tracking-[-0.90px] leading-10">
-          Hear from Our Fellows
+          Hear from our fellows
         </h2>
-        <p className=" font-normal text-[#303641] text-lg">
-          Real stories from founders prioritizing impact over income
-        </p>
       </div>
 
       <div className="flex items-center justify-between gap-8">
@@ -689,7 +686,8 @@ const ProgramPage = () => {
                     Unlock Funding
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
-                    Grants distributed each year as you continue your nonprofit
+                    Develop new relationships to investors as you continue your
+                    nonprofit
                   </p>
                 </div>
               </div>
@@ -704,7 +702,7 @@ const ProgramPage = () => {
                     Execute with Support
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
-                    Office hours, tools, resources, and peer community
+                    Mentorship, tools, resources, and peer community
                   </p>
                 </div>
               </div>
@@ -719,8 +717,8 @@ const ProgramPage = () => {
                     Beyond the residence
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
-                    Become the bench of operators institutions need to deliver a
-                    return on impact
+                    Become the operators institutions need to deliver a return
+                    on impact
                   </p>
                 </div>
               </div>
