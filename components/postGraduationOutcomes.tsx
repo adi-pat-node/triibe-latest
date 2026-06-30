@@ -14,7 +14,7 @@ const outcomes = [
     icon: "images/home/container-5.svg",
     title: "Executive placement",
     description:
-      "Become the bench of operators future leaders and institutions need to deliver a return on impact",
+      "Become the operators institutions need to deliver a return on impact",
   },
   {
     icon: "images/home/container-1.svg",
