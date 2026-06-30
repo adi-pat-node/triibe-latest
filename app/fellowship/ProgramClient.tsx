@@ -103,7 +103,7 @@ function TestimonialCarousel() {
   return (
     <div className="flex flex-col gap-12">
       <div className="text-center">
-        <h2 className=" font-bold text-black text-4xl mb-4 tracking-[-0.90px] leading-10">
+        <h2 className=" font-bold text-[#002c19] text-4xl mb-4 tracking-[-0.90px] leading-10">
           Hear from our fellows
         </h2>
       </div>
@@ -114,12 +114,12 @@ function TestimonialCarousel() {
           className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors shrink-0"
           aria-label="Previous testimonial"
         >
-          <ChevronLeft className="w-8 h-8 text-black" />
+          <ChevronLeft className="w-8 h-8 text-[#002c19]" />
         </button>
 
         <div className="flex-1 text-center">
           <blockquote className="mb-8">
-            <p className=" font-normal text-black text-xl md:text-xl leading-relaxed mb-8">
+            <p className=" font-normal text-[#002c19] text-xl md:text-xl leading-relaxed mb-8">
               "{currentTestimonial.quote}"
             </p>
           </blockquote>
@@ -128,10 +128,10 @@ function TestimonialCarousel() {
             <p className=" font-semibold text-[#303641] text-lg">
               {currentTestimonial.name}
             </p>
-            <p className=" font-normal text-black text-base">
+            <p className=" font-normal text-[#002c19] text-base">
               {currentTestimonial.year}
             </p>
-            <p className=" font-normal text-black text-base">
+            <p className=" font-normal text-[#002c19] text-base">
               {currentTestimonial.organization}
             </p>
           </div>
@@ -142,7 +142,7 @@ function TestimonialCarousel() {
           className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors shrink-0"
           aria-label="Next testimonial"
         >
-          <ChevronRight className="w-8 h-8 text-black" />
+          <ChevronRight className="w-8 h-8 text-[#002c19]" />
         </button>
       </div>
 
@@ -187,13 +187,13 @@ const ProgramPage = () => {
                   priority
                   className="h-8 w-32 md:h-11 md:w-44 shrink-0"
                 />
-                <h1 className="min-w-0 font-semibold text-black text-4xl md:text-5xl lg:text-6xl tracking-[-1.20px] leading-tight">
+                <h1 className="min-w-0 font-semibold text-[#002c19] text-4xl md:text-5xl lg:text-6xl tracking-[-1.20px] leading-tight">
                   Three-Year Fellowship
                 </h1>
               </div>
 
               <div className="inline-block">
-                <span className="inline-block px-4 py-2 bg-[#3036411A]  font-bold text-black text-sm tracking-[0] leading-5">
+                <span className="inline-block px-4 py-2 bg-[#3036411A]  font-bold text-[#002c19] text-sm tracking-[0] leading-5">
                   3-YEAR FELLOWSHIP
                 </span>
               </div>
@@ -212,7 +212,7 @@ const ProgramPage = () => {
 
               <a
               zeffy-form-link="https://www.zeffy.com/embed/donation-form/invest-in-the-future-3?modal=true"
-              className="px-6 py-3 bg-white text-black border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base w-full md:w-auto text-center cursor-pointer"
+              className="px-6 py-3 bg-white text-[#002c19] border border-black rounded hover:bg-gray-50 transition-colors font-semibold text-base w-full md:w-auto text-center cursor-pointer"
               >
              Donate
              </a>
@@ -227,7 +227,7 @@ const ProgramPage = () => {
       <section className="pt-32 pb-20 px-6 bg-white md:px-25 lg:px-50">
         <div className="max-w-260 mx-auto">
           <div className="max-w-5xl mx-auto">
-            <p className="font-bold text-black text-4xl md:text-[40px]  leading-tight mb-12">
+            <p className="font-bold text-[#002c19] text-4xl md:text-[40px]  leading-tight mb-12">
               Bringing startup dynamics to the nonprofit sector
             </p>
           </div>
@@ -274,7 +274,7 @@ const ProgramPage = () => {
         <div className="max-w-260 mx-auto">
           <div className="flex flex-col gap-12">
             <div className="flex flex-col gap-4">
-              <h2 className=" font-bold text-black text-4xl tracking-[-0.90px] leading-10">
+              <h2 className=" font-bold text-[#002c19] text-4xl tracking-[-0.90px] leading-10">
                 Three pillars of support
               </h2>
               <p className=" font-normal text-[#495565] text-lg leading-7">
@@ -286,9 +286,9 @@ const ProgramPage = () => {
               {/* Pillar 1 - Funding */}
       {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
                 <div className="w-12 h-12 bg-[#3036411A] rounded flex items-center justify-center">
-                  <span className=" font-bold text-black text-xl">1</span>
+                  <span className=" font-bold text-[#002c19] text-xl">1</span>
                 </div>
-                <h3 className=" font-semibold text-black text-xl leading-7">
+                <h3 className=" font-semibold text-[#002c19] text-xl leading-7">
                   Funding
                 </h3>
                 <p className=" font-normal text-[#495565] text-sm leading-[22.8px]">
@@ -300,9 +300,9 @@ const ProgramPage = () => {
       {/* Pillar 2 - Mentorship */}
       {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
                 <div className="w-12 h-12 bg-[#3036411A] rounded flex items-center justify-center">
-                  <span className=" font-bold text-black text-xl">2</span>
+                  <span className=" font-bold text-[#002c19] text-xl">2</span>
                 </div>
-                <h3 className=" font-semibold text-black text-xl leading-7">
+                <h3 className=" font-semibold text-[#002c19] text-xl leading-7">
                   Mentorship
                 </h3>
                 <p className=" font-normal text-[#495565] text-sm leading-[22.8px]">
@@ -314,9 +314,9 @@ const ProgramPage = () => {
       {/* Pillar 3 - Community */}
       {/* <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
                 <div className="w-12 h-12 bg-[#3036411A] rounded flex items-center justify-center">
-                  <span className=" font-bold text-black text-xl">3</span>
+                  <span className=" font-bold text-[#002c19] text-xl">3</span>
                 </div>
-                <h3 className=" font-semibold text-black text-xl leading-7">
+                <h3 className=" font-semibold text-[#002c19] text-xl leading-7">
                   Community
                 </h3>
                 <p className=" font-normal text-[#495565] text-sm leading-[22.8px]">
@@ -333,7 +333,7 @@ const ProgramPage = () => {
       <section className="py-20 px-4 md:px-25 lg:px-50 bg-[#3036411A]">
         <div className="max-w-260 mx-auto">
           <div className="flex flex-col gap-16">
-            <h2 className=" font-bold text-black text-4xl text-center tracking-[-0.90px] leading-10">
+            <h2 className=" font-bold text-[#002c19] text-4xl text-center tracking-[-0.90px] leading-10">
               Your 3-Year Journey
             </h2>
 
@@ -348,7 +348,7 @@ const ProgramPage = () => {
 
               <div className="flex-1 pb-12">
                 <div className="mb-6">
-                  <h3 className=" font-bold text-black text-3xl mb-2"></h3>
+                  <h3 className=" font-bold text-[#002c19] text-3xl mb-2"></h3>
                   {/* <p className=" font-normal text-[#495565] text-lg">
                     Sophomore Year
                   </p> */}
@@ -359,7 +359,7 @@ const ProgramPage = () => {
                     <p className=" font-normal text-[#697282] text-xs uppercase mb-3 tracking-[0.60px]">
                       YEAR 1
                     </p>
-                    <p className=" font-bold text-black text-3xl">Roots</p>
+                    <p className=" font-bold text-[#002c19] text-3xl">Roots</p>
                   </div>
 
                   <div className="bg-white border border-gray-200 rounded-lg p-6">
@@ -414,7 +414,7 @@ const ProgramPage = () => {
 
               <div className="flex-1 pb-12">
                 <div className="mb-6">
-                  <h3 className=" font-bold text-black text-3xl mb-2"></h3>
+                  <h3 className=" font-bold text-[#002c19] text-3xl mb-2"></h3>
                   {/* <p className=" font-normal text-[#495565] text-lg">
                     Junior Year
                   </p> */}
@@ -425,7 +425,7 @@ const ProgramPage = () => {
                     <p className=" font-normal text-[#697282] text-xs uppercase mb-3 tracking-[0.60px]">
                       YEAR 2
                     </p>
-                    <p className=" font-bold text-black text-3xl  md:text-[26px] lg:text-3xl">
+                    <p className=" font-bold text-[#002c19] text-3xl  md:text-[26px] lg:text-3xl">
                       Skyline
                     </p>
                   </div>
@@ -483,7 +483,7 @@ const ProgramPage = () => {
 
               <div className="flex-1">
                 <div className="mb-6">
-                  <h3 className=" font-bold text-black text-3xl mb-2"></h3>
+                  <h3 className=" font-bold text-[#002c19] text-3xl mb-2"></h3>
                   {/* <p className=" font-normal text-[#495565] text-lg">
                     Senior Year
                   </p> */}
@@ -494,7 +494,7 @@ const ProgramPage = () => {
                     <p className=" font-normal text-[#697282] text-xs uppercase mb-3 tracking-[0.60px]">
                       YEAR 3
                     </p>
-                    <p className=" font-bold text-black text-3xl md:text-[26px] lg:text-3xl">
+                    <p className=" font-bold text-[#002c19] text-3xl md:text-[26px] lg:text-3xl">
                       Stars
                     </p>
                   </div>
@@ -551,7 +551,7 @@ const ProgramPage = () => {
         <div className="max-w-260 mx-auto">
           {/* Quarterly Cycle Testimonial */}
           <div className="bg-white border-2 border-black rounded-lg p-8 md:p-10">
-            <blockquote className="text-black text-xl font-normal leading-relaxed italic">
+            <blockquote className="text-[#002c19] text-xl font-normal leading-relaxed italic">
               "TRIIBE's Mentorship program is nothing short of astounding. With
               a busy schedule, I wasn't sure how much time I could give, but the
               ease of entry, flexible commitment, and thoughtful organization
@@ -560,7 +560,7 @@ const ProgramPage = () => {
             </blockquote>
 
             <div className="mt-6 flex items-center gap-3">
-              <span className="text-black font-semibold">
+              <span className="text-[#002c19] font-semibold">
                 — Jonny Imerman, Co-founder Imerman Angels
               </span>
               <a
@@ -589,7 +589,7 @@ const ProgramPage = () => {
       <section className="py-20 px-4 md:px-25 lg:px-50 bg-white">
         <div className="max-w-260 mx-auto">
           <div className="flex flex-col gap-12">
-            <h2 className=" font-bold text-black text-4xl text-center tracking-[-0.90px] leading-10">
+            <h2 className=" font-bold text-[#002c19] text-4xl text-center tracking-[-0.90px] leading-10">
               How TRIIBE helps: Step-by-Step
             </h2>
 
@@ -597,10 +597,10 @@ const ProgramPage = () => {
               {/* Step 1 */}
               <div className="flex gap-6 order-1 md:order-none">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
-                  <span className=" font-bold text-black text-xl">1</span>
+                  <span className=" font-bold text-[#002c19] text-xl">1</span>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className=" font-semibold text-black text-xl">
+                  <h3 className=" font-semibold text-[#002c19] text-xl">
                     Onboard & Assess
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
@@ -613,10 +613,10 @@ const ProgramPage = () => {
               {/* New Step 5 */}
               <div className="flex gap-6 order-5 md:order-none">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
-                  <span className=" font-bold text-black text-xl">5</span>
+                  <span className=" font-bold text-[#002c19] text-xl">5</span>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className=" font-semibold text-black text-xl">
+                  <h3 className=" font-semibold text-[#002c19] text-xl">
                     Present with Humility
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
@@ -629,10 +629,10 @@ const ProgramPage = () => {
               {/* Step 2 */}
               <div className="flex gap-6 order-2 md:order-none">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
-                  <span className=" font-bold text-black text-xl">2</span>
+                  <span className=" font-bold text-[#002c19] text-xl">2</span>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className=" font-semibold text-black text-xl">
+                  <h3 className=" font-semibold text-[#002c19] text-xl">
                     Define the Plan
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
@@ -644,10 +644,10 @@ const ProgramPage = () => {
               {/* Step 6 */}
               <div className="flex gap-6 order-6 md:order-none">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
-                  <span className=" font-bold text-black text-xl">6</span>
+                  <span className=" font-bold text-[#002c19] text-xl">6</span>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className=" font-semibold text-black text-xl">
+                  <h3 className=" font-semibold text-[#002c19] text-xl">
                     Measure & Reflect
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
@@ -659,10 +659,10 @@ const ProgramPage = () => {
               {/* Step 3 */}
               <div className="flex gap-6 order-3 md:order-none">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
-                  <span className=" font-bold text-black text-xl">3</span>
+                  <span className=" font-bold text-[#002c19] text-xl">3</span>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className=" font-semibold text-black text-xl">
+                  <h3 className=" font-semibold text-[#002c19] text-xl">
                     Match Mentors
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
@@ -674,10 +674,10 @@ const ProgramPage = () => {
               {/* Step 7 */}
               <div className="flex gap-6 order-7 md:order-none">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
-                  <span className=" font-bold text-black text-xl">7</span>
+                  <span className=" font-bold text-[#002c19] text-xl">7</span>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className=" font-semibold text-black text-xl">
+                  <h3 className=" font-semibold text-[#002c19] text-xl">
                     Unlock Funding
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
@@ -690,10 +690,10 @@ const ProgramPage = () => {
               {/* Step 4 */}
               <div className="flex gap-6 order-4 md:order-none">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
-                  <span className=" font-bold text-black text-xl">4</span>
+                  <span className=" font-bold text-[#002c19] text-xl">4</span>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className=" font-semibold text-black text-xl">
+                  <h3 className=" font-semibold text-[#002c19] text-xl">
                     Execute with Support
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
@@ -705,10 +705,10 @@ const ProgramPage = () => {
               {/* Step 8 */}
               <div className="flex gap-6 order-8 md:order-none">
                 <div className="w-14 h-14 bg-gray-200 rounded flex items-center justify-center shrink-0">
-                  <span className=" font-bold text-black text-xl">8</span>
+                  <span className=" font-bold text-[#002c19] text-xl">8</span>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className=" font-semibold text-black text-xl">
+                  <h3 className=" font-semibold text-[#002c19] text-xl">
                     Beyond the residence
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
@@ -743,7 +743,7 @@ const ProgramPage = () => {
                 href="https://drive.google.com/file/d/1XxPb8UfeLXAVUy2zl0mle1lkUe7A2q1K/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-black text-black px-10 py-3 rounded-full font-semibold text-base hover:bg-green-950 hover:text-white hover:scale-105 transition-all duration-300 whitespace-nowrap"
+                className="border-2 border-black text-[#002c19] px-10 py-3 rounded-full font-semibold text-base hover:bg-green-950 hover:text-white hover:scale-105 transition-all duration-300 whitespace-nowrap"
               >
                 View
               </Link>
@@ -758,7 +758,7 @@ const ProgramPage = () => {
         className="py-20 px-4 md:px-25 lg:px-50 bg-[#3036411A]"
       >
         <div className="max-w-260 mx-auto flex flex-col gap-12">
-          <h2 className=" font-bold text-black text-4xl text-center tracking-[-0.90px] leading-10">
+          <h2 className=" font-bold text-[#002c19] text-4xl text-center tracking-[-0.90px] leading-10">
             Frequently Asked Questions
           </h2>
 
@@ -776,9 +776,9 @@ const ProgramPage = () => {
                     {faq.question}
                   </h3>
                   {openFaqIndex === index ? (
-                    <Minus className="w-5 h-5 text-black shrink-0 transition-transform duration-300" />
+                    <Minus className="w-5 h-5 text-[#002c19] shrink-0 transition-transform duration-300" />
                   ) : (
-                    <Plus className="w-5 h-5 text-black shrink-0 transition-transform duration-300" />
+                    <Plus className="w-5 h-5 text-[#002c19] shrink-0 transition-transform duration-300" />
                   )}
                 </button>
                 <div
@@ -807,7 +807,7 @@ const ProgramPage = () => {
           </p>
           <a
             href="/apply"
-            className="inline-block px-8 py-3 bg-white text-black rounded hover:bg-gray-100 transition-colors  font-semibold text-base"
+            className="inline-block px-8 py-3 bg-white text-[#002c19] rounded hover:bg-gray-100 transition-colors  font-semibold text-base"
           >
             Apply Now
           </a>
