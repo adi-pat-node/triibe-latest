@@ -77,7 +77,9 @@ export default function LocationCard({ entry }: Props) {
         className="flex flex-col justify-start gap-2 p-4 border-b md:border-b-0 md:border-r border-[#C0DD97] flex-shrink-0 w-full md:w-[140px]"
         style={{ background: "rgba(26,107,60,0.12)" }}
       >
-        <span style={{ fontSize: 22, lineHeight: 1 }}>{entry.flag}</span>
+        <span style={{ fontSize: 22, lineHeight: 1, color: "#002c19" }}>
+          {entry.flag}
+        </span>
         <p
           className="text-[#002c19]/80 font-bold leading-snug"
           style={{ fontSize: 11 }}
