@@ -125,7 +125,7 @@ function TestimonialCarousel() {
           </blockquote>
 
           <div className="flex flex-col gap-2">
-            <p className=" font-semibold text-[#303641] text-lg">
+            <p className=" font-semibold text-[#002c19]/80 text-lg">
               {currentTestimonial.name}
             </p>
             <p className=" font-normal text-[#002c19] text-base">
@@ -356,17 +356,17 @@ const ProgramPage = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div className="bg-white border border-gray-200 rounded-lg p-6">
-                    <p className=" font-normal text-[#697282] text-xs uppercase mb-3 tracking-[0.60px]">
+                    <p className=" font-normal text-[#002c19/80 text-xs uppercase mb-3 tracking-[0.60px]">
                       YEAR 1
                     </p>
                     <p className=" font-bold text-[#002c19] text-3xl">Roots</p>
                   </div>
 
                   <div className="bg-white border border-gray-200 rounded-lg p-6">
-                    <p className=" font-normal text-[#697282] text-xs uppercase mb-3 tracking-[0.60px]">
+                    <p className=" font-normal text-[#002c19]/80 text-xs uppercase mb-3 tracking-[0.60px]">
                       CADENCE
                     </p>
-                    <p className=" font-normal text-[#495565] text-sm">
+                    <p className=" font-normal text-[#002c19]/80 text-sm">
                       Monthly check-ins, quarterly mentor cycles, annual branch
                       summits and exchanges
                     </p>
@@ -374,27 +374,27 @@ const ProgramPage = () => {
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-lg p-6">
-                  <p className=" font-normal text-[#697282] text-xs uppercase mb-4 tracking-[0.60px]">
+                  <p className=" font-normal text-[#002c19]/80 text-xs uppercase mb-4 tracking-[0.60px]">
                     KEY MILESTONES
                   </p>
                   <ul className="space-y-3">
-                    <li className=" font-normal text-[#495565] text-sm flex items-start">
+                    <li className=" font-normal text-[#002c19]/80 text-sm flex items-start">
                       <span className="mr-3">•</span>
                       <span>Clarify mission, vision, and theory of change</span>
                     </li>
-                    <li className=" font-normal text-[#495565] text-sm flex items-start">
+                    <li className=" font-normal text-[#002c19]/80 text-sm flex items-start">
                       <span className="mr-3">•</span>
                       <span>Build nonprofit operating model & governance</span>
                     </li>
-                    <li className=" font-normal text-[#495565] text-sm flex items-start">
+                    <li className=" font-normal text-[#002c19]/80 text-sm flex items-start">
                       <span className="mr-3">•</span>
                       <span>Establish metrics & measurement framework</span>
                     </li>
-                    <li className=" font-normal text-[#495565] text-sm flex items-start">
+                    <li className=" font-normal text-[#002c19]/80 text-sm flex items-start">
                       <span className="mr-3">•</span>
                       <span>Create new fundraising strategy</span>
                     </li>
-                    <li className=" font-normal text-[#495565] text-sm flex items-start">
+                    <li className=" font-normal text-[#002c19]/80 text-sm flex items-start">
                       <span className="mr-3">•</span>
                       <span>Develop storytelling & digital presence</span>
                     </li>
@@ -422,7 +422,7 @@ const ProgramPage = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div className="bg-white border border-gray-200 rounded-lg p-6">
-                    <p className=" font-normal text-[#697282] text-xs uppercase mb-3 tracking-[0.60px]">
+                    <p className=" font-normal text-[#002c19]/80 text-xs uppercase mb-3 tracking-[0.60px]">
                       YEAR 2
                     </p>
                     <p className=" font-bold text-[#002c19] text-3xl  md:text-[26px] lg:text-3xl">
@@ -431,10 +431,10 @@ const ProgramPage = () => {
                   </div>
 
                   <div className="bg-white border border-gray-200 rounded-lg p-6">
-                    <p className=" font-normal text-[#697282] text-xs uppercase mb-3 tracking-[0.60px]">
+                    <p className=" font-normal text-[#002c19]/80 text-xs uppercase mb-3 tracking-[0.60px]">
                       CADENCE
                     </p>
-                    <p className=" font-normal text-[#495565] text-sm">
+                    <p className=" font-normal text-[#002c19]/80 text-sm">
                       Monthly check-ins, quarterly mentor cycles, annual branch
                       summits and exchanges
                     </p>
@@ -442,29 +442,29 @@ const ProgramPage = () => {
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-lg p-6">
-                  <p className=" font-normal text-[#697282] text-xs uppercase mb-4 tracking-[0.60px]">
+                  <p className=" font-normal text-[#002c19]/80 text-xs uppercase mb-4 tracking-[0.60px]">
                     KEY MILESTONES
                   </p>
                   <ul className="space-y-3">
-                    <li className=" font-normal text-[#495565] text-sm flex items-start">
+                    <li className=" font-normal text-[#002c19]/80 text-sm flex items-start">
                       <span className="mr-3">•</span>
                       <span>Refine program delivery and expand reach</span>
                     </li>
-                    <li className=" font-normal text-[#495565] text-sm flex items-start">
+                    <li className=" font-normal text-[#002c19]/80 text-sm flex items-start">
                       <span className="mr-3">•</span>
                       <span>Build strategic partnerships & collaborations</span>
                     </li>
-                    <li className=" font-normal text-[#495565] text-sm flex items-start">
+                    <li className=" font-normal text-[#002c19]/80 text-sm flex items-start">
                       <span className="mr-3">•</span>
                       <span>Diversify revenue streams and funding sources</span>
                     </li>
-                    <li className=" font-normal text-[#495565] text-sm flex items-start">
+                    <li className=" font-normal text-[#002c19]/80 text-sm flex items-start">
                       <span className="mr-3">•</span>
                       <span>
                         Strengthen operations, legal, and finance systems
                       </span>
                     </li>
-                    <li className=" font-normal text-[#495565] text-sm flex items-start">
+                    <li className=" font-normal text-[#002c19]/80 text-sm flex items-start">
                       <span className="mr-3">•</span>
                       <span>Launch digital campaigns</span>
                     </li>
@@ -491,7 +491,7 @@ const ProgramPage = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div className="bg-white border border-gray-200 rounded-lg p-6">
-                    <p className=" font-normal text-[#697282] text-xs uppercase mb-3 tracking-[0.60px]">
+                    <p className=" font-normal text-[#002c19]/80 text-xs uppercase mb-3 tracking-[0.60px]">
                       YEAR 3
                     </p>
                     <p className=" font-bold text-[#002c19] text-3xl md:text-[26px] lg:text-3xl">
@@ -500,10 +500,10 @@ const ProgramPage = () => {
                   </div>
 
                   <div className="bg-white border border-gray-200 rounded-lg p-6">
-                    <p className=" font-normal text-[#697282] text-xs uppercase mb-3 tracking-[0.60px]">
+                    <p className=" font-normal text-[#002c19]/80 text-xs uppercase mb-3 tracking-[0.60px]">
                       CADENCE
                     </p>
-                    <p className=" font-normal text-[#495565] text-sm">
+                    <p className=" font-normal text-[#002c19]/80 text-sm">
                       Monthly check-ins, quarterly mentor cycles, annual branch
                       summits and exchanges
                     </p>
@@ -511,29 +511,29 @@ const ProgramPage = () => {
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-lg p-6">
-                  <p className=" font-normal text-[#697282] text-xs uppercase mb-4 tracking-[0.60px]">
+                  <p className=" font-normal text-[#002c19]/80 text-xs uppercase mb-4 tracking-[0.60px]">
                     KEY MILESTONES
                   </p>
                   <ul className="space-y-3">
-                    <li className=" font-normal text-[#495565] text-sm flex items-start">
+                    <li className=" font-normal text-[#002c19]/80 text-sm flex items-start">
                       <span className="mr-3">•</span>
                       <span>
                         Develop merger, transition, or continuity plan
                       </span>
                     </li>
-                    <li className=" font-normal text-[#495565] text-sm flex items-start">
+                    <li className=" font-normal text-[#002c19]/80 text-sm flex items-start">
                       <span className="mr-3">•</span>
                       <span>Build leadership team and succession strategy</span>
                     </li>
-                    <li className=" font-normal text-[#495565] text-sm flex items-start">
+                    <li className=" font-normal text-[#002c19]/80 text-sm flex items-start">
                       <span className="mr-3">•</span>
                       <span>Secure multi-year funding commitments</span>
                     </li>
-                    <li className=" font-normal text-[#495565] text-sm flex items-start">
+                    <li className=" font-normal text-[#002c19]/80 text-sm flex items-start">
                       <span className="mr-3">•</span>
                       <span>Document impact and prepare for evaluation</span>
                     </li>
-                    <li className=" font-normal text-[#495565] text-sm flex items-start">
+                    <li className=" font-normal text-[#002c19]/80 text-sm flex items-start">
                       <span className="mr-3">•</span>
                       <span>
                         Launch community engagement & long-term support
@@ -603,7 +603,7 @@ const ProgramPage = () => {
                   <h3 className=" font-semibold text-[#002c19] text-xl">
                     Onboard & Assess
                   </h3>
-                  <p className=" font-normal text-[#495565] text-sm">
+                  <p className=" font-normal text-[#002c19]/80 text-sm">
                     Baseline assessment of your nonprofit, goals, and current
                     capacity
                   </p>
@@ -619,7 +619,7 @@ const ProgramPage = () => {
                   <h3 className=" font-semibold text-[#002c19] text-xl">
                     Present with Humility
                   </h3>
-                  <p className=" font-normal text-[#495565] text-sm">
+                  <p className=" font-normal text-[#002c19]/80 text-sm">
                     Speak at branch summits, meet donors, supporters, and
                     partners
                   </p>
@@ -635,7 +635,7 @@ const ProgramPage = () => {
                   <h3 className=" font-semibold text-[#002c19] text-xl">
                     Define the Plan
                   </h3>
-                  <p className=" font-normal text-[#495565] text-sm">
+                  <p className=" font-normal text-[#002c19]/80 text-sm">
                     Establish priorities, success metrics, and quarterly goals
                   </p>
                 </div>
@@ -650,7 +650,7 @@ const ProgramPage = () => {
                   <h3 className=" font-semibold text-[#002c19] text-xl">
                     Measure & Reflect
                   </h3>
-                  <p className=" font-normal text-[#495565] text-sm">
+                  <p className=" font-normal text-[#002c19]/80 text-sm">
                     Regular checkpoints, surveys, and progress reviews
                   </p>
                 </div>
@@ -665,7 +665,7 @@ const ProgramPage = () => {
                   <h3 className=" font-semibold text-[#002c19] text-xl">
                     Match Mentors
                   </h3>
-                  <p className=" font-normal text-[#495565] text-sm">
+                  <p className=" font-normal text-[#002c19]/80 text-sm">
                     Pairing with experienced mentors aligned to your needs
                   </p>
                 </div>
@@ -680,7 +680,7 @@ const ProgramPage = () => {
                   <h3 className=" font-semibold text-[#002c19] text-xl">
                     Unlock Funding
                   </h3>
-                  <p className=" font-normal text-[#495565] text-sm">
+                  <p className=" font-normal text-[#002c19]/80 text-sm">
                     Develop new relationships to investors as you continue your
                     nonprofit
                   </p>
@@ -696,7 +696,7 @@ const ProgramPage = () => {
                   <h3 className=" font-semibold text-[#002c19] text-xl">
                     Execute with Support
                   </h3>
-                  <p className=" font-normal text-[#495565] text-sm">
+                  <p className=" font-normal text-[#002c19]/80 text-sm">
                     Mentorship, tools, resources, and peer community
                   </p>
                 </div>
@@ -711,7 +711,7 @@ const ProgramPage = () => {
                   <h3 className=" font-semibold text-[#002c19] text-xl">
                     Beyond the residence
                   </h3>
-                  <p className=" font-normal text-[#495565] text-sm">
+                  <p className=" font-normal text-[#002c19]/80 text-sm">
                     Become the operators institutions need to deliver a return
                     on impact
                   </p>
@@ -772,7 +772,7 @@ const ProgramPage = () => {
                   onClick={() => toggleFaq(index)}
                   className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
                 >
-                  <h3 className="text-lg font-semibold text-gray-900 pr-4">
+                  <h3 className="text-lg font-semibold text-[#002c19] pr-4">
                     {faq.question}
                   </h3>
                   {openFaqIndex === index ? (
@@ -787,7 +787,7 @@ const ProgramPage = () => {
                   }`}
                 >
                   <div className="border-t border-gray-200"></div>
-                  <div className="mt-4 px-6 pb-5 text-gray-700 leading-relaxed">
+                  <div className="mt-4 px-6 pb-5 text-[#002c19]/80 leading-relaxed">
                     {faq.answer}
                   </div>
                 </div>

@@ -29,10 +29,10 @@ export default function PostGraduationOutcomes() {
     <section className="flex flex-col items-start px-4 md:px-25 lg:px-50 py-20 w-full bg-gray-50 border-t border-b border-gray-200">
       <div className="flex flex-col items-start gap-16 w-full">
         <div className="flex flex-col items-start gap-4 max-w-3xl">
-          <h2 className=" font-bold text-[#000000] text-4xl tracking-[-0.90px] leading-10">
+          <h2 className=" font-bold text-[#002c19] text-4xl tracking-[-0.90px] leading-10">
             Beyond the residence
           </h2>
-          <p className=" font-normal text-[#495565] text-lg tracking-[0] leading-[29.2px]">
+          <p className=" font-normal text-[#002c19]/80 text-lg tracking-[0] leading-[29.2px]">
             Fellows remain part of the fellowship for life
           </p>
         </div>
@@ -51,10 +51,10 @@ export default function PostGraduationOutcomes() {
                   width={48}
                   height={48}
                 />
-                <h3 className=" font-semibold text-[#000000] md:text-xs text-lg tracking-[0] leading-7">
+                <h3 className=" font-semibold text-[#002c19] md:text-xs text-lg tracking-[0] leading-7">
                   {outcome.title}
                 </h3>
-                <p className=" font-normal text-[#495565] text-sm tracking-[0] leading-[22.8px]">
+                <p className=" font-normal text-[#002c19]/80 text-sm tracking-[0] leading-[22.8px]">
                   {outcome.description}
                 </p>
               </div>
