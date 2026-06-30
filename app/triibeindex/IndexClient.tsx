@@ -43,7 +43,7 @@ const IndexPage = () => {
             alt="TRIIBE Index"
             className="w-auto h-[64px] object-contain mx-auto block mb-5"
           />
-          <p className="text-base text-[#303641]/65 font-normal max-w-[420px] mx-auto text-center leading-relaxed mt-12">
+          <p className="text-base text-[#002c19]/80 font-normal max-w-[420px] mx-auto text-center leading-relaxed mt-12">
             Your experiences help shape a more transparent, informed, and
             collaborative nonprofit ecosystem.
           </p>
@@ -58,7 +58,7 @@ const IndexPage = () => {
               key={index}
               className="bg-white rounded-2xl shadow-sm p-8 flex flex-col md:flex-row items-center justify-between gap-6"
             >
-              <p className="text-[#495565] font-semibold text-black leading-relaxed text-base flex-1">
+              <p className=" font-semibold text-[#002c19] leading-relaxed text-base flex-1">
                 {card.description}
               </p>
               <Link
