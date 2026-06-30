@@ -85,39 +85,39 @@ const Page = () => {
 
             {/* Right - Content */}
             <div>
-              <h1 className="font-bold text-black text-4xl md:text-[40px] mb-6 leading-tight">
+              <h1 className="font-bold text-[#002c19] text-4xl md:text-[40px] mb-6 leading-tight">
                 Apply to the fellowship
               </h1>
 
-              <p className="font-normal text-[#495565] text-[16px] leading-relaxed mb-4">
+              <p className="font-normal text-[#002c19]/80 text-[16px] leading-relaxed mb-4">
                 We’re looking for next-gen nonprofit founders maximizing a
                 return on impact, not income
               </p>
 
               {/* How to Apply Box */}
               <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-                <h2 className="font-bold text-black text-xl mb-3">
+                <h2 className="font-bold text-[#002c19] text-xl mb-3">
                   How to apply
                 </h2>
 
-                <p className="font-normal text-[#495565] text-base mb-3 leading-relaxed">
+                <p className="font-normal text-[#002c19]/80 text-base mb-3 leading-relaxed">
                   Instead of a pitch deck, please submit a short video (up to 5
                   minutes) describing:
                 </p>
 
                 <ul className="space-y-4">
                   <li className="flex gap-3">
-                    <span className="font-normal text-[#495565] text-base">
+                    <span className="font-normal text-[#002c19]/80 text-base">
                       — What motivates your work? (Your Why)
                     </span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="font-normal text-[#495565] text-base">
+                    <span className="font-normal text-[#002c19]/80 text-base">
                       — How have you made a difference? (Your Impact)
                     </span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="font-normal text-[#495565] text-base">
+                    <span className="font-normal text-[#002c19]/80 text-base">
                       — How would you use your first grant? (Your Pitch)
                     </span>
                   </li>
@@ -131,10 +131,10 @@ const Page = () => {
       {/* Application Form Section */}
       <section className="py-20 px-4 md:px-25 lg:px-[200px] bg-[#3036411A]">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="font-bold text-black text-4xl mb-4">
+          <h2 className="font-bold text-[#002c19] text-4xl mb-4">
             Application Form
           </h2>
-          <p className="font-normal text-[#495565] text-base mb-12">
+          <p className="font-normal text-[#002c19]/80 text-base mb-12">
             Please fill out all fields. Fields marked with * are required.
           </p>
           {isApplicationOpen ? (
@@ -152,10 +152,10 @@ const Page = () => {
             </div>
           ) : (
             <div className="bg-white rounded-lg p-10 md:p-16 border border-gray-100 shadow-sm">
-              <h3 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-[#002c19] mb-4">
                 Opening Soon
               </h3>
-              <p className="text-[#495565] text-lg">
+              <p className="text-[#002c19]/80 text-lg">
                 Applications for the Fall 2026 cohort will open May 1st.
               </p>
             </div>
@@ -175,7 +175,7 @@ const Page = () => {
                 href="https://drive.google.com/file/d/1XxPb8UfeLXAVUy2zl0mle1lkUe7A2q1K/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-black text-black px-10 py-3 rounded-full font-semibold text-base hover:bg-green-950 hover:text-white hover:scale-105 transition-all duration-300 whitespace-nowrap"
+                className="border-2 border-black text-[#002c19] px-10 py-3 rounded-full font-semibold text-base hover:bg-green-950 hover:text-white hover:scale-105 transition-all duration-300 whitespace-nowrap"
               >
                 View
               </Link>
@@ -188,7 +188,7 @@ const Page = () => {
 
       <section className="pt-16 pb-8 px-4 md:px-25 lg:px-[200px] bg-[#3036411A]">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#002c19] mb-12 text-center">
             Application FAQs
           </h2>
 
@@ -202,11 +202,11 @@ const Page = () => {
                   onClick={() => toggleFaq(index)}
                   className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-gray-50 transition-colors"
                 >
-                  <h3 className="text-lg font-bold text-gray-900 pr-4">
+                  <h3 className="text-lg font-bold text-[#002c19] pr-4">
                     {faq.question}
                   </h3>
                   <svg
-                    className={`w-6 h-6 text-gray-600 transition-transform duration-300 flex-shrink-0 ${
+                    className={`w-6 h-6 text-[#002c19]/80 transition-transform duration-300 flex-shrink-0 ${
                       openFaqIndex === index ? "rotate-180" : ""
                     }`}
                     fill="none"
@@ -226,7 +226,7 @@ const Page = () => {
                     openFaqIndex === index ? "max-h-96" : "max-h-0"
                   }`}
                 >
-                  <div className="px-6 py-5 text-gray-700 leading-relaxed bg-white">
+                  <div className="px-6 py-5 text-[#002c19]/80 leading-relaxed bg-white">
                     {faq.answer}
                   </div>
                 </div>
