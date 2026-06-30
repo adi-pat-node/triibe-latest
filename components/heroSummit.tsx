@@ -74,34 +74,34 @@ export default function HeroSummit() {
           </div>
 
           <div className="bg-white backdrop-blur-sm border border-white/20 rounded-xl px-8 py-4 mb-6 text-center">
-            <p className="text-black text-lg font-bold mb-3">
+            <p className="text-[#002c19] text-lg font-bold mb-3">
               Regular Tickets sell out in
             </p>
             <div className="flex items-end justify-center gap-6">
               <div className="flex flex-col items-center">
-                <span className="text-black font-bold text-4xl leading-none">
+                <span className="text-[#002c19] font-bold text-4xl leading-none">
                   {String(earlyBird.days).padStart(2, "0")}
                 </span>
-                <span className="text-black text-xs mt-1">Days</span>
+                <span className="text-[#002c19] text-xs mt-1">Days</span>
               </div>
               <div className="flex flex-col items-center">
-                <span className="text-black font-bold text-4xl leading-none">
+                <span className="text-[#002c19] font-bold text-4xl leading-none">
                   {String(earlyBird.hours).padStart(2, "0")}
                 </span>
-                <span className="text-black text-xs mt-1">Hours</span>
+                <span className="text-[#002c19] text-xs mt-1">Hours</span>
               </div>
               <div className="flex flex-col items-center">
-                <span className="text-black font-bold text-4xl leading-none">
+                <span className="text-[#002c19] font-bold text-4xl leading-none">
                   {String(earlyBird.minutes).padStart(2, "0")}
                 </span>
-                <span className="text-black text-xs mt-1">Mins</span>
+                <span className="text-[#002c19] text-xs mt-1">Mins</span>
               </div>
             </div>
           </div>
 
           <a
             href="#tickets"
-            className="px-12 py-3 bg-white text-black font-bold text-sm rounded-sm h-[44px] hover:bg-gray-100 transition-colors mt-4"
+            className="px-12 py-3 bg-white text-[#002c19] font-bold text-sm rounded-sm h-[44px] hover:bg-gray-100 transition-colors mt-4"
           >
             Buy Tickets
           </a>

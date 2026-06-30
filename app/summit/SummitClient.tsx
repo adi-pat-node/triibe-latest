@@ -43,7 +43,7 @@ const Countdown = ({ targetDate }: { targetDate: string }) => {
   if (timeLeft.expired) return <span>Expired</span>;
 
   return (
-    <div className="flex gap-2 text-sm font-medium text-black">
+    <div className="flex gap-2 text-sm font-medium text-[#002c19]">
       <span>{timeLeft.days}d</span>
       <span>{timeLeft.hours}h</span>
       <span>{timeLeft.minutes}m</span>
@@ -645,11 +645,11 @@ const SummitPage = () => {
       <section className="relative pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-white overflow-visible">
         <div className="max-w-260 mx-auto overflow-visible">
           <div className="flex flex-col gap-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-black text-center mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center mb-4">
               About the summit
             </h2>
 
-            <p className="text-black text-base leading-relaxed">
+            <p className="text-[#002c19] text-base leading-relaxed">
               Friday's VIP Gala is a 300-guest dinner featuring Michelin-starred
               celebrity sushi chefs performing two live tuna carvings, a
               keynote, and a live auction.
@@ -713,7 +713,7 @@ const SummitPage = () => {
 
       <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-white">
         <div className="max-w-260 mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-black text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center mb-12">
             Curated experiences
           </h2>
           <div className="max-w-200 mx-auto">
@@ -746,7 +746,9 @@ const SummitPage = () => {
                       className="object-cover"
                     />
                   </div>
-                  <p className="text-sm text-center text-black">{item.name}</p>
+                  <p className="text-sm text-center text-[#002c19]">
+                    {item.name}
+                  </p>
                 </div>
               ))}
             </div>
@@ -756,13 +758,13 @@ const SummitPage = () => {
 
       {/* <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]">
         <div className="max-w-260 mx-auto flex flex-col gap-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-black text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center">
             Featured Speakers
           </h2>
 
           {featuredSpeakers.map((talk, talkIndex) => (
             <div key={talkIndex} className="flex flex-col gap-6">
-              <h3 className="text-xl font-semibold text-black">{talk.title}</h3>
+              <h3 className="text-xl font-semibold text-[#002c19]">{talk.title}</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 {talk.speakers.map((speaker, i) => (
                   <a
@@ -784,7 +786,7 @@ const SummitPage = () => {
                     </div>
                     <div className="flex flex-col items-center gap-1 text-center">
                       <div className="flex items-center gap-1.5">
-                        <p className="font-semibold text-black text-sm">
+                        <p className="font-semibold text-[#002c19] text-sm">
                           {speaker.name}
                         </p>
 
@@ -821,7 +823,7 @@ const SummitPage = () => {
 
       <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]">
         <div className="max-w-260 mx-auto flex flex-col gap-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-black text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center">
             Featured Intergenerational Speakers
           </h2>
 
@@ -856,7 +858,7 @@ const SummitPage = () => {
                           ? "bg-black text-white"
                           : speaker.tag === "Moderator"
                             ? "bg-gray-200 text-gray-600"
-                            : "bg-[#D8EFE4] text-[#1C5945]"
+                            : "bg-[#D8EFE4] text-[#002c19]/80"
                       }`}
                     >
                       {speaker.tag}
@@ -867,7 +869,7 @@ const SummitPage = () => {
                 <div className="p-4 flex flex-col gap-2">
                   {/* REVERSED: Left-aligned flex layout containing the icon and name */}
                   <div className="flex items-center justify-between gap-2">
-                    <p className="font-semibold text-black text-sm tracking-tight truncate">
+                    <p className="font-semibold text-[#002c19] text-sm tracking-tight truncate">
                       {speaker.name}
                     </p>
                     {speaker.linkedin !== "#" &&
@@ -882,7 +884,7 @@ const SummitPage = () => {
                       )}
                   </div>
 
-                  <p className="text-xs text-[#495565] leading-tight whitespace-pre-line">
+                  <p className="text-xs text-[#002c19]/80 leading-tight whitespace-pre-line">
                     {speaker.title}
                   </p>
                 </div>
@@ -890,7 +892,7 @@ const SummitPage = () => {
             ))}
           </div>
 
-          <p className="text-center text-sm text-[#495565]">
+          <p className="text-center text-sm text-[#002c19]/80">
             more speakers coming soon...
           </p>
         </div>
@@ -898,7 +900,7 @@ const SummitPage = () => {
 
       <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-white">
         <div className="max-w-260 mx-auto flex flex-col gap-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-black text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center">
             Schedule
           </h2>
 
@@ -913,13 +915,15 @@ const SummitPage = () => {
                     day.highlight ? "gap-1" : "gap-4"
                   }`}
                 >
-                  <h3 className="text-2xl font-bold text-black">{day.title}</h3>
+                  <h3 className="text-2xl font-bold text-[#002c19]">
+                    {day.title}
+                  </h3>
 
                   <p
                     className={`text-xs ${
                       day.highlight
-                        ? "text-[#495565]"
-                        : "text-[#1A1A1A] font-semibold"
+                        ? "text-[#002c19]/80"
+                        : "text-[#002c19]/80 font-semibold"
                     }`}
                   >
                     {day.location}
@@ -945,23 +949,23 @@ const SummitPage = () => {
                       />
                     </div>
                     <div className="flex flex-col gap-3 p-6">
-                      <p className="text-xs font-semibold text-[#495565] uppercase tracking-widest">
+                      <p className="text-xs font-semibold text-[#002c19]/80 uppercase tracking-widest">
                         {day.highlight.label}
                       </p>
                       <h4
-                        className="text-2xl italic text-black"
+                        className="text-2xl italic text-[#002c19]"
                         style={{ fontFamily: "'Cormorant Garamond', serif" }}
                       >
                         {day.highlight.name}
                       </h4>
-                      <p className="text-sm text-[#30364199] leading-relaxed">
+                      <p className="text-sm text-[#002c19]/80 leading-relaxed">
                         {day.highlight.description}
                       </p>
                       <div className="flex flex-wrap gap-x-8 gap-y-2 mt-2">
                         {day.highlight.bullets.map((bullet, i) => (
                           <span
                             key={i}
-                            className="text-sm text-black/70 flex items-center gap-2"
+                            className="text-sm text-[#002c19]/80 flex items-center gap-2"
                           >
                             <span className="w-1 h-1 bg-black rounded-full"></span>
                             {bullet}
@@ -977,25 +981,25 @@ const SummitPage = () => {
                         key={i}
                         className="grid grid-cols-[80px_1fr] gap-4 py-3 border-t border-gray-200 items-start"
                       >
-                        <span className="text-sm font-semibold text-black">
+                        <span className="text-sm font-semibold text-[#002c19]">
                           {item.time}
                         </span>
 
                         {item.title === "BREAK" ? (
                           <div className="flex items-center gap-4 w-full">
                             <div className="flex-1 h-px bg-gray-300"></div>
-                            <span className="text-xs text-[#495565] tracking-[0.3em]">
+                            <span className="text-xs text-[#002c19]/80 tracking-[0.3em]">
                               BREAK
                             </span>
                             <div className="flex-1 h-px bg-gray-300"></div>
                           </div>
                         ) : (
                           <div className="flex flex-col">
-                            <p className="text-sm font-semibold text-black mb-2">
+                            <p className="text-sm font-semibold text-[#002c19] mb-2">
                               {item.title}
                             </p>
                             {item.description && (
-                              <p className="text-xs text-[#495565]">
+                              <p className="text-xs text-[#002c19]/80">
                                 {item.description}
                               </p>
                             )}
@@ -1016,7 +1020,7 @@ const SummitPage = () => {
         id="tickets"
       >
         <div className="max-w-260 mx-auto flex flex-col gap-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-black text-center ">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center ">
             Buy tickets
           </h2>
 
@@ -1025,14 +1029,16 @@ const SummitPage = () => {
               {/* BOX 1 */}
               <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm flex flex-col gap-5 h-full">
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-2xl font-bold text-black">VIP Pass</h3>
+                  <h3 className="text-2xl font-bold text-[#002c19]">
+                    VIP Pass
+                  </h3>
 
-                  <p className="text-base font-medium text-[#495565]">
+                  <p className="text-base font-medium text-[#002c19]/80">
                     Includes:
                   </p>
                 </div>
 
-                <ul className="flex flex-col gap-4 text-black text-base leading-relaxed list-disc pl-5">
+                <ul className="flex flex-col gap-4 text-[#002c19] text-base leading-relaxed list-disc pl-5">
                   <li>
                     Friday gala dinner featuring a live tuna carving show,
                     opening ceremony, cocktail reception, and jazz performance.
@@ -1043,16 +1049,16 @@ const SummitPage = () => {
               {/* BOX 2 */}
               <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm flex flex-col gap-5 h-full">
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-2xl font-bold text-black">
+                  <h3 className="text-2xl font-bold text-[#002c19]">
                     Saturday Only
                   </h3>
 
-                  <p className="text-base font-medium text-[#495565]">
+                  <p className="text-base font-medium text-[#002c19]/80">
                     Includes:
                   </p>
                 </div>
 
-                <ul className="flex flex-col gap-4 text-black text-base leading-relaxed list-disc pl-5">
+                <ul className="flex flex-col gap-4 text-[#002c19] text-base leading-relaxed list-disc pl-5">
                   <li>
                     Saturday includes 7 TRIIBE Talks, the fashion show, supercar
                     showcase, and closing reception.
@@ -1067,30 +1073,30 @@ const SummitPage = () => {
             </div>
 
             <div className="bg-white border border-gray-200 rounded-xl p-4 flex flex-col gap-3 text-center">
-              <p className="font-semibold text-black">
+              <p className="font-semibold text-[#002c19]">
                 Ticket pricing increases
               </p>
 
-              <p>
+              <p className="text-[#002c19]">
                 Next price increase: <strong>June 1</strong>
               </p>
 
               <div className="flex flex-col items-center mt-1">
-                <p className="text-xs text-[#495565]">Price increases in</p>
-                <div className="text-sm text-black font-medium">
+                <p className="text-xs text-[#002c19]/80">Price increases in</p>
+                <div className="text-sm text-[#002c19] font-medium">
                   <Countdown targetDate="2026-06-01T00:00:00" />
                 </div>
               </div>
 
-              <p className="mt-2">
+              <p className="mt-2 text-[#002c19]">
                 Final price increase: <strong>August 1</strong>
               </p>
 
               <div className="flex flex-col items-center mt-1 gap-1">
-                <p className="text-xs text-[#495565]">
+                <p className="text-xs text-[#002c19]/80">
                   Final price increase in
                 </p>
-                <div className="text-xs text-[#495565] font-medium">
+                <div className="text-xs text-[#002c19]/80 font-medium">
                   <Countdown targetDate="2026-08-01T00:00:00" />
                 </div>
               </div>
