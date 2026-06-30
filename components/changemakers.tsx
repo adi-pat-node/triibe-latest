@@ -198,7 +198,7 @@ export default function Changemakers() {
         <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
           <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-2xl md:text-3xl font-medium text-gray-900">
-              Learn more about the dataset we use to deploy capital
+              Identifying gaps with data-driven precision
             </p>
 
             <Link
