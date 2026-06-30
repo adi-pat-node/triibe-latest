@@ -4,6 +4,7 @@ export type Founder = {
   org: string;
   bio: string;
   image?: string;
+  website?: string;
 };
 
 const firstTen: Founder[] = [
@@ -13,6 +14,7 @@ const firstTen: Founder[] = [
     org: "",
     bio: "Founder and CEO - Zoe's Dolls",
     image: "/images/triibe100/Zoe Terry.png",
+    website: "https://zoesdolls.com/",
   },
   {
     id: 2,
@@ -20,6 +22,7 @@ const firstTen: Founder[] = [
     org: "",
     bio: "Founder - Bridge The Gap",
     image: "/images/triibe100/VaruniChopra.png",
+    website: "https://bridgethegapinitiative.org/",
   },
   {
     id: 3,
@@ -27,6 +30,7 @@ const firstTen: Founder[] = [
     org: "",
     bio: "Founder and CEO - ReThink Citizens",
     image: "/images/triibe100/Trisha Prabhu.png",
+    website: "https://rethinkcitizens.org/",
   },
   {
     id: 4,
@@ -34,6 +38,7 @@ const firstTen: Founder[] = [
     org: "",
     bio: "Founder - Rise N Shine Foundation",
     image: "/images/triibe100/Shrusti Amula.png",
+    website: "https://www.risenshinefoundation.org/",
   },
   {
     id: 5,
@@ -41,6 +46,7 @@ const firstTen: Founder[] = [
     org: "",
     bio: "Founder - Tuesdays for Trash",
     image: "/images/triibe100/Sharona Shnayder.png",
+    website: "https://tuesdaysfortrash.com/",
   },
   {
     id: 6,
@@ -48,13 +54,15 @@ const firstTen: Founder[] = [
     org: "",
     bio: "Founder and CEO - Krishi Shwapno",
     image: "/images/triibe100/Sayed-Zubaer-Hasan 2.png",
+    website: "https://krishishwapno.com/",
   },
   {
     id: 7,
     name: "Samin Bhan",
     org: "",
-    bio: "Founder - Lookup",
+    bio: "Founder - Lookupp",
     image: "/images/triibe100/SaminBhan.jpg",
+    website: "https://www.lookupp.net/",
   },
   {
     id: 8,
@@ -62,6 +70,7 @@ const firstTen: Founder[] = [
     org: "",
     bio: "Founder - Al Arzen",
     image: "/images/triibe100/Rimza Razaque.png",
+    website: "https://www.linkedin.com/company/al-arzen/",
   },
   {
     id: 9,
@@ -69,6 +78,7 @@ const firstTen: Founder[] = [
     org: "",
     bio: "Founder - Kids Right to Know",
     image: "/images/triibe100/Rachel Parent.png",
+    website: "https://www.kidsrighttoknow.com/",
   },
   {
     id: 10,
@@ -76,6 +86,7 @@ const firstTen: Founder[] = [
     org: "",
     bio: "Founder - Cancer Kids First",
     image: "/images/triibe100/Olivia Zhang.png",
+    website: "https://www.cancerkidsfirst.org/",
   },
 ];
 
@@ -219,6 +230,7 @@ const rest: Founder[] = Array.from({ length: 90 }, (_, i) => ({
   name: "Name",
   org: "Non Profit",
   bio: "Coming soon.",
+  website: "",
   ...restOverrides[i],
 }));
 

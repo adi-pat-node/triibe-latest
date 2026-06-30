@@ -49,35 +49,60 @@ export default function FounderCard({ founder }: { founder: Founder }) {
         }}
       >
         {founder.image ? (
-  <img
-    src={founder.image}
-    alt={founder.name}
-    style={{
-      width: "100%",
-      height: "100%",
-      objectFit: "cover",
-      display: "block",
-    }}
-  />
-) : (
-  <svg
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="rgba(255,255,255,0.3)"
-    strokeWidth="1"
-    style={{
-      width: "45%",
-      height: "45%",
-      position: "absolute",
-      bottom: 0,
-      left: "50%",
-      transform: "translateX(-50%)",
-    }}
-  >
-    <circle cx="12" cy="8" r="5" />
-    <path d="M2 22c0-5.5 4.5-9 10-9s10 3.5 10 9" />
-  </svg>
-)}
+          founder.website ? (
+            <a
+              href={founder.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                width: "100%",
+                height: "100%",
+                display: "block",
+              }}
+            >
+              <img
+                src={founder.image}
+                alt={founder.name}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  display: "block",
+                  cursor: "pointer",
+                }}
+              />
+            </a>
+          ) : (
+            <img
+              src={founder.image}
+              alt={founder.name}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                display: "block",
+              }}
+            />
+          )
+        ) : (
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="rgba(255,255,255,0.3)"
+            strokeWidth="1"
+            style={{
+              width: "45%",
+              height: "45%",
+              position: "absolute",
+              bottom: 0,
+              left: "50%",
+              transform: "translateX(-50%)",
+            }}
+          >
+            <circle cx="12" cy="8" r="5" />
+            <path d="M2 22c0-5.5 4.5-9 10-9s10 3.5 10 9" />
+          </svg>
+        )}
       </div>
 
       <p
