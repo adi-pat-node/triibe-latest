@@ -137,7 +137,7 @@ const restOverrides: Partial<Founder>[] = [
   {
     name: "Hikaru (Wakeel) Hayakawa",
     org: "",
-    bio: "Executive Director @ Climate Cardinals | Featured on Forbes, ABC News and Kelly Clarkson Show",
+    bio: "Executive Director - Climate Cardinals",
     image: "/images/triibe100/Hikaru Wakeel Hayakawa.png",
   },
   {
@@ -155,7 +155,7 @@ const restOverrides: Partial<Founder>[] = [
   {
     name: "Gitanjali Rao",
     org: "",
-    bio: "Mentor, Global Keynote & Public Speaker - Vervient Foundation",
+    bio: "Global Keynote - Vervient Foundation",
     image: "/images/triibe100/Gitanjali Rao.png",
   },
   {

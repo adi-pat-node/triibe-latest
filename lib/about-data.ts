@@ -252,12 +252,12 @@ export const legacyBoard: Person[] = [
     imagePath: "/images/team/ZacharyPogue.jpg",
     linkedIn: "https://www.linkedin.com/in/zachpogue/",
   },
-  {
+  /* {
     name: "Shirley Hon",
     title: "Principal, Globoconsult & Co-founder United Womens Sports NIL Agency",
     imagePath: "/images/team/ShirleyHon.jpg",
     linkedIn: "https://www.linkedin.com/in/shirleyw-hon/",
-  },
+  }, */
   /* {
     name: "Todd Jacobson",
     title: "Founder & CEO, TAJ Global & past head of social responsibility, NBA",

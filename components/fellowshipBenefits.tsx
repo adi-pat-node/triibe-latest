@@ -3,41 +3,62 @@
 import Image from "next/image";
 
 const benefits = [
-  {
+  /* {
     number: "01",
     icon: "/images/home/container-3.svg",
     title: "Direct Funding",
     description:
       "Financial grants to support nonprofit operations, programming, and organizational growth",
-  },
+  }, */
   {
-    number: "02",
+    number: "01",
     icon: "/images/home/container-2.svg",
     title: "Mentorship",
     description:
       "One-on-one guidance from two experienced executives or philentrepreneurs each quarter",
   },
   {
-    number: "03",
+    number: "02",
     icon: "/images/home/container.svg",
     title: "Community",
     description:
       "A cohort of fellow next-gen nonprofit founders and TRIIBE fellows",
   },
-  {
+  /* {
     number: "04",
     icon: "/images/home/container-7.svg",
     title: "Programming",
     description:
       "Personalized documentaries and TRIIBE Talks covering governance, fundraising, and organizational development",
-  },
+  }, */
   {
-    number: "05",
+    number: "03",
     icon: "/images/home/container-4.svg",
     title: "Resources",
     description:
       "Access to operational tools, legal support, and sector-specific expertise",
   },
+  /* {
+    number: "04",
+    icon: "/images/home/visibility-4.svg",
+    title: "Visibility",
+    description:
+      "Digital reach, Summits, and TRIIBE Talks in front of funders",
+  },
+  {
+    number: "05",
+    icon: "/images/home/visibility-4.svg",
+    title: "Credibility",
+    description:
+      "Vetted proof of impact to assure potential funders",
+  },
+  {
+    number: "06",
+    icon: "/images/home/visibility-4.svg",
+    title: "Software",
+    description:
+      "Enterprise accounts for outreach, operations, and AI",
+  }, */
 ];
 
 export default function FellowshipBenefits() {
@@ -48,8 +69,7 @@ export default function FellowshipBenefits() {
           What fellows receive
         </h2>
         <p className=" font-normal text-[#495565] text-lg leading-[29.2px] max-w-219">
-          Comprehensive support designed for founders navigating the unique
-          challenges of scaling their nonprofits while in their early 20s.
+          Comprehensive support designed for founders navigating the unique challenges of scaling their nonprofits in their early 20s.
         </p>
       </div>
 

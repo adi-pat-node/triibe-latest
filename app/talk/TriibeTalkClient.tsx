@@ -182,8 +182,7 @@ const EventsPage = () => {
               />
 
               <p className="text-[#495565] text-lg mb-8 leading-relaxed mt-4 font-normal">
-                Highlighting next-gen founders alongside established ones,
-                because age doesn't define the quality of a voice
+                Intergenerational talks with next-gen nonprofit founders alongside peers over 30
               </p>
 
               <div className="flex w-full items-center justify-start gap-4">
