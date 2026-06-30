@@ -235,43 +235,38 @@ const ProgramPage = () => {
       <section className="pt-32 pb-20 px-6 bg-white md:px-25 lg:px-50">
         <div className="max-w-260 mx-auto">
           <div className="max-w-5xl mx-auto">
-            <p className="font-bold text-black text-4xl md:text-[40px]  leading-tight">
-              Building nonprofit startup instruments and infrastructure
+            <p className="font-bold text-black text-4xl md:text-[40px]  leading-tight mb-12">
+              Bringing startup dynamics to the nonprofit sector
             </p>
           </div>
 
-          {/* <section className="py-8 px-6 bg-gray-50"> */}
-          <div className="max-w-7xl mx-auto mt-20">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-8 min-h-[280px] flex flex-col items-center justify-center text-center transition-all hover:shadow-md">
-                <h3 className="text-4xl font-bold text-black leading-tight mb-8 min-h-[88px] flex items-center justify-center">
-                  Recoverable
-                  <br />
-                  Grants
-                </h3>
-
-                <p className="text-[#495565] text-lg leading-relaxed font-medium">
-                  We recover our three year grant from future surplus.
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-8 min-h-[280px] flex flex-col items-center justify-center text-center transition-all hover:shadow-md">
-                <h3 className="text-4xl font-bold text-black leading-tight mb-8 min-h-[88px] flex items-center justify-center">
+          <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="border border-[#002c19] p-8 md:p-10 flex flex-col h-full rounded-lg">
+                <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center">
                   Mentorship
-                </h3>
-
-                <p className="text-[#495565] text-lg leading-relaxed font-medium">
-                  We pair fellows with mentors who help them scale.
+                </h4>
+                <p className="text-[#002c19]/90 mb-10 flex-grow text-center font-medium">
+                  Multi-year fellowship, tools to grow: strategy, legal,
+                  software
                 </p>
               </div>
 
-              <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-8 min-h-[280px] flex flex-col items-center justify-center text-center transition-all hover:shadow-md">
-                <h3 className="text-4xl font-bold text-black leading-tight mb-8 -mt-5 min-h-[88px] flex items-center justify-center">
+              <div className="border border-[#002c19] p-8 md:p-10 flex flex-col h-full rounded-lg">
+                <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center">
                   Visibility
-                </h3>
+                </h4>
+                <p className="text-[#002c19]/90 mb-10 flex-grow text-center font-medium">
+                  Digital reach, Summits, and TRIIBE Talks in front of funders
+                </p>
+              </div>
 
-                <p className="text-[#495565] text-lg leading-relaxed font-medium">
-                  We showcase fellows in front of funders.
+              <div className="border border-[#002c19] p-8 md:p-10 flex flex-col h-full rounded-lg">
+                <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center">
+                  Credibility
+                </h4>
+                <p className="text-[#002c19]/90 mb-10 flex-grow text-center font-medium">
+                  Vetted global list of nonprofit founders under 30 to know
                 </p>
               </div>
             </div>
