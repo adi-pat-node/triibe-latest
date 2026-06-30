@@ -46,7 +46,7 @@ export default function CTASection() {
               Fund our work
             </h3>
             <p className="font-normal text-[#D1D5DC] text-base leading-relaxed text-center">
-              Back the founder before the world knows their name
+              Help us channel capital to the nonprofit startup ecosystem
             </p>
             <a
               href="https://donate.rayzeapp.com/orgs/tIbe07j0XKkLQezHHXoz"

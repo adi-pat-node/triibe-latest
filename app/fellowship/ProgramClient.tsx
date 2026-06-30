@@ -57,14 +57,9 @@ const testimonials = [
 
 const faqs = [
   {
-    question: "What is a recoverable grant?",
+    question: "How we measure impact?",
     answer:
-      "A recoverable grant only comes back if a fellow succeeds. After three years, 50% of surplus, capped at the original grant, returns to TRIIBE, in a pay-it-forward model for future fellows. Nothing is owed if the surplus isn't there.",
-  },
-  {
-    question: "How does triibe measure impact?",
-    answer:
-      "We use case studies and quarterly surveys to measure each founder's digital presence, their sense of community and wellbeing, the impact of their organization, and the funds they raise beyond TRIIBE's grants.",
+      "We use case studies and quarterly surveys to measure each founder's digital presence, their sense of community and wellbeing, the impact of their organization, and the funds they raise.",
   },
   {
     question: "Who is eligible to apply?",
@@ -72,19 +67,19 @@ const faqs = [
       "Next-gen founders aged 20-25 committed to continuing your registered nonprofit over the next 3 years.",
   },
   {
-    question: "What can I use the funding for?",
+    question: "What can I use the mentorship for?",
     answer:
-      "The funding is unrestricted and can be used for any legitimate organizational expenses including operations, program costs, team compensation, technology, marketing, or other needs that support your nonprofit's mission and growth.",
+      "Mentorship can be used to advise on any legitimate organizational need that supports your nonprofit’s mission and growth, including operations, program costs, technology, or marketing.",
   },
   {
     question: "How much time commitment is required?",
     answer:
-      "You should be working on your nonprofit for at least 20 hours per week, making time for monthly TRIIBE check-ins, mentor meetings, summits, retreats, and broader community engagement.",
+      "You should be working on your nonprofit for at least 20 hours per week, making time for monthly TRIIBE check-ins, mentor meetings, summits, exchanges, and broader community engagement.",
   },
   {
     question: "What happens after year 3?",
     answer:
-      "Fellows in residence transition into our fellowship with access to funders, advisors, and an expanding fellowship of philentrepreneurs for life. We help you become the bench of operators future leaders and institutions need to deliver a return on impact.",
+      "Fellows in residence transition into our fellowship with access to funders, advisors, and an expanding fellowship of philentrepreneurs for life.",
   },
 ];
 
@@ -109,11 +104,8 @@ function TestimonialCarousel() {
     <div className="flex flex-col gap-12">
       <div className="text-center">
         <h2 className=" font-bold text-black text-4xl mb-4 tracking-[-0.90px] leading-10">
-          Hear from Our Fellows
+          Hear from our fellows
         </h2>
-        <p className=" font-normal text-[#303641] text-lg">
-          Real stories from founders prioritizing impact over income
-        </p>
       </div>
 
       <div className="flex items-center justify-between gap-8">
@@ -689,7 +681,8 @@ const ProgramPage = () => {
                     Unlock Funding
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
-                    Grants distributed each year as you continue your nonprofit
+                    Develop new relationships to investors as you continue your
+                    nonprofit
                   </p>
                 </div>
               </div>
@@ -704,7 +697,7 @@ const ProgramPage = () => {
                     Execute with Support
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
-                    Office hours, tools, resources, and peer community
+                    Mentorship, tools, resources, and peer community
                   </p>
                 </div>
               </div>
@@ -719,8 +712,8 @@ const ProgramPage = () => {
                     Beyond the residence
                   </h3>
                   <p className=" font-normal text-[#495565] text-sm">
-                    Become the bench of operators institutions need to deliver a
-                    return on impact
+                    Become the operators institutions need to deliver a return
+                    on impact
                   </p>
                 </div>
               </div>
