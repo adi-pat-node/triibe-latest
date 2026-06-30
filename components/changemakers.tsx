@@ -134,25 +134,25 @@ export default function Changemakers() {
 
       <div className="bg-white rounded-b-2xl p-6 md:p-4 lg:p-6 border border-t-0 border-gray-200 flex flex-col gap-3 flex-grow">
         <div className="flex flex-col gap-1">
-          <h3 className="font-semibold text-black text-lg">
+          <h3 className="font-semibold text-[#002c19] text-lg">
             {changemaker.name}
           </h3>
 
-          <p className="font-medium text-[#495565] text-xs leading-5">
+          <p className="font-medium text-[#002c19]/80 text-xs leading-5 ">
             {changemaker.title} <ArrowUpRight className="w-4 h-4 inline" />
           </p>
         </div>
 
         {changemaker.university && (
           <div className="pt-1 border-t border-[#f2f4f6]">
-            <p className="font-normal text-[#697282] text-xs leading-4">
+            <p className="font-normal text-[#002c19]/80 text-xs leading-4">
               {changemaker.university}
             </p>
           </div>
         )}
 
         <p
-          className={`font-normal text-[#354152] flex-1 ${
+          className={`font-normal text-[#002c19]/80 flex-1 ${
             changemaker.name === "Varuni Chopra"
               ? "text-[13px] leading-[18px]"
               : "text-sm leading-5"
@@ -169,7 +169,10 @@ export default function Changemakers() {
       <div className="w-full px-4 md:px-25 lg:px-50">
         <div className="w-full max-w-[1200px] mx-auto">
           <div className="mb-8">
-            <h2 className="font-bold text-black text-4xl tracking-[-0.90px] leading-10 mb-4">
+            <h2
+              className="font-bold text-[#002c19]
+ text-4xl tracking-[-0.90px] leading-10 mb-4"
+            >
               Our first two cohorts
             </h2>
           </div>
@@ -197,13 +200,13 @@ export default function Changemakers() {
       <section className="py-12 w-full px-4 md:px-25 lg:px-50">
         <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
           <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
-            <p className="text-2xl md:text-3xl font-medium text-gray-900">
+            <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
               Identifying gaps with data-driven precision
             </p>
 
             <Link
               href="/index"
-              className="inline-flex items-center justify-center h-[44px] px-10 border-2 border-black rounded-sm font-semibold text-base text-black whitespace-nowrap transition-all duration-300 hover:bg-green-950 hover:text-white hover:scale-105"
+              className="inline-flex items-center justify-center h-[44px] px-10 border-2 border-black rounded-sm font-semibold text-base text-[#002c19] whitespace-nowrap transition-all duration-300 hover:bg-green-950 hover:text-white hover:scale-105"
             >
               TRIIBE Index
             </Link>
