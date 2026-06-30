@@ -131,7 +131,7 @@ export default function MediaEventsList() {
     <section className="py-20 px-4 md:px-25 lg:px-50 bg-[#3036411A]">
       <div className="max-w-300 mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-6">
-          <h2 className="text-4xl font-bold text-black">
+          <h2 className="text-4xl font-bold text-[#002c19]">
             {eventView === "upcoming" ? "Upcoming events" : "Past events"}
           </h2>
 
@@ -139,13 +139,13 @@ export default function MediaEventsList() {
             <div className="flex gap-2">
               <button
                 onClick={() => setEventView("upcoming")}
-                className={`px-5 py-2 rounded-sm h-[44px]   ${eventView === "upcoming" ? "bg-[#1C5945] text-white font-medium" : "bg-white border"}`}
+                className={`px-5 py-2 rounded-sm h-[44px]   ${eventView === "upcoming" ? "bg-[#1C5945] text-white font-medium" : "bg-white border text-[#002c19]/80"}`}
               >
                 Upcoming
               </button>
               <button
                 onClick={() => setEventView("past")}
-                className={`px-5 py-2 rounded-sm h-[44px]  ${eventView === "past" ? "bg-[#1C5945] text-white font-medium" : "bg-white border"}`}
+                className={`px-5 py-2 rounded-sm h-[44px]  ${eventView === "past" ? "bg-[#1C5945] text-white font-medium" : "bg-white border text-[#002c19]/80"}`}
               >
                 Past
               </button>
@@ -155,7 +155,7 @@ export default function MediaEventsList() {
                 <button
                   key={type}
                   onClick={() => setFilter(type)}
-                  className={`px-5 py-2 rounded-sm h-[44px]   ${filter === type ? "bg-[#1C5945] text-white font-medium" : "bg-white border"}`}
+                  className={`px-5 py-2 rounded-sm h-[44px]   ${filter === type ? "bg-[#1C5945] text-white font-medium" : "bg-white border text-[#002c19]/80"}`}
                 >
                   {type}
                 </button>
@@ -186,28 +186,28 @@ export default function MediaEventsList() {
 
                   <div className="flex-grow flex flex-col xl:flex-row justify-between items-start xl:items-center gap-6">
                     <div className="flex flex-col gap-2">
-                      <h3 className="text-xl font-bold text-black">
+                      <h3 className="text-xl font-bold text-[#002c19]">
                         {event.title}
                       </h3>
-                      <div className="flex flex-col gap-2 text-sm text-[#495565]">
-                        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-[#495565]">
+                      <div className="flex flex-col gap-2 text-sm text-[#002c19]/80">
+                        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-[#002c19]/80">
                           <div className="flex items-center gap-2">
-                            <Calendar size={14} className="text-gray-400" />
+                            <Calendar size={14} className="text-[#002c19]/80" />
                             <span>{timeData.date}</span>
                           </div>
                           <div className="flex items-center gap-2">
-                            <Clock size={14} className="text-gray-400" />
+                            <Clock size={14} className="text-[#002c19]/80" />
                             <span>{timeData.localRange}</span>
                           </div>
                         </div>
                         {/* LOCATION */}
-                        <div className="flex items-center gap-2 text-sm text-[#495565]">
-                          <MapPin size={14} className="text-gray-400" />
+                        <div className="flex items-center gap-2 text-sm text-[#002c19]/80">
+                          <MapPin size={14} className="text-[#002c19]/80" />
                           <span>{event.location}</span>
                         </div>
                         {/* GUEST COUNT */}
-                        <div className="flex items-center gap-2 text-sm text-[#495565]">
-                          <Users size={14} className="text-gray-400" />
+                        <div className="flex items-center gap-2 text-sm text-[#002c19]/80">
+                          <Users size={14} className="text-[#002c19]/80" />
                           <span>
                             {event.guestCount !== null
                               ? `${event.guestCount} ${event.isPast ? "went" : "going"}`
@@ -226,10 +226,10 @@ export default function MediaEventsList() {
                             alert("Registration link copied to clipboard!");
                           }
                         }}
-                        className="p-3 text-gray-400 border border-gray-200 rounded-xl hover:bg-gray-50"
+                        className="p-3 text-[#002c19]/80 border border-gray-200 rounded-xl hover:bg-gray-50"
                         title="Copy Link"
                       >
-                        <Share size={20} className="text-black" />
+                        <Share size={20} className="text-[#002c19]" />
                       </button>
 
                       {event.isPast || event.status !== "open" ? (
@@ -256,10 +256,12 @@ export default function MediaEventsList() {
             })
           ) : (
             <div className="p-12 border border-gray-100 rounded-xl bg-white text-left flex flex-col justify-center min-h-[180px]">
-              <h3 className="text-2xl font-normal text-black mb-4">
+              <h3 className="text-2xl font-normal text-[#002c19] mb-4">
                 No events for now
               </h3>
-              <p className="text-[#495565]">Stay tuned for upcoming events</p>
+              <p className="text-[#002c19]/80">
+                Stay tuned for upcoming events
+              </p>
             </div>
           )}
         </div>

@@ -181,8 +181,9 @@ const EventsPage = () => {
                 className="w-full max-w-[400px] md:max-w-[500px] h-auto -ml-3 md:-ml-5 lg:-ml-6 object-contain object-left"
               />
 
-              <p className="text-[#495565] text-lg mb-8 leading-relaxed mt-4 font-normal">
-                Intergenerational talks with next-gen nonprofit founders alongside peers over 30
+              <p className="text-[#002c19]/80 text-lg mb-8 leading-relaxed mt-4 font-normal">
+                Intergenerational talks with next-gen nonprofit founders
+                alongside peers over 30
               </p>
 
               <div className="flex w-full items-center justify-start gap-4">
@@ -190,7 +191,7 @@ const EventsPage = () => {
                   href="https://drive.google.com/file/d/1rALrh5bjpWnbKq2AvxeudYOpPG7kFsZ-/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className=" px-4 py-2 bg-white text-black border border-black rounded-sm h-[44px] hover:bg-gray-50 transition-colors font-medium inline-flex items-center cursor-pointer"
+                  className=" px-4 py-2 bg-white text-[#002c19] border border-black rounded-sm h-[44px] hover:bg-gray-50 transition-colors font-medium inline-flex items-center cursor-pointer"
                 >
                   TRIIBE Talk guide
                 </a>
@@ -239,7 +240,7 @@ const EventsPage = () => {
       {/* Social Links */}
       <section className="pt-12 pb-8 bg-[#3036411A]  md:px-12 lg:px-50 ">
         <div className="max-w-4xl mx-auto px-6">
-          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
+          <h3 className="text-2xl font-bold text-center text-[#002c19] mb-8">
             Connect with us
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6  mx-auto">
@@ -281,7 +282,7 @@ const EventsPage = () => {
                 className="bg-white rounded-lg overflow-hidden shadow-sm flex flex-col"
               >
                 <div className="p-6 pb-0">
-                  <h3 className="font-bold text-black text-2xl mb-4 text-center">
+                  <h3 className="font-bold text-[#002c19] text-2xl mb-4 text-center">
                     {card.title}
                   </h3>
                 </div>
@@ -300,17 +301,17 @@ const EventsPage = () => {
                 <div className="p-6 flex flex-col justify-between flex-1">
                   <div>
                     <div className="inline-block px-3 py-1 bg-[#3036411A] rounded mb-4">
-                      <span className="font-semibold text-black text-sm">
+                      <span className="font-semibold text-[#002c19] text-sm">
                         {card.badge}
                       </span>
                     </div>
 
-                    <h4 className="font-semibold text-black text-lg mb-6">
+                    <h4 className="font-semibold text-[#002c19] text-lg mb-6">
                       {card.heading}
                     </h4>
 
                     {card.description && (
-                      <p className="font-normal text-[#495565] text-sm leading-relaxed mb-6">
+                      <p className="font-normal text-[#002c19]/80 text-sm leading-relaxed mb-6">
                         {card.description}
                       </p>
                     )}
@@ -341,14 +342,14 @@ const EventsPage = () => {
         <div className="max-w-260 mx-auto">
           <div className="max-w-7xl mx-auto transition-all duration-300 hover:scale-105">
             <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
-              <p className="text-2xl md:text-3xl font-medium text-gray-900">
+              <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
                 For a visual journey, see our brand book
               </p>
               <Link
                 href="https://drive.google.com/file/d/1ZNTNHHHPhV_4-cXh6JdtdzaRmxQ6IdJs/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center border-2 border-black text-black px-10 py-3 rounded-sm h-[44px] font-semibold text-base hover:bg-green-950 hover:text-white hover:scale-105 transition-all duration-300 whitespace-nowrap"
+                className="inline-flex items-center justify-center border-2 border-black text-[#002c19] px-10 py-3 rounded-sm h-[44px] font-semibold text-base hover:bg-green-950 hover:text-white hover:scale-105 transition-all duration-300 whitespace-nowrap"
               >
                 View
               </Link>
