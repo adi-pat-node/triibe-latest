@@ -11,14 +11,12 @@ export default function Hero() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <Image
-            src="/images/home/heroImage1.jpg"
+            src="/images/summit/HeroSummit1.png"
             alt="College students collaborating"
             fill
-            priority
             fetchPriority="high"
             className="object-cover object-top"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            quality={50}
+            sizes="100vw"
           />
           <div className="absolute inset-0 w-full h-full bg-black/60" />
         </div>
@@ -28,9 +26,9 @@ export default function Hero() {
           {/* Heading */}
           <div className="flex flex-col items-center mt-24 pb-3 ">
             <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-4xl md:text-4xl lg:text-[64px] text-center tracking-tight leading-tight max-w-200">
-              Funding next-gen
+              Uniting next-gen nonprofit
               <br />
-              nonprofit founders
+              Innovators and Investors
             </h1>
           </div>
 
