@@ -423,7 +423,7 @@ export default function TriibeGlobe() {
           style={{
             fontSize: 34,
             fontWeight: 700,
-            color: "#111111",
+            color: "#002c19",
             margin: 0,
             letterSpacing: "-0.3px",
           }}
@@ -667,7 +667,7 @@ export default function TriibeGlobe() {
                   cursor: "pointer",
                   transition: "all 0.18s ease",
                   background: active ? "#e8f5ee" : "#ffffff",
-                  color: "#111111",
+                  color: "#002c19",
                   border: `1.5px solid ${active ? "#002C19" : "#e0e0e0"}`,
                   boxShadow: active ? "0 2px 12px rgba(0,44,25,0.18)" : "none",
                   transform: active ? "scale(1.04)" : "scale(1)",

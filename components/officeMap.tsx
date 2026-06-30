@@ -135,7 +135,10 @@ function SubCard({ sub, status }: { sub: SubLocation; status: string }) {
       <span className="text-[10px] font-bold uppercase tracking-widest text-[#1C5945] bg-green-50 px-2 py-0.5 rounded">
         {status}
       </span>
-      <h3 className="text-base md:text-lg font-bold text-black mt-1">
+      <h3
+        className="text-base md:text-lg font-bold text-[#002c19]
+ mt-1"
+      >
         {sub.name}
       </h3>
       <p className="text-xs md:text-sm text-[#495565] mt-1 mb-2 leading-relaxed">
