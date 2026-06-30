@@ -356,7 +356,7 @@ const ProgramPage = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div className="bg-white border border-gray-200 rounded-lg p-6">
-                    <p className=" font-normal text-[#002c19/80 text-xs uppercase mb-3 tracking-[0.60px]">
+                    <p className=" font-normal text-[#002c19]/80 text-xs uppercase mb-3 tracking-[0.60px]">
                       YEAR 1
                     </p>
                     <p className=" font-bold text-[#002c19] text-3xl">Roots</p>
