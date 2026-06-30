@@ -42,17 +42,17 @@ export default function Footer() {
         <div className="flex flex-col items-start gap-12 relative w-full max-w-[1200px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 w-full">
             <div className="flex flex-col items-start gap-4">
-              <h2 className="font-normal text-black text-xl tracking-[0.50px] leading-7">
+              <h2 className="font-normal text-[#002c19] text-xl tracking-[0.50px] leading-7">
                 TRIIBE
               </h2>
-              <p className="font-normal text-[#495565] text-sm tracking-[0] leading-[22.8px]">
+              <p className="font-normal text-[#002c19]/80 text-sm tracking-[0] leading-[22.8px]">
                 Funding next-gen nonprofit founders
               </p>
             </div>
 
             {footerColumns.map((column, index) => (
               <div key={index} className="flex flex-col items-start gap-4">
-                <h3 className="font-semibold text-black text-sm tracking-[0] leading-5">
+                <h3 className="font-semibold text-[#002c19] text-sm tracking-[0] leading-5">
                   {column.title}
                 </h3>
                 <nav className="flex flex-col items-start gap-2">
@@ -64,7 +64,7 @@ export default function Footer() {
                         target: link.target,
                         rel: "noopener noreferrer",
                       })}
-                      className="font-normal text-[#495565] text-sm tracking-[0] leading-5 hover:text-black transition-colors"
+                      className="font-normal text-[#002c19]/80 text-sm tracking-[0] leading-5 hover:text-black transition-colors"
                     >
                       {link.label}
                     </a>
@@ -73,7 +73,7 @@ export default function Footer() {
               </div>
             ))}
             <div className="flex flex-col items-start gap-4">
-              <h3 className="font-semibold text-black text-sm tracking-[0] leading-5">
+              <h3 className="font-semibold text-[#002c19] text-sm tracking-[0] leading-5">
                 Transparency
               </h3>
 
@@ -93,7 +93,7 @@ export default function Footer() {
           </div>
 
           <div className="w-full">
-            <p className="font-normal text-[#697282] text-xs md:text-sm tracking-[0] leading-5">
+            <p className="font-normal text-[#002c19]/80 text-xs md:text-sm tracking-[0] leading-5">
               United World Leaders exercises no operational control over and
               assumes no responsibility for the activities of TRIIBE. TRIIBE is
               not authorized to legally bind United World Leaders or any of its
@@ -102,7 +102,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-between w-full border-t border-gray-200 pt-4 pb-4 gap-4">
-            <p className="font-normal text-[#697282] text-sm tracking-[0] leading-5">
+            <p className="font-normal text-[#002c19]/80 text-sm tracking-[0] leading-5">
               © 2026 TRIIBE 501(c)(3). All rights reserved.
             </p>
             <div className="flex items-center gap-4">

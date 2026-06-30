@@ -26,7 +26,7 @@ export default function ApplicationProcess() {
       id="applyfellowship"
     >
       <header className="flex flex-col items-start gap-4 w-full">
-        <h2 className=" font-bold text-[#000000] text-4xl tracking-[-0.90px] leading-10">
+        <h2 className=" font-bold text-[#002c19] text-4xl tracking-[-0.90px] leading-10">
           Apply to the Fellowship
         </h2>
         {/* <p className="max-w-191 font-normal text-[#495565] text-lg leading-[29.2px]">
@@ -40,13 +40,13 @@ export default function ApplicationProcess() {
         <div className="bg-white border border-gray-200 rounded-lg">
           <div className="p-10 flex flex-col gap-8">
             <div className="flex flex-col gap-4">
-              <p className=" font-normal text-[#697282] text-xs tracking-[0.60px] leading-4 uppercase">
+              <p className=" font-normal text-[#002c19]/80 text-xs tracking-[0.60px] leading-4 uppercase">
                 APPLICATION WINDOW
               </p>
-              <h3 className=" font-normal text-[#000000] text-2xl leading-8">
+              <h3 className=" font-normal text-[#002c19] text-2xl leading-8">
                 Now open
               </h3>
-              <p className=" font-normal text-[#495565] text-base leading-[25.6px]">
+              <p className=" font-normal text-[#002c19]/80 text-base leading-[25.6px]">
                 Applications for the Spring 2026 cohort are being accepted now.
               </p>
             </div>
@@ -55,10 +55,10 @@ export default function ApplicationProcess() {
               <div className="grid grid-cols-2 gap-6">
                 {cohortDetails.map((detail, index) => (
                   <div key={index} className="flex flex-col gap-2">
-                    <p className=" font-normal text-[#697282] text-xs leading-4">
+                    <p className=" font-normal text-[#002c19]/80 text-xs leading-4">
                       {detail.label}
                     </p>
-                    <p className=" font-normal text-[#000000] text-xl leading-7">
+                    <p className=" font-normal text-[#002c19] text-xl leading-7">
                       {detail.value}
                     </p>
                   </div>
@@ -76,7 +76,7 @@ export default function ApplicationProcess() {
                   href="https://donate.rayzeapp.com/orgs/tIbe07j0XKkLQezHHXoz"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 bg-white text-black border border-black rounded-sm h-[44px] hover:bg-gray-50 transition-colors font-semibold text-base w-full md:w-auto text-center cursor-pointer"
+                  className="px-6 py-3 bg-white text-[#002c19] border border-black rounded-sm h-[44px] hover:bg-gray-50 transition-colors font-semibold text-base w-full md:w-auto text-center cursor-pointer"
                 >
                   Donate
                 </a>
@@ -88,17 +88,17 @@ export default function ApplicationProcess() {
         {/* Eligibility Card */}
         <div className="bg-white border border-gray-200 rounded-lg">
           <div className="p-10 flex flex-col gap-6">
-            <p className=" font-normal text-[#697282] text-xs tracking-[0.60px] leading-4 uppercase mb-4">
+            <p className=" font-normal text-[#002c19]/80 text-xs tracking-[0.60px] leading-4 uppercase mb-4">
               WHO CAN APPLY
             </p>
 
             <ul className="flex flex-col gap-4">
               {eligibilityRequirements.map((requirement, index) => (
                 <li key={index} className="flex gap-3">
-                  <span className=" font-normal text-[#99a1ae] text-sm leading-6 shrink-0">
+                  <span className=" font-normal text-[#002c19]/80 text-sm leading-6 shrink-0">
                     —
                   </span>
-                  <span className=" font-normal text-[#354152] text-sm leading-6">
+                  <span className=" font-normal text-[#002c19]/80 text-sm leading-6">
                     {requirement}
                   </span>
                 </li>
@@ -110,7 +110,7 @@ export default function ApplicationProcess() {
                 <a
                   key={index}
                   href={link.href}
-                  className="border-b border-[#99a1ae]  font-normal text-[#101727] text-xs leading-5 hover:text-[#000000] transition-colors"
+                  className="border-b border-[#99a1ae]  font-normal text-[#101727] text-xs leading-5 hover:text-[#002c19] transition-colors"
                 >
                   {link.text}
                 </a>

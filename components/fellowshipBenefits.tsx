@@ -65,11 +65,12 @@ export default function FellowshipBenefits() {
   return (
     <section className="flex flex-col items-start gap-12 px-4 md:px-25 lg:px-50 pt-10 pb-20 w-full bg-gray-50">
       <div className="flex flex-col items-start gap-4 w-full">
-        <h2 className=" font-bold text-black text-4xl tracking-[-0.90px] leading-10">
+        <h2 className=" font-bold text-[#002c19] text-4xl tracking-[-0.90px] leading-10">
           What fellows receive
         </h2>
-        <p className=" font-normal text-[#495565] text-lg leading-[29.2px] max-w-219">
-          Comprehensive support designed for founders navigating the unique challenges of scaling their nonprofits in their early 20s.
+        <p className=" font-normal text-[#002c19]/80 text-lg leading-[29.2px] max-w-219">
+          Comprehensive support designed for founders navigating the unique
+          challenges of scaling their nonprofits in their early 20s.
         </p>
       </div>
 
@@ -81,7 +82,7 @@ export default function FellowshipBenefits() {
               className="flex items-center gap-4 px-3.5 py-5 border-b border-gray-200 last:border-b-0"
             >
               <div className="flex items-center justify-end min-w-6">
-                <span className=" font-normal text-[#99a1ae] text-lg text-right leading-7">
+                <span className=" font-normal text-[#002c19]/80 text-lg text-right leading-7">
                   {benefit.number}
                 </span>
               </div>
@@ -95,10 +96,10 @@ export default function FellowshipBenefits() {
               />
 
               <div className="flex flex-col gap-1 flex-1">
-                <h3 className=" font-semibold text-black text-lg leading-[24.8px]">
+                <h3 className=" font-semibold text-[#002c19] text-lg leading-[24.8px]">
                   {benefit.title}
                 </h3>
-                <p className=" font-normal text-[#495565] text-sm leading-[21px]">
+                <p className=" font-normal text-[#002c19]/80 text-sm leading-[21px]">
                   {benefit.description}
                 </p>
               </div>

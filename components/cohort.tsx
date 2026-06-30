@@ -167,7 +167,7 @@ export default function Cohort() {
     <section className="py-6 md:py-10 bg-white" id="cohortSection">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-8">
-          <h2 className=" font-bold text-black text-4xl tracking-[-0.90px] leading-10 mb-4 text-center">
+          <h2 className=" font-bold text-[#002c19] text-4xl tracking-[-0.90px] leading-10 mb-4 text-center">
             Our first two cohorts
           </h2>
           {/* <p className=" font-normal text-[#495565] text-lg leading-7 mb-4 text-center">
