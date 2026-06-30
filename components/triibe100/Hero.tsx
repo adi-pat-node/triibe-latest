@@ -30,7 +30,7 @@ export default function Hero() {
         <p
           style={{
             fontSize: "16px",
-            color: "#303641",
+            color: "#002c19",
             opacity: 0.65,
             fontWeight: 300,
             maxWidth: "420px",
@@ -41,7 +41,6 @@ export default function Hero() {
         >
           The definitive global list of nonprofit founders under 30 to know
         </p>
-
       </div>
     </section>
   );
