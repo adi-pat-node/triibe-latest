@@ -298,7 +298,7 @@ const HostEventPage = () => {
       {submitSuccess && (
         <div className="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center gap-6 px-4">
           <div className="w-16 h-16 rounded-full bg-[#D1FAE5] flex items-center justify-center">
-            <CircleCheckBig size={32} className="text-[#1C5945]" />
+            <CircleCheckBig size={32} className="text-[#002c19]/80" />
           </div>
           <h2 className="text-2xl font-bold text-[#002C19] text-center">
             Request Submitted!
@@ -321,7 +321,7 @@ const HostEventPage = () => {
           <div className="flex items-center gap-4 mb-4 ">
             <button
               onClick={() => window.history.back()}
-              className="cursor-pointer text-gray-500 flex items-center gap-1 text-sm hover:text-black transition-all"
+              className="cursor-pointer text-[#002C19]/80 flex items-center gap-1 text-sm hover:text-[#002c19] transition-all"
             >
               <ArrowLeft size={16} /> Back to Events
             </button>
@@ -358,7 +358,7 @@ const HostEventPage = () => {
 
                     <span
                       className={`hidden md:block absolute -bottom-8 whitespace-nowrap text-[12px] font-medium  tracking-widest text-center ${
-                        step === s.id ? "text-[#1C5945]" : "text-gray-400"
+                        step === s.id ? "text-[#1C5945]" : "text-[#002c19]/80"
                       }`}
                     >
                       {s.label}
@@ -383,10 +383,10 @@ const HostEventPage = () => {
               {step === 1 && (
                 <div className="space-y-8 animate-in fade-in duration-500">
                   <div>
-                    <h2 className="text-3xl font-bold text-black mb-2">
+                    <h2 className="text-3xl font-bold text-[#002c19] mb-2">
                       Tell us about yourself
                     </h2>
-                    <p className="text-gray-500">
+                    <p className="text-[#002c19]">
                       We'd love to learn about you and your organization.
                     </p>
                   </div>
@@ -446,11 +446,11 @@ const HostEventPage = () => {
                       }
                     />
                     <div className="flex flex-col gap-2">
-                      <label className="text-sm font-bold text-gray-700">
+                      <label className="text-sm font-bold text-[#002c19]">
                         Short Bio *
                       </label>
                       <textarea
-                        className="w-full p-4 rounded-2xl bg-white border border-gray-200 min-h-[140px] focus:ring-2 focus:ring-[#1C5945]/10 outline-none transition-all"
+                        className="w-full p-4 rounded-2xl bg-white border border-gray-200 min-h-[140px] focus:ring-2 focus:ring-[#1C5945]/10 outline-none transition-all text-[#002c19] placeholder:text-[#002c19]/80"
                         placeholder="Tell us a bit about yourself and why you want to host..."
                         value={formData.bio}
                         onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
@@ -461,14 +461,14 @@ const HostEventPage = () => {
 
                     <div className="space-y-3">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <label className="text-sm font-bold text-gray-700">
+                        <label className="text-sm font-bold text-[#002c19]/80">
                           Have you read the guide? *
                         </label>
                         <a
                           href="https://drive.google.com/file/d/1rALrh5bjpWnbKq2AvxeudYOpPG7kFsZ-/view?usp=sharing"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-sm font-medium text-[#1C5945] underline hover:opacity-70 transition-opacity"
+                          className="text-sm font-medium text-[#002c19]/80 underline hover:opacity-70 transition-opacity"
                         >
                           View the guide here
                         </a>
@@ -497,7 +497,7 @@ const HostEventPage = () => {
                               <div className="absolute w-2.5 h-2.5 rounded-full bg-[#1C5945] opacity-0 peer-checked:opacity-100 transition-opacity" />
                             </div>
                             <span
-                              className={`text-sm font-medium ${formData.readGuide === option ? "text-black" : "text-gray-500"}`}
+                              className={`text-sm font-medium ${formData.readGuide === option ? "text-[#002c19]" : "text-gray-500"}`}
                             >
                               {option}
                             </span>
@@ -512,17 +512,17 @@ const HostEventPage = () => {
               {step === 2 && (
                 <div className="space-y-8 animate-in fade-in duration-500">
                   <div>
-                    <h2 className="text-3xl font-bold text-black mb-2">
+                    <h2 className="text-3xl font-bold text-[#002c19] mb-2">
                       Event Location & Time
                     </h2>
-                    <p className="text-gray-500">
+                    <p className="text-[#002c19]/80">
                       Where and when would you like to host the event?
                     </p>
                   </div>
                   <div className="grid grid-cols-2 gap-6">
                     <div className="col-span-2 relative">
                       <div className="flex flex-col gap-2">
-                        <label className="text-sm font-bold text-gray-700">
+                        <label className="text-sm font-bold text-[#002c19]/80">
                           Venue Name *
                         </label>
                         <input
@@ -536,7 +536,7 @@ const HostEventPage = () => {
                               venueName: e.target.value,
                             })
                           }
-                          className="w-full p-4 rounded-2xl bg-white border border-gray-200 focus:ring-2 focus:ring-[#1C5945]/10 outline-none transition-all"
+                          className="w-full p-4 rounded-2xl bg-white border border-gray-200 focus:ring-2 focus:ring-[#1C5945]/10 outline-none transition-all text-[#002c19] placeholder:text-[#002c19]/80"
                         />
                       </div>
                     </div>
@@ -558,7 +558,7 @@ const HostEventPage = () => {
                     />
                     <div className="col-span-2">
                       <div className="flex flex-col gap-2">
-                        <label className="text-sm font-bold text-gray-700">
+                        <label className="text-sm font-bold text-[#002c19]/80">
                           Event Date *
                         </label>
                         <input
@@ -574,7 +574,7 @@ const HostEventPage = () => {
                             });
                             if (!dateTouched) setDateTouched(true);
                           }}
-                          className="w-full p-4 rounded-2xl bg-white border border-gray-200 focus:ring-2 focus:ring-[#1C5945]/10 outline-none transition-all"
+                          className="w-full p-4 rounded-2xl bg-white border border-gray-200 focus:ring-2 focus:ring-[#1C5945]/10 outline-none transition-all text-[#002c19] placeholder:text-[#002c19]/80"
                         />
                         {dateTouched && formData.eventDate && !isDateValid && (
                           <p className="text-red-500 text-xs font-medium ml-1 animate-in fade-in slide-in-from-top-1">
@@ -617,21 +617,21 @@ const HostEventPage = () => {
               {step === 3 && (
                 <div className="space-y-8 animate-in fade-in duration-500">
                   <div>
-                    <h2 className="text-3xl font-bold text-black mb-2">
+                    <h2 className="text-3xl font-bold text-[#002c19] mb-2">
                       Theme & Speakers
                     </h2>
-                    <p className="text-gray-500">
+                    <p className="text-[#002c19]/80">
                       What will your TRIIBE Talk be about and who will be
                       speaking?
                     </p>
                   </div>
 
                   <div className="space-y-4">
-                    <label className="text-sm font-bold text-gray-700 block">
+                    <label className="text-sm font-bold text-[#002c19]/80 block">
                       Theme *
                     </label>
 
-                    <div className="relative min-h-[56px] w-full border border-gray-200 rounded-2xl bg-white flex items-center px-4 hover:border-gray-300 focus-within:ring-2 focus-within:ring-[#1C5945]/10 transition-all cursor-pointer">
+                    <div className="relative min-h-[56px] w-full border border-gray-200 rounded-2xl bg-white flex items-center px-4 hover:border-gray-300 focus-within:ring-2 focus-within:ring-[#1C5945]/10 transition-all cursor-pointer text-[#002c19] placeholder:text-[#002c19]/80">
                       <select
                         value={formData.theme}
                         onChange={(e) =>
@@ -655,7 +655,7 @@ const HostEventPage = () => {
                             Select a theme...
                           </span>
                         ) : (
-                          <span className="px-4 py-1.5 bg-[#D1FAE5] text-[#065F46] border border-[#1C5945]/30 rounded-full text-xs font-bold animate-in zoom-in-95 duration-200">
+                          <span className="px-4 py-1.5 bg-[#D1FAE5] text-[#002c19]/80 border border-[#1C5945]/30 rounded-full text-xs font-bold animate-in zoom-in-95 duration-200">
                             {formData.theme}
                           </span>
                         )}
@@ -668,13 +668,13 @@ const HostEventPage = () => {
                   </div>
 
                   <div className="space-y-4">
-                    <label className="text-sm font-medium text-gray-700">
+                    <label className="text-sm font-medium text-[#002c19]/80">
                       Event Description *
                     </label>
                     <textarea
                       rows={4}
                       placeholder="Describe what attendees can expect..."
-                      className="w-full p-4 rounded-2xl border border-gray-200 bg-white focus:ring-2 focus:ring-[#1C5945]/10 outline-none transition-all resize-none text-sm placeholder:text-[#30364180] mt-2"
+                      className="w-full p-4 rounded-2xl border border-gray-200 bg-white focus:ring-2 focus:ring-[#1C5945]/10 outline-none transition-all resize-none text-sm  mt-2 text-[#002c19] placeholder:text-[#002c19]/80"
                       value={formData.eventDescription}
                       onChange={(e) =>
                         setFormData({
@@ -687,7 +687,7 @@ const HostEventPage = () => {
 
                   <div className="space-y-6">
                     <div className="flex justify-between items-center">
-                      <label className="text-sm font-bold text-gray-700">
+                      <label className="text-sm font-bold text-[#002c19]/80">
                         Speakers *
                       </label>
                     </div>
@@ -700,9 +700,9 @@ const HostEventPage = () => {
                           key={i}
                           className="p-6 bg-[#F9FAFB] rounded-3xl border border-gray-100 space-y-4 mb-4"
                         >
-                          <div className="flex flex-col md:flex-row justify-between md:items-center gap-3 md:gap-0 text-xs font-medium text-black tracking-wide px-1">
+                          <div className="flex flex-col md:flex-row justify-between md:items-center gap-3 md:gap-0 text-xs font-medium text-[#002c19] tracking-wide px-1">
                             <span>Speaker {i + 1} </span>
-                            <span className="text-gray-900">
+                            <span className="text-[#002c19]">
                               {isFirstSpeaker
                                 ? "Next-Gen"
                                 : s.category === "Next-Gen"
@@ -715,7 +715,7 @@ const HostEventPage = () => {
 
                           <div className="space-y-3">
                             <input
-                              className="w-full p-4 text-sm rounded-xl border border-gray-200 bg-white outline-none focus:ring-1 focus:ring-black placeholder:text-gray-400"
+                              className="w-full p-4 text-sm rounded-xl border border-gray-200 bg-white outline-none focus:ring-1 focus:ring-black text-[#002c19] placeholder:text-[#002c19]/80 "
                               placeholder="Speaker name"
                               value={s.name}
                               onChange={(e) =>
@@ -723,7 +723,7 @@ const HostEventPage = () => {
                               }
                             />
                             <input
-                              className="w-full p-4 text-sm rounded-xl border border-gray-200 bg-white outline-none focus:ring-1 focus:ring-black placeholder:text-gray-400"
+                              className="w-full p-4 text-sm rounded-xl border border-gray-200 bg-white outline-none focus:ring-1 focus:ring-black text-[#002c19] placeholder:text-[#002c19]/80"
                               placeholder="Title / Role"
                               value={s.role}
                               onChange={(e) =>
@@ -731,7 +731,7 @@ const HostEventPage = () => {
                               }
                             />
                             <input
-                              className="w-full p-4 text-sm rounded-xl border border-gray-200 bg-white outline-none focus:ring-1 focus:ring-black placeholder:text-gray-400"
+                              className="w-full p-4 text-sm rounded-xl border border-gray-200 bg-white outline-none focus:ring-1 focus:ring-black placeholder:text-[#002c19]/80 text-[#002c19]"
                               placeholder="Organization"
                               value={s.organisation}
                               onChange={(e) =>
@@ -741,7 +741,7 @@ const HostEventPage = () => {
                             <div className="flex flex-col gap-1">
                               <input
                                 type="url"
-                                className="w-full p-4 text-sm rounded-xl border border-gray-200 bg-white outline-none focus:ring-1 focus:ring-black placeholder:text-gray-400"
+                                className="w-full p-4 text-sm rounded-xl border border-gray-200 bg-white outline-none focus:ring-1 focus:ring-black placeholder:text-[#002c19]/80 text-[#002c19]"
                                 placeholder="https://www.linkedin.com/in/username"
                                 value={s.linkedin}
                                 onChange={(e) => {
@@ -809,7 +809,7 @@ const HostEventPage = () => {
                                       <span
                                         className={`text-sm ${
                                           s.category === option.id
-                                            ? "text-black font-medium"
+                                            ? "text-[#002c19] font-medium"
                                             : wouldExceedLimit
                                               ? "text-gray-300"
                                               : "text-gray-500"
@@ -866,7 +866,7 @@ const HostEventPage = () => {
                                 disabled={formData.speakers.length >= 4}
                                 className={`font-bold text-sm transition-all ${
                                   formData.speakers.length >= 4
-                                    ? "text-gray-500 cursor-not-allowed"
+                                    ? "text-[#002c19]/80 cursor-not-allowed"
                                     : "text-[#1C5945] hover:opacity-80"
                                 }`}
                               >
@@ -889,7 +889,7 @@ const HostEventPage = () => {
                     <h2 className="text-2xl font-bold text-[#002C19] mb-2">
                       Review Your Request
                     </h2>
-                    <p className="text-sm text-gray-500 mb-8">
+                    <p className="text-sm text-[#002c19]/80 mb-8">
                       Please review all details before submitting.
                     </p>
                   </div>
@@ -937,7 +937,7 @@ const HostEventPage = () => {
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mt-12 pt-8 border-t border-gray-100">
                 <button
                   onClick={prevStep}
-                  className="flex items-center justify-center gap-2 px-6 py-4 text-gray-500 font-bold hover:text-black transition-all order-2 md:order-1"
+                  className="flex items-center justify-center gap-2 px-6 py-4 text-[#002c19]/80 font-bold hover:text-[#002c19] transition-all order-2 md:order-1"
                 >
                   <ArrowLeft size={18} /> Back
                 </button>
@@ -948,7 +948,7 @@ const HostEventPage = () => {
                   className={`flex items-center justify-center gap-3 px-10 py-4 rounded-sm h-[44px] font-bold transition-all duration-300 order-1 md:order-2 ${
                     isStepValid() && !isSubmitting
                       ? "bg-[#1C5945] text-white cursor-pointer"
-                      : "bg-[#E5E7EB] text-[#30364166] cursor-not-allowed"
+                      : "bg-[#E5E7EB] text-[#002c19]/80 cursor-not-allowed"
                   }`}
                 >
                   {step === 4 ? (
@@ -988,13 +988,13 @@ const InputField = ({
   type = "text",
 }: InputFieldProps) => (
   <div className="flex flex-col gap-2">
-    <label className="text-sm font-bold text-gray-700">{label}</label>
+    <label className="text-sm font-bold text-[#002c19]">{label}</label>
     <input
       type={type}
       placeholder={placeholder}
       value={value}
       onChange={(e: ChangeEvent<HTMLInputElement>) => onChange(e.target.value)}
-      className="w-full p-4 rounded-2xl bg-white border border-gray-200 focus:ring-2 focus:ring-[#1C5945]/10 outline-none transition-all"
+      className="w-full p-4 rounded-2xl bg-white border border-gray-200 focus:ring-2 focus:ring-[#1C5945]/10 outline-none transition-all text-[#002c19] placeholder:text-[#002c19]/80"
     />
   </div>
 );
@@ -1021,32 +1021,35 @@ const ReviewSection = ({
   city?: string;
 }) => (
   <div className="p-8 bg-[#F9FAFB] rounded-[32px] border border-gray-100">
-    <h4 className="text-[14px] font-bold text-[#1C5945]  mb-2 ">{title}</h4>
+    <h4 className="text-[14px] font-bold text-[#002c19]  mb-2 ">{title}</h4>
     <div className="flex justify-between gap-6 items-center">
       <div className="space-y-3 flex-1">
         {data?.map((item, i) => (
-          <p key={i} className="text-sm text-gray-600">
-            <span className="font-bold text-gray-900">{item.l}:</span>{" "}
+          <p key={i} className="text-sm text-[#002c19]">
+            <span className="font-bold text-[#002c19]/80">{item.l}:</span>{" "}
             {item.v || "Not provided"}
           </p>
         ))}
 
         {theme && (
           <div className="space-y-4 mt-0">
-            <p className="text-sm text-gray-600">
-              <span className="font-bold text-gray-900">Topic:</span> {theme}
+            <p className="text-sm text-[#002c19]">
+              <span className="font-bold text-[#002c19]/80">Topic:</span>{" "}
+              {theme}
             </p>
 
             {description && (
-              <p className="text-sm text-gray-600">
-                <span className="font-bold text-gray-900">Description:</span>{" "}
+              <p className="text-sm text-[#002c19]">
+                <span className="font-bold text-[#002c19]/80">
+                  Description:
+                </span>{" "}
                 {description}
               </p>
             )}
             {speakers && (
               <div className="space-y-1">
-                <p className="text-sm font-bold text-gray-900">Speakers:</p>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm font-bold text-[#002c19]/80">Speakers:</p>
+                <p className="text-sm text-[#002c19]/80 leading-relaxed">
                   •{" "}
                   {speakers
                     .map((s) => s.name)
