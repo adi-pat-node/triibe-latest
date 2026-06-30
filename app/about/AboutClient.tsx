@@ -191,9 +191,9 @@ function SectionHeader({
 }) {
   return (
     <div className="mb-8">
-      <h2 className="text-2xl font-bold text-[#111111]">{title}</h2>
+      <h2 className="text-2xl font-bold text-[#002c19]">{title}</h2>
       {description && (
-        <p className="text-gray-500 text-sm mt-2 max-w-2xl leading-relaxed">
+        <p className="text-[#002c19]/80 text-sm mt-2 max-w-2xl leading-relaxed">
           {description}
         </p>
       )}
@@ -261,7 +261,7 @@ export default function AboutPage() {
           {/* Left column */}
           <FadeUp delay={0}>
             <h1
-              className="font-extrabold text-[#111]"
+              className="font-extrabold text-[#002c19]"
               style={{
                 fontSize: 32,
                 lineHeight: 1.25,
@@ -269,7 +269,14 @@ export default function AboutPage() {
                 marginBottom: 0,
               }}
             >
-              <span style={{ display: "block", fontWeight: 700, fontSize: 44 }}>
+              <span
+                style={{
+                  display: "block",
+                  fontWeight: 700,
+                  fontSize: 44,
+                  color: "#002c19",
+                }}
+              >
                 Everyone you see below is building
               </span>
               <img
@@ -379,13 +386,15 @@ export default function AboutPage() {
               <p style={{ fontSize: 22, fontWeight: 700, color: "#1A6B3C" }}>
                 {count0}
               </p>
-              <p style={{ fontSize: 11, color: "#888" }}>Global departments</p>
+              <p style={{ fontSize: 11, color: "#002c19cc" }}>
+                Global departments
+              </p>
             </div>
             <div className="text-center">
               <p style={{ fontSize: 22, fontWeight: 700, color: "#1A6B3C" }}>
                 {count1}
               </p>
-              <p style={{ fontSize: 11, color: "#888" }}>
+              <p style={{ fontSize: 11, color: "#002c19cc" }}>
                 Nonprofit founders funded
               </p>
             </div>
@@ -401,13 +410,15 @@ export default function AboutPage() {
                   +
                 </span>
               </p>
-              <p style={{ fontSize: 11, color: "#888" }}>TRIIBE members</p>
+              <p style={{ fontSize: 11, color: "#002c19cc" }}>TRIIBE members</p>
             </div>
             <div className="text-center">
               <p style={{ fontSize: 22, fontWeight: 700, color: "#1A6B3C" }}>
                 {count3}
               </p>
-              <p style={{ fontSize: 11, color: "#888" }}>Locations worldwide</p>
+              <p style={{ fontSize: 11, color: "#002c19cc" }}>
+                Locations worldwide
+              </p>
             </div>
           </div>
         </FadeUp>
@@ -415,7 +426,7 @@ export default function AboutPage() {
         {/* Social Links */}
         <section className="pt-12 pb-8   md:px-12 lg:px-50 ">
           <div className="max-w-4xl mx-auto px-6">
-            <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
+            <h3 className="text-2xl font-bold text-center text-[#002c19] mb-8">
               Connect with us
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6  mx-auto">
