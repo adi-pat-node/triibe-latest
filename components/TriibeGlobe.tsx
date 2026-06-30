@@ -578,14 +578,18 @@ export default function TriibeGlobe() {
                   style={{
                     fontSize: 17,
                     fontWeight: 700,
-                    color: "#111111",
+                    color: "#002C19",
                     margin: 0,
                   }}
                 >
                   {activeBranch.label}
                 </p>
                 <p
-                  style={{ fontSize: 11, color: "#888888", margin: "2px 0 0" }}
+                  style={{
+                    fontSize: 11,
+                    color: "#002C19cc",
+                    margin: "2px 0 0",
+                  }}
                 >
                   {activeBranch.city}
                 </p>
@@ -593,7 +597,7 @@ export default function TriibeGlobe() {
               <p
                 style={{
                   fontSize: 11,
-                  color: "#444444",
+                  color: "#002C19cc",
                   lineHeight: 1.65,
                   margin: 0,
                 }}
@@ -626,7 +630,7 @@ export default function TriibeGlobe() {
                     display: "block",
                     textAlign: "center",
                     fontSize: 11,
-                    color: "#888888",
+                    color: "#002C19cc",
                     padding: "9px 0",
                     borderRadius: 8,
                     border: "1px solid #e0e0e0",
