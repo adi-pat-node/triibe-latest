@@ -294,7 +294,7 @@ const SummitPage = () => {
     {
       name: "Varuni Chopra",
       title: "Founder, Bridge the Gap Initiative",
-      image: "/images/home/VaruniChopra.png",
+      image: "/images/triibe100/VaruniChopra.png",
       linkedin: "https://www.linkedin.com/in/varuni-chopra1/",
       tag: "Next-Gen",
     },
