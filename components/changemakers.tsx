@@ -99,7 +99,7 @@ export default function Changemakers() {
       description:
         "Empower senior citizens to confidently use technology, connecting them to essential digital tools and services",
       founded: "FOUNDED 2022",
-      image: "/images/home/VaruniChopra.png",
+      image: "/images/triibe100/VaruniChopra.png",
       website: "https://helpinghandsmain.wixsite.com/mysite",
     },
     {

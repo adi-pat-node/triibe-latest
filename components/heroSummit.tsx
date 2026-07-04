@@ -39,7 +39,7 @@ export default function HeroSummit() {
       <section className="relative w-full min-h-150 md:min-h-175 lg:min-h-200 bg-[#101828] flex items-center justify-center">
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/images/summit/HeroSummit1.png"
+            src="/images/summit/HeroSummit-new.png"
             alt="Next-Gen Changemaker Summit"
             fill
             priority
@@ -56,11 +56,11 @@ export default function HeroSummit() {
             </h1>
           </div>
 
-          <div className="flex flex-col items-center pb-6">
+          {/* <div className="flex flex-col items-center pb-6">
             <p className="font-['DM_Sans',Helvetica] font-normal text-white text-base md:text-lg text-center tracking-[0] leading-relaxed">
               Hosted by Vice City District, Give To Empower, and TRIIBE
             </p>
-          </div>
+          </div> */}
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-white text-sm mb-8">
             <div className="flex items-center gap-2">

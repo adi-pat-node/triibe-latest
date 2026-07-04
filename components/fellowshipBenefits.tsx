@@ -38,27 +38,27 @@ const benefits = [
     description:
       "Access to operational tools, legal support, and sector-specific expertise",
   },
-  /* {
+  {
     number: "04",
-    icon: "/images/home/visibility-4.svg",
+    icon: "/images/home/visibility-icon-container.svg",
     title: "Visibility",
     description:
       "Digital reach, Summits, and TRIIBE Talks in front of funders",
   },
   {
     number: "05",
-    icon: "/images/home/visibility-4.svg",
+    icon: "/images/home/credibility-icon-container.svg",
     title: "Credibility",
     description:
       "Vetted proof of impact to assure potential funders",
   },
   {
     number: "06",
-    icon: "/images/home/visibility-4.svg",
+    icon: "/images/home/software-icon-container.svg",
     title: "Software",
     description:
       "Enterprise accounts for outreach, operations, and AI",
-  }, */
+  },
 ];
 
 export default function FellowshipBenefits() {

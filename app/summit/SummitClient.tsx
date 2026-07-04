@@ -294,7 +294,7 @@ const SummitPage = () => {
     {
       name: "Varuni Chopra",
       title: "Founder, Bridge the Gap Initiative",
-      image: "/images/home/VaruniChopra.png",
+      image: "/images/triibe100/VaruniChopra.png",
       linkedin: "https://www.linkedin.com/in/varuni-chopra1/",
       tag: "Next-Gen",
     },
@@ -487,6 +487,14 @@ const SummitPage = () => {
       linkedin: "https://www.linkedin.com/in/christyl-johnson-phd-1091256/",
       tag: "Speaker",
     },
+    /* {
+      name: "Caryl Stern",
+      title:
+        "Past Executive Director, Walton Family Foundation and President, UNICEF USA",
+      image: "/images/summit/CarylStern.jpg",
+      linkedin: "https://www.linkedin.com/in/caryl-stern-30a1489/",
+      tag: "Speaker",
+    }, */
   ];
 
   const scheduleDays = [

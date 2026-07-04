@@ -57,18 +57,18 @@ export default function ProgramOverviewTest() {
               />
             </h2>
 
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 w-full max-w-5xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 w-full max-w-5xl mx-auto">
               <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.2] text-center md:text-left max-w-2xl">
                 Channeling capital to the nonprofit startup ecosystem
               </h3>
 
-              <div className="flex-shrink-0 flex justify-center w-48 md:w-64">
+              <div className="flex-shrink-0 flex justify-center w-48 md:w-64 -ml-8 overflow-visible">
                 <Image
                   src="/images/home/heroLogo.png"
                   alt="TRIIBE Tree Logo"
                   width={300}
                   height={300}
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain scale-125 md:scale-150"
                 />
               </div>
             </div>

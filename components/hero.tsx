@@ -11,7 +11,7 @@ export default function Hero() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <Image
-            src="/images/summit/HeroSummit1.png"
+            src="/images/summit/HeroSummit-new.png"
             alt="College students collaborating"
             fill
             fetchPriority="high"
@@ -24,7 +24,7 @@ export default function Hero() {
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center  px-6   max-w-225 mx-auto ">
           {/* Heading */}
-          <div className="flex flex-col items-center mt-24 pb-3 ">
+          <div className="flex flex-col items-center mt-45 md:mt-50 pb-3">
             <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-4xl md:text-4xl lg:text-[64px] text-center tracking-tight leading-tight max-w-200">
               Uniting next-gen nonprofit
               <br />
@@ -41,22 +41,22 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className=" mt-7 flex flex-col md:flex-row items-center justify-center  gap-6 md:gap-12   ">
-            <Link
+            {/* <Link
               href="/fellowship"
               className="px-6 py-3 font-bold bg-white text-[#002c19]
  hover:bg-gray-100 font-['DM_Sans',Helvetica] font-normal text-sm h-11 inline-flex items-center justify-center transition-colors rounded-sm h-[44px]"
             >
               Explore our Program
-            </Link>
+            </Link> */}
 
-            <Link
+            {/* <Link
               href="/apply"
               className="px-6 py-3  font-bold bg-[#002c19] text-white rounded-sm h-[44px] hover:bg-[#003d24] font-['DM_Sans',Helvetica] font-normal text-sm  inline-flex items-center justify-center transition-colors "
             >
               Apply to Fellowship
-            </Link>
+            </Link> */}
           </div>
-          <div className="mt-20">
+          <div className="mt-10">
             <Image
               src="/images/home/TRIIBEHeroWhite.svg"
               alt="TRIIBE"
