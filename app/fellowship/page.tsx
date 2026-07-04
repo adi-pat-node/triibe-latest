@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import ProgramClient from "./ProgramClient";
 
 export const metadata: Metadata = {
-  title: "$40K Funding & Mentorship for Nonprofit Founders Ages 20–25 | TRIIBE",
+  title: "TRIIBE Fellowship | Startup Dynamics for Nonprofit Innovators",
   description:
-    "The TRIIBE Fellowship provides $40K in unrestricted funding, quarterly mentorship, and community for registered nonprofit founders aged 20–25.",
+    "The TRIIBE Fellowship brings startup dynamics to the nonprofit sector, empowering innovators in their 20s to scale.",
   alternates: {
     canonical: "https://www.triibe.org/fellowship",
   },

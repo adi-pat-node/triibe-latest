@@ -1,9 +1,9 @@
 import AboutClient from "./AboutClient";
 
 export const metadata = {
-  title: "Next-Gen for Next-Gen Nonprofit Founders | TRIIBE",
+  title: "About TRIIBE | Empowering Next-Gen Nonprofit Innovators",
   description:
-    "TRIIBE is the foundation built by next-gen, for next-gen. Learn how we fund, mentor, and connect nonprofit founders under 30 changing the world right now.",
+    "Meet the global team behind TRIIBE, empowering next-gen nonprofit innovators under 30 with funding and mentorship.",
   alternates: {
     canonical: "https://www.triibe.org/about",
   },

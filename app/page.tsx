@@ -8,9 +8,9 @@ const Changemakers = dynamic(() => import("@/components/changemakers"));
 const Footer = dynamic(() => import("@/components/footer"));
 
 export const metadata = {
-  title: "TRIIBE | Funding Next-Gen Nonprofit Founders",
+  title: "TRIIBE | Uniting Nonprofit Innovators & Investors",
   description:
-    "TRIIBE funds next-gen nonprofit founders in their 20s with fellowships, mentorship, and a global community of changemakers.",
+    "TRIIBE unites next-gen nonprofit innovators and investors through fellowships, mentorship, and community.",
   alternates: {
     canonical: "https://www.triibe.org",
   },
