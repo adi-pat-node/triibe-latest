@@ -19,14 +19,20 @@ export default function Triibe100Page() {
     <div style={{ background: "#002C19" }}>
       <Header />
       <Hero />
-      {zones.map((zone, i) => (
-        <ZoneSection
-          key={zone.id}
-          zone={zone}
-          founders={founders.slice(i * 10, i * 10 + 10)}
-          isFirst={i === 0}
-        />
-      ))}
+      {zones.map((zone, i) => {
+        const zoneFounders = founders.slice(i * 10, i * 10 + 10);
+
+        if (zoneFounders.length === 0) return null;
+
+        return (
+          <ZoneSection
+            key={zone.id}
+            zone={zone}
+            founders={zoneFounders}
+            isFirst={i === 0}
+          />
+        );
+      })}
       <Footer />
     </div>
   );

@@ -8,6 +8,8 @@ export default function FounderCard({ founder }: { founder: Founder }) {
   const [visible, setVisible] = useState(false);
   const [hovered, setHovered] = useState(false);
 
+  const isPlaceholder = founder.name === "COMING_SOON_PLACEHOLDER";
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -46,19 +48,29 @@ export default function FounderCard({ founder }: { founder: Founder }) {
           overflow: "hidden",
           transform: hovered ? "translateY(-4px)" : "translateY(0)",
           transition: "transform 200ms ease",
+          opacity: isPlaceholder ? 0.8 : 1,
+          display: isPlaceholder ? "flex" : "block",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
-        {founder.image ? (
+        {isPlaceholder ? (
+          <span
+            style={{
+              color: "rgba(255,255,255,0.9)",
+              fontSize: "14px",
+              fontWeight: 500,
+            }}
+          >
+            Coming soon
+          </span>
+        ) : founder.image ? (
           founder.website ? (
             <a
               href={founder.website}
               target="_blank"
               rel="noopener noreferrer"
-              style={{
-                width: "100%",
-                height: "100%",
-                display: "block",
-              }}
+              style={{ width: "100%", height: "100%", display: "block" }}
             >
               <img
                 src={founder.image}
@@ -105,46 +117,50 @@ export default function FounderCard({ founder }: { founder: Founder }) {
         )}
       </div>
 
-      <p
-        style={{
-          fontSize: "13px",
-          fontWeight: 600,
-          color: "#ffffff",
-          textShadow: "0 1px 4px rgba(0,0,0,0.4)",
-          textAlign: "center",
-          marginTop: "10px",
-          lineHeight: 1.3,
-        }}
-      >
-        {founder.name}
-      </p>
+      {!isPlaceholder && (
+        <>
+          <p
+            style={{
+              fontSize: "13px",
+              fontWeight: 600,
+              color: "#ffffff",
+              textShadow: "0 1px 4px rgba(0,0,0,0.4)",
+              textAlign: "center",
+              marginTop: "10px",
+              lineHeight: 1.3,
+            }}
+          >
+            {founder.name}
+          </p>
 
-      <p
-        style={{
-          fontSize: "11px",
-          color: "rgba(255,255,255,0.75)",
-          textShadow: "0 1px 3px rgba(0,0,0,0.4)",
-          textAlign: "center",
-          marginTop: "3px",
-        }}
-      >
-        {founder.org}
-      </p>
+          <p
+            style={{
+              fontSize: "11px",
+              color: "rgba(255,255,255,0.75)",
+              textShadow: "0 1px 3px rgba(0,0,0,0.4)",
+              textAlign: "center",
+              marginTop: "3px",
+            }}
+          >
+            {founder.org}
+          </p>
 
-      {founder.bio && (
-        <p
-          style={{
-            fontSize: "10px",
-            color: "rgba(255,255,255,0.65)",
-            textShadow: "0 1px 3px rgba(0,0,0,0.3)",
-            lineHeight: 1.65,
-            textAlign: "center",
-            marginTop: "8px",
-            marginBottom: "32px",
-          }}
-        >
-          {founder.bio}
-        </p>
+          {founder.bio && (
+            <p
+              style={{
+                fontSize: "10px",
+                color: "rgba(255,255,255,0.65)",
+                textShadow: "0 1px 3px rgba(0,0,0,0.3)",
+                lineHeight: 1.65,
+                textAlign: "center",
+                marginTop: "8px",
+                marginBottom: "32px",
+              }}
+            >
+              {founder.bio}
+            </p>
+          )}
+        </>
       )}
     </div>
   );

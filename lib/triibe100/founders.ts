@@ -110,7 +110,8 @@ const restOverrides: Partial<Founder>[] = [
     org: "",
     bio: "Founder - ASEAN Youth Advocates Network",
     image: "/images/triibe100/Mirus Ponon.png",
-    website: "https://wps.asean.org/organization/asean-youth-advocates-network/",
+    website:
+      "https://wps.asean.org/organization/asean-youth-advocates-network/",
   },
   {
     name: "Mathias Charles Yabe",
@@ -245,15 +246,21 @@ const restOverrides: Partial<Founder>[] = [
     image: "/images/triibe100/AlexiaHilbertidou.jpg",
     website: "https://www.girlboss.nz/",
   },
+
+  {
+    name: "COMING_SOON_PLACEHOLDER",
+    org: "",
+    bio: "",
+  },
 ];
 
-const rest: Founder[] = Array.from({ length: 90 }, (_, i) => ({
+const rest: Founder[] = restOverrides.map((override, i) => ({
   id: i + 11,
   name: "Name",
   org: "Non Profit",
   bio: "Coming soon.",
   website: "",
-  ...restOverrides[i],
+  ...override,
 }));
 
 export const founders: Founder[] = [...firstTen, ...rest];
