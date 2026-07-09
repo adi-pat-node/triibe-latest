@@ -10,7 +10,7 @@ import Script from "next/script";
 const infoCards = [
   {
     description:
-      "The TRIIBE Index is the dataset helping us identify gaps with data driven precision, built by those in the nonprofit sector, across all ages, roles, and stages.",
+      "The TRIIBE Index identifies funding gaps with data-driven precision, built by those across all roles and stages.",
     buttonText: "Take the survey",
     buttonLink: "#survey",
   },

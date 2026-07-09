@@ -204,7 +204,7 @@ function SectionHeader({
 const ctaCards = [
   {
     title: "Join a cohort",
-    body: "Are you a next-gen nonprofit founder? Apply to become a TRIIBE Fellow.",
+    body: "Are you a nonprofit founder? Apply to become a TRIIBE Fellow.",
     buttonText: "Apply",
     href: "https://www.triibe.org/apply",
     external: true,

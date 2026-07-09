@@ -182,8 +182,7 @@ const EventsPage = () => {
               />
 
               <p className="text-[#002c19]/80 text-lg mb-8 leading-relaxed mt-4 font-normal">
-                Intergenerational talks with next-gen nonprofit founders
-                alongside peers over 30
+                Intergenerational talks featuring next-gen voices
               </p>
 
               <div className="flex w-full items-center justify-start gap-4">
@@ -220,7 +219,7 @@ const EventsPage = () => {
           </div>
 
           <div className="mt-12 flex justify-center">
-            <div className="relative w-full max-w-xl aspect-video rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative w-full max-w-2xl aspect-video rounded-2xl overflow-hidden shadow-2xl">
               <iframe
                 src="https://www.youtube.com/embed/LFz4qnhMj74?autoplay=1&mute=1&rel=0"
                 title="Danielle Guindo Brings Young Leaders Into a Read Alliance"

@@ -13,7 +13,7 @@ export default function CTASection() {
               Join a cohort
             </h3>
             <p className="font-normal text-[#D1D5DC] text-base leading-relaxed text-center">
-              Are you a next-gen nonprofit founder? Apply to become a TRIIBE
+              Are you a nonprofit founder? Apply to become a TRIIBE
               Fellow.
             </p>
             <a

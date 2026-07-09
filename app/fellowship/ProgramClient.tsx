@@ -228,7 +228,7 @@ const ProgramPage = () => {
         <div className="max-w-260 mx-auto">
           <div className="max-w-5xl mx-auto">
             <p className="font-bold text-[#002c19] text-4xl md:text-[40px]  leading-tight mb-12">
-              Bringing startup dynamics to the nonprofit sector
+              Bringing startup dynamics to nonprofits
             </p>
           </div>
 

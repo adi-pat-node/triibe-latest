@@ -192,6 +192,12 @@ const partneredWithLogos = [
     url: "https://logictry.com/",
     className: "w-80 h-[100px] object-contain",
   },
+  {
+    src: "/images/home/BronsterLLP.png",
+    alt: "Partnered with organization 3",
+    url: "https://www.bronsterllp.com/",
+    className: "w-80 h-[100px] object-contain",
+  },
   /* {
     src: "/images/home/unitedyouthcouncil.png",
     alt: "Partnered with organization 3",
