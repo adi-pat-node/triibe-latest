@@ -675,11 +675,6 @@ export const honoraryMembers: HonoraryMember[] = [
     linkedIn: "https://www.linkedin.com/in/chiragspeaks/",
   },
   {
-    name: "Victoria Gothard",
-    imagePath: "/images/team/victoria-gothard.jpg",
-    linkedIn: "https://www.linkedin.com/in/victoria-gothard/",
-  },
-  {
     name: "Rowana Miller",
     imagePath: "/images/team/rowana-miller.jpg",
     linkedIn: "https://www.linkedin.com/in/rowana-miller-7506bb179/",

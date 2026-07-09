@@ -659,23 +659,20 @@ const SummitPage = () => {
 
             <p className="text-[#002c19] text-base leading-relaxed">
               Friday's VIP Gala is a 300-guest dinner featuring Michelin-starred
-              celebrity sushi chefs performing two live tuna carvings, a
-              keynote, and a live auction.
+              celebrity sushi chefs performing two live tuna carvings, opening
+              remarks, a keynote, and live auction.
               <br />
               <br />
               Saturday's Forum for 500 is a full day featuring seven TRIIBE
-              Talks pairing our Fellows with peers over 30, a supercar street
-              takeover, and a fashion show.
+              Talks, a supercar street takeover, and a fashion show.
               <br />
               <br />
-              Sunday’s cohort-only workshop pairs our founders with guest
-              artists and musicians for media training with Alethos, followed by
-              a Michelin-starred lunch to close the Summit.
+              Sunday’s cohort-only workshop pairs our founders with artists and
+              musicians for media training with Alethos.
               <br />
               <br />
-              Documentaries on each nonprofit and the TRIIBE Anthem music video,
-              recorded in TRIIBE fashion by five musicians over 30 and five
-              under 30, release in November two weeks before Giving Tuesday.
+              Documentaries on each nonprofit and the summit as a whole release
+              in November two weeks before Giving Tuesday.
             </p>
           </div>
 

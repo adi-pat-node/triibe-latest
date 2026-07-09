@@ -39,7 +39,7 @@ export default function Hero() {
             lineHeight: 1.6,
           }}
         >
-          The definitive global list of nonprofit founders under 30 to know
+          The global list of nonprofit founders under 30 to know
         </p>
       </div>
     </section>
