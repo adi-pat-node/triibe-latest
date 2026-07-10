@@ -1,9 +1,5 @@
 import {
-  Megaphone,
-  CalendarDays,
-  Share2,
   Globe,
-  FlaskConical,
   Handshake,
   Monitor,
   Palette,
@@ -477,7 +473,7 @@ export const locations: LocationEntry[] = [
 ];
 
 export const departments: Department[] = [
-  {
+  /* {
     name: "Media",
     Icon: Megaphone,
     members: [
@@ -493,8 +489,8 @@ export const departments: Department[] = [
         linkedIn: "https://www.linkedin.com/in/grace-sengul-a74a00329/",
       },
     ],
-  },
-  {
+  }, */
+ /*  {
     name: "Events",
     Icon: CalendarDays,
     members: [
@@ -520,8 +516,8 @@ export const departments: Department[] = [
         linkedIn: "https://www.linkedin.com/in/zacharyanglemyer/",
       },
     ],
-  },
-  {
+  }, */
+  /* {
     name: "Outreach",
     Icon: Share2,
     members: [
@@ -542,11 +538,22 @@ export const departments: Department[] = [
         linkedIn: "https://www.linkedin.com/in/ryanmillerhq/",
       },
     ],
-  },
+  }, */
   {
     name: "Global Relations",
     Icon: Globe,
     members: [
+      {
+        name: "Parker Johnson",
+        imagePath: "/images/team/parker-johnson.jpg",
+        linkedIn: "https://www.linkedin.com/in/zachary-parker-johnson/",
+        isHead: true,
+      },
+      {
+        name: "Everett Mader",
+        imagePath: "/images/team/everett-mader.jfif",
+        linkedIn: "https://www.linkedin.com/in/everettmader/",
+      },
       {
         name: "Quinn Hoeven",
         imagePath: "/images/team/quinn-hoeven.jpg",
@@ -554,10 +561,20 @@ export const departments: Department[] = [
         isHead: true,
       },
       {
+        name: "Zachary Anglemyer",
+        imagePath: "/images/team/zachary-anglemyer.jfif",
+        linkedIn: "https://www.linkedin.com/in/zacharyanglemyer/",
+      },
+      {
+        name: "Ryan Miller",
+        imagePath: "/images/team/ryan-miller.jpg",
+        linkedIn: "https://www.linkedin.com/in/ryanmillerhq/",
+      },
+      /* {
         name: "Shradha Adhikari",
         imagePath: "/images/team/shradha-adhikari.jpg",
         linkedIn: "https://www.linkedin.com/in/shradhadhikari/",
-      },
+      }, */
       /* hidden:
       {
         name: "Jade Kashemsant",
@@ -579,7 +596,7 @@ export const departments: Department[] = [
       */
     ],
   },
-  {
+  /* {
     name: "Research",
     Icon: FlaskConical,
     members: [
@@ -600,7 +617,7 @@ export const departments: Department[] = [
         linkedIn: "https://www.linkedin.com/in/ridakarim/",
       },
     ],
-  },
+  }, */
   {
     name: "Partnerships",
     Icon: Handshake,
@@ -620,6 +637,16 @@ export const departments: Department[] = [
         name: "Imane Abdel Jelil",
         imagePath: "/images/team/imane-abdel-jelil.jpg",
         linkedIn: "https://www.linkedin.com/in/imane-abdel-jelil/",
+      },
+      {
+        name: "Rida Karim",
+        imagePath: "/images/team/rida-karim.jpg",
+        linkedIn: "https://www.linkedin.com/in/ridakarim/",
+      },
+      {
+        name: "Sathvik Kunigal",
+        imagePath: "/images/team/SathvikKunigal.jpg",
+        linkedIn: "https://www.linkedin.com/in/sathvik-kunigal-50ab16232/",
       },
     ],
   },
@@ -645,7 +672,7 @@ export const departments: Department[] = [
     ],
   },
   {
-    name: "Design",
+    name: "Studio",
     Icon: Palette,
     members: [
       {
@@ -655,6 +682,29 @@ export const departments: Department[] = [
         isHead: true,
       },
       {
+        name: "Grace Sengul",
+        imagePath: "/images/team/grace-sengul.jpg",
+        linkedIn: "https://www.linkedin.com/in/grace-sengul-a74a00329/",
+        isHead: true,
+      },
+      {
+        name: "Nancy Thadhani",
+        imagePath: "/images/team/nancy-thadhani.jpg",
+        linkedIn: "https://www.linkedin.com/in/nancy-thadhani-48501730a/",
+        isHead: true,
+      },
+      {
+        name: "Keshav Gautam",
+        imagePath: "/images/team/KeshavGautam.png",
+        linkedIn: "https://www.linkedin.com/in/keshav-gautam918/",
+        isHead: true,
+      },
+      {
+        name: "Riya Bose",
+        imagePath: "/images/team/riya-bose.jfif",
+        linkedIn: "https://www.linkedin.com/in/riya-bose-781699273/",
+      },
+      /* {
         name: "Angela Goldberg",
         imagePath: "/images/team/angela-goldberg.jpg",
         linkedIn: "https://www.linkedin.com/in/angela-goldberg/",
@@ -663,7 +713,7 @@ export const departments: Department[] = [
         name: "Fionnuala Eastwood",
         imagePath: "/images/team/fionnuala-eastwood.jpg",
         linkedIn: "https://www.linkedin.com/in/fionnuala-eastwood/",
-      },
+      }, */
     ],
   },
 ];

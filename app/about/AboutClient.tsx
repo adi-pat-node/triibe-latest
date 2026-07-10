@@ -722,7 +722,7 @@ export default function AboutPage() {
           <FadeUp delay={0}>
             <SectionHeader
               title="Departments"
-              description="Eight departments, each led by a head and supported by a growing team of contributors."
+              description="Four departments, each led by a head and supported by a growing team of contributors."
             />
           </FadeUp>
           <div className="space-y-4">
