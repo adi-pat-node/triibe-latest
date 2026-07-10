@@ -6,7 +6,7 @@ export default function CTASection() {
   return (
     <section className="py-20 px-4 md:px-25 lg:px-50 bg-[#002c19]">
       <div className="w-full max-w-[1200px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12 xl:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 xl:gap-12">
           {/* Be a Cohort */}
           <div className="bg-[#002c19] border border-white rounded-lg p-8 flex flex-col gap-6 justify-between w-full">
             <h3 className="font-semibold text-white text-2xl text-center">
@@ -25,7 +25,7 @@ export default function CTASection() {
           </div>
 
           {/* Contact Us */}
-          <div className="bg-[#002c19] border border-white rounded-lg p-8 flex flex-col gap-6 justify-between w-full">
+          {/* <div className="bg-[#002c19] border border-white rounded-lg p-8 flex flex-col gap-6 justify-between w-full">
             <h3 className="font-semibold text-white text-2xl text-center">
               Get involved
             </h3>
@@ -38,7 +38,7 @@ export default function CTASection() {
             >
               Contact us
             </a>
-          </div>
+          </div> */}
 
           {/* Give */}
           <div className="bg-[#002c19] border border-white rounded-lg p-8 flex flex-col gap-6 justify-between w-full">

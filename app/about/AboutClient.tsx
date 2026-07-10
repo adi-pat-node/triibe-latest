@@ -209,13 +209,13 @@ const ctaCards = [
     href: "https://www.triibe.org/apply",
     external: true,
   },
-  {
+  /* {
     title: "Get involved",
     body: "Partner with TRIIBE to empower next-gen founders.",
     buttonText: "Contact us",
     href: "mailto:partnerships@triibe.org",
     external: false,
-  },
+  }, */
   {
     title: "Fund our work",
     body: "Your donation helps next-gen founders take root today to advance tomorrow.",
