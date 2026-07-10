@@ -604,7 +604,7 @@ export default function TriibeGlobe() {
               >
                 {activeBranch.description}
               </p>
-              {activeBranch.hasLink ? (
+              {/* {activeBranch.hasLink ? (
                 <a
                   href={activeBranch.link}
                   target="_blank"
@@ -639,7 +639,7 @@ export default function TriibeGlobe() {
                 >
                   Coming soon
                 </span>
-              )}
+              )} */}
             </div>
           )}
         </div>
