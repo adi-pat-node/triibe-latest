@@ -55,16 +55,6 @@ const nextConfig = {
         destination: "/100",
         permanent: true,
       },
-      // {
-      //   source: "/blog",
-      //   destination: "https://blog.triibe.org",
-      //   permanent: false,
-      // },
-      // {
-      //   source: "/blog/:path*",
-      //   destination: "https://blog.triibe.org/:path*",
-      //   permanent: false,
-      // },
     ];
   },
   async rewrites() {
@@ -77,14 +67,6 @@ const nextConfig = {
         source: "/index/:path*",
         destination: "/triibeindex/:path*",
       },
-      // {
-      //   source: "/blog",
-      //   destination: "https://blog.triibe.org",
-      // },
-      // {
-      //   source: "/blog/:path*",
-      //   destination: "https://blog.triibe.org/:path*",
-      // },
     ];
   },
   images: {
