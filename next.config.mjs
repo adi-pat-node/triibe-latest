@@ -55,6 +55,16 @@ const nextConfig = {
         destination: "/100",
         permanent: true,
       },
+      // {
+      //   source: "/blog",
+      //   destination: "https://blog.triibe.org",
+      //   permanent: false,
+      // },
+      // {
+      //   source: "/blog/:path*",
+      //   destination: "https://blog.triibe.org/:path*",
+      //   permanent: false,
+      // },
     ];
   },
   async rewrites() {
@@ -67,6 +77,14 @@ const nextConfig = {
         source: "/index/:path*",
         destination: "/triibeindex/:path*",
       },
+      // {
+      //   source: "/blog",
+      //   destination: "https://blog.triibe.org",
+      // },
+      // {
+      //   source: "/blog/:path*",
+      //   destination: "https://blog.triibe.org/:path*",
+      // },
     ];
   },
   images: {
@@ -92,7 +110,7 @@ const nextConfig = {
           {
             key: "Content-Security-Policy",
             value:
-              "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://logictry.com https://www.googletagmanager.com https://www.google-analytics.com https://widgets.givebutter.com https://*.givebutter.com https://va.vercel-scripts.com https://maps.googleapis.com https://maps.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: https://www.googletagmanager.com https://www.google-analytics.com https://maps.gstatic.com https://maps.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://logictry.com https://www.googletagmanager.com https://www.google-analytics.com https://widgets.givebutter.com https://*.givebutter.com https://givebutter.com https://maps.googleapis.com https://script.google.com https://*.googleapis.com https://www.instagram.com https://*.instagram.com; frame-src 'self' https://logictry.com https://www.googletagmanager.com https://*.givebutter.com https://givebutter.com https://www.youtube.com https://luma.com https://www.google.com https://maps.google.com https://www.instagram.com https://*.instagram.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co https://*.givebutter.com https://script.google.com; ",
+              "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://logictry.com https://www.googletagmanager.com https://www.google-analytics.com https://widgets.givebutter.com https://*.givebutter.com https://va.vercel-scripts.com https://maps.googleapis.com https://maps.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: https://www.googletagmanager.com https://www.google-analytics.com https://maps.gstatic.com https://maps.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://logictry.com https://www.googletagmanager.com https://www.google-analytics.com https://widgets.givebutter.com https://*.givebutter.com https://givebutter.com https://maps.googleapis.com https://script.google.com https://*.googleapis.com https://www.instagram.com https://*.instagram.com; frame-src 'self' https://blog.triibe.org https://logictry.com https://www.googletagmanager.com https://*.givebutter.com https://givebutter.com https://www.youtube.com https://luma.com https://www.google.com https://maps.google.com https://www.instagram.com https://*.instagram.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co https://*.givebutter.com https://script.google.com; ",
           },
           {
             key: "X-Frame-Options",
