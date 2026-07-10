@@ -63,7 +63,7 @@ const IndexPage = () => {
               </p>
               <Link
                 href={card.buttonLink}
-                className="inline-flex min-w-[220px] items-center justify-center rounded-sm h-[44px] bg-[#1C5945] px-8 py-4 text-center font-semibold text-white transition-colors hover:bg-[#003d24]"
+                className="inline-flex min-w-[220px] items-center justify-center rounded-sm h-[44px] bg-[#002c19] px-8 py-4 text-center font-semibold text-white transition-colors hover:bg-[#003d24]"
               >
                 {card.buttonText}
               </Link>
