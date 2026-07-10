@@ -24,7 +24,7 @@ export default function Hero() {
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center  px-6   max-w-225 mx-auto ">
           {/* Heading */}
-          <div className="flex flex-col items-center mt-45 md:mt-30 pb-3">
+          <div className="flex flex-col items-center mt-45 md:mt-22 pb-3">
             <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-4xl md:text-4xl lg:text-[64px] text-center tracking-tight leading-tight max-w-200">
               Uniting next-gen nonprofit
               <br />
@@ -56,7 +56,7 @@ export default function Hero() {
               Apply to Fellowship
             </Link> */}
           </div>
-          <div className="mt-6">
+          <div className="mt-5">
             <Image
               src="/images/home/TRIIBEHeroWhite.svg"
               alt="TRIIBE"

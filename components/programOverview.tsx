@@ -73,7 +73,16 @@ export default function ProgramOverviewTest() {
               </div>
             </div>
 
-            <div className="mt-8 md:mt-12 text-center">
+            <div className="flex justify-center mt-10">
+              <a
+                href="/donate"
+                className="w-[550px] rounded-xl bg-white py-5 text-center text-[#002c19] text-2xl font-semibold hover:bg-gray-100 transition"
+              >
+                Donate
+              </a>
+            </div>
+
+            <div className="mt-8 md:mt-10 text-center">
               <p className="text-white/90 text-sm md:text-base font-medium">
                 Capital flows directly to innovators. We don&apos;t take a cut.
               </p>
