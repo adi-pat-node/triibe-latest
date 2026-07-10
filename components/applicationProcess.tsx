@@ -67,7 +67,7 @@ export default function ApplicationProcess() {
               <div className="flex flex-col gap-4 w-full">
                 <a
                   href="/apply"
-                  className="w-full md:w-auto px-6 py-3 bg-[#1C5945] hover:bg-[#003d24] text-white rounded-sm h-[44px] border border-[#1C5945] transition-colors text-center font-semibold text-base"
+                  className="w-full md:w-auto px-6 py-3 bg-[#002c19]  hover:bg-[#1C5945] text-white rounded-sm h-[44px] border border-[#1C5945] transition-colors text-center font-semibold text-base"
                 >
                   Begin Application
                 </a>
@@ -76,7 +76,7 @@ export default function ApplicationProcess() {
                   href="https://donate.rayzeapp.com/orgs/tIbe07j0XKkLQezHHXoz"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 bg-white text-[#002c19] border border-black rounded-sm h-[44px] hover:bg-gray-50 transition-colors font-semibold text-base w-full md:w-auto text-center cursor-pointer"
+                  className="px-6 py-3 bg-[#002c19] text-white hover:bg-[#1C5945] border border-black rounded-sm h-[44px]  transition-colors font-semibold text-base w-full md:w-auto text-center cursor-pointer"
                 >
                   Donate
                 </a>
