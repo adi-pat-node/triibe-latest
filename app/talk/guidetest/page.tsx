@@ -359,7 +359,7 @@ export default function TriibeTalkGuidePage() {
               <Link
                 href="https://drive.google.com/file/d/1ZHmC7HoREj9zBfCeLJjoFh8yYaOGnner/view"
                 target="_blank"
-                className="inline-flex items-center justify-center h-[36px] px-6 rounded-sm font-semibold text-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-all duration-300 mt-2"
+                className="inline-flex items-center justify-center h-[36px] px-6 rounded-sm font-semibold text-[12px] md:text-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-all duration-300 mt-2"
               >
                 View Example Questions (UN Global Compact)
               </Link>
