@@ -18,31 +18,31 @@ const CanadaRegionPage = () => {
 
   const boardOfDirectors = [
     {
-      name: "Jane Doe",
-      role: "Regional Chair",
-      imagePath: "/team/jane.jpg",
-      linkedIn: "#",
+      name: "Kyle Matthys",
+      role: "Founder & CEO",
+      imagePath: "/images/team/kyle-matthys.jpg",
+      linkedIn: "https://www.linkedin.com/in/kylematthys/",
     },
     {
-      name: "John Smith",
-      role: "Treasurer",
-      imagePath: "/team/john.jpg",
-      linkedIn: "#",
+      name: "Kyle Matthys",
+      role: "Founder & CEO",
+      imagePath: "/images/team/kyle-matthys.jpg",
+      linkedIn: "https://www.linkedin.com/in/kylematthys/",
     },
   ];
 
   const advisoryBoard = [
     {
-      name: "Dr. Aris Vance",
-      role: "Sustainability Advisor",
-      imagePath: "/team/aris.jpg",
-      linkedIn: "#",
+      name: "Kyle Matthys",
+      role: "Founder & CEO",
+      imagePath: "/images/team/kyle-matthys.jpg",
+      linkedIn: "https://www.linkedin.com/in/kylematthys/",
     },
     {
-      name: "Sarah Jenkins",
-      role: "Development Consultant",
-      imagePath: "/team/sarah.jpg",
-      linkedIn: "#",
+      name: "Kyle Matthys",
+      role: "Founder & CEO",
+      imagePath: "/images/team/kyle-matthys.jpg",
+      linkedIn: "https://www.linkedin.com/in/kylematthys/",
     },
   ];
 
@@ -83,13 +83,10 @@ const CanadaRegionPage = () => {
 
       <section className="py-12 px-4 md:px-[200px]">
         <div className="max-w-[1200px] mx-auto">
-          <div className="flex items-center gap-3 mb-16">
-            <Users className="text-[#002c19]" />
-            <h2 className="text-2xl font-bold">Canada Cohorts</h2>
-          </div>
           <h2 className="text-2xl font-bold border-b border-[#002c19]/10 pb-2 mb-8">
             Regional Board of Directors
           </h2>
+
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
             {boardOfDirectors.map((member, index) => (
               <PersonCard key={index} person={member} photoSize={80} />
