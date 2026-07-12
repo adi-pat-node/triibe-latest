@@ -195,13 +195,13 @@ const EventsPage = () => {
                   TRIIBE Talk guide
                 </a>
 
-                <a
+                {/* <a
                   href="/talk/speakerbrieftest"
                   rel="noopener noreferrer"
                   className=" px-4 py-2 bg-[#002c19] text-white hover:bg-[#1C5945]  rounded-sm h-[44px] transition-colors font-medium inline-flex items-center cursor-pointer"
                 >
                   Speaker Brief
-                </a>
+                </a> */}
 
                 <a
                   href="/talk/host"
