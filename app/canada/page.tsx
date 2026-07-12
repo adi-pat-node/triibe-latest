@@ -108,9 +108,9 @@ const CanadaRegionPage = () => {
         </div>
       </section>
 
-      <section className="py-12 px-4 md:px-[200px] border-t border-gray-100">
+      <section className="py-12 px-4 md:px-[200px] ">
         <div className="max-w-[1200px] mx-auto">
-          <div className="flex items-center gap-3 mb-8">
+          <div className="flex items-center gap-3 mb-8 border-b border-[#002c19]/10 pb-2">
             <Newspaper className="text-[#002c19]" />
             <h2 className="text-2xl font-bold">Recent News</h2>
           </div>
@@ -130,7 +130,7 @@ const CanadaRegionPage = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 md:px-[200px] border-t border-[#002c19]/10 text-center">
+      <section className="py-16 px-4 md:px-[200px]  text-center">
         <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.01]">
           <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-2xl md:text-3xl font-medium text-[#002c19] text-left">
