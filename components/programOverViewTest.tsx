@@ -50,7 +50,7 @@ export default function ProgramOverviewTest() {
             <h2 className="text-4xl md:text-6xl font-bold mb-6 flex flex-wrap items-center justify-center gap-4">
               So we built a
               <Image
-                src="/images/home/TRIIBEHeroWhite.svg"
+                src="/images/TRIIBELOGOS/TRIIBE NAME WHITE.png"
                 alt="TRIIBE"
                 width={180}
                 height={60}

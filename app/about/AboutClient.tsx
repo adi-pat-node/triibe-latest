@@ -280,14 +280,14 @@ export default function AboutPage() {
                 Everyone you see below is building
               </span>
               <img
-                src="/images/triibe-logo-black.png"
+                src="/images/TRIIBELOGOS/TRIIBE NAME.png"
                 alt="TRIIBE"
                 style={{
                   height: 48,
                   width: "auto",
                   display: "block",
                   marginTop: 36,
-                  filter: "brightness(0)",
+                  filter: "none",
                 }}
               />
             </h1>

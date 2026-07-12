@@ -58,7 +58,7 @@ export default function Hero() {
           </div>
           <div className="mt-2">
             <Image
-              src="/images/home/TRIIBEHeroWhite.svg"
+              src="/images/TRIIBELOGOS/TRIIBE NAME WHITE.png"
               alt="TRIIBE"
               width={320}
               height={40}

@@ -15,11 +15,11 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-2xl mx-auto px-6">
         <img
-          src="/TRIIBEI00-logo.png"
+          src="/images/TRIIBELOGOS/TRIIBE I00 LOGO.png"
           alt="TRIIBE I00"
           style={{
             width: "auto",
-            height: "120px",
+            height: "70px",
             objectFit: "contain",
             margin: "0 auto",
             display: "block",

@@ -173,7 +173,7 @@ const EventsPage = () => {
             {/* Left */}
             <div>
               <Image
-                src="https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/690ec0097fad8b2d6aa19eec_Screenshot_2025-11-07_at_10.58.29_PM-removebg-preview.png"
+                src="/images/TRIIBELOGOS/TRIIBETALKLOGO.png"
                 alt="TRIIBE TALK"
                 width={600}
                 height={150}

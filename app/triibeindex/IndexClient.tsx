@@ -39,7 +39,7 @@ const IndexPage = () => {
       <section className="pt-40 pb-20 px-4 md:px-12 lg:px-24 bg-white">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <img
-            src="/images/media/TRIIBEIndex.png"
+            src="/images/TRIIBELOGOS/TRIIBE INDEX LOGO.png"
             alt="TRIIBE Index"
             className="w-auto h-[64px] object-contain mx-auto block mb-5"
           />
