@@ -15,7 +15,7 @@ export default function TriibeBrandBookPage() {
 
       <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50">
         <div className="max-w-300 mx-auto text-[#002c19] space-y-16">
-          <div className="text-center mb-16  pb-8">
+          <div className="text-center mb-16  pb-4">
             <h1 className="text-4xl md:text-6xl font-bold">Brand Book</h1>
           </div>
 
