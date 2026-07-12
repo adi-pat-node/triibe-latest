@@ -395,6 +395,13 @@ export const locations: LocationEntry[] = [
         linkedIn: "https://www.linkedin.com/in/sanjoy-roychoudhury-2535a5325/",
         title: "International Energy & Commodities Strategist",
       },
+
+      {
+        name: "Indranil Dutta",
+        imagePath: "/images/team/IndranilDutta.jpeg",
+        linkedIn: "https://www.linkedin.com/in/indrdta/",
+        title: "Chief Executive Officer - Leveraging Human Capital",
+      },
     ],
     advisoryBoardForming: false,
   },
