@@ -5,7 +5,6 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 
 const CanadaRegionPage = () => {
-  // Dummy data for cohorts
   const cohorts = [
     { name: "Toronto Impact Cohort 2025", members: 12, status: "Active" },
     {
@@ -15,7 +14,6 @@ const CanadaRegionPage = () => {
     },
   ];
 
-  // Dummy data for boards
   const boardOfDirectors = [
     { name: "Jane Doe", role: "Regional Chair" },
     { name: "John Smith", role: "Treasurer" },
@@ -26,7 +24,6 @@ const CanadaRegionPage = () => {
     { name: "Sarah Jenkins", role: "Community Development Consultant" },
   ];
 
-  // Dummy data for recent news
   const news = [
     {
       title: "TRIIBE Expands to Montreal",
@@ -46,7 +43,6 @@ const CanadaRegionPage = () => {
     <main className="bg-white text-[#002c19]">
       <Header />
 
-      {/* Header Title Section */}
       <section className="pt-32 pb-8 px-4 md:px-[200px]">
         <div className="max-w-[1200px] mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-[#002c19]">
@@ -55,7 +51,6 @@ const CanadaRegionPage = () => {
         </div>
       </section>
 
-      {/* Cohorts Section */}
       <section className="py-12 px-4 md:px-[200px] bg-[#F8FAFC]">
         <div className="max-w-[1200px] mx-auto">
           <div className="flex items-center gap-3 mb-8">
@@ -81,7 +76,6 @@ const CanadaRegionPage = () => {
         </div>
       </section>
 
-      {/* Regional Board of Directors Section */}
       <section className="py-12 px-4 md:px-[200px]">
         <div className="max-w-[1200px] mx-auto">
           <h2 className="text-2xl font-bold border-b border-[#002c19]/10 pb-2 mb-8">
@@ -101,7 +95,6 @@ const CanadaRegionPage = () => {
         </div>
       </section>
 
-      {/* Regional Advisory Board Section */}
       <section className="py-12 px-4 md:px-[200px]">
         <div className="max-w-[1200px] mx-auto">
           <h2 className="text-2xl font-bold border-b border-[#002c19]/10 pb-2 mb-8">
@@ -121,7 +114,6 @@ const CanadaRegionPage = () => {
         </div>
       </section>
 
-      {/* Recent News Section */}
       <section className="py-12 px-4 md:px-[200px] border-t border-gray-100">
         <div className="max-w-[1200px] mx-auto">
           <div className="flex items-center gap-3 mb-8">
@@ -144,7 +136,6 @@ const CanadaRegionPage = () => {
         </div>
       </section>
 
-      {/* Bottom Full Bubble Navigation Banner */}
       <section className="py-16 px-4 md:px-[200px] border-t border-[#002c19]/10 text-center">
         <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.01]">
           <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
