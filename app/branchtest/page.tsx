@@ -55,7 +55,7 @@ export default function TriibeBranchPlaybookPage() {
                 </p>
                 <div className="mt-6">
                   <a
-                    href="https://app.signnow.com/webapp/document/df0606c6a4ab4de18d28bafbc1df9b50d561ab73?dispatched=true&mobileweb=app_or_mobileweb_choice&redirect_uri=https%253A%252F%252Fapp.signnow.com%252Fhtml%252Fthanks-for-signing%253Fdocument_id%253Ddf0606c6a4ab4de18d28bafbc1df9b50d561ab73%2526access_token%253D265a4fe82cdbf872dbc23f6ae92edd25ca7ef2a9f594c5ece91eb03211420252&sign=1&source=link"
+                    href="https://app.signnow.com/webapp/document/f8a5bd2ee23d44afacafa861c3c3e1511a533dcb?dispatched=true&mobileweb=app_or_mobileweb_choice&redirect_uri=https%253A%252F%252Fapp.signnow.com%252Fhtml%252Fthanks-for-signing%253Fdocument_id%253Df8a5bd2ee23d44afacafa861c3c3e1511a533dcb%2526access_token%253D5cfb561b51044489695bd11ab22d66b07b7b2b94e3e7c3ac8e80333b3ea48d4b&sign=1&source=link"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center h-[36px] px-6 rounded-sm font-semibold text-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-all duration-300 hover:scale-105"
