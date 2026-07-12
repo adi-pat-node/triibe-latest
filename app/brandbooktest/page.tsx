@@ -14,147 +14,14 @@ export default function TriibeBrandBookPage() {
       <Header />
 
       <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50">
-        <div className="max-w-300 mx-auto text-[#002c19] space-y-12">
-          <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-            01. Brand Story
-          </h2>
-
-          <h2 className="text-4xl md:text-6xl font-bold mb-4 text-center">
-            All seed, no soil
-          </h2>
-          <h3 className="text-xl md:text-2xl font-semibold mb-16 text-center">
-            The nonprofit sector has no startup engine because the incentives
-            that build one don’t exist
-          </h3>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="border border-[#002c19] p-10 flex flex-col items-center text-center rounded-lg">
-              <h4 className="text-2xl font-bold mb-6">Returns</h4>
-              <p className="text-[#002c19]/80 font-medium">
-                A funder can&apos;t take a share of the profit
-              </p>
-            </div>
-
-            <div className="border border-[#002c19] p-10 flex flex-col items-center text-center rounded-lg">
-              <h4 className="text-2xl font-bold mb-6">Commission</h4>
-              <p className="text-[#002c19]/80 font-medium">
-                A fundraiser can&apos;t earn a share of the raise
-              </p>
-            </div>
-
-            <div className="border border-[#002c19] p-10 flex flex-col items-center text-center rounded-lg">
-              <h4 className="text-2xl font-bold mb-6">Equity</h4>
-              <p className="text-[#002c19]/80 font-medium">
-                A funder can&apos;t own a share of the business
-              </p>
-            </div>
+        <div className="max-w-300 mx-auto text-[#002c19] space-y-16">
+          <div className="text-center mb-16  pb-8">
+            <h1 className="text-4xl md:text-6xl font-bold">Brand Book</h1>
           </div>
-          <div className="bg-[#002c19] text-white p-12 rounded-xl mt-16 w-full">
-            <div className="max-w-[1200px] mx-auto flex flex-col ">
-              <h2 className="text-4xl md:text-6xl font-bold mb-8 md:mb-12 flex flex-wrap items-center justify-center gap-4">
-                So we built a
-                <Image
-                  src="/images/home/TRIIBEHeroWhite.svg"
-                  alt="TRIIBE"
-                  width={180}
-                  height={60}
-                  className="inline-block object-contain"
-                />
-              </h2>
-
-              <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 w-full max-w-5xl mx-auto">
-                <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.2] text-center md:text-left max-w-2xl">
-                  Channeling capital to the nonprofit startup ecosystem
-                </h3>
-
-                <div className="flex-shrink-0 flex justify-center w-48 md:w-64 -ml-8 overflow-visible">
-                  <Image
-                    src="/images/home/heroLogo.png"
-                    alt="TRIIBE Tree Logo"
-                    width={300}
-                    height={300}
-                    className="w-full h-auto object-contain scale-125 md:scale-150"
-                  />
-                </div>
-              </div>
-
-              <div className="mt-8 md:mt-12 text-center">
-                <p className="text-white/90 text-sm md:text-base font-medium">
-                  Capital flows directly to innovators. We don&apos;t take a
-                  cut.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <section className=" bg-white w-full">
-            <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
-              <h2 className="text-4xl md:text-6xl font-bold mb-4">
-                Our Infrastructure
-              </h2>
-              <h3 className="text-xl md:text-2xl font-semibold mb-16 max-w-3xl mx-auto">
-                Making next-gen nonprofit founders fundable
-              </h3>
-
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="border border-[#002c19] p-8 md:p-10 flex flex-col h-full rounded-lg">
-                  <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center">
-                    Mentorship
-                  </h4>
-                  <p className="text-[#002c19]/90 mb-10 flex-grow text-center font-medium">
-                    Multi-year fellowship, tools to grow: strategy, legal,
-                    software
-                  </p>
-                  {/* <div className="w-full flex justify-center">
-                            <a
-                              href="/fellowship#applyfellowship"
-                              className="flex flex-col items-center justify-center w-[200px] bg-[#002c19] text-white rounded-sm h-[44px] font-bold hover:bg-green-900 transition-colors leading-tight"
-                            >
-                              <span>TRIIBE Fellowship</span>
-                            </a>
-                          </div> */}
-                </div>
-
-                <div className="border border-[#002c19] p-8 md:p-10 flex flex-col h-full rounded-lg">
-                  <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center">
-                    Visibility
-                  </h4>
-                  <p className="text-[#002c19]/90 mb-10 flex-grow text-center font-medium">
-                    Digital reach, Summits, and TRIIBE Talks in front of funders
-                  </p>
-                  {/* <div className="w-full flex justify-center">
-                            <Link
-                              href="/talk"
-                              className="flex flex-col items-center justify-center w-[200px] bg-[#002c19] text-white rounded-sm h-[44px] font-bold hover:bg-green-900 transition-colors leading-tight"
-                            >
-                              <span>TRIIBE Talks</span>
-                            </Link>
-                          </div> */}
-                </div>
-
-                <div className="border border-[#002c19] p-8 md:p-10 flex flex-col h-full rounded-lg">
-                  <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center">
-                    Credibility
-                  </h4>
-                  <p className="text-[#002c19]/90 mb-10 flex-grow text-center font-medium">
-                    Vetted global list of nonprofit founders under 30 to know
-                  </p>
-                  {/* <div className="w-full flex justify-center">
-                            <Link
-                              href="/100"
-                              className="flex items-center justify-center w-[200px] bg-[#002c19] text-white rounded-sm h-[44px] font-bold hover:bg-green-900 transition-colors leading-tight"
-                            >
-                              TRIIBE I00
-                            </Link>
-                          </div> */}
-                </div>
-              </div>
-            </div>
-          </section>
 
           <div className="space-y-8">
             <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-              02. Tone of Voice
+              01. Tone of Voice
             </h2>
             <p className="text-lg leading-relaxed opacity-90 max-w-3xl">
               We uphold an authentic tone, based on our lived experiences,
@@ -183,7 +50,7 @@ export default function TriibeBrandBookPage() {
 
           <div className="space-y-8">
             <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-              03. The Logo
+              02. The Logo
             </h2>
             <div className="grid md:grid-cols-2 gap-12">
               <div className="space-y-4">
@@ -194,7 +61,7 @@ export default function TriibeBrandBookPage() {
                   &ldquo;I&rdquo;s represent the <strong>Innovators</strong> and{" "}
                   <strong>Investors</strong> we unite.
                 </p>
-                <ul className="list-disc pl-5 space-y-2 opacity-90">
+                <ul className="list-disc pl-5 space-y-2 opacity-90 mb-8">
                   <li>
                     <strong>The Wordmark:</strong> A bold and dynamic symbol,
                     optimized for all sizes, balancing playful and serious.
@@ -208,24 +75,63 @@ export default function TriibeBrandBookPage() {
                     around the logo. Never obscure it with surrounding objects.
                   </li>
                 </ul>
+
+                <div className="bg-red-50 p-6 rounded-xl border border-red-100 mt-6">
+                  <h4 className="font-bold text-red-800 mb-4 text-lg">
+                    Logo Misuse (The "Don'ts")
+                  </h4>
+                  <ul className="list-disc pl-5 space-y-2 text-red-900/80">
+                    <li>
+                      <strong>Don't stretch or squash:</strong> Always scale the
+                      logo proportionately.
+                    </li>
+                    <li>
+                      <strong>Don't change the colors:</strong> Stick to the
+                      approved TRIIBE Green and White (or monochrome black).
+                    </li>
+                    <li>
+                      <strong>Don't add effects:</strong> Avoid drop shadows,
+                      gradients, or 3D effects.
+                    </li>
+                    <li>
+                      <strong>Don't crowd the logo:</strong> Respect the clear
+                      space rules.
+                    </li>
+                  </ul>
+                </div>
               </div>
 
-              <div className="space-y-4">
-                <div className="w-full h-32 bg-[#002c19] rounded-xl flex items-center justify-center border border-gray-200">
+              <div className="flex flex-col gap-16 h-fit">
+                <div className="w-full h-40 bg-[#002c19] rounded-xl flex items-center justify-center border border-gray-200">
                   <Image
                     src="/images/home/heroLogo.png"
                     alt="TRIIBE Tree Logo"
-                    width={100}
-                    height={100}
-                    className="w-25 h-100 object-contain "
+                    width={80}
+                    height={80}
+                    className="object-contain brightness-0 invert"
                   />
                 </div>
-                <div className="w-full h-32 bg-[#002c19] text-white rounded-xl flex items-center justify-center border border-[#002c19]">
+
+                <div className="w-full h-40 bg-white rounded-xl flex items-center justify-center border border-gray-200">
                   <Image
                     src="/images/home/TRIIBEHeroWhite.svg"
                     alt="TRIIBE"
-                    width={180}
-                    height={60}
+                    width={140}
+                    height={50}
+                    className="inline-block object-contain"
+                    style={{
+                      filter:
+                        "brightness(0) saturate(100%) invert(13%) sepia(42%) saturate(5833%) hue-rotate(143deg) brightness(93%) contrast(106%)",
+                    }}
+                  />
+                </div>
+
+                <div className="w-full h-40 bg-[#002c19] rounded-xl flex items-center justify-center border border-[#002c19]">
+                  <Image
+                    src="/images/home/TRIIBEHeroWhite.svg"
+                    alt="TRIIBE"
+                    width={140}
+                    height={50}
                     className="inline-block object-contain"
                   />
                 </div>
@@ -235,14 +141,14 @@ export default function TriibeBrandBookPage() {
 
           <div className="space-y-8">
             <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-              04. Color Palette
+              03. Color Palette
             </h2>
             <p className="text-lg leading-relaxed opacity-90">
               The TRIIBE color palette is tonal, derived from our core TRIIBE
               FOREST GREEN. This primary palette should always be present, using
               secondary palettes only as complimentary accents.
             </p>
-            <div className="flex flex-wrap gap-8">
+            <div className="flex flex-wrap gap-10">
               <div className="space-y-3">
                 <div className="w-32 h-32 rounded-full bg-[#002c19] shadow-inner border border-gray-200"></div>
                 <div>
@@ -258,12 +164,23 @@ export default function TriibeBrandBookPage() {
                   <p className="text-sm opacity-70">HEX: #FFFFFF</p>
                 </div>
               </div>
+
+              <div className="space-y-3">
+                <div className="w-32 h-32 rounded-full bg-black shadow-md border border-gray-200"></div>
+                <div>
+                  <p className="font-bold">TRIIBE Black</p>
+                  <p className="text-sm opacity-70">HEX: #000000</p>
+                  <p className="text-xs italic opacity-70 mt-1 max-w-[130px] leading-tight">
+                    *Only used for monochrome designs
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
           <div className="space-y-8">
             <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-              05. Typography
+              04. Typography
             </h2>
             <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200 space-y-8">
               <div>
@@ -301,7 +218,7 @@ export default function TriibeBrandBookPage() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-                06. Imagery
+                05. Imagery
               </h2>
               <ul className="list-disc pl-5 space-y-3 opacity-90 text-lg">
                 <li>
@@ -319,7 +236,7 @@ export default function TriibeBrandBookPage() {
             </div>
             <div className="space-y-4">
               <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-                07. Layout Rules
+                06. Layout Rules
               </h2>
               <p className="text-lg leading-relaxed opacity-90">
                 <strong>Margins:</strong> The margin size should be calculated
@@ -334,19 +251,24 @@ export default function TriibeBrandBookPage() {
             </div>
           </div>
 
-          <div className="pt-12 border-t border-[#002c19]/10 flex flex-col items-center text-center space-y-6">
-            <h3 className="text-2xl font-bold">Download the Full Brand Book</h3>
-            <p className="opacity-90 max-w-lg text-lg">
-              Need the complete TRIIBE Brand Book for offline reference, team
-              members, or design partners? Download the full PDF below.
-            </p>
-            <a
-              href="/triibe-brand-book.pdf"
-              className="inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-white bg-[#002c19] rounded-sm h-[44px] hover:bg-[#1C5945] transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200"
-              download="TRIIBE_Brand_Book.pdf"
-            >
-              Download Brand Book PDF
-            </a>
+          <div className="pt-16 border-t border-[#002c19]/10 text-center space-y-8">
+            <section className="py-12 w-full">
+              <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
+                <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+                  <p className="text-2xl md:text-3xl font-medium text-[#002c19] text-left">
+                    Download the brand book
+                  </p>
+
+                  <a
+                    href="/triibe-brand-book.pdf"
+                    download="TRIIBE_Brand_Book.pdf"
+                    className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
+                  >
+                    Download Here
+                  </a>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </section>

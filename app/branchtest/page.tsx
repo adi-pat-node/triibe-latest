@@ -15,27 +15,26 @@ export default function TriibeBranchPlaybookPage() {
       <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50">
         <div className="max-w-300 mx-auto text-[#002c19] space-y-20">
           <div className="text-center border-b border-[#002c19]/10 pb-12">
-            <p className="text-sm font-bold tracking-widest uppercase mb-4 opacity-70">
-              TRIIBE Branch Playbook
-            </p>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Taking root</h1>
             <p className="text-xl md:text-2xl font-medium mb-6">
               A guide to setting up a Branch in your region.
             </p>
-            <p className="text-lg opacity-90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg opacity-90 max-w-4xl mx-auto leading-relaxed mb-10">
               If your community is ready to support philentrepreneurs, the
               TRIIBE team is here to help you establish a local branch and
-              channel capital to next-gen nonprofit founders in your region. New
-              to TRIIBE?{" "}
+              channel capital to next-gen nonprofit founders in your region.
+            </p>
+
+            <div className="w-full flex justify-center">
               <a
                 href="https://drive.google.com/file/d/1NU9zXE7_gViOPSDR2lny3zejR9GCj-uT/view"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-bold underline hover:text-[#1C5945] transition-colors"
+                className="w-full max-w-3xl flex items-center justify-center h-[54px] rounded-sm font-bold text-lg bg-[#002c19] text-white hover:bg-[#1C5945] transition-all duration-300 hover:scale-[1.02] shadow-sm"
               >
-                Read our 1-pager first.
+                New to TRIIBE? Read our 1-pager first.
               </a>
-            </p>
+            </div>
           </div>
 
           <div className="space-y-10">
@@ -43,66 +42,96 @@ export default function TriibeBranchPlaybookPage() {
               Phase 1: Taking Root
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-[#002c19]/5 p-8 rounded-2xl border border-[#002c19]/10 shadow-sm relative overflow-hidden">
+              <div className="bg-[#002c19]/5 p-8 rounded-2xl border border-[#002c19]/10 shadow-sm relative overflow-hidden flex flex-col">
                 <span className="absolute top-4 right-4 text-5xl font-bold opacity-10">
                   1
                 </span>
                 <h3 className="text-xl font-bold mb-3">
                   Sign the Volunteer Agreement
                 </h3>
-                <p className="opacity-90 leading-relaxed">
+                <p className="opacity-90 leading-relaxed flex-grow">
                   One form joins you to TRIIBE and unlocks the TRIIBE brand,
                   logo, and media.
                 </p>
+                <div className="mt-6">
+                  <a
+                    href="https://app.signnow.com/webapp/document/df0606c6a4ab4de18d28bafbc1df9b50d561ab73?dispatched=true&mobileweb=app_or_mobileweb_choice&redirect_uri=https%253A%252F%252Fapp.signnow.com%252Fhtml%252Fthanks-for-signing%253Fdocument_id%253Ddf0606c6a4ab4de18d28bafbc1df9b50d561ab73%2526access_token%253D265a4fe82cdbf872dbc23f6ae92edd25ca7ef2a9f594c5ece91eb03211420252&sign=1&source=link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center h-[36px] px-6 rounded-sm font-semibold text-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-all duration-300 hover:scale-105"
+                  >
+                    Sign Agreement
+                  </a>
+                </div>
               </div>
 
-              <div className="bg-[#002c19]/5 p-8 rounded-2xl border border-[#002c19]/10 shadow-sm relative overflow-hidden">
+              <div className="bg-[#002c19]/5 p-8 rounded-2xl border border-[#002c19]/10 shadow-sm relative overflow-hidden flex flex-col">
                 <span className="absolute top-4 right-4 text-5xl font-bold opacity-10">
                   2
                 </span>
                 <h3 className="text-xl font-bold mb-3">
                   Host your first TRIIBE Talk
                 </h3>
-                <p className="opacity-90 leading-relaxed">
+                <p className="opacity-90 leading-relaxed flex-grow">
                   An intergenerational talk, featuring next-gen voices in the
                   region. You can find the TRIIBE Talk Guide here.
                 </p>
+                <div className="mt-6">
+                  <a
+                    href="https://drive.google.com/file/d/1rALrh5bjpWnbKq2AvxeudYOpPG7kFsZ-/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center h-[36px] px-6 rounded-sm font-semibold text-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-all duration-300 hover:scale-105"
+                  >
+                    Read Talk Guide
+                  </a>
+                </div>
               </div>
 
-              <div className="bg-[#002c19]/5 p-8 rounded-2xl border border-[#002c19]/10 shadow-sm relative overflow-hidden">
+              <div className="bg-[#002c19]/5 p-8 rounded-2xl border border-[#002c19]/10 shadow-sm relative overflow-hidden flex flex-col">
                 <span className="absolute top-4 right-4 text-5xl font-bold opacity-10">
                   3
                 </span>
                 <h3 className="text-xl font-bold mb-3">Form the boards</h3>
-                <p className="opacity-90 leading-relaxed">
+                <p className="opacity-90 leading-relaxed flex-grow">
                   A regional advisory board (over 30) that opens doors and a
                   regional associate board (under 30) that serve as a pipeline
                   to the future regional voting board of directors, both capped
                   at 11 members.
                 </p>
+                {/* <div className="mt-6">
+                  <Link
+                    href="#"
+                    className="inline-flex items-center justify-center h-[36px] px-6 rounded-sm font-semibold text-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-all duration-300 hover:scale-105"
+                  >
+                    Learn More
+                  </Link>
+                </div> */}
               </div>
 
-              <div className="bg-[#002c19]/5 p-8 rounded-2xl border border-[#002c19]/10 shadow-sm relative overflow-hidden">
+              <div className="bg-[#002c19]/5 p-8 rounded-2xl border border-[#002c19]/10 shadow-sm relative overflow-hidden flex flex-col">
                 <span className="absolute top-4 right-4 text-5xl font-bold opacity-10">
                   4
                 </span>
                 <h3 className="text-xl font-bold mb-3">
                   Host the first cohort
                 </h3>
-                <p className="opacity-90 leading-relaxed">
+                <p className="opacity-90 leading-relaxed flex-grow">
                   Outreach using TRIIBE Talks and introductions to find the
                   initial cohort of 5 nonprofit founders in their early 20s to
                   support, who apply on TRIIBE&apos;s Apply Page.
                 </p>
+                <div className="mt-6">
+                  <Link
+                    href="/apply"
+                    target="_blank"
+                    className="inline-flex items-center justify-center h-[36px] px-6 rounded-sm font-semibold text-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-all duration-300 hover:scale-105"
+                  >
+                    View Apply Page
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="bg-[#002c19] text-white p-10 md:p-16 rounded-3xl text-center shadow-lg my-16">
-            <h3 className="text-2xl md:text-4xl font-bold leading-tight">
-              &ldquo;If hosting a TRIIBE Talk is a spark, founding a local
-              TRIIBE Branch is the fuel.&rdquo;
-            </h3>
           </div>
 
           <div className="space-y-10">
@@ -258,13 +287,23 @@ export default function TriibeBranchPlaybookPage() {
               </p>
             </div>
 
-            <a
-              href="/triibe-branch-playbook.pdf"
-              className="inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-white bg-[#002c19] rounded-sm h-[44px] hover:bg-[#1C5945] transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200"
-              download="TRIIBE_Branch_Playbook.pdf"
-            >
-              Download the Branch Guide
-            </a>
+            <section className="py-12 w-full">
+              <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
+                <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+                  <p className="text-2xl md:text-3xl font-medium text-[#002c19] text-left">
+                    Download the branch guide
+                  </p>
+
+                  <a
+                    href="/triibe-branch-playbook.pdf"
+                    download="TRIIBE_Branch_Playbook.pdf"
+                    className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
+                  >
+                    Download Here
+                  </a>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </section>
