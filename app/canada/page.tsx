@@ -3,6 +3,8 @@ import { Users, Newspaper } from "lucide-react";
 import Link from "next/link";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import PersonCard from "@/components/about/PersonCard";
+import Image from "next/image";
 
 const CanadaRegionPage = () => {
   const cohorts = [
@@ -15,13 +17,33 @@ const CanadaRegionPage = () => {
   ];
 
   const boardOfDirectors = [
-    { name: "Jane Doe", role: "Regional Chair" },
-    { name: "John Smith", role: "Treasurer" },
+    {
+      name: "Jane Doe",
+      role: "Regional Chair",
+      imagePath: "/team/jane.jpg",
+      linkedIn: "#",
+    },
+    {
+      name: "John Smith",
+      role: "Treasurer",
+      imagePath: "/team/john.jpg",
+      linkedIn: "#",
+    },
   ];
 
   const advisoryBoard = [
-    { name: "Dr. Aris Vance", role: "Sustainability Advisor" },
-    { name: "Sarah Jenkins", role: "Community Development Consultant" },
+    {
+      name: "Dr. Aris Vance",
+      role: "Sustainability Advisor",
+      imagePath: "/team/aris.jpg",
+      linkedIn: "#",
+    },
+    {
+      name: "Sarah Jenkins",
+      role: "Development Consultant",
+      imagePath: "/team/sarah.jpg",
+      linkedIn: "#",
+    },
   ];
 
   const news = [
@@ -44,52 +66,33 @@ const CanadaRegionPage = () => {
       <Header />
 
       <section className="pt-32 pb-8 px-4 md:px-[200px]">
-        <div className="max-w-[1200px] mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#002c19]">
-            TRIIBE Canada Branch
-          </h1>
-        </div>
-      </section>
+        <div className="max-w-[1200px] mx-auto flex items-center gap-2 md:gap-4">
+          <Image
+            src="/images/TRIIBELOGOS/TRIIBE NAME.png"
+            alt="TRIIBE"
+            width={120}
+            height={40}
+            className="w-20 sm:w-24 md:w-32 h-auto"
+          />
 
-      <section className="py-12 px-4 md:px-[200px] bg-[#F8FAFC]">
-        <div className="max-w-[1200px] mx-auto">
-          <div className="flex items-center gap-3 mb-8">
-            <Users className="text-[#002c19]" />
-            <h2 className="text-2xl font-bold">Canada Cohorts</h2>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {cohorts.map((cohort, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
-              >
-                <span className="text-[10px] font-bold uppercase tracking-widest text-[#002c19] bg-green-50 px-2 py-1 rounded">
-                  {cohort.status}
-                </span>
-                <h3 className="text-xl font-bold mt-3 mb-1">{cohort.name}</h3>
-                <p className="text-sm text-[#495565]">
-                  {cohort.members} Impact Members
-                </p>
-              </div>
-            ))}
-          </div>
+          <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold text-[#002c19] whitespace-nowrap">
+            Canada Branch
+          </h1>
         </div>
       </section>
 
       <section className="py-12 px-4 md:px-[200px]">
         <div className="max-w-[1200px] mx-auto">
+          <div className="flex items-center gap-3 mb-16">
+            <Users className="text-[#002c19]" />
+            <h2 className="text-2xl font-bold">Canada Cohorts</h2>
+          </div>
           <h2 className="text-2xl font-bold border-b border-[#002c19]/10 pb-2 mb-8">
             Regional Board of Directors
           </h2>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
             {boardOfDirectors.map((member, index) => (
-              <div
-                key={index}
-                className="bg-[#002c19]/5 p-6 rounded-xl border border-[#002c19]/10"
-              >
-                <h3 className="font-bold text-lg">{member.name}</h3>
-                <p className="text-sm opacity-80 mt-1">{member.role}</p>
-              </div>
+              <PersonCard key={index} person={member} photoSize={80} />
             ))}
           </div>
         </div>
@@ -100,15 +103,9 @@ const CanadaRegionPage = () => {
           <h2 className="text-2xl font-bold border-b border-[#002c19]/10 pb-2 mb-8">
             Regional Advisory Board
           </h2>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
             {advisoryBoard.map((member, index) => (
-              <div
-                key={index}
-                className="bg-[#002c19]/5 p-6 rounded-xl border border-[#002c19]/10"
-              >
-                <h3 className="font-bold text-lg">{member.name}</h3>
-                <p className="text-sm opacity-80 mt-1">{member.role}</p>
-              </div>
+              <PersonCard key={index} person={member} photoSize={80} />
             ))}
           </div>
         </div>
@@ -143,7 +140,7 @@ const CanadaRegionPage = () => {
               Discover other branches
             </p>
             <Link
-              href="/#globalMap"
+              href="/#triibe-globe-header"
               className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:scale-105"
             >
               Global Map

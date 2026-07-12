@@ -13,5 +13,9 @@ const TriibeGlobe = dynamic(() => import("@/components/TriibeGlobe"), {
 });
 
 export default function TriibeGlobeWrapper() {
-  return <TriibeGlobe />;
+  return (
+    <section id="triibe-globe-header">
+      <TriibeGlobe />
+    </section>
+  );
 }
