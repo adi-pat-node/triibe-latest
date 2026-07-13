@@ -145,7 +145,7 @@ export default function TriibeTalkGuidePage() {
 
               <div className="pt-2">
                 <Link
-                  href="/talk/speakerbrieftest"
+                  href="/talk/speakerbrief"
                   className="inline-flex items-center justify-center h-[36px] px-6 rounded-sm font-semibold text-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-all duration-300 mt-2"
                 >
                   View full speaker brief
