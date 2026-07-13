@@ -250,12 +250,12 @@ const HostEventPage = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-      // router.push("/talk/speakerbrieftest");
+      // router.push("/talk/speakerbrief");
     } catch (err) {
     } finally {
       setIsSubmitting(false);
       setSubmitSuccess(true);
-      router.push("/talk/speakerbrieftest");
+      router.push("/talk/speakerbrief");
     }
   };
 
