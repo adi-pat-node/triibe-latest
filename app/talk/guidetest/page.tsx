@@ -16,7 +16,7 @@ export default function TriibeTalkGuidePage() {
 
       <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50">
         <div className="max-w-300 mx-auto text-[#002c19] space-y-16">
-          <div className="text-center  pb-4 flex flex-col items-center justify-center">
+          <div className="text-center pb-4 flex flex-col items-center justify-center">
             <div className="relative w-full max-w-2xl h-32 md:h-48 mb-6 flex items-center justify-center">
               <Image
                 src="/images/TRIIBELOGOS/TRIIBETALKLOGO.png"
@@ -28,84 +28,24 @@ export default function TriibeTalkGuidePage() {
             <p className="text-xl md:text-2xl opacity-90 font-light mb-10">
               A guide to hosting a TRIIBE Talk in your community.
             </p>
-
-            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full max-w-3xl">
-              <Link
-                href="/triibe-talk-guide"
-                className="w-full sm:w-auto inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-all duration-300"
-              >
-                TRIIBE Talk Guide
-              </Link>
-              <Link
-                href="/speaker-brief"
-                className="w-full sm:w-auto inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm border-2 border-[#002c19] text-[#002c19] hover:bg-[#002c19]/5 transition-all duration-300"
-              >
-                Speaker Brief
-              </Link>
-              <Link
-                href="/host-a-talk"
-                className="w-full sm:w-auto inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-all duration-300"
-              >
-                Host a TRIIBE Talk
-              </Link>
-            </div> */}
           </div>
 
           <div className="space-y-4">
             <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-              Introduction To TRIIBE
+              TRIIBE Talk format
             </h2>
             <p className="text-lg leading-relaxed opacity-90">
-              The nonprofit sector has no startup engine because the incentives
-              that build one (returns, commission, and equity) don&apos;t exist.
-              So we built a TRIIBE, channeling capital and bringing startup
-              dynamics to nonprofits.
+              A TRIIBE Talk is a moderated, intergenerational conversation
+              featuring next-gen voices. TRIIBE Talks are designed to be
+              adaptable. They can take place in universities, community spaces,
+              offices, or public venues of any size, as long as the format
+              remains intact.
             </p>
-            <p className="text-lg leading-relaxed opacity-90">
-              Our multi-year fellowship develops fundable founders, ensuring
-              they don&apos;t burn out while transitioning from a
-              &ldquo;youth&rdquo; nonprofit to an established one.
-            </p>
-          </div>
-
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-                The TRIIBE Approach
-              </h2>
-              <ul className="list-disc pl-5 space-y-2 opacity-90 text-lg">
-                <li>
-                  TRIIBE Talks and summits are intergenerational, featuring
-                  next-gen voices.
-                </li>
-                <li>
-                  The TRIIBE Index identifies funding gaps with data-driven
-                  precision, built by those across all roles and stages.
-                </li>
-                <li>
-                  The TRIIBE 100 is the global list of nonprofit founders under
-                  30 to know.
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-4">
-              <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-                TRIIBE Talk Format
-              </h2>
-              <p className="text-lg leading-relaxed opacity-90">
-                A TRIIBE Talk is a moderated, intergenerational conversation
-                featuring next-gen voices. TRIIBE Talks are designed to be
-                adaptable. They can take place in universities, community
-                spaces, offices, or public venues of any size, as long as the
-                format remains intact.
-              </p>
-            </div>
           </div>
 
           <div className="space-y-4">
             <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-              TRIIBE Talk Requirements
+              TRIIBE Talk requirements
             </h2>
             <p className="text-lg leading-relaxed opacity-90">
               To maintain consistency and protect the integrity of the TRIIBE
@@ -125,14 +65,14 @@ export default function TriibeTalkGuidePage() {
               </li>
               <li>
                 All speakers, moderators, and organizers must complete the
-                TRIIBE Talk Participation Alignment Form prior to the event.
+                TRIIBE Talk participation alignment form prior to the event.
               </li>
             </ol>
           </div>
 
           <div className="space-y-6">
             <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-              Event Planning Timeline
+              Event planning timeline
             </h2>
             <p className="text-lg leading-relaxed opacity-90 mb-4">
               While every TRIIBE Talk is unique, most follow a preparation
@@ -142,7 +82,7 @@ export default function TriibeTalkGuidePage() {
             <div className="grid gap-6">
               <div className="bg-[#002c19]/5 p-6 rounded-xl border border-[#002c19]/10 flex flex-col items-start gap-4">
                 <div>
-                  <h3 className="font-bold text-xl mb-2">4-8 Weeks before:</h3>
+                  <h3 className="font-bold text-xl mb-2">4-8 weeks before:</h3>
                   <p className="opacity-90">
                     Select the date, topic, and initial speakers. The venue does
                     not need to be finalized before confirming speakers. Once
@@ -160,25 +100,25 @@ export default function TriibeTalkGuidePage() {
                 </Link>
               </div>
               <div className="bg-[#002c19]/5 p-6 rounded-xl border border-[#002c19]/10">
-                <h3 className="font-bold text-xl mb-2">3-4 Weeks before:</h3>
+                <h3 className="font-bold text-xl mb-2">3-4 weeks before:</h3>
                 <p className="opacity-90">
                   Share the event with your community and networks. Aligned
                   organizations may cohost the event with approval from TRIIBE.
                 </p>
               </div>
               <div className="bg-[#002c19]/5 p-6 rounded-xl border border-[#002c19]/10">
-                <h3 className="font-bold text-xl mb-2">1-2 Weeks before:</h3>
+                <h3 className="font-bold text-xl mb-2">1-2 weeks before:</h3>
                 <p className="opacity-90">
                   Work with your moderator and speakers to finalize the flow of
-                  the conversation. Hosts may use the TRIIBE Talk Preparation
-                  Checklist to ensure event logistics are ready.
+                  the conversation. Hosts may use the TRIIBE Talk preparation
+                  checklist to ensure event logistics are ready.
                 </p>
               </div>
               <div className="bg-[#002c19]/5 p-6 rounded-xl border border-[#002c19]/10">
                 <h3 className="font-bold text-xl mb-2">Event week:</h3>
                 <p className="opacity-90">
                   Send reminders, ensure all speakers sign the TRIIBE Talk
-                  Participation Alignment Form, prepare the space, and focus on
+                  participation alignment form, prepare the space, and focus on
                   creating a welcoming environment for meaningful discussion.
                 </p>
               </div>
@@ -188,7 +128,7 @@ export default function TriibeTalkGuidePage() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-                Speaker Guidelines
+                Speaker guidelines
               </h2>
               <p className="text-lg leading-relaxed opacity-90">
                 TRIIBE Talks are designed to be practical, inspiring, and
@@ -208,20 +148,20 @@ export default function TriibeTalkGuidePage() {
                   href="/talk/speakerbrieftest"
                   className="inline-flex items-center justify-center h-[36px] px-6 rounded-sm font-semibold text-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-all duration-300 mt-2"
                 >
-                  View Full Speaker Brief
+                  View full speaker brief
                 </Link>
               </div>
             </div>
 
             <div className="space-y-4">
-              <h2 className="text-2xl font-bold pb-2">
-                TRIIBE Talk Example Schedule
+              <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
+                TRIIBE Talk example schedule
               </h2>
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-collapse min-w-[600px]">
                   <thead>
                     <tr className="border-b-2 border-[#002c19] bg-[#002c19]/5">
-                      <th className="p-4 font-bold w-1/4">Time Stamp</th>
+                      <th className="p-4 font-bold w-1/4">Time stamp</th>
                       <th className="p-4 font-bold w-1/4">Segment</th>
                       <th className="p-4 font-bold w-1/2">Description</th>
                     </tr>
@@ -316,7 +256,7 @@ export default function TriibeTalkGuidePage() {
 
           <div className="space-y-4">
             <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-              Suggested Discussion Questions
+              Discussion questions
             </h2>
             <p className="text-lg leading-relaxed opacity-90">
               TRIIBE Talks are designed to spark thoughtful dialogue across
@@ -361,7 +301,7 @@ export default function TriibeTalkGuidePage() {
                 target="_blank"
                 className="inline-flex items-center justify-center h-[36px] px-6 rounded-sm font-semibold text-[12px] md:text-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-all duration-300 mt-2"
               >
-                View Example Questions (UN Global Compact)
+                View example questions (UN Global Compact TRIIBE Talk)
               </Link>
             </div>
           </div>
@@ -369,7 +309,7 @@ export default function TriibeTalkGuidePage() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-                Branding And Visual Templates
+                Branding and visual templates
               </h2>
               <p className="text-lg leading-relaxed opacity-90">
                 To keep TRIIBE Talks visually consistent around the world,
@@ -384,7 +324,7 @@ export default function TriibeTalkGuidePage() {
               <div className="grid md:grid-cols-3 gap-4 mt-6">
                 <div className="w-full md:col-span-1 bg-[#002c19] rounded-xl flex items-center justify-center overflow-hidden">
                   <Image
-                    src="/images/triibetalk/talk1.png"
+                    src="/images/triibetalk/talk1New.png"
                     alt="Template Example 1"
                     width={600}
                     height={600}
@@ -393,7 +333,7 @@ export default function TriibeTalkGuidePage() {
                 </div>
                 <div className="w-full md:col-span-2 bg-[#002c19] rounded-xl flex items-center justify-center overflow-hidden">
                   <Image
-                    src="/images/triibetalk/talk2.png"
+                    src="/images/triibetalk/talk2New.png"
                     alt="Template Example 2"
                     width={1200}
                     height={600}
@@ -405,51 +345,26 @@ export default function TriibeTalkGuidePage() {
 
             <div className="space-y-4">
               <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-                Participant Alignment Form
+                Participant alignment form
               </h2>
-              <p className="text-lg leading-relaxed opacity-90">
-                All speakers, moderators, and organizers participating in a
-                TRIIBE Talk should complete the TRIIBE Talk Participation
-                Alignment Form prior to the event.
-              </p>
               <p className="text-lg leading-relaxed opacity-90">
                 TRIIBE is dedicated to fostering meaningful connections,
                 empowering innovation, and creating a lasting positive impact.
                 The undersigned individual is expected to embody the following
                 values:
               </p>
-              <ul className="list-disc pl-5 space-y-2 opacity-90 text-lg mb-4">
+              <ol className="list-[lower-alpha] pl-5 space-y-2 opacity-90 text-lg mb-4">
                 <li>Integrity and transparency in all interactions.</li>
                 <li>Respect for diverse perspectives and backgrounds.</li>
                 <li>Commitment to healthy habits to eliminate burnout.</li>
-              </ul>
-
-              <Link
-                href="https://app.signnow.com/webapp/document/f6092c2f0a8d4ef99c65594d00ab8bd1fc459ad7?dispatched=true&mobileweb=app_or_mobileweb_choice&redirect_uri=https%253A%252F%252Fapp.signnow.com%252Fhtml%252Fthanks-for-signing%253Fdocument_id%253Df6092c2f0a8d4ef99c65594d00ab8bd1fc459ad7%2526access_token%253D314a5f02bfde41705ede4f4791a4d1261bfc01fd5b6476c09f41abfb612cbeca&sign=1&source=link"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-all duration-300"
-              >
-                Sign the Alignment Form
-              </Link>
-
-              <p className="text-lg leading-relaxed opacity-90 text-sm mt-4 bg-gray-50 p-6 rounded-lg">
-                By participating in a TRIIBE Talk event, the undersigned
-                acknowledges that their participation is voluntary and does not
-                constitute an employment relationship with TRIIBE. The
-                undersigned also acknowledges that TRIIBE Talk events may be
-                photographed, filmed, or recorded, and grants TRIIBE permission
-                to use their image, voice, and likeness in photographs, video,
-                or audio recordings for educational, promotional, and archival
-                purposes.
-              </p>
+              </ol>
             </div>
           </div>
 
           <div className="space-y-12">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-                Promoting Your TRIIBE Talk
+                Promoting your TRIIBE Talk
               </h2>
               <p className="text-lg leading-relaxed opacity-90">
                 Once your TRIIBE Talk registration page is created, share the
@@ -462,7 +377,7 @@ export default function TriibeTalkGuidePage() {
 
             <div className="space-y-4">
               <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-                After Your TRIIBE Talk
+                After your TRIIBE Talk
               </h2>
               <p className="text-lg leading-relaxed opacity-90">
                 Immediately following the TRIIBE Talk, hosts are encouraged to
@@ -482,7 +397,7 @@ export default function TriibeTalkGuidePage() {
 
             <div className="space-y-6 bg-[#002c19] text-white p-8 md:p-12 rounded-2xl shadow-xl flex flex-col items-start">
               <h2 className="text-3xl md:text-4xl font-bold pb-2">
-                Continuing The TRIIBE Movement
+                Continuing the TRIIBE movement
               </h2>
               <p className="text-lg leading-relaxed opacity-90">
                 We are the most interconnected generation in history. Ideas,
@@ -506,19 +421,19 @@ export default function TriibeTalkGuidePage() {
               <Link
                 href="/branchtest"
                 target="_blank"
-                className="inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm bg-white text-[#002c19] hover:bg-gray-100 transition-all duration-300 mt-4"
+                className="inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm bg-white text-[#002c19] hover:bg-gray-100 transition-all duration-300 mt-0"
               >
-                TRIIBE Branch Playbook
+                TRIIBE branch playbook
               </Link>
             </div>
           </div>
 
-          <div className="pt-16 border-t border-[#002c19]/10 text-center space-y-8">
-            <section className="py-12 w-full">
+          <div className="pt-6 text-center space-y-8">
+            <section className="pb-12 w-full">
               <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
                 <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
                   <p className="text-2xl md:text-3xl font-medium text-[#002c19] text-left">
-                    Download the TRIIBE Talk Guide
+                    Download the TRIIBE Talk guide
                   </p>
 
                   <a
@@ -526,7 +441,7 @@ export default function TriibeTalkGuidePage() {
                     download="TRIIBE_Talk_Guide.pdf"
                     className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
                   >
-                    Download Here
+                    Download here
                   </a>
                 </div>
               </div>

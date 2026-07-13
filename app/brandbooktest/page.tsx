@@ -9,19 +9,31 @@ export const metadata = {
 };
 
 export default function TriibeBrandBookPage() {
+  const dontRules = [
+    { label: "Different typeface", img: "/images/triibetalk/dont1.png" },
+    { label: "Resize elements", img: "/images/triibetalk/dont2.png" },
+    {
+      label: "Outside of the color palette",
+      img: "/images/triibetalk/dont3.png",
+    },
+    { label: "Outline the logo", img: "/images/triibetalk/dont4.png" },
+    { label: "Distort the logo", img: "/images/triibetalk/dont5.png" },
+    { label: "Use a drop shadow", img: "/images/triibetalk/dont6.png" },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
 
       <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50">
         <div className="max-w-300 mx-auto text-[#002c19] space-y-16">
-          <div className="text-center mb-16  pb-4">
+          <div className="text-center mb-16 pb-4">
             <h1 className="text-4xl md:text-6xl font-bold">Brand Book</h1>
           </div>
 
           <div className="space-y-8">
             <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-              01. Tone of Voice
+              01. Tone of voice
             </h2>
             <p className="text-lg leading-relaxed opacity-90 max-w-3xl">
               We uphold an authentic tone, based on our lived experiences,
@@ -50,8 +62,9 @@ export default function TriibeBrandBookPage() {
 
           <div className="space-y-8">
             <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-              02. The Logo
+              02. The logo
             </h2>
+
             <div className="grid md:grid-cols-2 gap-12">
               <div className="space-y-4">
                 <p className="text-lg leading-relaxed opacity-90">
@@ -75,73 +88,85 @@ export default function TriibeBrandBookPage() {
                     around the logo. Never obscure it with surrounding objects.
                   </li>
                 </ul>
-
-                <div className="bg-red-50 p-6 rounded-xl border border-red-100 mt-6">
-                  <h4 className="font-bold text-red-800 mb-4 text-lg">
-                    Logo Misuse (The "Don'ts")
-                  </h4>
-                  <ul className="list-disc pl-5 space-y-2 text-red-900/80">
-                    <li>
-                      <strong>Don't stretch or squash:</strong> Always scale the
-                      logo proportionately.
-                    </li>
-                    <li>
-                      <strong>Don't change the colors:</strong> Stick to the
-                      approved TRIIBE Green and White (or monochrome black).
-                    </li>
-                    <li>
-                      <strong>Don't add effects:</strong> Avoid drop shadows,
-                      gradients, or 3D effects.
-                    </li>
-                    <li>
-                      <strong>Don't crowd the logo:</strong> Respect the clear
-                      space rules.
-                    </li>
-                  </ul>
-                </div>
               </div>
 
-              <div className="flex flex-col gap-16 h-fit">
-                <div className="w-full h-40 bg-[#002c19] rounded-xl flex items-center justify-center border border-gray-200">
-                  <Image
-                    src="/images/home/heroLogo.png"
-                    alt="TRIIBE Tree Logo"
-                    width={80}
-                    height={80}
-                    className="object-contain brightness-0 invert"
-                  />
-                </div>
-
-                <div className="w-full h-40 bg-white rounded-xl flex items-center justify-center border border-gray-200">
+              <div className="flex flex-col gap-6 h-fit">
+                <div className="w-full h-32 bg-[#002c19] rounded-xl flex items-center justify-center border border-[#002c19] shadow-sm">
                   <Image
                     src="/images/home/TRIIBEHeroWhite.svg"
-                    alt="TRIIBE"
-                    width={140}
-                    height={50}
-                    className="inline-block object-contain"
-                    style={{
-                      filter:
-                        "brightness(0) saturate(100%) invert(13%) sepia(42%) saturate(5833%) hue-rotate(143deg) brightness(93%) contrast(106%)",
-                    }}
-                  />
-                </div>
-
-                <div className="w-full h-40 bg-[#002c19] rounded-xl flex items-center justify-center border border-[#002c19]">
-                  <Image
-                    src="/images/home/TRIIBEHeroWhite.svg"
-                    alt="TRIIBE"
+                    alt="TRIIBE Wordmark"
                     width={140}
                     height={50}
                     className="inline-block object-contain"
                   />
                 </div>
+
+                <div className="flex gap-6 w-full">
+                  <div className="w-1/2 h-32 bg-[#002c19] rounded-xl flex items-center justify-center border border-[#002c19] shadow-sm">
+                    <Image
+                      src="/images/TRIIBELOGOS/TRIIBE LOGO WHITE.png"
+                      alt="TRIIBE Symbol White"
+                      width={65}
+                      height={65}
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="w-1/2 h-32 bg-white rounded-xl flex items-center justify-center border border-gray-200 shadow-sm">
+                    <Image
+                      src="/images/TRIIBELOGOS/TRIIBE LOGO.png"
+                      alt="TRIIBE Symbol Green"
+                      width={70}
+                      height={70}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-red-50 p-8 md:p-12 rounded-2xl border border-red-100 mt-16 w-full">
+              <div className="flex flex-col md:flex-row justify-between items-center mb-16 gap-8">
+                <h3 className="text-4xl md:text-5xl font-bold text-red-900 leading-tight">
+                  Don&apos;t
+                  <br />
+                  rules
+                </h3>
+                <p className="w-full md:w-1/2 text-lg font-medium opacity-90 text-red-900 leading-snug">
+                  Consistent logo presentation is an important part of keeping
+                  our brand identity recognizable. The following are examples
+                  that highlight a variety of improper uses of the TRIIBE logo.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-y-16 gap-x-8">
+                {dontRules.map((rule, idx) => (
+                  <div key={idx} className="flex flex-col space-y-6">
+                    <div className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center text-white text-lg font-bold pb-[2px] leading-none shrink-0">
+                        &times;
+                      </div>
+                      <span className="font-bold text-red-900 tracking-tight">
+                        {rule.label}
+                      </span>
+                    </div>
+
+                    <div className="w-full h-24 relative flex items-center justify-start">
+                      <Image
+                        src={rule.img}
+                        alt={`Improper use: ${rule.label}`}
+                        fill
+                        className="object-contain object-left"
+                      />
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
 
           <div className="space-y-8">
             <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-              03. Color Palette
+              03. Color palette
             </h2>
             <p className="text-lg leading-relaxed opacity-90">
               The TRIIBE color palette is tonal, derived from our core TRIIBE
@@ -184,10 +209,10 @@ export default function TriibeBrandBookPage() {
             </h2>
             <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200 space-y-8">
               <div>
-                <p className="text-sm font-bold opacity-50 uppercase tracking-widest mb-2">
-                  Primary Typeface
+                <p className="text-sm font-bold opacity-50  tracking-widest mb-2">
+                  Primary typeface
                 </p>
-                <h3 className="text-4xl font-medium">Avenir Next</h3>
+                <h3 className="text-4xl font-medium">Avenir next</h3>
               </div>
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="space-y-2">
@@ -236,7 +261,7 @@ export default function TriibeBrandBookPage() {
             </div>
             <div className="space-y-4">
               <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-                06. Layout Rules
+                06. Layout rules
               </h2>
               <p className="text-lg leading-relaxed opacity-90">
                 <strong>Margins:</strong> The margin size should be calculated
@@ -264,7 +289,7 @@ export default function TriibeBrandBookPage() {
                     download="TRIIBE_Brand_Book.pdf"
                     className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
                   >
-                    Download Here
+                    Download here
                   </a>
                 </div>
               </div>
