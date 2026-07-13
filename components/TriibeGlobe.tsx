@@ -422,7 +422,7 @@ export default function TriibeGlobe() {
       <div style={{ textAlign: "center", marginBottom: 20 }}>
         <h2
           style={{
-            fontSize: 34,
+            fontSize: 60,
             fontWeight: 700,
             color: "#002c19",
             margin: 0,
