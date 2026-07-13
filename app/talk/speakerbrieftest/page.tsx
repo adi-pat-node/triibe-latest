@@ -21,7 +21,7 @@ export default function SpeakerBriefPage() {
             </h1>
             <p className="text-xl md:text-2xl opacity-90 font-light mb-10 max-w-2xl mx-auto">
               Everything you need to know before taking the stage at a TRIIBE
-              Talk.
+              Talk
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
