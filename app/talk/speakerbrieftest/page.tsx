@@ -215,6 +215,26 @@ export default function SpeakerBriefPage() {
         </div>
       </section>
 
+      <div className="pt-6 text-center space-y-8">
+        <section className="pb-25 w-full">
+          <div className="w-full max-w-[860px] mx-auto transition-all duration-300 hover:scale-[1.02]">
+            <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+              <p className="text-2xl md:text-3xl font-medium text-[#002c19] text-left">
+                Download the Speaker brief
+              </p>
+
+              <a
+                href="/TRIIBE Speaker Brief.pdf"
+                download="TRIIBE_Speaker_Brief.pdf"
+                className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
+              >
+                Download here
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
       <Footer />
     </div>
   );
