@@ -124,7 +124,7 @@ export default function TriibeBrandBookPage() {
               </div>
             </div>
 
-            <div className="bg-red-50 p-4 md:p-5 rounded-2xl border border-red-100 mt-16 w-full">
+            <div className="bg-red-50 p-3 md:p-2 rounded-2xl border border-red-100 mt-16 w-full">
               <div className="bg-white rounded-xl p-8 md:p-12">
                 <div className="flex flex-col md:flex-row justify-between items-center mb-16 gap-8">
                   <h3 className="text-4xl md:text-5xl font-bold text-red-900 leading-tight">

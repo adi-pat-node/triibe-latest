@@ -348,16 +348,30 @@ export default function TriibeTalkGuidePage() {
                 Participant alignment form
               </h2>
               <p className="text-lg leading-relaxed opacity-90">
-                TRIIBE is dedicated to fostering meaningful connections,
-                empowering innovation, and creating a lasting positive impact.
-                The undersigned individual is expected to embody the following
-                values:
+                All speakers, moderators, and organizers participating in a
+                TRIIBE Talk should complete the TRIIBE Talk Participation
+                Alignment Form prior to the event.
               </p>
-              <ol className="list-[lower-alpha] pl-5 space-y-2 opacity-90 text-lg mb-4">
-                <li>Integrity and transparency in all interactions.</li>
-                <li>Respect for diverse perspectives and backgrounds.</li>
-                <li>Commitment to healthy habits to eliminate burnout.</li>
-              </ol>
+
+              <p className="text-lg leading-relaxed opacity-90 mt-4">
+                By participating in a TRIIBE Talk event, the undersigned
+                acknowledges that their participation is voluntary and does not
+                constitute an employment relationship with TRIIBE. The
+                undersigned also acknowledges that TRIIBE Talk events may be
+                photographed, filmed, or recorded, and grants TRIIBE permission
+                to use their image, voice, and likeness in photographs, video,
+                or audio recordings for educational, promotional, and archival
+                purposes.
+              </p>
+
+              <a
+                href="https://app.signnow.com/webapp/document/5356c06355f74a52b2f3ddbf363cd029a290ac28?dispatched=true&mobileweb=app_or_mobileweb_choice&redirect_uri=https%253A%252F%252Fapp.signnow.com%252Fhtml%252Fthanks-for-signing%253Fdocument_id%253D5356c06355f74a52b2f3ddbf363cd029a290ac28%2526access_token%253D884462df418a32d16d200b46f2aa47ab22af0a8661e1894264756e792c94205b&sign=1&source=link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105 mt-4"
+              >
+                Review & sign the alignment form
+              </a>
             </div>
           </div>
 
