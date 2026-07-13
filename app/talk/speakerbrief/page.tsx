@@ -24,7 +24,7 @@ export default function SpeakerBriefPage() {
               how you made them feel” - Maya Angelou
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
+            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
               <Link
                 href="/talk"
                 className="w-full sm:w-auto inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-all duration-300"
@@ -39,7 +39,7 @@ export default function SpeakerBriefPage() {
               >
                 Sign alignment form
               </a>
-            </div>
+            </div> */}
           </div>
 
           <div className="space-y-4">

@@ -433,7 +433,7 @@ export default function TriibeTalkGuidePage() {
               </p>
 
               <Link
-                href="/branchtest"
+                href="/branch"
                 target="_blank"
                 className="inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm bg-white text-[#002c19] hover:bg-gray-100 transition-all duration-300 mt-0"
               >

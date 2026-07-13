@@ -187,12 +187,10 @@ const EventsPage = () => {
 
               <div className="flex w-full items-center justify-start gap-4">
                 <a
-                  href="https://drive.google.com/file/d/1rALrh5bjpWnbKq2AvxeudYOpPG7kFsZ-/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=" px-4 py-2 bg-[#002c19] text-white hover:bg-[#1C5945]  rounded-sm h-[44px] transition-colors font-medium inline-flex items-center cursor-pointer"
+                  href="/talk/guide"
+                  className="px-4 py-2 bg-[#002c19] text-white hover:bg-[#1C5945] rounded-sm h-[44px] transition-colors font-medium inline-flex items-center cursor-pointer"
                 >
-                  TRIIBE Talk guide
+                  TRIIBE Talk Guide
                 </a>
 
                 {/* <a
@@ -371,11 +369,10 @@ const EventsPage = () => {
               <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
                 For a visual journey, see our brand book
               </p>
+
               <Link
-                href="https://drive.google.com/file/d/1ZNTNHHHPhV_4-cXh6JdtdzaRmxQ6IdJs/view?usp=drive_link"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center border-2 bg-[#002c19] text-white hover:bg-[#1C5945] px-10 py-3 rounded-sm h-[44px] font-semibold text-base hover:bg-green-950 hover:text-white hover:scale-105 transition-all duration-300 whitespace-nowrap"
+                href="/brandbook"
+                className="inline-flex items-center justify-center border-2 bg-[#002c19] text-white hover:bg-[#1C5945] px-10 py-3 rounded-sm h-[44px] font-semibold text-base hover:scale-105 transition-all duration-300 whitespace-nowrap"
               >
                 View
               </Link>

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import GlobeImport from "react-globe.gl";
+import Link from "next/link";
 import * as THREE from "three";
 const Globe = GlobeImport as any;
 
@@ -681,6 +682,31 @@ export default function TriibeGlobe() {
               </button>
             );
           })}
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: 24,
+          }}
+        >
+          <Link
+            href="/branch"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+              background: "#002C19",
+              color: "#fff",
+              textDecoration: "none",
+              padding: "12px 28px",
+              borderRadius: 6,
+              fontSize: 15,
+              fontWeight: 600,
+            }}
+          >
+            Start your own branch
+          </Link>
         </div>
       </div>
     </section>

@@ -82,7 +82,7 @@ export default function TriibeBranchPlaybookPage() {
                 </p>
                 <div className="mt-6">
                   <a
-                    href="/talk/guidetest"
+                    href="/talk/guide"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center h-[36px] px-6 rounded-sm font-semibold text-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-all duration-300 hover:scale-105"
                   >
