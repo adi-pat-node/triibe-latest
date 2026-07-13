@@ -171,7 +171,7 @@ export default function Changemakers() {
           <div className="mb-8">
             <h2
               className="font-bold text-[#002c19]
- text-4xl tracking-[-0.90px] leading-10 mb-4"
+ text-4xl md:text-6xl tracking-[-0.90px] leading-10 mb-4"
             >
               Our first two cohorts
             </h2>
