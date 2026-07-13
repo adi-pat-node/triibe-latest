@@ -44,7 +44,7 @@ export default function ProgramOverviewTest() {
           </div>
         </section>
 
-        <section className="bg-[#002c19] text-white py-24 px-4 md:px-25 lg:px-[200px] w-full">
+        <section className="bg-[#002c19] text-white py-24 px-4 md:px-25 lg:px-[200px] w-full pt-16">
           <div className="max-w-[1200px] mx-auto flex flex-col">
             <h2 className="text-4xl md:text-6xl font-bold mb-8 md:mb-12 flex flex-wrap items-center justify-center gap-4">
               So we built a
@@ -90,7 +90,7 @@ export default function ProgramOverviewTest() {
           </div>
         </section>
 
-        <section className="pt-24 pb-24 px-4 md:px-25 lg:px-[200px] bg-white w-full">
+        <section className="pt-16 pb-1 px-4 md:px-25 lg:px-[200px] bg-white w-full">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
             <h2 className="text-4xl md:text-6xl font-bold mb-4">
               Our Infrastructure

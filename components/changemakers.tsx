@@ -165,7 +165,7 @@ export default function Changemakers() {
   );
 
   return (
-    <section className="py-6 md:py-10 bg-white w-full" id="cohortSection">
+    <section className="py-6 md:py-20 bg-white w-full" id="cohortSection">
       <div className="w-full px-4 md:px-25 lg:px-50">
         <div className="w-full max-w-[1200px] mx-auto">
           <div className="mb-8">
