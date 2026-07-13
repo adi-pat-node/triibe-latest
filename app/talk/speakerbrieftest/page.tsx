@@ -20,8 +20,8 @@ export default function SpeakerBriefPage() {
               Speaker Brief
             </h1>
             <p className="text-xl md:text-2xl opacity-90 font-light mb-10 max-w-2xl mx-auto">
-              Everything you need to know before taking the stage at a TRIIBE
-              Talk.
+              "People will forget what you said, but people will never forget
+              how you made them feel” - Maya Angelou
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
@@ -49,13 +49,12 @@ export default function SpeakerBriefPage() {
             <p className="text-lg leading-relaxed opacity-90">
               A TRIIBE Talk is a moderated, intergenerational conversation
               featuring next-gen voices. Our goal is to create practical,
-              inspiring, and solutions-oriented discussions that bridge the gap
-              between youth ambition and established experience.
+              inspiring, and solutions-oriented discussions.
             </p>
-            <p className="text-lg leading-relaxed opacity-90">
+            {/* <p className="text-lg leading-relaxed opacity-90">
               We want to hear about real experiences, hard-learned lessons, and
               ideas that move the nonprofit and startup sectors forward.
-            </p>
+            </p> */}
           </div>
 
           <div className="space-y-6">
@@ -123,8 +122,8 @@ export default function SpeakerBriefPage() {
               <li className="flex gap-4">
                 <span className="font-bold min-w-[120px]">Wrap Up:</span>
                 <span>
-                  Stick around for the mandatory group photo with all speakers,
-                  followed by informal community building.
+                  Stick around for the group photo with all speakers, followed
+                  by informal community building.
                 </span>
               </li>
             </ul>
@@ -132,32 +131,38 @@ export default function SpeakerBriefPage() {
 
           <div className="space-y-4">
             <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
-              Discussion Themes to Consider
+              Discussion questions
             </h2>
+
             <p className="text-lg leading-relaxed opacity-90">
               Your moderator will guide the conversation, but they are
               encouraged to skip formal introductions and jump straight into the
               ideas and impact. Here are the types of themes you might be asked
               to explore:
             </p>
-            <ul className="space-y-3 opacity-90 text-lg mt-4 bg-[#002c19]/5 p-6 md:p-8 rounded-xl">
+
+            <ul className="space-y-4 text-lg leading-relaxed mt-6">
               <li>
                 <strong>The origin tension:</strong> What did you see that
                 everyone else was looking at but not acting on?
               </li>
+
               <li>
                 <strong>Hard truths:</strong> What is one thing about your field
                 most people in this room may not want to hear?
               </li>
+
               <li>
                 <strong>What actually worked:</strong> What is one decision that
                 changed your trajectory, and what would you tell someone facing
                 it now?
               </li>
+
               <li>
                 <strong>The unpopular bet:</strong> What unrealistic idea today
                 do you think will be mainstream in a decade?
               </li>
+
               <li>
                 <strong>The trade:</strong> What did progress cost you, and was
                 it worth it?
@@ -167,18 +172,36 @@ export default function SpeakerBriefPage() {
 
           <div className="space-y-4 bg-[#002c19] text-white p-8 md:p-12 rounded-2xl shadow-xl">
             <h2 className="text-3xl font-bold pb-2 border-b border-white/20">
-              Mandatory Next Step
+              Participant alignment form
             </h2>
+
             <p className="text-lg leading-relaxed opacity-90 pt-4">
-              Before taking the stage, all speakers, moderators, and organizers
-              must complete the TRIIBE Talk Participation Alignment Form. By
-              participating, you agree to embody:
+              All speakers, moderators, and organizers participating in a TRIIBE
+              Talk should complete the TRIIBE Talk Participation Alignment Form
+              prior to the event.
             </p>
+
+            <p className="text-lg leading-relaxed opacity-90 pt-4">
+              TRIIBE is dedicated to fostering meaningful connections,
+              empowering innovation, and creating a lasting positive impact. The
+              undersigned individual is expected to embody the following values:
+            </p>
+
             <ul className="list-disc pl-5 space-y-2 opacity-90 text-lg my-4">
               <li>Integrity and transparency in all interactions.</li>
               <li>Respect for diverse perspectives and backgrounds.</li>
-              <li>A commitment to healthy habits to eliminate burnout.</li>
+              <li>Commitment to healthy habits to eliminate burnout.</li>
             </ul>
+
+            <p className="text-lg leading-relaxed opacity-90 pt-4">
+              By participating in a TRIIBE Talk event, the undersigned
+              acknowledges that their participation is voluntary and does not
+              constitute an employment relationship with TRIIBE. The undersigned
+              also acknowledges that TRIIBE Talk events may be photographed,
+              filmed, or recorded, and grants TRIIBE permission to use their
+              image, voice, and likeness in photographs, video, or audio
+              recordings for educational, promotional, and archival purposes.
+            </p>
 
             <a
               href="https://app.signnow.com/webapp/document/5356c06355f74a52b2f3ddbf363cd029a290ac28?dispatched=true&mobileweb=app_or_mobileweb_choice&redirect_uri=https%253A%252F%252Fapp.signnow.com%252Fhtml%252Fthanks-for-signing%253Fdocument_id%253D5356c06355f74a52b2f3ddbf363cd029a290ac28%2526access_token%253D884462df418a32d16d200b46f2aa47ab22af0a8661e1894264756e792c94205b&sign=1&source=link"
