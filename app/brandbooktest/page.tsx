@@ -124,42 +124,45 @@ export default function TriibeBrandBookPage() {
               </div>
             </div>
 
-            <div className="bg-red-50 p-8 md:p-12 rounded-2xl border border-red-100 mt-16 w-full">
-              <div className="flex flex-col md:flex-row justify-between items-center mb-16 gap-8">
-                <h3 className="text-4xl md:text-5xl font-bold text-red-900 leading-tight">
-                  Don&apos;t
-                  <br />
-                  rules
-                </h3>
-                <p className="w-full md:w-1/2 text-lg font-medium opacity-90 text-red-900 leading-snug">
-                  Consistent logo presentation is an important part of keeping
-                  our brand identity recognizable. The following are examples
-                  that highlight a variety of improper uses of the TRIIBE logo.
-                </p>
-              </div>
+            <div className="bg-red-50 p-4 md:p-5 rounded-2xl border border-red-100 mt-16 w-full">
+              <div className="bg-white rounded-xl p-8 md:p-12">
+                <div className="flex flex-col md:flex-row justify-between items-center mb-16 gap-8">
+                  <h3 className="text-4xl md:text-5xl font-bold text-red-900 leading-tight">
+                    Don&apos;t
+                    <br />
+                    rules
+                  </h3>
+                  <p className="w-full md:w-1/2 text-lg font-medium opacity-90 text-red-900 leading-snug">
+                    Consistent logo presentation is an important part of keeping
+                    our brand identity recognizable. The following are examples
+                    that highlight a variety of improper uses of the TRIIBE
+                    logo.
+                  </p>
+                </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-y-16 gap-x-8">
-                {dontRules.map((rule, idx) => (
-                  <div key={idx} className="flex flex-col space-y-6">
-                    <div className="flex items-center gap-3">
-                      <div className="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center text-white text-lg font-bold pb-[2px] leading-none shrink-0">
-                        &times;
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-y-16 gap-x-8">
+                  {dontRules.map((rule, idx) => (
+                    <div key={idx} className="flex flex-col space-y-6">
+                      <div className="flex items-center gap-3">
+                        <div className="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center text-white text-lg font-bold pb-[2px] leading-none shrink-0">
+                          &times;
+                        </div>
+                        <span className="font-bold text-red-900 tracking-tight">
+                          {rule.label}
+                        </span>
                       </div>
-                      <span className="font-bold text-red-900 tracking-tight">
-                        {rule.label}
-                      </span>
-                    </div>
 
-                    <div className="w-full h-24 relative flex items-center justify-start">
-                      <Image
-                        src={rule.img}
-                        alt={`Improper use: ${rule.label}`}
-                        fill
-                        className="object-contain object-left"
-                      />
+                      <div className="w-full h-28 bg-white rounded-lg relative flex items-center justify-center p-3">
+                        <Image
+                          src={rule.img}
+                          alt={`Improper use: ${rule.label}`}
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>
