@@ -4,22 +4,9 @@ import React, { useState, useEffect, useRef, ChangeEvent } from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { useRouter } from "next/navigation";
-import {
-  ChevronLeft,
-  ArrowRight,
-  Send,
-  Check,
-  Plus,
-  ArrowLeft,
-  CircleCheck,
-  CircleCheckBig,
-  ChevronDown,
-  X,
-  AlertCircle,
-} from "lucide-react";
+import { ArrowRight, Send, ArrowLeft, CircleCheckBig } from "lucide-react";
 
 const GOOGLE_MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!;
-
 const SHEET_URL = process.env.NEXT_PUBLIC_SHEET_URL!;
 
 declare global {
@@ -29,13 +16,12 @@ declare global {
   }
 }
 
-// --- Types for Form Data ---
 interface Speaker {
   name: string;
   role: string;
   organisation: string;
   linkedin: string;
-  category: "Established (Over 30)" | "Next-Gen" | "";
+  category: "Next-Gen" | "";
 }
 
 interface FormData {
@@ -51,7 +37,6 @@ interface FormData {
   eventDate: string;
   startTime: string;
   endTime: string;
-  theme: string;
   description: string;
   speakers: Speaker[];
   eventDescription: string;
@@ -71,10 +56,10 @@ const HostEventPage = () => {
   const autocompleteRef = useRef<any>(null);
   const router = useRouter();
   const [step, setStep] = useState(1);
-  // Load Google Maps script once
+
   useEffect(() => {
     if (document.getElementById("google-maps-script")) return;
-    window.initGoogleMaps = () => {}; // placeholder, autocomplete init happens on step 2
+    window.initGoogleMaps = () => {};
     const script = document.createElement("script");
     script.id = "google-maps-script";
     script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}&libraries=places&callback=initGoogleMaps`;
@@ -83,12 +68,11 @@ const HostEventPage = () => {
     document.head.appendChild(script);
   }, []);
 
-  // Init autocomplete when step 2 mounts and input is available
   useEffect(() => {
     if (step !== 2) return;
     const tryInit = () => {
       if (!venueInputRef.current || !window.google?.maps?.places) return;
-      if (autocompleteRef.current) return; // already initialized
+      if (autocompleteRef.current) return;
       const ac = new window.google.maps.places.Autocomplete(
         venueInputRef.current,
         {
@@ -116,7 +100,7 @@ const HostEventPage = () => {
       });
       autocompleteRef.current = ac;
     };
-    // Poll until google is ready
+
     const interval = setInterval(() => {
       if (window.google?.maps?.places) {
         tryInit();
@@ -140,7 +124,6 @@ const HostEventPage = () => {
     startTime: "",
     endTime: "",
     eventDescription: "",
-    theme: "",
     description: "",
     speakers: [
       {
@@ -177,15 +160,6 @@ const HostEventPage = () => {
     !formData.eventDate ||
     (formData.eventDate >= todayStr && formData.eventDate <= maxDateStr);
 
-  const isStep3Valid = formData.speakers.every(
-    (s) =>
-      s.name.trim() !== "" &&
-      s.role.trim() !== "" &&
-      s.organisation.trim() !== "" &&
-      isLinkedinValid(s.linkedin) &&
-      formData.theme !== "",
-  );
-
   const isStepValid = () => {
     if (step === 1) {
       return (
@@ -212,7 +186,6 @@ const HostEventPage = () => {
 
     if (step === 3) {
       return (
-        formData.theme !== "" &&
         formData.eventDescription.trim() !== "" &&
         formData.speakers.every(
           (s) =>
@@ -277,17 +250,19 @@ const HostEventPage = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
+      // router.push("/talk/speakerbrieftest");
     } catch (err) {
     } finally {
       setIsSubmitting(false);
       setSubmitSuccess(true);
+      router.push("/talk/speakerbrieftest");
     }
   };
 
   const steps = [
     { id: 1, label: "Your Information" },
     { id: 2, label: "Event Location" },
-    { id: 3, label: "Theme & Speakers" },
+    { id: 3, label: "Speakers" },
     { id: 4, label: "Review & Submit" },
   ];
 
@@ -295,7 +270,7 @@ const HostEventPage = () => {
     <main className=" min-h-screen ">
       <Header />
 
-      {submitSuccess && (
+      {/* {submitSuccess && (
         <div className="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center gap-6 px-4">
           <div className="w-16 h-16 rounded-full bg-[#D1FAE5] flex items-center justify-center">
             <CircleCheckBig size={32} className="text-[#002c19]/80" />
@@ -314,7 +289,7 @@ const HostEventPage = () => {
             Back to Events
           </button>
         </div>
-      )}
+      )} */}
 
       <section className="pt-20  px-4 md:px-25 lg:px-50 bg-white">
         <div>
@@ -618,53 +593,11 @@ const HostEventPage = () => {
                 <div className="space-y-8 animate-in fade-in duration-500">
                   <div>
                     <h2 className="text-3xl font-bold text-[#002c19] mb-2">
-                      Theme & Speakers
+                      Speakers
                     </h2>
                     <p className="text-[#002c19]/80">
-                      What will your TRIIBE Talk be about and who will be
-                      speaking?
+                      Who will be speaking at your TRIIBE Talk?
                     </p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <label className="text-sm font-bold text-[#002c19]/80 block">
-                      Theme *
-                    </label>
-
-                    <div className="relative min-h-[56px] w-full border border-gray-200 rounded-2xl bg-white flex items-center px-4 hover:border-gray-300 focus-within:ring-2 focus-within:ring-[#1C5945]/10 transition-all cursor-pointer text-[#002c19] placeholder:text-[#002c19]/80">
-                      <select
-                        value={formData.theme}
-                        onChange={(e) =>
-                          setFormData({ ...formData, theme: e.target.value })
-                        }
-                        className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-20"
-                      >
-                        <option value="" disabled>
-                          Select a theme...
-                        </option>
-                        <option value="Food">Food</option>
-                        <option value="Water">Water</option>
-                        <option value="Shelter">Shelter</option>
-                        <option value="Health">Health</option>
-                        <option value="Education">Education</option>
-                      </select>
-
-                      <div className="flex items-center w-full z-10 pointer-events-none">
-                        {!formData.theme ? (
-                          <span className="text-gray-400 text-sm">
-                            Select a theme...
-                          </span>
-                        ) : (
-                          <span className="px-4 py-1.5 bg-[#D1FAE5] text-[#002c19]/80 border border-[#1C5945]/30 rounded-full text-xs font-bold animate-in zoom-in-95 duration-200">
-                            {formData.theme}
-                          </span>
-                        )}
-                      </div>
-
-                      <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400 z-10">
-                        <ChevronDown size={20} />
-                      </div>
-                    </div>
                   </div>
 
                   <div className="space-y-4">
@@ -707,9 +640,7 @@ const HostEventPage = () => {
                                 ? "Next-Gen"
                                 : s.category === "Next-Gen"
                                   ? "Next-Gen"
-                                  : s.category === "Established (Over 30)"
-                                    ? "Established"
-                                    : ""}
+                                  : ""}
                             </span>
                           </div>
 
@@ -765,25 +696,8 @@ const HostEventPage = () => {
                           {!isFirstSpeaker && (
                             <div className="flex flex-col gap-4 pt-2">
                               <div className="flex flex-col md:flex-row gap-4 md:gap-6">
-                                {[
-                                  {
-                                    id: "Established (Over 30)",
-                                    label: "Established (Over 30)",
-                                  },
-                                  { id: "Next-Gen", label: "Next-Gen" },
-                                ].map((option) => {
-                                  const countOfType =
-                                    formData.speakers.filter(
-                                      (sp, si) =>
-                                        si !== i && sp.category === option.id,
-                                    ).length +
-                                    (i === 0 && option.id === "Next-Gen"
-                                      ? 1
-                                      : 0);
-                                  const wouldExceedLimit =
-                                    s.category !== option.id &&
-                                    countOfType >= 2;
-                                  return (
+                                {[{ id: "Next-Gen", label: "Next-Gen" }].map(
+                                  (option) => (
                                     <label
                                       key={option.id}
                                       className="flex items-center gap-2 cursor-pointer group"
@@ -793,8 +707,11 @@ const HostEventPage = () => {
                                           type="radio"
                                           name={`category-${i}`}
                                           checked={s.category === option.id}
-                                          onChange={() => {
-                                            if (!wouldExceedLimit) {
+                                          onChange={() => {}}
+                                          onClick={(e) => {
+                                            if (s.category === option.id) {
+                                              updateSpeaker(i, "category", "");
+                                            } else {
                                               updateSpeaker(
                                                 i,
                                                 "category",
@@ -810,40 +727,15 @@ const HostEventPage = () => {
                                         className={`text-sm ${
                                           s.category === option.id
                                             ? "text-[#002c19] font-medium"
-                                            : wouldExceedLimit
-                                              ? "text-gray-300"
-                                              : "text-gray-500"
+                                            : "text-gray-500"
                                         }`}
                                       >
                                         {option.label}
                                       </span>
                                     </label>
-                                  );
-                                })}
+                                  ),
+                                )}
                               </div>
-                              {(() => {
-                                const establishedCount =
-                                  formData.speakers.filter(
-                                    (sp) =>
-                                      sp.category === "Established (Over 30)",
-                                  ).length;
-                                const nextGenCount =
-                                  formData.speakers.filter(
-                                    (sp) => sp.category === "Next-Gen",
-                                  ).length + 1; // +1 for speaker 1
-                                if (
-                                  establishedCount >= 2 ||
-                                  nextGenCount >= 3
-                                ) {
-                                  return (
-                                    <p className="text-amber-600 text-xs font-medium ml-1 animate-in fade-in slide-in-from-top-1">
-                                      There is a maximum of two Established and
-                                      two Next-Gen speakers in any TRIIBE Talk.
-                                    </p>
-                                  );
-                                }
-                                return null;
-                              })()}
                             </div>
                           )}
 
@@ -924,8 +816,7 @@ const HostEventPage = () => {
                   />
 
                   <ReviewSection
-                    title="Theme & Speakers"
-                    theme={formData.theme}
+                    title="Speakers"
                     description={formData.eventDescription}
                     speakers={formData.speakers}
                     venue={formData.venueName}
@@ -1004,7 +895,6 @@ const ReviewSection = ({
   data,
   showMap = false,
   mapQuery,
-  theme,
   description,
   speakers,
   venue,
@@ -1014,7 +904,6 @@ const ReviewSection = ({
   data?: { l: string; v: string }[];
   showMap?: boolean;
   mapQuery?: string;
-  theme?: string;
   description?: string;
   speakers?: Speaker[];
   venue?: string;
@@ -1031,36 +920,27 @@ const ReviewSection = ({
           </p>
         ))}
 
-        {theme && (
-          <div className="space-y-4 mt-0">
+        <div className="space-y-4 mt-0">
+          {description && (
             <p className="text-sm text-[#002c19]">
-              <span className="font-bold text-[#002c19]/80">Topic:</span>{" "}
-              {theme}
+              <span className="font-bold text-[#002c19]/80">Description:</span>{" "}
+              {description}
             </p>
-
-            {description && (
-              <p className="text-sm text-[#002c19]">
-                <span className="font-bold text-[#002c19]/80">
-                  Description:
-                </span>{" "}
-                {description}
+          )}
+          {speakers && (
+            <div className="space-y-1">
+              <p className="text-sm font-bold text-[#002c19]/80">Speakers:</p>
+              <p className="text-sm text-[#002c19]/80 leading-relaxed">
+                •{" "}
+                {speakers
+                  .map((s) => s.name)
+                  .filter((n) => n.trim() !== "")
+                  .join(", ")}{" "}
+                at {venue || "Venue"}, {city || "City"}
               </p>
-            )}
-            {speakers && (
-              <div className="space-y-1">
-                <p className="text-sm font-bold text-[#002c19]/80">Speakers:</p>
-                <p className="text-sm text-[#002c19]/80 leading-relaxed">
-                  •{" "}
-                  {speakers
-                    .map((s) => s.name)
-                    .filter((n) => n.trim() !== "")
-                    .join(", ")}{" "}
-                  at {venue || "Venue"}, {city || "City"}
-                </p>
-              </div>
-            )}
-          </div>
-        )}
+            </div>
+          )}
+        </div>
       </div>
 
       {showMap && mapQuery && (
