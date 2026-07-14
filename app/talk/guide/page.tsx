@@ -16,6 +16,28 @@ export default function TriibeTalkGuidePage() {
 
       <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50">
         <div className="max-w-300 mx-auto text-[#002c19] space-y-16">
+
+          <div className="w-full mb-8 flex justify-start">
+            <Link
+              href="/talk"
+              className="inline-flex items-center text-[#002c19] hover:opacity-75 font-semibold transition-opacity text-base"
+            >
+              <svg
+                className="w-5 h-5 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                />
+              </svg>
+              Back to TRIIBE Talk
+            </Link>
+          </div>
           <div className="text-center pb-4 flex flex-col items-center justify-center">
             <div className="relative w-full max-w-2xl h-32 md:h-48 mb-6 flex items-center justify-center">
               <Image

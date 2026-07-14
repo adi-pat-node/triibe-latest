@@ -1,6 +1,7 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata = {
   title: "TRIIBE Brand Book | Our Identity & Guidelines",
@@ -27,6 +28,27 @@ export default function TriibeBrandBookPage() {
 
       <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50">
         <div className="max-w-300 mx-auto text-[#002c19] space-y-16">
+          <div className="w-full mb-8 flex justify-start">
+            <Link
+              href="/talk"
+              className="inline-flex items-center text-[#002c19] hover:opacity-75 font-semibold transition-opacity text-base"
+            >
+              <svg
+                className="w-5 h-5 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                />
+              </svg>
+              Back to TRIIBE Talk
+            </Link>
+          </div>
           <div className="text-center mb-16 pb-4">
             <h1 className="text-4xl md:text-6xl font-bold">Brand Book</h1>
           </div>
