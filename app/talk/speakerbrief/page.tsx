@@ -6,6 +6,9 @@ export const metadata = {
   title: "TRIIBE Talk Speaker Brief | Guidelines & Preparation",
   description:
     "Everything you need to know before speaking at a TRIIBE Talk. Guidelines, event format, and core values for our next-gen intergenerational conversations.",
+  alternates: {
+    canonical: "https://www.triibe.org/talk/speakerbrief",
+  },
 };
 
 export default function SpeakerBriefPage() {

@@ -5,6 +5,9 @@ import Link from "next/link";
 export const metadata = {
   title: "TRIIBE Branch Playbook",
   description: "A guide to setting up a branch in your region.",
+  alternates: {
+    canonical: "https://www.triibe.org/branch",
+  },
 };
 
 export default function TriibeBranchPlaybookPage() {
@@ -21,7 +24,7 @@ export default function TriibeBranchPlaybookPage() {
             <p className="text-lg opacity-90 max-w-4xl mx-auto leading-relaxed mb-10">
               If your community is ready to support philentrepreneurs, the
               TRIIBE team is here to help you establish a local branch and
-              channel capital to next-gen nonprofit founders in your region.
+              channel capital to next-gen nonprofits in your region
             </p>
 
             <div className="w-full max-w-[1000px] mx-auto transition-all duration-300 hover:scale-[1.02]">
