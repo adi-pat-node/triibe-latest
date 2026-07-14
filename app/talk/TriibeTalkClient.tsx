@@ -121,17 +121,17 @@ const socialLinks = [
 const mediaCards = [
   {
     id: "newsletter",
-    title: "The TRIIBUNE",
-    image: "/images/media/archive/March_Newsletter.jpg",
-    badge: "March 2026",
-    heading: "Monthly Update | March 2026",
+    title: "TRIIBUNE Newsletter",
+    image: "/images/triibetalk/July2026.avif",
+    badge: "June 2026",
+    heading: "Monthly Update | June 2026",
     description:
-      "100+ Changemakers. One room. We brought together 100+ attendees for the Billion Dollar Impact Summit in NYC.",
+      "Check out the latest updates, stories, and community news in our June 2026 edition.",
     buttons: [
       {
         type: "link",
         text: "Read",
-        href: "https://blog.triibe.org/p/monthly-update-march-2026",
+        href: "https://blog.triibe.org/p/the-triibune-june-2026",
       },
     ],
   },
