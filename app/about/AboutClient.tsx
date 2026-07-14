@@ -714,17 +714,17 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="py-12 px-4 md:px-30 lg:px-[75px]">
+        <section className="py-12 px-4 md:px-25 lg:px-0">
           <div className="max-w-300 mx-auto">
             <div className="max-w-7xl mx-auto transition-all duration-300 hover:scale-105">
-              <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
-                <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
+              <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-4 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+                <p className="text-2xl md:text-2xl font-medium text-[#002c19]">
                   Start your own branch
                 </p>
 
                 <Link
                   href="/branch"
-                  className="inline-flex items-center justify-center bg-[#002c19] text-white hover:bg-[#1C5945] px-10 py-3 rounded-xl min-w-[220px] h-[64px] font-semibold text-xl transition-all duration-300 whitespace-nowrap"
+                  className="inline-flex items-center justify-center bg-[#002c19] text-white hover:bg-[#1C5945] px-10 py-3 rounded-xl min-w-[220px] h-[44px] font-semibold text-base transition-all duration-300 whitespace-nowrap"
                 >
                   Branch guide
                 </Link>

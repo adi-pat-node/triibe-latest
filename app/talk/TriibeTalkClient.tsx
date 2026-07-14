@@ -239,24 +239,22 @@ const EventsPage = () => {
         </div>
       </section>
 
-      <div className="pt-6 text-center space-y-8">
-        <section className="pb-25 w-full">
-          <div className="w-full max-w-[860px] mx-auto transition-all duration-300 hover:scale-[1.02]">
-            <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
-              <p className="text-2xl md:text-3xl font-medium text-[#002c19] text-left">
-                Host your own TRIIBE Talk
-              </p>
+      <section className="py-12 w-full px-4 md:px-25 lg:px-50">
+        <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
+          <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+            <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
+              Host your own TRIIBE Talk
+            </p>
 
-              <a
-                href="/talk/host"
-                className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
-              >
-                Register here
-              </a>
-            </div>
+            <Link
+              href="/talk/host"
+              className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300   hover:text-white hover:scale-105"
+            >
+              Register here
+            </Link>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       {/* Upcoming Events */}
       <MediaEventsList />
@@ -362,21 +360,19 @@ const EventsPage = () => {
       </section>
 
       {/* Brand Book Section */}
-      <section className="py-12 px-4 md:px-25 lg:px-[200px]">
-        <div className="max-w-260 mx-auto">
-          <div className="max-w-7xl mx-auto transition-all duration-300 hover:scale-105">
-            <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
-              <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
-                For a visual journey, see our brand book
-              </p>
+      <section className="py-12 w-full px-4 md:px-25 lg:px-50">
+        <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
+          <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+            <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
+              For a visual journey, see our brand book
+            </p>
 
-              <Link
-                href="/brandbook"
-                className="inline-flex items-center justify-center border-2 bg-[#002c19] text-white hover:bg-[#1C5945] px-10 py-3 rounded-sm h-[44px] font-semibold text-base hover:scale-105 transition-all duration-300 whitespace-nowrap"
-              >
-                View
-              </Link>
-            </div>
+            <Link
+              href="/brandbook"
+              className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300   hover:text-white hover:scale-105"
+            >
+              View
+            </Link>
           </div>
         </div>
       </section>
