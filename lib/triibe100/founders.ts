@@ -219,7 +219,7 @@ const restOverrides: Partial<Founder>[] = [
     website: "https://www.dancingagainsthunger.org/",
   },
   {
-    name: "Chethan M",
+    name: "Chethan Gowda",
     org: "",
     bio: "Founder - Khoon",
     image: "/images/triibe100/Chethan M.png",
