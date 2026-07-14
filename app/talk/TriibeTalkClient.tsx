@@ -239,32 +239,12 @@ const EventsPage = () => {
         </div>
       </section>
 
-      <section className="py-12 w-full px-4 md:px-25 lg:px-50">
-        <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
-          <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
-            <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
-              Host your own TRIIBE Talk
-            </p>
-
-            <Link
-              href="/talk/host"
-              className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300   hover:text-white hover:scale-105"
-            >
-              Register here
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Upcoming Events */}
-      <MediaEventsList />
-
       {/* Social Links */}
-      <section className="pt-12 pb-8 bg-[#3036411A]  md:px-12 lg:px-50 ">
+      <section className="pt-8 pb-16   md:px-12 lg:px-50  ">
         <div className="max-w-4xl mx-auto px-6">
-          <h3 className="text-2xl font-bold text-center text-[#002c19] mb-8">
+          {/* <h3 className="text-2xl font-bold text-center text-[#002c19] mb-8">
             Connect with us
-          </h3>
+          </h3> */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6  mx-auto">
             {socialLinks.map((social) => (
               <Link
@@ -293,6 +273,26 @@ const EventsPage = () => {
           </div>
         </div>
       </section>
+
+      <section className="py-12 w-full px-4 md:px-25 lg:px-50">
+        <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
+          <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+            <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
+              Host your own TRIIBE Talk
+            </p>
+
+            <Link
+              href="/talk/host"
+              className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300   hover:text-white hover:scale-105"
+            >
+              Register here
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Upcoming Events */}
+      <MediaEventsList />
 
       {/* Latest Podcast and Latest TRIIBE Talk Cards */}
       <section className="pt-8 pb-12 px-4 md:px-12 lg:px-50 bg-[#3036411A]">

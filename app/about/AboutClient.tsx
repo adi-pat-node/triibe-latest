@@ -426,9 +426,9 @@ export default function AboutPage() {
         {/* Social Links */}
         <section className="pt-12 pb-8   md:px-12 lg:px-50 ">
           <div className="max-w-4xl mx-auto px-6">
-            <h3 className="text-2xl font-bold text-center text-[#002c19] mb-8">
+            {/* <h3 className="text-2xl font-bold text-center text-[#002c19] mb-8">
               Connect with us
-            </h3>
+            </h3> */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6  mx-auto">
               {socialLinks.map((social) => (
                 <Link
