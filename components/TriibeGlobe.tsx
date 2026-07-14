@@ -692,18 +692,7 @@ export default function TriibeGlobe() {
         >
           <Link
             href="/branch"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-              background: "#002C19",
-              color: "#fff",
-              textDecoration: "none",
-              padding: "16px 48px",
-              borderRadius: 6,
-              fontSize: 15,
-              fontWeight: 600,
-            }}
+            className="inline-flex items-center justify-center bg-[#002C19] text-white no-underline px-12 py-4 rounded-md text-[15px] font-semibold transition-all duration-300 hover:bg-[#1C5945] hover:text-white"
           >
             Start your own branch
           </Link>
