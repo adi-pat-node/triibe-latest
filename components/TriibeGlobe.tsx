@@ -422,7 +422,7 @@ export default function TriibeGlobe() {
       <div style={{ textAlign: "center", marginBottom: 20 }}>
         <h2
           style={{
-            fontSize: 60,
+            fontSize: 40,
             fontWeight: 700,
             color: "#002c19",
             margin: 0,
@@ -699,7 +699,7 @@ export default function TriibeGlobe() {
               background: "#002C19",
               color: "#fff",
               textDecoration: "none",
-              padding: "12px 28px",
+              padding: "16px 48px",
               borderRadius: 6,
               fontSize: 15,
               fontWeight: 600,
