@@ -97,6 +97,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/talk/host`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/talk/speakerbrief`,
       lastModified: currentDate,
       changeFrequency: "monthly",
