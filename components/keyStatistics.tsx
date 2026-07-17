@@ -180,12 +180,12 @@ const partneredWithLogos = [
     url: "https://www.supercarrooms.com/vicecitydistrict",
     className: "w-80 h-[100px] object-contain",
   },
-  {
+  /* {
     src: "/images/summit/Alethos2.png",
     alt: "Partnered with organization 3",
     url: "https://alethosinitiative.org/",
     className: "w-80 h-[100px] object-contain",
-  },
+  }, */
   {
     src: "/images/home/logictry1.png",
     alt: "Partnered with organization 3",
