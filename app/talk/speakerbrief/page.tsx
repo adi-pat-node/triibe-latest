@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata = {
   title: "TRIIBE Talk Speaker Brief | Guidelines & Preparation",
   description:
-    "Everything you need to know before speaking at a TRIIBE Talk. Guidelines, event format, and core values for our next-gen intergenerational conversations.",
+    "Prepare to speak at a TRIIBE Talk with our speaker guidelines, event day schedule, and discussion themes. Get ready.",
   alternates: {
     canonical: "https://www.triibe.org/talk/speakerbrief",
   },

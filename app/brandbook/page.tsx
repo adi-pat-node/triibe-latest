@@ -6,7 +6,7 @@ import Link from "next/link";
 export const metadata = {
   title: "TRIIBE Brand Book | Our Identity & Guidelines",
   description:
-    "Explore the TRIIBE brand guidelines, including our story, tone of voice, logo usage, color palette, and imagery rules.",
+    "Explore TRIIBE's tone of voice, logo usage, color palette, typography, and imagery guidelines.",
   alternates: {
     canonical: "https://www.triibe.org/brandbook",
   },

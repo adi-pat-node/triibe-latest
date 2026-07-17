@@ -3,8 +3,9 @@ import Footer from "@/components/footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "TRIIBE Branch Playbook",
-  description: "A guide to setting up a branch in your region.",
+  title: "TRIIBE Branch | Start a Regional Nonprofit Innovator Hub",
+  description:
+    "Learn how to launch a TRIIBE branch: form boards, host cohorts, plan your Summit, and secure funding. Get started.",
   alternates: {
     canonical: "https://www.triibe.org/branch",
   },
@@ -120,7 +121,7 @@ export default function TriibeBranchPlaybookPage() {
                 </h3>
                 <p className="opacity-90 leading-relaxed flex-grow">
                   Send invitations to apply and approve a cohort of 5 regional
-                  nonprofit founders in their early 20s to support.
+                  nonprofit innovators in their early 20s to support.
                 </p>
                 <div className="mt-6">
                   <Link
