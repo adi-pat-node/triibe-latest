@@ -121,7 +121,7 @@ export default function TriibeBranchPlaybookPage() {
                 </h3>
                 <p className="opacity-90 leading-relaxed flex-grow">
                   Send invitations to apply and approve a cohort of 5 regional
-                  nonprofit innovators in their early 20s to support.
+                  nonprofit founders in their early 20s to support.
                 </p>
                 <div className="mt-6">
                   <Link
