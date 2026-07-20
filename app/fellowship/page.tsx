@@ -4,7 +4,7 @@ import ProgramClient from "./ProgramClient";
 export const metadata: Metadata = {
   title: "TRIIBE Fellowship | Startup Dynamics for Nonprofit Innovators",
   description:
-    "The TRIIBE Fellowship brings startup dynamics to the nonprofit sector, empowering innovators in their 20s. Apply now.",
+    "The TRIIBE Fellowship brings startup dynamics to the nonprofit sector. Apply now.",
   alternates: {
     canonical: "https://www.triibe.org/fellowship",
   },
