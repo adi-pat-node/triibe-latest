@@ -3,7 +3,7 @@ import Footer from "@/components/footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "TRIIBE Branch | Start a Regional Nonprofit Innovator Hub",
+  title: "TRIIBE Branch | Start a Regional Nonprofit Hub",
   description:
     "Learn how to launch a TRIIBE branch: form boards, host cohorts, plan your Summit, and secure funding. Get started.",
   alternates: {
