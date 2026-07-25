@@ -255,7 +255,7 @@ const HostEventPage = () => {
     } finally {
       setIsSubmitting(false);
       setSubmitSuccess(true);
-      router.push("/talk/speakerbrief");
+      router.push("/thank-you-host");
     }
   };
 
