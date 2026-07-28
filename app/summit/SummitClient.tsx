@@ -127,7 +127,7 @@ const SummitPage = () => {
         {
           name: "Hikaru Hayakawa",
           title: "Executive Director, Climate Cardinals",
-          image: "/",
+          image: "/images/summit/hikaru.png",
           linkedin: "https://www.linkedin.com/in/hikaruhayakawa",
           tag: "Moderator",
         },
@@ -153,14 +153,14 @@ const SummitPage = () => {
         {
           name: "Bella Brown",
           title: "Co-Founder, Living Outside",
-          image: "/",
+          image: "/images/summit/bella.png",
           linkedin: "https://www.linkedin.com/in/bellabrown369",
           tag: "Next-Gen",
         },
         {
           name: "Gabi Rijnveld",
           title: "Co-Founder, Give to Empower",
-          image: "/",
+          image: "/images/summit/gabi.png",
           linkedin: "https://www.linkedin.com/in/gabi-rijnveld-07052571/",
           tag: "Speaker",
         },
@@ -180,7 +180,7 @@ const SummitPage = () => {
         {
           name: "Nav Agarwal",
           title: "Founder, One Step Greener",
-          image: "/",
+          image: "/images/summit/nav.png",
           linkedin: "https://www.linkedin.com/in/nav-agarwal-45009a158/",
           tag: "Next-Gen",
         },
@@ -244,7 +244,7 @@ const SummitPage = () => {
         {
           name: "Elo",
           title: "Founder, Vice City District",
-          image: "/",
+          image: "/images/summit/elo.png",
           linkedin: "#",
           tag: "Speaker",
         },
@@ -319,7 +319,7 @@ const SummitPage = () => {
         {
           name: "Sonali Ratnasinghe",
           title: "Founder, Youth Ambassadors of Service",
-          image: "/",
+          image: "/images/summit/sonali.png",
           linkedin: "https://www.linkedin.com/in/sonaliratnasinghe",
           tag: "Next-Gen",
         },
@@ -394,6 +394,7 @@ const SummitPage = () => {
     },
     {
       title: "Day 2, Saturday September 12th",
+      location: "Rally Point East",
       badge: "Forum",
       highlight: {
         image: "/images/TRIIBELOGOS/TRIIBE LOGO.png",
@@ -486,24 +487,6 @@ const SummitPage = () => {
       highlight: null,
       items: [
         {
-          time: "6:00 AM",
-          title: "Morning Start",
-          description:
-            "TRIIBE Gym time together, check ins to ensure everyone's ready",
-        },
-        {
-          time: "9:00 AM",
-          title: "Breakfast",
-          description:
-            "TRIIBE goes out to breakfast before the final workshop next to the hotel",
-        },
-        {
-          time: "10:00 AM",
-          title: "Clean up and hotel Checkout",
-          description:
-            "TRIIBE Checks out of hotel with bags to bring to final ceremony before heading off to airports",
-        },
-        {
           time: "11:00 AM",
           title: "Closing Ceremony",
           description:
@@ -515,17 +498,6 @@ const SummitPage = () => {
           description:
             "Lunch and reception at venue for celebrities (actors, foundations, musicians) final goodbyes",
         },
-        // {
-        //   time: "2:00 PM",
-        //   title: "Transit for cohorts",
-        //   description: "Order ubers for cohorts to reach airports and fly out",
-        // },
-        // {
-        //   time: "7:30 PM",
-        //   title: "End of Summit",
-        //   description:
-        //     "Order ubers for cohorts to reach airports and fly out / Cleanup final checks and appreciation",
-        // },
       ],
     },
   ];
@@ -565,7 +537,7 @@ const SummitPage = () => {
             <div className="bg-[#002C19] rounded-[10px] overflow-hidden min-h-[400px] flex">
               <div className="relative w-[35%] min-h-[400px]">
                 <Image
-                  src="/images/summit/StevenMelnik.png"
+                  src="/images/summit/Dr Melnik headshot 2.png"
                   alt="Dr. Steven Melnik"
                   fill
                   className="object-cover"
@@ -605,7 +577,7 @@ const SummitPage = () => {
             Curated experiences
           </h2>
           <div className="max-w-200 mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
               {[
                 {
                   name: "Tuna carving by Chef Kim Yong",
@@ -619,11 +591,11 @@ const SummitPage = () => {
                   name: "Vice city district super car street takeover",
                   image: "/images/summit/supercar_street.jpeg",
                 },
-                { name: "Food trucks", image: "/images/summit/Curated4.png" },
-                {
-                  name: "Musical performance",
-                  image: "/images/summit/Curated5.png",
-                },
+                // { name: "Food trucks", image: "/images/summit/Curated4.png" },
+                // {
+                //   name: "Musical performance",
+                //   image: "/images/summit/Curated5.png",
+                // },
               ].map((item, i) => (
                 <div key={i} className="flex flex-col items-center gap-3">
                   <div className="relative w-full aspect-square rounded-xl overflow-hidden">
