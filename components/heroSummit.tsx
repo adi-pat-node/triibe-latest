@@ -49,7 +49,7 @@ export default function HeroSummit() {
           <div className="absolute inset-0 w-full h-full bg-black/60" />
         </div>
 
-        <div className="relative z-10 flex flex-col items-center px-6 max-w-225 mx-auto ">
+        <div className="relative z-10 flex flex-col items-center px-6 max-w-225 mx-auto mb-24">
           <div className="flex flex-col items-center  pb-3">
             <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-4xl md:text-4xl lg:text-5xl text-center tracking-tight leading-tight max-w-200">
               TRIIBE Next-Gen Summit
@@ -73,7 +73,7 @@ export default function HeroSummit() {
             </div>
           </div>
 
-          <div className="bg-white backdrop-blur-sm border border-white/20 rounded-xl px-8 py-4 mb-6 text-center">
+          {/* <div className="bg-white backdrop-blur-sm border border-white/20 rounded-xl px-8 py-4 mb-6 text-center">
             <p className="text-[#002c19] text-lg font-bold mb-3">
               Regular Tickets sell out in
             </p>
@@ -97,7 +97,7 @@ export default function HeroSummit() {
                 <span className="text-[#002c19] text-xs mt-1">Mins</span>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <a
             href="#tickets"

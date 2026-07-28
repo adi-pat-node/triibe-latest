@@ -52,455 +52,298 @@ const Countdown = ({ targetDate }: { targetDate: string }) => {
 };
 
 const SummitPage = () => {
-  // const featuredSpeakers = [
-  //   {
-  //     title: "TRIIBE Talk 1",
-  //     speakers: [
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Next-Gen",
-  //       },
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Next-Gen",
-  //       },
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Established",
-  //       },
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Established",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     title: "TRIIBE Talk 2",
-  //     speakers: [
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Next-Gen",
-  //       },
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Next-Gen",
-  //       },
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Established",
-  //       },
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Established",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     title: "TRIIBE Talk 3: Shelter",
-  //     speakers: [
-  //       {
-  //         name: "Varuni Chopra",
-  //         title: "Founder, Bridge the Gap Initiative",
-  //         image: "/images/home/VaruniChopra.png",
-  //         linkedin: "https://www.linkedin.com/in/varuni-chopra1/",
-  //         tag: "Next-Gen",
-  //       },
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Next-Gen",
-  //       },
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Established",
-  //       },
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Established",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     title: "TRIIBE Talk 4: Health",
-  //     speakers: [
-  //       {
-  //         name: "Olivia Zhang",
-  //         title: "Founder and CEO, Cancer Kids First",
-  //         image:
-  //           "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68aa07201e49da83227f817d_1%20(1).png",
-  //         linkedin: "https://www.linkedin.com/in/olivia-zhang-a792b8229/",
-  //         tag: "Next-Gen",
-  //       },
-  //       {
-  //         name: "Nayla Jimenez",
-  //         title: "Founder, Philippine Health Initiative",
-  //         image: "/images/home/NaylaJimenez.png",
-  //         linkedin: "https://www.linkedin.com/in/naylajimenez/",
-  //         tag: "Next-Gen",
-  //       },
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Established",
-  //       },
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Established",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     title: "TRIIBE Talk 5: Education",
-  //     speakers: [
-  //       {
-  //         name: "Anne Frédérick",
-  //         title: "Founder, Haitech Learning",
-  //         image:
-  //           "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4ae976ac21db37b22369d_anna.png",
-  //         linkedin:
-  //           "https://www.linkedin.com/in/anne-sophie-frederick-1364ba235/",
-  //         tag: "Next-Gen",
-  //       },
-  //       {
-  //         name: "Samin Bhan",
-  //         title: "Founder, Lookupp",
-  //         image: "/images/home/saminbhan-2.png",
-  //         linkedin: "https://www.linkedin.com/in/samin-bhan/",
-  //         tag: "Next-Gen",
-  //       },
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Established",
-  //       },
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Established",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     title: "TRIIBE Talk 6: Food",
-  //     speakers: [
-  //       {
-  //         name: "Esha Venkat",
-  //         title: "Founder, Nest4Us",
-  //         image: "/images/home/homepage---changemakers-3.png",
-  //         linkedin: "https://www.linkedin.com/in/eshavenkat/",
-  //         tag: "Next-Gen",
-  //       },
-  //       {
-  //         name: "Shrusti Amula",
-  //         title: "Founder, Rise N Shine Foundation",
-  //         image: "/images/home/ShrustiAmula.png",
-  //         linkedin: "https://www.linkedin.com/in/shrusti-amula/",
-  //         tag: "Next-Gen",
-  //       },
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Established",
-  //       },
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Established",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     title: "TRIIBE Talk 7: Education",
-  //     speakers: [
-  //       {
-  //         name: "Maya Gowda",
-  //         title: "Founder, SEED",
-  //         image:
-  //           "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4ca26ae82ac604cfa0e61_maya%2022.png",
-  //         linkedin: "https://www.linkedin.com/in/maya-gowda-a20484240/",
-  //         tag: "Next-Gen",
-  //       },
-  //       {
-  //         name: "Gitanjali Rao",
-  //         title: "Global Keynote, Vervient Foundation",
-  //         image: "/images/home/GitanjaliRao.png",
-  //         linkedin: "https://www.linkedin.com/in/gitanjalirao/",
-  //         tag: "Next-Gen",
-  //       },
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Established",
-  //       },
-  //       {
-  //         name: "Coming Soon",
-  //         title: "",
-  //         image: null,
-  //         linkedin: "#",
-  //         tag: "Established",
-  //       },
-  //     ],
-  //   },
-  // ];
+  const panels = [
+    {
+      title: "Half a Life of Impact",
+      speakers: [
+        {
+          name: "Esha Venkat",
+          title: "Co-Founder, NEST4US",
+          image: "/images/home/homepage---changemakers-3.png",
+          linkedin: "https://www.linkedin.com/in/eshavenkat/",
+          tag: "Next-Gen",
+        },
+        {
+          name: "Lauren Shenkman",
+          title: "Director of Partnerships, Riley’s Way Foundation",
+          image: "/images/summit/LaurenShenkman2.jpg",
+          linkedin: "https://www.linkedin.com/in/laurenshenkman/",
+          tag: "Speaker",
+        },
+        {
+          name: "Zoe Terry",
+          title: "Founder, Zoe's Dolls",
+          image: "/images/summit/Zoe Terry.png",
+          linkedin: "https://www.linkedin.com/in/zoe-terry-01b14235b",
+          tag: "Next-Gen",
+        },
+        {
+          name: "Mariela Dabbah",
+          title: "Founder, Red Shoe Movement",
+          image: "/images/summit/MarielaDabbah3.png",
+          linkedin: "https://www.linkedin.com/in/marieladabbah/",
+          tag: "Speaker",
+        },
+        {
+          name: "Zoya Kalinsky",
+          title: "Founder, United Youth Council",
+          image: "/images/summit/ZoyaKalinsky.png",
+          linkedin: "#",
+          tag: "Moderator",
+        },
+      ],
+    },
+    {
+      title: "The Social Fix",
+      speakers: [
+        {
+          name: "Samin Bhan",
+          title: "Founder, Lookup",
+          image: "/images/home/saminbhan-2.png",
+          linkedin: "https://www.linkedin.com/in/samin-bhan/",
+          tag: "Next-Gen",
+        },
+        {
+          name: "Laura Bakosh",
+          title: "Cofounder, Inner Explorer",
+          image: "/images/summit/LauraBakosh.png",
+          linkedin: "https://www.linkedin.com/in/laurabakosh/",
+          tag: "Speaker",
+        },
+        {
+          name: "Varuni Chopra",
+          title: "Founder, Bridge the Gap",
+          image: "/images/triibe100/VaruniChopra.png",
+          linkedin: "https://www.linkedin.com/in/varuni-chopra1/",
+          tag: "Next-Gen",
+        },
+        {
+          name: "Chelsea Toler",
+          title: "Co-CEO, Logictry",
+          image: "/images/summit/ChelseaToler.png",
+          linkedin: "https://www.linkedin.com/in/catoler92/",
+          tag: "Speaker",
+        },
+        {
+          name: "Hikaru Hayakawa",
+          title: "Executive Director, Climate Cardinals",
+          image: "/",
+          linkedin: "https://www.linkedin.com/in/hikaruhayakawa",
+          tag: "Moderator",
+        },
+      ],
+    },
+    {
+      title: "Youth Against Hunger",
+      speakers: [
+        {
+          name: "Claire Chi",
+          title: "Founder, Dancing Against Hunger",
+          image: "/images/triibe100/Claire Chi.png",
+          linkedin: "#",
+          tag: "Next-Gen",
+        },
+        {
+          name: "Gregg Meyer",
+          title: "CSO & President, Steve Madden Corporate Foundation",
+          image: "/images/summit/GreggMeyer.jpg",
+          linkedin: "https://www.linkedin.com/in/gregg-meyer/",
+          tag: "Speaker",
+        },
+        {
+          name: "Bella Brown",
+          title: "Co-Founder, Living Outside",
+          image: "/",
+          linkedin: "https://www.linkedin.com/in/bellabrown369",
+          tag: "Next-Gen",
+        },
+        {
+          name: "Gabi Rijnveld",
+          title: "Co-Founder, Give to Empower",
+          image: "/",
+          linkedin: "https://www.linkedin.com/in/gabi-rijnveld-07052571/",
+          tag: "Speaker",
+        },
+        {
+          name: "Laurie Dhue",
+          title:
+            "MD, Family Office Resource Group, Past anchor for CNN, NBC, and Fox",
+          image: "/images/summit/LaurieDhue.png",
+          linkedin: "https://www.linkedin.com/in/laurie-dhue-705a7326/",
+          tag: "Moderator",
+        },
+      ],
+    },
+    {
+      title: "From the Ground Up",
+      speakers: [
+        {
+          name: "Nav Agarwal",
+          title: "Founder, One Step Greener",
+          image: "/",
+          linkedin: "https://www.linkedin.com/in/nav-agarwal-45009a158/",
+          tag: "Next-Gen",
+        },
+        {
+          name: "H.H. Prince Mario Max",
+          title: "Media Executive, Speaker, Philanthropist",
+          image: "/images/summit/PrinceMarioMax.png",
+          linkedin: "#",
+          tag: "Speaker",
+        },
+        {
+          name: "Shrusti Amula",
+          title: "Founder, Rise N Shine Foundation",
+          image: "/images/home/ShrustiAmula.png",
+          linkedin: "https://www.linkedin.com/in/shrusti-amula/",
+          tag: "Next-Gen",
+        },
+        {
+          name: "Megahan Peterson",
+          title: "CIO, The Family Offices Global",
+          image: "/images/summit/MegahanPeterson.png",
+          linkedin: "https://www.linkedin.com/in/megahan-peterson-3b6b5012/",
+          tag: "Speaker",
+        },
+        {
+          name: "Nawaf Alshaikhmubarak",
+          title: "COO, TRIIBE",
+          image: "/images/team/nawaf-alshaikhmubarak.jpg",
+          linkedin: "https://www.linkedin.com/in/nawaf-mub/",
+          tag: "Moderator",
+        },
+      ],
+    },
+    {
+      title: "Embracing Unlikely Partnerships",
+      speakers: [
+        {
+          name: "Anne-Sophie Frédérick",
+          title: "Founder, Haitech Learning",
+          image:
+            "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4ae976ac21db37b22369d_anna.png",
+          linkedin:
+            "https://www.linkedin.com/in/anne-sophie-frederick-1364ba235/",
+          tag: "Next-Gen",
+        },
+        {
+          name: "Adeline Azrack",
+          title: "Managing Director, Fondation CHANEL",
+          image: "/images/summit/AdelineAzrack.png",
+          linkedin: "https://www.linkedin.com/in/adeline-azrack-0853023/",
+          tag: "Speaker",
+        },
+        {
+          name: "Maya Gowda",
+          title: "Founder, SEED",
+          image:
+            "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4ca26ae82ac604cfa0e61_maya%2022.png",
+          linkedin: "https://www.linkedin.com/in/maya-gowda-a20484240/",
+          tag: "Next-Gen",
+        },
+        {
+          name: "Elo",
+          title: "Founder, Vice City District",
+          image: "/",
+          linkedin: "#",
+          tag: "Speaker",
+        },
+        {
+          name: "Kathryn Lancioni",
+          title: "Cornell Director, Cayuga Forum",
+          image: "/images/summit/KathrynLancioni.jpg",
+          linkedin: "https://www.linkedin.com/in/kathrynlancioni335/",
+          tag: "Moderator",
+        },
+      ],
+    },
+    {
+      title: "Care Without Borders",
+      speakers: [
+        {
+          name: "Nayla Jimenez",
+          title: "Founder, Philippine Health Initiative",
+          image: "/images/home/NaylaJimenez.png",
+          linkedin: "https://www.linkedin.com/in/naylajimenez/",
+          tag: "Next-Gen",
+        },
+        {
+          name: "Holland Haiis",
+          title: "Co-founder, Avita House",
+          image: "/images/summit/HollandHaiis.png",
+          linkedin: "https://www.linkedin.com/in/hollandhaiis/",
+          tag: "Speaker",
+        },
+        {
+          name: "Olivia Zhang",
+          title: "Founder, Cancer Kids First",
+          image:
+            "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68aa07201e49da83227f817d_1%20(1).png",
+          linkedin: "https://www.linkedin.com/in/olivia-zhang-a792b8229/",
+          tag: "Next-Gen",
+        },
+        {
+          name: "Griffin Pinkow",
+          title: "Founder and CEO, Foreseeable Future Foundation",
+          image: "/images/summit/GriffinPinkow.png",
+          linkedin: "https://www.linkedin.com/in/gpinkow/",
+          tag: "Speaker",
+        },
+        {
+          name: "Hayfa Sdiri",
+          title: "Co-Founder and CIO, RIVET",
+          image: "/images/summit/HayfaSdiri.png",
+          linkedin: "https://www.linkedin.com/in/hayfa-sdiri/",
+          tag: "Moderator",
+        },
+      ],
+    },
 
-  const speakers = [
     {
-      name: "Varuni Chopra",
-      title: "Founder, Bridge the Gap Initiative",
-      image: "/images/triibe100/VaruniChopra.png",
-      linkedin: "https://www.linkedin.com/in/varuni-chopra1/",
-      tag: "Next-Gen",
+      title: "Upskilling the Next Generation",
+      speakers: [
+        {
+          name: "Gitanjali Rao",
+          title: "Founder, Vervient Foundation",
+          image: "/images/home/GitanjaliRao.png",
+          linkedin: "https://www.linkedin.com/in/gitanjalirao/",
+          tag: "Next-Gen",
+        },
+        {
+          name: "Todd Jacobson",
+          title: "Former Head of Social Responsibility, NBA",
+          image: "/images/team/ToddJacobson.jpg",
+          linkedin: "https://www.linkedin.com/in/todd-jacobson/",
+          tag: "Speaker",
+        },
+        {
+          name: "Sonali Ratnasinghe",
+          title: "Founder, Youth Ambassadors of Service",
+          image: "/",
+          linkedin: "https://www.linkedin.com/in/sonaliratnasinghe",
+          tag: "Next-Gen",
+        },
+        {
+          name: "Christyl C. Johnson",
+          title: "Former Executive Director for Research and Tech, White House",
+          image: "/images/summit/ChristylJohnson.jpg",
+          linkedin: "https://www.linkedin.com/in/christyl-johnson-phd-1091256/",
+          tag: "Speaker",
+        },
+        {
+          name: "Kyle Matthys",
+          title: "Founder and CEO, TRIIBE",
+          image: "/images/about/team/KyleMatthys.png",
+          linkedin: "https://www.linkedin.com/in/kylematthys/",
+          tag: "Moderator",
+        },
+      ],
     },
-    {
-      name: "Olivia Zhang",
-      title: "Founder and CEO, Cancer Kids First",
-      image:
-        "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68aa07201e49da83227f817d_1%20(1).png",
-      linkedin: "https://www.linkedin.com/in/olivia-zhang-a792b8229/",
-      tag: "Next-Gen",
-    },
-    {
-      name: "Nayla Jimenez",
-      title: "Founder, Philippine Health Initiative",
-      image: "/images/home/NaylaJimenez.png",
-      linkedin: "https://www.linkedin.com/in/naylajimenez/",
-      tag: "Next-Gen",
-    },
-    {
-      name: "Anne Frédérick",
-      title: "Founder, Haitech Learning",
-      image:
-        "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4ae976ac21db37b22369d_anna.png",
-      linkedin: "https://www.linkedin.com/in/anne-sophie-frederick-1364ba235/",
-      tag: "Next-Gen",
-    },
-    {
-      name: "Samin Bhan",
-      title: "Founder, Lookupp",
-      image: "/images/home/saminbhan-2.png",
-      linkedin: "https://www.linkedin.com/in/samin-bhan/",
-      tag: "Next-Gen",
-    },
-    {
-      name: "Esha Venkat",
-      title: "Founder, NEST4US",
-      image: "/images/home/homepage---changemakers-3.png",
-      linkedin: "https://www.linkedin.com/in/eshavenkat/",
-      tag: "Next-Gen",
-    },
-    {
-      name: "Shrusti Amula",
-      title: "Founder, Rise N Shine Foundation",
-      image: "/images/home/ShrustiAmula.png",
-      linkedin: "https://www.linkedin.com/in/shrusti-amula/",
-      tag: "Next-Gen",
-    },
-    {
-      name: "Maya Gowda",
-      title: "Founder, SEED",
-      image:
-        "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4ca26ae82ac604cfa0e61_maya%2022.png",
-      linkedin: "https://www.linkedin.com/in/maya-gowda-a20484240/",
-      tag: "Next-Gen",
-    },
-    {
-      name: "Gitanjali Rao",
-      title: "Global Keynote, Vervient Foundation",
-      image: "/images/home/GitanjaliRao.png",
-      linkedin: "https://www.linkedin.com/in/gitanjalirao/",
-      tag: "Next-Gen",
-    },
-    {
-      name: "Kyle Matthys",
-      title: "CEO, TRIIBE",
-      image: "/images/about/team/KyleMatthys.png",
-      linkedin: "https://www.linkedin.com/in/kylematthys/",
-      tag: "Moderator",
-    },
-    {
-      name: "Kathryn Lancioni",
-      title: "Cornell University Program Director, Cayuga Forum",
-      image: "/images/summit/KathrynLancioni.jpg",
-      linkedin: "https://www.linkedin.com/in/kathrynlancioni335/",
-      tag: "Moderator",
-    },
-    {
-      name: "Zoya Kalinsky",
-      title: "Founder, UnitEd Youth Counsil",
-      image: "/images/summit/ZoyaKalinsky.png",
-      instagram: "https://www.instagram.com/zoyakalinsky/",
-      tag: "Moderator",
-    },
-    {
-      name: "Hayfa Sdiri",
-      title: "Co-Founder and CIO, RIVET",
-      image: "/images/summit/HayfaSdiri.png",
-      linkedin: "https://www.linkedin.com/in/hayfa-sdiri/",
-      tag: "Moderator",
-    },
-    {
-      name: "Laurie Dhue",
-      title: `Managing Director, Family Office Resource Group
-      Past anchor for CNN, NBC, Fox, and PIX11`,
-      image: "/images/summit/LaurieDhue.png",
-      linkedin: "https://www.linkedin.com/in/laurie-dhue-705a7326/",
-      tag: "Moderator",
-    },
-    {
-      name: "Chirag Nijjer",
-      title: "Brand Historian for Google and the History Channel",
-      image: "/images/summit/Chirag Nijjer.png",
-      linkedin: "https://www.linkedin.com/in/chiragspeaks/",
-      tag: "MC",
-    },
-    {
-      name: "Mariela Dabbah",
-      title: "Founder, Red Shoe Movement",
-      image: "/images/summit/MarielaDabbah3.png",
-      linkedin: "https://www.linkedin.com/in/marieladabbah/",
-      tag: "Speaker",
-    },
-    {
-      name: "Gregg Meyer",
-      title: "CSO & President, Steve Madden Corporate Foundation",
-      image: "/images/summit/GreggMeyer.jpg",
-      linkedin: "https://www.linkedin.com/in/gregg-meyer/",
-      tag: "Speaker",
-    },
-    {
-      name: "His Highness Dr. Prince Mario-Max Schaumburg-Lippe",
-      title: "Media Executive, Speaker, Philanthropist",
-      image: "/images/summit/PrinceMarioMax.png",
-      linkedin: "#",
-      instagram: "https://www.instagram.com/princemariomax",
-      tag: "Speaker",
-    },
-    {
-      name: "Lauren Shenkman",
-      title: "Director of Partnerships, Riley’s Way Foundation",
-      image: "/images/summit/LaurenShenkman2.jpg",
-      linkedin: "https://www.linkedin.com/in/laurenshenkman/",
-      tag: "Speaker",
-    },
-    {
-      name: "Chelsea Toler",
-      title: "Co-CEO Logictry",
-      image: "/images/summit/ChelseaToler.png",
-      linkedin: "https://www.linkedin.com/in/catoler92/",
-      tag: "Speaker",
-    },
-    {
-      name: "Holland Haiis",
-      title: "Co-founder, Avita House",
-      image: "/images/summit/HollandHaiis.png",
-      linkedin: "https://www.linkedin.com/in/hollandhaiis/",
-      tag: "Speaker",
-    },
-    {
-      name: "Griffin Pinkow",
-      title: "CEO and Founder, Foreseeable Future Foundation",
-      image: "/images/summit/GriffinPinkow.png",
-      linkedin: "https://www.linkedin.com/in/gpinkow/",
-      tag: "Speaker",
-    },
-    {
-      name: "Megahan Peterson",
-      title: "CIO, The Family Offices Global",
-      image: "/images/summit/MegahanPeterson.png",
-      linkedin: "https://www.linkedin.com/in/megahan-peterson-3b6b5012/",
-      tag: "Speaker",
-    },
-    {
-      name: "Adeline Azrack",
-      title: "Managing Director, Fondation CHANEL",
-      image: "/images/summit/AdelineAzrack.png",
-      linkedin: "https://www.linkedin.com/in/adeline-azrack-0853023/",
-      tag: "Speaker",
-    },
-    {
-      name: "Laura Bakosh",
-      title: "Cofounder, Inner Explorer",
-      image: "/images/summit/LauraBakosh.png",
-      linkedin: "https://www.linkedin.com/in/laurabakosh/",
-      tag: "Speaker",
-    },
-    {
-      name: "Todd Jacobson",
-      title:
-        "Founder & CEO, TAJ Global & past head of social responsibility, NBA",
-      image: "/images/team/ToddJacobson.jpg",
-      linkedin: "https://www.linkedin.com/in/todd-jacobson/",
-      tag: "Speaker",
-    },
-    {
-      name: "Christyl C. Johnson",
-      title:
-        "Co-Founder and GP, Andromeda Ventures, past Executive Director of the National Science and Technology Council at the White House",
-      image: "/images/summit/ChristylJohnson.jpg",
-      linkedin: "https://www.linkedin.com/in/christyl-johnson-phd-1091256/",
-      tag: "Speaker",
-    },
-    /* {
-      name: "Caryl Stern",
-      title:
-        "Past Executive Director, Walton Family Foundation and President, UNICEF USA",
-      image: "/images/summit/CarylStern.jpg",
-      linkedin: "https://www.linkedin.com/in/caryl-stern-30a1489/",
-      tag: "Speaker",
-    }, */
   ];
 
   const scheduleDays = [
     {
       title: "Day 1, Friday September 11th",
-
       badge: "VIP Gala",
       highlight: {
         image: "/images/summit/Curated1.png",
@@ -508,130 +351,130 @@ const SummitPage = () => {
         name: "Chef Kim Yong",
         description:
           "Tokyo-trained, Michelin-starred known for single-source bluefin and a minimalist rice program. Curating Friday's tasting and the evening sushi show.",
-        bullets: ["Sushi show during Gala"],
+        bullets: ["Sushi show during Gala", "Give to Empower fashion show"],
       },
       items: [
         {
           time: "6:00 PM",
           title: "VIP reception",
-          description:
-            "Networking and tours With musical performance and drink reception",
+          description: "Live music performance, drink reception",
         },
         {
-          time: "6:45 PM",
+          time: "6:30 PM",
+          title: "Guests Take Seats",
+          description: "Chime for people to take their seats",
+        },
+        {
+          time: "6:40 PM",
           title: "Gala dinner",
-          description: "Sit-down meal for 400 guests",
+          description: "Kyle gives talks, gifts shared, then Sushi Show",
         },
         {
           time: "7:00 PM",
-          title: "VIP opening ceremony",
-          description: "keynote with gifts and sushi show",
+          title: "Meals and conversation",
+          description:
+            "Small breaks for quick talks and keynotes at select times",
         },
         {
-          time: "8:15 PM",
+          time: "7:45 PM",
+          title: "Fashion show",
+          description: "Give to Empower fashion show",
+        },
+        {
+          time: "8:00 PM",
+          title: "Live Auction",
+          description: "Auctioneers on stage and guests in participation",
+        },
+        {
+          time: "8:30 PM",
           title: "Networking reception",
-          description: "Musical band performance and event photography",
+          description: "Guests mingling to connect with one another",
         },
       ],
     },
     {
       title: "Day 2, Saturday September 12th",
-
       badge: "Forum",
       highlight: {
-        image: "/images/summit/fashion-show5.jpg",
-        label: "SATURDAY · MIDDAY INTERLUDE",
-        name: "Fashion show",
+        image: "/images/TRIIBELOGOS/TRIIBE LOGO.png",
+        label: "SATURDAY · PANELS",
+        name: "TRIIBE Talks",
         description:
-          "A 20-minute runway moment staged between the morning and afternoon TRIIBE Talks.", //  "Presented by Steve Madden · a 20-minute runway moment staged between the morning and afternoon TRIIBE Talks.",
-        bullets: [
-          "1:10 PM · Seating",
-          "Main Hall runway",
-          "All summit attendees",
-        ],
+          "A full day of intergenerational discussions across seven panels.",
+        bullets: ["Starting at 11:10 AM", "Main Hall", "All summit attendees"],
       },
       items: [
         {
-          time: "9:30 AM",
+          time: "10:00 AM",
+          title: "Guest Check-In",
+          description: "Enjoying the venue",
+        },
+        {
+          time: "11:00 AM",
           title: "Opening ceremony",
-          description: "Welcome remarks by Kyle Matthys",
+          description: "Kyle welcoming talk with Elo before first panel",
         },
         {
-          time: "9:40 AM",
-          title: "TRIIBE Talk",
+          time: "11:10 AM",
+          title: "Half a Life of Impact",
           description:
-            "Highlighting next-gen founders alongside established ones, because age doesn't define the quality of a voice.",
+            "Esha Venkat, Lauren Shenkman, Zoe Terry, Mariela Dabbah, Zoya Kalinsky",
         },
-        { time: "10:25 AM", title: "BREAK" },
+        { time: "11:55 AM", title: "BREAK" },
         {
-          time: "10:40 AM",
-          title: "TRIIBE Talk",
+          time: "12:10 PM",
+          title: "The Social Fix",
           description:
-            "Highlighting next-gen founders alongside established ones, because age doesn't define the quality of a voice.",
+            "Samin Bhan, Laura Bakosh, Varuni Chopra, Chelsea Toler, Hikaru Hayakawa",
         },
-        { time: "11:25 AM", title: "BREAK" },
+        { time: "12:55 PM", title: "BREAK" },
         {
-          time: "11:40 AM",
-          title: "TRIIBE Talk",
+          time: "1:10 PM",
+          title: "Youth Against Hunger",
           description:
-            "Highlighting next-gen founders alongside established ones, because age doesn't define the quality of a voice.",
+            "Claire Chi, Gregg Meyer, Bella Brown, Gabi Rijnveld, Laurie Dhue",
         },
         {
-          time: "12:25 PM",
+          time: "1:55 PM",
           title: "Lunch reception",
-          description: "Diverse food trucks",
+          description: "Lunch with diverse food trucks or bars",
         },
         {
-          time: "1:15 PM",
-          title: "Fashion show",
-          description: "Full film crew coverage with TV livestream",
-        },
-        {
-          time: "1:50 PM",
-          title: "TRIIBE Talk",
+          time: "2:40 PM",
+          title: "From the Ground Up",
           description:
-            "Highlighting next-gen founders alongside established ones, because age doesn't define the quality of a voice.",
+            "Nav Agarwal, H.H. Prince Mario Max, Shrusti Amula, Megahan Peterson, Nawaf Alshaikhmubarak",
         },
-        { time: "2:35 PM", title: "BREAK" },
-        {
-          time: "2:45 PM",
-          title: "TRIIBE Talk",
-          description:
-            "Highlighting next-gen founders alongside established ones, because age doesn't define the quality of a voice.",
-        },
-        { time: "3:30 PM", title: "BREAK" },
+        { time: "3:25 PM", title: "BREAK" },
         {
           time: "3:40 PM",
-          title: "TRIIBE Talk",
+          title: "Embracing Unlikely Partnerships",
           description:
-            "Highlighting next-gen founders alongside established ones, because age doesn't define the quality of a voice.",
+            "Anne-Sophie Frédérick, Adeline Azrack, Maya Gowda, Elo, Kathryn Lancioni",
         },
         { time: "4:25 PM", title: "BREAK" },
         {
-          time: "4:35 PM",
-          title: "TRIIBE Talk",
+          time: "4:40 PM",
+          title: "Care Without Borders",
           description:
-            "Highlighting next-gen founders alongside established ones, because age doesn't define the quality of a voice.",
+            "Nayla Jimenez, Holland Haiis, Olivia Zhang, Griffin Pinkow, Hayfa Sdiri",
+        },
+        { time: "5:25 PM", title: "BREAK" },
+        {
+          time: "5:40 PM",
+          title: "Upskilling the Next Generation",
+          description:
+            "Gitanjali Rao, Todd Jacobson, Sonali Ratnasinghe, Christyl Johnson, Kyle Matthys",
         },
         {
-          time: "5:20 PM",
+          time: "6:25 PM",
           title: "Founder recognition",
-          description: "LED screen presentation with cohorts on stage",
+          description: "Kyle on stage with cohorts thanking audience",
         },
         {
-          time: "5:35 PM",
-          title: "Closing remarks",
-          description: "Kyle Matthys on stage thanking the audience",
-        },
-        {
-          time: "5:45 PM",
-          title: "Drinks reception",
-          description: "Rooftop networking with jazz band",
-        },
-        {
-          time: "6:00 PM",
-          title: "Evening reception",
-          description: "Full bar service and continued networking",
+          time: "6:35 PM",
+          title: "Reception",
+          description: "Networking",
         },
       ],
     },
@@ -639,9 +482,51 @@ const SummitPage = () => {
       title: "Day 3, Sunday September 13th",
       location:
         "Workshop exclusively for TRIIBE Fellows, partners, select actors and artists",
-      badge: "Workshop",
+      badge: "Closing Ceremony",
       highlight: null,
-      items: [],
+      items: [
+        {
+          time: "6:00 AM",
+          title: "Morning Start",
+          description:
+            "TRIIBE Gym time together, check ins to ensure everyone's ready",
+        },
+        {
+          time: "9:00 AM",
+          title: "Breakfast",
+          description:
+            "TRIIBE goes out to breakfast before the final workshop next to the hotel",
+        },
+        {
+          time: "10:00 AM",
+          title: "Clean up and hotel Checkout",
+          description:
+            "TRIIBE Checks out of hotel with bags to bring to final ceremony before heading off to airports",
+        },
+        {
+          time: "11:00 AM",
+          title: "Closing Ceremony",
+          description:
+            "Workshop at a golf course, connecting with guests, final ceremonies",
+        },
+        {
+          time: "1:00 PM",
+          title: "Lunch",
+          description:
+            "Lunch and reception at venue for celebrities (actors, foundations, musicians) final goodbyes",
+        },
+        // {
+        //   time: "2:00 PM",
+        //   title: "Transit for cohorts",
+        //   description: "Order ubers for cohorts to reach airports and fly out",
+        // },
+        // {
+        //   time: "7:30 PM",
+        //   title: "End of Summit",
+        //   description:
+        //     "Order ubers for cohorts to reach airports and fly out / Cleanup final checks and appreciation",
+        // },
+      ],
     },
   ];
 
@@ -678,7 +563,6 @@ const SummitPage = () => {
 
           <div className="relative mt-12">
             <div className="bg-[#002C19] rounded-[10px] overflow-hidden min-h-[400px] flex">
-              {/* Left Image */}
               <div className="relative w-[35%] min-h-[400px]">
                 <Image
                   src="/images/summit/StevenMelnik.png"
@@ -689,7 +573,6 @@ const SummitPage = () => {
                 />
               </div>
 
-              {/* Right Content */}
               <div className="flex-1 flex items-center px-12 py-12">
                 <div>
                   <h4 className="text-white font-bold text-5xl mb-8">
@@ -761,43 +644,56 @@ const SummitPage = () => {
         </div>
       </section>
 
-      {/* <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]">
-        <div className="max-w-260 mx-auto flex flex-col gap-12">
+      <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]">
+        <div className="max-w-260 mx-auto flex flex-col gap-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center">
-            Featured Speakers
+            TRIIBE Talks
           </h2>
 
-          {featuredSpeakers.map((talk, talkIndex) => (
-            <div key={talkIndex} className="flex flex-col gap-6">
-              <h3 className="text-xl font-semibold text-[#002c19]">{talk.title}</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-                {talk.speakers.map((speaker, i) => (
+          {panels.map((panel, panelIndex) => (
+            <div key={panelIndex} className="flex flex-col gap-8">
+              <h3 className="text-2xl font-bold text-[#002c19] border-b border-gray-300 pb-2">
+                {panel.title}
+              </h3>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 justify-items-center">
+                {panel.speakers.map((speaker, i) => (
                   <a
                     key={i}
                     href={speaker.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-white rounded-xl p-6 flex flex-col items-center gap-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                    className={`bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow w-full max-w-[260px] ${speaker.linkedin === "#" ? "pointer-events-none" : ""}`}
                   >
-                    <div className="w-24 h-24 rounded-full overflow-hidden bg-gray-300 relative flex-shrink-0">
-                      {speaker.image && (
-                        <Image
-                          src={speaker.image}
-                          alt={speaker.name}
-                          fill
-                          className="object-cover"
-                        />
-                      )}
+                    <div className="relative w-full aspect-[4/3] bg-gray-200">
+                      <Image
+                        src={speaker.image}
+                        alt={speaker.name}
+                        fill
+                        className="object-cover object-top"
+                      />
+
+                      <span
+                        className={`absolute top-0 left-0 text-[10px] font-semibold px-3 py-1 rounded-br-xl ${
+                          speaker.tag === "Speaker"
+                            ? "bg-black text-white"
+                            : speaker.tag === "Moderator"
+                              ? "bg-gray-200 text-gray-600"
+                              : "bg-[#D8EFE4] text-[#002c19]/80"
+                        }`}
+                      >
+                        {speaker.tag}
+                      </span>
                     </div>
-                    <div className="flex flex-col items-center gap-1 text-center">
-                      <div className="flex items-center gap-1.5">
-                        <p className="font-semibold text-[#002c19] text-sm">
+
+                    <div className="p-4 flex flex-col gap-2">
+                      <div className="flex items-center justify-between gap-2">
+                        <p className="font-semibold text-[#002c19] text-sm tracking-tight truncate">
                           {speaker.name}
                         </p>
-
-                        {speaker.name !== "Coming Soon" && (
+                        {speaker.linkedin !== "#" && (
                           <svg
-                            className="w-4 h-4"
+                            className="w-4 h-4 flex-shrink-0"
                             viewBox="0 0 24 24"
                             fill="#0A66C2"
                           >
@@ -805,101 +701,20 @@ const SummitPage = () => {
                           </svg>
                         )}
                       </div>
-                      <p className="text-xs text-[#495565] leading-tight">
+
+                      <p className="text-xs text-[#002c19]/80 leading-tight whitespace-pre-line">
                         {speaker.title}
                       </p>
                     </div>
-                    <span
-                      className={`text-xs px-3 py-1 rounded-full border ${
-                        speaker.tag === "Next-Gen"
-                          ? "bg-[#D8EFE4] text-[#1C5945] border-[#1C5945]"
-                          : "bg-[#F5F0C9] text-[#6B5B00] border-[#4A3F00]"
-                      }`}
-                    >
-                      {speaker.tag}
-                    </span>
                   </a>
                 ))}
               </div>
             </div>
           ))}
-        </div>
-      </section> */}
 
-      <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]">
-        <div className="max-w-260 mx-auto flex flex-col gap-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center">
-            Featured Intergenerational Speakers
-          </h2>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
-            {speakers.map((speaker, i) => (
-              <a
-                key={i}
-                href={
-                  speaker.instagram && speaker.instagram !== "#"
-                    ? speaker.instagram
-                    : speaker.linkedin
-                }
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow w-full max-w-[260px]"
-              >
-                <div className="relative w-full aspect-[4/3] bg-gray-200">
-                  <Image
-                    src={speaker.image}
-                    alt={speaker.name}
-                    fill
-                    className="object-cover object-top"
-                  />
-
-                  {(speaker.tag === "Next-Gen" ||
-                    speaker.tag === "Speaker" ||
-                    speaker.tag === "Moderator" ||
-                    speaker.tag === "MC") && (
-                    <span
-                      className={`absolute top-0 left-0 text-xs font-semibold px-3 py-1 rounded-br-xl ${
-                        speaker.tag === "Speaker"
-                          ? "bg-black text-white"
-                          : speaker.tag === "Moderator"
-                            ? "bg-gray-200 text-gray-600"
-                            : "bg-[#D8EFE4] text-[#002c19]/80"
-                      }`}
-                    >
-                      {speaker.tag}
-                    </span>
-                  )}
-                </div>
-
-                <div className="p-4 flex flex-col gap-2">
-                  {/* REVERSED: Left-aligned flex layout containing the icon and name */}
-                  <div className="flex items-center justify-between gap-2">
-                    <p className="font-semibold text-[#002c19] text-sm tracking-tight truncate">
-                      {speaker.name}
-                    </p>
-                    {speaker.linkedin !== "#" &&
-                      (!speaker.instagram || speaker.instagram === "#") && (
-                        <svg
-                          className="w-4 h-4 flex-shrink-0"
-                          viewBox="0 0 24 24"
-                          fill="#0A66C2"
-                        >
-                          <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" />
-                        </svg>
-                      )}
-                  </div>
-
-                  <p className="text-xs text-[#002c19]/80 leading-tight whitespace-pre-line">
-                    {speaker.title}
-                  </p>
-                </div>
-              </a>
-            ))}
-          </div>
-
-          <p className="text-center text-sm text-[#002c19]/80">
+          {/* <p className="text-center text-sm text-[#002c19]/80 mt-4">
             more speakers coming soon...
-          </p>
+          </p> */}
         </div>
       </section>
 
@@ -909,7 +724,7 @@ const SummitPage = () => {
             Schedule
           </h2>
 
-          {scheduleDays.map((day, dayIndex) => (
+          {scheduleDays.map((day) => (
             <div
               key={day.title}
               className="bg-[#F5F5F5] rounded-2xl p-8 flex flex-col gap-6"
@@ -943,77 +758,82 @@ const SummitPage = () => {
               </div>
 
               {day.highlight && (
-                <>
-                  <div className="bg-white rounded-xl flex flex-col md:flex-row overflow-hidden">
-                    <div className="relative w-full md:w-56 h-48 md:h-auto flex-shrink-0">
-                      <Image
-                        src={day.highlight.image}
-                        alt={day.highlight.name}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <div className="flex flex-col gap-3 p-6">
-                      <p className="text-xs font-semibold text-[#002c19]/80 uppercase tracking-widest">
-                        {day.highlight.label}
-                      </p>
-                      <h4
-                        className="text-2xl italic text-[#002c19]"
-                        style={{ fontFamily: "'Cormorant Garamond', serif" }}
-                      >
-                        {day.highlight.name}
-                      </h4>
-                      <p className="text-sm text-[#002c19]/80 leading-relaxed">
-                        {day.highlight.description}
-                      </p>
-                      <div className="flex flex-wrap gap-x-8 gap-y-2 mt-2">
-                        {day.highlight.bullets.map((bullet, i) => (
-                          <span
-                            key={i}
-                            className="text-sm text-[#002c19]/80 flex items-center gap-2"
-                          >
-                            <span className="w-1 h-1 bg-black rounded-full"></span>
-                            {bullet}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
+                <div className="bg-white rounded-xl flex flex-col md:flex-row overflow-hidden">
+                  <div className="relative w-full md:w-56 h-48 md:h-auto flex-shrink-0">
+                    <Image
+                      src={day.highlight.image}
+                      alt={day.highlight.name}
+                      fill
+                      className={
+                        day.highlight.image ===
+                        "/images/TRIIBELOGOS/TRIIBE LOGO.png"
+                          ? "object-contain p-4"
+                          : "object-cover"
+                      }
+                    />
                   </div>
-
-                  <div className="flex flex-col">
-                    {day.items.map((item, i) => (
-                      <div
-                        key={i}
-                        className="grid grid-cols-[80px_1fr] gap-4 py-3 border-t border-gray-200 items-start"
-                      >
-                        <span className="text-sm font-semibold text-[#002c19]">
-                          {item.time}
+                  <div className="flex flex-col gap-3 p-6">
+                    <p className="text-xs font-semibold text-[#002c19]/80 uppercase tracking-widest">
+                      {day.highlight.label}
+                    </p>
+                    <h4
+                      className="text-2xl italic text-[#002c19]"
+                      style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                    >
+                      {day.highlight.name}
+                    </h4>
+                    <p className="text-sm text-[#002c19]/80 leading-relaxed">
+                      {day.highlight.description}
+                    </p>
+                    <div className="flex flex-wrap gap-x-8 gap-y-2 mt-2">
+                      {day.highlight.bullets.map((bullet, i) => (
+                        <span
+                          key={i}
+                          className="text-sm text-[#002c19]/80 flex items-center gap-2"
+                        >
+                          <span className="w-1 h-1 bg-black rounded-full"></span>
+                          {bullet}
                         </span>
-
-                        {item.title === "BREAK" ? (
-                          <div className="flex items-center gap-4 w-full">
-                            <div className="flex-1 h-px bg-gray-300"></div>
-                            <span className="text-xs text-[#002c19]/80 tracking-[0.3em]">
-                              BREAK
-                            </span>
-                            <div className="flex-1 h-px bg-gray-300"></div>
-                          </div>
-                        ) : (
-                          <div className="flex flex-col">
-                            <p className="text-sm font-semibold text-[#002c19] mb-2">
-                              {item.title}
-                            </p>
-                            {item.description && (
-                              <p className="text-xs text-[#002c19]/80">
-                                {item.description}
-                              </p>
-                            )}
-                          </div>
-                        )}
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
-                </>
+                </div>
+              )}
+
+              {day.items && day.items.length > 0 && (
+                <div className="flex flex-col">
+                  {day.items.map((item, i) => (
+                    <div
+                      key={i}
+                      className="grid grid-cols-[80px_1fr] gap-4 py-3 border-t border-gray-200 items-start"
+                    >
+                      <span className="text-sm font-semibold text-[#002c19]">
+                        {item.time}
+                      </span>
+
+                      {item.title === "BREAK" ? (
+                        <div className="flex items-center gap-4 w-full">
+                          <div className="flex-1 h-px bg-gray-300"></div>
+                          <span className="text-xs text-[#002c19]/80 tracking-[0.3em]">
+                            BREAK
+                          </span>
+                          <div className="flex-1 h-px bg-gray-300"></div>
+                        </div>
+                      ) : (
+                        <div className="flex flex-col">
+                          <p className="text-sm font-semibold text-[#002c19] mb-2">
+                            {item.title}
+                          </p>
+                          {item.description && (
+                            <p className="text-xs text-[#002c19]/80">
+                              {item.description}
+                            </p>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
               )}
             </div>
           ))}
@@ -1031,7 +851,6 @@ const SummitPage = () => {
 
           <div className="w-full">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              {/* BOX 1 */}
               <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm flex flex-col gap-5 h-full">
                 <div className="flex flex-col gap-1">
                   <h3 className="text-2xl font-bold text-[#002c19]">
@@ -1051,7 +870,6 @@ const SummitPage = () => {
                 </ul>
               </div>
 
-              {/* BOX 2 */}
               <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm flex flex-col gap-5 h-full">
                 <div className="flex flex-col gap-1">
                   <h3 className="text-2xl font-bold text-[#002c19]">
@@ -1125,9 +943,3 @@ const SummitPage = () => {
 };
 
 export default SummitPage;
-
-{
-  /* <section className="pt-32 pb-20 px-4 md:px-25 lg:px-50 bg-white">
-  <div className="max-w-260 mx-auto">sixth Section</div>
-</section>; */
-}
