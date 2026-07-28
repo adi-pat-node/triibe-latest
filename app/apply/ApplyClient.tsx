@@ -118,7 +118,7 @@ const Page = () => {
                   </li>
                   <li className="flex gap-3">
                     <span className="font-normal text-[#002c19]/80 text-base">
-                      — How would you use your first grant? (Your Pitch)
+                      — What are you trying to change? (Your Pitch)
                     </span>
                   </li>
                 </ul>
