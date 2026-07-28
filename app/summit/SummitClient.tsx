@@ -394,7 +394,7 @@ const SummitPage = () => {
     },
     {
       title: "Day 2, Saturday September 12th",
-      location: "Rally Point East",
+
       badge: "Forum",
       highlight: {
         image: "/images/TRIIBELOGOS/TRIIBE LOGO.png",
@@ -402,7 +402,11 @@ const SummitPage = () => {
         name: "TRIIBE Talks",
         description:
           "A full day of intergenerational discussions across seven panels.",
-        bullets: ["Starting at 11:10 AM", "Main Hall", "All summit attendees"],
+        bullets: [
+          "Starting at 11:10 AM",
+          "Rally Point East",
+          "All summit attendees",
+        ],
       },
       items: [
         {
