@@ -269,7 +269,7 @@ const SummitPage = () => {
         },
         {
           name: "Holland Haiis",
-          title: "Co-founder, Avita House",
+          title: "Founder, Alchimzing Humanity",
           image: "/images/summit/HollandHaiis.png",
           linkedin: "https://www.linkedin.com/in/hollandhaiis/",
           tag: "Speaker",
