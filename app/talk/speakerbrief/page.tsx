@@ -244,7 +244,7 @@ export default function SpeakerBriefPage() {
         </div>
       </section>
 
-      <div className="pt-6 text-center space-y-8">
+      {/* <div className="pt-6 text-center space-y-8">
         <section className="pb-25 w-full">
           <div className="w-full max-w-[860px] mx-auto transition-all duration-300 hover:scale-[1.02]">
             <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
@@ -252,7 +252,7 @@ export default function SpeakerBriefPage() {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
 
       <Footer />
     </div>
