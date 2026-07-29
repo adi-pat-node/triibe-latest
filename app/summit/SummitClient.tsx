@@ -127,7 +127,7 @@ const SummitPage = () => {
         {
           name: "Hikaru Hayakawa",
           title: "Executive Director, Climate Cardinals",
-          image: "/images/summit/hikaru.png",
+          image: "/images/summit/hikaru1.png",
           linkedin: "https://www.linkedin.com/in/hikaruhayakawa",
           tag: "Moderator",
         },
@@ -153,14 +153,14 @@ const SummitPage = () => {
         {
           name: "Bella Brown",
           title: "Co-Founder, Living Outside",
-          image: "/images/summit/bella.png",
+          image: "/images/summit/bella1.png",
           linkedin: "https://www.linkedin.com/in/bellabrown369",
           tag: "Next-Gen",
         },
         {
           name: "Gabi Rijnveld",
           title: "Co-Founder, Give to Empower",
-          image: "/images/summit/gabi.png",
+          image: "/images/summit/gabi1.png",
           linkedin: "https://www.linkedin.com/in/gabi-rijnveld-07052571/",
           tag: "Speaker",
         },
@@ -180,7 +180,7 @@ const SummitPage = () => {
         {
           name: "Nav Agarwal",
           title: "Founder, One Step Greener",
-          image: "/images/summit/nav.png",
+          image: "/images/summit/nav1.png",
           linkedin: "https://www.linkedin.com/in/nav-agarwal-45009a158/",
           tag: "Next-Gen",
         },
@@ -244,7 +244,7 @@ const SummitPage = () => {
         {
           name: "Elo",
           title: "Founder, Vice City District",
-          image: "/images/summit/elo.png",
+          image: "/images/summit/elo1.png",
           linkedin: "#",
           tag: "Speaker",
         },
@@ -319,7 +319,7 @@ const SummitPage = () => {
         {
           name: "Sonali Ratnasinghe",
           title: "Founder, Youth Ambassadors of Service",
-          image: "/images/summit/sonali.png",
+          image: "/images/summit/sonali1.png",
           linkedin: "https://www.linkedin.com/in/sonaliratnasinghe",
           tag: "Next-Gen",
         },
@@ -841,7 +841,7 @@ const SummitPage = () => {
                 <ul className="flex flex-col gap-4 text-[#002c19] text-base leading-relaxed list-disc pl-5">
                   <li>
                     Friday gala dinner featuring a live tuna carving show,
-                    opening ceremony, cocktail reception, and jazz performance.
+                    opening ceremony, cocktail reception, and fashion show.
                   </li>
                 </ul>
               </div>
@@ -859,19 +859,14 @@ const SummitPage = () => {
 
                 <ul className="flex flex-col gap-4 text-[#002c19] text-base leading-relaxed list-disc pl-5">
                   <li>
-                    Saturday includes 7 TRIIBE Talks, the fashion show, supercar
-                    showcase, and closing reception.
-                  </li>
-
-                  <li>
-                    Next-Gen passes are reserved for active nonprofit founders,
-                    co-founders, and staff members under the age of 30.
+                    Saturday includes 7 TRIIBE Talks, the supercar showcase, and
+                    closing reception.
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-xl p-4 flex flex-col gap-3 text-center">
+            {/* <div className="bg-white border border-gray-200 rounded-xl p-4 flex flex-col gap-3 text-center">
               <p className="font-semibold text-[#002c19]">
                 Ticket pricing increases
               </p>
@@ -899,7 +894,7 @@ const SummitPage = () => {
                   <Countdown targetDate="2026-08-01T00:00:00" />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="w-full max-w-4xl mx-auto min-h-[600px]">

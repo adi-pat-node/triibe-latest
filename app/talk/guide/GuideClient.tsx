@@ -495,7 +495,7 @@ export default function TriibeTalkGuidePage() {
               </p>
 
               <a
-                href="https://app.signnow.com/webapp/document/5356c06355f74a52b2f3ddbf363cd029a290ac28?dispatched=true&mobileweb=app_or_mobileweb_choice&redirect_uri=https%253A%252F%252Fapp.signnow.com%252Fhtml%252Fthanks-for-signing%253Fdocument_id%253D5356c06355f74a52b2f3ddbf363cd029a290ac28%2526access_token%253D884462df418a32d16d200b46f2aa47ab22af0a8661e1894264756e792c94205b&sign=1&source=link"
+                href="https://app.signnow.com/webapp/document/c9483a4cd4a348aba2ed89029d2efd8f3e79d5c5?dispatched=true&mobileweb=app_or_mobileweb_choice&redirect_uri=https%253A%252F%252Fapp.signnow.com%252Fhtml%252Fthanks-for-signing%253Fdocument_id%253Dc9483a4cd4a348aba2ed89029d2efd8f3e79d5c5%2526access_token%253D3da38e8d274800443d59711b908e70b34d75a95e5ff191719b07d7477b9c2a73&sign=1&source=link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105 mt-4"
