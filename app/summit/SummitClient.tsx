@@ -65,7 +65,8 @@ const SummitPage = () => {
         },
         {
           name: "Lauren Shenkman",
-          title: "Director of Partnerships, Riley’s Way Foundation",
+          title:
+            "Director of Partnerships and Programs, Riley’s Way Foundation",
           image: "/images/summit/LaurenShenkman2.jpg",
           linkedin: "https://www.linkedin.com/in/laurenshenkman/",
           tag: "Speaker",
