@@ -352,7 +352,7 @@ const SummitPage = () => {
         name: "Chef Kim Yong",
         description:
           "Tokyo-trained, Michelin-starred known for single-source bluefin and a minimalist rice program. Curating Friday's tasting and the evening sushi show.",
-        bullets: ["Sushi show during Gala", "Give to Empower fashion show"],
+        bullets: ["Sushi show during Gala", "Fashion show"],
       },
       items: [
         {
@@ -379,7 +379,7 @@ const SummitPage = () => {
         {
           time: "7:45 PM",
           title: "Fashion show",
-          description: "Give to Empower fashion show",
+          description: "Fashion Show",
         },
         {
           time: "8:00 PM",
@@ -589,7 +589,7 @@ const SummitPage = () => {
                   image: "/images/summit/Curated1.png",
                 },
                 {
-                  name: "Give To Empower Fashion show",
+                  name: "Fashion Show",
                   image: "/images/summit/fashion-show5.jpg",
                 },
                 {
