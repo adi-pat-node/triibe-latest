@@ -1,9 +1,4 @@
-import {
-  Globe,
-  Handshake,
-  Monitor,
-  Palette,
-} from "lucide-react";
+import { Globe, Handshake, Monitor, Palette } from "lucide-react";
 import type {
   Person,
   Department,
@@ -497,7 +492,7 @@ export const departments: Department[] = [
       },
     ],
   }, */
- /*  {
+  /*  {
     name: "Events",
     Icon: CalendarDays,
     members: [
@@ -666,10 +661,6 @@ export const departments: Department[] = [
         imagePath: "/images/team/pranay-mishra.jpeg",
         linkedIn: "https://www.linkedin.com/in/pranay--mishra/",
         isHead: true,
-      },
-      {
-        name: "Aditya Patnaik",
-        imagePath: "/images/team/aditya-patnaik.jpg",
       },
       {
         name: "Riya Bose",
