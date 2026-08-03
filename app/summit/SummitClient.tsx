@@ -168,7 +168,7 @@ const SummitPage = () => {
         {
           name: "Laurie Dhue",
           title:
-            "MD, Family Office Resource Group, Past anchor for CNN, NBC, and Fox",
+            "MD, Family Office Growth Partners, Past anchor for CNN, MSNBC, and Fox",
           image: "/images/summit/LaurieDhue.png",
           linkedin: "https://www.linkedin.com/in/laurie-dhue-705a7326/",
           tag: "Moderator",

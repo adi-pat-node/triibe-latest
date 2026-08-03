@@ -202,7 +202,7 @@ export const legacyBoard: Person[] = [
   {
     name: "Laurie Dhue",
     title:
-      "Managing Director, Family Office Resource Group. Past anchor for CNN, NBC, Fox, and PIX11",
+      "MD, Family Office Growth Partners, Past anchor for CNN, MSNBC, and Fox",
     imagePath: "/images/team/laurie-dhue.jfif",
     linkedIn: "https://www.linkedin.com/in/laurie-dhue-705a7326/",
   },
