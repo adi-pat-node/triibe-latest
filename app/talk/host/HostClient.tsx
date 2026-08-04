@@ -243,19 +243,24 @@ const HostEventPage = () => {
 
   const handleSubmit = async () => {
     setIsSubmitting(true);
+
     try {
       await fetch(SHEET_URL, {
         method: "POST",
         mode: "no-cors",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(formData),
       });
-      // router.push("/talk/speakerbrief");
+
+      setSubmitSuccess(true);
+      router.push("/talk/speakerbrief?submission=success");
     } catch (err) {
+      console.error(err);
+      alert("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);
-      setSubmitSuccess(true);
-      router.push("/thank-you-host");
     }
   };
 
