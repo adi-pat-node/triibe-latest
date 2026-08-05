@@ -245,7 +245,6 @@ const HostEventPage = () => {
     setIsSubmitting(true);
 
     try {
-      console.log("SHEET_URL =", SHEET_URL);
       await fetch(SHEET_URL, {
         method: "POST",
         mode: "no-cors",
