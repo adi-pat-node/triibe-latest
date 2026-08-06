@@ -159,10 +159,10 @@ const SummitPage = () => {
           tag: "Next-Gen",
         },
         {
-          name: "Gabi Rijnveld",
-          title: "Co-Founder, Give to Empower",
-          image: "/images/summit/gabi1.png",
-          linkedin: "https://www.linkedin.com/in/gabi-rijnveld-07052571/",
+          name: "Robert Lee",
+          title: "CEO and Co-Founder, Rescuing Leftover Cuisine",
+          image: "/images/summit/RobertLee.jpg",
+          linkedin: "https://www.linkedin.com/in/robertlee2/",
           tag: "Speaker",
         },
         {
