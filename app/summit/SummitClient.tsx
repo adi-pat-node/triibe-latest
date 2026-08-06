@@ -555,22 +555,18 @@ const SummitPage = () => {
 
                 <div className="flex-1 flex flex-col justify-start px-8 pt-10 pb-8">
                   <div>
-                    <h4 className="text-white font-bold text-3xl leading-tight mb-4">
+                    <h4 className="text-white font-bold text-3xl leading-tight mb-6">
                       Dr. Steven V. Melnik
                     </h4>
 
-                    <p className="text-white/70 text-base leading-relaxed mb-4">
+                    <p className="text-white/70 text-base leading-relaxed mb-8">
                       Chairman,
                       <br />
                       United World Leaders, Lives Amplified
                     </p>
 
-                    <p className="text-white text-xl mb-6">
+                    <p className="text-white text-xl mb-8">
                       Opening Gala Remarks
-                    </p>
-
-                    <p className="text-white/70 text-base">
-                      Headlining keynote coming soon
                     </p>
                   </div>
                 </div>
