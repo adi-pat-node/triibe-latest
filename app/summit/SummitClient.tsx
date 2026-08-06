@@ -105,10 +105,10 @@ const SummitPage = () => {
           tag: "Next-Gen",
         },
         {
-          name: "Laura Bakosh",
-          title: "Cofounder, Inner Explorer",
-          image: "/images/summit/LauraBakosh.png",
-          linkedin: "https://www.linkedin.com/in/laurabakosh/",
+          name: "Vin Infante",
+          title: "Founder, Omega Lifestyles NYC",
+          image: "/images/summit/VinInfante.png",
+          linkedin: "https://www.linkedin.com/in/vininfante/",
           tag: "Speaker",
         },
         {
@@ -179,10 +179,10 @@ const SummitPage = () => {
       title: "From the Ground Up",
       speakers: [
         {
-          name: "Nav Agarwal",
-          title: "Founder, One Step Greener",
-          image: "/images/summit/nav1.png",
-          linkedin: "https://www.linkedin.com/in/nav-agarwal-45009a158/",
+          name: "Nayla Jimenez",
+          title: "Founder, Philippine Health Initiative",
+          image: "/images/home/NaylaJimenez.png",
+          linkedin: "https://www.linkedin.com/in/naylajimenez/",
           tag: "Next-Gen",
         },
         {
@@ -207,10 +207,10 @@ const SummitPage = () => {
           tag: "Speaker",
         },
         {
-          name: "Nawaf Alshaikhmubarak",
-          title: "COO, TRIIBE",
-          image: "/images/team/nawaf-alshaikhmubarak.jpg",
-          linkedin: "https://www.linkedin.com/in/nawaf-mub/",
+          name: "Derin Sezgin",
+          title: "President, SDG Youth Connect",
+          image: "/images/summit/DerinSezgin.png",
+          linkedin: "https://www.linkedin.com/in/derinege/",
           tag: "Moderator",
         },
       ],
@@ -262,10 +262,10 @@ const SummitPage = () => {
       title: "Care Without Borders",
       speakers: [
         {
-          name: "Nayla Jimenez",
-          title: "Founder, Philippine Health Initiative",
-          image: "/images/home/NaylaJimenez.png",
-          linkedin: "https://www.linkedin.com/in/naylajimenez/",
+          name: "Crystal Yang",
+          title: "Founder & CEO, Audemy",
+          image: "/images/summit/CrystalYang.png",
+          linkedin: "https://www.linkedin.com/in/crustaly/",
           tag: "Next-Gen",
         },
         {
@@ -332,10 +332,10 @@ const SummitPage = () => {
           tag: "Speaker",
         },
         {
-          name: "Kyle Matthys",
-          title: "Founder and CEO, TRIIBE",
-          image: "/images/about/team/KyleMatthys.png",
-          linkedin: "https://www.linkedin.com/in/kylematthys/",
+          name: "Genia Xasis",
+          title: "CEO & Founding Partner, Berkana",
+          image: "/images/summit/GeniaXasis.jpg",
+          linkedin: "https://www.linkedin.com/in/genia-xasis/",
           tag: "Moderator",
         },
       ],
@@ -367,14 +367,14 @@ const SummitPage = () => {
         },
         {
           time: "6:40 PM",
-          title: "Gala dinner",
-          description: "Kyle gives talks, gifts shared, then Sushi Show",
+          title: "Gala Dinner Opening Ceremony",
+          description: "Kyle gives the welcome, gifts shared, Opening Remarks by Dr. Steven Melnik, Keynote by Kent Seton",
         },
         {
           time: "7:00 PM",
-          title: "Meals and conversation",
+          title: "Sushi Show",
           description:
-            "Small breaks for quick talks and keynotes at select times",
+            "Sushi show, small breaks for quick talks and keynotes at select times",
         },
         {
           time: "7:45 PM",
@@ -431,7 +431,7 @@ const SummitPage = () => {
           time: "12:10 PM",
           title: "The Social Fix",
           description:
-            "Samin Bhan, Laura Bakosh, Varuni Chopra, Chelsea Toler, Hikaru Hayakawa",
+            "Samin Bhan, Vin Infante, Varuni Chopra, Chelsea Toler, Hikaru Hayakawa",
         },
         { time: "12:55 PM", title: "BREAK" },
         {
@@ -449,7 +449,7 @@ const SummitPage = () => {
           time: "2:40 PM",
           title: "From the Ground Up",
           description:
-            "Nav Agarwal, H.H. Prince Mario Max, Shrusti Amula, Megahan Peterson, Nawaf Alshaikhmubarak",
+            "Nayla Jimenez, H.H. Prince Mario Max, Shrusti Amula, Megahan Peterson, Derin Sezgin",
         },
         { time: "3:25 PM", title: "BREAK" },
         {
@@ -463,14 +463,14 @@ const SummitPage = () => {
           time: "4:40 PM",
           title: "Care Without Borders",
           description:
-            "Nayla Jimenez, Holland Haiis, Olivia Zhang, Griffin Pinkow, Hayfa Sdiri",
+            "Crystal Yang, Holland Haiis, Olivia Zhang, Griffin Pinkow, Hayfa Sdiri",
         },
         { time: "5:25 PM", title: "BREAK" },
         {
           time: "5:40 PM",
           title: "Upskilling the Next Generation",
           description:
-            "Gitanjali Rao, Todd Jacobson, Sonali Ratnasinghe, Christyl Johnson, Kyle Matthys",
+            "Gitanjali Rao, Todd Jacobson, Sonali Ratnasinghe, Christyl Johnson, Genia Xasis",
         },
         {
           time: "6:25 PM",
