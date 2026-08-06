@@ -373,7 +373,7 @@ const SummitPage = () => {
         },
         {
           time: "7:00 PM",
-          title: "Sushi Show",
+          title: "Sushi show",
           description:
             "Sushi show, small breaks for quick talks and keynotes at select times",
         },
@@ -617,7 +617,7 @@ const SummitPage = () => {
                   image: "/images/summit/Curated1.png",
                 },
                 {
-                  name: "Fashion Show",
+                  name: "Fashion show",
                   image: "/images/summit/fashion-show5.jpg",
                 },
                 {
