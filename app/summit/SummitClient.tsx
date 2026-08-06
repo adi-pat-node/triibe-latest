@@ -368,7 +368,8 @@ const SummitPage = () => {
         {
           time: "6:40 PM",
           title: "Gala Dinner Opening Ceremony",
-          description: "Kyle gives the welcome, gifts shared, Opening Remarks by Dr. Steven Melnik, Keynote by Kent Seton",
+          description:
+            "Kyle gives the welcome, gifts shared, Opening Remarks by Dr. Steven Melnik, Keynote by Kent Seton",
         },
         {
           time: "7:00 PM",
@@ -539,36 +540,67 @@ const SummitPage = () => {
           </div>
 
           <div className="relative mt-12">
-            <div className="bg-[#002C19] rounded-[10px] overflow-hidden min-h-[400px] flex">
-              <div className="relative w-[35%] min-h-[400px]">
-                <Image
-                  src="/images/summit/Dr Melnik headshot 2.png"
-                  alt="Dr. Steven Melnik"
-                  fill
-                  className="object-cover"
-                  priority
-                />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              
+              <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[400px] flex">
+                <div className="relative w-[45%] h-full">
+                  <Image
+                    src="/images/summit/Dr Melnik headshot 2.png"
+                    alt="Dr. Steven Melnik"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+
+                <div className="flex-1 flex flex-col justify-start px-8 pt-10 pb-8">
+                  <div>
+                    <h4 className="text-white font-bold text-3xl leading-tight mb-4">
+                      Dr. Steven V. Melnik
+                    </h4>
+
+                    <p className="text-white/70 text-base leading-relaxed mb-4">
+                      Chairman,
+                      <br />
+                      United World Leaders, Lives Amplified
+                    </p>
+
+                    <p className="text-white text-xl mb-6">
+                      Opening Gala Remarks
+                    </p>
+
+                    <p className="text-white/70 text-base">
+                      Headlining keynote coming soon
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              <div className="flex-1 flex items-center px-12 py-12">
-                <div>
-                  <h4 className="text-white font-bold text-5xl mb-8">
-                    Dr. Steven V. Melnik
-                  </h4>
+              
+              <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[400px] flex">
+                <div className="relative w-[45%] h-full">
+                  <Image
+                    src="/images/summit/kent-seton.jpeg"
+                    alt="Kent Seton"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
 
-                  <p className="text-white/70 text-lg mb-8 leading-relaxed">
-                    Chairman,
-                    <br />
-                    United World Leaders, Lives Amplified
-                  </p>
+                <div className="flex-1 flex flex-col justify-start px-8 pt-10 pb-8">
+                  <div>
+                    <h4 className="text-white font-bold text-4xl leading-tight mb-6">
+                      Kent Seton
+                    </h4>
 
-                  <p className="text-white text-2xl mb-24">
-                    Opening Gala Remarks
-                  </p>
+                    <p className="text-white/70 text-base leading-relaxed mb-6">
+                      CEO,
+                      <br />
+                      Edward Charles Foundation
+                    </p>
 
-                  <p className="text-white/70 text-lg">
-                    Headlining keynote coming soon
-                  </p>
+                    <p className="text-white text-xl">Keynote Speaker</p>
+                  </div>
                 </div>
               </div>
             </div>
