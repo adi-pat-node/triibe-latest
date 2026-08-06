@@ -439,7 +439,7 @@ const SummitPage = () => {
           time: "1:10 PM",
           title: "Youth Against Hunger",
           description:
-            "Claire Chi, Gregg Meyer, Bella Brown, Gabi Rijnveld, Laurie Dhue",
+            "Claire Chi, Gregg Meyer, Bella Brown, Robert Lee, Laurie Dhue",
         },
         {
           time: "1:55 PM",
