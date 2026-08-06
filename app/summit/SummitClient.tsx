@@ -542,7 +542,7 @@ const SummitPage = () => {
           <div className="relative mt-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               
-              <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[400px] flex">
+              <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[390px] flex">
                 <div className="relative w-[45%] h-full">
                   <Image
                     src="/images/summit/Dr Melnik headshot 2.png"
@@ -573,7 +573,7 @@ const SummitPage = () => {
               </div>
 
               
-              <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[400px] flex">
+              <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[390px] flex">
                 <div className="relative w-[45%] h-full">
                   <Image
                     src="/images/summit/kent-seton.jpeg"
