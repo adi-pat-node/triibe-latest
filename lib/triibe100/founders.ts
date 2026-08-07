@@ -323,6 +323,34 @@ const restOverrides: Partial<Founder>[] = [
     image: "/images/triibe100/ValAmielVestil.jpg",
     website: "https://www.linkedin.com/company/association-of-young-environmental-journalists/",
   },
+  {
+    name: "Ava Langridge",
+    org: "",
+    bio: "Founder & Executive Director, Our Youth 4 The Climate",
+    image: "/images/triibe100/AvaLangridge.jpg",
+    website: "https://oy4c.org/",
+  },
+  {
+    name: "Kehkashan Basu",
+    org: "",
+    bio: "Sustainability Expert, Green Hope Foundation",
+    image: "/images/triibe100/KehkashanBasu.jpeg",
+    website: "https://www.thegreenhopefoundation.org/",
+  },
+  {
+    name: "Rijve Arefin",
+    org: "",
+    bio: "Co-Founder, Awareness 360",
+    image: "/images/triibe100/RijveArefin.jpg",
+    website: "https://awareness360.org.my/",
+  },
+  {
+    name: "Joseph Nguthiru",
+    org: "",
+    bio: "Co-Founder & Engineer, AfroClimate",
+    image: "/images/triibe100/JosephNguthiru.jpg",
+    website: "https://www.afroclimate.org/",
+  },
 
   {
     name: "COMING_SOON_PLACEHOLDER",
