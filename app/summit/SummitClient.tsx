@@ -311,10 +311,10 @@ const SummitPage = () => {
           tag: "Next-Gen",
         },
         {
-          name: "Todd Jacobson",
-          title: "Former Head of Social Responsibility, NBA",
-          image: "/images/team/ToddJacobson.jpg",
-          linkedin: "https://www.linkedin.com/in/todd-jacobson/",
+          name: "Heather White",
+          title: "Founder, Verité",
+          image: "/images/summit/HeatherWhite.jpg",
+          linkedin: "https://www.linkedin.com/in/heatherwhite150/",
           tag: "Speaker",
         },
         {
@@ -471,7 +471,7 @@ const SummitPage = () => {
           time: "5:40 PM",
           title: "Upskilling the Next Generation",
           description:
-            "Gitanjali Rao, Todd Jacobson, Sonali Ratnasinghe, Christyl Johnson, Genia Xasis",
+            "Gitanjali Rao, Heather White, Sonali Ratnasinghe, Christyl Johnson, Genia Xasis",
         },
         {
           time: "6:25 PM",
@@ -523,25 +523,24 @@ const SummitPage = () => {
             <p className="text-[#002c19] text-base leading-relaxed">
               Friday's VIP Gala is a 300-guest dinner featuring Michelin-starred
               celebrity sushi chefs performing two live tuna carvings, opening
-              remarks, a keynote, and live auction.
+              remarks, keynotes, and a live auction.
               <br />
               <br />
               Saturday's Forum for 500 is a full day featuring seven TRIIBE
-              Talks, a supercar street takeover, and a fashion show.
+              Talks and a dozen supercars.
               <br />
               <br />
-              Sunday’s cohort-only workshop pairs our founders with artists and
-              musicians for media training with Alethos.
+              Sunday’s closing ceremony pairs our founders with guests for a
+              more reflective end to the weekend.
               <br />
               <br />
-              Documentaries on each nonprofit and the summit as a whole release
-              in November two weeks before Giving Tuesday.
+              Podcasts on our founders and the summit as a whole release in
+              November two weeks before Giving Tuesday.
             </p>
           </div>
 
           <div className="relative mt-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              
               <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[390px] flex">
                 <div className="relative w-[45%] h-full">
                   <Image
@@ -572,7 +571,6 @@ const SummitPage = () => {
                 </div>
               </div>
 
-              
               <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[390px] flex">
                 <div className="relative w-[45%] h-full">
                   <Image
