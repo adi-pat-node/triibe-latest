@@ -99,6 +99,18 @@ export default function HeroSummit() {
             </div>
           </div> */}
 
+          <div className="flex flex-col items-center gap-2 text-white text-sm mb-6">
+  <div className="flex items-center gap-2">
+    <MapPin size={15} />
+    <span>Friday at Ideal Glass Studios, Manhattan</span>
+  </div>
+
+  <div className="flex items-center gap-2">
+    <MapPin size={15} />
+    <span>Saturday at Rallypoint East, Westhampton Beach</span>
+  </div>
+</div>
+
           <a
             href="#tickets"
             className="px-12 py-3 bg-white text-[#002c19] font-bold text-sm rounded-sm h-[44px] hover:bg-gray-100 transition-colors mt-4"

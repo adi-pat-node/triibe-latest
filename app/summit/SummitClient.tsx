@@ -344,7 +344,7 @@ const SummitPage = () => {
 
   const scheduleDays = [
     {
-      title: "Day 1, Friday September 11th",
+      title: "Day 1, Friday September 11th, Ideal Glass Studios",
       badge: "VIP Gala",
       highlight: {
         image: "/images/summit/Curated1.png",
@@ -395,7 +395,7 @@ const SummitPage = () => {
       ],
     },
     {
-      title: "Day 2, Saturday September 12th",
+      title: "Day 2, Saturday September 12th, Rallypoint East",
 
       badge: "Forum",
       highlight: {
