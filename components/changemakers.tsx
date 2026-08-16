@@ -114,6 +114,61 @@ export default function Changemakers() {
     },
   ];
 
+  const cohort3: Changemaker[] = [
+    {
+      name: "Bella Brown",
+      title: "Co-Founder, Living Outside",
+      university: "2026 U.S. fellow",
+      description:
+        "Destigmatize homelessness through care bags distributed with conversation, dignity, and direct human connection",
+      founded: "",
+      image: "/images/triibe100/BellaBrown.jpg",
+      website: "https://www.livingoutside.org/",
+    },
+
+    {
+      name: "Sonali Ratnasinghe",
+      title: "Founder and Executive Director, Youth Ambassadors of Service",
+      university: "2026 U.S. fellow",
+      description:
+        "Train high school students to lead real service initiatives through nonprofit internships and mentorship",
+      founded: "",
+      image: "/images/triibe100/SonaliRatnasinghe.jpg",
+      website: " https://www.youthambassadorsofservice.org/",
+    },
+
+    {
+      name: "Nav Agarwal",
+      title: "Founder, One Step Greener",
+      university: "2026 U.S. fellow",
+      description:
+        "Move Delhi toward a zero-waste future through household recycling, education, and tree planting",
+      founded: "",
+      image: "/images/triibe100/NavAgarwal.jpg",
+      website: " https://www.onestepgreener.org/",
+    },
+    {
+      name: "Claire Chi",
+      title: "Founder and Executive Director, Dancing Against Hunger",
+      university: "2026 U.S. fellow",
+      description:
+        "Relieve food insecurity in schools through accessible dance education and community food drives",
+      founded: "",
+      image: "/images/triibe100/Claire Chi.png",
+      website: " https://www.dancingagainsthunger.org/",
+    },
+    {
+      name: "Zoe Terry",
+      title: "Founder and CEO, Zoe's Dolls",
+      university: "2026 U.S. fellow",
+      description:
+        "Build self-esteem in Black and brown girls by gifting dolls made in their own image",
+      founded: "",
+      image: "/images/triibe100/Zoe Terry.png",
+      website: "https://zoesdolls.com/",
+    },
+  ];
+
   const renderCard = (changemaker: Changemaker, index: number) => (
     <a
       key={index}
@@ -177,7 +232,6 @@ export default function Changemakers() {
             </h2>
           </div>
 
-          {/* Row 1: 4 items centered */}
           <div className="flex flex-col sm:flex-row justify-center items-stretch gap-6 mb-12">
             {cohort1.map((person, i) => (
               <div key={i} className="w-full sm:max-w-75 flex-1 flex">
@@ -186,9 +240,16 @@ export default function Changemakers() {
             ))}
           </div>
 
-          {/* Row 2: 5 items on one bar */}
           <div className="flex flex-col sm:flex-row sm:flex-nowrap justify-center items-stretch gap-4">
             {cohort2.map((person, i) => (
+              <div key={i} className="w-full sm:flex-1 flex">
+                {renderCard(person, i)}
+              </div>
+            ))}
+          </div>
+
+          <div className="flex flex-col sm:flex-row sm:flex-nowrap justify-center items-stretch gap-4">
+            {cohort3.map((person, i) => (
               <div key={i} className="w-full sm:flex-1 flex">
                 {renderCard(person, i)}
               </div>
