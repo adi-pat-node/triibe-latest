@@ -572,7 +572,7 @@ const SummitPage = () => {
               <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[390px] flex">
                 <div className="relative w-[40%] min-w-[165px] h-full shrink-0">
                   <Image
-                    src="/images/summit/kent-seton.jpeg"
+                    src="/images/summit/KentSeton.png"
                     alt="Kent Seton"
                     fill
                     className="object-cover"
