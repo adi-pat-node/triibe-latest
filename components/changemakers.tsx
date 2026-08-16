@@ -173,7 +173,7 @@ export default function Changemakers() {
               className="font-bold text-[#002c19]
  text-4xl md:text-6xl tracking-[-0.90px] leading-10 mb-4"
             >
-              Our first two cohorts
+              Our cohorts
             </h2>
           </div>
 

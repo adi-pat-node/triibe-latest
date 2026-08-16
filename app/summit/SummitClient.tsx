@@ -540,61 +540,84 @@ const SummitPage = () => {
           </div>
 
           <div className="relative mt-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[390px] flex">
-                <div className="relative w-[45%] h-full">
-                  <Image
-                    src="/images/summit/Dr Melnik headshot 2.png"
-                    alt="Dr. Steven Melnik"
-                    fill
-                    className="object-cover"
-                    priority
-                  />
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Dr. Steven V. Melnik */}
+<div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[390px] flex">
+  <div className="relative w-[42%] min-w-[165px] h-full shrink-0">
+    <Image
+      src="/images/summit/Dr Melnik headshot 2.png"
+      alt="Dr. Steven V. Melnik"
+      fill
+      className="object-cover"
+      sizes="(max-width: 1024px) 42vw, 165px"
+      priority
+    />
+  </div>
 
-                <div className="flex-1 flex flex-col justify-start px-8 pt-10 pb-8">
-                  <div>
-                    <h4 className="text-white font-bold text-3xl leading-tight mb-6">
-                      Dr. Steven V. Melnik
-                    </h4>
+  <div className="flex-1 min-w-0 flex flex-col justify-end px-5 pb-8">
+    <h4 className="text-white font-bold text-[18px] leading-[1.15] mb-5">
+      Dr. Steven V. Melnik
+    </h4>
 
-                    <p className="text-white/70 text-base leading-relaxed mb-8">
-                      Chairman,
-                      <br />
-                      United World Leaders, Lives Amplified
-                    </p>
+    <p className="text-white/70 text-[15px] leading-relaxed mb-6">
+      Chairman, United World Leaders, Lives Amplified
+    </p>
 
-                    <p className="text-white text-xl mb-8">
-                      Opening Gala Remarks
-                    </p>
-                  </div>
-                </div>
-              </div>
+    <p className="text-white text-lg leading-snug">
+      Opening Gala Remarks
+    </p>
+  </div>
+</div>
 
               <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[390px] flex">
-                <div className="relative w-[45%] h-full">
+                <div className="relative w-[40%] min-w-[165px] h-full shrink-0">
                   <Image
                     src="/images/summit/kent-seton.jpeg"
                     alt="Kent Seton"
                     fill
                     className="object-cover"
+                    sizes="(max-width: 1024px) 42vw, 165px"
                   />
                 </div>
 
-                <div className="flex-1 flex flex-col justify-start px-8 pt-10 pb-8">
-                  <div>
-                    <h4 className="text-white font-bold text-4xl leading-tight mb-6">
-                      Kent Seton
-                    </h4>
+                <div className="flex-1 min-w-0 flex flex-col justify-end px-5 pb-8">
+                  <h4 className="text-white font-bold text-[26px] leading-[1.15] mb-5">
+                    Kent Seton
+                  </h4>
 
-                    <p className="text-white/70 text-base leading-relaxed mb-6">
-                      CEO,
-                      <br />
-                      Edward Charles Foundation
-                    </p>
+                  <p className="text-white/70 text-[15px] leading-relaxed mb-6">
+                    CEO, Edward Charles Foundation
+                  </p>
 
-                    <p className="text-white text-xl">Keynote Speaker</p>
-                  </div>
+                  <p className="text-white text-lg leading-snug">
+                    Keynote Speaker
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[390px] flex">
+                <div className="relative w-[40%] min-w-[165px] h-full shrink-0">
+                  <Image
+                    src="/images/summit/JamesKeyes.webp"
+                    alt="James Keyes"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 42vw, 165px"
+                  />
+                </div>
+
+                <div className="flex-1 min-w-0 flex flex-col justify-end px-5 pb-8">
+                  <h4 className="text-white font-bold text-[26px] leading-[1.15] mb-5">
+                    James Keyes
+                  </h4>
+
+                  <p className="text-white/70 text-[15px] leading-relaxed mb-6">
+                    Former CEO, 7-Eleven &amp; Blockbuster
+                  </p>
+
+                  <p className="text-white text-lg leading-snug">
+                    Keynote Speaker
+                  </p>
                 </div>
               </div>
             </div>
