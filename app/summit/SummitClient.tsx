@@ -541,33 +541,33 @@ const SummitPage = () => {
 
           <div className="relative mt-12">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Dr. Steven V. Melnik */}
-<div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[390px] flex">
-  <div className="relative w-[42%] min-w-[165px] h-full shrink-0">
-    <Image
-      src="/images/summit/Dr Melnik headshot 2.png"
-      alt="Dr. Steven V. Melnik"
-      fill
-      className="object-cover"
-      sizes="(max-width: 1024px) 42vw, 165px"
-      priority
-    />
-  </div>
+              
+              <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[390px] flex">
+                <div className="relative w-[42%] min-w-[165px] h-full shrink-0">
+                  <Image
+                    src="/images/summit/StevenmelnikHeadshot.png"
+                    alt="Dr. Steven V. Melnik"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 42vw, 165px"
+                    priority
+                  />
+                </div>
 
-  <div className="flex-1 min-w-0 flex flex-col justify-end px-5 pb-8">
-    <h4 className="text-white font-bold text-[18px] leading-[1.15] mb-5">
-      Dr. Steven V. Melnik
-    </h4>
+                <div className="flex-1 min-w-0 flex flex-col justify-end px-5 pb-8">
+                  <h4 className="text-white font-bold text-[18px] leading-[1.15] mb-5">
+                    Dr. Steven V. Melnik
+                  </h4>
 
-    <p className="text-white/70 text-[15px] leading-relaxed mb-6">
-      Chairman, United World Leaders, Lives Amplified
-    </p>
+                  <p className="text-white/70 text-[15px] leading-relaxed mb-6">
+                    Chairman, United World Leaders, Lives Amplified
+                  </p>
 
-    <p className="text-white text-lg leading-snug">
-      Opening Gala Remarks
-    </p>
-  </div>
-</div>
+                  <p className="text-white text-lg leading-snug">
+                    Opening Gala Remarks
+                  </p>
+                </div>
+              </div>
 
               <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[390px] flex">
                 <div className="relative w-[40%] min-w-[165px] h-full shrink-0">
@@ -598,7 +598,7 @@ const SummitPage = () => {
               <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[390px] flex">
                 <div className="relative w-[40%] min-w-[165px] h-full shrink-0">
                   <Image
-                    src="/images/summit/JamesKeyes.webp"
+                    src="/images/summit/JamesKeyes.png"
                     alt="James Keyes"
                     fill
                     className="object-cover"
