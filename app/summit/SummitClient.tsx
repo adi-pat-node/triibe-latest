@@ -581,7 +581,7 @@ const SummitPage = () => {
                 </div>
 
                 <div className="flex-1 min-w-0 flex flex-col justify-end px-5 pb-8">
-                  <h4 className="text-white font-bold text-[26px] leading-[1.15] mb-5">
+                  <h4 className="text-white font-bold text-[18px] leading-[1.15] mb-5">
                     Kent Seton
                   </h4>
 
@@ -607,7 +607,7 @@ const SummitPage = () => {
                 </div>
 
                 <div className="flex-1 min-w-0 flex flex-col justify-end px-5 pb-8">
-                  <h4 className="text-white font-bold text-[26px] leading-[1.15] mb-5">
+                  <h4 className="text-white font-bold text-[18px] leading-[1.15] mb-5">
                     James Keyes
                   </h4>
 
