@@ -352,7 +352,7 @@ const SummitPage = () => {
         name: "Chef Kim Yong",
         description:
           "Tokyo-trained, Michelin-starred known for single-source bluefin and a minimalist rice program. Curating Friday's tasting and the evening sushi show.",
-        bullets: ["Sushi show during Gala", "Fashion show"],
+        bullets: ["Sushi show during Gala", "Fashion show", "Black tie attire"],
       },
       items: [
         {
@@ -408,6 +408,7 @@ const SummitPage = () => {
           "Starting at 11:10 AM",
           "Rally Point East",
           "All summit attendees",
+          "Casual attire",
         ],
       },
       items: [
