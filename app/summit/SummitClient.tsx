@@ -80,7 +80,7 @@ const SummitPage = () => {
         },
         {
           name: "Mariela Dabbah",
-          title: "Founder, Red Shoe Movement",
+          title: "Founder & CEO, Red Shoe Movement",
           image: "/images/summit/MarielaDabbah3.png",
           linkedin: "https://www.linkedin.com/in/marieladabbah/",
           tag: "Speaker",

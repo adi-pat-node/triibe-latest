@@ -195,7 +195,7 @@ export const legacyBoard: Person[] = [
   */
   {
     name: "Mariela Dabbah",
-    title: "Founder, Red Shoe Movement",
+    title: "Founder & CEO, Red Shoe Movement",
     imagePath: "/images/team/mariela-dabbah.jpg",
     linkedIn: "https://www.linkedin.com/in/marieladabbah/",
   },
