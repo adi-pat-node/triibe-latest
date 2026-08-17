@@ -232,7 +232,7 @@ export default function Changemakers() {
             </h2>
           </div>
 
-          <div className="flex flex-col sm:flex-row justify-center items-stretch gap-6 mb-12">
+          <div className="flex flex-col sm:flex-row justify-center items-stretch gap-6 mb-16">
             {cohort1.map((person, i) => (
               <div key={i} className="w-full sm:max-w-75 flex-1 flex">
                 {renderCard(person, i)}
@@ -240,7 +240,7 @@ export default function Changemakers() {
             ))}
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:flex-nowrap justify-center items-stretch gap-4">
+          <div className="flex flex-col sm:flex-row sm:flex-nowrap justify-center items-stretch gap-4 mb-16">
             {cohort2.map((person, i) => (
               <div key={i} className="w-full sm:flex-1 flex">
                 {renderCard(person, i)}
