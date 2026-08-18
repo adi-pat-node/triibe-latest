@@ -166,11 +166,11 @@ const SummitPage = () => {
           tag: "Speaker",
         },
         {
-          name: "Laurie Dhue",
+          name: "Matan Dubnikov",
           title:
-            "MD, Family Office Growth Partners, Past anchor for CNN, MSNBC, and Fox",
-          image: "/images/summit/LaurieDhue.png",
-          linkedin: "https://www.linkedin.com/in/laurie-dhue-705a7326/",
+            "Ecological Designer & Grower",
+          image: "/images/summit/MatanDubnikov.png",
+          linkedin: "http://www.linkedin.com/in/matan-dubnikov-0095bb165",
           tag: "Moderator",
         },
       ],
