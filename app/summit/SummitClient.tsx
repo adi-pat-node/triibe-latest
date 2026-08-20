@@ -166,11 +166,11 @@ const SummitPage = () => {
           tag: "Speaker",
         },
         {
-          name: "Matan Dubnikov",
+          name: "Matt Bird",
           title:
-            "Ecological Designer & Grower",
-          image: "/images/summit/MatanDubnikov.png",
-          linkedin: "http://www.linkedin.com/in/matan-dubnikov-0095bb165",
+            "CEO, ESG News",
+          image: "/images/summit/MattBird.jpg",
+          linkedin: "https://www.linkedin.com/in/matt-bird-15908b6/",
           tag: "Moderator",
         },
       ],
