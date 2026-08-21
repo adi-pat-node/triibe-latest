@@ -44,10 +44,10 @@ export default function ApplicationProcess() {
                 APPLICATION WINDOW
               </p>
               <h3 className=" font-normal text-[#002c19] text-2xl leading-8">
-                Now open
+                Now Closed
               </h3>
               <p className=" font-normal text-[#002c19]/80 text-base leading-[25.6px]">
-                Applications for the Spring 2026 cohort are being accepted now.
+                Applications for the 2027 cohort open in March.
               </p>
             </div>
 
@@ -65,12 +65,12 @@ export default function ApplicationProcess() {
                 ))}
               </div>
               <div className="flex flex-col gap-4 w-full">
-                <a
+                {/* <a
                   href="/apply"
                   className="w-full md:w-auto px-6 py-3 bg-[#002c19]  hover:bg-[#1C5945] text-white rounded-sm h-[44px] border border-[#1C5945] transition-colors text-center font-semibold text-base"
                 >
                   Begin Application
-                </a>
+                </a> */}
 
                 <a
                   href="https://donate.rayzeapp.com/orgs/tIbe07j0XKkLQezHHXoz"
