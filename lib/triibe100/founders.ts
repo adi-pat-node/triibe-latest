@@ -49,6 +49,8 @@ const firstTen: Founder[] = [
     name: "Shrusti Amula",
     org: "",
     bio: "Founder - Rise N Shine Foundation",
+    description:
+      "Founded Rise N Shine Foundation in 2019 at 13, after a STEM competition asked her to solve a local problem and she landed on food waste. The youth-led nonprofit runs composting and food recovery across Montgomery County Public Schools, Maryland's largest district, turning cafeteria scraps into compost and surplus food into meals, and pairing school programs with legislative advocacy.\n\nRise N Shine has diverted more than 222,000 pounds of waste from landfills and contributed over 350,000 meals, with food recovery now operating in more than 100 schools. It helped move Maryland's SB 124 through a 17,000-postcard campaign, and its founder is a L'Oréal Paris Women of Worth honoree recognized by Points of Light.",
     image: "/images/triibe100/Shrusti Amula.png",
     website: "https://www.risenshinefoundation.org/",
     linkedin: "https://www.linkedin.com/in/shrusti-amula/",

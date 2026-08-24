@@ -29,7 +29,6 @@ export default function FounderCard({ founder }: { founder: Founder }) {
     return () => observer.disconnect();
   }, []);
 
-  // Close modal with Escape + prevent background scrolling
   useEffect(() => {
     if (!isOpen) return;
 
@@ -54,6 +53,154 @@ export default function FounderCard({ founder }: { founder: Founder }) {
 
   return (
     <>
+      <style>{`
+        .founder-modal {
+          width: min(900px, 92vw);
+        }
+
+        .founder-modal-image {
+          width: 48%;
+          min-height: 440px;
+        }
+
+        .founder-modal-content {
+          width: 52%;
+          padding: 56px 52px;
+        }
+
+        .founder-modal-description {
+          max-height: 250px;
+        }
+
+        @media (max-width: 768px) {
+          .founder-modal {
+            width: calc(100vw - 24px);
+            height: calc(100vh - 24px);
+            max-height: calc(100vh - 24px);
+            display: grid !important;
+            grid-template-columns: 1fr;
+            grid-template-rows: 42% 58%;
+          }
+
+          .founder-modal-image {
+            width: 100%;
+            height: 100%;
+            min-height: 0;
+          }
+
+          .founder-modal-content {
+            width: 100%;
+            height: 100%;
+            min-height: 0;
+            padding: 28px 24px 24px;
+            justify-content: flex-start !important;
+            overflow-y: auto;
+            box-sizing: border-box;
+          }
+
+          .founder-modal-content h2 {
+            font-size: 28px !important;
+          }
+
+          .founder-modal-content > p {
+            font-size: 16px !important;
+          }
+
+          .founder-modal-description {
+            max-height: none !important;
+            overflow: visible !important;
+            padding-right: 0 !important;
+          }
+
+          .founder-modal-description p {
+            font-size: 15px !important;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .founder-modal {
+            width: calc(100vw - 16px);
+            height: calc(100vh - 16px);
+            max-height: calc(100vh - 16px);
+            grid-template-rows: 36% 64%;
+            border-radius: 14px !important;
+          }
+
+          .founder-modal-content {
+            padding: 24px 20px 20px;
+          }
+
+          .founder-modal-content h2 {
+            font-size: 25px !important;
+          }
+
+          .founder-modal-content > p {
+            font-size: 15px !important;
+          }
+
+          .founder-modal-content > div:first-of-type {
+            margin: 20px 0 !important;
+          }
+
+          .founder-modal-description p {
+            font-size: 14px !important;
+            line-height: 1.6 !important;
+          }
+        }
+
+        @media (min-width: 769px) and (max-height: 700px) {
+          .founder-modal {
+            max-height: calc(100vh - 32px);
+          }
+
+          .founder-modal-image {
+            min-height: 0;
+            height: calc(100vh - 32px);
+            max-height: calc(100vh - 32px);
+          }
+
+          .founder-modal-content {
+            max-height: calc(100vh - 32px);
+            overflow-y: auto;
+            box-sizing: border-box;
+          }
+        }
+
+        .founder-modal-content::-webkit-scrollbar {
+          width: 5px;
+        }
+
+        .founder-modal-content::-webkit-scrollbar-track {
+          background: transparent;
+        }
+
+        .founder-modal-content::-webkit-scrollbar-thumb {
+          background: rgba(0, 44, 25, 0.2);
+          border-radius: 10px;
+        }
+
+        .founder-modal-content::-webkit-scrollbar-thumb:hover {
+          background: rgba(0, 44, 25, 0.35);
+        }
+
+        .founder-modal-description::-webkit-scrollbar {
+          width: 5px;
+        }
+
+        .founder-modal-description::-webkit-scrollbar-track {
+          background: transparent;
+        }
+
+        .founder-modal-description::-webkit-scrollbar-thumb {
+          background: rgba(0, 44, 25, 0.2);
+          border-radius: 10px;
+        }
+
+        .founder-modal-description::-webkit-scrollbar-thumb:hover {
+          background: rgba(0, 44, 25, 0.35);
+        }
+      `}</style>
+
       <div
         ref={ref}
         style={{
@@ -201,15 +348,14 @@ export default function FounderCard({ founder }: { founder: Founder }) {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              padding: "24px",
+              padding: "16px",
             }}
           >
-            {/* Modal box */}
             <div
+              className="founder-modal"
               onMouseDown={(event) => event.stopPropagation()}
               style={{
                 position: "relative",
-                width: "min(900px, 92vw)",
                 background: "#f4f0e8",
                 borderRadius: "16px",
                 overflow: "hidden",
@@ -217,7 +363,6 @@ export default function FounderCard({ founder }: { founder: Founder }) {
                 boxShadow: "0 25px 80px rgba(0,0,0,0.45)",
               }}
             >
-              {/* Close button */}
               <button
                 type="button"
                 onClick={() => setIsOpen(false)}
@@ -244,11 +389,9 @@ export default function FounderCard({ founder }: { founder: Founder }) {
                 ×
               </button>
 
-              {/* Left image */}
               <div
+                className="founder-modal-image"
                 style={{
-                  width: "48%",
-                  minHeight: "440px",
                   position: "relative",
                   overflow: "hidden",
                 }}
@@ -265,14 +408,13 @@ export default function FounderCard({ founder }: { founder: Founder }) {
                 />
               </div>
 
-              {/* Right content */}
               <div
+                className="founder-modal-content"
                 style={{
-                  width: "52%",
-                  padding: "56px 52px",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "center",
+                  boxSizing: "border-box",
                 }}
               >
                 <h2
@@ -307,17 +449,20 @@ export default function FounderCard({ founder }: { founder: Founder }) {
                     background: "#002C19",
                     opacity: 0.25,
                     margin: "26px 0",
+                    flexShrink: 0,
                   }}
                 />
 
                 {founder.description && (
                   <div
+                    className="founder-modal-description"
                     style={{
                       maxHeight: "250px",
                       overflowY: "auto",
                       paddingRight: "10px",
                       scrollbarWidth: "thin",
-                      scrollbarColor: "rgba(0,44,25,0.25) transparent",
+                      scrollbarColor:
+                        "rgba(0,44,25,0.25) transparent",
                     }}
                   >
                     <p
@@ -335,17 +480,18 @@ export default function FounderCard({ founder }: { founder: Founder }) {
                   </div>
                 )}
 
-                {/* Social links */}
-                {(founder.linkedin || founder.website || founder.instagram) && (
+                {(founder.linkedin ||
+                  founder.website ||
+                  founder.instagram) && (
                   <div
                     style={{
                       display: "flex",
                       alignItems: "center",
                       gap: "12px",
                       marginTop: "30px",
+                      flexShrink: 0,
                     }}
                   >
-                    {/* LinkedIn */}
                     {founder.linkedin && (
                       <a
                         href={founder.linkedin}
@@ -361,9 +507,11 @@ export default function FounderCard({ founder }: { founder: Founder }) {
                           alignItems: "center",
                           justifyContent: "center",
                           textDecoration: "none",
-                          boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+                          boxShadow:
+                            "0 4px 12px rgba(0,0,0,0.08)",
                           transition:
                             "transform 200ms ease, box-shadow 200ms ease",
+                          flexShrink: 0,
                         }}
                       >
                         <svg
@@ -378,7 +526,6 @@ export default function FounderCard({ founder }: { founder: Founder }) {
                       </a>
                     )}
 
-                    {/* Instagram */}
                     {founder.instagram && (
                       <a
                         href={founder.instagram}
@@ -394,9 +541,11 @@ export default function FounderCard({ founder }: { founder: Founder }) {
                           alignItems: "center",
                           justifyContent: "center",
                           textDecoration: "none",
-                          boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+                          boxShadow:
+                            "0 4px 12px rgba(0,0,0,0.08)",
                           transition:
                             "transform 200ms ease, box-shadow 200ms ease",
+                          flexShrink: 0,
                         }}
                       >
                         <svg
@@ -405,7 +554,12 @@ export default function FounderCard({ founder }: { founder: Founder }) {
                           viewBox="0 0 50 50"
                           aria-hidden="true"
                         >
-                          <rect width="50" height="50" rx="10" fill="#002C19" />
+                          <rect
+                            width="50"
+                            height="50"
+                            rx="10"
+                            fill="#002C19"
+                          />
                           <circle
                             cx="25"
                             cy="25"
@@ -414,12 +568,16 @@ export default function FounderCard({ founder }: { founder: Founder }) {
                             stroke="white"
                             strokeWidth="6"
                           />
-                          <circle cx="40" cy="13" r="3" fill="white" />
+                          <circle
+                            cx="40"
+                            cy="13"
+                            r="3"
+                            fill="white"
+                          />
                         </svg>
                       </a>
                     )}
 
-                    {/* Website */}
                     {founder.website && (
                       <a
                         href={founder.website}
@@ -435,9 +593,11 @@ export default function FounderCard({ founder }: { founder: Founder }) {
                           alignItems: "center",
                           justifyContent: "center",
                           textDecoration: "none",
-                          boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+                          boxShadow:
+                            "0 4px 12px rgba(0,0,0,0.08)",
                           transition:
                             "transform 200ms ease, box-shadow 200ms ease",
+                          flexShrink: 0,
                         }}
                       >
                         <svg
@@ -452,8 +612,13 @@ export default function FounderCard({ founder }: { founder: Founder }) {
                           aria-hidden="true"
                         >
                           <circle cx="12" cy="12" r="9" />
-                          <line x1="3" y1="12" x2="21" y2="12" />
-                          <path d="M12 3c2.2 2.4 3.3 5.4 3.3 9s-1.1 6.6-3.3 9c-2.2-2.4-3.3-5.4-3.3-9S9.8 5.4 12 3Z" />
+                          <line
+                            x1="3"
+                            y1="12"
+                            x2="21"
+                            y2="12"
+                          />
+                          <path d="M12 3c2.2 2.4 3.3 5.4 3.3 9s-1.1 6.6-3.3 9c-2.2-2.4-3.3-6.6-3.3-9S9.8 5.4 12 3Z" />
                         </svg>
                       </a>
                     )}
