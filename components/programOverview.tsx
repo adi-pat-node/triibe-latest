@@ -59,7 +59,7 @@ export default function ProgramOverviewTest() {
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 w-full max-w-5xl mx-auto">
               <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.2] text-center md:text-left max-w-2xl">
-                Channeling capital to the nonprofit startup ecosystem
+                If incentives won’t build the nonprofit startup sector, we will
               </h3>
 
               <div className="flex-shrink-0 flex justify-center w-48 md:w-64 -ml-8 overflow-visible">
@@ -84,7 +84,7 @@ export default function ProgramOverviewTest() {
 
             <div className="mt-8 md:mt-10 text-center">
               <p className="text-white/90 text-sm md:text-base font-medium">
-                Capital flows directly to innovators. We don&apos;t take a cut.
+                Bringing startup dynamics to the nonprofit sector
               </p>
             </div>
           </div>

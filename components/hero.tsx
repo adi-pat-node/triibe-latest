@@ -25,10 +25,10 @@ export default function Hero() {
         <div className="relative z-10 flex flex-col items-center  px-6   max-w-225 mx-auto ">
           {/* Heading */}
           <div className="flex flex-col items-center mt-40 md:mt-14 pb-3">
-            <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-4xl md:text-4xl lg:text-[64px] text-center tracking-tight leading-tight max-w-200">
-              Uniting next-gen nonprofit
+            <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-3xl md:text-3xl lg:text-[56px] text-center tracking-tight leading-tight max-w-200">
+              Maximizing a return on impact
               <br />
-              Innovators and Investors
+              and income for nonprofits
             </h1>
           </div>
 
