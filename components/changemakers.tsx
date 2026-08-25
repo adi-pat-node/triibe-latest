@@ -258,7 +258,7 @@ export default function Changemakers() {
         </div>
       </div>
 
-      <section className="py-12 w-full px-4 md:px-25 lg:px-50">
+      {/* <section className="py-12 w-full px-4 md:px-25 lg:px-50">
         <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
           <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
@@ -273,7 +273,7 @@ export default function Changemakers() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </section>
   );
 }

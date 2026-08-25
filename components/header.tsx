@@ -41,7 +41,7 @@ export default function Header() {
               { name: "Fellowship", href: "/fellowship" },
               { name: "TRIIBE I00", href: "/100" },
               { name: "Summit", href: "/summit" },
-              { name: "TRIIBE Index", href: "/index" },
+              /* { name: "TRIIBE Index", href: "/index" }, */
               { name: "About us", href: "/about" },
               // { name: "Contact Us", href: "/contact" },
             ].map((link) => (
@@ -106,7 +106,7 @@ export default function Header() {
             { name: "Fellowship", href: "/fellowship" },
             { name: "TRIIBE I00", href: "/100" },
             { name: "Summit", href: "/summit" },
-            { name: "TRIIBE Index", href: "/index" },
+            /* { name: "TRIIBE Index", href: "/index" }, */
             { name: "About us", href: "/about" },
             // { name: "Contact us", href: "/contact" },
           ].map((link) => (

@@ -102,20 +102,37 @@ export default function ProgramOverviewTest() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="border border-[#002c19] p-8 md:p-10 flex flex-col h-full rounded-lg">
                 <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center">
-                  Mentorship
+                  Funding
                 </h4>
                 <p className="text-[#002c19]/90 mb-10 flex-grow text-center font-medium">
-                  Multi-year fellowship, tools to grow: strategy, legal,
-                  software
+                  We raise for them year round, backed by financial review,
+                  interviews and audits.
                 </p>
-                <div className="w-full flex justify-center">
+                {/* <div className="w-full flex justify-center">
                   <a
                     href="/fellowship#applyfellowship"
                     className="flex flex-col items-center justify-center w-[200px] bg-[#002c19] text-white rounded-sm h-[44px] font-bold hover:bg-green-900 transition-colors leading-tight"
                   >
                     <span>TRIIBE Fellowship</span>
                   </a>
-                </div>
+                </div> */}
+              </div>
+
+              <div className="border border-[#002c19] p-8 md:p-10 flex flex-col h-full rounded-lg">
+                <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center">
+                  Mentorship
+                </h4>
+                <p className="text-[#002c19]/90 mb-10 flex-grow text-center font-medium">
+                  Software, legal and operating support for every founder.
+                </p>
+                {/* <div className="w-full flex justify-center">
+                  <Link
+                    href="/talk"
+                    className="flex flex-col items-center justify-center w-[200px] bg-[#002c19] text-white rounded-sm h-[44px] font-bold hover:bg-green-900 transition-colors leading-tight"
+                  >
+                    <span>TRIIBE Talks</span>
+                  </Link>
+                </div> */}
               </div>
 
               <div className="border border-[#002c19] p-8 md:p-10 flex flex-col h-full rounded-lg">
@@ -123,31 +140,122 @@ export default function ProgramOverviewTest() {
                   Visibility
                 </h4>
                 <p className="text-[#002c19]/90 mb-10 flex-grow text-center font-medium">
-                  Digital reach, Summits, and TRIIBE Talks in front of funders
+                  On stage at the annual Next-Gen summit in front of peers,
+                  donors and press.
                 </p>
-                <div className="w-full flex justify-center">
-                  <Link
-                    href="/talk"
-                    className="flex flex-col items-center justify-center w-[200px] bg-[#002c19] text-white rounded-sm h-[44px] font-bold hover:bg-green-900 transition-colors leading-tight"
-                  >
-                    <span>TRIIBE Talks</span>
-                  </Link>
-                </div>
-              </div>
-
-              <div className="border border-[#002c19] p-8 md:p-10 flex flex-col h-full rounded-lg">
-                <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center">
-                  Credibility
-                </h4>
-                <p className="text-[#002c19]/90 mb-10 flex-grow text-center font-medium">
-                  Vetted global list of nonprofit founders under 30 to know
-                </p>
-                <div className="w-full flex justify-center">
+                {/* <div className="w-full flex justify-center">
                   <Link
                     href="/100"
                     className="flex items-center justify-center w-[200px] bg-[#002c19] text-white rounded-sm h-[44px] font-bold hover:bg-green-900 transition-colors leading-tight"
                   >
                     TRIIBE I00
+                  </Link>
+                </div> */}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-12 w-full px-4 md:px-25 lg:px-50">
+          <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
+            <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+              <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
+                Learn more about the leading nonprofit founders under 30
+              </p>
+
+              <Link
+                href="/100"
+                className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300   hover:text-white hover:scale-105"
+              >
+                TRIIBE l00
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 px-4 md:px-25 lg:px-[200px] bg-white w-full">
+          <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
+            <h2 className="text-4xl md:text-6xl font-bold mb-12">
+              Free services for the nonprofit sector
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="border border-[#002c19] rounded-2xl p-8 md:p-10 flex flex-col items-center h-full">
+                <div className="h-[90px] w-full flex items-center justify-center mb-6">
+                  <Image
+                    src="/images/home/TRIIBEGrants.png"
+                    alt="TRIIBE Grants"
+                    width={300}
+                    height={90}
+                    className="h-[60px] w-auto object-contain"
+                  />
+                </div>
+
+                <div className="min-h-[80px] flex items-start justify-center">
+                  <p className="text-xl leading-8 text-center">
+                    The largest grant database in the world
+                  </p>
+                </div>
+
+                <div className="min-h-[100px] flex items-start justify-center mt-4">
+                  <p className="text-xl leading-8 text-center">
+                    Fully vetted & enriched daily, free for anyone to search
+                  </p>
+                </div>
+
+                <div className="min-h-[120px] flex items-start justify-center mt-10">
+                  <p className="text-xl leading-8 text-center">
+                    Opened by Jax Harrison, Grant Authority Co-Founder and
+                    TRIIBE Legacy Board Member
+                  </p>
+                </div>
+
+                <div className="w-full flex justify-center mt-8">
+                  <Link
+                    href="/grants"
+                    className="flex items-center justify-center w-[200px] bg-[#002c19] text-white rounded-sm h-[44px] font-bold hover:bg-[#1C5945] transition-colors"
+                  >
+                    TRIIBE Grants
+                  </Link>
+                </div>
+              </div>
+
+              <div className="border border-[#002c19] rounded-2xl p-8 md:p-10 flex flex-col items-center h-full">
+                <div className="h-[90px] w-full flex items-center justify-center mb-6">
+                  <Image
+                    src="/images/home/TRIIBETalk.png"
+                    alt="TRIIBE Talk"
+                    width={300}
+                    height={95}
+                    className="h-[40px] w-auto object-contain"
+                  />
+                </div>
+
+                <div className="min-h-[80px] flex items-start justify-center">
+                  <p className="text-xl leading-8 text-center">
+                    A decentralized stage and playbook to run it
+                  </p>
+                </div>
+
+                <div className="min-h-[100px] flex items-start justify-center mt-4">
+                  <p className="text-xl leading-8 text-center">
+                    Intergenerational conversations, featuring next-gen voices
+                  </p>
+                </div>
+
+                <div className="min-h-[120px] flex items-start justify-center mt-10">
+                  <p className="text-xl leading-8 text-center">
+                    Endorsed by Lara Stein, TEDx Founder and TRIIBE Legacy Board
+                    Member
+                  </p>
+                </div>
+
+                <div className="w-full flex justify-center mt-8">
+                  <Link
+                    href="/talk"
+                    className="flex items-center justify-center w-[200px] bg-[#002c19] text-white rounded-sm h-[44px] font-bold hover:bg-[#1C5945] transition-colors"
+                  >
+                    TRIIBE Talk
                   </Link>
                 </div>
               </div>
