@@ -221,13 +221,10 @@ export default function Changemakers() {
 
   return (
     <section className="py-6 md:py-20 bg-white w-full" id="cohortSection">
-      <div className="w-full px-4 md:px-25 lg:px-50">
-        <div className="w-full max-w-[1200px] mx-auto">
+      <div className="w-full px-4 md:px-8 lg:px-12">
+        <div className="w-full max-w-[1600px] mx-auto">
           <div className="mb-8">
-            <h2
-              className="font-bold text-[#002c19]
- text-4xl md:text-6xl tracking-[-0.90px] leading-10 mb-4"
-            >
+            <h2 className="font-bold text-[#002c19] text-4xl md:text-6xl tracking-[-0.90px] leading-10 mb-4">
               Our cohorts
             </h2>
           </div>

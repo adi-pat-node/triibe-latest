@@ -37,12 +37,18 @@ export default function Header() {
           <div className="hidden xl:flex items-center gap-8">
             {[
               { name: "Home", href: "/" },
-              { name: "TRIIBE Talk", href: "/talk" },
-              { name: "Fellowship", href: "/fellowship" },
-              { name: "TRIIBE I00", href: "/100" },
+
               { name: "Summit", href: "/summit" },
-              /* { name: "TRIIBE Index", href: "/index" }, */
-              { name: "About us", href: "/about" },
+
+              { name: "TRIIBE I00", href: "/100" },
+
+              { name: "TRIIBE Talk", href: "/talk" },
+
+              { name: "TRIIBE Grants", href: "/grants" },
+
+              { name: "Fellowship", href: "/fellowship" },
+
+              { name: "About Us", href: "/about" },
               // { name: "Contact Us", href: "/contact" },
             ].map((link) => (
               <a
@@ -102,12 +108,18 @@ export default function Header() {
         <div className="flex flex-col gap-1">
           {[
             { name: "Home", href: "/" },
-            { name: "TRIIBE Talk", href: "/talk" },
-            { name: "Fellowship", href: "/fellowship" },
-            { name: "TRIIBE I00", href: "/100" },
+
             { name: "Summit", href: "/summit" },
-            /* { name: "TRIIBE Index", href: "/index" }, */
-            { name: "About us", href: "/about" },
+
+            { name: "TRIIBE I00", href: "/100" },
+
+            { name: "TRIIBE Talk", href: "/talk" },
+
+            { name: "TRIIBE Grants", href: "/grants" },
+
+            { name: "Fellowship", href: "/fellowship" },
+
+            { name: "About Us", href: "/about" },
             // { name: "Contact us", href: "/contact" },
           ].map((link) => (
             <a

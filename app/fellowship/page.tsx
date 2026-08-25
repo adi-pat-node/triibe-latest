@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import ProgramClient from "./ProgramClient";
+
+const Changemakers = dynamic(() => import("@/components/changemakers"));
 
 export const metadata: Metadata = {
   title: "TRIIBE Fellowship | Startup Dynamics for Nonprofit Innovators",
@@ -11,5 +14,12 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <ProgramClient />;
+  return (
+    <>
+      
+      <ProgramClient />
+      
+      
+    </>
+  );
 }

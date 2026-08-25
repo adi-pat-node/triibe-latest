@@ -1,11 +1,13 @@
 "use client";
 
 import Image from "next/image";
+import Header from "@/components/header";
 
 export default function GrantsPage() {
   return (
     <main className="min-h-screen bg-white text-[#002c19]">
-      <section className="w-full flex flex-col items-center px-4 pt-8 md:pt-12">
+      <Header />
+      <section className="w-full flex flex-col items-center px-4 pt-28 md:pt-32">
         <div className="w-full flex justify-center mb-8">
           <Image
             src="/images/home/TRIIBEGrants.png"

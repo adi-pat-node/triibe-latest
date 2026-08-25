@@ -25,7 +25,7 @@ export default function Home() {
       <ProgramOverview />
       <TriibeGlobeWrapper />
       <KeyStatistics />
-      <Changemakers />
+      {/* <Changemakers /> */}
       <Footer />
     </div>
   );

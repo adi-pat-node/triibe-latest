@@ -8,6 +8,9 @@ import PostGraduationOutcomes from "@/components/postGraduationOutcomes";
 import CTASection from "@/components/cta";
 import { useState } from "react";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+
+const Changemakers = dynamic(() => import("@/components/changemakers"));
 import {
   ChevronLeft,
   ChevronRight,
@@ -225,12 +228,17 @@ const ProgramPage = () => {
       {/* Problem Visual/Infographic */}
 
       <section className="pt-32 pb-20 px-6 bg-white md:px-25 lg:px-50">
-        <div className="max-w-260 mx-auto">
-          <div className="max-w-5xl mx-auto">
-            <p className="font-bold text-[#002c19] text-3xl md:text-[35px]  leading-tight mb-10">
-              Bringing startup dynamics to the nonprofit sector
-            </p>
-          </div>
+  <div className="max-w-260 mx-auto">
+
+    <div className="max-w-5xl mx-auto">
+      <p className="font-bold text-[#002c19] text-3xl md:text-[35px] leading-tight mb-10">
+        Bringing startup dynamics to the nonprofit sector
+      </p>
+    </div>
+
+    <Changemakers />
+
+          
 
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
             <div className="grid md:grid-cols-3 gap-8">
