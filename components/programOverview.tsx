@@ -219,11 +219,11 @@ export default function ProgramOverviewTest() {
               <div className="border border-[#002c19] rounded-2xl p-8 md:p-10 flex flex-col items-center h-full">
                 <div className="h-[90px] w-full flex items-center justify-center mb-4">
                   <Image
-                    src="/images/home/TRIIBETalk.png"
-                    alt="TRIIBE Talk"
+                    src="/images/home/TRIIBETalk.jpeg"
+                    alt="TRIIBE TALK"
                     width={300}
-                    height={95}
-                    className="h-[40px] w-auto object-contain"
+                    height={90}
+                    className="h-[60px] w-auto object-contain"
                   />
                 </div>
 
