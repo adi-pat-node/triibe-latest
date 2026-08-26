@@ -187,7 +187,7 @@ export default function ProgramOverviewTest() {
                     alt="TRIIBE Grants"
                     width={300}
                     height={90}
-                    className="h-[60px] w-auto object-contain"
+                    className="h-[60px] w-auto object-contain scale-[0.7]"
                   />
                 </div>
 
@@ -223,7 +223,7 @@ export default function ProgramOverviewTest() {
                     alt="TRIIBE TALK"
                     width={300}
                     height={90}
-                    className="h-[60px] w-auto object-contain"
+                    className="h-[60px] w-auto object-contain scale-[0.7]"
                   />
                 </div>
 
