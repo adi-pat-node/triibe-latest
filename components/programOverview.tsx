@@ -181,7 +181,7 @@ export default function ProgramOverviewTest() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="border border-[#002c19] rounded-2xl p-8 md:p-10 flex flex-col items-center h-full">
-                <div className="h-[90px] w-full flex items-center justify-center mb-6">
+                <div className="h-[90px] w-full flex items-center justify-center mb-4">
                   <Image
                     src="/images/home/TRIIBEGrants.png"
                     alt="TRIIBE Grants"
@@ -191,20 +191,16 @@ export default function ProgramOverviewTest() {
                   />
                 </div>
 
-                <div className="min-h-[80px] flex items-start justify-center">
-                  <p className="text-xl leading-8 text-center">
+                <div className="flex flex-col items-center justify-center text-center gap-3">
+                  <p className="text-xl leading-8">
                     The largest grant database in the world
                   </p>
-                </div>
 
-                <div className="min-h-[100px] flex items-start justify-center mt-4">
-                  <p className="text-xl leading-8 text-center">
+                  <p className="text-xl leading-8">
                     Fully vetted & enriched daily, free for anyone to search
                   </p>
-                </div>
 
-                <div className="min-h-[120px] flex items-start justify-center mt-10">
-                  <p className="text-xl leading-8 text-center">
+                  <p className="text-xl leading-8">
                     Endorsed by Jax Harrison, Grant Authority Co-Founder and
                     TRIIBE Legacy Board Member
                   </p>
@@ -221,7 +217,7 @@ export default function ProgramOverviewTest() {
               </div>
 
               <div className="border border-[#002c19] rounded-2xl p-8 md:p-10 flex flex-col items-center h-full">
-                <div className="h-[90px] w-full flex items-center justify-center mb-6">
+                <div className="h-[90px] w-full flex items-center justify-center mb-4">
                   <Image
                     src="/images/home/TRIIBETalk.png"
                     alt="TRIIBE Talk"
@@ -231,20 +227,16 @@ export default function ProgramOverviewTest() {
                   />
                 </div>
 
-                <div className="min-h-[80px] flex items-start justify-center">
-                  <p className="text-xl leading-8 text-center">
+                <div className="flex flex-col items-center justify-center text-center gap-3">
+                  <p className="text-xl leading-8">
                     A decentralized stage and playbook to run it
                   </p>
-                </div>
 
-                <div className="min-h-[100px] flex items-start justify-center mt-4">
-                  <p className="text-xl leading-8 text-center">
+                  <p className="text-xl leading-8">
                     Intergenerational conversations, featuring next-gen voices
                   </p>
-                </div>
 
-                <div className="min-h-[120px] flex items-start justify-center mt-10">
-                  <p className="text-xl leading-8 text-center">
+                  <p className="text-xl leading-8">
                     Endorsed by Lara Stein, TEDx Founder and TRIIBE Legacy Board
                     Member
                   </p>
