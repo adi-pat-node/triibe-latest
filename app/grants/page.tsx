@@ -53,7 +53,7 @@ const steps = [
   {
     number: "03",
     title: "Keep your TRIIBE benefit",
-    description: "Your 20% partner offer stays attached and is applied automatically at eligible checkout.",
+    description: "Save 20% on your first three monthly payments or on the full first year when you pay annually.",
   },
 ];
 
@@ -84,7 +84,7 @@ export default function GrantsPage() {
                 <ArrowRight className="h-5 w-5" aria-hidden="true" />
               </a>
               <p className="max-w-[340px] text-sm leading-6 text-white/70">
-                Free account. 20% off eligible paid plans, applied automatically at checkout.
+                Free account. Save 20% for your first 3 months, or 20% on the full first year when paid annually.
               </p>
             </div>
           </div>
