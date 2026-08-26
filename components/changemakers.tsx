@@ -1,6 +1,8 @@
-import { ArrowRightIcon, ArrowUpRight } from "lucide-react";
+"use client";
+
+import { ArrowUpRight, X } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { useState } from "react";
 
 interface Changemaker {
   name: string;
@@ -8,11 +10,14 @@ interface Changemaker {
   founded: string;
   image: string;
   website: string;
+  linkedin?: string;
   title?: string;
   university?: string;
 }
 
 export default function Changemakers() {
+  const [selectedChangemaker, setSelectedChangemaker] =
+    useState<Changemaker | null>(null);
   const cohort1: Changemaker[] = [
     {
       name: "Olivia Zhang",
@@ -24,6 +29,7 @@ export default function Changemakers() {
       image:
         "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68aa07201e49da83227f817d_1%20(1).png",
       website: "https://www.cancerkidsfirst.org/",
+      linkedin: "https://www.linkedin.com/in/olivia-zhang-a792b8229/",
     },
     {
       name: "Anne-Sophie Frédérick",
@@ -35,6 +41,7 @@ export default function Changemakers() {
       image:
         "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4ae976ac21db37b22369d_anna.png",
       website: "https://www.haitechlearning.org/",
+      linkedin: "https://www.linkedin.com/in/anne-sophie-fr%C3%A9d%C3%A9rick-1364ba235/",
     },
     {
       name: "Esha Venkat",
@@ -45,6 +52,7 @@ export default function Changemakers() {
       founded: "FOUNDED 2016",
       image: "/images/home/homepage---changemakers-3.png",
       website: "https://nest4us.org/",
+      linkedin: "https://www.linkedin.com/in/eshavenkat/",
     },
     {
       name: "Maya Gowda",
@@ -56,6 +64,7 @@ export default function Changemakers() {
       image:
         "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4ca26ae82ac604cfa0e61_maya%2022.png",
       website: "https://www.seedclimatechange.org/",
+      linkedin: "https://www.linkedin.com/in/maya-gowda-a20484240/",
     },
   ];
 
@@ -69,6 +78,7 @@ export default function Changemakers() {
       founded: "FOUNDED 2021",
       image: "/images/home/saminbhan-2.png",
       website: "https://www.lookupp.net/",
+      linkedin: "https://www.linkedin.com/in/samin-bhan/",
     },
 
     {
@@ -80,6 +90,7 @@ export default function Changemakers() {
       founded: "FOUNDED 2019",
       image: "/images/home/ShrustiAmula.png",
       website: "https://www.risenshinefoundation.org/",
+      linkedin: "https://www.linkedin.com/in/shrusti-amula/",
     },
 
     {
@@ -91,6 +102,7 @@ export default function Changemakers() {
       founded: "FOUNDED 2017",
       image: "/images/home/NaylaJimenez.png",
       website: "https://www.philippinehealthinitiative.org/",
+      linkedin: "https://www.linkedin.com/in/naylajimenez/",
     },
     {
       name: "Varuni Chopra",
@@ -101,6 +113,7 @@ export default function Changemakers() {
       founded: "FOUNDED 2022",
       image: "/images/triibe100/VaruniChopra.png",
       website: "https://helpinghandsmain.wixsite.com/mysite",
+      linkedin: "https://www.linkedin.com/in/varuni-chopra1/",
     },
     {
       name: "Gitanjali Rao",
@@ -111,6 +124,7 @@ export default function Changemakers() {
       founded: "FOUNDED 2018",
       image: "/images/home/GitanjaliRao.png",
       website: "https://gitanjalirao.net/",
+      linkedin: "https://www.linkedin.com/in/gitanjalirao/",
     },
   ];
 
@@ -124,6 +138,7 @@ export default function Changemakers() {
       founded: "",
       image: "/images/triibe100/BellaBrown.jpg",
       website: "https://www.livingoutside.org/",
+      linkedin: "https://www.linkedin.com/in/bellabrown369/",
     },
 
     {
@@ -135,6 +150,7 @@ export default function Changemakers() {
       founded: "",
       image: "/images/triibe100/SonaliRatnasinghe.jpg",
       website: " https://www.youthambassadorsofservice.org/",
+      linkedin: "https://www.linkedin.com/in/sonaliratnasinghe/",
     },
 
     {
@@ -146,6 +162,7 @@ export default function Changemakers() {
       founded: "",
       image: "/images/triibe100/NavAgarwal.jpg",
       website: " https://www.onestepgreener.org/",
+      linkedin: "https://www.linkedin.com/in/nav-agarwal-45009a158/",
     },
     {
       name: "Claire Chi",
@@ -156,6 +173,7 @@ export default function Changemakers() {
       founded: "",
       image: "/images/triibe100/Claire Chi.png",
       website: " https://www.dancingagainsthunger.org/",
+      linkedin: "https://www.linkedin.com/in/claire-chi/",
     },
     {
       name: "Zoe Terry",
@@ -166,16 +184,16 @@ export default function Changemakers() {
       founded: "",
       image: "/images/triibe100/Zoe Terry.png",
       website: "https://zoesdolls.com/",
+      linkedin: "https://www.linkedin.com/in/zoe-terry-01b14235b/",
     },
   ];
 
   const renderCard = (changemaker: Changemaker, index: number) => (
-    <a
+    <button
       key={index}
-      href={changemaker.website}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group flex flex-col w-full h-full sm:flex-1 sm:min-w-0 cursor-pointer"
+      type="button"
+      onClick={() => setSelectedChangemaker(changemaker)}
+      className="group flex flex-col w-full h-full sm:flex-1 sm:min-w-0 cursor-pointer text-left"
     >
       <div className="relative w-full h-64 md:h-80 overflow-hidden rounded-t-2xl bg-gray-200 shrink-0">
         <Image
@@ -193,7 +211,7 @@ export default function Changemakers() {
             {changemaker.name}
           </h3>
 
-          <p className="font-medium text-[#002c19]/80 text-xs leading-5 ">
+          <p className="font-medium text-[#002c19]/80 text-xs leading-5">
             {changemaker.title} <ArrowUpRight className="w-4 h-4 inline" />
           </p>
         </div>
@@ -216,7 +234,7 @@ export default function Changemakers() {
           {changemaker.description}
         </p>
       </div>
-    </a>
+    </button>
   );
 
   return (
@@ -271,6 +289,144 @@ export default function Changemakers() {
           </div>
         </div>
       </section> */}
+
+      {selectedChangemaker && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 py-8"
+          onClick={() => setSelectedChangemaker(null)}
+        >
+          <div
+            className="relative w-full max-w-4xl overflow-hidden rounded-2xl bg-white shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close button */}
+            <button
+              type="button"
+              onClick={() => setSelectedChangemaker(null)}
+              className="absolute right-4 top-4 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-[#002c19] shadow-sm hover:bg-gray-100"
+              aria-label="Close"
+            >
+              <X className="h-5 w-5" />
+            </button>
+
+            <div className="flex flex-col md:flex-row">
+              {/* LEFT — PHOTO */}
+              <div className="relative w-full md:w-1/2 h-[350px] md:h-[500px] bg-gray-200">
+                <Image
+                  src={selectedChangemaker.image}
+                  alt={selectedChangemaker.name}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
+
+              {/* RIGHT — INFORMATION */}
+              <div className="w-full md:w-1/2 p-8 md:p-10 flex flex-col justify-center text-[#002c19]">
+                <h2 className="text-3xl md:text-4xl font-bold mb-3">
+                  {selectedChangemaker.name}
+                </h2>
+
+                {selectedChangemaker.title && (
+                  <p className="text-base md:text-lg font-medium text-[#002c19]/80 mb-2">
+                    {selectedChangemaker.title}
+                  </p>
+                )}
+
+                {selectedChangemaker.university && (
+                  <p className="text-sm text-[#002c19]/60 mb-6">
+                    {selectedChangemaker.university}
+                  </p>
+                )}
+
+                {selectedChangemaker.founded && (
+                  <p className="text-xs font-semibold tracking-wide text-[#002c19]/60 mb-5">
+                    {selectedChangemaker.founded}
+                  </p>
+                )}
+
+                <p className="text-base md:text-lg leading-7 text-[#002c19]/80 mb-8">
+                  {selectedChangemaker.description}
+                </p>
+
+                <div className="flex items-center gap-4">
+  {/* Website */}
+  {selectedChangemaker.website && (
+    <a
+      href={selectedChangemaker.website.trim()}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`${selectedChangemaker.name}'s website`}
+      style={{
+        width: "42px",
+        height: "42px",
+        borderRadius: "50%",
+        background: "#ffffff",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        textDecoration: "none",
+        boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+        transition: "transform 200ms ease, box-shadow 200ms ease",
+        flexShrink: 0,
+      }}
+    >
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#002C19"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+      >
+        <circle cx="12" cy="12" r="9" />
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <path d="M12 3c2.2 2.4 3.3 5.4 3.3 9s-1.1 6.6-3.3 9c-2.2-2.4-3.3-6.6-3.3-9S9.8 5.4 12 3Z" />
+      </svg>
+    </a>
+  )}
+
+  {/* LinkedIn */}
+  {selectedChangemaker.linkedin && (
+    <a
+      href={selectedChangemaker.linkedin.trim()}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`${selectedChangemaker.name}'s LinkedIn`}
+      style={{
+        width: "42px",
+        height: "42px",
+        borderRadius: "50%",
+        background: "#ffffff",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        textDecoration: "none",
+        boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+        transition: "transform 200ms ease, box-shadow 200ms ease",
+        flexShrink: 0,
+      }}
+    >
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="#002C19"
+        aria-hidden="true"
+      >
+        <path d="M6.5 8.5H3.25V21H6.5V8.5ZM4.875 3C3.84 3 3 3.84 3 4.875C3 5.91 3.84 6.75 4.875 6.75C5.91 6.75 6.75 5.91 6.75 4.875C6.75 3.84 5.91 3 4.875 3ZM20.75 13.84C20.75 10.09 18.75 8.25 16.08 8.25C13.92 8.25 12.95 9.44 12.5 10.11V8.5H9.25V21H12.5V14.81C12.5 13.18 12.81 11.6 14.88 11.6C16.92 11.6 16.95 13.47 16.95 14.91V21H20.2V14.05C20.2 13.98 20.75 13.91 20.75 13.84Z" />
+      </svg>
+    </a>
+  )}
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
