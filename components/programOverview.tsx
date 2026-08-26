@@ -205,7 +205,7 @@ export default function ProgramOverviewTest() {
 
                 <div className="min-h-[120px] flex items-start justify-center mt-10">
                   <p className="text-xl leading-8 text-center">
-                    Opened by Jax Harrison, Grant Authority Co-Founder and
+                    Endorsed by Jax Harrison, Grant Authority Co-Founder and
                     TRIIBE Legacy Board Member
                   </p>
                 </div>
