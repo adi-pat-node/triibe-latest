@@ -102,12 +102,12 @@ const partneredWithLogos = [
     url: "https://touchalife.org/",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   },
-  {
+  /* {
     src: "/images/home/Kids-Rights2.png",
     alt: "Partnered with organization 4",
     url: "https://www.kidsrights.org/",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
-  },
+  }, */
   {
     src: "/images/home/billionDollar2.png",
     alt: "Partnered with organization 4",
