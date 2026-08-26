@@ -48,7 +48,7 @@ const steps = [
   {
     number: "02",
     title: "Create your account",
-    description: "Founders age 18 and older can create a free account and begin searching.",
+    description: "Create a free account and begin searching for opportunities.",
   },
   {
     number: "03",
@@ -84,7 +84,7 @@ export default function GrantsPage() {
                 <ArrowRight className="h-5 w-5" aria-hidden="true" />
               </a>
               <p className="max-w-[340px] text-sm leading-6 text-white/70">
-                For founders 18+. Free account. 20% off eligible paid plans, applied automatically at checkout.
+                Free account. 20% off eligible paid plans, applied automatically at checkout.
               </p>
             </div>
           </div>
