@@ -11,11 +11,11 @@ export default function CTASection() {
       {/* Join a Cohort */}
       <div className="bg-[#002c19] border border-white rounded-lg p-7 flex flex-col justify-between gap-6 w-full md:w-[320px] shrink-0">
         <h3 className="font-semibold text-white text-2xl text-center">
-          Join a cohort
+          Nominate a Founder
         </h3>
 
         <p className="font-normal text-[#D1D5DC] text-base leading-relaxed text-center">
-          Are you a nonprofit founder? Apply to become a TRIIBE Fellow.
+          Are you or do you know an incredible nonprofit founder under 30? Nominate here for the TRIIBE I00!
         </p>
 
         <a
