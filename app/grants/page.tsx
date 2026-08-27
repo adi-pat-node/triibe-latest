@@ -4,7 +4,9 @@ import { ArrowRight, BadgeCheck, Search, Sparkles } from "lucide-react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
-const TRIIBE_GRANTS_PORTAL_URL = "https://grantauthority.org/r/triibe";
+// The public landing page stays on TRIIBE. This is an outbound handoff only:
+// GrantAuthority records the partner referral and continues directly to signup.
+const TRIIBE_GRANTS_PORTAL_URL = "https://www.grantauthority.org/r/triibe";
 
 export const metadata: Metadata = {
   title: "TRIIBE Grants | Find and Pursue Funding",
@@ -42,8 +44,8 @@ const features = [
 const steps = [
   {
     number: "01",
-    title: "Open the portal",
-    description: "Follow TRIIBE's partner link to the co-branded GrantAuthority experience.",
+    title: "Start with TRIIBE",
+    description: "Begin here on triibe.org, then continue to the secure TRIIBE Grants account flow.",
   },
   {
     number: "02",
@@ -80,7 +82,7 @@ export default function GrantsPage() {
                 href={TRIIBE_GRANTS_PORTAL_URL}
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-white px-7 py-3 text-base font-bold text-[#002c19] transition-colors hover:bg-[#edf4f0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
               >
-                Open TRIIBE Grants
+                Create your free account
                 <ArrowRight className="h-5 w-5" aria-hidden="true" />
               </a>
               <p className="max-w-[340px] text-sm leading-6 text-white/70">
@@ -156,7 +158,7 @@ export default function GrantsPage() {
             href={TRIIBE_GRANTS_PORTAL_URL}
             className="mt-8 inline-flex min-h-14 items-center justify-center gap-2 rounded-md bg-[#002c19] px-9 py-4 text-lg font-bold text-white transition-colors hover:bg-[#1c5945] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#002c19]"
           >
-            Open TRIIBE Grants
+            Create your free account
             <ArrowRight className="h-5 w-5" aria-hidden="true" />
           </a>
           <p className="mx-auto mt-6 max-w-[650px] text-xs leading-5 text-[#667a70]">

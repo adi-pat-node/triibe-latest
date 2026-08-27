@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prebuild": "npm run guard:grants-boundary",
     "build": "next build",
     "dev": "next dev",
+    "guard:grants-boundary": "node scripts/verify-grants-boundary.mjs",
     "lint": "eslint .",
     "start": "next start"
   },
