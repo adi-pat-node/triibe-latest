@@ -47,6 +47,7 @@ export default function RegionalGrantsGlobe({ referralUrl }: { referralUrl: stri
   const globeRef = useRef<any>(null);
   const viewportRef = useRef<HTMLDivElement>(null);
   const idleTimerRef = useRef<number | null>(null);
+  const rotationResumeAtRef = useRef(0);
   const [countries, setCountries] = useState<any[]>([]);
   const [mountedGlobe, setMountedGlobe] = useState(false);
   const [selectedKey, setSelectedKey] = useState<RegionKey | null>(null);
@@ -139,6 +140,11 @@ export default function RegionalGrantsGlobe({ referralUrl }: { referralUrl: stri
       controls.autoRotateSpeed = 0.45;
       controls.enableZoom = false;
       controls.enabled = !coarsePointer;
+      if (reduceMotion || coarsePointer) {
+        if (idleTimerRef.current) window.clearTimeout(idleTimerRef.current);
+        idleTimerRef.current = null;
+        rotationResumeAtRef.current = 0;
+      }
       globeRef.current?.pointOfView?.({ lat: 15, lng: 10, altitude: 2.15 }, 0);
     };
     configure();
@@ -149,67 +155,46 @@ export default function RegionalGrantsGlobe({ referralUrl }: { referralUrl: stri
     if (idleTimerRef.current) window.clearTimeout(idleTimerRef.current);
   }, []);
 
-  const selectRegion = useCallback((region: Region) => {
-    setSelectedKey(region.key);
+  const pauseRotation = useCallback(() => {
+    if (idleTimerRef.current) window.clearTimeout(idleTimerRef.current);
+    idleTimerRef.current = null;
     const controls = globeRef.current?.controls?.();
     if (controls) controls.autoRotate = false;
-    globeRef.current?.pointOfView?.(
-      { lat: region.lat, lng: region.lng, altitude: 1.72 },
-      reduceMotion ? 0 : 750,
-    );
+  }, []);
+
+  const resumeRotationAfter = useCallback((delay: number) => {
     if (idleTimerRef.current) window.clearTimeout(idleTimerRef.current);
-    if (!reduceMotion) {
-      idleTimerRef.current = window.setTimeout(() => {
-        const currentControls = globeRef.current?.controls?.();
-        if (currentControls && !coarsePointer) currentControls.autoRotate = true;
-      }, 5500);
+    idleTimerRef.current = null;
+    if (reduceMotion || coarsePointer) {
+      rotationResumeAtRef.current = 0;
+      return;
     }
+    rotationResumeAtRef.current = Date.now() + delay;
+    idleTimerRef.current = window.setTimeout(() => {
+      const controls = globeRef.current?.controls?.();
+      if (controls) controls.autoRotate = true;
+      idleTimerRef.current = null;
+    }, delay);
   }, [coarsePointer, reduceMotion]);
 
-  const makeMarker = useCallback((region: Region) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.setAttribute("aria-label", `Explore grants in ${region.label}`);
-    button.title = `Explore ${region.label}`;
-    button.style.cssText = `
-      width: 38px;
-      height: 38px;
-      border: 1px solid rgba(255,255,255,.9);
-      border-radius: 999px;
-      background: #d6a73e;
-      box-shadow: 0 0 0 6px rgba(214,167,62,.16), 0 0 24px rgba(214,167,62,.55);
-      cursor: pointer;
-      pointer-events: auto;
-      position: relative;
-      transition: transform 180ms ease, box-shadow 180ms ease;
-    `;
-    const dot = document.createElement("span");
-    dot.setAttribute("aria-hidden", "true");
-    dot.style.cssText = `
-      position: absolute;
-      inset: 11px;
-      border-radius: 999px;
-      background: #002c19;
-    `;
-    button.appendChild(dot);
-    const emphasize = () => {
-      button.style.transform = "scale(1.14)";
-      button.style.boxShadow = "0 0 0 8px rgba(214,167,62,.2), 0 0 30px rgba(214,167,62,.72)";
-    };
-    const relax = () => {
-      button.style.transform = "scale(1)";
-      button.style.boxShadow = "0 0 0 6px rgba(214,167,62,.16), 0 0 24px rgba(214,167,62,.55)";
-    };
-    button.addEventListener("mouseenter", emphasize);
-    button.addEventListener("mouseleave", relax);
-    button.addEventListener("focus", emphasize);
-    button.addEventListener("blur", relax);
-    button.addEventListener("click", (event) => {
-      event.stopPropagation();
-      selectRegion(region);
-    });
-    return button;
-  }, [selectRegion]);
+  const selectRegion = useCallback((region: Region) => {
+    setSelectedKey(region.key);
+    pauseRotation();
+    globeRef.current?.pointOfView?.(
+      { lat: region.lat, lng: region.lng, altitude: 2.15 },
+      reduceMotion ? 0 : 650,
+    );
+    resumeRotationAfter(5500);
+  }, [pauseRotation, reduceMotion, resumeRotationAfter]);
+
+  const handlePointHover = useCallback((point: object | null) => {
+    if (point) {
+      pauseRotation();
+      return;
+    }
+    const remainingSelectionPause = Math.max(0, rotationResumeAtRef.current - Date.now());
+    resumeRotationAfter(Math.max(1500, remainingSelectionPause));
+  }, [pauseRotation, resumeRotationAfter]);
 
   return (
     <section className="overflow-hidden bg-[#002c19] px-4 py-20 text-white md:py-28" aria-labelledby="regional-grants-heading">
@@ -289,11 +274,17 @@ export default function RegionalGrantsGlobe({ referralUrl }: { referralUrl: stri
                 polygonStrokeColor={() => "rgba(214,167,62,.22)"}
                 polygonAltitude={0.006}
                 polygonLabel={() => ""}
-                htmlElementsData={REGIONS}
-                htmlLat="lat"
-                htmlLng="lng"
-                htmlAltitude={0.018}
-                htmlElement={makeMarker as any}
+                pointsData={REGIONS}
+                pointLat="lat"
+                pointLng="lng"
+                pointColor={(region: Region) => region.key === selectedKey ? "#f1cf78" : "#d6a73e"}
+                pointAltitude={0.035}
+                pointRadius={(region: Region) => region.key === selectedKey ? 0.9 : 0.72}
+                pointResolution={24}
+                pointsTransitionDuration={180}
+                pointLabel={(region: Region) => `Explore grants in ${region.label}`}
+                onPointClick={(region: Region) => selectRegion(region)}
+                onPointHover={handlePointHover}
                 ringsData={reduceMotion ? [] : REGIONS}
                 ringLat="lat"
                 ringLng="lng"
