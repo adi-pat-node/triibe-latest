@@ -2,10 +2,41 @@ import { NextResponse } from "next/server";
 
 export const dynamic = "force-dynamic";
 
-const PUBLIC_METRICS_ENDPOINT = "https://www.grantauthority.org/api/public-metrics";
+const PRODUCTION_METRICS_ENDPOINT = "https://www.grantauthority.org/api/public-metrics";
 // The source publishes every five minutes. Allow scheduling and cache jitter,
 // but fail closed if two consecutive publication windows are missed.
 const MAX_SNAPSHOT_AGE_MS = 15 * 60 * 1000;
+
+function resolveMetricsEndpoint() {
+  const configuredUrl = process.env.GRANTAUTHORITY_PUBLIC_METRICS_URL?.trim();
+  if (!configuredUrl) return PRODUCTION_METRICS_ENDPOINT;
+
+  try {
+    const url = new URL(configuredUrl);
+    const isProductionHost =
+      url.hostname === "grantauthority.org" ||
+      url.hostname === "www.grantauthority.org";
+    const isBrightsteadPreview =
+      url.hostname.startsWith("grantai-") &&
+      url.hostname.endsWith("-brightstead-technologies.vercel.app");
+
+    if (
+      url.protocol === "https:" &&
+      url.pathname === "/api/public-metrics" &&
+      !url.search &&
+      !url.hash &&
+      (isProductionHost || isBrightsteadPreview)
+    ) {
+      return url.toString();
+    }
+  } catch {
+    // Invalid or unapproved sources fail closed to the production endpoint.
+  }
+
+  return PRODUCTION_METRICS_ENDPOINT;
+}
+
+const PUBLIC_METRICS_ENDPOINT = resolveMetricsEndpoint();
 
 function positiveNumber(value: unknown) {
   const parsed = Number(value);
