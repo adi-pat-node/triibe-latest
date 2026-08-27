@@ -6,7 +6,38 @@ import Footer from "@/components/footer";
 
 // The public landing page stays on TRIIBE. This is an outbound handoff only:
 // GrantAuthority records the partner referral and continues directly to signup.
-const TRIIBE_GRANTS_PORTAL_URL = "https://www.grantauthority.org/r/triibe";
+const PRODUCTION_REFERRAL_URL = "https://www.grantauthority.org/r/triibe";
+
+function resolveReferralUrl() {
+  const configuredUrl = process.env.GRANTAUTHORITY_REFERRAL_URL?.trim();
+  if (!configuredUrl) return PRODUCTION_REFERRAL_URL;
+
+  try {
+    const url = new URL(configuredUrl);
+    const isProductionHost =
+      url.hostname === "grantauthority.org" ||
+      url.hostname === "www.grantauthority.org";
+    const isBrightsteadPreview =
+      url.hostname.startsWith("grantai-") &&
+      url.hostname.endsWith("-brightstead-technologies.vercel.app");
+
+    if (
+      url.protocol === "https:" &&
+      url.pathname === "/r/triibe" &&
+      !url.search &&
+      !url.hash &&
+      (isProductionHost || isBrightsteadPreview)
+    ) {
+      return url.toString();
+    }
+  } catch {
+    // Invalid or unapproved destinations fail closed to production.
+  }
+
+  return PRODUCTION_REFERRAL_URL;
+}
+
+const TRIIBE_GRANTS_PORTAL_URL = resolveReferralUrl();
 
 export const metadata: Metadata = {
   title: "TRIIBE Grants | Find and Pursue Funding",
