@@ -89,14 +89,14 @@ export default function LiveGrantMetrics() {
       live: true,
     },
     {
-      label: "Currently listed funds",
-      value: state.metrics ? formatFunding(state.metrics.currentlyListedFunding) : "—",
+      label: "Active funding sources",
+      value: state.metrics?.activeFundingSources.toLocaleString("en-US") ?? "—",
       live: true,
     },
     {
-      label: "Countries covered",
-      value: "208",
-      live: false,
+      label: "Currently listed funds",
+      value: state.metrics ? formatFunding(state.metrics.currentlyListedFunding) : "—",
+      live: true,
     },
     {
       label: "To complete an application draft",
