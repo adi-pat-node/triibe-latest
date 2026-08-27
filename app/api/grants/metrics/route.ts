@@ -58,7 +58,7 @@ export async function GET() {
           updatedAt,
           snapshotId,
           methodologyVersion,
-          methodologyUrl: "https://www.grantauthority.org/data-methodology",
+          methodologyUrl: "/grants/methodology",
         },
       },
       {

@@ -44,7 +44,7 @@ function isMetrics(value: unknown): value is Metrics {
       candidate.updatedAt &&
       candidate.snapshotId &&
       candidate.methodologyVersion === "strict-open-partner-metrics/v1" &&
-      candidate.methodologyUrl === "https://www.grantauthority.org/data-methodology",
+      candidate.methodologyUrl === "/grants/methodology",
   );
 }
 
@@ -136,7 +136,7 @@ export default function LiveGrantMetrics() {
           <p>Loading the latest source-backed snapshot…</p>
         )}
         <a
-          href="https://www.grantauthority.org/data-methodology"
+          href="/grants/methodology"
           className="font-semibold text-[#234638] underline decoration-[#234638]/30 underline-offset-4 hover:decoration-[#234638]"
         >
           Read the methodology
