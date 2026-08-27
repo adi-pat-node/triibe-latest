@@ -3,13 +3,15 @@ import Image from "next/image";
 import {
   ArrowRight,
   BadgeCheck,
+  CircleDollarSign,
   Compass,
   ExternalLink,
   FileCheck2,
-  LockKeyhole,
+  Megaphone,
   Network,
   Search,
   ShieldCheck,
+  Users,
 } from "lucide-react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -18,6 +20,7 @@ import LiveGrantMetrics from "@/components/grants/live-grant-metrics";
 // TRIIBE owns this landing page. GrantAuthority receives only the outbound
 // referral and handles the secure account, search, application, and billing flow.
 const PRODUCTION_REFERRAL_URL = "https://www.grantauthority.org/r/triibe";
+const TRIIBE_GRANTS_SIGN_IN_URL = "https://www.grantauthority.org/signin?next=%2Ftriibe%2Fworkspace";
 
 function resolveReferralUrl() {
   const configuredUrl = process.env.GRANTAUTHORITY_REFERRAL_URL?.trim();
@@ -53,12 +56,12 @@ const TRIIBE_GRANTS_PORTAL_URL = resolveReferralUrl();
 export const metadata: Metadata = {
   title: "TRIIBE Grants | Make Your Mission Fundable",
   description:
-    "Free access to live, source-backed grant opportunities and a clear path from discovery to stronger applications.",
+    "TRIIBE Grants helps next-generation nonprofit founders find source-backed opportunities and move from discovery to stronger applications.",
   alternates: { canonical: "https://www.triibe.org/grants" },
   openGraph: {
     title: "TRIIBE Grants | Make Your Mission Fundable",
     description:
-      "TRIIBE Grants gives nonprofit innovators free access to credible opportunities, clear eligibility, and application support.",
+      "Built for next-generation nonprofit founders: credible opportunities, clear eligibility, and a stronger path to application.",
     url: "https://www.triibe.org/grants",
   },
 };
@@ -91,10 +94,28 @@ const steps = [
 ];
 
 const trustPoints = [
-  { icon: Search, label: "Source-backed opportunities" },
+  { icon: Search, label: "Free grant search" },
   { icon: ExternalLink, label: "Primary-source links" },
-  { icon: ShieldCheck, label: "Aggregate metrics only" },
-  { icon: LockKeyhole, label: "Secure account handoff" },
+  { icon: BadgeCheck, label: "No fee on grant awards" },
+  { icon: ShieldCheck, label: "TRIIBE member pricing" },
+];
+
+const ecosystemPillars = [
+  {
+    icon: CircleDollarSign,
+    title: "Funding",
+    description: "Search verified opportunities at no cost, with no percentage-based fee on the grants you receive.",
+  },
+  {
+    icon: Users,
+    title: "Mentorship",
+    description: "Build alongside a community that understands the realities of launching and growing a nonprofit organization.",
+  },
+  {
+    icon: Megaphone,
+    title: "Visibility",
+    description: "Connect the funding journey to TRIIBE I00, the founder community, and the annual Next Gen Summit.",
+  },
 ];
 
 export default function GrantsPage() {
@@ -113,9 +134,9 @@ export default function GrantsPage() {
               Make your mission fundable.
             </h1>
             <p className="mt-6 max-w-[680px] text-lg leading-8 text-white/80 md:text-xl">
-              TRIIBE Grants gives nonprofit innovators free access to live, source-backed opportunities—and a clear path from discovery to stronger applications.
+              Built for next-generation nonprofit founders, TRIIBE Grants brings live, source-backed opportunities and a clear path from discovery to stronger applications.
             </p>
-            <div className="mt-9 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+            <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
               <a
                 href={TRIIBE_GRANTS_PORTAL_URL}
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-white px-7 py-3 text-base font-bold text-[#002c19] transition-colors hover:bg-[#edf4f0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
@@ -123,8 +144,14 @@ export default function GrantsPage() {
                 Search grants free
                 <ArrowRight className="h-5 w-5" aria-hidden="true" />
               </a>
-              <p className="text-sm font-semibold text-white/80">Free to search. No card required.</p>
+              <a
+                href={TRIIBE_GRANTS_SIGN_IN_URL}
+                className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/45 px-7 py-3 text-base font-bold text-white transition-colors hover:border-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+              >
+                Sign in
+              </a>
             </div>
+            <p className="mt-3 text-sm font-semibold text-white/80">Free to search. No card required.</p>
             <p className="mt-5 max-w-[650px] text-sm leading-6 text-white/65">
               TRIIBE members save 20% on the first three monthly payments—or 20% on the full first year when paid annually.
             </p>
@@ -192,6 +219,29 @@ export default function GrantsPage() {
                 </div>
                 <h3 className="mt-6 text-2xl font-bold">{title}</h3>
                 <p className="mt-3 text-base leading-7 text-[#496157]">{description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f0f5f2] px-4 py-20 md:py-28">
+        <div className="mx-auto max-w-[1200px] rounded-[28px] bg-[#002c19] p-8 text-white shadow-xl shadow-[#002c19]/10 sm:p-10 md:p-14">
+          <p className="text-xs font-bold uppercase tracking-[0.16em] text-white/60">Beyond the Hundred</p>
+          <div className="mt-4 grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
+            <h2 className="max-w-2xl text-3xl font-bold tracking-[-0.035em] md:text-5xl">
+              Funding is one part of the TRIIBE network.
+            </h2>
+            <p className="max-w-xl text-base leading-7 text-white/70 lg:justify-self-end">
+              Rooted in TRIIBE&apos;s work with next-generation nonprofit founders and open to mission-driven organizations across the sector.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-5 md:grid-cols-3">
+            {ecosystemPillars.map(({ icon: Icon, title, description }) => (
+              <article className="rounded-2xl border border-white/15 bg-white/[0.06] p-6" key={title}>
+                <Icon className="h-5 w-5 text-white/75" aria-hidden="true" />
+                <h3 className="mt-5 text-xl font-bold">{title}</h3>
+                <p className="mt-3 text-sm leading-6 text-white/70">{description}</p>
               </article>
             ))}
           </div>
