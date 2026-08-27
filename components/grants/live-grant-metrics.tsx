@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { BadgeDollarSign, Building2, Database, RefreshCw } from "lucide-react";
+import { RefreshCw } from "lucide-react";
 
 type Metrics = {
   activeOpportunities: number;
@@ -87,61 +87,70 @@ export default function LiveGrantMetrics() {
   const cards = [
     {
       label: "Active grant opportunities",
-      icon: Database,
       value: state.metrics?.activeOpportunities.toLocaleString("en-US") ?? "—",
+      live: true,
     },
     {
-      label: "Active funding sources",
-      icon: Building2,
-      value: state.metrics ? state.metrics.activeFundingSources.toLocaleString("en-US") : "—",
-    },
-    {
-      label: "Currently listed funding",
-      icon: BadgeDollarSign,
+      label: "Currently listed funds",
       value: state.metrics ? formatFunding(state.metrics.currentlyListedFunding) : "—",
+      live: true,
+    },
+    {
+      label: "Countries covered",
+      value: "208",
+      live: false,
+    },
+    {
+      label: "To complete an application draft",
+      value: "10 min",
+      live: false,
     },
   ];
 
   return (
-    <div aria-live="polite">
-      <div className="grid overflow-hidden rounded-2xl border border-[#002c19]/15 bg-white shadow-sm md:grid-cols-3">
-        {cards.map(({ icon: Icon, label, value }, index) => (
-          <div
-            className={`p-6 sm:p-8 ${index > 0 ? "border-t border-[#002c19]/10 md:border-l md:border-t-0" : ""}`}
-            key={label}
-          >
-            <Icon className="h-5 w-5 text-[#426354]" aria-hidden="true" />
-            <p className="mt-5 text-3xl font-bold tracking-[-0.03em] text-[#002c19] sm:text-4xl">
-              {state.status === "loading" ? <span className="inline-block h-10 w-28 animate-pulse rounded bg-[#dfe9e3]" aria-label="Loading" /> : value}
+    <section className="border-b border-[#002c19]/10 bg-[#f4f6f5] px-4 py-9" aria-label="TRIIBE Grants network metrics">
+      <div className="mx-auto max-w-[1200px]" aria-live="polite">
+        <div className="grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+          {cards.map(({ label, value, live }, index) => (
+            <div
+              className={`${index > 0 ? "sm:border-l sm:border-[#002c19]/10 sm:pl-8" : ""} ${index === 2 ? "sm:border-l-0 sm:pl-0 lg:border-l lg:pl-8" : ""}`}
+              key={label}
+            >
+              <p className="text-3xl font-bold tracking-[-0.03em] text-[#002c19] sm:text-4xl">
+                {live && state.status === "loading" ? <span className="inline-block h-10 w-28 animate-pulse rounded bg-[#dfe9e3]" aria-label="Loading" /> : value}
+              </p>
+              <p className="mt-2 flex items-center gap-2 text-sm font-semibold text-[#496157]">
+                {live && state.status === "ready" && <span className="h-2 w-2 rounded-full bg-[#2f7d52]" aria-label="Live" />}
+                {label}
+              </p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-7 flex flex-col items-start justify-between gap-2 border-t border-[#002c19]/10 pt-4 text-xs leading-5 text-[#667a70] sm:flex-row sm:items-center">
+          {state.status === "ready" ? (
+            <p className="inline-flex items-center gap-2">
+              <RefreshCw className="h-3.5 w-3.5" aria-hidden="true" />
+              TRIIBE Grants network · updated {new Date(state.metrics.updatedAt).toLocaleString(undefined, {
+                month: "short",
+                day: "numeric",
+                hour: "numeric",
+                minute: "2-digit",
+                timeZoneName: "short",
+              })}
             </p>
-            <p className="mt-2 text-sm font-semibold text-[#496157]">{label}</p>
-          </div>
-        ))}
+          ) : state.status === "unavailable" ? (
+            <p>Live data temporarily unavailable. No estimates are shown.</p>
+          ) : (
+            <p>Loading the latest source-backed snapshot…</p>
+          )}
+          <a
+            href="/grants/methodology"
+            className="font-semibold text-[#234638] underline decoration-[#234638]/30 underline-offset-4 hover:decoration-[#234638]"
+          >
+            Read the methodology
+          </a>
+        </div>
       </div>
-      <div className="mt-4 flex flex-col items-start justify-between gap-2 text-xs leading-5 text-[#667a70] sm:flex-row sm:items-center">
-        {state.status === "ready" ? (
-          <p className="inline-flex items-center gap-2">
-            <RefreshCw className="h-3.5 w-3.5" aria-hidden="true" />
-            TRIIBE Grants network · updated {new Date(state.metrics.updatedAt).toLocaleString(undefined, {
-              month: "short",
-              day: "numeric",
-              hour: "numeric",
-              minute: "2-digit",
-              timeZoneName: "short",
-            })}
-          </p>
-        ) : state.status === "unavailable" ? (
-          <p>Live data temporarily unavailable. No estimates are shown.</p>
-        ) : (
-          <p>Loading the latest source-backed snapshot…</p>
-        )}
-        <a
-          href="/grants/methodology"
-          className="font-semibold text-[#234638] underline decoration-[#234638]/30 underline-offset-4 hover:decoration-[#234638]"
-        >
-          Read the methodology
-        </a>
-      </div>
-    </div>
+    </section>
   );
 }
