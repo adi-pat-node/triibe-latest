@@ -3,7 +3,9 @@ import { NextResponse } from "next/server";
 export const dynamic = "force-dynamic";
 
 const PUBLIC_METRICS_ENDPOINT = "https://www.grantauthority.org/api/public-metrics";
-const MAX_SNAPSHOT_AGE_MS = 5 * 60 * 1000;
+// The source publishes every five minutes. Allow scheduling and cache jitter,
+// but fail closed if two consecutive publication windows are missed.
+const MAX_SNAPSHOT_AGE_MS = 15 * 60 * 1000;
 
 function positiveNumber(value: unknown) {
   const parsed = Number(value);

@@ -67,7 +67,7 @@ export default function GrantsMethodologyPage() {
               <div>
                 <h2 className="text-2xl font-bold">Freshness and availability</h2>
                 <p className="mt-3 text-sm leading-7 text-[#496157]">
-                  The snapshot is refreshed every five minutes. TRIIBE Grants requests it every two minutes and displays its update time. If a complete source-backed snapshot is unavailable or too old, the figures are withheld rather than replaced with estimates.
+                  GrantAuthority publishes one canonical snapshot every five minutes. TRIIBE Grants displays that same snapshot and its update time. If no complete, source-backed snapshot has been published within 15 minutes, the figures are withheld rather than replaced with estimates.
                 </p>
                 <p className="mt-4 text-xs font-bold uppercase tracking-[0.12em] text-[#667a70]">Methodology version: strict-open-partner-metrics/v1</p>
               </div>
