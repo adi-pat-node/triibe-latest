@@ -91,7 +91,6 @@ export async function GET() {
           updatedAt,
           snapshotId,
           methodologyVersion,
-          methodologyUrl: "/grants/methodology",
         },
       },
       {

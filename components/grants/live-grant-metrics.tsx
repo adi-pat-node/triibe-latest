@@ -10,7 +10,6 @@ type Metrics = {
   updatedAt: string;
   snapshotId: string;
   methodologyVersion: string;
-  methodologyUrl: string;
 };
 
 type MetricsState =
@@ -43,8 +42,7 @@ function isMetrics(value: unknown): value is Metrics {
       Number(candidate.currentlyListedFunding) > 0 &&
       candidate.updatedAt &&
       candidate.snapshotId &&
-      candidate.methodologyVersion === "strict-open-partner-metrics/v1" &&
-      candidate.methodologyUrl === "/grants/methodology",
+      candidate.methodologyVersion === "strict-open-partner-metrics/v1",
   );
 }
 
@@ -126,7 +124,7 @@ export default function LiveGrantMetrics() {
             </div>
           ))}
         </div>
-        <div className="mt-7 flex flex-col items-start justify-between gap-2 border-t border-[#002c19]/10 pt-4 text-xs leading-5 text-[#667a70] sm:flex-row sm:items-center">
+        <div className="mt-7 border-t border-[#002c19]/10 pt-4 text-xs leading-5 text-[#667a70]">
           {state.status === "ready" ? (
             <p className="inline-flex items-center gap-2">
               <RefreshCw className="h-3.5 w-3.5" aria-hidden="true" />
@@ -143,12 +141,6 @@ export default function LiveGrantMetrics() {
           ) : (
             <p>Loading the latest source-backed snapshot…</p>
           )}
-          <a
-            href="/grants/methodology"
-            className="font-semibold text-[#234638] underline decoration-[#234638]/30 underline-offset-4 hover:decoration-[#234638]"
-          >
-            Read the methodology
-          </a>
         </div>
       </div>
     </section>
