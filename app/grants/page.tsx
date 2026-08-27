@@ -16,6 +16,7 @@ import {
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import LiveGrantMetrics from "@/components/grants/live-grant-metrics";
+import RegionalGrantsGlobeWrapper from "@/components/grants/regional-grants-globe-wrapper";
 
 // TRIIBE owns this landing page. GrantAuthority receives only the outbound
 // referral and handles the secure account, search, application, and billing flow.
@@ -199,6 +200,8 @@ export default function GrantsPage() {
           <LiveGrantMetrics />
         </div>
       </section>
+
+      <RegionalGrantsGlobeWrapper referralUrl={TRIIBE_GRANTS_PORTAL_URL} />
 
       <section className="px-4 py-20 md:py-28">
         <div className="mx-auto grid max-w-[1200px] gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
