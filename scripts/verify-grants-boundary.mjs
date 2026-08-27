@@ -5,6 +5,7 @@ const root = process.cwd();
 const sourceExtensions = new Set([".js", ".jsx", ".mjs", ".ts", ".tsx"]);
 const excludedDirectories = new Set([".git", ".next", "node_modules"]);
 const violations = [];
+const approvedAggregateMetricsUrl = "https://www.grantauthority.org/api/public-metrics";
 
 function visit(directory) {
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
@@ -19,6 +20,16 @@ function visit(directory) {
 
     const relativePath = path.relative(root, absolutePath);
     const source = fs.readFileSync(absolutePath, "utf8");
+    // One aggregate-only, read-only metrics endpoint is allowed. It returns no
+    // grant records, funder identities, user data, or application data.
+    const sourceWithoutApprovedMetrics = source.split(approvedAggregateMetricsUrl).join("");
+    const approvedMetricsFiles = new Set([
+      path.join("app", "api", "grants", "metrics", "route.ts"),
+      path.join("scripts", "verify-grants-boundary.mjs"),
+    ]);
+    if (source.includes(approvedAggregateMetricsUrl) && !approvedMetricsFiles.has(relativePath)) {
+      violations.push(`${relativePath}: aggregate metrics URL is allowed only in the narrow server proxy`);
+    }
     const forbiddenPatterns = [
       {
         label: "GrantAuthority or ZH source import",
@@ -35,7 +46,7 @@ function visit(directory) {
     ];
 
     for (const check of forbiddenPatterns) {
-      if (check.pattern.test(source)) {
+      if (check.pattern.test(sourceWithoutApprovedMetrics)) {
         violations.push(`${relativePath}: ${check.label}`);
       }
     }
@@ -61,4 +72,4 @@ if (violations.length > 0) {
   process.exit(1);
 }
 
-console.log("TRIIBE Grants boundary verified: outbound links only; no GrantAuthority or ZH runtime code.");
+console.log("TRIIBE Grants boundary verified: referral handoff plus aggregate-only metrics; no GrantAuthority or ZH runtime code.");

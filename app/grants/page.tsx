@@ -1,11 +1,22 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { ArrowRight, BadgeCheck, Search, Sparkles } from "lucide-react";
+import {
+  ArrowRight,
+  BadgeCheck,
+  Compass,
+  ExternalLink,
+  FileCheck2,
+  LockKeyhole,
+  Network,
+  Search,
+  ShieldCheck,
+} from "lucide-react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import LiveGrantMetrics from "@/components/grants/live-grant-metrics";
 
-// The public landing page stays on TRIIBE. This is an outbound handoff only:
-// GrantAuthority records the partner referral and continues directly to signup.
+// TRIIBE owns this landing page. GrantAuthority receives only the outbound
+// referral and handles the secure account, search, application, and billing flow.
 const PRODUCTION_REFERRAL_URL = "https://www.grantauthority.org/r/triibe";
 
 function resolveReferralUrl() {
@@ -40,54 +51,50 @@ function resolveReferralUrl() {
 const TRIIBE_GRANTS_PORTAL_URL = resolveReferralUrl();
 
 export const metadata: Metadata = {
-  title: "TRIIBE Grants | Find and Pursue Funding",
+  title: "TRIIBE Grants | Make Your Mission Fundable",
   description:
-    "Search vetted grants, understand eligibility, and build stronger applications through TRIIBE's GrantAuthority portal.",
-  alternates: {
-    canonical: "https://www.triibe.org/grants",
-  },
+    "Free access to live, source-backed grant opportunities and a clear path from discovery to stronger applications.",
+  alternates: { canonical: "https://www.triibe.org/grants" },
   openGraph: {
-    title: "TRIIBE Grants | Find and Pursue Funding",
+    title: "TRIIBE Grants | Make Your Mission Fundable",
     description:
-      "A TRIIBE-branded path to free grant search, eligibility insight, and application support.",
+      "TRIIBE Grants gives nonprofit innovators free access to credible opportunities, clear eligibility, and application support.",
     url: "https://www.triibe.org/grants",
   },
 };
 
 const features = [
   {
-    icon: Search,
-    title: "Search with confidence",
-    description: "Explore vetted grant opportunities and review the original source before you invest time.",
+    icon: Compass,
+    title: "See the full field",
+    description:
+      "Search live opportunities across public and philanthropic sources without starting from a blank browser tab.",
   },
   {
     icon: BadgeCheck,
-    title: "Understand your fit",
-    description: "See the requirements, timing, and eligibility signals that shape a stronger go-or-no-go decision.",
+    title: "Know what fits",
+    description:
+      "Compare eligibility, deadlines, award ranges, and source evidence before your team invests its time.",
   },
   {
-    icon: Sparkles,
-    title: "Build stronger applications",
-    description: "Move from discovery into a guided workspace when you are ready to pursue an opportunity.",
+    icon: FileCheck2,
+    title: "Move with discipline",
+    description:
+      "Save strong opportunities, organize requirements, and carry the work forward into a guided application workspace.",
   },
 ];
 
 const steps = [
-  {
-    number: "01",
-    title: "Start with TRIIBE",
-    description: "Begin here on triibe.org, then continue to the secure TRIIBE Grants account flow.",
-  },
-  {
-    number: "02",
-    title: "Create your account",
-    description: "Create a free account and begin searching for opportunities.",
-  },
-  {
-    number: "03",
-    title: "Keep your TRIIBE benefit",
-    description: "Save 20% on your first three monthly payments or on the full first year when you pay annually.",
-  },
+  { number: "01", title: "Find", description: "Search by mission, population, place, program, or funding need." },
+  { number: "02", title: "Qualify", description: "Review fit, timing, requirements, and the original source before pursuing." },
+  { number: "03", title: "Apply", description: "Turn a qualified opportunity into an organized, stronger submission." },
+];
+
+const trustPoints = [
+  { icon: Search, label: "Source-backed opportunities" },
+  { icon: ExternalLink, label: "Primary-source links" },
+  { icon: ShieldCheck, label: "Aggregate metrics only" },
+  { icon: LockKeyhole, label: "Secure account handoff" },
 ];
 
 export default function GrantsPage() {
@@ -99,27 +106,28 @@ export default function GrantsPage() {
         <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_20%_15%,#ffffff_0,transparent_24%),radial-gradient(circle_at_80%_80%,#7fbf9b_0,transparent_28%)]" />
         <div className="relative mx-auto grid max-w-[1200px] items-center gap-12 lg:grid-cols-[1.08fr_0.92fr]">
           <div>
-            <div className="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em]">
-              TRIIBE founder access
-            </div>
-            <h1 className="mt-6 max-w-[720px] text-4xl font-bold leading-[1.08] tracking-[-0.03em] sm:text-5xl md:text-6xl">
-              Find funding with more confidence.
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-white/75">
+              TRIIBE Grants · Powered by GrantAuthority
+            </p>
+            <h1 className="mt-6 max-w-[720px] text-5xl font-bold leading-[1.02] tracking-[-0.045em] sm:text-6xl md:text-7xl">
+              Make your mission fundable.
             </h1>
-            <p className="mt-6 max-w-[660px] text-lg leading-8 text-white/80 md:text-xl">
-              Search vetted grants for free, understand fit faster, and build stronger applications through TRIIBE&apos;s GrantAuthority portal.
+            <p className="mt-6 max-w-[680px] text-lg leading-8 text-white/80 md:text-xl">
+              TRIIBE Grants gives nonprofit innovators free access to live, source-backed opportunities—and a clear path from discovery to stronger applications.
             </p>
             <div className="mt-9 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
               <a
                 href={TRIIBE_GRANTS_PORTAL_URL}
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-white px-7 py-3 text-base font-bold text-[#002c19] transition-colors hover:bg-[#edf4f0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
               >
-                Create your free account
+                Search grants free
                 <ArrowRight className="h-5 w-5" aria-hidden="true" />
               </a>
-              <p className="max-w-[340px] text-sm leading-6 text-white/70">
-                Free account. Save 20% for your first 3 months, or 20% on the full first year when paid annually.
-              </p>
+              <p className="text-sm font-semibold text-white/80">Free to search. No card required.</p>
             </div>
+            <p className="mt-5 max-w-[650px] text-sm leading-6 text-white/65">
+              TRIIBE members save 20% on the first three monthly payments—or 20% on the full first year when paid annually.
+            </p>
           </div>
 
           <div className="rounded-[28px] border border-white/20 bg-white p-8 shadow-2xl shadow-black/20 sm:p-10">
@@ -132,28 +140,57 @@ export default function GrantsPage() {
               className="mx-auto h-auto w-full max-w-[430px] object-contain"
             />
             <div className="mt-8 border-t border-[#002c19]/15 pt-7">
-              <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#426354]">Powered by GrantAuthority</p>
+              <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#426354]">Funding infrastructure for nonprofit innovators</p>
               <p className="mt-3 text-base leading-7 text-[#234638]">
-                One secure place to discover opportunities, evaluate eligibility, and move your funding work forward.
+                Credible opportunities, clearer decisions, and a working path from search to submission.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="px-4 py-20 md:py-28">
+      <section className="border-b border-[#002c19]/10 bg-[#f7faf8] px-4 py-7" aria-label="Trust commitments">
+        <div className="mx-auto grid max-w-[1200px] gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {trustPoints.map(({ icon: Icon, label }) => (
+            <div className="flex items-center gap-3 text-sm font-semibold text-[#234638]" key={label}>
+              <Icon className="h-4 w-4 shrink-0 text-[#547064]" aria-hidden="true" />
+              {label}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-[#f0f5f2] px-4 py-16 md:py-20">
         <div className="mx-auto max-w-[1200px]">
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#547064]">Built for the funding journey</p>
-            <h2 className="mt-4 text-3xl font-bold tracking-[-0.025em] md:text-5xl">From opportunity to application</h2>
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#547064]">The funding landscape, live</p>
+            <h2 className="mt-3 text-3xl font-bold tracking-[-0.03em] md:text-5xl">Opportunity you can measure.</h2>
+            <p className="mt-4 max-w-2xl text-base leading-7 text-[#496157]">
+              These figures come from the same source-backed snapshot displayed by GrantAuthority. They refresh together and disappear if the verified feed is unavailable.
+            </p>
           </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <LiveGrantMetrics />
+        </div>
+      </section>
+
+      <section className="px-4 py-20 md:py-28">
+        <div className="mx-auto grid max-w-[1200px] gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          <div className="lg:sticky lg:top-28">
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#547064]">Why TRIIBE Grants</p>
+            <h2 className="mt-4 text-3xl font-bold tracking-[-0.035em] md:text-5xl">
+              Capital should not be the reason progress stalls.
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-[#496157]">
+              TRIIBE is building the startup engine the nonprofit sector has been missing. TRIIBE Grants brings that infrastructure to funding: credible opportunities, clear eligibility, primary-source evidence, and the tools to move from search to submission.
+            </p>
+          </div>
+          <div className="grid gap-5">
             {features.map(({ icon: Icon, title, description }) => (
-              <article key={title} className="rounded-2xl border border-[#002c19]/20 bg-[#f7faf8] p-7 md:p-8">
+              <article key={title} className="rounded-2xl border border-[#002c19]/15 bg-[#f7faf8] p-7 md:p-8">
                 <div className="grid h-12 w-12 place-items-center rounded-xl bg-[#002c19] text-white">
                   <Icon className="h-5 w-5" aria-hidden="true" />
                 </div>
-                <h3 className="mt-6 text-xl font-bold">{title}</h3>
+                <h3 className="mt-6 text-2xl font-bold">{title}</h3>
                 <p className="mt-3 text-base leading-7 text-[#496157]">{description}</p>
               </article>
             ))}
@@ -161,18 +198,18 @@ export default function GrantsPage() {
         </div>
       </section>
 
-      <section className="bg-[#f0f5f2] px-4 py-20 md:py-28">
+      <section className="bg-[#002c19] px-4 py-20 text-white md:py-28">
         <div className="mx-auto max-w-[1050px]">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#547064]">How it works</p>
-            <h2 className="mt-4 text-3xl font-bold tracking-[-0.025em] md:text-5xl">One link. Three simple steps.</h2>
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-white/60">How it works</p>
+            <h2 className="mt-4 text-4xl font-bold tracking-[-0.035em] md:text-6xl">Find. Qualify. Apply.</h2>
           </div>
-          <ol className="mt-12 grid gap-8 md:grid-cols-3">
+          <ol className="mt-14 grid gap-8 md:grid-cols-3">
             {steps.map((step) => (
-              <li key={step.number} className="text-center">
-                <span className="text-5xl font-black text-[#002c19]/15">{step.number}</span>
-                <h3 className="mt-2 text-xl font-bold">{step.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-[#496157]">{step.description}</p>
+              <li key={step.number} className="border-t border-white/20 pt-6">
+                <span className="text-sm font-bold text-white/45">{step.number}</span>
+                <h3 className="mt-5 text-2xl font-bold">{step.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-white/70">{step.description}</p>
               </li>
             ))}
           </ol>
@@ -180,21 +217,43 @@ export default function GrantsPage() {
       </section>
 
       <section className="px-4 py-20 text-center md:py-28">
-        <div className="mx-auto max-w-[760px]">
-          <h2 className="text-3xl font-bold tracking-[-0.025em] md:text-5xl">Ready to find your next opportunity?</h2>
+        <div className="mx-auto max-w-[820px]">
+          <h2 className="text-4xl font-bold tracking-[-0.035em] md:text-6xl">Good missions deserve access to capital.</h2>
           <p className="mx-auto mt-5 max-w-[620px] text-lg leading-8 text-[#496157]">
-            Enter through TRIIBE to keep your founder access and partner benefit connected from signup through checkout.
+            Begin with a free search. Build the evidence, discipline, and momentum to pursue the right opportunity.
           </p>
           <a
             href={TRIIBE_GRANTS_PORTAL_URL}
             className="mt-8 inline-flex min-h-14 items-center justify-center gap-2 rounded-md bg-[#002c19] px-9 py-4 text-lg font-bold text-white transition-colors hover:bg-[#1c5945] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#002c19]"
           >
-            Create your free account
+            Start searching free
             <ArrowRight className="h-5 w-5" aria-hidden="true" />
           </a>
-          <p className="mx-auto mt-6 max-w-[650px] text-xs leading-5 text-[#667a70]">
-            GrantAuthority operates the account, grant-search, and billing experience. Following this partner link lets GrantAuthority attribute the journey to TRIIBE. TRIIBE receives aggregate referral performance, never payment-card details.
+          <p className="mx-auto mt-6 max-w-[700px] text-xs leading-5 text-[#667a70]">
+            GrantAuthority operates the account, grant-search, application, and billing experience. Following this partner link connects signup and eligible checkout savings to TRIIBE. TRIIBE receives aggregate referral performance, never payment-card details.
           </p>
+        </div>
+      </section>
+
+      <section className="border-y border-[#002c19]/10 bg-[#f0f5f2] px-4 py-14">
+        <div className="mx-auto flex max-w-[1000px] flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+          <div className="max-w-2xl">
+            <div className="flex items-center gap-3">
+              <Network className="h-5 w-5 text-[#547064]" aria-hidden="true" />
+              <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#547064]">For foundations and networks</p>
+            </div>
+            <h2 className="mt-3 text-2xl font-bold tracking-[-0.025em] md:text-3xl">Bring TRIIBE Grants to your community.</h2>
+            <p className="mt-3 text-sm leading-6 text-[#496157]">
+              Equip a cohort, portfolio, or regional network with a credible path to funding discovery and application readiness.
+            </p>
+          </div>
+          <a
+            href="mailto:partnerships@triibe.org?subject=TRIIBE%20Grants%20partnership"
+            className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-md border border-[#002c19]/25 bg-white px-6 py-3 text-sm font-bold text-[#002c19] hover:bg-[#f7faf8]"
+          >
+            Bring TRIIBE Grants to your network
+            <ArrowRight className="h-4 w-4" aria-hidden="true" />
+          </a>
         </div>
       </section>
 
