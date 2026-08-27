@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ArrowRight, Database, ShieldCheck } from "lucide-react";
+import { ArrowRight, ShieldCheck } from "lucide-react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
@@ -24,21 +24,13 @@ export default function GrantsMethodologyPage() {
           <p className="text-xs font-bold uppercase tracking-[0.18em] text-white/65">TRIIBE Grants · Data transparency</p>
           <h1 className="mt-5 max-w-3xl text-4xl font-bold tracking-[-0.04em] sm:text-5xl md:text-6xl">Live metrics methodology</h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-white/75">
-            The definitions behind the aggregate figures shown by TRIIBE Grants and GrantAuthority.
+            How TRIIBE Grants defines and maintains the live funding figures shown across the network.
           </p>
         </div>
       </section>
 
       <section className="px-4 py-16 md:py-20">
         <div className="mx-auto grid max-w-[960px] gap-5">
-          <article className="rounded-2xl border border-[#002c19]/15 bg-white p-6 sm:p-8">
-            <Database className="h-5 w-5 text-[#547064]" aria-hidden="true" />
-            <h2 className="mt-5 text-2xl font-bold">One shared snapshot</h2>
-            <p className="mt-3 text-sm leading-7 text-[#496157]">
-              GrantAuthority calculates these figures as one aggregate-only snapshot. GrantAuthority&apos;s landing page and TRIIBE Grants read that same snapshot, so their figures use the same definitions and update together. TRIIBE receives no grant records, funder identities, user data, payment data, or application activity through this feed.
-            </p>
-          </article>
-
           <article className="rounded-2xl border border-[#002c19]/15 bg-white p-6 sm:p-8">
             <h2 className="text-2xl font-bold">Active grant opportunities</h2>
             <p className="mt-3 text-sm leading-7 text-[#496157]">An opportunity is counted only when every rule below is satisfied:</p>
@@ -67,9 +59,8 @@ export default function GrantsMethodologyPage() {
               <div>
                 <h2 className="text-2xl font-bold">Freshness and availability</h2>
                 <p className="mt-3 text-sm leading-7 text-[#496157]">
-                  GrantAuthority publishes one canonical snapshot every five minutes. TRIIBE Grants displays that same snapshot and its update time. If no complete, source-backed snapshot has been published within 15 minutes, the figures are withheld rather than replaced with estimates.
+                  TRIIBE Grants refreshes its verified funding snapshot every five minutes and displays the latest update time. If the source data is incomplete or outdated, the figures are temporarily withheld rather than replaced with estimates.
                 </p>
-                <p className="mt-4 text-xs font-bold uppercase tracking-[0.12em] text-[#667a70]">Methodology version: strict-open-partner-metrics/v1</p>
               </div>
             </div>
           </article>

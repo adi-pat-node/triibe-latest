@@ -107,7 +107,7 @@ export default function GrantsPage() {
         <div className="relative mx-auto grid max-w-[1200px] items-center gap-12 lg:grid-cols-[1.08fr_0.92fr]">
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-white/75">
-              TRIIBE Grants · Powered by GrantAuthority
+              TRIIBE Grants
             </p>
             <h1 className="mt-6 max-w-[720px] text-5xl font-bold leading-[1.02] tracking-[-0.045em] sm:text-6xl md:text-7xl">
               Make your mission fundable.
@@ -166,7 +166,7 @@ export default function GrantsPage() {
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#547064]">The funding landscape, live</p>
             <h2 className="mt-3 text-3xl font-bold tracking-[-0.03em] md:text-5xl">Opportunity you can measure.</h2>
             <p className="mt-4 max-w-2xl text-base leading-7 text-[#496157]">
-              These figures come from the same source-backed snapshot displayed by GrantAuthority. They refresh together and disappear if the verified feed is unavailable.
+              These figures reflect TRIIBE&apos;s verified grants network. They are refreshed from source-backed records and withheld whenever the data is incomplete or outdated.
             </p>
           </div>
           <LiveGrantMetrics />
@@ -230,7 +230,7 @@ export default function GrantsPage() {
             <ArrowRight className="h-5 w-5" aria-hidden="true" />
           </a>
           <p className="mx-auto mt-6 max-w-[700px] text-xs leading-5 text-[#667a70]">
-            GrantAuthority operates the account, grant-search, application, and billing experience. Following this partner link connects signup and eligible checkout savings to TRIIBE. TRIIBE receives aggregate referral performance, never payment-card details.
+            Following this link securely connects your signup and eligible checkout savings to TRIIBE. TRIIBE receives aggregate referral performance, never payment-card details.
           </p>
         </div>
       </section>

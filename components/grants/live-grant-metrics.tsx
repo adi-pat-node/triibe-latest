@@ -122,7 +122,7 @@ export default function LiveGrantMetrics() {
         {state.status === "ready" ? (
           <p className="inline-flex items-center gap-2">
             <RefreshCw className="h-3.5 w-3.5" aria-hidden="true" />
-            Live from GrantAuthority · updated {new Date(state.metrics.updatedAt).toLocaleString(undefined, {
+            TRIIBE Grants network · updated {new Date(state.metrics.updatedAt).toLocaleString(undefined, {
               month: "short",
               day: "numeric",
               hour: "numeric",
