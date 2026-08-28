@@ -43,6 +43,11 @@ function positiveNumber(value: unknown) {
   return Number.isFinite(parsed) && parsed > 0 ? parsed : null;
 }
 
+function positiveSafeInteger(value: unknown) {
+  const parsed = Number(value);
+  return Number.isSafeInteger(parsed) && parsed > 0 ? parsed : null;
+}
+
 export async function GET() {
   try {
     const response = await fetch(PUBLIC_METRICS_ENDPOINT, {
@@ -54,9 +59,9 @@ export async function GET() {
 
     const body = await response.json();
     const metrics = body?.metrics;
-    const activeOpportunities = positiveNumber(metrics?.activeOpportunities);
-    const activeFundingSources = positiveNumber(metrics?.activeFundingSources);
-    const currentlyListedFunding = positiveNumber(metrics?.availableFunding);
+    const activeGrants = positiveSafeInteger(metrics?.activeGrants);
+    const foundationGrantmakerProfiles = positiveSafeInteger(metrics?.foundationGrantmakerProfiles);
+    const listedFunding = positiveNumber(metrics?.listedFunding);
     const updatedAt = String(metrics?.updated_at || "");
     const updatedAtMs = new Date(updatedAt).getTime();
     const snapshotId = String(metrics?.snapshotId || "");
@@ -65,15 +70,16 @@ export async function GET() {
     if (
       body?.success !== true ||
       body?.stale !== false ||
-      body?.source !== "public_partner_metrics_snapshot" ||
+      body?.source !== "public_partner_network_aggregate" ||
       metrics?.partnerMetricsComplete !== true ||
-      metrics?.activeGrantsMeaning !== "strict_open_opportunities" ||
-      metrics?.availableFundingMeaning !== "currently_listed_funding" ||
-      !activeOpportunities ||
-      !activeFundingSources ||
-      !currentlyListedFunding ||
+      metrics?.activeGrantsMeaning !== "network_grant_records" ||
+      metrics?.foundationProfilesMeaning !== "foundation_and_grantmaker_profiles" ||
+      metrics?.listedFundingMeaning !== "listed_awards_across_network_records" ||
+      !activeGrants ||
+      !foundationGrantmakerProfiles ||
+      !listedFunding ||
       !snapshotId ||
-      methodologyVersion !== "strict-open-partner-metrics/v1" ||
+      methodologyVersion !== "network-partner-metrics/v2" ||
       !Number.isFinite(updatedAtMs) ||
       Date.now() - updatedAtMs > MAX_SNAPSHOT_AGE_MS ||
       updatedAtMs > Date.now() + 60_000
@@ -85,9 +91,9 @@ export async function GET() {
       {
         success: true,
         metrics: {
-          activeOpportunities,
-          activeFundingSources,
-          currentlyListedFunding,
+          activeGrants,
+          foundationGrantmakerProfiles,
+          listedFunding,
           updatedAt,
           snapshotId,
           methodologyVersion,

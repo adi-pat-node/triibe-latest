@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import { RefreshCw } from "lucide-react";
 
 type Metrics = {
-  activeOpportunities: number;
-  activeFundingSources: number;
-  currentlyListedFunding: number;
+  activeGrants: number;
+  foundationGrantmakerProfiles: number;
+  listedFunding: number;
   updatedAt: string;
   snapshotId: string;
   methodologyVersion: string;
@@ -20,29 +20,40 @@ type MetricsState =
 const REFRESH_INTERVAL_MS = 120_000;
 const MAX_CONSECUTIVE_FAILURES = 3;
 
+const compactNumber = new Intl.NumberFormat("en-US", {
+  notation: "compact",
+  maximumFractionDigits: 2,
+});
+
+const compactCurrency = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+  notation: "compact",
+  minimumFractionDigits: 1,
+  maximumFractionDigits: 1,
+});
+
+function formatProfiles(count: number) {
+  return `${compactNumber.format(count)}+`;
+}
+
 function formatFunding(amount: number) {
-  if (amount >= 1_000_000_000) return `$${(amount / 1_000_000_000).toFixed(1)}B`;
-  if (amount >= 1_000_000) return `$${(amount / 1_000_000).toFixed(1)}M`;
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    maximumFractionDigits: 0,
-  }).format(amount);
+  return compactCurrency.format(amount);
 }
 
 function isMetrics(value: unknown): value is Metrics {
   const candidate = value as Partial<Metrics> | null;
   return Boolean(
     candidate &&
-      Number.isSafeInteger(candidate.activeOpportunities) &&
-      Number(candidate.activeOpportunities) > 0 &&
-      Number.isSafeInteger(candidate.activeFundingSources) &&
-      Number(candidate.activeFundingSources) > 0 &&
-      Number.isFinite(candidate.currentlyListedFunding) &&
-      Number(candidate.currentlyListedFunding) > 0 &&
+      Number.isSafeInteger(candidate.activeGrants) &&
+      Number(candidate.activeGrants) > 0 &&
+      Number.isSafeInteger(candidate.foundationGrantmakerProfiles) &&
+      Number(candidate.foundationGrantmakerProfiles) > 0 &&
+      Number.isFinite(candidate.listedFunding) &&
+      Number(candidate.listedFunding) > 0 &&
       candidate.updatedAt &&
       candidate.snapshotId &&
-      candidate.methodologyVersion === "strict-open-partner-metrics/v1",
+      candidate.methodologyVersion === "network-partner-metrics/v2",
   );
 }
 
@@ -84,18 +95,18 @@ export default function LiveGrantMetrics() {
 
   const cards = [
     {
-      label: "Active grant opportunities",
-      value: state.metrics?.activeOpportunities.toLocaleString("en-US") ?? "—",
+      label: "Active grants in the network",
+      value: state.metrics?.activeGrants.toLocaleString("en-US") ?? "—",
       live: true,
     },
     {
-      label: "Active funding sources",
-      value: state.metrics?.activeFundingSources.toLocaleString("en-US") ?? "—",
+      label: "Foundation & grantmaker profiles",
+      value: state.metrics ? formatProfiles(state.metrics.foundationGrantmakerProfiles) : "—",
       live: true,
     },
     {
-      label: "Currently listed funds",
-      value: state.metrics ? formatFunding(state.metrics.currentlyListedFunding) : "—",
+      label: "Listed funding across the network",
+      value: state.metrics ? formatFunding(state.metrics.listedFunding) : "—",
       live: true,
     },
     {
