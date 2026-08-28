@@ -20,7 +20,8 @@ export default function GrantsHeroGlobe() {
         return response.json();
       })
       .then((data) => {
-        if (!cancelled && Array.isArray(data?.features)) setCountries(data.features);
+        if (!cancelled && Array.isArray(data?.features))
+          setCountries(data.features);
       })
       .catch(() => {
         // The base globe remains visible if the border file cannot be loaded.
@@ -45,7 +46,10 @@ export default function GrantsHeroGlobe() {
 
     const update = () => {
       const viewportWidth = Math.max(280, window.innerWidth - 32);
-      const width = Math.max(280, Math.min(node.clientWidth, viewportWidth, 560));
+      const width = Math.max(
+        280,
+        Math.min(node.clientWidth, viewportWidth, 560),
+      );
       setDimensions({ width, height: width });
     };
 
@@ -82,14 +86,42 @@ export default function GrantsHeroGlobe() {
   }, [reduceMotion]);
 
   return (
-    <div ref={viewportRef} className="relative mx-auto aspect-square w-full min-w-0 max-w-[560px] overflow-hidden" aria-label="Rotating globe illustrating worldwide funding opportunities">
-      <div className="pointer-events-none absolute inset-[9%] rounded-full bg-[#5f9b77]/25 blur-3xl" />
-      <div className="pointer-events-none relative overflow-hidden rounded-full" style={{ width: dimensions.width, height: dimensions.height }}>
+    <div
+      ref={viewportRef}
+      className="relative mx-auto aspect-square w-full min-w-0 max-w-[560px]"
+      aria-label="Rotating globe illustrating worldwide funding opportunities"
+    >
+      {/* Soft ambient glow */}
+      <div
+        className="pointer-events-none absolute inset-[5%] rounded-full"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(95,155,119,0.30) 0%, rgba(95,155,119,0.16) 38%, rgba(95,155,119,0.05) 62%, transparent 78%)",
+          filter: "blur(32px)",
+        }}
+      />
+
+      {/* Globe with soft fade into the background */}
+      <div
+        className="pointer-events-none relative"
+        style={{
+          width: dimensions.width,
+          height: dimensions.height,
+          WebkitMaskImage:
+            "radial-gradient(circle at center, black 0%, black 55%, rgba(0,0,0,0.85) 65%, rgba(0,0,0,0.4) 74%, transparent 88%)",
+          maskImage:
+            "radial-gradient(circle at center, black 0%, black 55%, rgba(0,0,0,0.85) 65%, rgba(0,0,0,0.4) 74%, transparent 88%)",
+        }}
+      >
         <Globe
           ref={globeRef}
           width={dimensions.width}
           height={dimensions.height}
           backgroundColor="rgba(0,0,0,0)"
+          rendererConfig={{
+            alpha: true,
+            antialias: true,
+          }}
           showAtmosphere
           atmosphereColor="#6ea687"
           atmosphereAltitude={0.18}
