@@ -110,9 +110,9 @@ export default function GrantsPricing({ referralUrl }: { referralUrl: string }) 
           })}
         </div>
 
-        <p className="mt-5 text-xs leading-5 text-[#667a70]">
+        {/* <p className="mt-5 text-xs leading-5 text-[#667a70]">
           Paid selections create your account first, then open secure checkout with your TRIIBE offer attached. Final pricing and renewal terms are shown before payment.
-        </p>
+        </p> */}
       </div>
     </section>
   );
