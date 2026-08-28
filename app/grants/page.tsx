@@ -1,30 +1,173 @@
-"use client";
-
+import type { Metadata } from "next";
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import Header from "@/components/header";
+import GrantsHeroGlobeWrapper from "@/components/grants/grants-hero-globe-wrapper";
+import LiveGrantMetrics from "@/components/grants/live-grant-metrics";
+import GrantsPricing from "@/components/grants/grants-pricing";
+
+// TRIIBE owns this landing page. GrantAuthority receives only the outbound
+// referral and handles the secure account, search, application, and billing flow.
+const PRODUCTION_REFERRAL_URL = "https://www.grantauthority.org/r/triibe";
+const TRIIBE_GRANTS_SIGN_IN_URL = "https://www.grantauthority.org/signin?next=%2Ftriibe%2Fworkspace";
+
+function resolveReferralUrl() {
+  const configuredUrl = process.env.GRANTAUTHORITY_REFERRAL_URL?.trim();
+  if (!configuredUrl) return PRODUCTION_REFERRAL_URL;
+
+  try {
+    const url = new URL(configuredUrl);
+    const isProductionHost =
+      url.hostname === "grantauthority.org" ||
+      url.hostname === "www.grantauthority.org";
+    const isBrightsteadPreview =
+      url.hostname.startsWith("grantai-") &&
+      url.hostname.endsWith("-brightstead-technologies.vercel.app");
+
+    if (
+      url.protocol === "https:" &&
+      url.pathname === "/r/triibe" &&
+      !url.search &&
+      !url.hash &&
+      (isProductionHost || isBrightsteadPreview)
+    ) {
+      return url.toString();
+    }
+  } catch {
+    // Invalid or unapproved destinations fail closed to production.
+  }
+
+  return PRODUCTION_REFERRAL_URL;
+}
+
+const TRIIBE_GRANTS_PORTAL_URL = resolveReferralUrl();
+
+export const metadata: Metadata = {
+  title: "TRIIBE Grants | Funding for Next-Gen Founders",
+  description:
+    "Find live grant opportunities matched to your mission, qualify them against primary sources, and move from search to submission.",
+  alternates: { canonical: "https://www.triibe.org/grants" },
+  openGraph: {
+    title: "TRIIBE Grants | Funding for Next-Gen Founders",
+    description:
+      "Find live grant opportunities matched to your mission, then move from search to a stronger submission.",
+    url: "https://www.triibe.org/grants",
+  },
+};
+
+const steps = [
+  {
+    number: "01",
+    title: "Find",
+    description:
+      "Use our AI search to describe your mission and what you’re looking for, so we can narrow down the funding best for you.",
+  },
+  {
+    number: "02",
+    title: "Qualify",
+    description:
+      "Review fit, deadlines, requirements, and the original source of funds before pursuing.",
+  },
+  {
+    number: "03",
+    title: "Apply",
+    description:
+      "Turn a qualified opportunity into an organized, stronger submission, for free.",
+  },
+];
 
 export default function GrantsPage() {
   return (
     <main className="min-h-screen bg-white text-[#002c19]">
       <Header />
-      <section className="w-full flex flex-col items-center px-4 pt-28 md:pt-32">
-        <div className="w-full flex justify-center mb-8">
-          <Image
-            src="/images/home/TRIIBEGrants.png"
-            alt="TRIIBE Grants"
-            width={600}
-            height={150}
-            priority
-            className="w-full max-w-[400px] md:max-w-[500px] h-auto object-contain object-center"
-          />
+
+      <section className="relative overflow-hidden bg-[#002c19] px-4 pb-10 pt-28 text-white md:pb-12 md:pt-32">
+        <div className="pointer-events-none absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_18%_10%,#ffffff_0,transparent_23%),radial-gradient(circle_at_80%_52%,#6ea687_0,transparent_30%)]" />
+        <div className="relative mx-auto grid min-h-[690px] max-w-[1200px] items-center gap-8 lg:grid-cols-[1.02fr_0.98fr]">
+          <div className="relative z-10 py-8 lg:py-12">
+            <Image
+              src="/images/home/TRIIBEGrants.png"
+              alt="TRIIBE Grants"
+              width={5388}
+              height={647}
+              priority
+              className="h-auto w-full max-w-[390px] brightness-0 invert"
+            />
+            <h1 className="mt-9 max-w-[640px] text-5xl font-bold leading-[1.05] tracking-[-0.045em] sm:text-6xl lg:text-[68px]">
+              The only grants platform built for next-gen founders.
+            </h1>
+            <p className="mt-7 max-w-[650px] text-lg leading-8 text-white/80 md:text-xl">
+              Most grants are never publicly posted. TRIIBE Grants finds them anyway, enriched daily, matched to your mission, drafted in minutes.
+            </p>
+            <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+              <a
+                href={TRIIBE_GRANTS_PORTAL_URL}
+                className="inline-flex min-h-14 items-center justify-center gap-2 rounded-md bg-white px-8 py-4 text-base font-bold text-[#002c19] transition-colors hover:bg-[#edf4f0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+              >
+                Find your grants
+                <ArrowRight className="h-5 w-5" aria-hidden="true" />
+              </a>
+              <a
+                href={TRIIBE_GRANTS_SIGN_IN_URL}
+                className="inline-flex min-h-14 items-center justify-center rounded-md border border-white/50 px-8 py-4 text-base font-bold text-white transition-colors hover:border-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+              >
+                Sign in
+              </a>
+            </div>
+            <p className="mt-4 text-sm text-white/65">Searching is free. No card to browse.</p>
+          </div>
+
+          <div className="relative z-0 flex min-w-0 items-center justify-center overflow-hidden lg:justify-end">
+            <GrantsHeroGlobeWrapper />
+          </div>
         </div>
 
-        <div className="flex flex-col items-center text-center mt-8 md:mt-12">
-          <h1 className="text-2xl md:text-3xl font-bold">
-            Coming by Friday
-          </h1>
+        <div className="relative mx-auto flex max-w-[1200px] items-center gap-2 text-[10px] font-bold uppercase tracking-[0.14em] text-white/45">
+          Powered by <span className="text-white/70">GrantAuthority</span>
         </div>
       </section>
+
+      <LiveGrantMetrics />
+
+      <section className="px-4 py-20 md:py-28" aria-labelledby="mission-fundable-heading">
+        <div className="mx-auto max-w-[1200px]">
+          <h2 id="mission-fundable-heading" className="max-w-[760px] text-4xl font-bold tracking-[-0.035em] md:text-6xl">
+            Make your mission fundable
+          </h2>
+          <p className="mt-5 max-w-[980px] text-base leading-8 text-[#496157] md:text-lg">
+            TRIIBE Grants is our free infrastructure supporting credible opportunities, clear eligibility, primary-source evidence, and the tools to move from search to submission.
+          </p>
+
+          <ol className="mt-12 grid gap-5 md:grid-cols-3">
+            {steps.map((step) => (
+              <li key={step.number} className="rounded-2xl border border-[#002c19]/15 bg-white p-7 shadow-sm md:p-8">
+                <span className="text-xs font-bold uppercase tracking-[0.14em] text-[#547064]">{step.number}</span>
+                <h3 className="mt-5 text-2xl font-bold">{step.title}</h3>
+                <p className="mt-4 text-base leading-7 text-[#496157]">{step.description}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <div className="bg-[#f4f6f5]">
+        <GrantsPricing referralUrl={TRIIBE_GRANTS_PORTAL_URL} />
+      </div>
+
+      <footer className="border-t border-white/15 bg-[#002c19] px-4 py-9 text-white">
+        <div className="mx-auto flex max-w-[1200px] flex-col gap-5 text-sm sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="font-bold">TRIIBE Grants</p>
+            <p className="mt-1 text-xs text-white/55">© 2026 TRIIBE 501(c)(3). All rights reserved.</p>
+          </div>
+          <nav className="flex flex-wrap gap-x-6 gap-y-3 text-xs font-semibold text-white/70" aria-label="Grants footer">
+            <a className="hover:text-white" href="/about">About TRIIBE</a>
+            <a className="hover:text-white" href="/index/privacy">Privacy</a>
+            <a className="hover:text-white" href="mailto:partnerships@triibe.org">Contact</a>
+            <a className="hover:text-white" href={TRIIBE_GRANTS_SIGN_IN_URL}>Sign in</a>
+          </nav>
+        </div>
+      </footer>
     </main>
   );
 }
