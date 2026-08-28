@@ -5,11 +5,13 @@ import Header from "@/components/header";
 import GrantsHeroGlobeWrapper from "@/components/grants/grants-hero-globe-wrapper";
 import LiveGrantMetrics from "@/components/grants/live-grant-metrics";
 import GrantsPricing from "@/components/grants/grants-pricing";
+import Footer from "@/components/footer";
 
 // TRIIBE owns this landing page. GrantAuthority receives only the outbound
 // referral and handles the secure account, search, application, and billing flow.
 const PRODUCTION_REFERRAL_URL = "https://www.grantauthority.org/r/triibe";
-const TRIIBE_GRANTS_SIGN_IN_URL = "https://www.grantauthority.org/signin?next=%2Ftriibe%2Fworkspace";
+const TRIIBE_GRANTS_SIGN_IN_URL =
+  "https://www.grantauthority.org/signin?next=%2Ftriibe%2Fworkspace";
 
 function resolveReferralUrl() {
   const configuredUrl = process.env.GRANTAUTHORITY_REFERRAL_URL?.trim();
@@ -97,7 +99,9 @@ export default function GrantsPage() {
               The only grants platform built for next-gen founders.
             </h1>
             <p className="mt-7 max-w-[650px] text-lg leading-8 text-white/80 md:text-xl">
-              Most grants are never publicly posted. TRIIBE Grants finds them anyway, enriched daily, matched to your mission, drafted in minutes.
+              Most grants are never publicly posted. TRIIBE Grants finds them
+              anyway, enriched daily, matched to your mission, drafted in
+              minutes.
             </p>
             <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
               <a
@@ -114,7 +118,9 @@ export default function GrantsPage() {
                 Sign in
               </a>
             </div>
-            <p className="mt-4 text-sm text-white/65">Searching is free. No card to browse.</p>
+            <p className="mt-4 text-sm text-white/65">
+              Searching is free. No card to browse.
+            </p>
           </div>
 
           <div className="relative z-0 flex min-w-0 items-center justify-center overflow-hidden lg:justify-end">
@@ -129,21 +135,36 @@ export default function GrantsPage() {
 
       <LiveGrantMetrics />
 
-      <section className="px-4 py-20 md:py-28" aria-labelledby="mission-fundable-heading">
+      <section
+        className="px-4 py-20 md:py-28"
+        aria-labelledby="mission-fundable-heading"
+      >
         <div className="mx-auto max-w-[1200px]">
-          <h2 id="mission-fundable-heading" className="max-w-[760px] text-4xl font-bold tracking-[-0.035em] md:text-6xl">
+          <h2
+            id="mission-fundable-heading"
+            className="max-w-[760px] text-4xl font-bold tracking-[-0.035em] md:text-6xl"
+          >
             Make your mission fundable
           </h2>
           <p className="mt-5 max-w-[980px] text-base leading-8 text-[#496157] md:text-lg">
-            TRIIBE Grants is our free infrastructure supporting credible opportunities, clear eligibility, primary-source evidence, and the tools to move from search to submission.
+            TRIIBE Grants is our free infrastructure supporting credible
+            opportunities, clear eligibility, primary-source evidence, and the
+            tools to move from search to submission.
           </p>
 
           <ol className="mt-12 grid gap-5 md:grid-cols-3">
             {steps.map((step) => (
-              <li key={step.number} className="rounded-2xl border border-[#002c19]/15 bg-white p-7 shadow-sm md:p-8">
-                <span className="text-xs font-bold uppercase tracking-[0.14em] text-[#547064]">{step.number}</span>
+              <li
+                key={step.number}
+                className="rounded-2xl border border-[#002c19]/15 bg-white p-7 shadow-sm md:p-8"
+              >
+                <span className="text-xs font-bold uppercase tracking-[0.14em] text-[#547064]">
+                  {step.number}
+                </span>
                 <h3 className="mt-5 text-2xl font-bold">{step.title}</h3>
-                <p className="mt-4 text-base leading-7 text-[#496157]">{step.description}</p>
+                <p className="mt-4 text-base leading-7 text-[#496157]">
+                  {step.description}
+                </p>
               </li>
             ))}
           </ol>
@@ -154,20 +175,7 @@ export default function GrantsPage() {
         <GrantsPricing referralUrl={TRIIBE_GRANTS_PORTAL_URL} />
       </div>
 
-      <footer className="border-t border-white/15 bg-[#002c19] px-4 py-9 text-white">
-        <div className="mx-auto flex max-w-[1200px] flex-col gap-5 text-sm sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <p className="font-bold">TRIIBE Grants</p>
-            <p className="mt-1 text-xs text-white/55">© 2026 TRIIBE 501(c)(3). All rights reserved.</p>
-          </div>
-          <nav className="flex flex-wrap gap-x-6 gap-y-3 text-xs font-semibold text-white/70" aria-label="Grants footer">
-            <a className="hover:text-white" href="/about">About TRIIBE</a>
-            <a className="hover:text-white" href="/index/privacy">Privacy</a>
-            <a className="hover:text-white" href="mailto:partnerships@triibe.org">Contact</a>
-            <a className="hover:text-white" href={TRIIBE_GRANTS_SIGN_IN_URL}>Sign in</a>
-          </nav>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }
