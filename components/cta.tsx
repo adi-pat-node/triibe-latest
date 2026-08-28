@@ -15,7 +15,7 @@ export default function CTASection() {
         </h3>
 
         <p className="font-normal text-[#D1D5DC] text-base leading-relaxed text-center">
-          Are you or do you know an incredible nonprofit founder under 30? Nominate here for the TRIIBE I00!
+          Do you know an incredible nonprofit founder under 30? Nominate here for the TRIIBE I00!
         </p>
 
         <a
