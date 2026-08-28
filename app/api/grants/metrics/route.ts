@@ -19,13 +19,16 @@ function resolveMetricsEndpoint() {
     const isBrightsteadPreview =
       url.hostname.startsWith("grantai-") &&
       url.hostname.endsWith("-brightstead-technologies.vercel.app");
+    const isLocalDevelopment =
+      process.env.NODE_ENV !== "production" &&
+      url.protocol === "http:" &&
+      (url.hostname === "127.0.0.1" || url.hostname === "localhost");
 
     if (
-      url.protocol === "https:" &&
       url.pathname === "/api/public-metrics" &&
       !url.search &&
       !url.hash &&
-      (isProductionHost || isBrightsteadPreview)
+      ((url.protocol === "https:" && (isProductionHost || isBrightsteadPreview)) || isLocalDevelopment)
     ) {
       return url.toString();
     }
