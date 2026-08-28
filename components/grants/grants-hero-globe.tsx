@@ -91,7 +91,7 @@ export default function GrantsHeroGlobe() {
       className="relative mx-auto aspect-square w-full min-w-0 max-w-[560px]"
       aria-label="Rotating globe illustrating worldwide funding opportunities"
     >
-      {/* Soft ambient glow */}
+      
       <div
         className="pointer-events-none absolute inset-[5%] rounded-full"
         style={{
@@ -101,7 +101,7 @@ export default function GrantsHeroGlobe() {
         }}
       />
 
-      {/* Globe with soft fade into the background */}
+      
       <div
         className="pointer-events-none relative"
         style={{
