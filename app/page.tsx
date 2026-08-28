@@ -23,7 +23,7 @@ export default function Home() {
       <Hero />
 
       <ProgramOverview />
-      <TriibeGlobeWrapper />
+      {/* <TriibeGlobeWrapper /> */}
       <KeyStatistics />
       {/* <Changemakers /> */}
       <Footer />
