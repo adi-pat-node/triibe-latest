@@ -9,6 +9,7 @@ import CTASection from "@/components/cta";
 import { useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
+import TriibeGlobeWrapper from "@/components/TriibeGlobeWrapper";
 
 const Changemakers = dynamic(() => import("@/components/changemakers"));
 import {
@@ -235,6 +236,8 @@ const ProgramPage = () => {
         Bringing startup dynamics to the nonprofit sector
       </p>
     </div>
+
+    <TriibeGlobeWrapper />
 
     <Changemakers />
 
