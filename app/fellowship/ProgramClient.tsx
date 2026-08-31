@@ -240,7 +240,7 @@ const ProgramPage = () => {
 
           
 
-          <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
+          {/* <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
             <div className="grid md:grid-cols-3 gap-8">
               <div className="border border-[#002c19] p-8 md:p-10 flex flex-col h-full rounded-lg">
                 <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center">
@@ -270,7 +270,7 @@ const ProgramPage = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
