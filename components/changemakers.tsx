@@ -27,7 +27,7 @@ export default function Changemakers() {
         "Supporting young cancer patients and their families through donating goods and hosting interactive events",
       founded: "FOUNDED 2019",
       image:
-        "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68aa07201e49da83227f817d_1%20(1).png",
+        "/images/triibe100/Olivia Zhang.png",
       website: "https://www.cancerkidsfirst.org/",
       linkedin: "https://www.linkedin.com/in/olivia-zhang-a792b8229/",
     },
@@ -39,7 +39,7 @@ export default function Changemakers() {
         "Expanding multilingual technology education access across borders",
       founded: "FOUNDED 2022",
       image:
-        "https://cdn.prod.website-files.com/6898d941a0824c0e0bfab99b/68b4ae976ac21db37b22369d_anna.png",
+        "/images/triibe100/Anne-SophieFrederick.jpg",
       website: "https://www.haitechlearning.org/",
       linkedin: "https://www.linkedin.com/in/anne-sophie-fr%C3%A9d%C3%A9rick-1364ba235/",
     },
@@ -50,7 +50,7 @@ export default function Changemakers() {
       description:
         "Mobilizing youth to tackle issues including hunger, education, and climate justice with volunteering & education",
       founded: "FOUNDED 2016",
-      image: "/images/home/homepage---changemakers-3.png",
+      image: "/images/triibe100/Esha Venkat.png",
       website: "https://nest4us.org/",
       linkedin: "https://www.linkedin.com/in/eshavenkat/",
     },
@@ -100,7 +100,7 @@ export default function Changemakers() {
       description:
         "Advance pediatric health and educational equity in the Philippines",
       founded: "FOUNDED 2017",
-      image: "/images/home/NaylaJimenez.png",
+      image: "/images/triibe100/NaylaJimenez.jpg",
       website: "https://www.philippinehealthinitiative.org/",
       linkedin: "https://www.linkedin.com/in/naylajimenez/",
     },
