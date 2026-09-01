@@ -34,7 +34,7 @@ export default function TriibeBranchPlaybookPage() {
                   New to TRIIBE? Read our 1-pager first.
                 </p>
                 <a
-                  href="https://drive.google.com/file/d/1NU9zXE7_gViOPSDR2lny3zejR9GCj-uT/view"
+                  href="https://drive.google.com/file/d/15pCg8kNqPSxm-U19AB2H7qvQ7yEiBjJp/view?usp=drivesdk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
