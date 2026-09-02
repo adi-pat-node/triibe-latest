@@ -111,7 +111,7 @@ export default function LiveGrantMetrics() {
     },
     {
       label: "To complete an application draft",
-      value: "10 min",
+      value: "12 min",
       live: false,
     },
   ];
