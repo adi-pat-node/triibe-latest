@@ -204,6 +204,12 @@ const partneredWithLogos = [
     url: "https://www.axiompathways.org/",
     className: "w-80 h-[100px] object-contain",
   },
+  {
+    src: "/images/home/360onefirm.png",
+    alt: "Partnered with organization 3",
+    url: "https://361firm.com/",
+    className: "w-80 h-[100px] object-contain",
+  },
   /* {
     src: "/images/home/unitedyouthcouncil.png",
     alt: "Partnered with organization 3",
