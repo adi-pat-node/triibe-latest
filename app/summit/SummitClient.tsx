@@ -445,7 +445,7 @@ const SummitPage = () => {
           time: "1:10 PM",
           title: "Youth Against Hunger",
           description:
-            "Claire Chi, Gregg Meyer, Bella Brown, Robert Lee, Laurie Dhue",
+            "Claire Chi, Gregg Meyer, Bella Brown, Robert Lee, Matt Bird",
         },
         {
           time: "1:55 PM",
@@ -477,7 +477,7 @@ const SummitPage = () => {
           time: "5:40 PM",
           title: "Upskilling the Next Generation",
           description:
-            "Gitanjali Rao, Heather White, Sonali Ratnasinghe, Christyl Johnson, Genia Xasis",
+            "Gitanjali Rao, Heather White, Sonali Ratnasinghe, Andrea Holmes Thompkins, Genia Xasis",
         },
         {
           time: "6:25 PM",
