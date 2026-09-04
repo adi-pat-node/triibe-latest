@@ -672,6 +672,39 @@ const SummitPage = () => {
         </div>
       </section>
 
+      <section className="pt-4 pb-20 px-4 md:px-25 lg:px-50 bg-white">
+        <div className="max-w-260 mx-auto">
+          <div className="flex justify-center">
+            <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[390px] w-full md:w-[calc((100%-48px)/3)] flex">
+              <div className="relative w-[40%] min-w-[165px] h-full shrink-0">
+                <Image
+                  src="/images/summit/Chirag-Nijjer.png"
+                  alt="Chirag Nijjer"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 50vw, 250px"
+                  quality={100}
+                  priority
+                />
+              </div>
+
+              <div className="flex-1 min-w-0 flex flex-col justify-end px-5 pb-8">
+                <h4 className="text-white font-bold text-[18px] leading-[1.15] mb-5">
+                  Chirag Nijjer
+                </h4>
+
+                <p className="text-white/70 text-[15px] leading-relaxed mb-6">
+                  Brand Historian, History Channel; Resident Brand Evangelist,
+                  Google
+                </p>
+
+                <p className="text-white text-lg leading-snug">MC</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]">
         <div className="max-w-260 mx-auto flex flex-col gap-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center">
