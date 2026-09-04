@@ -228,10 +228,10 @@ const SummitPage = () => {
           tag: "Next-Gen",
         },
         {
-          name: "Adeline Azrack",
-          title: "Managing Director, Fondation CHANEL",
-          image: "/images/summit/AdelineAzrack.png",
-          linkedin: "https://www.linkedin.com/in/adeline-azrack-0853023/",
+          name: "Jody R. Weiss",
+          title: "Exploring Reality, Maybe™ Podcast & Consciousness Drinks™",
+          image: "/images/summit/JodyRWeiss.jpg",
+          linkedin: "https://www.linkedin.com/in/jody-r-weiss-78ba59/",
           tag: "Speaker",
         },
         {
@@ -463,7 +463,7 @@ const SummitPage = () => {
           time: "3:40 PM",
           title: "Embracing Unlikely Partnerships",
           description:
-            "Anne-Sophie Frédérick, Adeline Azrack, Maya Gowda, Elo, Kathryn Lancioni",
+            "Anne-Sophie Frédérick, Jody R. Weiss, Maya Gowda, Elo, Kathryn Lancioni",
         },
         { time: "4:25 PM", title: "BREAK" },
         {
