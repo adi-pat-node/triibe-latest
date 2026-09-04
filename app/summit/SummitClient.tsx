@@ -167,8 +167,7 @@ const SummitPage = () => {
         },
         {
           name: "Matt Bird",
-          title:
-            "CEO, ESG News",
+          title: "CEO, ESG News",
           image: "/images/summit/MattBird.jpg",
           linkedin: "https://www.linkedin.com/in/matt-bird-15908b6/",
           tag: "Moderator",
@@ -325,10 +324,10 @@ const SummitPage = () => {
           tag: "Next-Gen",
         },
         {
-          name: "Christyl C. Johnson",
-          title: "Former Executive Director for Research and Tech, White House",
-          image: "/images/summit/ChristylJohnson.jpg",
-          linkedin: "https://www.linkedin.com/in/christyl-johnson-phd-1091256/",
+          name: "Andrea Holmes Thompkins",
+          title: "President & CEO, ACE Media Corp",
+          image: "/images/summit/AndreaHolmes.jpg",
+          linkedin: "https://www.linkedin.com/in/andreaholmesthompkins/",
           tag: "Speaker",
         },
         {
@@ -542,7 +541,6 @@ const SummitPage = () => {
 
           <div className="relative mt-12">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              
               <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[390px] flex">
                 <div className="relative w-[42%] min-w-[165px] h-full shrink-0">
                   <Image
@@ -631,8 +629,9 @@ const SummitPage = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center mb-12">
             Curated experiences
           </h2>
-          <div className="max-w-200 mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+
+          <div className="max-w-260 mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
                   name: "Tuna carving by Chef Kim Yong",
@@ -640,7 +639,7 @@ const SummitPage = () => {
                 },
                 {
                   name: "Fashion show",
-                  image: "/images/summit/fashion-show5.jpg",
+                  image: "/images/summit/fashionShow.jpeg",
                 },
                 {
                   name: "Vice city district super car street takeover",
@@ -652,15 +651,17 @@ const SummitPage = () => {
                 //   image: "/images/summit/Curated5.png",
                 // },
               ].map((item, i) => (
-                <div key={i} className="flex flex-col items-center gap-3">
-                  <div className="relative w-full aspect-square rounded-xl overflow-hidden">
+                <div key={i} className="flex flex-col gap-3">
+                  <div className="relative w-full h-[390px] rounded-[10px] overflow-hidden">
                     <Image
                       src={item.image}
                       alt={item.name}
                       fill
                       className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
+
                   <p className="text-sm text-center text-[#002c19]">
                     {item.name}
                   </p>
