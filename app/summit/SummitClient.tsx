@@ -86,10 +86,11 @@ const SummitPage = () => {
           tag: "Speaker",
         },
         {
-          name: "Zoya Kalinsky",
-          title: "Founder, United Youth Council",
-          image: "/images/summit/ZoyaKalinsky.png",
-          linkedin: "#",
+          name: "Jax Harrison",
+          title:
+            "Co-Founder Grant Authority and Founder & CEO, The Future Found",
+          image: "/images/summit/JaxHarrison.jpg",
+          linkedin: "https://www.linkedin.com/in/jaxharrison/",
           tag: "Moderator",
         },
       ],
@@ -355,9 +356,9 @@ const SummitPage = () => {
       },
       items: [
         {
-          time: "6:00 PM",
+          time: "5:30 PM",
           title: "VIP reception",
-          description: "Live music performance, drink reception",
+          description: "Drink reception",
         },
         {
           time: "6:30 PM",
@@ -368,7 +369,7 @@ const SummitPage = () => {
           time: "6:40 PM",
           title: "Gala Dinner Opening Ceremony",
           description:
-            "Kyle gives the welcome, gifts shared, Opening Remarks by Dr. Steven Melnik, Keynote by Kent Seton",
+            "Kyle Matthys gives the welcome, Opening Remarks by Dr. Steven Melnik, Keynote by Kent Seton and James Keyes",
         },
         {
           time: "7:00 PM",
@@ -377,14 +378,19 @@ const SummitPage = () => {
             "Sushi show, small breaks for quick talks and keynotes at select times",
         },
         {
-          time: "7:45 PM",
+          time: "7:30 PM",
           title: "Fashion show",
           description: "Fashion Show",
         },
         {
           time: "8:00 PM",
           title: "Live Auction",
-          description: "Auctioneers on stage and guests in participation",
+          description: "Pat Tully on stage and guests in participation",
+        },
+        {
+          time: "8:15 PM",
+          title: "Music Concert",
+          description: "Eric Matthys performing live",
         },
         {
           time: "8:30 PM",
@@ -496,7 +502,7 @@ const SummitPage = () => {
           time: "11:00 AM",
           title: "Closing Ceremony",
           description:
-            "Workshop at a golf course, connecting with guests, final ceremonies",
+            "Workshop over lunch, connecting with guests, final ceremonies",
         },
         {
           time: "1:00 PM",
@@ -521,13 +527,13 @@ const SummitPage = () => {
             </h2>
 
             <p className="text-[#002c19] text-base leading-relaxed">
-              Friday's VIP Gala is a 300-guest dinner featuring Michelin-starred
-              celebrity sushi chefs performing two live tuna carvings, opening
-              remarks, keynotes, and a live auction.
+              Friday's VIP Gala is a 200-guest dinner featuring Michelin-starred
+              sushi chefs doing a live tuna carving, keynotes, supercars, an
+              auction, and live concert.
               <br />
               <br />
-              Saturday's Forum for 500 is a full day featuring seven TRIIBE
-              Talks and a dozen supercars.
+              Saturday's Forum for 300 is a full day featuring seven TRIIBE
+              Talks and dozens of supercars.
               <br />
               <br />
               Sunday’s closing ceremony pairs our founders with guests for a
