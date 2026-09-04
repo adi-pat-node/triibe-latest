@@ -172,12 +172,12 @@ export const legacyBoard: Person[] = [
     imagePath: "/images/team/lara-stein.jpg",
     linkedIn: "https://www.linkedin.com/in/citizenstein/",
   },
-  {
+  /* {
     name: "Stacey Lauren",
     title: "Founder, Do The Thing & TEDx Speaker",
     imagePath: "/images/team/stacey-lauren.jpg",
     linkedIn: "https://www.linkedin.com/in/staceylauren/",
-  },
+  }, */
   {
     name: "Purnima Voria",
     title: "Founder & CEO, National US India Chamber of Commerce",
@@ -243,12 +243,18 @@ export const legacyBoard: Person[] = [
     imagePath: "/images/team/ZacharyPogue.jpg",
     linkedIn: "https://www.linkedin.com/in/zachpogue/",
   },
-  /* {
+  {
     name: "Shirley Hon",
     title: "Principal, Globoconsult & Co-founder United Womens Sports NIL Agency",
     imagePath: "/images/team/ShirleyHon.jpg",
     linkedIn: "https://www.linkedin.com/in/shirleyw-hon/",
-  }, */
+  },
+  {
+    name: "Andrea Holmes Thompkins",
+    title: "President & CEO, ACE Media Corp",
+    imagePath: "/images/summit/AndreaHolmes.jpg",
+    linkedIn: "https://www.linkedin.com/in/andreaholmesthompkins/",
+  },
   /* {
     name: "Todd Jacobson",
     title: "Founder & CEO, TAJ Global & past head of social responsibility, NBA",
