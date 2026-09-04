@@ -792,117 +792,158 @@ const SummitPage = () => {
           </h2>
 
           {scheduleDays.map((day) => (
-            <div
-              key={day.title}
-              className="bg-[#F5F5F5] rounded-2xl p-8 flex flex-col gap-6"
-            >
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
-                <div
-                  className={`flex flex-col ${
-                    day.highlight ? "gap-1" : "gap-4"
-                  }`}
-                >
-                  <h3 className="text-2xl font-bold text-[#002c19]">
-                    {day.title}
-                  </h3>
-
-                  <p
-                    className={`text-xs ${
-                      day.highlight
-                        ? "text-[#002c19]/80"
-                        : "text-[#002c19]/80 font-semibold"
+            <React.Fragment key={day.title}>
+              <div className="bg-[#F5F5F5] rounded-2xl p-8 flex flex-col gap-6">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                  <div
+                    className={`flex flex-col ${
+                      day.highlight ? "gap-1" : "gap-4"
                     }`}
                   >
-                    {day.location}
-                  </p>
+                    <h3 className="text-2xl font-bold text-[#002c19]">
+                      {day.title}
+                    </h3>
+
+                    <p
+                      className={`text-xs ${
+                        day.highlight
+                          ? "text-[#002c19]/80"
+                          : "text-[#002c19]/80 font-semibold"
+                      }`}
+                    >
+                      {day.location}
+                    </p>
+                  </div>
+
+                  {day.badge && (
+                    <span className="bg-[#002C19] text-white text-xs font-semibold px-4 py-2 rounded-full self-start">
+                      {day.badge}
+                    </span>
+                  )}
                 </div>
 
-                {day.badge && (
-                  <span className="bg-[#002C19] text-white text-xs font-semibold px-4 py-2 rounded-full self-start">
-                    {day.badge}
-                  </span>
+                {day.highlight && (
+                  <div className="bg-white rounded-xl flex flex-col md:flex-row overflow-hidden">
+                    <div className="relative w-full md:w-56 h-48 md:h-auto flex-shrink-0">
+                      <Image
+                        src={day.highlight.image}
+                        alt={day.highlight.name}
+                        fill
+                        className={
+                          day.highlight.image ===
+                          "/images/TRIIBELOGOS/TRIIBE LOGO.png"
+                            ? "object-contain p-4"
+                            : "object-cover"
+                        }
+                      />
+                    </div>
+
+                    <div className="flex flex-col gap-3 p-6">
+                      <p className="text-xs font-semibold text-[#002c19]/80 uppercase tracking-widest">
+                        {day.highlight.label}
+                      </p>
+
+                      <h4
+                        className="text-2xl italic text-[#002c19]"
+                        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                      >
+                        {day.highlight.name}
+                      </h4>
+
+                      <p className="text-sm text-[#002c19]/80 leading-relaxed">
+                        {day.highlight.description}
+                      </p>
+
+                      <div className="flex flex-wrap gap-x-8 gap-y-2 mt-2">
+                        {day.highlight.bullets.map((bullet, i) => (
+                          <span
+                            key={i}
+                            className="text-sm text-[#002c19]/80 flex items-center gap-2"
+                          >
+                            <span className="w-1 h-1 bg-black rounded-full"></span>
+                            {bullet}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {day.items && day.items.length > 0 && (
+                  <div className="flex flex-col">
+                    {day.items.map((item, i) => (
+                      <div
+                        key={i}
+                        className="grid grid-cols-[80px_1fr] gap-4 py-3 border-t border-gray-200 items-start"
+                      >
+                        <span className="text-sm font-semibold text-[#002c19]">
+                          {item.time}
+                        </span>
+
+                        {item.title === "BREAK" ? (
+                          <div className="flex items-center gap-4 w-full">
+                            <div className="flex-1 h-px bg-gray-300"></div>
+
+                            <span className="text-xs text-[#002c19]/80 tracking-[0.3em]">
+                              BREAK
+                            </span>
+
+                            <div className="flex-1 h-px bg-gray-300"></div>
+                          </div>
+                        ) : (
+                          <div className="flex flex-col">
+                            <p className="text-sm font-semibold text-[#002c19] mb-2">
+                              {item.title}
+                            </p>
+
+                            {item.description && (
+                              <p className="text-xs text-[#002c19]/80">
+                                {item.description}
+                              </p>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
                 )}
               </div>
 
-              {day.highlight && (
-                <div className="bg-white rounded-xl flex flex-col md:flex-row overflow-hidden">
-                  <div className="relative w-full md:w-56 h-48 md:h-auto flex-shrink-0">
-                    <Image
-                      src={day.highlight.image}
-                      alt={day.highlight.name}
-                      fill
-                      className={
-                        day.highlight.image ===
-                        "/images/TRIIBELOGOS/TRIIBE LOGO.png"
-                          ? "object-contain p-4"
-                          : "object-cover"
-                      }
-                    />
-                  </div>
-                  <div className="flex flex-col gap-3 p-6">
-                    <p className="text-xs font-semibold text-[#002c19]/80 uppercase tracking-widest">
-                      {day.highlight.label}
-                    </p>
-                    <h4
-                      className="text-2xl italic text-[#002c19]"
-                      style={{ fontFamily: "'Cormorant Garamond', serif" }}
-                    >
-                      {day.highlight.name}
-                    </h4>
-                    <p className="text-sm text-[#002c19]/80 leading-relaxed">
-                      {day.highlight.description}
-                    </p>
-                    <div className="flex flex-wrap gap-x-8 gap-y-2 mt-2">
-                      {day.highlight.bullets.map((bullet, i) => (
-                        <span
-                          key={i}
-                          className="text-sm text-[#002c19]/80 flex items-center gap-2"
-                        >
-                          <span className="w-1 h-1 bg-black rounded-full"></span>
-                          {bullet}
-                        </span>
-                      ))}
+              {day.title.startsWith("Day 1") && (
+                <div className="bg-[#F5F5F5] rounded-2xl p-6 md:p-8">
+                  <div className="bg-white rounded-xl overflow-hidden flex flex-col md:flex-row">
+                    <div className="relative w-full md:w-64 lg:w-72 h-56 md:h-auto min-h-[220px] flex-shrink-0">
+                      <Image
+                        src="/images/summit/bus.jpeg"
+                        alt="Private transportation"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 288px"
+                      />
+                    </div>
+
+                    <div className="flex flex-col justify-center gap-4 p-6 md:p-8">
+                      <p className="text-xs font-semibold text-[#002c19]/70 uppercase tracking-[0.2em]">
+                        SATURDAY · PRIVATE TRANSPORT
+                      </p>
+
+                      <h3
+                        className="text-2xl md:text-3xl italic text-[#002c19]"
+                        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                      >
+                        Private transport to and from Saturday's Venue
+                      </h3>
+
+                      <p className="text-sm md:text-base text-[#002c19]/80 leading-relaxed max-w-2xl">
+                        Private transport to and from Saturday's Venue will
+                        leave from Ideal Glass Studios at 9AM and will return
+                        from Rallypoint East at 7:30 PM.
+                      </p>
                     </div>
                   </div>
                 </div>
               )}
-
-              {day.items && day.items.length > 0 && (
-                <div className="flex flex-col">
-                  {day.items.map((item, i) => (
-                    <div
-                      key={i}
-                      className="grid grid-cols-[80px_1fr] gap-4 py-3 border-t border-gray-200 items-start"
-                    >
-                      <span className="text-sm font-semibold text-[#002c19]">
-                        {item.time}
-                      </span>
-
-                      {item.title === "BREAK" ? (
-                        <div className="flex items-center gap-4 w-full">
-                          <div className="flex-1 h-px bg-gray-300"></div>
-                          <span className="text-xs text-[#002c19]/80 tracking-[0.3em]">
-                            BREAK
-                          </span>
-                          <div className="flex-1 h-px bg-gray-300"></div>
-                        </div>
-                      ) : (
-                        <div className="flex flex-col">
-                          <p className="text-sm font-semibold text-[#002c19] mb-2">
-                            {item.title}
-                          </p>
-                          {item.description && (
-                            <p className="text-xs text-[#002c19]/80">
-                              {item.description}
-                            </p>
-                          )}
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
+            </React.Fragment>
           ))}
         </div>
       </section>
