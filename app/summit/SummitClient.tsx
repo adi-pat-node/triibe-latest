@@ -431,7 +431,7 @@ const SummitPage = () => {
           time: "11:10 AM",
           title: "Half a Life of Impact",
           description:
-            "Esha Venkat, Lauren Shenkman, Zoe Terry, Mariela Dabbah, Zoya Kalinsky",
+            "Esha Venkat, Lauren Shenkman, Zoe Terry, Mariela Dabbah, Jax Harrison",
         },
         { time: "11:55 AM", title: "BREAK" },
         {
