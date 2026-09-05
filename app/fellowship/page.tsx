@@ -5,9 +5,9 @@ import ProgramClient from "./ProgramClient";
 const Changemakers = dynamic(() => import("@/components/changemakers"));
 
 export const metadata: Metadata = {
-  title: "TRIIBE Fellowship | Startup Dynamics for Nonprofit Innovators",
+  title: "Nonprofit Founder Fellowship | TRIIBE",
   description:
-    "The TRIIBE Fellowship brings startup dynamics to the nonprofit sector. Apply now.",
+    "Apply to TRIIBE’s fellowship to transition from a 'youth' nonprofit to an established one.",
   alternates: {
     canonical: "https://www.triibe.org/fellowship",
   },

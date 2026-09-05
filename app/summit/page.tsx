@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import SummitClient from "./SummitClient";
 
 export const metadata: Metadata = {
-  title: "TRIIBE Summit | Next-Gen Changemaker Summit 2026",
+  title: "Next-Gen Nonprofit Founders Summit | TRIIBE",
   description:
-    "Join the TRIIBE Summit, September 11–13, 2026: a VIP gala, TRIIBE Talks, and a founder workshop. Buy tickets.",
+    "Join TRIIBE’s Next-Gen summit to meet the worlds 100 leading nonprofit founders under 30.",
   alternates: {
     canonical: "https://www.triibe.org/summit",
   },

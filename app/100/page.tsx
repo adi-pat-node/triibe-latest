@@ -6,9 +6,9 @@ import { zones } from "@/lib/triibe100/zones";
 import { founders } from "@/lib/triibe100/founders";
 
 export const metadata = {
-  title: "TRIIBE 100 | The Global List of Nonprofit Innovators Under 30",
+  title: "The 100 Nonprofit Founders Under 30 to Watch | TRIIBE 100",
   description:
-    "Discover TRIIBE 100, the definitive list recognizing nonprofit innovators under 30 driving social change.",
+    "The annual index of 100 leading nonprofit founders under 30, TRIIBE measuring their social return on investment with Purposefy.",
   alternates: {
     canonical: "https://www.triibe.org/100",
   },

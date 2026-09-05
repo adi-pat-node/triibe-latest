@@ -1,11 +1,11 @@
 import { redirect } from "next/navigation";
 
 export const metadata = {
-  title: "Donate - Support TRIIBE's Mission",
+  title: "Fund The Nonprofit Startup Sector | TRIIBE",
   description:
-    "Support TRIIBE's mission to empower the next generation of change makers. Your donation helps fund mentorship programs and resources for young social entrepreneurs.",
+    "Channel capital to the nonprofit startup sector through TRIIBE, equitably allocating to the leading young nonprofit founders around the world.",
   openGraph: {
-    title: "Donate to TRIIBE - Support Change Makers",
+    title: "Fund The Nonprofit Startup Sector | TRIIBE",
     description:
       "Your donation helps TRIIBE provide mentorship and resources to young change makers creating positive social impact.",
     url: "https://www.triibe.org/donate",

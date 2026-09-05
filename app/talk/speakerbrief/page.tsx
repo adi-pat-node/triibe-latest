@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import SpeakerBriefClient from "./SpeakerBriefClient";
 
 export const metadata: Metadata = {
-  title: "TRIIBE Talk Speaker Brief | Guidelines & Preparation",
+  title: "Nonprofit Speaker Guide | TRIIBE Talk",
   description:
-    "Prepare to speak at a TRIIBE Talk with our speaker guidelines, event day schedule, and discussion themes. Get ready.",
+    "Prepare for your TRIIBE Talk with speaker guidance, storytelling tips, and a templatized run of show.",
   alternates: {
     canonical: "https://www.triibe.org/talk/speakerbrief",
   },
