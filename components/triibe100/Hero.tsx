@@ -39,7 +39,8 @@ export default function Hero() {
             lineHeight: 1.6,
           }}
         >
-          The global list of nonprofit founders under 30 to know
+          The annual index of leading nonprofit founders under 30 to know,
+          measuring the social return on investment with Purposefy
         </p>
       </div>
     </section>

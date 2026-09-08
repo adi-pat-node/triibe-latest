@@ -15,14 +15,14 @@ const benefits = [
     icon: "/images/home/container-2.svg",
     title: "Mentorship",
     description:
-      "One-on-one guidance from two experienced executives or philentrepreneurs each quarter",
+      "One-on-one guidance from experienced executives and philentrepreneurs",
   },
   {
     number: "02",
     icon: "/images/home/container.svg",
     title: "Community",
     description:
-      "A cohort of fellow next-gen nonprofit founders and TRIIBE fellows",
+      "An ecosystem of fellow next-gen nonprofit founders",
   },
   /* {
     number: "04",
@@ -36,7 +36,7 @@ const benefits = [
     icon: "/images/home/container-4.svg",
     title: "Resources",
     description:
-      "Access to operational tools, legal support, and sector-specific expertise",
+      "Access to operational tools such as TRIIBE Grants, legal support, and sector-specific expertise",
   },
   {
     number: "04",
@@ -69,8 +69,7 @@ export default function FellowshipBenefits() {
           What fellows receive
         </h2>
         <p className=" font-normal text-[#002c19]/80 text-lg leading-[29.2px] max-w-219">
-          Comprehensive support designed for founders navigating the unique
-          challenges of scaling their nonprofits in their early 20s.
+          Comprehensive support designed for founders under 30 navigating the unique challenges of scaling their nonprofits.
         </p>
       </div>
 
