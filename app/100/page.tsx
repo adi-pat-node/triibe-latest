@@ -4,6 +4,7 @@ import Hero from "@/components/triibe100/Hero";
 import ZoneSection from "@/components/triibe100/ZoneSection";
 import { zones } from "@/lib/triibe100/zones";
 import { founders } from "@/lib/triibe100/founders";
+import FellowshipBenefits from "@/components/fellowshipBenefits";
 
 export const metadata = {
   title: "The 100 Nonprofit Founders Under 30 to Watch | TRIIBE 100",
@@ -33,6 +34,7 @@ export default function Triibe100Page() {
           />
         );
       })}
+      <FellowshipBenefits />
       <Footer />
     </div>
   );

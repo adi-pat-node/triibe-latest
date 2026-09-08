@@ -278,7 +278,7 @@ const ProgramPage = () => {
       </section>
 
       <ApplicationProcess />
-      <FellowshipBenefits />
+      {/* <FellowshipBenefits /> */}
 
       {/* Three Pillars of Support Section */}
       {/* <section className="py-20 px-4 md:px-25 lg:px-50 bg-white border-t border-gray-200">
