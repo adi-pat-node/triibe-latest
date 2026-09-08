@@ -10,6 +10,7 @@ import { useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import TriibeGlobeWrapper from "@/components/TriibeGlobeWrapper";
+/* import TestimonialCarousel from "@/components/TestimonialCarousel"; */
 
 const Changemakers = dynamic(() => import("@/components/changemakers"));
 import {
@@ -21,7 +22,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
-const testimonials = [
+/* const testimonials = [
   {
     quote:
       "Receiving TRIIBE’s support further strengthened the work of Vervient Foundation by highlighting that community and connection matter as much as ideas. Knowing there’s a network of like-minded leaders cheering me on fuels our mission to empower students with an innovation mindset and reminds me that there’s always a shoulder to lean on in this journey.",
@@ -57,7 +58,7 @@ const testimonials = [
     year: "TRIIBE Fellow Spring 2025",
     organization: "Founder, Bridge The Gap est. 2022",
   },
-];
+]; */
 
 const faqs = [
   {
@@ -87,7 +88,7 @@ const faqs = [
   },
 ];
 
-function TestimonialCarousel() {
+/* function TestimonialCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
@@ -164,7 +165,7 @@ function TestimonialCarousel() {
       </div>
     </div>
   );
-}
+} */
 
 const ProgramPage = () => {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
@@ -733,11 +734,11 @@ const ProgramPage = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 px-4 md:px-25 lg:px-50 bg-[#3036411A]">
+      {/* <section className="py-20 px-4 md:px-25 lg:px-50 bg-[#3036411A]">
         <div className="max-w-260 mx-auto">
           <TestimonialCarousel />
         </div>
-      </section>
+      </section> */}
 
       {/* <PostGraduationOutcomes /> */}
 
@@ -824,7 +825,7 @@ const ProgramPage = () => {
         </div> */}
       </section>
 
-      <section className="py-20 px-4 md:px-25 lg:px-50 bg-gray-50">
+      {/* <section className="py-20 px-4 md:px-25 lg:px-50 bg-gray-50">
         <div className="max-w-260 mx-auto">
           <div className="bg-white border-2 border-black rounded-lg p-8 md:p-10">
             <blockquote className="text-[#002c19] text-xl font-normal leading-relaxed italic">
@@ -859,9 +860,9 @@ const ProgramPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* <CTASection /> */} */
+      {/* <CTASection /> */} 
 
       <Footer />
     </main>
