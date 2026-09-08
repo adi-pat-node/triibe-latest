@@ -7,6 +7,23 @@ const PRODUCTION_METRICS_ENDPOINT = "https://www.grantauthority.org/api/public-m
 // but fail closed if two consecutive publication windows are missed.
 const MAX_SNAPSHOT_AGE_MS = 15 * 60 * 1000;
 
+// GrantAuthority tags what its `activeGrants` figure actually counts. On
+// 2026-09-07 that tag changed from `network_grant_records` (every user-visible
+// catalog record, 70,033) to `searchable_open_opportunities` (the rows a
+// visitor can actually find in the search index, 59,808) — the same claim,
+// measured more honestly, and the correct number for "Active grants in the
+// network".
+//
+// Pinning to a single tag turned that upstream correction into an outage here:
+// every other check still passed, this route failed closed, and the landing
+// page showed dashes with "Live data temporarily unavailable" for roughly a
+// day. Accept both spellings so a future refinement degrades to a stale number
+// rather than to no number at all.
+const ACCEPTED_ACTIVE_GRANTS_MEANINGS = new Set([
+  "network_grant_records",
+  "searchable_open_opportunities",
+]);
+
 function resolveMetricsEndpoint() {
   const configuredUrl = process.env.GRANTAUTHORITY_PUBLIC_METRICS_URL?.trim();
   if (!configuredUrl) return PRODUCTION_METRICS_ENDPOINT;
@@ -75,7 +92,7 @@ export async function GET() {
       body?.stale !== false ||
       body?.source !== "public_partner_network_aggregate" ||
       metrics?.partnerMetricsComplete !== true ||
-      metrics?.activeGrantsMeaning !== "network_grant_records" ||
+      !ACCEPTED_ACTIVE_GRANTS_MEANINGS.has(String(metrics?.activeGrantsMeaning)) ||
       metrics?.foundationProfilesMeaning !== "foundation_and_grantmaker_profiles" ||
       metrics?.listedFundingMeaning !== "listed_awards_across_network_records" ||
       !activeGrants ||
