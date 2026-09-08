@@ -3,14 +3,14 @@
 import CTASection from "@/components/cta";
 
 const footerColumns = [
-  {
+  /* {
     title: "For applicants",
     links: [
       { label: "Apply Now", href: "/apply" },
       { label: "Fellowship Details", href: "/fellowship" },
       { label: "FAQ", href: "/fellowship#faqFellowship" },
     ],
-  },
+  }, */
   {
     title: "About",
     links: [

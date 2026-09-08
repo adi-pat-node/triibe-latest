@@ -71,16 +71,16 @@ export default function Header() {
               href="https://donate.rayzeapp.com/orgs/tIbe07j0XKkLQezHHXoz"
               target="_blank"
               rel="noopener noreferrer"
-              className="h-9 px-4 py-2 bg-white font-normal text-black text-sm text-center rounded hover:bg-gray-100 transition-colors inline-flex items-center cursor-pointer"
+              className="h-9 px-8 py-2 bg-white font-normal text-black text-sm text-center rounded hover:bg-gray-100 transition-colors inline-flex items-center cursor-pointer"
             >
               Donate
             </a>
-            <a
+            {/* <a
               href="/apply"
               className="h-9 px-4 py-2 bg-[#ffffff] font-normal text-black text-sm text-center tracking-[0] leading-5 hover:bg-[#f0f0f0] transition-colors rounded inline-flex items-center"
             >
               Apply
-            </a>
+            </a> */}
           </div>
 
           {/* Mobile menu button */}
@@ -142,17 +142,17 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
-              className="px-6 py-3 text-center text-sm font-semibold text-black bg-white rounded-lg hover:bg-gray-100 transition-colors"
+              className="inline-block px-12 py-3 text-center text-sm font-semibold text-black bg-white rounded-lg hover:bg-gray-100 transition-colors"
             >
               Donate
             </a>
-            <a
+            {/* <a
               href="/apply"
               onClick={() => setMobileMenuOpen(false)}
               className="px-6 py-3 text-center text-sm font-semibold text-black bg-white rounded-lg hover:bg-gray-100 transition-colors"
             >
               Apply
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

@@ -740,7 +740,7 @@ const ProgramPage = () => {
         </div>
       </section>
 
-      <PostGraduationOutcomes />
+      {/* <PostGraduationOutcomes /> */}
 
       {/* Deck Section */}
       {/* <section className="py-12 px-4 md:px-25 lg:px-[200px]">
