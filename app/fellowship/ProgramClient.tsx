@@ -24,7 +24,7 @@ import Image from "next/image";
 const testimonials = [
   {
     quote:
-      "Receiving TRIIBE’s scholarship support further strengthened the work of Vervient Foundation by highlighting that community and connection matter as much as ideas. Knowing there’s a network of like-minded leaders cheering me on fuels our mission to empower students with an innovation mindset and reminds me that there’s always a shoulder to lean on in this journey.",
+      "Receiving TRIIBE’s support further strengthened the work of Vervient Foundation by highlighting that community and connection matter as much as ideas. Knowing there’s a network of like-minded leaders cheering me on fuels our mission to empower students with an innovation mindset and reminds me that there’s always a shoulder to lean on in this journey.",
     name: "Gitanjali Rao",
     year: "TRIIBE Fellow Fall 2025",
     organization: "Global Keynote, Vervient Foundation est. 2018",
@@ -38,7 +38,7 @@ const testimonials = [
   },
   {
     quote:
-      "Through TRIIBE I’ve experienced what it truly means to be supported while building something meaningful. TRIIBE has provided more than funding, it has offered transformative mentorship,strategic structure, and a powerful community of values-driven founders who continuously challenge me to think bigger and lead with intention. When many young leaders enter college and suddenly find themselves navigating ambition without guidance, TRIIBE fills that gap. They help equip us with the tools, accountability, and clarity needed to turn vision into sustainable impact. Through personalized mentorship, I’ve sharpened my storytelling, strengthened my long-term strategy, and learned how to scale my initiatives thoughtfully. What makes TRIIBE unique is its belief that young leaders should never build alone. The fellowship model fosters collaboration, shared learning, and courageous leadership.",
+      "Through TRIIBE I’ve experienced what it truly means to be supported while building something meaningful. TRIIBE has provided more than funding, it has offered transformative mentorship,strategic structure, and a powerful community of values-driven founders who continuously challenge me to think bigger and lead with intention. When many young leaders enter college and suddenly find themselves navigating ambition without guidance, TRIIBE fills that gap. They help equip us with the tools, accountability, and clarity needed to turn vision into sustainable impact. Through personalized mentorship, I’ve sharpened my storytelling, strengthened my long-term strategy, and learned how to scale my initiatives thoughtfully. What makes TRIIBE unique is its belief that young leaders should never build alone.",
     name: "Shrusti Amula",
     year: "TRIIBE Fellow Fall 2025",
     organization: "Founder, Rise N Shine Foundation est. 2019",
