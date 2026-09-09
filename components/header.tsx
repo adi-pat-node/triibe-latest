@@ -46,7 +46,7 @@ export default function Header() {
 
               { name: "TRIIBE Grants", href: "/grants" },
 
-              { name: "Fellowship", href: "/fellowship" },
+              /* { name: "Fellowship", href: "/fellowship" }, */
 
               { name: "About Us", href: "/about" },
               // { name: "Contact Us", href: "/contact" },
@@ -117,7 +117,7 @@ export default function Header() {
 
             { name: "TRIIBE Grants", href: "/grants" },
 
-            { name: "Fellowship", href: "/fellowship" },
+            /* { name: "Fellowship", href: "/fellowship" }, */
 
             { name: "About Us", href: "/about" },
             // { name: "Contact us", href: "/contact" },
