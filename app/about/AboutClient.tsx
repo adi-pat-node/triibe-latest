@@ -7,6 +7,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Link from "next/link";
 import Image from "next/image";
+import TriibeGlobeWrapper from "@/components/TriibeGlobeWrapper";
 import {
   csuite,
   associateBoard,
@@ -695,6 +696,9 @@ export default function AboutPage() {
               title="Locations"
               description="TRIIBE, like our name, is decentralized by design. Each location is led by a managing director, with a team and advisory board. Advisory Board members serve as regional ambassadors, connectors, and advisors, providing institutional credibility, senior-level counsel, and access to local networks that advance its mission."
             />
+
+            {/* <TriibeGlobeWrapper /> */}
+
             <span
               style={{
                 fontSize: 14,
