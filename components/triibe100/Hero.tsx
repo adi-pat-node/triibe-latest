@@ -29,7 +29,7 @@ export default function Hero() {
 
         <p
           style={{
-            fontSize: "16px",
+            fontSize: "14px",
             color: "#002c19",
             opacity: 0.65,
             fontWeight: 300,

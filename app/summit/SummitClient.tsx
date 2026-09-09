@@ -86,11 +86,11 @@ const SummitPage = () => {
           tag: "Speaker",
         },
         {
-          name: "Jax Harrison",
+          name: "Zachary Pogue",
           title:
-            "Co-Founder Grant Authority and Founder & CEO, The Future Found",
-          image: "/images/summit/JaxHarrison.jpg",
-          linkedin: "https://www.linkedin.com/in/jaxharrison/",
+            "CTO, Dapper Care Inc",
+          image: "/images/team/ZacharyPogue.jpg",
+          linkedin: "https://www.linkedin.com/in/zachpogue/",
           tag: "Moderator",
         },
       ],
@@ -431,7 +431,7 @@ const SummitPage = () => {
           time: "11:10 AM",
           title: "Half a Life of Impact",
           description:
-            "Esha Venkat, Lauren Shenkman, Zoe Terry, Mariela Dabbah, Jax Harrison",
+            "Esha Venkat, Lauren Shenkman, Zoe Terry, Mariela Dabbah, Zachary Pogue",
         },
         { time: "11:55 AM", title: "BREAK" },
         {
