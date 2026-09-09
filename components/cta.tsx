@@ -52,7 +52,7 @@ export default function CTASection() {
       
         <div className="mt-8 md:mt-10 text-center">
           <p className="text-white/90 text-sm md:text-base font-medium">
-            Bringing startup dynamics to the nonprofit sector
+            {/* Bringing startup dynamics to the nonprofit sector */}
           </p>
         </div>
 
