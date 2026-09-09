@@ -697,7 +697,7 @@ export default function AboutPage() {
               description="TRIIBE, like our name, is decentralized by design. Each location is led by a managing director, with a team and advisory board. Advisory Board members serve as regional ambassadors, connectors, and advisors, providing institutional credibility, senior-level counsel, and access to local networks that advance its mission."
             />
 
-            {/* <TriibeGlobeWrapper /> */}
+            <TriibeGlobeWrapper />
 
             <span
               style={{
