@@ -1242,7 +1242,7 @@ export default function TriibeGlobe() {
         {/* =====================================================
             START YOUR OWN BRANCH
             ===================================================== */}
-        <div
+        {/* <div
           style={{
             display: "flex",
             justifyContent: "center",
@@ -1255,7 +1255,7 @@ export default function TriibeGlobe() {
           >
             Start your own branch
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

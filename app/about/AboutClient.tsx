@@ -692,10 +692,10 @@ export default function AboutPage() {
           className="py-16 border-t border-gray-100 scroll-mt-28"
         >
           <FadeUp delay={0}>
-            <SectionHeader
+            {/* <SectionHeader
               title="Locations"
               description="TRIIBE, like our name, is decentralized by design. Each location is led by a managing director, with a team and advisory board. Advisory Board members serve as regional ambassadors, connectors, and advisors, providing institutional credibility, senior-level counsel, and access to local networks that advance its mission."
-            />
+            /> */}
 
             <TriibeGlobeWrapper />
 
@@ -709,13 +709,13 @@ export default function AboutPage() {
               }}
             ></span>
           </FadeUp>
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             {locations.map((loc, i) => (
               <FadeUp key={loc.location} delay={i * 80}>
                 <LocationCard entry={loc} />
               </FadeUp>
             ))}
-          </div>
+          </div> */}
         </section>
 
         <section className="py-12 px-4 md:px-25 lg:px-0">
