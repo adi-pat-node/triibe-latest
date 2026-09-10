@@ -362,54 +362,65 @@ function BranchPopup({
         }
 
         @media (max-width: 900px) {
-          .triibe-branch-popup {
-            right: 12px;
-            left: 12px;
-            width: auto;
-            max-width: none;
-            top: auto;
-            bottom: 12px;
-            transform: none;
-            max-height: 70%;
-          }
+  .triibe-branch-popup {
+    right: 12px;
+    left: 12px;
+    width: auto;
+    max-width: none;
+    top: auto;
+    bottom: 12px;
+    transform: none;
 
-          .triibe-popup-scroll {
-            max-height: none;
-            overflow-y: auto;
-          }
-        }
+    height: min(70vh, calc(100% - 24px));
+    max-height: min(70vh, calc(100% - 24px));
+
+    overflow: hidden;
+  }
+
+  .triibe-popup-scroll {
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+  }
+}
 
         @media (max-width: 520px) {
-          .triibe-popup-content {
-            flex-direction: column;
-          }
+  .triibe-popup-content {
+    flex-direction: column;
+  }
 
-          .triibe-popup-sidebar {
-            width: 100%;
-            min-width: 0;
-            border-right: none;
-            border-bottom: 1px solid #C0DD97;
-            padding: 12px 16px;
-            flex-direction: row;
-            align-items: center;
-            gap: 10px;
-          }
+  .triibe-popup-sidebar {
+    width: 100%;
+    min-width: 0;
+    border-right: none;
+    border-bottom: 1px solid #C0DD97;
+    padding: 12px 16px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
 
-          .triibe-popup-main {
-            padding: 16px;
-          }
+  .triibe-popup-main {
+    padding: 16px;
+  }
 
-          .triibe-advisory-grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 20px 12px;
-          }
+  .triibe-advisory-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 12px;
+  }
 
-          .triibe-advisory-grid > div {
-            width: 100% !important;
-            min-width: 0 !important;
-          }
-        }
+  .triibe-advisory-grid > div {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
       `}</style>
 
       <div className="triibe-branch-popup">
@@ -775,6 +786,14 @@ export default function TriibeGlobe() {
     };
 
     const handleWheel = (e: WheelEvent) => {
+      // Allow the popup to handle its own scrolling
+      if (
+        e.target instanceof Element &&
+        e.target.closest(".triibe-branch-popup")
+      ) {
+        return;
+      }
+
       if (checkIntersection(e.clientX, e.clientY)) {
         e.preventDefault();
       } else {
@@ -783,6 +802,15 @@ export default function TriibeGlobe() {
     };
 
     const handleTouchMove = (e: TouchEvent) => {
+      // IMPORTANT:
+      // If the user is scrolling inside the popup, do not interfere.
+      if (
+        e.target instanceof Element &&
+        e.target.closest(".triibe-branch-popup")
+      ) {
+        return;
+      }
+
       if (e.touches.length === 0) return;
 
       const touch = e.touches[0];
