@@ -255,6 +255,12 @@ export const legacyBoard: Person[] = [
     imagePath: "/images/summit/AndreaHolmes.jpg",
     linkedIn: "https://www.linkedin.com/in/andreaholmesthompkins/",
   },
+  {
+    name: "Jax Harrison",
+    title: "Co-Founder, Grant Authority",
+    imagePath: "/images/summit/JaxHarrison.jpg",
+    linkedIn: "https://www.linkedin.com/in/jaxharrison/",
+  },
   /* {
     name: "Todd Jacobson",
     title: "Founder & CEO, TAJ Global & past head of social responsibility, NBA",
