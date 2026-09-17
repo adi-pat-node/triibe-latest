@@ -16,7 +16,7 @@ export default function TheMissingLayerPage() {
 
       <main className="flex-grow py-16 px-4 sm:px-6 lg:px-8">
         <article className="max-w-3xl mx-auto">
-          {/* Article Meta */}
+          
           <header className="mb-12 border-b border-zinc-200 pb-8">
             <span className="inline-block text-xs font-semibold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full mb-4">
             </span>
@@ -30,7 +30,7 @@ export default function TheMissingLayerPage() {
             </div>
           </header>
 
-          {/* Lead In / Abstract */}
+          
           <div className="space-y-6 text-lg leading-relaxed text-zinc-700">
             <p className="text-xl font-normal text-zinc-900 leading-relaxed">
               In 2025, Americans gave $617.2 billion to charity, the largest
@@ -43,7 +43,7 @@ export default function TheMissingLayerPage() {
               the nonprofit sector.
             </p>
 
-            {/* Section: The Top Layer */}
+            
             <section className="pt-6">
               <h2 className="text-2xl font-bold tracking-tight text-zinc-950 mb-4">
                 The Top Layer
@@ -53,7 +53,7 @@ export default function TheMissingLayerPage() {
                 <Cite>2</Cite>
               </p>
 
-              {/* Table: Sources of Giving (Borderless, Unboxed, Matched Font Styles) */}
+              
               <div className="overflow-x-auto my-6">
                 <table className="min-w-full text-left text-sm border-collapse">
                   <thead>
@@ -158,7 +158,7 @@ export default function TheMissingLayerPage() {
               </p>
             </section>
 
-            {/* Section: The Middle Layer */}
+            
             <section className="pt-6">
               <h2 className="text-2xl font-bold tracking-tight text-zinc-950 mb-4">
                 The Middle Layer
@@ -205,7 +205,7 @@ export default function TheMissingLayerPage() {
               </p>
             </section>
 
-            {/* Section: Government Funding */}
+            
             <section className="pt-6">
               <h2 className="text-2xl font-bold tracking-tight text-zinc-950 mb-4">
                 Government Funding
@@ -238,7 +238,7 @@ export default function TheMissingLayerPage() {
               </p>
             </section>
 
-            {/* Section: The Shrinking Pool */}
+            
             <section className="pt-6">
               <h2 className="text-2xl font-bold tracking-tight text-zinc-950 mb-4">
                 The Shrinking Pool
@@ -281,7 +281,7 @@ export default function TheMissingLayerPage() {
                 quarter of 2026.<Cite>14,15</Cite>
               </p>
 
-              {/* Table: Donor Count (Centered orientation, unboxed and borderless) */}
+              
               <div className="flex justify-center my-6">
                 <table className="text-left text-sm border-collapse">
                   <thead>
@@ -368,7 +368,7 @@ export default function TheMissingLayerPage() {
               </p>
             </section>
 
-            {/* Section: The Missing Layer */}
+            
             <section className="pt-6">
               <h2 className="text-2xl font-bold tracking-tight text-zinc-950 mb-4">
                 The Missing Layer
@@ -426,7 +426,7 @@ export default function TheMissingLayerPage() {
               </p>
             </section>
 
-            {/* Section: What Comes Next */}
+            
             <section className="pt-6">
               <h2 className="text-2xl font-bold tracking-tight text-zinc-950 mb-4">
                 What Comes Next
@@ -477,7 +477,7 @@ export default function TheMissingLayerPage() {
             </section>
           </div>
 
-          {/* Footnotes / Sources */}
+          
           <footer className="mt-16 pt-10 border-t border-zinc-200">
             <h3 className="text-lg font-bold text-zinc-900 mb-6">Sources</h3>
             <ol className="list-decimal list-outside pl-5 space-y-3 text-xs leading-normal text-zinc-500">
