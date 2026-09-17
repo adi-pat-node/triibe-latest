@@ -522,9 +522,9 @@ const SummitPage = () => {
       <section className="relative pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-white overflow-visible">
         <div className="max-w-260 mx-auto overflow-visible">
           <div className="flex flex-col gap-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center mb-4">
+            {/* <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center mb-4">
               About the summit
-            </h2>
+            </h2> */}
 
             {/* <p className="text-[#002c19] text-base leading-relaxed">
               Friday's VIP Gala is a 200-guest dinner featuring Michelin-starred
