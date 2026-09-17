@@ -35,7 +35,7 @@ const SummitPage = () => {
       badge: "The Cohort Day",
       location: "Rooftop Pavilion, Javits Center",
       highlight: {
-        image: "/images/summit/Curated1.png",
+        image: "/images/summit/friday-cohort.jpeg",
         label: "FELLOWS · EXCLUSIVE",
         name: "Cohort Day & Dinner Concert",
         description:
@@ -211,7 +211,7 @@ const SummitPage = () => {
       badge: "VIP Gala",
       location: "River Pavilion, Level 4 (Overlooking the Hudson)",
       highlight: {
-        image: "/images/summit/fashionShow.jpeg",
+        image: "/images/summit/fashion-summit.jpg",
         label: "SATURDAY · GALA",
         name: "Black Tie VIP Gala & Fashion Show",
         description:
