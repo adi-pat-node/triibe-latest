@@ -908,7 +908,7 @@ const SummitPage = () => {
         <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
           <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
-              The TRIIBE Next-Gen Summit 2027
+              The TRIIBE Next-Gen Summit 2026
             </p>
 
             <Link
