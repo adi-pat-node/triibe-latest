@@ -2,7 +2,7 @@
 import React from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import HeroSummit from "./heroSummit";
+import HeroSummit from "@/components/heroSummit";
 import Image from "next/image";
 import { createElement } from "react";
 import Script from "next/script";
@@ -526,7 +526,7 @@ const SummitPage = () => {
               About the summit
             </h2>
 
-            {/* <p className="text-[#002c19] text-base leading-relaxed">
+            <p className="text-[#002c19] text-base leading-relaxed">
               Friday's VIP Gala is a 200-guest dinner featuring Michelin-starred
               sushi chefs doing a live tuna carving, keynotes, supercars, an
               auction, and live concert.
@@ -542,10 +542,10 @@ const SummitPage = () => {
               <br />
               Podcasts on our founders and the summit as a whole release in
               November two weeks before Giving Tuesday.
-            </p> */}
+            </p>
           </div>
 
-          {/* <div className="relative mt-12">
+          <div className="relative mt-12">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[390px] flex">
                 <div className="relative w-[42%] min-w-[165px] h-full shrink-0">
@@ -626,7 +626,7 @@ const SummitPage = () => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
 
@@ -678,7 +678,7 @@ const SummitPage = () => {
         </div>
       </section>
 
-      {/* <section className="pt-4 pb-20 px-4 md:px-25 lg:px-50 bg-white">
+      <section className="pt-4 pb-20 px-4 md:px-25 lg:px-50 bg-white">
         <div className="max-w-260 mx-auto">
           <div className="flex justify-center">
             <div className="bg-[#002C19] rounded-[10px] overflow-hidden h-[390px] w-full md:w-[calc((100%-48px)/3)] flex">
@@ -709,7 +709,7 @@ const SummitPage = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]">
         <div className="max-w-260 mx-auto flex flex-col gap-16">

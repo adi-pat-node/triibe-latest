@@ -52,7 +52,7 @@ export default function HeroSummit() {
         <div className="relative z-10 flex flex-col items-center px-6 max-w-225 mx-auto mb-24">
           <div className="flex flex-col items-center  pb-3">
             <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-4xl md:text-4xl lg:text-5xl text-center tracking-tight leading-tight max-w-200">
-              TRIIBE Next-Gen Summit
+              TRIIBE Next-Gen Summit 2027
             </h1>
           </div>
 
@@ -65,7 +65,7 @@ export default function HeroSummit() {
           <div className="flex flex-wrap items-center justify-center gap-6 text-white text-sm mb-8">
             <div className="flex items-center gap-2">
               <Calendar size={15} />
-              <span>September 11–13, 2026</span>
+              <span>Saturday,September 18, 2027</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock size={15} />
@@ -102,12 +102,12 @@ export default function HeroSummit() {
           <div className="flex flex-col items-center gap-2 text-white text-sm mb-6">
             <div className="flex items-center gap-2">
               <MapPin size={15} />
-              <span>Friday at Ideal Glass Studios, Manhattan</span>
+              <span>Planning for the Javits Center</span>
             </div>
 
             <div className="flex items-center gap-2">
-              <MapPin size={15} />
-              <span>Saturday at Rallypoint East, Westhampton Beach</span>
+              {/* <MapPin size={15} /> */}
+              <span> </span>
             </div>
           </div>
 
