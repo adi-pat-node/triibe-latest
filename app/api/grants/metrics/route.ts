@@ -24,6 +24,27 @@ const ACCEPTED_ACTIVE_GRANTS_MEANINGS = new Set([
   "searchable_open_opportunities",
 ]);
 
+// How long a previously-good snapshot may stand in when the source cannot be
+// reached or refuses validation. The strip renders the snapshot's own
+// `updatedAt`, so a stale figure is labelled as of when it was measured rather
+// than presented as current -- which is strictly better for a reader than four
+// dashes and "Live data temporarily unavailable".
+//
+// Nothing here is a hardcoded number: if nothing good has ever been fetched in
+// this instance, the route still fails closed.
+const MAX_FALLBACK_AGE_MS = 24 * 60 * 60 * 1000;
+
+type NetworkSnapshot = {
+  activeGrants: number;
+  foundationGrantmakerProfiles: number;
+  listedFunding: number;
+  updatedAt: string;
+  snapshotId: string;
+  methodologyVersion: string;
+};
+
+let lastGoodSnapshot: { snapshot: NetworkSnapshot; storedAt: number } | null = null;
+
 function resolveMetricsEndpoint() {
   const configuredUrl = process.env.GRANTAUTHORITY_PUBLIC_METRICS_URL?.trim();
   if (!configuredUrl) return PRODUCTION_METRICS_ENDPOINT;
@@ -107,21 +128,25 @@ export async function GET() {
       throw new Error("Complete current partner metrics are unavailable");
     }
 
+    const snapshot: NetworkSnapshot = {
+      activeGrants,
+      foundationGrantmakerProfiles,
+      listedFunding,
+      updatedAt,
+      snapshotId,
+      methodologyVersion,
+    };
+    lastGoodSnapshot = { snapshot, storedAt: Date.now() };
+
     return NextResponse.json(
-      {
-        success: true,
-        metrics: {
-          activeGrants,
-          foundationGrantmakerProfiles,
-          listedFunding,
-          updatedAt,
-          snapshotId,
-          methodologyVersion,
-        },
-      },
+      { success: true, stale: false, metrics: snapshot },
       {
         headers: {
-          "Cache-Control": "public, s-maxage=120, stale-while-revalidate=60",
+          // stale-if-error keeps the edge serving the last good response when a
+          // later revalidation fails, which covers the cold starts that in-process
+          // memory cannot.
+          "Cache-Control":
+            "public, s-maxage=120, stale-while-revalidate=60, stale-if-error=86400",
         },
       },
     );
@@ -130,6 +155,24 @@ export async function GET() {
       "[triibe-grants-metrics] Aggregate metrics unavailable:",
       error instanceof Error ? error.message : error,
     );
+
+    if (lastGoodSnapshot && Date.now() - lastGoodSnapshot.storedAt <= MAX_FALLBACK_AGE_MS) {
+      console.warn(
+        "[triibe-grants-metrics] Serving last good snapshot from",
+        lastGoodSnapshot.snapshot.updatedAt,
+      );
+      return NextResponse.json(
+        { success: true, stale: true, metrics: lastGoodSnapshot.snapshot },
+        {
+          headers: {
+            // Short, so the next request retries the source rather than pinning
+            // a stale figure at the edge.
+            "Cache-Control": "public, s-maxage=30, stale-while-revalidate=60",
+          },
+        },
+      );
+    }
+
     return NextResponse.json(
       { success: false, metrics: null, error: "Live data temporarily unavailable" },
       { status: 503, headers: { "Cache-Control": "no-store" } },
