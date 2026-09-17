@@ -155,7 +155,8 @@ const SummitPage = () => {
         },
         {
           time: "10:15 AM",
-          title: "Refreshment break. Cars and activations in the Crystal Palace",
+          title:
+            "Refreshment break. Cars and activations in the Crystal Palace",
           /* description:
             "Included with day pass. Cars and hospitality in the Crystal Palace.", */
         },
@@ -248,7 +249,8 @@ const SummitPage = () => {
         },
         {
           time: "7:40 PM",
-          title: "Next-Gen designer fashion show. Guests vote on the winner for a cash prize.",
+          title:
+            "Next-Gen designer fashion show. Guests vote on the winner for a cash prize.",
           /* description:
             "Runway competition featuring three Parsons designers. Audience votes via QR code.", */
         },
@@ -503,154 +505,6 @@ const SummitPage = () => {
         </div>
       </section>
 
-      {/* Section 2: VIP Gala Section (blended below Next-Gen Summit) */}
-      {/* Section 2: VIP Gala Section */}
-      <section className="relative w-full bg-[#F5F5F5] overflow-hidden pb-20">
-        {/* Full-width Gala Hero Banner */}
-        <div className="relative w-full min-h-[500px] md:min-h-[580px] lg:min-h-[640px] flex items-center justify-center overflow-hidden">
-          {/* Hero Atrium Venue Image */}
-          <Image
-            src="/images/summit/javitscenter.jpg"
-            alt="VIP Gala Atrium Dinner"
-            fill
-            className="object-cover object-center"
-            priority
-          />
-
-          {/* Dark scrim overlay for high-contrast white text */}
-          <div className="absolute inset-0 bg-black/55" />
-
-          {/* Foreground Gala Content */}
-          <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto">
-            {/* TRIIBE Logo mark */}
-            <div className="relative w-36 h-10 mb-4 brightness-0 invert">
-              <Image
-                src="/images/TRIIBELOGOS/TRIIBE NAME.png"
-                alt="TRIIBE Logo"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-
-            {/* Main Gala Headline */}
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight mb-4 drop-shadow-md">
-              VIP GALA
-            </h2>
-
-            {/* Event Metadata Badges / Info Row */}
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-white/90 text-sm md:text-base font-medium mb-3">
-              <span className="flex items-center gap-1.5">
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
-                </svg>
-                Saturday, September 18, 2027
-              </span>
-              <span className="flex items-center gap-1.5">
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                Evening Black Tie
-              </span>
-            </div>
-
-            <p className="flex items-center justify-center gap-1.5 text-white/80 text-sm font-medium mb-8">
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-              </svg>
-              River Pavilion, Level 4 (Overlooking the Hudson)
-            </p>
-
-            {/* Inquire / RSVP Button */}
-            {/* <a
-              href="#tickets"
-              className="inline-flex items-center justify-center px-8 py-3 rounded-md bg-white text-[#002c19] text-sm md:text-base font-bold shadow-md hover:bg-zinc-100 hover:scale-[1.02] transition-all"
-            >
-              Get VIP Pass
-            </a> */}
-          </div>
-        </div>
-
-        {/* Lower Container: Narrative Lead & Features Grid */}
-        <div className="max-w-6xl mx-auto px-4 md:px-12 lg:px-20 pt-16">
-          {/* <p className="text-base sm:text-lg text-[#002c19] font-medium text-center max-w-3xl mx-auto leading-relaxed mb-12">
-            The opening weekend to Climate Week NYC and the UN General Assembly
-          </p> */}
-
-          {/* Gala Stats & Schedule Breakdown */}
-          <div className="w-full border-t border-gray-300 pt-10">
-            {/* Key Figures: 3 columns horizontal across both mobile and desktop */}
-            <div className="w-full grid grid-cols-3 gap-6 sm:gap-8 items-start py-4">
-              <div className="text-left">
-                <span className="block text-3xl sm:text-4xl md:text-5xl font-black text-[#002c19]">
-                  500
-                </span>
-                <span className="text-[10px] sm:text-xs md:text-sm font-semibold text-[#002c19]/80 uppercase tracking-wide">
-                  Curated Guests
-                </span>
-              </div>
-              <div className="text-left">
-                <span className="block text-3xl sm:text-4xl md:text-5xl font-black text-[#002c19]">
-                  100
-                </span>
-                <span className="text-[10px] sm:text-xs md:text-sm font-semibold text-[#002c19]/80 uppercase tracking-wide">
-                  TRIIBE Fellows
-                </span>
-              </div>
-              <div className="text-left">
-                <span className="block text-3xl sm:text-4xl md:text-5xl font-black text-[#002c19]">
-                  60
-                </span>
-                <span className="text-[10px] sm:text-xs md:text-sm font-semibold text-[#002c19]/80 uppercase tracking-wide">
-                  Tables of Eight
-                </span>
-              </div>
-            </div>
-          </div>
-
-          {/* <p className="mt-12 text-[11px] text-[#002c19]/50 text-center max-w-xl mx-auto">
-            United World Leaders exercises no operational control over and
-            assumes no responsibility for the activities of TRIIBE; TRIIBE is
-            not authorized to legally bind United World Leaders.
-          </p> */}
-        </div>
-      </section>
 
       {/* Section 3: Run of the Show Timeline (Identical current design code) */}
       <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-white">
@@ -748,7 +602,8 @@ const SummitPage = () => {
                           {item.time}
                         </span>
 
-                        {item.title === "BREAK" || item.title === "15 minute break" ? (
+                        {item.title === "BREAK" ||
+                        item.title === "15 minute break" ? (
                           <div className="flex items-center gap-4 w-full">
                             <div className="flex-1 h-px bg-gray-300"></div>
                             <span className="text-xs text-[#002c19]/80 tracking-[0.3em] uppercase">
