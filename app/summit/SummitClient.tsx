@@ -361,7 +361,7 @@ const SummitPage = () => {
         <div className="relative w-full min-h-[500px] md:min-h-[580px] lg:min-h-[640px] flex items-center justify-center overflow-hidden">
           {/* Hero Background Image */}
           <Image
-            src="/images/summit/javitscenter.jpg"
+            src="/images/summit/javits-center.jpg"
             alt="Javits Center Exterior"
             fill
             className="object-cover object-center"
