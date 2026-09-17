@@ -904,6 +904,23 @@ const SummitPage = () => {
         </div>
       </section>
 
+      <section className="py-12 w-full px-4 md:px-25 lg:px-50">
+        <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
+          <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+            <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
+              The TRIIBE 2026 Next-Gen Summit
+            </p>
+
+            <Link
+              href="/summit-2026"
+              className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300   hover:text-white hover:scale-105"
+            >
+              Recap
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Section 4: Sponsor Our Summit Section (Dark Green card style from graphic) */}
       <section className="pt-20 pb-24 px-4 md:px-12 lg:px-24 bg-[#05291b] text-white">
         <div className="max-w-7xl mx-auto flex flex-col items-center">
