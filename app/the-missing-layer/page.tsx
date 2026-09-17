@@ -109,7 +109,7 @@ export default function TheMissingLayerPage() {
                     <tr className="font-bold text-zinc-950">
                       <td className="pt-4 pb-2 pr-8 pl-0">Total</td>
                       <td className="pt-4 pb-2 px-8">$617.21B</td>
-                      <td className="pt-4 pb-2 pl-8 pr-0 text-emerald-800">
+                      <td className="pt-4 pb-2 pl-8 pr-0">
                         +5.7% current, +3.0% real
                       </td>
                     </tr>
@@ -458,7 +458,7 @@ export default function TheMissingLayerPage() {
                 the nonprofit sector needs its own.
               </p>
 
-              <p className="my-8 font-bold text-zinc-950 leading-relaxed">
+              <p className="my-8 leading-relaxed">
                 So we built TRIIBE, maximizing return on impact and income for
                 philentrepreneurs. We back the TRIIBE 100 with funding,
                 mentorship, and measurement of their social return on
