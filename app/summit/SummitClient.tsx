@@ -63,7 +63,6 @@ const SummitPage = () => {
         bullets: [
           "7 parallel session rooms",
           "Community activations",
-          "New york panoramic views",
         ],
       },
       items: [
@@ -136,7 +135,7 @@ const SummitPage = () => {
           "Black tie attire",
           "Next-Gen Design runway show",
           "Keynotes & live paddle raise",
-          "Hudson River panoramic views",
+          "New York panoramic views",
         ],
       },
       items: [
