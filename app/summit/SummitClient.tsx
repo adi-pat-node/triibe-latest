@@ -60,10 +60,7 @@ const SummitPage = () => {
         name: "TRIIBE Talks & Supercar Showcase",
         description:
           "1,000 public attendees across seven simultaneous stages hosting TRIIBE Talks.",
-        bullets: [
-          "7 parallel session rooms",
-          "Community activations",
-        ],
+        bullets: ["7 parallel session rooms", "Community activations", "New York panoramic views",],
       },
       items: [
         {
@@ -135,7 +132,6 @@ const SummitPage = () => {
           "Black tie attire",
           "Next-Gen Design runway show",
           "Keynotes & live paddle raise",
-          "New York panoramic views",
         ],
       },
       items: [
@@ -298,9 +294,9 @@ const SummitPage = () => {
           </p>
 
           {/* Metrics & Highlights Grid */}
-          <div className="w-full border-t border-gray-100 pt-10">
-            <div className="w-full grid grid-cols-3 gap-6 sm:gap-8 items-start py-4">
-              <div className="text-left">
+          <div className="w-full border-t border-gray-100 pt-8">
+            <div className="w-full grid grid-cols-3 gap-6 sm:gap-8 items-start py-2">
+              <div className="text-center flex flex-col items-center">
                 <span className="block text-3xl sm:text-4xl md:text-5xl font-black text-[#002c19]">
                   1000
                 </span>
@@ -308,7 +304,7 @@ const SummitPage = () => {
                   Public Attendees
                 </span>
               </div>
-              <div className="text-left">
+              <div className="text-center flex flex-col items-center">
                 <span className="block text-3xl sm:text-4xl md:text-5xl font-black text-[#002c19]">
                   100
                 </span>
@@ -316,7 +312,7 @@ const SummitPage = () => {
                   TRIIBE Fellows
                 </span>
               </div>
-              <div className="text-left">
+              <div className="text-center flex flex-col items-center">
                 <span className="block text-3xl sm:text-4xl md:text-5xl font-black text-[#002c19]">
                   500
                 </span>
@@ -330,8 +326,8 @@ const SummitPage = () => {
       </section>
 
       {/* Section 3: Run of the Show Timeline */}
-      <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-white">
-        <div className="max-w-260 mx-auto flex flex-col gap-10">
+      <section className="pt-6 pb-20 px-4 md:px-25 lg:px-50 bg-white">
+        <div className="max-w-260 mx-auto flex flex-col gap-8">
           <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center tracking-tighter">
             Schedule & Run of Show
           </h2>
@@ -518,7 +514,10 @@ const SummitPage = () => {
       </section>
 
       {/* Section 5: Givebutter Widget Embed */}
-      <section className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]" id="tickets">
+      <section
+        className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]"
+        id="tickets"
+      >
         <div className="max-w-4xl mx-auto flex flex-col items-center gap-8">
           <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center tracking-tight">
             Tickets & Registration
