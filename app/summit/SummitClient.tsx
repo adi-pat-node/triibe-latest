@@ -190,7 +190,7 @@ const SummitPage = () => {
       ],
     },
     {
-      title: "Presenting Sponsor",
+      title: "Signature Sponsor",
       price: "$250K",
       availability: "2 available",
       bullets: [
