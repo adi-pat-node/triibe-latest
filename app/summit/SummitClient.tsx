@@ -272,7 +272,7 @@ const SummitPage = () => {
         {/* Lower Container: Narrative Lead & Features Grid */}
         <div className="max-w-6xl mx-auto px-4 md:px-12 lg:px-20 pt-16">
           <p className="text-base sm:text-lg text-[#002c19] font-medium text-center max-w-3xl mx-auto leading-relaxed mb-12">
-            The annual gathering of the TRIIBE 100 leading nonprofit founders
+            The annual gathering of the TRIIBE I00 leading nonprofit founders
             under 30
             <br />
             <span className="text-[#002c19]/80 text-sm sm:text-base">
@@ -311,20 +311,20 @@ const SummitPage = () => {
             </div>
           </div>
 
-          {/* Three Navigation Buttons with Wider Spacing */}
+          {/* Three Navigation Buttons: Schedule, Registration, Past Summit Highlights */}
           <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 mt-10">
-            <a
-              href="#tickets"
-              className="inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
-            >
-              Registration
-            </a>
-
             <a
               href="#schedule"
               className="inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
             >
               Schedule
+            </a>
+
+            <a
+              href="#tickets"
+              className="inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
+            >
+              Registration
             </a>
 
             <Link
@@ -337,22 +337,7 @@ const SummitPage = () => {
         </div>
       </section>
 
-      {/* 1. Tickets & Registration (Givebutter Embed) */}
-      <section
-        className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]"
-        id="tickets"
-      >
-        <div className="max-w-4xl mx-auto flex flex-col items-center gap-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center tracking-tight">
-            Tickets & Registration
-          </h2>
-          <div className="w-full min-h-[600px]">
-            {createElement("givebutter-widget", { id: "LWkRO3" })}
-          </div>
-        </div>
-      </section>
-
-      {/* 2. Schedule & Run of Show */}
+      {/* 1. Schedule & Run of Show */}
       <section
         className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-white"
         id="schedule"
@@ -480,6 +465,21 @@ const SummitPage = () => {
               </div>
             </React.Fragment>
           ))}
+        </div>
+      </section>
+
+      {/* 2. Tickets & Registration (Givebutter Embed) */}
+      <section
+        className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]"
+        id="tickets"
+      >
+        <div className="max-w-4xl mx-auto flex flex-col items-center gap-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center tracking-tight">
+            Tickets & Registration
+          </h2>
+          <div className="w-full min-h-[600px]">
+            {createElement("givebutter-widget", { id: "LWkRO3" })}
+          </div>
         </div>
       </section>
 
