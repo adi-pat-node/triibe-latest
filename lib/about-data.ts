@@ -262,6 +262,12 @@ export const legacyBoard: Person[] = [
     linkedIn: "https://www.linkedin.com/in/jaxharrison/",
   },
   /* {
+    name: "Erica Ford",
+    title: "The peace doctor",
+    imagePath: "/images/summit/ericaford.jpg",
+    linkedIn: "https://www.instagram.com/ericaford_ilovemylife?stkn=MWpjc2cwcDlqcmNodw==",
+  }, */
+  /* {
     name: "Todd Jacobson",
     title: "Founder & CEO, TAJ Global & past head of social responsibility, NBA",
     imagePath: "/images/team/ToddJacobson.jpg",
