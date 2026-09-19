@@ -20,48 +20,38 @@ export default function ProgramOverviewTest() {
             </h3>
 
             <div className="grid md:grid-cols-3 gap-8">
-  <div className="border border-[#002c19] p-10 flex flex-col items-center text-center rounded-lg">
-    <h4 className="text-2xl font-bold mb-6">Returns</h4>
-    <p className="text-[#002c19]/80 font-medium">
-      A funder can&apos;t take a share of the profit
-    </p>
-  </div>
+              <div className="border border-[#002c19] p-10 flex flex-col items-center text-center rounded-lg">
+                <h4 className="text-2xl font-bold mb-6">Returns</h4>
+                <p className="text-[#002c19]/80 font-medium">
+                  A funder can&apos;t take a share of the profit
+                </p>
+              </div>
 
-  <div className="border border-[#002c19] p-10 flex flex-col items-center text-center rounded-lg">
-    <h4 className="text-2xl font-bold mb-6">Commission</h4>
-    <p className="text-[#002c19]/80 font-medium">
-      A fundraiser can&apos;t earn a share of the raise
-    </p>
-  </div>
+              <div className="border border-[#002c19] p-10 flex flex-col items-center text-center rounded-lg">
+                <h4 className="text-2xl font-bold mb-6">Commission</h4>
+                <p className="text-[#002c19]/80 font-medium">
+                  A fundraiser can&apos;t earn a share of the raise
+                </p>
+              </div>
 
-  <div className="border border-[#002c19] p-10 flex flex-col items-center text-center rounded-lg">
-    <h4 className="text-2xl font-bold mb-6">Equity</h4>
-    <p className="text-[#002c19]/80 font-medium">
-      A funder can&apos;t own a share of the business
-    </p>
-  </div>
-</div>
+              <div className="border border-[#002c19] p-10 flex flex-col items-center text-center rounded-lg">
+                <h4 className="text-2xl font-bold mb-6">Equity</h4>
+                <p className="text-[#002c19]/80 font-medium">
+                  A funder can&apos;t own a share of the business
+                </p>
+              </div>
+            </div>
 
-<h3 className="text-xl md:text-2xl font-semibold mt-16">
-  But a startup ecosystem is necessary for philanthropic innovation, because
-  only a founder with nothing yet to protect can afford to fail.
-</h3>
+            <h3 className="text-xl md:text-2xl font-semibold mt-16">
+              But a startup ecosystem is necessary for philanthropic innovation,
+              because only a founder with nothing yet to protect can afford to
+              fail.
+            </h3>
           </div>
         </section>
 
-        <section className="bg-[#002c19] text-white py-24 px-4 md:px-25 lg:px-[200px] w-full pt-16">
+        {/* <section className="bg-[#002c19] text-white py-24 px-4 md:px-25 lg:px-[200px] w-full pt-16">
           <div className="max-w-[1200px] mx-auto flex flex-col">
-            {/* <h2 className="text-4xl md:text-6xl font-bold mb-8 md:mb-12 flex flex-wrap items-center justify-center gap-4">
-              So we built a
-              <Image
-                src="/images/home/TRIIBEHeroWhite.svg"
-                alt="TRIIBE"
-                width={180}
-                height={60}
-                className="inline-block object-contain"
-              />
-            </h2> */}
-
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 w-full max-w-5xl mx-auto">
               <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.2] text-center md:text-left max-w-2xl">
                 If incentives won’t build the nonprofit startup sector, we will
@@ -86,11 +76,22 @@ export default function ProgramOverviewTest() {
                 Donate
               </a>
             </div>
+          </div>
+        </section> */}
 
-            <div className="mt-8 md:mt-10 text-center">
-              <p className="text-white/90 text-sm md:text-base font-medium">
-                {/* Bringing startup dynamics to the nonprofit sector */}
+        <section className="py-12 w-full px-4 md:px-25 lg:px-50">
+          <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
+            <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+              <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
+                Learn more about this missing philanthropic layer
               </p>
+
+              <Link
+                href="/the-missing-layer"
+                className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300   hover:text-white hover:scale-105"
+              >
+                Read our Report
+              </Link>
             </div>
           </div>
         </section>
