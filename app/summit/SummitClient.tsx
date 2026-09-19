@@ -549,7 +549,7 @@ const SummitPage = () => {
         strategy="lazyOnload"
       />
 
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 };
