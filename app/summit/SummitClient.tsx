@@ -60,7 +60,11 @@ const SummitPage = () => {
         name: "TRIIBE Talks & Supercar Showcase",
         description:
           "1,000 public attendees across seven simultaneous stages hosting TRIIBE Talks.",
-        bullets: ["7 parallel session rooms", "Community activations", "New York panoramic views",],
+        bullets: [
+          "7 parallel session rooms",
+          "Community activations",
+          "New York panoramic views",
+        ],
       },
       items: [
         {
@@ -198,22 +202,6 @@ const SummitPage = () => {
         "Accommodations for 8 guests",
       ],
     },
-    {
-      title: "Premier Table",
-      price: "$50K",
-      availability: "4 available",
-      bullets: [
-        "Logo on stage and marketing for 1 year",
-        "Gala table for 8",
-        "Personal interviews highlighted in our media, pre and post event",
-      ],
-    },
-    {
-      title: "VIP Table",
-      price: "$25K",
-      availability: "10 available",
-      bullets: ["Logo on stage and marketing for 1 year", "Gala table for 8"],
-    },
   ];
 
   return (
@@ -322,11 +310,53 @@ const SummitPage = () => {
               </div>
             </div>
           </div>
+
+          {/* Three Navigation Buttons with Wider Spacing */}
+          <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 mt-10">
+            <a
+              href="#tickets"
+              className="inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
+            >
+              Registration
+            </a>
+
+            <a
+              href="#schedule"
+              className="inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
+            >
+              Schedule
+            </a>
+
+            <Link
+              href="/summit-2026"
+              className="inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
+            >
+              Past Summit Highlights
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Section 3: Run of the Show Timeline */}
-      <section className="pt-6 pb-20 px-4 md:px-25 lg:px-50 bg-white">
+      {/* 1. Tickets & Registration (Givebutter Embed) */}
+      <section
+        className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]"
+        id="tickets"
+      >
+        <div className="max-w-4xl mx-auto flex flex-col items-center gap-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center tracking-tight">
+            Tickets & Registration
+          </h2>
+          <div className="w-full min-h-[600px]">
+            {createElement("givebutter-widget", { id: "LWkRO3" })}
+          </div>
+        </div>
+      </section>
+
+      {/* 2. Schedule & Run of Show */}
+      <section
+        className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-white"
+        id="schedule"
+      >
         <div className="max-w-260 mx-auto flex flex-col gap-8">
           <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center tracking-tighter">
             Schedule & Run of Show
@@ -453,8 +483,50 @@ const SummitPage = () => {
         </div>
       </section>
 
-      {/* Recap Banner Card */}
-      <section className="py-12 w-full px-4 md:px-25 lg:px-50">
+      {/* 3. Sponsor Our Summit Section */}
+      <section className="pt-20 pb-24 px-4 md:px-12 lg:px-24 bg-[#05291b] text-white">
+        <div className="max-w-5xl mx-auto flex flex-col items-center">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-center mb-3">
+            Sponsor our summit
+          </h2>
+          <p className="text-lg md:text-xl text-white/90 text-center font-normal mb-16">
+            Channeling capital to the nonprofit startup ecosystem
+          </p>
+
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 justify-center">
+            {sponsorTiers.map((tier, idx) => (
+              <div
+                key={idx}
+                className="w-full border border-white/60 rounded-2xl p-8 sm:p-10 flex flex-col justify-between bg-transparent shadow-sm"
+              >
+                <div>
+                  <h3 className="text-xl sm:text-2xl font-medium text-white mb-2">
+                    {tier.title}
+                  </h3>
+                  <div className="text-5xl sm:text-6xl font-black tracking-tight text-white mb-2">
+                    {tier.price}
+                  </div>
+                  <p className="text-sm text-white/70 mb-8 font-normal">
+                    {tier.availability}
+                  </p>
+
+                  <ul className="flex flex-col gap-3.5 text-sm sm:text-base text-white/90 leading-relaxed">
+                    {tier.bullets.map((bullet, bIdx) => (
+                      <li key={bIdx} className="flex items-start gap-2.5">
+                        <span className="text-white mt-1 text-sm">&bull;</span>
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 4. 2026 Recap Button Card */}
+      <section className="py-16 w-full px-4 md:px-25 lg:px-50 bg-[#F5F5F5]">
         <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
           <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
@@ -467,63 +539,6 @@ const SummitPage = () => {
             >
               Recap
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4: Sponsor Our Summit Section */}
-      <section className="pt-20 pb-24 px-4 md:px-12 lg:px-24 bg-[#05291b] text-white">
-        <div className="max-w-7xl mx-auto flex flex-col items-center">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-center mb-3">
-            Sponsor our summit
-          </h2>
-          <p className="text-lg md:text-xl text-white/90 text-center font-normal mb-16">
-            Channeling capital to the nonprofit startup ecosystem
-          </p>
-
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {sponsorTiers.map((tier, idx) => (
-              <div
-                key={idx}
-                className="border border-white/60 rounded-xl p-6 sm:p-7 flex flex-col justify-between bg-transparent"
-              >
-                <div>
-                  <h3 className="text-base sm:text-lg font-medium text-white mb-1">
-                    {tier.title}
-                  </h3>
-                  <div className="text-4xl sm:text-5xl font-black tracking-tight text-white mb-1">
-                    {tier.price}
-                  </div>
-                  <p className="text-xs text-white/70 mb-6 font-normal">
-                    {tier.availability}
-                  </p>
-
-                  <ul className="flex flex-col gap-2.5 text-xs sm:text-sm text-white/90 leading-snug">
-                    {tier.bullets.map((bullet, bIdx) => (
-                      <li key={bIdx} className="flex items-start gap-2">
-                        <span className="text-white mt-1 text-xs">&bull;</span>
-                        <span>{bullet}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 5: Givebutter Widget Embed */}
-      <section
-        className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]"
-        id="tickets"
-      >
-        <div className="max-w-4xl mx-auto flex flex-col items-center gap-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#002c19] text-center tracking-tight">
-            Tickets & Registration
-          </h2>
-          <div className="w-full min-h-[600px]">
-            {createElement("givebutter-widget", { id: "LWkRO3" })}
           </div>
         </div>
       </section>
