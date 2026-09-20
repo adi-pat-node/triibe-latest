@@ -311,27 +311,27 @@ const SummitPage = () => {
             </div>
           </div>
 
-          {/* Three Navigation Buttons: Schedule, Registration, Past Summit Highlights */}
+          {/* Three Navigation Buttons: Schedule, Registration, Past Summit Highlights (Equal Width) */}
           <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 mt-10">
             <a
               href="#schedule"
-              className="inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
+              className="inline-flex items-center justify-center h-[44px] w-60 rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105 text-center"
             >
               Schedule
             </a>
 
             <a
               href="#tickets"
-              className="inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
+              className="inline-flex items-center justify-center h-[44px] w-60 rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105 text-center"
             >
               Registration
             </a>
 
             <Link
               href="/summit-2026"
-              className="inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
+              className="inline-flex items-center justify-center h-[44px] w-60 rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105 text-center"
             >
-              Past Summit Highlights
+              Last year highlights
             </Link>
           </div>
         </div>
