@@ -208,7 +208,7 @@ const SummitPage = () => {
     <main className="min-h-screen bg-white">
       <Header />
 
-      {/* Recap Button linking back to 2026 Summit Page */}
+      
       <div className="w-full bg-[#F5F5F5] py-4 px-4 text-center border-b border-gray-200">
         <Link
           href="/summit-2026"
@@ -221,7 +221,7 @@ const SummitPage = () => {
         </Link>
       </div>
 
-      {/* Next-Gen Summit Hero & Overview Section */}
+      
       <section className="relative w-full bg-white overflow-hidden pb-20">
         <div className="relative w-full min-h-[500px] md:min-h-[580px] lg:min-h-[640px] flex items-center justify-center overflow-hidden">
           <Image
@@ -269,7 +269,7 @@ const SummitPage = () => {
           </div>
         </div>
 
-        {/* Lower Container: Narrative Lead & Features Grid */}
+        
         <div className="max-w-6xl mx-auto px-4 md:px-12 lg:px-20 pt-16">
           <p className="text-base sm:text-lg text-[#002c19] font-medium text-center max-w-3xl mx-auto leading-relaxed mb-12">
             The annual gathering of the TRIIBE I00 leading nonprofit founders
@@ -281,63 +281,70 @@ const SummitPage = () => {
             </span>
           </p>
 
-          {/* Metrics & Highlights Grid */}
+          
           <div className="w-full border-t border-gray-100 pt-8">
-            <div className="w-full grid grid-cols-3 gap-6 sm:gap-8 items-start py-2">
-              <div className="text-center flex flex-col items-center">
-                <span className="block text-3xl sm:text-4xl md:text-5xl font-black text-[#002c19]">
-                  1000
-                </span>
-                <span className="text-[10px] sm:text-xs md:text-sm font-semibold text-[#002c19]/80 uppercase tracking-wide">
-                  Public Attendees
-                </span>
+            <div className="flex flex-wrap items-start justify-center gap-8 sm:gap-12">
+              
+              
+              <div className="w-60 flex flex-col items-center gap-8">
+                <div className="text-center flex flex-col items-center">
+                  <span className="block text-3xl sm:text-4xl md:text-5xl font-black text-[#002c19]">
+                    1000
+                  </span>
+                  <span className="text-[10px] sm:text-xs md:text-sm font-semibold text-[#002c19]/80 uppercase tracking-wide">
+                    Public Attendees
+                  </span>
+                </div>
+                <a
+                  href="#schedule"
+                  className="inline-flex items-center justify-center h-[44px] w-full rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105 text-center"
+                >
+                  Schedule
+                </a>
               </div>
-              <div className="text-center flex flex-col items-center">
-                <span className="block text-3xl sm:text-4xl md:text-5xl font-black text-[#002c19]">
-                  100
-                </span>
-                <span className="text-[10px] sm:text-xs md:text-sm font-semibold text-[#002c19]/80 uppercase tracking-wide">
-                  TRIIBE Fellows
-                </span>
+
+              
+              <div className="w-60 flex flex-col items-center gap-8">
+                <div className="text-center flex flex-col items-center">
+                  <span className="block text-3xl sm:text-4xl md:text-5xl font-black text-[#002c19]">
+                    100
+                  </span>
+                  <span className="text-[10px] sm:text-xs md:text-sm font-semibold text-[#002c19]/80 uppercase tracking-wide">
+                    TRIIBE Fellows
+                  </span>
+                </div>
+                <a
+                  href="#tickets"
+                  className="inline-flex items-center justify-center h-[44px] w-full rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105 text-center"
+                >
+                  Registration
+                </a>
               </div>
-              <div className="text-center flex flex-col items-center">
-                <span className="block text-3xl sm:text-4xl md:text-5xl font-black text-[#002c19]">
-                  500
-                </span>
-                <span className="text-[10px] sm:text-xs md:text-sm font-semibold text-[#002c19]/80 uppercase tracking-wide">
-                  VIP Gala Guests
-                </span>
+
+              
+              <div className="w-60 flex flex-col items-center gap-8">
+                <div className="text-center flex flex-col items-center">
+                  <span className="block text-3xl sm:text-4xl md:text-5xl font-black text-[#002c19]">
+                    500
+                  </span>
+                  <span className="text-[10px] sm:text-xs md:text-sm font-semibold text-[#002c19]/80 uppercase tracking-wide">
+                    VIP Gala Guests
+                  </span>
+                </div>
+                <Link
+                  href="/summit-2026"
+                  className="inline-flex items-center justify-center h-[44px] w-full rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105 text-center"
+                >
+                  Last year highlights
+                </Link>
               </div>
+
             </div>
-          </div>
-
-          {/* Three Navigation Buttons: Schedule, Registration, Past Summit Highlights (Equal Width) */}
-          <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 mt-10">
-            <a
-              href="#schedule"
-              className="inline-flex items-center justify-center h-[44px] w-60 rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105 text-center"
-            >
-              Schedule
-            </a>
-
-            <a
-              href="#tickets"
-              className="inline-flex items-center justify-center h-[44px] w-60 rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105 text-center"
-            >
-              Registration
-            </a>
-
-            <Link
-              href="/summit-2026"
-              className="inline-flex items-center justify-center h-[44px] w-60 rounded-sm font-semibold text-sm sm:text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105 text-center"
-            >
-              Last year highlights
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* 1. Schedule & Run of Show */}
+      
       <section
         className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-white"
         id="schedule"
@@ -468,7 +475,7 @@ const SummitPage = () => {
         </div>
       </section>
 
-      {/* 2. Tickets & Registration (Givebutter Embed) */}
+      
       <section
         className="pt-16 pb-20 px-4 md:px-25 lg:px-50 bg-[#F5F5F5]"
         id="tickets"
@@ -483,7 +490,7 @@ const SummitPage = () => {
         </div>
       </section>
 
-      {/* 3. Sponsor Our Summit Section */}
+      
       <section className="pt-20 pb-24 px-4 md:px-12 lg:px-24 bg-[#05291b] text-white">
         <div className="max-w-5xl mx-auto flex flex-col items-center">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-center mb-3">
@@ -525,7 +532,7 @@ const SummitPage = () => {
         </div>
       </section>
 
-      {/* 4. 2026 Recap Button Card */}
+      
       <section className="py-16 w-full px-4 md:px-25 lg:px-50 bg-[#F5F5F5]">
         <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
           <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
@@ -543,7 +550,7 @@ const SummitPage = () => {
         </div>
       </section>
 
-      {/* Givebutter script loader */}
+      
       <Script
         src="https://widgets.givebutter.com/latest.umd.cjs?acct=xLAdgtMt2xZoh67c&p=other"
         strategy="lazyOnload"
