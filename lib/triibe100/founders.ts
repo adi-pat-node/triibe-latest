@@ -779,6 +779,56 @@ const restOverrides: Partial<Founder>[] = [
     website: "https://youngpeoplesalliance.org/",
     linkedin: "https://www.linkedin.com/in/samhiner/",
   },
+  {
+    name: "Mick Tobin",
+    org: "",
+    bio: "Co-Founder and Advocacy Director, Young People's Alliance",
+    description:
+      "Co-founded YPA as a high schooler in Mooresville, North Carolina, and took the lane that turns belief into practice. He treats civic engagement as a skill to be learned rather than a virtue to be admired, which means a mobilized student is not one who cares, it is one who has testified.\n\nHe has testified in Nebraska and Hawaii for bills protecting minors interacting with AI companion systems, and has coached teenagers to testify in Virginia and elsewhere. He led the work behind YPA's American Dream Declaration on affordability and economic opportunity, graduated from Duke in 2025, and was named to Forbes 30 Under 30.",
+    image: "/images/triibe100/MickTobin.png",
+    website: "https://youngpeoplesalliance.org/",
+    linkedin: "https://www.linkedin.com/in/mick-tobin-b37a10199/",
+  },
+  {
+    name: "Dr. Shelby Thomas",
+    org: "",
+    bio: "Founder and CEO, Ocean Rescue Alliance International",
+    description:
+      "Grew up surfing and diving near Daytona Beach and went to the University of Florida for marine science, where years of diving the state's reef tract gave her the view the lab did not. Her first project began when an artist was left holding a ten-foot mermaid statue with nowhere to put it, and when her restoration goals outgrew the sculptures she founded Ocean Rescue Alliance International in 2019.\n\nORAI has placed more than 280 reef structures in the water, outplanted over 25,000 corals, and opened labs capable of growing 100,000 corals a year, building reefs that protect coastlines and invite people in at the same time. Its founder holds a PhD in fisheries and aquatic sciences, has contributed to more than 40 restoration projects worldwide, is a TEDx speaker, and is a multiple Stevie Award winner.",
+    image: "/images/triibe100/ShelbyThomas.jpg",
+    website: "https://www.oceanrescuealliance.org/",
+    linkedin: "https://www.linkedin.com/in/dr-shelby-thomas-phd-347241b5/",
+  },
+  {
+    name: "Kyle Matthys",
+    org: "",
+    bio: "Founder and CEO, TRIIBE",
+    description:
+      "Built TRIIBE while working a day job, starting from a structural problem rather than a personal one: the nonprofit sector has no startup engine because the incentives that build one, returns, commission, and equity, do not exist. A startup sector is necessary for philanthropic innovation, because only a founder with nothing yet to protect can afford to fail.\n\nTRIIBE maximizes return on Impact and Income for philentrepreneurs through three programs: the TRIIBE I00, the annual index of leading nonprofit founders under 30 to know; TRIIBE Talks, intergenerational conversations featuring next-gen voices on a decentralized stage anyone can run; and TRIIBE Grants, the largest grant database in the world, free for anyone to search. Talks is endorsed by Lara Stein, TEDx founder, and Grants by Jax Harrison, Grant Authority co-founder, both TRIIBE Legacy Board members.",
+    image: "/images/triibe100/KyleMatthys.jpg",
+    website: "https://www.triibe.org/",
+    linkedin: "https://www.linkedin.com/in/kylematthys/",
+  },
+  {
+    name: "Shreya Ramachandran",
+    org: "",
+    bio: "Founder, The Grey Water Project",
+    description:
+      "Founded The Grey Water Project at 13, after watching fresh water trucked into communities in both California and her grandparents' home in India. Greywater, the lightly used water from sinks, showers, and laundry, makes up about 60 percent of a household's water, and she found the real obstacle was not engineering but that almost nobody had heard of it.\n\nShe logged over 3,500 hours of experimentation showing soapnut greywater is safe for irrigation, and built a curriculum now taught in more than 90 schools, with the organization accredited by the UN Environment Programme. Its founder won the Gloria Barron Prize and the Children's Climate Prize, was a Google Science Fair global finalist and a Global Student Prize finalist, and studies Human Biology at Stanford.",
+    image: "/images/triibe100/ShreyaRamachandran.jpg",
+    website: "https://thegreywaterproject.org",
+    linkedin: "https://www.linkedin.com/in/shreya-ramachandran-greywater/",
+  },
+  {
+    name: "Lea Nepomuceno",
+    org: "",
+    bio: "Founder, Beauty Beyond Bars",
+    description:
+      "Began interviewing incarcerated people at 13 and kept hearing the same detail underneath the bigger stories: people making DIY toiletries, trading food for the components of soap and shampoo. At 17 she founded Beauty Beyond Bars, the first initiative in the country treating hygiene and beauty access in corrections as a public health question rather than a comfort one.\n\nBeauty Beyond Bars works through donation, legislation, and conversation, has raised over $280,000 in product donations, and passed legislation improving conditions for roughly 97,600 people behind bars. Its founder teaches incarcerated youth through a program that turns their own proposals into bills, and is a Teen Vogue 21 Under 21 honoree, an e.l.f. Beauty 22 Under 22 honoree, and a Vital Voices Visionaries Fellow.",
+    image: "/images/triibe100/LeaNepomuceno.png",
+    website: "www.beautybeyondbars.org",
+    linkedin: "https://www.linkedin.com/in/lea-nepomuceno-815715213/",
+  },
 
   {
     name: "COMING_SOON_PLACEHOLDER",
