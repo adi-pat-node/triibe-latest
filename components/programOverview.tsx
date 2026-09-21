@@ -163,10 +163,10 @@ export default function ProgramOverviewTest() {
 
               <div className="border border-[#002c19] p-8 md:p-10 flex flex-col h-full rounded-lg">
                 <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center">
-                  Mentorship
+                  Operational support
                 </h4>
                 <p className="text-[#002c19]/90 mb-10 flex-grow text-center font-medium">
-                  Software, legal and operating support for every founder.
+                  Software, legal operating, and mental health support for every founder.
                 </p>
                 {/* <div className="w-full flex justify-center">
                   <Link
