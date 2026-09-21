@@ -689,6 +689,96 @@ const restOverrides: Partial<Founder>[] = [
     website: "https://uk.linkedin.com/company/corporate-jungle-impact",
     linkedin: "https://www.linkedin.com/in/ebun-lawal/",
   },
+  {
+    name: "Cherie Animashaun",
+    org: "",
+    bio: "Founder, Her Rising Initiative",
+    description:
+      "Founded Her Rising at 16 in her hometown of Evanston, Illinois, on the belief that young women of color are not missing ambition, they are missing a roadmap and a room. The organization runs after-school chapters in policy, business, media, and civic engagement, and puts girls in front of members of Congress and inside the UN.\n\nHer Rising has grown to roughly 90 chapters across the United States, Nigeria, Uganda, and India, with about 5,000 student members and an annual Girls Who Lead conference offering free workshops. Its founder is a 2024 White House Youth Policy Summit speaker, a Vital Voices fellow, and a Princeton Prize in Race Relations honoree, currently studying government at Cornell.",
+    image: "/images/triibe100/CherieAnimashaun.jpg",
+    website: "https://her-rising.com/",
+    linkedin: "https://www.linkedin.com/in/cherieanimashaun/",
+  },
+  {
+    name: "Michelle Ye",
+    org: "",
+    bio: "Co-Founder, Project EDSA",
+    description:
+      "Co-founded Project EDSA at 16 on a structural observation: schools talk about mental health but rarely build anything permanent for it. Rather than run one-off awareness events, EDSA embeds eating disorder prevention and peer support directly into schools, giving student leaders training and ready-made campaign kits.\n\nEDSA has grown past 100 chapters in 15 countries, reaching over 100,000 students in under a year. Its co-founder was recognized by Inspiring Teens Magazine and directs the funding she receives back into chapters and EDSA's partner, the National Association of Anorexia Nervosa and Associated Disorders.",
+    image: "/images/triibe100/MichelleYe.png",
+    website: "https://projectedsa.wixsite.com/home",
+    linkedin: "https://www.linkedin.com/in/michelle-ye-56a0b9274/",
+  },
+  {
+    name: "Diya Mankotia",
+    org: "",
+    bio: "Founder and Executive Director, Project EDSA",
+    description:
+      "Founded Project EDSA in 2024 after her own experience in eighth grade showed her the limits of the support around her. She started with one club at her school in Austin, Texas, then built a model that trains students to run prevention-based chapters themselves rather than waiting on counselors responsible for a thousand students at once.\n\nProject EDSA now runs more than 90 student-led chapters across 13 countries with over 400 volunteers, was awarded a $10,000 grant for campaigns and volunteer training, and distributes 988 crisis line resources directly to students. Its founder is a Daily Point of Light Award honoree, a Program Coordinator for ANAD's School Ambassador Program, and a speaker at NAMI's Going to Bat for Mental Health conference.",
+    image: "/images/triibe100/DiyaMankotia.jpg",
+    website: "https://projectedsa.wixsite.com/home",
+    linkedin: "https://www.linkedin.com/in/diya-mankotia/",
+  },
+  {
+    name: "Mary Blankemeier",
+    org: "",
+    bio: "Founder and CEO, Run Your City",
+    description:
+      "Co-founded Run Your City as a walk-on runner at the University of Virginia, starting as Run Charlottesville with a teammate. The idea was small and durable: student-athletes already know how to build a team, so give them kids to coach and the running becomes the delivery system for confidence, health, and belonging.\n\nRun Your City reaches more than 9,000 children a year across roughly 75 university chapters in the United States, plus over 800 internationally through programs in Rwanda, Nigeria, and India. Its founder was awarded UVA's Sky Alland Scholarship, the first engineering student to receive it in 26 years, and is now an MBA candidate at Stanford.",
+    image: "/images/triibe100/MaryBlankemeier.jpg",
+    website: "https://www.runyourcity.org/",
+    linkedin: "https://www.linkedin.com/in/blanks/",
+  },
+  {
+    name: "Eojin Park",
+    org: "",
+    bio: "Founder, Crisis! Educational Games",
+    description:
+      "Founded Crisis! out of a pitch that won the 2025 NATO Youth Summit Challenge, built on a gap she had lived: a rising wave of young people interested in international relations with almost nowhere to practice the skills. Crisis! is an educational game that puts players aged 10 to 17 inside crisis management and multilateral negotiation.\n\nThe project is a collaboration between Princeton students with contributors from the University of Toronto and the Rhode Island School of Design, developed through Princeton's Keller Center eLab accelerator. Its founder is a fellow at Princeton's Center for International Security Studies, a UN ECOSOC Youth Forum delegate, and a former Youth Ambassador for the British Embassy in Korea.",
+    image: "/images/triibe100/EojinPark.jpg",
+    website: "https://www.crisis-game.org/",
+    linkedin: "https://www.linkedin.com/in/eojin-park-1849601b0/",
+  },
+  {
+    name: "Arielle Galinsky",
+    org: "",
+    bio: "CEO and Co-Founder, The Legacy Project",
+    description:
+      "Co-founded The Legacy Project at Tufts in 2020, carrying one regret: both of her grandfathers died when she was 10 and she never heard their stories. The model is deliberately mutual, pairing college students and older adults for nine months to interview each other and write each other's narratives, so nobody is only the subject and nobody is only the volunteer.\n\nThe Legacy Project has matched more than 500 participants nationally, with pairs from the first cohort still friends years later. Its founder is a 2025 Eisner Prize Fellow, a youth representative to the United Nations with Generations United, an author, and a JD/MPP candidate at Yale Law School and the Harvard Kennedy School.",
+    image: "/images/triibe100/ArielleGalinsky.jpg",
+    website: "https://www.legacyprojectinc.org/",
+    linkedin: "https://www.linkedin.com/in/ariellegalinsky/",
+  },
+  {
+    name: "Elad Raymond",
+    org: "",
+    bio: "CEO, Onero Institute",
+    description:
+      "Conceived Onero with a roommate at the School for Ethics and Global Leadership in 2016 and launched it years later at George Washington University. The name is Latin for 'to burden,' chosen for the load young people will carry in international affairs, and the correction it makes is simple: young people are producing serious research and the professional community is not reading it.\n\nOnero is an entirely youth-driven nonprofit think tank with regional programmes across Africa, the Middle East, and beyond, publishing peer-edited research and presenting an annual Bridge Award to leaders in the field. Its founder is a Dean's Scholar graduate of GW's Elliott School of International Affairs and also works with the Israel Policy Forum.",
+    image: "/images/triibe100/EladRaymond.png",
+    website: "https://www.oneroinstitute.org/",
+    linkedin: "https://www.linkedin.com/in/eladraymond/",
+  },
+  {
+    name: "Natasha Agarwal",
+    org: "",
+    bio: "Founder and CEO, BelieveNBooks",
+    description:
+      "Founded BelieveNBooks on Earth Day 2021 as an eighth grader, after a pandemic spent reading collided with news stories about children who had nothing at home to read. Her first school book drive brought in 3,000 books, which she delivered herself to a center in Immokalee, Florida.\n\nBelieveNBooks has distributed more than 250,000 books through youth-led distribution locations and over 30 nonprofit partners. Its founder wrote 'Tales of African Women Trailblazers,' with all profits funding distribution to girls across the continent, and is a Daily Point of Light Award honoree now studying at the University of Pennsylvania.",
+    image: "/images/triibe100/NatashaAgarwal.png",
+    website: "http://www.believenbooks.org",
+    linkedin: "https://www.linkedin.com/in/natasha2007/",
+  },
+  {
+    name: "Sam Hiner",
+    org: "",
+    bio: "Executive Director, Young People's Alliance",
+    description:
+      "Co-founded the Young People's Alliance as a high school student in North Carolina, after drafting state legislation and noticing the pattern behind every room he walked into: policy about young people was written by adults, without them. The diagnosis was that disengagement is not apathy, it is what happens when a system stops addressing you.\n\nYPA is now a national organization with more than 1,600 members and campus chapters, advocating on social media design, data privacy, and AI protections for minors. Its executive director has raised over $1.5 million for the organization, built a model that pays students to do advocacy work, and serves on the core team of Design It For Us.",
+    image: "/images/triibe100/SamHiner.jpg",
+    website: "https://youngpeoplesalliance.org/",
+    linkedin: "https://www.linkedin.com/in/samhiner/",
+  },
 
   {
     name: "COMING_SOON_PLACEHOLDER",
