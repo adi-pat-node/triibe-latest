@@ -709,12 +709,12 @@ export const departments: Department[] = [
         linkedIn: "https://www.linkedin.com/in/nancy-thadhani-48501730a/",
         isHead: true,
       },
-      {
+      /* {
         name: "Keshav Gautam",
         imagePath: "/images/team/KeshavGautam.png",
         linkedIn: "https://www.linkedin.com/in/keshav-gautam918/",
         isHead: true,
-      },
+      }, */
       {
         name: "Riya Bose",
         imagePath: "/images/team/riya-bose.jfif",
