@@ -829,6 +829,86 @@ const restOverrides: Partial<Founder>[] = [
     website: "www.beautybeyondbars.org",
     linkedin: "https://www.linkedin.com/in/lea-nepomuceno-815715213/",
   },
+  {
+    name: "Maya Nanan",
+    org: "",
+    bio: "Founder, Autism Siblings and Friends Network",
+    description:
+      "Founded the Autism Siblings and Friends Network at 12 in Trinidad and Tobago, after watching her younger brother Rahul, who is autistic and nonverbal, get turned away from six schools by the age of six. The youth-led organization trains young people as advocates and runs Rahul's Clubhouse, an autism-friendly centre offering therapy, developmental programmes, life skills, and sensory-friendly activities at low or nominal cost.\n\nRahul's Clubhouse opened in 2022 with a Queen's Commonwealth Trust Platinum Jubilee Fund grant, and the organization's educational, social, and skills programmes now reach more than 10,000 autistic people. Its founder received the Diana Award in 2020 and was named Commonwealth Young Person of the Year in 2023.",
+    image: "/images/triibe100/MayaNanan.jpg",
+    website: "https://queenscommonwealthtrust.org/projects/siblings-friends-network-creating-inclusion-and-equal-access-to-opportunities-for-autistic-persons-in-trinidad-tobago/",
+    linkedin: "https://www.linkedin.com/in/maya-n-024529200/",
+  },
+  {
+    name: "Rida Karim",
+    org: "",
+    bio: "Founder and CEO, Technology Youth Empowerment",
+    description:
+      "Founded Technology Youth Empowerment in high school, after noticing that STEM classrooms rewarded the right answer over real understanding. The student-led nonprofit trains high school mentors to run free, hands-on workshops for K to 8 students in Title I schools, libraries, and community spaces, and sends take-home STEM kits to students it cannot reach in person.\n\nTYE has brought hands-on STEM education to thousands of underserved students across the Washington DC metropolitan area. Its founder served as student representative to the Fairfax County School Board, leading work on computer science access and technology equity for a district of 183,000 students, and was named a 2025 Carnegie Young Leader.",
+    image: "/images/triibe100/RidaKarim.png",
+    website: "https://tyeconnects.org/",
+    linkedin: "https://www.linkedin.com/in/ridakarim/",
+  },
+  {
+    name: "Olivia Greenaway",
+    org: "",
+    bio: "Co-Founder and Executive Director, CareForAll",
+    description:
+      "Co-founded CareForAll in 2025 to mobilize young people as healthcare leaders rather than spectators. The youth-led nonprofit gives students the toolkits, mentorship, and health education to design and run their own community health projects, then backs their leadership in larger movements for health equity.\n\nCareForAll operates seven chapters with members in 21 countries, and is expanding into the Caribbean, including Montserrat. Its executive director earned her degree in medical humanities at Columbia, is an MHS candidate at Johns Hopkins Bloomberg School of Public Health, and served as a panelist at the United Nations 2026 ECOSOC Youth Forum.",
+    image: "/images/triibe100/OliviaGreenaway.jpg",
+    website: "https://careforall.org/",
+    linkedin: "https://www.linkedin.com/in/olivia-greenaway/",
+  },
+  {
+    name: "Diing Manyang",
+    org: "",
+    bio: "Co-Founder and Strategy Lead, Elimisha Kakuma",
+    description:
+      "Co-founded Elimisha Kakuma in 2021 with three others, all of whom studied and taught in Kakuma Refugee Camp before earning scholarships abroad. The refugee-founded and refugee-led program runs a 16-month university preparatory course inside the camp, teaching academic content, exam prep, and college applications, then supporting students through mentorship and host family placements once they arrive.\n\nElimisha students have won placements at universities across seven countries, with scholarships totaling more than $8 million. Its strategy lead studied systems engineering at George Washington University and also runs Me4Her, an award-winning mentorship program for young women in Kakuma.",
+    image: "/images/triibe100/DiingManyang.jpg",
+    website: "https://www.elimishakakuma.org/",
+    linkedin: "https://www.linkedin.com/in/diing-manyang/",
+  },
+  {
+    name: "Mary Nyiriak Maker",
+    org: "",
+    bio: "Co-Founder and Fundraising Director, Elimisha Kakuma",
+    description:
+      "Co-founded Elimisha Kakuma in 2021 after becoming one of the fewer than one percent of refugees in Kakuma to reach higher education. The refugee-led program gives high school graduates in the camp intensive academic instruction, exam preparation, and college counseling, built by people who waited in Kakuma themselves, year after year, for an opportunity that rarely came.\n\nThe program is highly selective, admitting under three percent of applicants, and its students have secured more than $8 million in scholarships. Its co-founder taught primary school in Kakuma, graduated from St. Olaf College, delivered a widely viewed TED Talk, and serves as a UNHCR goodwill ambassador.",
+    image: "/images/triibe100/MaryNyiriakMaker.jpg",
+    website: "https://www.elimishakakuma.org/",
+    linkedin: "https://www.linkedin.com/in/mary-maker/",
+  },
+  {
+    name: "Joseph Dudi Miabok",
+    org: "",
+    bio: "Co-Founder and Programs Lead, Elimisha Kakuma",
+    description:
+      "Co-founded Elimisha Kakuma in 2021 during the pandemic, while still an undergraduate, alongside two fellow Kakuma refugees and the teacher who had prepared all three for university. The program prepares high school graduates in the camp for university-level coursework and walks them through applications, with the co-founders teaching alongside international scholars.\n\nElimisha has helped more than 40 students gain admission to universities around the world, securing over $8 million in scholarships. Its programs lead grew up in Kakuma, earned a full scholarship to Harvard, and completed a master's in business analytics at Virginia Tech.",
+    image: "/images/triibe100/JosephDudiMiabok.jpg",
+    website: "https://www.elimishakakuma.org/",
+    linkedin: "https://www.linkedin.com/in/joseph-miabok/",
+  },
+  {
+    name: "Andra Daniela Campos",
+    org: "",
+    bio: "Founder, Project Connect Forum",
+    description:
+      "Built Project Connect Forum in her senior year of high school, as a low-income student who could not find extracurriculars and did not know how to start a nonprofit of her own. She designed and developed the site herself. It works as a forum where high school students find opportunities, recruit teammates for their own initiatives, and get guidance on turning an interest into a real project.\n\nProject Connect Forum lists over 800 extracurricular opportunities and has reached tens of thousands of students worldwide, with monthly webinars and a recurring student Q&A. Its founder studies at Stanford and was named a 2025 Edison Scholar, one of 30 selected nationally.",
+    image: "/images/triibe100/AndraDanielaCampos.jpg",
+    website: "https://projectconnectforum.com/",
+    linkedin: "https://www.linkedin.com/in/andra-daniela-campos-861149258/",
+  },
+  {
+    name: "Celine Qin",
+    org: "",
+    bio: "Founder and Executive Director, The Reclamation Project",
+    description:
+      "Founded The Reclamation Project at 13 in 2020 in Sacramento County, the daughter of Chinese and Vietnamese immigrants. The entirely youth-led organization runs mutual aid, anti-oppression education, healing justice, and community power-building for young people who are usually organized on behalf of rather than with.\n\nThe Reclamation Project has mobilized more than 270,000 community members, directed over 280 events and campaigns, and built a coalition of 2,500 youth mentees and 175 partner organizations, including a $600,000 statewide partnership with Elevate Youth California. Its founder won Princeton University's Prize in Race Relations, was named to e.l.f. Beauty's 22 Under 22, and is one of 20 US women founders selected as a Vital Voices Grassroots Fellow.",
+    image: "/images/triibe100/CelineQin.png",
+    website: "https://www.trpcoalition.org/",
+    linkedin: "https://www.linkedin.com/in/celine-qin-impact/",
+  },
 
   {
     name: "COMING_SOON_PLACEHOLDER",
