@@ -909,6 +909,26 @@ const restOverrides: Partial<Founder>[] = [
     website: "https://www.trpcoalition.org/",
     linkedin: "https://www.linkedin.com/in/celine-qin-impact/",
   },
+  {
+    name: "Zuha Ajlan",
+    org: "",
+    bio: "Founder and CEO, Shadow A Scientist",
+    description:
+      "Founded Shadow A Scientist in 2022 at the University of the Witwatersrand, after realizing as an undergraduate how little she knew about the range of careers a science degree could lead to. The organization puts underrepresented students directly into research environments through lab shadowing, site visits to research institutions, hands-on technique workshops, and career talks with working scientists.\n\nShadow A Scientist has reached more than 2,000 students, covers over 35 STEM fields, and runs on 60 volunteers, with four chapters in South Africa and bases in Kenya, Lesotho, and Cameroon. It registered as a nonprofit in South Africa in 2024. Its founder is a neuroscientist whose work has been recognized by Golden Key International.",
+    image: "/images/triibe100/ZuhaAjlan.jpg",
+    website: "https://shadowascientist.org/",
+    linkedin: "https://www.linkedin.com/in/zuha-ajlan-a25623221/",
+  },
+  {
+    name: "Sarah Shelke",
+    org: "",
+    bio: "Co-Founder and Executive Director, Mind4Youth",
+    description:
+      "Co-founded Mind4Youth in California in 2023 at 14, after watching a family member navigate depression in a household where mental illness was spoken about in lowered voices. What started as an Instagram account became four programs delivering self-care resources, books, digital cards, and direct therapy access to underserved young people.\n\nMind4Youth has united more than 22,000 youth volunteers across 70 countries, opened 96 chapters, raised over $500,000, distributed 46,000 self-care products, and funded 1,800 free therapy sessions. Its founder has spoken before the United Nations Committee on the Rights of the Child, was a top three finalist for the 2024 International Children's Peace Prize, and was named to the inaugural 2026 TIME Visionaries list.",
+    image: "/images/triibe100/SarahShelke.png",
+    website: "https://mind4youth.com",
+    linkedin: "https://www.linkedin.com/in/sarahshelke/",
+  },
 
   {
     name: "COMING_SOON_PLACEHOLDER",
