@@ -836,7 +836,7 @@ const restOverrides: Partial<Founder>[] = [
     description:
       "Founded the Autism Siblings and Friends Network at 12 in Trinidad and Tobago, after watching her younger brother Rahul, who is autistic and nonverbal, get turned away from six schools by the age of six. The youth-led organization trains young people as advocates and runs Rahul's Clubhouse, an autism-friendly centre offering therapy, developmental programmes, life skills, and sensory-friendly activities at low or nominal cost.\n\nRahul's Clubhouse opened in 2022 with a Queen's Commonwealth Trust Platinum Jubilee Fund grant, and the organization's educational, social, and skills programmes now reach more than 10,000 autistic people. Its founder received the Diana Award in 2020 and was named Commonwealth Young Person of the Year in 2023.",
     image: "/images/triibe100/MayaNanan.jpg",
-    website: "https://queenscommonwealthtrust.org/projects/siblings-friends-network-creating-inclusion-and-equal-access-to-opportunities-for-autistic-persons-in-trinidad-tobago/",
+    /* website: "https://queenscommonwealthtrust.org/projects/siblings-friends-network-creating-inclusion-and-equal-access-to-opportunities-for-autistic-persons-in-trinidad-tobago/", */
     linkedin: "https://www.linkedin.com/in/maya-n-024529200/",
   },
   {
