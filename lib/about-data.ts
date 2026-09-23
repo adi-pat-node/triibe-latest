@@ -40,11 +40,17 @@ export const associateBoard: Person[] = [
     imagePath: "/images/team/laya-pothunuri.jpg",
     linkedIn: "https://www.linkedin.com/in/laya-pothunuri-964878175/",
   },
-  {
+  /* {
     name: "Jade Kashemsant",
     role: "Member",
     imagePath: "/images/team/jade-kashemsant.jpg",
     linkedIn: "https://www.linkedin.com/in/jadekashemsant/",
+  }, */
+  {
+    name: "Adam Shatzman",
+    role: "Member",
+    imagePath: "/images/team/AdamShatzman.jpg",
+    linkedIn: "https://www.linkedin.com/in/adamshatzman/",
   },
   {
     name: "Maryam Rana",
