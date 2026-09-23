@@ -854,7 +854,7 @@ const restOverrides: Partial<Founder>[] = [
     org: "",
     bio: "Co-Founder and Executive Director, CareForAll",
     description:
-      "Co-founded CareForAll in 2025 to mobilize young people as healthcare leaders rather than spectators. The youth-led nonprofit gives students the toolkits, mentorship, and health education to design and run their own community health projects, then backs their leadership in larger movements for health equity.\n\nCareForAll operates seven chapters with members in 21 countries, and is expanding into the Caribbean, including Montserrat. Its executive director earned her degree in medical humanities at Columbia, is an MHS candidate at Johns Hopkins Bloomberg School of Public Health, and served as a panelist at the United Nations 2026 ECOSOC Youth Forum.",
+      "Co-founded CareForAll in 2025 to mobilize young people as healthcare leaders rather than spectators. The youth-led nonprofit gives students the toolkits, mentorship, and health education to design and run their own community health projects and map medically underserved regions, then backs their leadership in larger movements for health equity.\n\nCareForAll operates 25 chapters with 700 members across 27 countries and has expanded into the Caribbean, including Montserrat. Its CEO earned her degree in Medical Humanities at Columbia, is an MHS candidate at Johns Hopkins Bloomberg School of Public Health, and served as a panelist at the United Nations 2026 ECOSOC Youth Forum.",
     image: "/images/triibe100/OliviaGreenaway.jpg",
     website: "https://careforall.org/",
     linkedin: "https://www.linkedin.com/in/olivia-greenaway/",
