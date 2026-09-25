@@ -622,7 +622,7 @@ const restOverrides: Partial<Founder>[] = [
     org: "",
     bio: "Founder & Executive Director, Building Grace",
     description:
-      "Founded Building Grace after becoming unexpectedly pregnant at 19 and placing her baby for adoption, then finding almost nothing waiting for her on the other side. Birth parents were the one group the adoption process seemed to forget once the paperwork was done.\n\nSo she built what was missing. Building Grace exists as a resource and a support system for birth parents navigating the same healing she had to navigate alone.",
+      "Founded Building Grace after becoming unexpectedly pregnant at 19 and placing her baby for adoption, then finding almost nothing waiting for her on the other side. Unable to find post-placement resources or a support group in Lubbock, she began building the support she wished she had, developing courses and resources from the perspective of a birth mother herself.\n\nBuilding Grace officially became a nonprofit in February 2025 and now supports thousands of birth moms nationwide through free courses, twice-monthly support groups, 24/7 access, financial-planning resources, and formal adoption training for pregnancy centers, hospitals, and adoption agencies. Its mission is to give birth parents a place rooted in truth, education, and compassionate support throughout their adoption journey.",
     image: "/images/triibe100/Madison Quesnel.jpeg",
     website: "https://www.buildinggracehelpingwomen.com/",
     linkedin: "https://www.linkedin.com/in/madison-q-9846ab218/",
@@ -632,7 +632,7 @@ const restOverrides: Partial<Founder>[] = [
     org: "",
     bio: "Founder & Youth Project Lead, Youth Against Hunger Initiative",
     description:
-      "Founded the Youth Against Hunger Initiative in Kenya, an agroecologist trained at the University of Nairobi who saw that hunger in Sub-Saharan Africa is rarely a problem of scarcity alone. YAHI organizes young people around food security through agroecology, nutrition education, and support for the small-scale farmers who grow most of the region's food.\n\nThe initiative runs community campaigns including Zero Hunger Fridays, connecting local action to the Sustainable Development Goals on hunger and climate. Its founder contributes to the FAO's Food Security and Nutrition Forum and works to promote nutritious local food plants and the knowledge to grow them.",
+      "Founded the Youth Against Hunger Initiative in Kenya while studying agricultural economics at the University of Nairobi, after seeing that hunger in Sub-Saharan Africa is rarely a problem of scarcity alone. YAHI organized young people around food security through agroecology, nutrition education, food sovereignty, and support for the small-scale farmers who grow much of the region's food.\n\nThe initiative ran community campaigns including Zero Hunger Fridays, connecting local action to the Sustainable Development Goals on hunger and climate. Felix completed his BSc in Agriculture in 2025 and has since expanded his work across sustainable food systems, serving as a Youth Representative with the World Food Forum and as Communications Officer at Sustainable Organic Farming and Development Initiatives.",
     image: "/images/triibe100/FelixAtamba.jpg",
     website: "https://www.linkedin.com/company/youthagainsthunger/",
     linkedin: "https://www.linkedin.com/in/felix-atamba/",
@@ -642,7 +642,7 @@ const restOverrides: Partial<Founder>[] = [
     org: "",
     bio: "Founder, Ethan's Heart Bags4Blessings",
     description:
-      "Founded Ethan's Heart in December 2016 at six, after passing a man named Mr. Marcus living under a Birmingham freeway underpass on the way to school and deciding it did not sit right. He spent his $100 in Christmas money on survival supplies, packed them into five-gallon buckets, and handed them out.\n\nEthan's Heart now runs a Free Mobile Store and Educational Unit delivering emergency food, clothing, sleeping bags, first aid, and hygiene supplies through street outreach across greater Birmingham, connecting people to services that lead toward stable housing. Its founder was a TIME and Nickelodeon Kid of the Year top 20 finalist and received the Congressional Medal of Honor Society's Citizen Honors Award for Service.",
+      "Founded Ethan's Heart in December 2016 at six, after passing a man named Mr. Marcus living under a Birmingham freeway underpass on the way to school and deciding it did not sit right. He spent his $100 in Christmas money on survival supplies, packed them into five-gallon buckets, and handed them out. Nearly a decade later, that first act has grown into a sustained street-outreach mission across Birmingham.\n\nEthan's Heart now operates a Free Mobile Store and Educational Unit providing emergency food, clothing, sleeping bags, first aid, and hygiene supplies, while connecting people experiencing homelessness with services and housing resources. The organization has distributed more than 12,000 care kits, and in 2026 began repairing its mobile unit after a tree severely damaged the trailer. Ethan was a TIME and Nickelodeon Kid of the Year Top 20 finalist and received the Congressional Medal of Honor Society's Citizen Honors Award for Service.",
     image: "/images/triibe100/EthanHill.jpeg",
     website: "http://www.ethansheartbham.org/",
     linkedin: "",
