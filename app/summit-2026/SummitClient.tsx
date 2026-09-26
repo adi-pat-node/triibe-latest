@@ -270,7 +270,7 @@ const SummitPage = () => {
         },
         {
           name: "Holland Haiis",
-          title: "Founder, Alchimzing Humanity",
+          title: "Founder, Alchemzing Humanity",
           image: "/images/summit/HollandHaiis.png",
           linkedin: "https://www.linkedin.com/in/hollandhaiis/",
           tag: "Speaker",

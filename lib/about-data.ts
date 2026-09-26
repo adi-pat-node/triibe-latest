@@ -199,18 +199,25 @@ export const legacyBoard: Person[] = [
   /* hidden:
   { name: "Lanz Pierce", title: "Media & Entertainment Executive", imagePath: "/images/team/lanz-pierce.jpg", linkedIn: "https://www.linkedin.com/in/lanzpierce/" },
   */
-  {
+  /* {
     name: "Mariela Dabbah",
     title: "Founder & CEO, Red Shoe Movement",
     imagePath: "/images/team/mariela-dabbah.jpg",
     linkedIn: "https://www.linkedin.com/in/marieladabbah/",
-  },
-  {
+  }, */
+  /* {
     name: "Laurie Dhue",
     title:
       "MD, Family Office Growth Partners, Past anchor for CNN, MSNBC, and Fox",
     imagePath: "/images/team/laurie-dhue.jfif",
     linkedIn: "https://www.linkedin.com/in/laurie-dhue-705a7326/",
+  }, */
+  {
+    name: "Holland Haiis",
+    title:
+      "Founder, Alchemzing Humanity",
+    imagePath: "/images/summit/HollandHaiis.png",
+    linkedIn: "https://www.linkedin.com/in/hollandhaiis/",
   },
   {
     name: "Cheng Davis",
