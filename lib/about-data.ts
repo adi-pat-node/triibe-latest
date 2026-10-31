@@ -393,6 +393,13 @@ export const legacyBoard: Person[] = [
     description: "Christina Habib is a senior business and insights leader with extensive experience in consumer strategy, innovation, and corporate governance. As Chief Insights Officer for Unilever’s Beauty & Wellbeing business, she leads consumer insights that inform brand strategy, innovation, and business growth. She also serves as a Non-Executive Director and Supervisory Board Member at MSD, contributing to governance, risk oversight, financial diligence, portfolio transformation, and executive succession decisions. Her work spans strategic leadership, organisational transformation, and stakeholder engagement across global businesses.",
     linkedIn: "https://www.linkedin.com/in/christina-habib/",
   },
+  {
+    name: "Isla Moon",
+    title: "Founder, Library of Alexandria",
+    imagePath: "/images/summit/IslaMoon.jpg",
+    description: "Isla Moon is an entrepreneur, artist, and cultural strategist working at the intersection of technology, ecology, and the arts. She founded Beauty Will Save the World, a donor-advised fund supporting initiatives that advance human dignity, ecological harmony, and cultural renewal through strategic philanthropy and creative collaboration. She also leads the Library of Alexandria, focused on preserving human knowledge through long-term archival technology, and works on biodiversity and regenerative design initiatives through BioDiversity Arc. Her work brings together artists, technologists, and changemakers to connect innovation with cultural preservation and environmental stewardship.",
+    linkedIn: "https://www.linkedin.com/in/kelsey-candra-moon-9a7021212/",
+  },
   /* hidden:
   { name: "Laurence Kalinsky", title: "CEO, PVBLIC.org", imagePath: "/images/team/laurence-kalinsky.jpg" },
   { name: "David Homan", title: "Founder, Orchestrated Connections", imagePath: "/images/team/david-homan.jpg", linkedIn: "https://www.linkedin.com/in/davidrhoman/" },
