@@ -386,6 +386,13 @@ export const legacyBoard: Person[] = [
     description: "Iva Kaufman is a philanthropy and social impact strategist specializing in nonprofit management, foundation advising, and sustainable development. Through Iva Kaufman Associates, she advises businesses, foundations, and nonprofits on initiatives promoting gender equality, environmental sustainability, and community development. Her work connects financial resources with meaningful social outcomes, supporting women’s advancement, conservation, and cultural initiatives. She also contributes to international development and peacebuilding efforts, including engagement with the United Nations High-Level Political Forum.",
     linkedIn: "https://www.linkedin.com/in/iva-kaufman-b08242a/",
   },
+  {
+    name: "Christina Habib",
+    title: "Chief Insights Officer, Beauty & Wellbeing - Unilever",
+    imagePath: "/images/summit/ChristinaHabib.png",
+    description: "Christina Habib is a senior business and insights leader with extensive experience in consumer strategy, innovation, and corporate governance. As Chief Insights Officer for Unilever’s Beauty & Wellbeing business, she leads consumer insights that inform brand strategy, innovation, and business growth. She also serves as a Non-Executive Director and Supervisory Board Member at MSD, contributing to governance, risk oversight, financial diligence, portfolio transformation, and executive succession decisions. Her work spans strategic leadership, organisational transformation, and stakeholder engagement across global businesses.",
+    linkedIn: "https://www.linkedin.com/in/christina-habib/",
+  },
   /* hidden:
   { name: "Laurence Kalinsky", title: "CEO, PVBLIC.org", imagePath: "/images/team/laurence-kalinsky.jpg" },
   { name: "David Homan", title: "Founder, Orchestrated Connections", imagePath: "/images/team/david-homan.jpg", linkedIn: "https://www.linkedin.com/in/davidrhoman/" },
@@ -575,6 +582,13 @@ export const locations: LocationEntry[] = [
         linkedIn: "https://www.linkedin.com/in/ee-ling-lim/",
         description: "Ee Ling Lim is an entrepreneur and startup ecosystem builder with a background in investment banking and venture capital. As former Head of Market Launch at 500 Global, she led more than 65 startup accelerator programmes across international markets. She co-founded Wavesparks to empower young people across Asia through entrepreneurship education, mentorship, and startup incubation, helping aspiring founders turn ideas into impact-driven ventures. Ee Ling also serves on Singapore’s National Youth Council and National Youth Fund advisory committee and is a board director at raiSE, supporting youth development and social enterprise.",
         title: "Co-Founder, Wavesparks",
+      },
+      {
+        name: "Tianna Nguyen",
+        imagePath: "/images/team/TiannaNguyen.jpg",
+        linkedIn: "https://www.linkedin.com/in/tiannanguyen/",
+        description: "Tianna Nguyen is an investment professional, entrepreneur, and philanthropist with experience across private equity, venture capital, corporate finance, and M&A. Having worked with organisations including PwC, Credit Suisse, Invesco, and J.P. Morgan, she brings expertise in capital raising and impact investment, particularly in emerging markets. As founder of Alensia and Co-Chair of Harvard Alumni Entrepreneurs Singapore, she supports entrepreneurship, innovation, and sustainable investment. She is also a member of the Milken Young Leaders Circle and contributes to initiatives focused on women's empowerment, mentorship, and social impact.",
+        title: "Co-Chair of HarvardAE Singapore, CEO - Alensia",
       },
     ],
     advisoryBoardForming: false,
