@@ -1,0 +1,47 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum ScheduleType {
+  GRANT_DEADLINE
+  TRIIBE_EVENT
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  password  String?  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model VerificationToken {
+  id         String   @id @default(cuid())
+  identifier String   
+  token      String   @unique 
+  code       String   
+  attempts   Int      @default(0)
+  expires    DateTime
+  createdAt  DateTime @default(now())
+
+  @@unique([identifier, token])
+}
+
+model ScheduleItem {
+  id          String       @id @default(cuid())
+  title       String
+  description String?
+  type        ScheduleType @default(TRIIBE_EVENT)
+  startDate   DateTime
+  endDate     DateTime?
+  location    String?
+  link        String?
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @default(now()) @updatedAt
+}
